@@ -28,14 +28,14 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "main_team",
 
   data: () => ({
     infor: [
       {
         name: "sr",
         photo: require("@/assets/1.png"),
-        discription: "Very good people",
+        discription: "very good people",
         role: "Team Leader",
       },
       {
