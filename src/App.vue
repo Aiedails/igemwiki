@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app style="background-color: #EBECEE">
     <!-- the carousal -->
     <!--
     <v-card elevation="24" width="380" class="mx-auto">
@@ -29,12 +29,14 @@
         <main_team></main_team>
       </v-container>
     </v-main>
+    <temfooter></temfooter>
   </v-app>
 </template>
 
 <script>
 import main_team from "./components/main_team";
 import navbar from "./components/navbar";
+import temfooter from "./components/teamfooter";
 
 export default {
   name: "App",
@@ -42,6 +44,7 @@ export default {
   components: {
     main_team,
     navbar,
+    temfooter,
   },
 
   data: () => ({

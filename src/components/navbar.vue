@@ -5,9 +5,9 @@
     <v-app-bar
       style="top: 16px"
       app
+      dark
       v-resize="onResize"
       color="#6A76AB"
-      dark
       :collapse="width < 1000"
       shrink-on-scroll
       src="https://picsum.photos/1920/1080?random"
@@ -39,7 +39,18 @@
       </v-btn>
 
       <template v-slot:extension>
-        <v-menu nudge-bottom="6px" offset-y transition="slide-y-transition">
+        <v-menu offset-y transition="slide-y-transition">
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn color="#6A76AB" class="rounded-0" v-bind="attrs" v-on="on"> Dropdown</v-btn>
+          </template>
+
+          <v-list>
+            <v-list-item>aaa</v-list-item>
+            <v-list-item>aaa</v-list-item>
+            <v-list-item>aaa</v-list-item>
+          </v-list>
+        </v-menu>
+        <v-menu offset-y transition="slide-y-transition">
           <template v-slot:activator="{ on, attrs }">
             <v-btn plain v-bind="attrs" v-on="on"> Dropdown</v-btn>
           </template>
@@ -50,18 +61,7 @@
             <v-list-item>aaa</v-list-item>
           </v-list>
         </v-menu>
-        <v-menu nudge-bottom="6px" offset-y transition="slide-y-transition">
-          <template v-slot:activator="{ on, attrs }">
-            <v-btn plain v-bind="attrs" v-on="on"> Dropdown</v-btn>
-          </template>
-
-          <v-list>
-            <v-list-item>aaa</v-list-item>
-            <v-list-item>aaa</v-list-item>
-            <v-list-item>aaa</v-list-item>
-          </v-list>
-        </v-menu>
-        <v-menu nudge-bottom="6px" offset-y transition="slide-y-transition">
+        <v-menu offset-y transition="slide-y-transition">
           <template v-slot:activator="{ on, attrs }">
             <v-btn plain v-bind="attrs" v-on="on"> Dropdown</v-btn>
           </template>
