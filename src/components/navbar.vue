@@ -39,9 +39,9 @@
       </v-btn>
 
       <template v-slot:extension>
-        <v-menu offset-y transition="slide-y-transition">
+        <v-menu offset-y transition="slide-y-transition"  rounded="t-0">
           <template v-slot:activator="{ on, attrs }">
-            <v-btn color="#6A76AB" class="rounded-0" v-bind="attrs" v-on="on"> Dropdown</v-btn>
+            <v-btn plain class="rounded-0" v-bind="attrs" v-on="on"> Dropdown</v-btn>
           </template>
 
           <v-list>
@@ -50,9 +50,9 @@
             <v-list-item>aaa</v-list-item>
           </v-list>
         </v-menu>
-        <v-menu offset-y transition="slide-y-transition">
+        <v-menu offset-y transition="slide-y-transition" rounded="t-0">
           <template v-slot:activator="{ on, attrs }">
-            <v-btn plain v-bind="attrs" v-on="on"> Dropdown</v-btn>
+            <v-btn plain class="rounded-0" v-bind="attrs" v-on="on"> Dropdown</v-btn>
           </template>
 
           <v-list>
@@ -61,9 +61,9 @@
             <v-list-item>aaa</v-list-item>
           </v-list>
         </v-menu>
-        <v-menu offset-y transition="slide-y-transition">
+        <v-menu offset-y transition="slide-y-transition" rounded="t-0">
           <template v-slot:activator="{ on, attrs }">
-            <v-btn plain v-bind="attrs" v-on="on"> Dropdown</v-btn>
+            <v-btn plain class="rounded-0" v-bind="attrs" v-on="on"> Dropdown</v-btn>
           </template>
 
           <v-list>
@@ -77,14 +77,12 @@
     <!-- mobile nav -->
 
     <v-navigation-drawer v-model="drawer" app temporary>
-      <v-container style="height: 16px"></v-container>
+      <v-container style="height: 16px; padding: 0;"></v-container>
       <!-- used to take place of the igem bar -->
-      <v-container>
-        <v-btn icon large @click.stop="drawer = false">
+      <v-list-item link @click.stop="drawer = false">
           <v-icon>mdi-chevron-left</v-icon>
-        </v-btn>
         <!-- back icon -->
-      </v-container>
+      </v-list-item>
       <v-list-item>
         <v-list-item-avatar>
           <v-img src="https://randomuser.me/api/portraits/men/78.jpg"></v-img>

@@ -1,5 +1,5 @@
 <template>
-  <v-app style="background-color: #EBECEE">
+  <v-app dark style="background-color: #EBECEE">
     <!-- the carousal -->
     <!--
     <v-card elevation="24" width="380" class="mx-auto">
@@ -25,7 +25,7 @@
 
     <navbar></navbar>
     <v-main>
-      <v-container style="height: 1500px">
+      <v-container>
         <main_team></main_team>
       </v-container>
     </v-main>

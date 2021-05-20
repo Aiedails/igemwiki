@@ -1,12 +1,25 @@
 <template>
   <v-container>
+  <!-- steps. Stop use becuase of bad experience.
+    <v-navigation-drawer absolute >
+      <v-stepper vertical>
+        <v-stepper-step
+          v-for="(step, index) in infor"
+          :key="index"
+          :step="index + 1"
+        >
+          {{ step.name }}
+        </v-stepper-step>
+      </v-stepper>
+    </v-navigation-drawer>
+    -->
+    <!-- cards -->
     <v-card
       class="temp"
       hover
       v-for="(person, index) in infor"
       :key="index"
       style="margin: 35px"
-      width="70%"
       v-motion
       :initial="{
         opacity: 0,
@@ -39,7 +52,6 @@
 </template>
 
 <script>
-
 //import { gsap } from "gsap"
 //uncomment this line to use gsap in this components
 //I recommend just to use gsap saperately, not gloably.
@@ -61,6 +73,48 @@ export default {
         photo: require("@/assets/2.png"),
         discription: "Very good people",
         role: "Modeling Wiki Hardware",
+      },
+      {
+        name: "sj",
+        photo: require("@/assets/3.png"),
+        discription: "Very good people",
+        role: "Modeling Wiki lab",
+      },
+      {
+        name: "sj",
+        photo: require("@/assets/3.png"),
+        discription: "Very good people",
+        role: "Modeling Wiki lab",
+      },
+      {
+        name: "sj",
+        photo: require("@/assets/3.png"),
+        discription: "Very good people",
+        role: "Modeling Wiki lab",
+      },
+      {
+        name: "sj",
+        photo: require("@/assets/3.png"),
+        discription: "Very good people",
+        role: "Modeling Wiki lab",
+      },
+      {
+        name: "sj",
+        photo: require("@/assets/3.png"),
+        discription: "Very good people",
+        role: "Modeling Wiki lab",
+      },
+      {
+        name: "sj",
+        photo: require("@/assets/3.png"),
+        discription: "Very good people",
+        role: "Modeling Wiki lab",
+      },
+      {
+        name: "sj",
+        photo: require("@/assets/3.png"),
+        discription: "Very good people",
+        role: "Modeling Wiki lab",
       },
       {
         name: "sj",
