@@ -23,12 +23,15 @@
     </v-card>
     -->
 
-    <navbar></navbar>
-    <v-main>
+    <navbar v-resize="onResize" :width=this.width></navbar>
+    <v-main id="main" :class="width < 960 ? 'up' : ''">
       <v-container>
-        <main_team></main_team>
+        <main_team
+          :width=this.width
+        ></main_team>
       </v-container>
     </v-main>
+    <v-container style="height: 1500px;">{{width}}</v-container>
     <temfooter></temfooter>
   </v-app>
 </template>
@@ -48,6 +51,7 @@ export default {
   },
 
   data: () => ({
+    width: 0,
     /* used for the carousel.
     colors: [
       "green",
@@ -60,5 +64,24 @@ export default {
     slides: ["First", "Second", "Third", "Fourth", "Fifth"],
     */
   }),
+  mounted() {
+    this.onResize();
+  },
+  methods: {
+    onResize() {
+      this.width = window.innerWidth;
+    },
+  },
 };
 </script>
+
+<style>
+#content {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+#top_title {
+  display: none;
+}
+</style>

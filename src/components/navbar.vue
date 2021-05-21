@@ -3,16 +3,21 @@
 
     <!-- normal nav -->
     <v-app-bar
-      style="top: 16px"
+      style="left: 9px; top: 25px; right: 9px;"
       app
       dark
-      v-resize="onResize"
       color="#6A76AB"
-      :collapse="width < 1000"
+      :collapse="width < 960"
+      :class="width < 960 ? 'small' : ''"
+      overflow-hidden
       shrink-on-scroll
+      dense short
       src="https://picsum.photos/1920/1080?random"
       fade-img-on-scroll
-      ><!-- the resize used to resize :) -->
+      elevation=8
+      elevate-on-scroll
+      rounded="lg"
+      >
       <template v-slot:img="{ props }">
         <v-img
           v-bind="props"
@@ -23,20 +28,6 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-app-bar-title>Title</v-app-bar-title>
-
-      <v-spacer></v-spacer>
-
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
 
       <template v-slot:extension>
         <v-menu offset-y transition="slide-y-transition"  rounded="t-0">
@@ -124,27 +115,21 @@
 <script>
 export default {
   name: "navbar",
+  props: {
+    width: Number
+  },
 
   data: () => ({
-    width: 0,
     drawer: null,
-    colors: [
-      "green",
-      "secondary",
-      "yellow darken-4",
-      "red lighten-2",
-      "orange darken-1",
-    ],
-    cycle: false,
-    slides: ["First", "Second", "Third", "Fourth", "Fifth"],
   }),
-  mounted() {
-    this.onResize();
-  },
-  methods: {
-    onResize() {
-      this.width = window.innerWidth;
-    },
-  },
 };
 </script>
+<style lang="scss">
+.small {
+  padding: 0;
+  max-height: 48px;
+  border-radius: 0;
+  left: 0;
+
+}
+</style>
