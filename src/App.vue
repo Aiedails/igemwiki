@@ -74,6 +74,10 @@ export default {
 </script>
 
 <style>
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+
 #content {
   width: auto;
   margin: 0;

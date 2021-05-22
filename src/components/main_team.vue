@@ -94,7 +94,7 @@
           <v-img src="@/assets/temp_sht.jpg"></v-img>
           <v-container style="padding: 20px">
             <v-card-title class="text-h4"> Shanghaitech-China </v-card-title>
-            <v-card-text>
+            <v-card-text class="body-1">
               <p>
                 Vue (pronounced /vjuː/, like view) is a progressive framework
                 for building user interfaces. Unlike other monolithic
