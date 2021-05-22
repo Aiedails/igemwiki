@@ -24,12 +24,10 @@
     -->
 
     <navbar v-resize="onResize" :width=this.width></navbar>
-    <v-main id="main" :class="width < 960 ? 'up' : ''">
-      <v-container>
+    <v-main id="main">
         <main_team
           :width=this.width
         ></main_team>
-      </v-container>
     </v-main>
     <v-container style="height: 1500px;">{{width}}</v-container>
     <temfooter></temfooter>

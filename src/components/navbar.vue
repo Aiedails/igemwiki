@@ -30,7 +30,13 @@
       <v-app-bar-title>Title</v-app-bar-title>
 
       <template v-slot:extension>
-        <v-menu offset-y transition="slide-y-transition"  rounded="t-0">
+        <v-menu
+          offset-y
+          open-on-hover
+          transition="slide-y-transition"
+          rounded="t-0"
+          z-index=0
+        >
           <template v-slot:activator="{ on, attrs }">
             <v-btn plain class="rounded-0" v-bind="attrs" v-on="on"> Dropdown</v-btn>
           </template>
@@ -41,7 +47,13 @@
             <v-list-item>aaa</v-list-item>
           </v-list>
         </v-menu>
-        <v-menu offset-y transition="slide-y-transition" rounded="t-0">
+        <v-menu
+          offset-y
+          open-on-hover
+          transition="slide-y-transition"
+          rounded="t-0"
+          z-index=0
+        >
           <template v-slot:activator="{ on, attrs }">
             <v-btn plain class="rounded-0" v-bind="attrs" v-on="on"> Dropdown</v-btn>
           </template>
@@ -52,7 +64,13 @@
             <v-list-item>aaa</v-list-item>
           </v-list>
         </v-menu>
-        <v-menu offset-y transition="slide-y-transition" rounded="t-0">
+        <v-menu
+          offset-y
+          open-on-hover
+          transition="slide-y-transition"
+          rounded="t-0"
+          z-index=0
+        >
           <template v-slot:activator="{ on, attrs }">
             <v-btn plain class="rounded-0" v-bind="attrs" v-on="on"> Dropdown</v-btn>
           </template>
@@ -68,7 +86,7 @@
     <!-- mobile nav -->
 
     <v-navigation-drawer v-model="drawer" app temporary>
-      <v-container style="height: 16px; padding: 0;"></v-container>
+      <v-container style="height: 25px; padding: 0;"></v-container>
       <!-- used to take place of the igem bar -->
       <v-list-item link @click.stop="drawer = false">
           <v-icon>mdi-chevron-left</v-icon>

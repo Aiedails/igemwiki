@@ -5,7 +5,6 @@
        Please be awared of this!!
   -->
   <!-- Always set the margin of card in the main body to **35px** -->
-  <v-container>
     <!-- steps. Stop use becuase of bad experience.
     <v-navigation-drawer absolute >
       <v-stepper vertical>
@@ -20,12 +19,11 @@
     </v-navigation-drawer>
     -->
     <!-- another way is to use v-col to manage the page. which may be better -->
-    <!-- the numbers below are got by test. Valid when cols are 3 & 9. -->
-    <v-row justify="center">
-      <v-col cols="2" v-if="width >= 960"></v-col>
+    <v-row justify="center" style="margin: auto 40px">
+      <v-col cols="2"></v-col>
       <v-col
         cols="2"
-        style="position: fixed; width: 25%; left: 3%; margin-top: 35px"
+        style="position: fixed; left: 35px; margin-top:35px"
         v-show="width >= 960"
       >
         <!-- 960px is the width between sm(600~960) & md(960~1264) -->
@@ -81,7 +79,7 @@
       </v-col>
       <!-- cards -->
       <!-- ####################################################################### -->
-      <v-col cols="12" xs="12" sm="12" md="10" lg="9" xl="9" offset-xl="1">
+      <v-col cols="12" xs="12" sm="12" md="8" lg="8" >
         <!-- this is used to make sure the col won't move when screen reach xl.
              by the test, the col will move "a col" left, so we use offset to eliminate it.
              but notice that the col will still get wider on the right.
@@ -149,8 +147,8 @@
           </v-row>
         </v-card>
       </v-col>
+      <v-col cols="2" v-if="width >= 960"></v-col>
     </v-row>
-  </v-container>
 </template>
 
 <script>
