@@ -1,5 +1,5 @@
 <template>
-  <v-app dark style="background-color: #EBECEE">
+  <v-app dark style="background-color: #ebecee">
     <!-- the carousal -->
     <!--
     <v-card elevation="24" width="380" class="mx-auto">
@@ -23,13 +23,13 @@
     </v-card>
     -->
 
-    <navbar v-resize="onResize" :width=this.width></navbar>
-    <v-main id="main">
-        <main_team
-          :width=this.width
-        ></main_team>
+    <navbar v-resize="onResize" :width="this.width"></navbar>
+    <v-main
+      id="main"
+    >
+      <main_team :width="this.width"></main_team>
     </v-main>
-    <v-container style="height: 1500px;">{{width}}</v-container>
+    <v-container style="height: 1500px">{{ width }}</v-container>
     <temfooter></temfooter>
   </v-app>
 </template>
@@ -49,7 +49,8 @@ export default {
   },
 
   data: () => ({
-    width: 0,
+    width: 1300,
+    istop: true,
     /* used for the carousel.
     colors: [
       "green",
@@ -67,17 +68,37 @@ export default {
   },
   methods: {
     onResize() {
-      this.width = window.innerWidth;
+      this.width = window.innerWidth; //While nav-bar collapses, let the v-main go up.
+      if (this.width <= 1264)
+        document.getElementById('main').style.top="-140px";
+      else
+        document.getElementById('main').style.top="0px";
     },
   },
+  computed: {
+    /* Used for v-motion. Now abandoned.
+    goup: function() {
+      this.onResize();
+      console.log(this.width);
+      if(this.width <= 960){
+        console.log(-140);
+        return -140;
+      } 
+      else return 0;
+    }
+    */
+  }
 };
 </script>
 
 <style>
 * {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
-
+#main {
+  position: relative;
+  top: 0px;
+}
 #content {
   width: auto;
   margin: 0;

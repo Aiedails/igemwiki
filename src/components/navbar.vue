@@ -7,8 +7,8 @@
       app
       dark
       color="#6A76AB"
-      :collapse="width < 960"
-      :class="width < 960 ? 'small' : ''"
+      :collapse="width < 1264"
+      :class="width < 1264 ? 'small' : ''"
       overflow-hidden
       shrink-on-scroll
       dense short
