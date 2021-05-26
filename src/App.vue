@@ -1,5 +1,5 @@
 <template>
-  <v-app dark style="background-color: #ebecee">
+  <v-app dark style="background-color: #ebecee" id="app">
     <!-- the carousal -->
     <!--
     <v-card elevation="24" width="380" class="mx-auto">
@@ -24,12 +24,9 @@
     -->
 
     <navbar v-resize="onResize" :width="this.width"></navbar>
-    <v-main
-      id="main"
-    >
+    <v-main id="main" >
       <main_team :width="this.width"></main_team>
     </v-main>
-    <v-container style="height: 1500px">{{ width }}</v-container>
     <temfooter></temfooter>
   </v-app>
 </template>

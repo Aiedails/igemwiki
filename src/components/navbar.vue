@@ -1,9 +1,8 @@
 <template>
   <v-container>
-
     <!-- normal nav -->
     <v-app-bar
-      style="left: 9px; top: 25px; right: 9px;"
+      style="left: 9px; top: 25px; right: 9px"
       app
       dark
       color="#6A76AB"
@@ -11,23 +10,32 @@
       :class="width < 1264 ? 'small' : ''"
       overflow-hidden
       shrink-on-scroll
-      dense short
+      dense
+      short
       src="https://picsum.photos/1920/1080?random"
       fade-img-on-scroll
-      elevation=8
+      elevation="8"
       elevate-on-scroll
       rounded="lg"
-      >
+    >
       <template v-slot:img="{ props }">
         <v-img
           v-bind="props"
           gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)"
         ></v-img>
       </template>
+      <!-- The nav-drawer icon -->
+      <v-app-bar-nav-icon
+        @click.stop="drawer = !drawer"
+        v-show="width <= 1264"
+      ></v-app-bar-nav-icon>
+      <!-- Home btn -->
+      <v-btn icon v-show="width <= 1264">
+        <v-icon>mdi-home</v-icon>
+      </v-btn>
 
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-
-      <v-app-bar-title>Title</v-app-bar-title>
+      <v-app-bar-title style="min-width: 200px; padding-left: 16px; padding-bottom: 0">Title</v-app-bar-title>
+      <!-- set min-width to prevent display "Ti..." -->
 
       <template v-slot:extension>
         <v-menu
@@ -35,10 +43,12 @@
           open-on-hover
           transition="slide-y-transition"
           rounded="t-0"
-          z-index=0
+          z-index="0"
         >
           <template v-slot:activator="{ on, attrs }">
-            <v-btn plain class="rounded-0" v-bind="attrs" v-on="on"> Dropdown</v-btn>
+            <v-btn plain class="rounded-0" v-bind="attrs" v-on="on">
+              Dropdown</v-btn
+            >
           </template>
 
           <v-list>
@@ -52,10 +62,12 @@
           open-on-hover
           transition="slide-y-transition"
           rounded="t-0"
-          z-index=0
+          z-index="0"
         >
           <template v-slot:activator="{ on, attrs }">
-            <v-btn plain class="rounded-0" v-bind="attrs" v-on="on"> Dropdown</v-btn>
+            <v-btn plain class="rounded-0" v-bind="attrs" v-on="on"
+              >Dropdown</v-btn
+            >
           </template>
 
           <v-list>
@@ -69,10 +81,12 @@
           open-on-hover
           transition="slide-y-transition"
           rounded="t-0"
-          z-index=0
+          z-index="0"
         >
           <template v-slot:activator="{ on, attrs }">
-            <v-btn plain class="rounded-0" v-bind="attrs" v-on="on"> Dropdown</v-btn>
+            <v-btn plain class="rounded-0" v-bind="attrs" v-on="on"
+              >Dropdown</v-btn
+            >
           </template>
 
           <v-list>
@@ -84,12 +98,11 @@
       </template>
     </v-app-bar>
     <!-- mobile nav -->
-
     <v-navigation-drawer v-model="drawer" app temporary>
-      <v-container style="height: 25px; padding: 0;"></v-container>
+      <v-container style="height: 25px; padding: 0"></v-container>
       <!-- used to take place of the igem bar -->
       <v-list-item link @click.stop="drawer = false">
-          <v-icon>mdi-chevron-left</v-icon>
+        <v-icon>mdi-chevron-left</v-icon>
         <!-- back icon -->
       </v-list-item>
       <v-list-item>
@@ -134,7 +147,7 @@
 export default {
   name: "navbar",
   props: {
-    width: Number
+    width: Number,
   },
 
   data: () => ({
@@ -144,10 +157,9 @@ export default {
 </script>
 <style lang="scss">
 .small {
-  padding: 0;
+  padding-left: 4px;
   max-height: 48px;
   border-radius: 0;
   left: 0;
-
 }
 </style>

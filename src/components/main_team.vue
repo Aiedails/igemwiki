@@ -1,13 +1,15 @@
 <template>
+  <!-- disabled href="#..." in this components, because of bad experience. -->
   <!-- The final solution is to use v-col to manage the page. which may be better -->
   <v-row justify="center" style="margin: auto 40px">
     <v-col cols="2"></v-col>
     <v-col
       cols="2"
-      style="position: fixed; left: 35px; margin-top: 35px"
+      style="position: fixed; left: 35px; margin-top: 235px"
       v-show="width >= 1264"
     >
       <!-- 1264px is the width between md(960~1264) & lg(1264~1904) -->
+      <!-- steppers! Put here as reference.
       <v-stepper v-model="e6" vertical>
         <v-stepper-step :complete="e6 > 1" step="1">
           Select an app
@@ -15,7 +17,6 @@
         </v-stepper-step>
 
         <v-stepper-content step="1">
-          <!-- card if needed -->
           <v-card class="mb-12" outlined>
             <v-list style="padding: 0">
               <v-list-item link>aaa</v-list-item>
@@ -45,6 +46,24 @@
           <v-card color="grey lighten-1" class="mb-12" height="200px"></v-card>
         </v-stepper-content>
       </v-stepper>
+       -->
+      <v-stepper v-model="pos" vertical style="transition: all 1s ease 1s">
+        <v-stepper-step
+          :complete="pos > 1"
+          step="1"
+          style="transition: all 1s ease 1s"
+        >
+          <v-container v-ripple @click="$vuetify.goTo('#description', options)">
+            Team members
+          </v-container>
+          <small>Some thing here...</small>
+        </v-stepper-step>
+        <v-stepper-step :complete="pos > 2" step="2" style="transition: all 1s">
+          <v-container v-ripple @click="$vuetify.goTo('#professor', options)">
+            Professors
+          </v-container>
+        </v-stepper-step>
+      </v-stepper>
     </v-col>
     <!-- cards -->
     <!-- ####################################################################### -->
@@ -58,8 +77,9 @@
         v-ripple="{ class: `info--text` }"
         style="margin: 35px auto; text-decoration: none"
         hover
-        href="#description"
+        id="description"
         v-intersect="onIntersect"
+        v-scroll="updatepos"
       >
         <!-- This `v-intersect` is used to emit the signal "You can see me!" -->
         <v-img src="@/assets/temp_sht.jpg"></v-img>
@@ -84,8 +104,6 @@
       </v-card>
       <v-card
         hover
-        v-for="(person, index) in infor"
-        :key="index"
         style="margin: 35px auto"
         v-motion
         :initial="{
@@ -97,23 +115,116 @@
           y: 0,
         }"
       >
-        <v-row align="center" dense justify="start" no-gutters>
-          <v-col style="max-width: 182px">
-            <!-- 150 + 2 * 16 -->
-            <v-list-item-avatar size="150px" style="margin: 16px">
-              <v-img :src="person.photo"></v-img>
-            </v-list-item-avatar>
-          </v-col>
-          <v-divider vertical></v-divider>
-          <v-col col="2">
-            <v-container>
-              <v-card-title>{{ person.name }}</v-card-title>
-              <v-card-subtitle>{{ person.role }}</v-card-subtitle>
-              <v-card-text>{{ person.discription }}</v-card-text>
-            </v-container>
-          </v-col>
-          <v-spacer></v-spacer>
-        </v-row>
+        <div
+          v-for="(person, index) in infor"
+          :key="index"
+          style="padding: 0; margin: 0"
+        >
+          <v-row align="center" dense justify="start" no-gutters>
+            <v-col style="max-width: 182px" cols="2">
+              <!-- 150 + 2 * 16 -->
+              <v-list-item-avatar
+                :size="width >= 400 ? '150px' : '80px'"
+                style="margin: 16px"
+              >
+                <v-img :src="person.photo"></v-img>
+              </v-list-item-avatar>
+            </v-col>
+            <!-- Abandon dividers -->
+            <v-col cols="12" sm="6" md="8" lg="10" xl="10">
+              <v-container>
+                <v-card-title>{{ person.name }}</v-card-title>
+                <v-card-subtitle>{{ person.role }}</v-card-subtitle>
+                <v-card-text>{{ person.discription }}</v-card-text>
+              </v-container>
+            </v-col>
+            <v-spacer></v-spacer>
+          </v-row>
+          <v-divider></v-divider>
+        </div>
+      </v-card>
+      <!-- Used to present Professors -->
+
+      <v-card
+        v-ripple="{ class: `info--text` }"
+        style="margin: 35px auto; text-decoration: none"
+        class="white"
+        hover
+        id="professor"
+        v-scroll="updatepos"
+      >
+        <v-img src="@/assets/temp_prof.jpg"></v-img>
+        <v-container style="padding: 20px">
+          <v-card-title class="text-h4"> Creative Professor </v-card-title>
+          <v-card-text class="body-1">
+            <p>ARGUE！</p>
+            <p>
+              We were informed by teacher at the beginning of the course, that
+              there will be 5 Attendance Check in the whole semester. It is not
+              written on the slides, but I have already confirmed with more than
+              one classmates to prove it. We are asked to be academic integrity,
+              while you should also KEEP YOUR WORD. The attendance check today
+              is the 6th time, so I suggest you cancel it base on our
+              conscience.
+            </p>
+            <p>
+              We believed that we never said that there are only five attendance
+              check, both from TA or professor. I also confirmed with several
+              classmates to prove it. No matter how mant attendance checks
+              announced at the begining of the semester, based on our
+              conscience, you are supposed to attend every class, regardless of
+              attendance check. It makes no sence to be absent from the class
+              assuming no attendance check left and crying for the losing
+              points. There is nothing about academimc integrity. All the
+              grading detail is subject to change by default, espeacially for
+              those consistant with the course syllabus.
+            </p>
+            <p>This is a not rather long paragraph.</p>
+            <p>We can even add a second line.</p>
+          </v-card-text>
+        </v-container>
+      </v-card>
+      <!-- Notes: Don't use `a` on description cards. Cause ugly ripple and grey color after click -->
+      <v-card
+        hover
+        style="margin: 35px auto"
+        v-motion
+        :initial="{
+          opacity: 0,
+          y: 100,
+        }"
+        :enter="{
+          opacity: 1,
+          y: 0,
+        }"
+      >
+        <div
+          v-for="(person, index) in prof"
+          :key="index"
+          style="padding: 0; margin: 0"
+        >
+          <v-row align="center" dense justify="start" no-gutters>
+            <v-col style="max-width: 182px" cols="2">
+              <!-- 150 + 2 * 16 -->
+              <v-list-item-avatar
+                :size="width >= 400 ? '150px' : '80px'"
+                style="margin: 16px"
+              >
+                <v-img :src="person.photo"></v-img>
+              </v-list-item-avatar>
+            </v-col>
+            <v-divider vertical v-show="width >= 600"></v-divider>
+            <v-col cols="12" sm="6" md="8" lg="10" xl="10">
+              <v-container>
+                <v-card-title>{{ person.name }}</v-card-title>
+                <v-card-subtitle>{{ person.role }}</v-card-subtitle>
+                <v-card-text>{{ person.discription }}</v-card-text>
+              </v-container>
+            </v-col>
+            <v-spacer></v-spacer>
+          </v-row>
+          <v-divider></v-divider>
+        </div>
       </v-card>
     </v-col>
     <v-col cols="2" v-if="width >= 1264"></v-col>
@@ -130,7 +241,7 @@
           right
           bottom
           class="primary"
-          @click="$vuetify.goTo(10, options)"
+          @click="$vuetify.goTo(0, options)"
           sytle="position: fixed;"
         >
           <v-icon> mdi-chevron-up </v-icon>
@@ -157,14 +268,15 @@ export default {
 
   data: () => ({
     col_width: 0,
-    e6: 1,
+    pos: 1,
     isIntersecting: false,
     istop: true,
-    options: { //used for the $vuetify.goto() func.
-      duration: 1000,
+    options: {
+      //used for the $vuetify.goto() func.
+      duration: 400,
       offset: 0,
-      easing: 'easeOutCubic',
-    }, 
+      easing: "easeInQuad",
+    },
     infor: [
       {
         name: "sr",
@@ -209,6 +321,20 @@ export default {
         role: "Modeling Wiki lab",
       },
     ],
+    prof: [
+      {
+        name: "Yang Haitao",
+        photo: require("@/assets/3.png"),
+        discription: "very good professor",
+        role: "Some thing here...",
+      },
+      {
+        name: "Gao Yan",
+        photo: require("@/assets/3.png"),
+        discription: "Very good professor",
+        role: "Some thing here...",
+      },
+    ],
   }),
   methods: {
     onIntersect(entries) {
@@ -218,6 +344,20 @@ export default {
       console.log(this.isIntersecting);
       this.istop = this.isIntersecting;
     },
+    updatepos() {
+      var description = document.getElementById("description");
+      var professor = document.getElementById("professor");
+      var despos = description.getBoundingClientRect().top;
+      var propos = professor.getBoundingClientRect().top;
+      if (despos >= 200) this.pos = 0;
+      else if (despos <= 200 && propos >= 200) this.pos = 1;
+      else if (despos <= 200 && propos <= 200) this.pos = 2;
+      console.log(despos);
+      console.log(propos);
+    },
+  },
+  mounted() {
+    this.updatepos();
   },
 };
 </script>
@@ -225,5 +365,8 @@ export default {
 <style lang="scss">
 #backtobtn {
   position: fixed;
+}
+a {
+  text-decoration: none;
 }
 </style>
