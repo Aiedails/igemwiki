@@ -124,7 +124,7 @@
             <v-col style="max-width: 182px" cols="2">
               <!-- 150 + 2 * 16 -->
               <v-list-item-avatar
-                :size="width >= 400 ? '150px' : '80px'"
+                :size="width >= 300 ? '150px' : '80px'"
                 style="margin: 16px"
               >
                 <v-img :src="person.photo"></v-img>
@@ -207,13 +207,12 @@
             <v-col style="max-width: 182px" cols="2">
               <!-- 150 + 2 * 16 -->
               <v-list-item-avatar
-                :size="width >= 400 ? '150px' : '80px'"
+                :size="width >= 300 ? '150px' : '80px'"
                 style="margin: 16px"
               >
                 <v-img :src="person.photo"></v-img>
               </v-list-item-avatar>
             </v-col>
-            <v-divider vertical v-show="width >= 600"></v-divider>
             <v-col cols="12" sm="6" md="8" lg="10" xl="10">
               <v-container>
                 <v-card-title>{{ person.name }}</v-card-title>
