@@ -131,7 +131,7 @@
               </v-list-item-avatar>
             </v-col>
             <!-- Abandon dividers -->
-            <v-col cols="12" sm="6" md="8" lg="10" xl="10">
+            <v-col cols="12" sm="6" md="8" lg="8" xl="10">
               <v-container>
                 <v-card-title>{{ person.name }}</v-card-title>
                 <v-card-subtitle>{{ person.role }}</v-card-subtitle>
@@ -157,27 +157,53 @@
         <v-container style="padding: 20px">
           <v-card-title class="text-h4"> Creative Professor </v-card-title>
           <v-card-text class="body-1">
-            <p>ARGUE！</p>
+            <v-card-title>Simplicity</v-card-title>
             <p>
-              We were informed by teacher at the beginning of the course, that
-              there will be 5 Attendance Check in the whole semester. It is not
-              written on the slides, but I have already confirmed with more than
-              one classmates to prove it. We are asked to be academic integrity,
-              while you should also KEEP YOUR WORD. The attendance check today
-              is the 6th time, so I suggest you cancel it base on our
-              conscience.
+              Arch Linux defines simplicity as without unnecessary additions or
+              modifications. It ships software as released by the original
+              developers (upstream) with minimal distribution-specific
+              (downstream) changes: patches not accepted by upstream are
+              avoided, and Arch's downstream patches consist almost entirely of
+              backported bug fixes that are obsoleted by the project's next
+              release.
             </p>
             <p>
-              We believed that we never said that there are only five attendance
-              check, both from TA or professor. I also confirmed with several
-              classmates to prove it. No matter how mant attendance checks
-              announced at the begining of the semester, based on our
-              conscience, you are supposed to attend every class, regardless of
-              attendance check. It makes no sence to be absent from the class
-              assuming no attendance check left and crying for the losing
-              points. There is nothing about academimc integrity. All the
-              grading detail is subject to change by default, espeacially for
-              those consistant with the course syllabus.
+              In a similar fashion, Arch ships the configuration files provided
+              by upstream with changes limited to distribution-specific issues
+              like adjusting the system file paths. It does not add automation
+              features such as enabling a service simply because the package was
+              installed. Packages are only split when compelling advantages
+              exist, such as to save disk space in particularly bad cases of
+              waste. GUI configuration utilities are not officially provided,
+              encouraging users to perform most system configuration from the
+              shell and a text editor.
+            </p>
+            <v-card-title>Modernity</v-card-title>
+            <p>
+              Arch Linux strives to maintain the latest stable release versions
+              of its software as long as systemic package breakage can be
+              reasonably avoided. It is based on a rolling-release system, which
+              allows a one-time installation with continuous upgrades.
+            </p>
+            <p>
+              Arch incorporates many of the newer features available to
+              GNU/Linux users, including the systemd init system, modern file
+              systems, LVM2, software RAID, udev support and initcpio (with
+              mkinitcpio), as well as the latest available kernels.
+            </p>
+            <v-card-title>Pragmatism</v-card-title>
+            <p>
+              Arch is a pragmatic distribution rather than an ideological one.
+              The principles here are only useful guidelines. Ultimately, design
+              decisions are made on a case-by-case basis through developer
+              consensus. Evidence-based technical analysis and debate are what
+              matter, not politics or popular opinion.
+            </p>
+            <p>
+              The large number of packages and build scripts in the various Arch
+              Linux repositories offer free and open source software for those
+              who prefer it, as well as proprietary software packages for those
+              who embrace functionality over ideology.
             </p>
             <p>This is a not rather long paragraph.</p>
             <p>We can even add a second line.</p>
@@ -213,7 +239,7 @@
                 <v-img :src="person.photo"></v-img>
               </v-list-item-avatar>
             </v-col>
-            <v-col cols="12" sm="6" md="8" lg="10" xl="10">
+            <v-col cols="12" sm="6" md="8" lg="8" xl="10">
               <v-container>
                 <v-card-title>{{ person.name }}</v-card-title>
                 <v-card-subtitle>{{ person.role }}</v-card-subtitle>

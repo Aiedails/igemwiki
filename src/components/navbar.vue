@@ -34,67 +34,78 @@
         <v-icon>mdi-home</v-icon>
       </v-btn>
 
-      <v-app-bar-title style="min-width: 200px; padding-left: 16px; padding-bottom: 0">Title</v-app-bar-title>
+      <v-app-bar-title
+        style="min-width: 200px; padding-left: 16px; padding-bottom: 0"
+        >Title</v-app-bar-title
+      >
       <!-- set min-width to prevent display "Ti..." -->
-
       <template v-slot:extension>
+        <v-btn plain>HOME</v-btn>
+        <v-spacer></v-spacer>
+
         <v-menu
           offset-y
           open-on-hover
+          close-delay="100"
           transition="slide-y-transition"
           rounded="t-0"
           z-index="0"
         >
           <template v-slot:activator="{ on, attrs }">
-            <v-btn plain class="rounded-0" v-bind="attrs" v-on="on">
-              Dropdown</v-btn
-            >
+            <v-btn plain class="rounded-0" v-bind="attrs" v-on="on">Team</v-btn>
           </template>
 
           <v-list>
-            <v-list-item>aaa</v-list-item>
-            <v-list-item>aaa</v-list-item>
-            <v-list-item>aaa</v-list-item>
+            <v-list-item link>Team</v-list-item>
+            <v-list-item link>Attributions</v-list-item>
+            <v-list-item link>Collaborations</v-list-item>
           </v-list>
         </v-menu>
         <v-menu
           offset-y
           open-on-hover
-          transition="slide-y-transition"
-          rounded="t-0"
-          z-index="0"
-        >
-          <template v-slot:activator="{ on, attrs }">
-            <v-btn plain class="rounded-0" v-bind="attrs" v-on="on"
-              >Dropdown</v-btn
-            >
-          </template>
-
-          <v-list>
-            <v-list-item>aaa</v-list-item>
-            <v-list-item>aaa</v-list-item>
-            <v-list-item>aaa</v-list-item>
-          </v-list>
-        </v-menu>
-        <v-menu
-          offset-y
-          open-on-hover
+          close-delay="100"
           transition="slide-y-transition"
           rounded="t-0"
           z-index="0"
         >
           <template v-slot:activator="{ on, attrs }">
             <v-btn plain class="rounded-0" v-bind="attrs" v-on="on"
-              >Dropdown</v-btn
+              >Project</v-btn
             >
           </template>
 
           <v-list>
-            <v-list-item>aaa</v-list-item>
-            <v-list-item>aaa</v-list-item>
-            <v-list-item>aaa</v-list-item>
+            <v-list-item link>Communication</v-list-item>
+            <v-list-item link>Contribution</v-list-item>
+            <v-list-item link>Description</v-list-item>
+            <v-list-item link>Engineering</v-list-item>
+            <v-list-item link>Implementation</v-list-item>
+            <v-list-item link>Results</v-list-item>
           </v-list>
         </v-menu>
+        <v-menu
+          offset-y
+          open-on-hover
+          close-delay="100"
+          transition="slide-y-transition"
+          rounded="t-0"
+          z-index="0"
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn plain class="rounded-0" v-bind="attrs" v-on="on"
+              >Parts</v-btn
+            >
+          </template>
+
+          <v-list>
+            <v-list-item link>Parts</v-list-item>
+            <v-list-item link>Improve</v-list-item>
+          </v-list>
+        </v-menu>
+        <v-btn plain class="rounded-0">Parts</v-btn>
+        <v-btn plain class="rounded-0">Safety</v-btn>
+        <v-btn plain class="rounded-0">Human Practices</v-btn>
       </template>
     </v-app-bar>
     <!-- mobile nav -->
@@ -107,11 +118,11 @@
       </v-list-item>
       <v-list-item>
         <v-list-item-avatar>
-          <v-img src="https://randomuser.me/api/portraits/men/78.jpg"></v-img>
+          <v-img src="@/assets/temp_logo.jpg"></v-img>
         </v-list-item-avatar>
 
         <v-list-item-content>
-          <v-list-item-title>John Leider</v-list-item-title>
+          <v-list-item-title>Shanghaitech</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
 
@@ -122,14 +133,14 @@
           <v-menu offset-x transition="slide-y-transition">
             <template v-slot:activator="{ on, attrs }">
               <v-list-item-content v-bind="attrs" v-on="on">
-                right
+                Team
               </v-list-item-content>
             </template>
 
             <v-list>
-              <v-list-item>aaa</v-list-item>
-              <v-list-item>aaa</v-list-item>
-              <v-list-item>aaa</v-list-item>
+              <v-list-item><v-btn>Team</v-btn></v-list-item>
+              <v-list-item><v-btn>Attributions</v-btn></v-list-item>
+              <v-list-item><v-btn>Collaborations</v-btn></v-list-item>
             </v-list>
           </v-menu>
         </v-list-item>
