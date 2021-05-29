@@ -34,11 +34,10 @@
         <v-icon>mdi-home</v-icon>
       </v-btn>
 
-      <v-app-bar-title
-        style="min-width: 200px; padding-left: 16px; padding-bottom: 0"
-        >Title</v-app-bar-title
+      <v-toolbar-title style="padding-left: 16px; padding-bottom: 0"
+        >Title</v-toolbar-title
       >
-      <!-- set min-width to prevent display "Ti..." -->
+      <!-- use <v-toolbar-title> instead of <v-app-bar-title> to prevent displaying "Ti..." -->
       <template v-slot:extension>
         <v-btn plain>HOME</v-btn>
         <v-spacer></v-spacer>
@@ -52,7 +51,7 @@
           z-index="0"
         >
           <template v-slot:activator="{ on, attrs }">
-            <v-btn plain class="rounded-0" v-bind="attrs" v-on="on">Team</v-btn>
+            <v-btn plain v-bind="attrs" v-on="on">Team</v-btn>
           </template>
 
           <v-list>
@@ -70,11 +69,8 @@
           z-index="0"
         >
           <template v-slot:activator="{ on, attrs }">
-            <v-btn plain class="rounded-0" v-bind="attrs" v-on="on"
-              >Project</v-btn
-            >
+            <v-btn plain v-bind="attrs" v-on="on">Project</v-btn>
           </template>
-
           <v-list>
             <v-list-item link>Communication</v-list-item>
             <v-list-item link>Contribution</v-list-item>
@@ -93,9 +89,7 @@
           z-index="0"
         >
           <template v-slot:activator="{ on, attrs }">
-            <v-btn plain class="rounded-0" v-bind="attrs" v-on="on"
-              >Parts</v-btn
-            >
+            <v-btn plain v-bind="attrs" v-on="on">Parts</v-btn>
           </template>
 
           <v-list>
@@ -103,9 +97,8 @@
             <v-list-item link>Improve</v-list-item>
           </v-list>
         </v-menu>
-        <v-btn plain class="rounded-0">Parts</v-btn>
-        <v-btn plain class="rounded-0">Safety</v-btn>
-        <v-btn plain class="rounded-0">Human Practices</v-btn>
+        <v-btn plain>Safety</v-btn>
+        <v-btn plain>Human Practices</v-btn>
       </template>
     </v-app-bar>
     <!-- mobile nav -->
@@ -127,30 +120,103 @@
       </v-list-item>
 
       <v-divider></v-divider>
-
+      <!-- normal mobile nav-drawer. on-use now. -->
       <v-list dense>
         <v-list-item link>
-          <v-menu offset-x transition="slide-y-transition">
-            <template v-slot:activator="{ on, attrs }">
-              <v-list-item-content v-bind="attrs" v-on="on">
-                Team
-              </v-list-item-content>
-            </template>
+          <v-list-item-icon>
+            <v-icon>mdi-home</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>HOME</v-list-item-title>
+        </v-list-item>
 
-            <v-list>
-              <v-list-item><v-btn>Team</v-btn></v-list-item>
-              <v-list-item><v-btn>Attributions</v-btn></v-list-item>
-              <v-list-item><v-btn>Collaborations</v-btn></v-list-item>
-            </v-list>
-          </v-menu>
-        </v-list-item>
+        <v-list-group :value="true" prepend-icon="mdi-account-multiple-check">
+          <template v-slot:activator>
+            <v-list-item-title>Team</v-list-item-title>
+          </template>
+          <v-list-item link>
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Team </v-list-item-title>
+          </v-list-item>
+          <v-list-item link>
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Attributions </v-list-item-title>
+          </v-list-item>
+          <v-list-item link>
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Collaborations </v-list-item-title>
+          </v-list-item>
+        </v-list-group>
+
+        <v-list-group :value="false" prepend-icon="mdi-book-open">
+          <template v-slot:activator>
+            <v-list-item-title>Project</v-list-item-title>
+          </template>
+          <v-list>
+            <v-list-item link>
+              <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+              <v-list-item-title>Communication</v-list-item-title>
+            </v-list-item>
+            <v-list-item link>
+              <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+              <v-list-item-title>Contribution</v-list-item-title>
+            </v-list-item>
+            <v-list-item link>
+              <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+              <v-list-item-title>Description</v-list-item-title>
+            </v-list-item>
+            <v-list-item link>
+              <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+              <v-list-item-title>Engineering</v-list-item-title>
+            </v-list-item>
+            <v-list-item link>
+              <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+              <v-list-item-title>Implementation</v-list-item-title>
+            </v-list-item>
+            <v-list-item link>
+              <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+              <v-list-item-title>Results</v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-list-group>
+
+        <v-list-group :value="false" prepend-icon="mdi-chevron-triple-up">
+          <template v-slot:activator>
+            <v-list-item-title>Parts</v-list-item-title>
+          </template>
+          <v-list-item link>
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Parts </v-list-item-title>
+          </v-list-item>
+          <v-list-item link>
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Improve </v-list-item-title>
+          </v-list-item>
+        </v-list-group>
+
         <v-list-item link>
-          <v-list-item-content>aaa</v-list-item-content>
+          <v-list-item-icon> <v-icon>mdi-alpha-s-circle-outline</v-icon> </v-list-item-icon>
+          <v-list-item-title> Safety </v-list-item-title>
         </v-list-item>
+
         <v-list-item link>
-          <v-list-item-content>aaa</v-list-item-content>
+          <v-list-item-icon> <v-icon>mdi-account-switch</v-icon> </v-list-item-icon>
+          <v-list-item-title> Human Practices </v-list-item-title>
         </v-list-item>
       </v-list>
+      <!-- the treeview mobile nav-bar. -->
+      <!-- DON'T USE v-treeview ! IT CAN'T HAVE GOOD LINK UI!! 
+      <v-treeview
+        :open="initiallyOpen"
+        :items="items"
+        item-key="name"
+        open-on-click
+        transition
+      >
+        <template v-slot:label="{ item }">
+          <v-btn plain :href="item.href">{{item.name}}</v-btn>
+        </template>
+      </v-treeview>
+      -->
     </v-navigation-drawer>
   </v-container>
 </template>
@@ -163,6 +229,37 @@ export default {
 
   data: () => ({
     drawer: null,
+    initiallyOpen: ["Team"],
+    nowact: ["Team"],
+    items: [
+      { name: "HOME" },
+      {
+        name: "Team",
+        href: "#",
+        children: [
+          { name: "Team", href: "#" },
+          { name: "Attributions", href: "#" },
+          { name: "Collaborations", href: "#" },
+        ],
+      },
+      {
+        name: "Project",
+        children: [
+          { name: "Communication", href: "#" },
+          { name: "Contribution", href: "#" },
+          { name: "Description", href: "#" },
+          { name: "Engineering", href: "#" },
+          { name: "Implementation", href: "#" },
+          { name: "Results" },
+        ],
+      },
+      {
+        name: "Parts",
+        children: [{ name: "Parts" }, { name: "Improve" }],
+      },
+      { name: "Safety" },
+      { name: "Human Practices" },
+    ],
   }),
 };
 </script>
