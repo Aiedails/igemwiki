@@ -8,8 +8,9 @@
         text
         rounded
         class="my-2"
+        :href="link.href"
       >
-        {{ link }}
+        {{ link.name }}
       </v-btn>
       <v-col class="primary lighten-2 py-4 text-center white--text" cols="12">
         {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
@@ -22,7 +23,13 @@
 export default {
   name: "temfooter",
   data: () => ({
-    links: ["Home", "Team", "Design", "Modeling", "Human practice"],
+    links: [
+      { name: "Home", href: "#" },
+      { name: "Team", href: "#" },
+      { name: "Project", href: "#" },
+      { name: "Modeling", href: "#" },
+      { name: "Human practices", href: "#" },
+    ],
   }),
 };
 </script>

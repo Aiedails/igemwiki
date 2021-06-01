@@ -67,6 +67,7 @@
     </v-col>
     <!-- cards -->
     <!-- ####################################################################### -->
+    <!-- Below is really MAIN PART -->
     <v-col cols="12" xs="12" sm="12" md="12" lg="8">
       <!-- this is used to make sure the col won't move when screen reach xl.
              by the test, the col will move "a col" left, so we use offset to eliminate it.

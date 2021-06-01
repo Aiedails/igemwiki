@@ -122,7 +122,7 @@
       <v-divider></v-divider>
       <!-- normal mobile nav-drawer. on-use now. -->
       <v-list dense>
-        <v-list-item link>
+        <v-list-item link active-class="blue--text">
           <v-list-item-icon>
             <v-icon>mdi-home</v-icon>
           </v-list-item-icon>
@@ -229,6 +229,7 @@ export default {
 
   data: () => ({
     drawer: null,
+    /* for the v-treeview. Now abandon.
     initiallyOpen: ["Team"],
     nowact: ["Team"],
     items: [
@@ -260,6 +261,7 @@ export default {
       { name: "Safety" },
       { name: "Human Practices" },
     ],
+    */
   }),
 };
 </script>
