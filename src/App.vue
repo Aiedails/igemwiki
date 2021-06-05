@@ -89,9 +89,6 @@ export default {
 </script>
 
 <style>
-* {
-  font-family: 'Source Sans Pro', sans-serif;
-}
 #main {
   position: relative;
   top: 0px;

@@ -72,12 +72,13 @@
             <v-btn plain v-bind="attrs" v-on="on">Project</v-btn>
           </template>
           <v-list>
-            <v-list-item link>Communication</v-list-item>
-            <v-list-item link>Contribution</v-list-item>
             <v-list-item link>Description</v-list-item>
+            <v-list-item link>Design</v-list-item>
+            <v-list-item link>Proof Of Concept</v-list-item>
             <v-list-item link>Engineering</v-list-item>
             <v-list-item link>Implementation</v-list-item>
-            <v-list-item link>Results</v-list-item>
+            <v-list-item link>Modeling</v-list-item>
+            <v-list-item link>Protocols</v-list-item>
           </v-list>
         </v-menu>
         <v-menu
@@ -89,16 +90,32 @@
           z-index="0"
         >
           <template v-slot:activator="{ on, attrs }">
-            <v-btn plain v-bind="attrs" v-on="on">Parts</v-btn>
+            <v-btn plain v-bind="attrs" v-on="on">Contribution</v-btn>
           </template>
 
           <v-list>
-            <v-list-item link>Parts</v-list-item>
-            <v-list-item link>Improve</v-list-item>
+            <v-list-item link>Contribution</v-list-item>
+            <v-list-item link>Part Collection</v-list-item>
+            <v-list-item link>Improvement</v-list-item>
+          </v-list>
+        </v-menu>
+        <v-menu
+          offset-y
+          open-on-hover
+          close-delay="100"
+          transition="slide-y-transition"
+          rounded="t-0"
+          z-index="0"
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn plain v-bind="attrs" v-on="on">Human Practices</v-btn>
+          </template>
+          <v-list>
+            <v-list-item link>Human Practices</v-list-item>
+            <v-list-item link>Education</v-list-item>
           </v-list>
         </v-menu>
         <v-btn plain>Safety</v-btn>
-        <v-btn plain>Human Practices</v-btn>
       </template>
     </v-app-bar>
     <!-- mobile nav -->
@@ -154,15 +171,15 @@
           <v-list>
             <v-list-item link>
               <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-              <v-list-item-title>Communication</v-list-item-title>
-            </v-list-item>
-            <v-list-item link>
-              <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-              <v-list-item-title>Contribution</v-list-item-title>
-            </v-list-item>
-            <v-list-item link>
-              <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
               <v-list-item-title>Description</v-list-item-title>
+            </v-list-item>
+            <v-list-item link>
+              <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+              <v-list-item-title>Design</v-list-item-title>
+            </v-list-item>
+            <v-list-item link>
+              <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+              <v-list-item-title>Proof Of Concept</v-list-item-title>
             </v-list-item>
             <v-list-item link>
               <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
@@ -174,33 +191,50 @@
             </v-list-item>
             <v-list-item link>
               <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-              <v-list-item-title>Results</v-list-item-title>
+              <v-list-item-title>Modeling</v-list-item-title>
+            </v-list-item>
+            <v-list-item link>
+              <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+              <v-list-item-title>Protocols</v-list-item-title>
             </v-list-item>
           </v-list>
         </v-list-group>
 
         <v-list-group :value="false" prepend-icon="mdi-chevron-triple-up">
           <template v-slot:activator>
-            <v-list-item-title>Parts</v-list-item-title>
+            <v-list-item-title>Contribution</v-list-item-title>
           </template>
           <v-list-item link>
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-            <v-list-item-title> Parts </v-list-item-title>
+            <v-list-item-title> Contribution </v-list-item-title>
           </v-list-item>
           <v-list-item link>
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-            <v-list-item-title> Improve </v-list-item-title>
+            <v-list-item-title> Part Collection </v-list-item-title>
+          </v-list-item>
+          <v-list-item link>
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Improvement </v-list-item-title>
+          </v-list-item>
+        </v-list-group>
+
+        <v-list-group :value="false" prepend-icon="mdi-account-switch">
+          <template v-slot:activator>
+            <v-list-item-title>Human Practices</v-list-item-title>
+          </template>
+          <v-list-item link>
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Human Practices </v-list-item-title>
+          </v-list-item>
+          <v-list-item link>
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Education </v-list-item-title>
           </v-list-item>
         </v-list-group>
 
         <v-list-item link>
           <v-list-item-icon> <v-icon>mdi-alpha-s-circle-outline</v-icon> </v-list-item-icon>
           <v-list-item-title> Safety </v-list-item-title>
-        </v-list-item>
-
-        <v-list-item link>
-          <v-list-item-icon> <v-icon>mdi-account-switch</v-icon> </v-list-item-icon>
-          <v-list-item-title> Human Practices </v-list-item-title>
         </v-list-item>
       </v-list>
       <!-- the treeview mobile nav-bar. -->

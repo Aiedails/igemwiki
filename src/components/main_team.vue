@@ -5,7 +5,7 @@
     <v-col cols="2"></v-col>
     <v-col
       cols="2"
-      style="position: fixed; left: 35px; margin-top: 235px"
+      style="position: fixed; left: 35px; margin-top: 35px"
       v-show="width >= 1264"
     >
       <!-- 1264px is the width between md(960~1264) & lg(1264~1904) -->
