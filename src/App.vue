@@ -101,4 +101,10 @@ export default {
 #top_title {
   display: none;
 }
+#globalWrapper {
+  padding: 0;
+}
+p {
+  margin: 0;
+}
 </style>

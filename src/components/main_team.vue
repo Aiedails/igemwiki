@@ -47,7 +47,13 @@
         </v-stepper-content>
       </v-stepper>
        -->
-      <v-stepper v-model="pos" vertical style="transition: all 1s ease 1s">
+      <v-skeleton-loader v-show="firstload" type="list-item-two-line@2"></v-skeleton-loader>
+      <v-stepper
+        v-show="!firstload"
+        v-model="pos"
+        vertical
+        style="transition: all 1s ease 1s"
+      >
         <v-stepper-step
           :complete="pos > 1"
           step="1"
@@ -74,6 +80,7 @@
              but notice that the col will still get wider on the right.
         -->
       <!-- This is a card for text. -->
+      <v-skeleton-loader v-show="firstload" type="image, article@3"></v-skeleton-loader>
       <v-card
         v-ripple="{ class: `info--text` }"
         style="margin: 35px auto; text-decoration: none"
@@ -81,9 +88,14 @@
         id="description"
         v-intersect="onIntersect"
         v-scroll="updatepos"
+        v-show="!firstload"
       >
         <!-- This `v-intersect` is used to emit the signal "You can see me!" -->
-        <v-img src="@/assets/temp_sht.jpg"></v-img>
+        <v-img src="@/assets/temp_sht.jpg">
+          <template v-slot:placeholder>
+            <v-skeleton-loader type="image"></v-skeleton-loader>
+          </template>
+        </v-img>
         <v-container style="padding: 20px">
           <v-card-title class="text-h4"> Shanghaitech-China </v-card-title>
           <v-card-text class="body-1">
@@ -103,7 +115,9 @@
           </v-card-text>
         </v-container>
       </v-card>
+      <v-skeleton-loader v-show="firstload" type="list-item-avatar-three-line@7"></v-skeleton-loader>
       <v-card
+        v-show="!firstload"
         hover
         style="margin: 35px auto"
         v-motion
@@ -146,7 +160,9 @@
       </v-card>
       <!-- Used to present Professors -->
 
+      <v-skeleton-loader v-show="firstload" type="image, article@5"></v-skeleton-loader>
       <v-card
+        v-show="!firstload"
         v-ripple="{ class: `info--text` }"
         style="margin: 35px auto; text-decoration: none"
         class="white"
@@ -154,7 +170,11 @@
         id="professor"
         v-scroll="updatepos"
       >
-        <v-img src="@/assets/temp_prof.jpg"></v-img>
+        <v-img src="@/assets/temp_prof.jpg">
+          <template v-slot:placeholder>
+            <v-skeleton-loader type="image"></v-skeleton-loader>
+          </template>
+        </v-img>
         <v-container style="padding: 20px">
           <v-card-title class="text-h4"> Creative Professor </v-card-title>
           <v-card-text class="body-1">
@@ -212,7 +232,9 @@
         </v-container>
       </v-card>
       <!-- Notes: Don't use `a` on description cards. Cause ugly ripple and grey color after click -->
+      <v-skeleton-loader v-show="firstload" type="list-item-avatar-three-line@3"></v-skeleton-loader>
       <v-card
+        v-show="!firstload"
         hover
         style="margin: 35px auto"
         v-motion
@@ -293,10 +315,10 @@ export default {
   },
 
   data: () => ({
-    col_width: 0,
-    pos: 1,
+    pos: 1, //used for v-stepper
     isIntersecting: false,
     istop: true,
+    firstload: true, //used for skeleton loader.
     options: {
       //used for the $vuetify.goto() func.
       duration: 400,
@@ -384,6 +406,10 @@ export default {
   },
   mounted() {
     this.updatepos();
+    setTimeout(() => {
+      this.firstload = false;
+      console.log("loaded");
+    }, 1000);
   },
 };
 </script>
