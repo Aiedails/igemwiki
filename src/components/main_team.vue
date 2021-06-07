@@ -48,6 +48,7 @@
       </v-stepper>
        -->
       <v-skeleton-loader v-show="firstload" type="list-item-two-line@2"></v-skeleton-loader>
+      <!-- when skeleton is show, hide -->
       <v-stepper
         v-show="!firstload"
         v-model="pos"
