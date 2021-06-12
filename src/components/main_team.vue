@@ -1,11 +1,14 @@
 <template>
   <!-- disabled href="#..." in this components, because of bad experience. -->
   <!-- The final solution is to use v-col to manage the page. which may be better -->
-  <v-row justify="center" style="margin: auto 40px">
+  <v-row justify="center" style="margin: auto 3%">
     <v-col cols="2"></v-col>
+    <!-- below is the main part. the margin top need to be 35px and we set it to 4px due to test -->
+    <!-- left steeper -->
+    <!-- the value is got by test -->
     <v-col
       cols="2"
-      style="position: fixed; left: 35px; margin-top: 35px"
+      style="position: fixed; left:calc(2% - 9px); margin-top: 4px"
       v-show="width >= 1264"
     >
       <!-- 1264px is the width between md(960~1264) & lg(1264~1904) -->
@@ -47,7 +50,10 @@
         </v-stepper-content>
       </v-stepper>
        -->
-      <v-skeleton-loader v-show="firstload" type="list-item-two-line@2"></v-skeleton-loader>
+      <v-skeleton-loader
+        v-show="firstload"
+        type="list-item-two-line@2"
+      ></v-skeleton-loader>
       <!-- when skeleton is show, hide -->
       <v-stepper
         v-show="!firstload"
@@ -60,13 +66,21 @@
           step="1"
           style="transition: all 1s ease 1s"
         >
-          <v-container v-ripple @click="$vuetify.goTo('#description', options)">
+          <v-container
+            v-ripple
+            @click="$vuetify.goTo('#description', options)"
+            class="text-subtitle-1"
+          >
             Team members
           </v-container>
           <small>Some thing here...</small>
         </v-stepper-step>
         <v-stepper-step :complete="pos > 2" step="2" style="transition: all 1s">
-          <v-container v-ripple @click="$vuetify.goTo('#professor', options)">
+          <v-container
+            v-ripple
+            @click="$vuetify.goTo('#professor', options)"
+            class="text-subtitle-1"
+          >
             Professors
           </v-container>
         </v-stepper-step>
@@ -75,16 +89,19 @@
     <!-- cards -->
     <!-- ####################################################################### -->
     <!-- Below is really MAIN PART -->
-    <v-col cols="12" xs="12" sm="12" md="12" lg="8">
+    <v-col cols="12" xs="12" sm="12" md="12" lg="8" style="margin-top: 4px">
       <!-- this is used to make sure the col won't move when screen reach xl.
              by the test, the col will move "a col" left, so we use offset to eliminate it.
              but notice that the col will still get wider on the right.
         -->
       <!-- This is a card for text. -->
-      <v-skeleton-loader v-show="firstload" type="image, article@3"></v-skeleton-loader>
+      <v-skeleton-loader
+        v-show="firstload"
+        type="image, article@3"
+      ></v-skeleton-loader>
       <v-card
         v-ripple="{ class: `info--text` }"
-        style="margin: 35px auto; text-decoration: none"
+        style="text-decoration: none"
         hover
         id="description"
         v-intersect="onIntersect"
@@ -98,25 +115,26 @@
           </template>
         </v-img>
         <v-container style="padding: 20px">
-          <v-card-title class="text-h4"> Shanghaitech-China </v-card-title>
-          <v-card-text class="body-1">
-            <p>
-              Vue (pronounced /vjuː/, like view) is a progressive framework for
-              building user interfaces. Unlike other monolithic frameworks, Vue
-              is designed from the ground up to be incrementally adoptable. The
-              core library is focused on the view layer only, and is easy to
-              pick up and integrate with other libraries or existing projects.
-              On the other hand, Vue is also perfectly capable of powering
-              sophisticated Single-Page Applications when used in combination
-              with modern tooling and supporting libraries.
-            </p>
-            <p>
-              We are a friendly, kind family, always willing to help each other.
-            </p>
+          <v-card-title class="text-h4"> ShanghaiTech-China </v-card-title>
+          <v-card-text class="text-body-1">
+            Vue (pronounced /vjuː/, like view) is a progressive framework for
+            building user interfaces. Unlike other monolithic frameworks, Vue is
+            designed from the ground up to be incrementally adoptable. The core
+            library is focused on the view layer only, and is easy to pick up
+            and integrate with other libraries or existing projects. On the
+            other hand, Vue is also perfectly capable of powering sophisticated
+            Single-Page Applications when used in combination with modern
+            tooling and supporting libraries.
+          </v-card-text>
+          <v-card-text class="text-body-1">
+            We are a friendly, kind family, always willing to help each other.
           </v-card-text>
         </v-container>
       </v-card>
-      <v-skeleton-loader v-show="firstload" type="list-item-avatar-three-line@7"></v-skeleton-loader>
+      <v-skeleton-loader
+        v-show="firstload"
+        type="list-item-avatar-three-line@7"
+      ></v-skeleton-loader>
       <v-card
         v-show="!firstload"
         hover
@@ -161,7 +179,10 @@
       </v-card>
       <!-- Used to present Professors -->
 
-      <v-skeleton-loader v-show="firstload" type="image, article@5"></v-skeleton-loader>
+      <v-skeleton-loader
+        v-show="firstload"
+        type="image, article@5"
+      ></v-skeleton-loader>
       <v-card
         v-show="!firstload"
         v-ripple="{ class: `info--text` }"
@@ -178,62 +199,67 @@
         </v-img>
         <v-container style="padding: 20px">
           <v-card-title class="text-h4"> Creative Professor </v-card-title>
-          <v-card-text class="body-1">
-            <v-card-title>Simplicity</v-card-title>
-            <p>
-              Arch Linux defines simplicity as without unnecessary additions or
-              modifications. It ships software as released by the original
-              developers (upstream) with minimal distribution-specific
-              (downstream) changes: patches not accepted by upstream are
-              avoided, and Arch's downstream patches consist almost entirely of
-              backported bug fixes that are obsoleted by the project's next
-              release.
-            </p>
-            <p>
-              In a similar fashion, Arch ships the configuration files provided
-              by upstream with changes limited to distribution-specific issues
-              like adjusting the system file paths. It does not add automation
-              features such as enabling a service simply because the package was
-              installed. Packages are only split when compelling advantages
-              exist, such as to save disk space in particularly bad cases of
-              waste. GUI configuration utilities are not officially provided,
-              encouraging users to perform most system configuration from the
-              shell and a text editor.
-            </p>
-            <v-card-title>Modernity</v-card-title>
-            <p>
-              Arch Linux strives to maintain the latest stable release versions
-              of its software as long as systemic package breakage can be
-              reasonably avoided. It is based on a rolling-release system, which
-              allows a one-time installation with continuous upgrades.
-            </p>
-            <p>
-              Arch incorporates many of the newer features available to
-              GNU/Linux users, including the systemd init system, modern file
-              systems, LVM2, software RAID, udev support and initcpio (with
-              mkinitcpio), as well as the latest available kernels.
-            </p>
-            <v-card-title>Pragmatism</v-card-title>
-            <p>
-              Arch is a pragmatic distribution rather than an ideological one.
-              The principles here are only useful guidelines. Ultimately, design
-              decisions are made on a case-by-case basis through developer
-              consensus. Evidence-based technical analysis and debate are what
-              matter, not politics or popular opinion.
-            </p>
-            <p>
-              The large number of packages and build scripts in the various Arch
-              Linux repositories offer free and open source software for those
-              who prefer it, as well as proprietary software packages for those
-              who embrace functionality over ideology.
-            </p>
-            <p>This is a not rather long paragraph.</p>
-            <p>We can even add a second line.</p>
+          <v-card-title>Simplicity</v-card-title>
+          <v-card-text class="text-body-1">
+            Arch Linux defines simplicity as without unnecessary additions or
+            modifications. It ships software as released by the original
+            developers (upstream) with minimal distribution-specific
+            (downstream) changes: patches not accepted by upstream are avoided,
+            and Arch's downstream patches consist almost entirely of backported
+            bug fixes that are obsoleted by the project's next release.
+          </v-card-text>
+          <v-card-text class="text-body-1">
+            In a similar fashion, Arch ships the configuration files provided by
+            upstream with changes limited to distribution-specific issues like
+            adjusting the system file paths. It does not add automation features
+            such as enabling a service simply because the package was installed.
+            Packages are only split when compelling advantages exist, such as to
+            save disk space in particularly bad cases of waste. GUI
+            configuration utilities are not officially provided, encouraging
+            users to perform most system configuration from the shell and a text
+            editor.
+          </v-card-text>
+          <v-card-title>Modernity</v-card-title>
+          <v-card-text class="text-body-1">
+            Arch Linux strives to maintain the latest stable release versions of
+            its software as long as systemic package breakage can be reasonably
+            avoided. It is based on a rolling-release system, which allows a
+            one-time installation with continuous upgrades.
+          </v-card-text>
+          <v-card-text class="text-body-1">
+            Arch incorporates many of the newer features available to GNU/Linux
+            users, including the systemd init system, modern file systems, LVM2,
+            software RAID, udev support and initcpio (with mkinitcpio), as well
+            as the latest available kernels.
+          </v-card-text>
+          <v-card-title>Pragmatism</v-card-title>
+          <v-card-text class="text-body-1">
+            Arch is a pragmatic distribution rather than an ideological one. The
+            principles here are only useful guidelines. Ultimately, design
+            decisions are made on a case-by-case basis through developer
+            consensus. Evidence-based technical analysis and debate are what
+            matter, not politics or popular opinion.
+          </v-card-text>
+          <v-card-text class="text-body-1">
+            The large number of packages and build scripts in the various Arch
+            Linux repositories offer free and open source software for those who
+            prefer it, as well as proprietary software packages for those who
+            embrace functionality over ideology.
+          </v-card-text>
+          <v-card-text class="text-body-1">
+            This is a rather long paragraph.
+          </v-card-text>
+
+          <v-card-text class="text-body-1">
+            We can even add a second line.
           </v-card-text>
         </v-container>
       </v-card>
       <!-- Notes: Don't use `a` on description cards. Cause ugly ripple and grey color after click -->
-      <v-skeleton-loader v-show="firstload" type="list-item-avatar-three-line@3"></v-skeleton-loader>
+      <v-skeleton-loader
+        v-show="firstload"
+        type="list-item-avatar-three-line@3"
+      ></v-skeleton-loader>
       <v-card
         v-show="!firstload"
         hover

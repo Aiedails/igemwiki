@@ -56,9 +56,9 @@
           </template>
 
           <v-list>
-            <v-list-item link>Team</v-list-item>
-            <v-list-item link>Attributions</v-list-item>
-            <v-list-item link>Collaborations</v-list-item>
+            <v-list-item link class="text-subtitle-1">Team</v-list-item>
+            <v-list-item link class="text-subtitle-1">Attributions</v-list-item>
+            <v-list-item link class="text-subtitle-1">Collaborations</v-list-item>
           </v-list>
         </v-menu>
         <v-menu
@@ -73,13 +73,13 @@
             <v-btn plain v-bind="attrs" v-on="on">Project</v-btn>
           </template>
           <v-list>
-            <v-list-item link>Description</v-list-item>
-            <v-list-item link>Design</v-list-item>
-            <v-list-item link>Proof Of Concept</v-list-item>
-            <v-list-item link>Engineering</v-list-item>
-            <v-list-item link>Implementation</v-list-item>
-            <v-list-item link>Modeling</v-list-item>
-            <v-list-item link>Protocols</v-list-item>
+            <v-list-item link class="text-subtitle-1">Description</v-list-item>
+            <v-list-item link class="text-subtitle-1">Design</v-list-item>
+            <v-list-item link class="text-subtitle-1">Proof Of Concept</v-list-item>
+            <v-list-item link class="text-subtitle-1">Engineering</v-list-item>
+            <v-list-item link class="text-subtitle-1">Implementation</v-list-item>
+            <v-list-item link class="text-subtitle-1">Modeling</v-list-item>
+            <v-list-item link class="text-subtitle-1">Protocols</v-list-item>
           </v-list>
         </v-menu>
         <v-menu
@@ -95,9 +95,9 @@
           </template>
 
           <v-list>
-            <v-list-item link>Contribution</v-list-item>
-            <v-list-item link>Part Collection</v-list-item>
-            <v-list-item link>Improvement</v-list-item>
+            <v-list-item link class="text-subtitle-1">Contribution</v-list-item>
+            <v-list-item link class="text-subtitle-1">Part Collection</v-list-item>
+            <v-list-item link class="text-subtitle-1">Improvement</v-list-item>
           </v-list>
         </v-menu>
         <v-menu
@@ -112,8 +112,8 @@
             <v-btn plain v-bind="attrs" v-on="on">Human Practices</v-btn>
           </template>
           <v-list>
-            <v-list-item link>Human Practices</v-list-item>
-            <v-list-item link>Education</v-list-item>
+            <v-list-item link class="text-subtitle-1">Human Practices</v-list-item>
+            <v-list-item link class="text-subtitle-1">Education</v-list-item>
           </v-list>
         </v-menu>
         <v-btn plain>Safety</v-btn>
@@ -133,7 +133,7 @@
         </v-list-item-avatar>
 
         <v-list-item-content>
-          <v-list-item-title>Shanghaitech</v-list-item-title>
+          <v-list-item-title>ShanghaiTech</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
 
