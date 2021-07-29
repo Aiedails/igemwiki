@@ -4,7 +4,7 @@
       <v-btn
         v-for="link in links"
         :key="link.name"
-        color="white"
+        color="indigo"
         text
         rounded
         class="my-2"
@@ -12,8 +12,8 @@
       >
         {{ link.name }}
       </v-btn>
-      <v-col class="primary lighten-2 py-4 text-center white--text" cols="12">
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+      <v-col class="primary py-4 text-center indigo--text" cols="12">
+        {{ new Date().getFullYear() }} - <strong>ShanghaiTech</strong>
       </v-col>
     </v-row>
   </v-footer>

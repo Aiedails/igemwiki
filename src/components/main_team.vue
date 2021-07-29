@@ -16,7 +16,7 @@
       <v-stepper v-model="e6" vertical>
         <v-stepper-step :complete="e6 > 1" step="1">
           Select an app
-          <small>Summarize if needed</small>
+          <small>Summarize if needed</sm>all>
         </v-stepper-step>
 
         <v-stepper-content step="1">
@@ -54,7 +54,6 @@
         v-show="firstload"
         type="list-item-two-line@2"
       ></v-skeleton-loader>
-      <!-- when skeleton is show, hide -->
       <v-stepper
         v-show="!firstload"
         v-model="pos"
@@ -65,21 +64,27 @@
           :complete="pos > 1"
           step="1"
           style="transition: all 1s ease 1s"
+          color="primary"
         >
           <v-container
             v-ripple
             @click="$vuetify.goTo('#description', options)"
-            class="text-subtitle-1"
+            color="brown--text"
           >
             Team members
           </v-container>
           <small>Some thing here...</small>
         </v-stepper-step>
-        <v-stepper-step :complete="pos > 2" step="2" style="transition: all 1s">
+        <v-stepper-step
+          :complete="pos > 2"
+          step="2"
+          style="transition: all 1s"
+          color="primary"
+        >
           <v-container
             v-ripple
             @click="$vuetify.goTo('#professor', options)"
-            class="text-subtitle-1"
+            color="brown--text"
           >
             Professors
           </v-container>
@@ -89,7 +94,7 @@
     <!-- cards -->
     <!-- ####################################################################### -->
     <!-- Below is really MAIN PART -->
-    <v-col cols="12" xs="12" sm="12" md="12" lg="8" style="margin-top: 4px">
+    <v-col cols="12" xs="12" sm="12" md="12" lg="8" style="margin-top: 35px">
       <!-- this is used to make sure the col won't move when screen reach xl.
              by the test, the col will move "a col" left, so we use offset to eliminate it.
              but notice that the col will still get wider on the right.
@@ -100,7 +105,7 @@
         type="image, article@3"
       ></v-skeleton-loader>
       <v-card
-        v-ripple="{ class: `info--text` }"
+        v-ripple="{ class: `primary--text` }"
         style="text-decoration: none"
         hover
         id="description"
@@ -108,6 +113,7 @@
         v-scroll="updatepos"
         v-show="!firstload"
       >
+        <!-- Brown color? I prefer black. To turn it back to black, simply delete the line above -->
         <!-- This `v-intersect` is used to emit the signal "You can see me!" -->
         <v-img src="@/assets/temp_sht.jpg">
           <template v-slot:placeholder>
@@ -115,19 +121,21 @@
           </template>
         </v-img>
         <v-container style="padding: 20px">
-          <v-card-title class="text-h4"> ShanghaiTech-China </v-card-title>
-          <v-card-text class="text-body-1">
-            Vue (pronounced /vjuː/, like view) is a progressive framework for
-            building user interfaces. Unlike other monolithic frameworks, Vue is
-            designed from the ground up to be incrementally adoptable. The core
-            library is focused on the view layer only, and is easy to pick up
-            and integrate with other libraries or existing projects. On the
-            other hand, Vue is also perfectly capable of powering sophisticated
-            Single-Page Applications when used in combination with modern
-            tooling and supporting libraries.
-          </v-card-text>
-          <v-card-text class="text-body-1">
-            We are a friendly, kind family, always willing to help each other.
+          <v-card-title class="text-h4"> Shanghaitech-China </v-card-title>
+          <v-card-text class="body-1">
+            <p sytle="color: red">
+              Vue (pronounced /vjuː/, like view) is a progressive framework for
+              building user interfaces. Unlike other monolithic frameworks, Vue
+              is designed from the ground up to be incrementally adoptable. The
+              core library is focused on the view layer only, and is easy to
+              pick up and integrate with other libraries or existing projects.
+              On the other hand, Vue is also perfectly capable of powering
+              sophisticated Single-Page Applications when used in combination
+              with modern tooling and supporting libraries.
+            </p>
+            <p>
+              We are a friendly, kind family, always willing to help each other.
+            </p>
           </v-card-text>
         </v-container>
       </v-card>
@@ -185,7 +193,7 @@
       ></v-skeleton-loader>
       <v-card
         v-show="!firstload"
-        v-ripple="{ class: `info--text` }"
+        v-ripple="{ class: `primary--text` }"
         style="margin: 35px auto; text-decoration: none"
         class="white"
         hover

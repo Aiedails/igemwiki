@@ -24,7 +24,7 @@
     -->
 
     <navbar v-resize="onResize" :width="this.width"></navbar>
-    <v-main id="main" >
+    <v-main id="main">
       <main_team :width="this.width"></main_team>
     </v-main>
     <temfooter></temfooter>
@@ -67,9 +67,8 @@ export default {
     onResize() {
       this.width = window.innerWidth; //While nav-bar collapses, let the v-main go up.
       if (this.width <= 1264)
-        document.getElementById('main').style.top="-140px";
-      else
-        document.getElementById('main').style.top="0px";
+        document.getElementById("main").style.top = "-140px";
+      else document.getElementById("main").style.top = "0px";
     },
   },
   computed: {
@@ -84,11 +83,15 @@ export default {
       else return 0;
     }
     */
-  }
+  },
 };
 </script>
 
 <style>
+::selection {
+  background: #EF9A9A;
+  color: white;
+}
 #main {
   position: relative;
   top: 0px;

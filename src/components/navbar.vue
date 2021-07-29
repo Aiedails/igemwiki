@@ -1,3 +1,8 @@
+/* The navigation bar of every page of the wiki.
+ * This component in every page should be exactly the same.
+ * DO NOT FORMAT THIS DOCUMENT! The formatter is stupid.
+ */
+
 <template>
   <v-container>
     <!-- normal nav -->
@@ -5,7 +10,7 @@
       style="left: 9px; top: 25px; right: 9px"
       app
       dark
-      color="#6A76AB"
+      class="blue lighten-4"
       :collapse="width < 1264"
       :class="width < 1264 ? 'small' : ''"
       overflow-hidden
@@ -21,9 +26,9 @@
       <template v-slot:img="{ props }">
         <v-img
           v-bind="props"
-          gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)"
+          gradient="to top right, rgba(166,230,255,.7), rgba(41,121,255,.7)"
           @load="loading=true"
-        ></v-img>
+        ></v-img> <!-- blue lighten-3 #90CAF6 -->
       </template>
       <!-- The nav-drawer icon -->
       <v-app-bar-nav-icon
@@ -35,12 +40,18 @@
         <v-icon>mdi-home</v-icon>
       </v-btn>
 
-      <v-toolbar-title style="padding-left: 16px; padding-bottom: 0"
-        >Title</v-toolbar-title
-      >
+      <v-toolbar-title style="padding-left: 16px; padding-bottom: 0; color: #1A237E" >
+        Title
+      </v-toolbar-title >
       <!-- use <v-toolbar-title> instead of <v-app-bar-title> to prevent displaying "Ti..." -->
       <template v-slot:extension>
-        <v-btn plain>HOME</v-btn>
+        <v-btn 
+          plain 
+          style="color: #1A237E;" 
+          href="https://2021.igem.org/Team:ShanghaiTech_China/Description"
+        >
+          HOME
+        </v-btn>
         <v-spacer></v-spacer>
 
         <v-menu
@@ -52,13 +63,35 @@
           z-index="0"
         >
           <template v-slot:activator="{ on, attrs }">
-            <v-btn plain v-bind="attrs" v-on="on">Team</v-btn>
+            <v-btn plain v-bind="attrs" v-on="on" style="color: #1A237E;">Project</v-btn>
+          </template>
+          <v-list>
+            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Description">Description</v-list-item>
+            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Contribution">Contribution</v-list-item>
+            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Proof_Of_Concept">Proof Of Concept</v-list-item>
+            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Implementation">Implementation</v-list-item>
+          </v-list>
+        </v-menu>
+        <v-menu
+          offset-y
+          open-on-hover
+          close-delay="100"
+          transition="slide-y-transition"
+          rounded="t-0"
+          z-index="0"
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn plain v-bind="attrs" v-on="on" style="color: #1A237E;">Wet lab</v-btn>
           </template>
 
           <v-list>
-            <v-list-item link class="text-subtitle-1">Team</v-list-item>
-            <v-list-item link class="text-subtitle-1">Attributions</v-list-item>
-            <v-list-item link class="text-subtitle-1">Collaborations</v-list-item>
+            <v-list-item href="https://2020.igem.org/Team:ShanghaiTech_China/Design">Design</v-list-item>
+            <v-list-item link>Parts</v-list-item>
+            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Engineering">Engineering</v-list-item>
+            <v-list-item link>Protocols</v-list-item>
+            <v-list-item link>Experiments</v-list-item>
+            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Results">Results</v-list-item>
+            <v-list-item link>Safty</v-list-item>
           </v-list>
         </v-menu>
         <v-menu
@@ -70,34 +103,12 @@
           z-index="0"
         >
           <template v-slot:activator="{ on, attrs }">
-            <v-btn plain v-bind="attrs" v-on="on">Project</v-btn>
-          </template>
-          <v-list>
-            <v-list-item link class="text-subtitle-1">Description</v-list-item>
-            <v-list-item link class="text-subtitle-1">Design</v-list-item>
-            <v-list-item link class="text-subtitle-1">Proof Of Concept</v-list-item>
-            <v-list-item link class="text-subtitle-1">Engineering</v-list-item>
-            <v-list-item link class="text-subtitle-1">Implementation</v-list-item>
-            <v-list-item link class="text-subtitle-1">Modeling</v-list-item>
-            <v-list-item link class="text-subtitle-1">Protocols</v-list-item>
-          </v-list>
-        </v-menu>
-        <v-menu
-          offset-y
-          open-on-hover
-          close-delay="100"
-          transition="slide-y-transition"
-          rounded="t-0"
-          z-index="0"
-        >
-          <template v-slot:activator="{ on, attrs }">
-            <v-btn plain v-bind="attrs" v-on="on">Contribution</v-btn>
+            <v-btn plain v-bind="attrs" v-on="on" style="color: #1A237E;">Dry lab</v-btn>
           </template>
 
           <v-list>
-            <v-list-item link class="text-subtitle-1">Contribution</v-list-item>
-            <v-list-item link class="text-subtitle-1">Part Collection</v-list-item>
-            <v-list-item link class="text-subtitle-1">Improvement</v-list-item>
+            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Model">Modeling</v-list-item>
+            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Hardware">Hardware</v-list-item>
           </v-list>
         </v-menu>
         <v-menu
@@ -109,14 +120,32 @@
           z-index="0"
         >
           <template v-slot:activator="{ on, attrs }">
-            <v-btn plain v-bind="attrs" v-on="on">Human Practices</v-btn>
+            <v-btn plain v-bind="attrs" v-on="on" style="color: #1A237E;">Human Practices</v-btn>
           </template>
           <v-list>
-            <v-list-item link class="text-subtitle-1">Human Practices</v-list-item>
-            <v-list-item link class="text-subtitle-1">Education</v-list-item>
+            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices">Integrated HP</v-list-item>
+            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Education">Education</v-list-item>
+            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Entrepreneurship">Entrepreneurship</v-list-item>
           </v-list>
         </v-menu>
-        <v-btn plain>Safety</v-btn>
+        <v-menu
+          offset-y
+          open-on-hover
+          close-delay="100"
+          transition="slide-y-transition"
+          rounded="t-0"
+          z-index="0"
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn plain v-bind="attrs" v-on="on" style="color: #1A237E;">Team</v-btn>
+          </template>
+
+          <v-list>
+            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Team">Members</v-list-item>
+            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Attributions">Attributions</v-list-item>
+            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Collaborations">Collaborations</v-list-item>
+          </v-list>
+        </v-menu>
       </template>
     </v-app-bar>
     <!-- mobile nav -->
@@ -147,75 +176,75 @@
           <v-list-item-title>HOME</v-list-item-title>
         </v-list-item>
 
-        <v-list-group :value="true" prepend-icon="mdi-account-multiple-check">
-          <template v-slot:activator>
-            <v-list-item-title>Team</v-list-item-title>
-          </template>
-          <v-list-item link>
-            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-            <v-list-item-title> Team </v-list-item-title>
-          </v-list-item>
-          <v-list-item link>
-            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-            <v-list-item-title> Attributions </v-list-item-title>
-          </v-list-item>
-          <v-list-item link>
-            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-            <v-list-item-title> Collaborations </v-list-item-title>
-          </v-list-item>
-        </v-list-group>
-
         <v-list-group :value="false" prepend-icon="mdi-book-open">
           <template v-slot:activator>
             <v-list-item-title>Project</v-list-item-title>
           </template>
           <v-list>
-            <v-list-item link>
+            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Description">
               <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
               <v-list-item-title>Description</v-list-item-title>
             </v-list-item>
-            <v-list-item link>
+            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Contribution">
               <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-              <v-list-item-title>Design</v-list-item-title>
+              <v-list-item-title>Contribution</v-list-item-title>
             </v-list-item>
-            <v-list-item link>
+            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Proof_Of_Concept">
               <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
               <v-list-item-title>Proof Of Concept</v-list-item-title>
             </v-list-item>
-            <v-list-item link>
-              <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-              <v-list-item-title>Engineering</v-list-item-title>
-            </v-list-item>
-            <v-list-item link>
+            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Implementation">
               <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
               <v-list-item-title>Implementation</v-list-item-title>
-            </v-list-item>
-            <v-list-item link>
-              <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-              <v-list-item-title>Modeling</v-list-item-title>
-            </v-list-item>
-            <v-list-item link>
-              <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-              <v-list-item-title>Protocols</v-list-item-title>
             </v-list-item>
           </v-list>
         </v-list-group>
 
-        <v-list-group :value="false" prepend-icon="mdi-chevron-triple-up">
+        <v-list-group :value="false" prepend-icon="mdi-beaker-plus">
           <template v-slot:activator>
-            <v-list-item-title>Contribution</v-list-item-title>
+            <v-list-item-title>Wet lab</v-list-item-title>
           </template>
-          <v-list-item link>
+          <v-list-item href="https://2020.igem.org/Team:ShanghaiTech_China/Design">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-            <v-list-item-title> Contribution </v-list-item-title>
+            <v-list-item-title> Design </v-list-item-title>
           </v-list-item>
           <v-list-item link>
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-            <v-list-item-title> Part Collection </v-list-item-title>
+            <v-list-item-title> Parts </v-list-item-title>
+          </v-list-item>
+          <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Engineering">
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Engineering </v-list-item-title>
           </v-list-item>
           <v-list-item link>
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-            <v-list-item-title> Improvement </v-list-item-title>
+            <v-list-item-title> Protocols </v-list-item-title>
+          </v-list-item>
+          <v-list-item link>
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Experiments </v-list-item-title>
+          </v-list-item>
+          <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Results">
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Results </v-list-item-title>
+          </v-list-item>
+          <v-list-item link>
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Safty </v-list-item-title>
+          </v-list-item>
+        </v-list-group>
+
+        <v-list-group :value="false" prepend-icon="mdi-beaker-alert-outline">
+          <template v-slot:activator>
+            <v-list-item-title> Dry lab </v-list-item-title>
+          </template>
+          <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Model">
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Modeling </v-list-item-title>
+          </v-list-item>
+          <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Hardware">
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Hardware </v-list-item-title>
           </v-list-item>
         </v-list-group>
 
@@ -223,20 +252,37 @@
           <template v-slot:activator>
             <v-list-item-title>Human Practices</v-list-item-title>
           </template>
-          <v-list-item link>
+          <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Human Practices </v-list-item-title>
           </v-list-item>
-          <v-list-item link>
+          <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Education">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Education </v-list-item-title>
           </v-list-item>
+          <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Entrepreneurship">
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Entrepreneurship </v-list-item-title>
+          </v-list-item>
         </v-list-group>
 
-        <v-list-item link>
-          <v-list-item-icon> <v-icon>mdi-alpha-s-circle-outline</v-icon> </v-list-item-icon>
-          <v-list-item-title> Safety </v-list-item-title>
-        </v-list-item>
+        <v-list-group :value="true" prepend-icon="mdi-account-multiple-check">
+          <template v-slot:activator>
+            <v-list-item-title>Team</v-list-item-title>
+          </template>
+          <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Team">
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Team </v-list-item-title>
+          </v-list-item>
+          <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Attributions">
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Attributions </v-list-item-title>
+          </v-list-item>
+          <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Collaborations">
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Collaborations </v-list-item-title>
+          </v-list-item>
+        </v-list-group>
       </v-list>
       <!-- the treeview mobile nav-bar. -->
       <!-- DON'T USE v-treeview ! IT CAN'T HAVE GOOD LINK UI!! 
