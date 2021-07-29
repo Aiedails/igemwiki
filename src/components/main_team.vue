@@ -13,7 +13,7 @@
       <v-stepper v-model="e6" vertical>
         <v-stepper-step :complete="e6 > 1" step="1">
           Select an app
-          <small>Summarize if needed</small>
+          <small>Summarize if needed</sm>all>
         </v-stepper-step>
 
         <v-stepper-content step="1">
@@ -47,7 +47,10 @@
         </v-stepper-content>
       </v-stepper>
        -->
-      <v-skeleton-loader v-show="firstload" type="list-item-two-line@2"></v-skeleton-loader>
+      <v-skeleton-loader
+        v-show="firstload"
+        type="list-item-two-line@2"
+      ></v-skeleton-loader>
       <v-stepper
         v-show="!firstload"
         v-model="pos"
@@ -58,14 +61,28 @@
           :complete="pos > 1"
           step="1"
           style="transition: all 1s ease 1s"
+          color="primary"
         >
-          <v-container v-ripple @click="$vuetify.goTo('#description', options)">
+          <v-container
+            v-ripple
+            @click="$vuetify.goTo('#description', options)"
+            color="brown--text"
+          >
             Team members
           </v-container>
           <small>Some thing here...</small>
         </v-stepper-step>
-        <v-stepper-step :complete="pos > 2" step="2" style="transition: all 1s">
-          <v-container v-ripple @click="$vuetify.goTo('#professor', options)">
+        <v-stepper-step
+          :complete="pos > 2"
+          step="2"
+          style="transition: all 1s"
+          color="primary"
+        >
+          <v-container
+            v-ripple
+            @click="$vuetify.goTo('#professor', options)"
+            color="brown--text"
+          >
             Professors
           </v-container>
         </v-stepper-step>
@@ -74,22 +91,26 @@
     <!-- cards -->
     <!-- ####################################################################### -->
     <!-- Below is really MAIN PART -->
-    <v-col cols="12" xs="12" sm="12" md="12" lg="8">
+    <v-col cols="12" xs="12" sm="12" md="12" lg="8" style="margin-top: 35px">
       <!-- this is used to make sure the col won't move when screen reach xl.
              by the test, the col will move "a col" left, so we use offset to eliminate it.
              but notice that the col will still get wider on the right.
         -->
       <!-- This is a card for text. -->
-      <v-skeleton-loader v-show="firstload" type="image, article@3"></v-skeleton-loader>
+      <v-skeleton-loader
+        v-show="firstload"
+        type="image, article@3"
+      ></v-skeleton-loader>
       <v-card
-        v-ripple="{ class: `info--text` }"
-        style="margin: 35px auto; text-decoration: none"
+        v-ripple="{ class: `primary--text` }"
+        style="text-decoration: none"
         hover
         id="description"
         v-intersect="onIntersect"
         v-scroll="updatepos"
         v-show="!firstload"
       >
+        <!-- Brown color? I prefer black. To turn it back to black, simply delete the line above -->
         <!-- This `v-intersect` is used to emit the signal "You can see me!" -->
         <v-img src="@/assets/temp_sht.jpg">
           <template v-slot:placeholder>
@@ -99,7 +120,7 @@
         <v-container style="padding: 20px">
           <v-card-title class="text-h4"> Shanghaitech-China </v-card-title>
           <v-card-text class="body-1">
-            <p>
+            <p sytle="color: red">
               Vue (pronounced /vjuː/, like view) is a progressive framework for
               building user interfaces. Unlike other monolithic frameworks, Vue
               is designed from the ground up to be incrementally adoptable. The
@@ -115,7 +136,10 @@
           </v-card-text>
         </v-container>
       </v-card>
-      <v-skeleton-loader v-show="firstload" type="list-item-avatar-three-line@7"></v-skeleton-loader>
+      <v-skeleton-loader
+        v-show="firstload"
+        type="list-item-avatar-three-line@7"
+      ></v-skeleton-loader>
       <v-card
         v-show="!firstload"
         hover
@@ -160,10 +184,13 @@
       </v-card>
       <!-- Used to present Professors -->
 
-      <v-skeleton-loader v-show="firstload" type="image, article@5"></v-skeleton-loader>
+      <v-skeleton-loader
+        v-show="firstload"
+        type="image, article@5"
+      ></v-skeleton-loader>
       <v-card
         v-show="!firstload"
-        v-ripple="{ class: `info--text` }"
+        v-ripple="{ class: `primary--text` }"
         style="margin: 35px auto; text-decoration: none"
         class="white"
         hover
@@ -232,7 +259,10 @@
         </v-container>
       </v-card>
       <!-- Notes: Don't use `a` on description cards. Cause ugly ripple and grey color after click -->
-      <v-skeleton-loader v-show="firstload" type="list-item-avatar-three-line@3"></v-skeleton-loader>
+      <v-skeleton-loader
+        v-show="firstload"
+        type="list-item-avatar-three-line@3"
+      ></v-skeleton-loader>
       <v-card
         v-show="!firstload"
         hover
