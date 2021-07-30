@@ -3,12 +3,11 @@
   <!-- The final solution is to use v-col to manage the page. which may be better -->
   <v-row justify="center" style="margin: auto 3%">
     <v-col cols="2"></v-col>
-    <!-- below is the main part. the margin top need to be 35px and we set it to 4px due to test -->
+    <!-- below is the main part. the margin top need to be 35px -->
     <!-- left steeper -->
-    <!-- the value is got by test -->
     <v-col
       cols="2"
-      style="position: fixed; left:calc(2% - 9px); margin-top: 4px"
+      style="position: fixed; left:calc(2% - 9px); margin-top: 35px"
       v-show="width >= 1264"
     >
       <!-- 1264px is the width between md(960~1264) & lg(1264~1904) -->
@@ -123,7 +122,7 @@
         <v-container style="padding: 20px">
           <v-card-title class="text-h4"> Shanghaitech-China </v-card-title>
           <v-card-text class="body-1">
-            <p sytle="color: red">
+            <p>
               Vue (pronounced /vjuː/, like view) is a progressive framework for
               building user interfaces. Unlike other monolithic frameworks, Vue
               is designed from the ground up to be incrementally adoptable. The

@@ -1,2 +1,2 @@
 # igemwiki
-the main project of wiki page of  Shanghaitech, use vuetify.
+the main project of wiki page of ShanghaiTech, use vuetify.
