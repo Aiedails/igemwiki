@@ -109,5 +109,9 @@ export default {
 }
 p {
   margin: 0;
+  font-size: 1rem;
+}
+a, a:hover{
+  text-decoration: none !important;
 }
 </style>

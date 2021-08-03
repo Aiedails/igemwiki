@@ -36,7 +36,7 @@
         v-show="width <= 1264"
       ></v-app-bar-nav-icon>
       <!-- Home btn -->
-      <v-btn icon v-show="width <= 1264">
+      <v-btn icon v-show="width <= 1264" href="https://2021.igem.org/Team:ShanghaiTech_China" style="text-decoration: none; padding: 0;">
         <v-icon>mdi-home</v-icon>
       </v-btn>
 
@@ -66,10 +66,10 @@
             <v-btn plain v-bind="attrs" v-on="on" style="color: #1A237E;">Project</v-btn>
           </template>
           <v-list>
-            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Description">Description</v-list-item>
-            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Contribution">Contribution</v-list-item>
-            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Proof_Of_Concept">Proof Of Concept</v-list-item>
-            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Implementation">Implementation</v-list-item>
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Description">Description</v-list-item>
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Contribution">Contribution</v-list-item>
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Proof_Of_Concept">Proof Of Concept</v-list-item>
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Implementation">Implementation</v-list-item>
           </v-list>
         </v-menu>
         <v-menu
@@ -85,13 +85,13 @@
           </template>
 
           <v-list>
-            <v-list-item href="https://2020.igem.org/Team:ShanghaiTech_China/Design">Design</v-list-item>
-            <v-list-item link>Parts</v-list-item>
-            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Engineering">Engineering</v-list-item>
-            <v-list-item link>Protocols</v-list-item>
-            <v-list-item link>Experiments</v-list-item>
-            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Results">Results</v-list-item>
-            <v-list-item link>Safty</v-list-item>
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Design">Design</v-list-item>
+            <v-list-item class="body-1">Parts</v-list-item>
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Engineering">Engineering</v-list-item>
+            <v-list-item class="body-1" >Protocols</v-list-item>
+            <v-list-item class="body-1">Experiments</v-list-item>
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Results">Results</v-list-item>
+            <v-list-item class="body-1">Safty</v-list-item>
           </v-list>
         </v-menu>
         <v-menu
@@ -107,8 +107,8 @@
           </template>
 
           <v-list>
-            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Model">Modeling</v-list-item>
-            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Hardware">Hardware</v-list-item>
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Model">Modeling</v-list-item>
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Hardware">Hardware</v-list-item>
           </v-list>
         </v-menu>
         <v-menu
@@ -123,9 +123,9 @@
             <v-btn plain v-bind="attrs" v-on="on" style="color: #1A237E;">Human Practices</v-btn>
           </template>
           <v-list>
-            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices">Integrated HP</v-list-item>
-            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Education">Education</v-list-item>
-            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Entrepreneurship">Entrepreneurship</v-list-item>
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices">Integrated HP</v-list-item>
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Education">Education</v-list-item>
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Entrepreneurship">Entrepreneurship</v-list-item>
           </v-list>
         </v-menu>
         <v-menu
@@ -141,9 +141,9 @@
           </template>
 
           <v-list>
-            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Team">Members</v-list-item>
-            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Attributions">Attributions</v-list-item>
-            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Collaborations">Collaborations</v-list-item>
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Team">Members</v-list-item>
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Attributions">Attributions</v-list-item>
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Collaborations">Collaborations</v-list-item>
           </v-list>
         </v-menu>
       </template>
@@ -162,14 +162,14 @@
         </v-list-item-avatar>
 
         <v-list-item-content>
-          <v-list-item-title>Shanghaitech</v-list-item-title>
+          <v-list-item-title>ShanghaiTech</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
 
       <v-divider></v-divider>
       <!-- normal mobile nav-drawer. on-use now. -->
       <v-list dense>
-        <v-list-item link active-class="blue--text">
+        <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China" active-class="blue--text">
           <v-list-item-icon>
             <v-icon>mdi-home</v-icon>
           </v-list-item-icon>
@@ -181,19 +181,19 @@
             <v-list-item-title>Project</v-list-item-title>
           </template>
           <v-list>
-            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Description">
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Description">
               <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
               <v-list-item-title>Description</v-list-item-title>
             </v-list-item>
-            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Contribution">
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Contribution">
               <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
               <v-list-item-title>Contribution</v-list-item-title>
             </v-list-item>
-            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Proof_Of_Concept">
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Proof_Of_Concept">
               <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
               <v-list-item-title>Proof Of Concept</v-list-item-title>
             </v-list-item>
-            <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Implementation">
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Implementation">
               <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
               <v-list-item-title>Implementation</v-list-item-title>
             </v-list-item>
@@ -204,7 +204,7 @@
           <template v-slot:activator>
             <v-list-item-title>Wet lab</v-list-item-title>
           </template>
-          <v-list-item href="https://2020.igem.org/Team:ShanghaiTech_China/Design">
+          <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Design">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Design </v-list-item-title>
           </v-list-item>
@@ -212,7 +212,7 @@
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Parts </v-list-item-title>
           </v-list-item>
-          <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Engineering">
+          <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Engineering">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Engineering </v-list-item-title>
           </v-list-item>
@@ -224,7 +224,7 @@
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Experiments </v-list-item-title>
           </v-list-item>
-          <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Results">
+          <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Results">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Results </v-list-item-title>
           </v-list-item>
@@ -234,15 +234,15 @@
           </v-list-item>
         </v-list-group>
 
-        <v-list-group :value="false" prepend-icon="mdi-beaker-alert-outline">
+        <v-list-group :value="false" prepend-icon="mdi-cube-send">
           <template v-slot:activator>
             <v-list-item-title> Dry lab </v-list-item-title>
           </template>
-          <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Model">
+          <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Model">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Modeling </v-list-item-title>
           </v-list-item>
-          <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Hardware">
+          <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Hardware">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Hardware </v-list-item-title>
           </v-list-item>
@@ -252,15 +252,15 @@
           <template v-slot:activator>
             <v-list-item-title>Human Practices</v-list-item-title>
           </template>
-          <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices">
+          <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Human Practices </v-list-item-title>
           </v-list-item>
-          <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Education">
+          <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Education">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Education </v-list-item-title>
           </v-list-item>
-          <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Entrepreneurship">
+          <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Entrepreneurship">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Entrepreneurship </v-list-item-title>
           </v-list-item>
@@ -270,15 +270,15 @@
           <template v-slot:activator>
             <v-list-item-title>Team</v-list-item-title>
           </template>
-          <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Team">
+          <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Team">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Team </v-list-item-title>
           </v-list-item>
-          <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Attributions">
+          <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Attributions">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Attributions </v-list-item-title>
           </v-list-item>
-          <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China/Collaborations">
+          <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Collaborations">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Collaborations </v-list-item-title>
           </v-list-item>

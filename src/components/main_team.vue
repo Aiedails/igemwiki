@@ -3,9 +3,10 @@
   <!-- The final solution is to use v-col to manage the page. which may be better -->
   <v-row justify="center" style="margin: auto 40px">
     <v-col cols="2"></v-col>
+    <!-- No ` margin-top: 35px;` is required on iGEM server -->
     <v-col
       cols="2"
-      style="position: fixed; left: 35px; margin-top: 35px"
+      style="position: fixed; left: 35px;"
       v-show="width >= 1264"
     >
       <!-- 1264px is the width between md(960~1264) & lg(1264~1904) -->
@@ -67,6 +68,7 @@
             v-ripple
             @click="$vuetify.goTo('#description', options)"
             color="brown--text"
+            class="body-1"
           >
             Team members
           </v-container>
@@ -82,6 +84,7 @@
             v-ripple
             @click="$vuetify.goTo('#professor', options)"
             color="brown--text"
+            class="body-1"
           >
             Professors
           </v-container>
@@ -91,7 +94,7 @@
     <!-- cards -->
     <!-- ####################################################################### -->
     <!-- Below is really MAIN PART -->
-    <v-col cols="12" xs="12" sm="12" md="12" lg="8" style="margin-top: 35px">
+    <v-col cols="12" xs="12" sm="12" md="12" lg="8">
       <!-- this is used to make sure the col won't move when screen reach xl.
              by the test, the col will move "a col" left, so we use offset to eliminate it.
              but notice that the col will still get wider on the right.
@@ -120,7 +123,7 @@
         <v-container style="padding: 20px">
           <v-card-title class="text-h4"> Shanghaitech-China </v-card-title>
           <v-card-text class="body-1">
-            <p sytle="color: red">
+            <p class="body-1">
               Vue (pronounced /vjuː/, like view) is a progressive framework for
               building user interfaces. Unlike other monolithic frameworks, Vue
               is designed from the ground up to be incrementally adoptable. The
@@ -130,7 +133,7 @@
               sophisticated Single-Page Applications when used in combination
               with modern tooling and supporting libraries.
             </p>
-            <p>
+            <p class="body-1">
               We are a friendly, kind family, always willing to help each other.
             </p>
           </v-card-text>
@@ -206,7 +209,7 @@
           <v-card-title class="text-h4"> Creative Professor </v-card-title>
           <v-card-text class="body-1">
             <v-card-title>Simplicity</v-card-title>
-            <p>
+            <p class="body-1">
               Arch Linux defines simplicity as without unnecessary additions or
               modifications. It ships software as released by the original
               developers (upstream) with minimal distribution-specific
@@ -215,7 +218,7 @@
               backported bug fixes that are obsoleted by the project's next
               release.
             </p>
-            <p>
+            <p class="body-1">
               In a similar fashion, Arch ships the configuration files provided
               by upstream with changes limited to distribution-specific issues
               like adjusting the system file paths. It does not add automation
@@ -227,34 +230,34 @@
               shell and a text editor.
             </p>
             <v-card-title>Modernity</v-card-title>
-            <p>
+            <p class="body-1">
               Arch Linux strives to maintain the latest stable release versions
               of its software as long as systemic package breakage can be
               reasonably avoided. It is based on a rolling-release system, which
               allows a one-time installation with continuous upgrades.
             </p>
-            <p>
+            <p class="body-1">
               Arch incorporates many of the newer features available to
               GNU/Linux users, including the systemd init system, modern file
               systems, LVM2, software RAID, udev support and initcpio (with
               mkinitcpio), as well as the latest available kernels.
             </p>
             <v-card-title>Pragmatism</v-card-title>
-            <p>
+            <p class="body-1">
               Arch is a pragmatic distribution rather than an ideological one.
               The principles here are only useful guidelines. Ultimately, design
               decisions are made on a case-by-case basis through developer
               consensus. Evidence-based technical analysis and debate are what
               matter, not politics or popular opinion.
             </p>
-            <p>
+            <p class="body-1">
               The large number of packages and build scripts in the various Arch
               Linux repositories offer free and open source software for those
               who prefer it, as well as proprietary software packages for those
               who embrace functionality over ideology.
             </p>
-            <p>This is a not rather long paragraph.</p>
-            <p>We can even add a second line.</p>
+            <p class="body-1">This is a not rather long paragraph.</p>
+            <p class="body-1">We can even add a second line.</p>
           </v-card-text>
         </v-container>
       </v-card>
