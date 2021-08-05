@@ -1,54 +1,20 @@
 <template>
-  <!-- disabled href="#..." in this components, because of bad experience. -->
-  <!-- The final solution is to use v-col to manage the page. which may be better -->
-  <v-row justify="center" style="margin: auto 40px">
-    <v-col cols="2"></v-col>
-    <v-col
-      cols="2"
-      style="position: fixed; left: 35px; margin-top: 35px"
-      v-show="width >= 1264"
+  <div>
+    <!-- disabled href="#..." in this components, because of bad experience. -->
+    <!-- The final solution is to use v-col to manage the page. which may be better -->
+    <v-row
+      justify="center"
+      style="margin: auto 40px"
     >
-      <v-skeleton-loader
-        v-show="firstload"
-        type="list-item-two-line@2"
-      ></v-skeleton-loader>
-    </v-col>
-    <!-- cards -->
+    <v-card height=10000px
+      color = red
+    >
     <!-- ####################################################################### -->
     <!-- Below is really MAIN PART -->
-    <v-col cols="12" xs="12" sm="12" md="12" lg="8" style="margin-top: 35px">
-      <!-- this is used to make sure the col won't move when screen reach xl.
-             by the test, the col will move "a col" left, so we use offset to eliminate it.
-             but notice that the col will still get wider on the right.
-        -->
-      <!-- This is a card for text. -->
-      <v-skeleton-loader
-        v-show="firstload"
-        type="image, article@3"
-      ></v-skeleton-loader>
-
-      <v-skeleton-loader
-        v-show="firstload"
-        type="list-item-avatar-three-line@7"
-      ></v-skeleton-loader>
-
-      <!-- Used to present Professors -->
-
-      <v-skeleton-loader
-        v-show="firstload"
-        type="image, article@5"
-      ></v-skeleton-loader>
-
-      <!-- Notes: Don't use `a` on description cards. Cause ugly ripple and grey color after click -->
-      <v-skeleton-loader
-        v-show="firstload"
-        type="list-item-avatar-three-line@3"
-      ></v-skeleton-loader>
-    </v-col>
-    <v-col cols="2" v-if="width >= 1264"></v-col>
+    </v-card>
+    </v-row>
 
     <!-- The back-to btn, use the `istop` to judge show or not. -->
-
     <v-container>
       <v-fab-transition>
         <v-btn
@@ -68,7 +34,7 @@
         </v-btn>
       </v-fab-transition>
     </v-container>
-  </v-row>
+  </div>
 </template>
 
 <script>

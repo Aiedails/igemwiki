@@ -10,7 +10,7 @@
       style="left: 9px; top: 25px; right: 9px"
       app
       dark
-      class="blue lighten-4"
+      class="primary"
       :collapse="width < 1264"
       :class="width < 1264 ? 'small' : ''"
       overflow-hidden
