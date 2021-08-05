@@ -25,14 +25,14 @@
 
     <navbar v-resize="onResize" :width="this.width"></navbar>
     <v-main id="main">
-      <main_team :width="this.width"></main_team>
+      <mainpart :width="this.width"></mainpart>
     </v-main>
     <temfooter></temfooter>
   </v-app>
 </template>
 
 <script>
-import main_team from "./components/main_team";
+import mainpart from "./components/mainpart";
 import navbar from "./components/navbar";
 import temfooter from "./components/teamfooter";
 
@@ -40,7 +40,7 @@ export default {
   name: "App",
 
   components: {
-    main_team,
+    mainpart,
     navbar,
     temfooter,
   },

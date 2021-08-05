@@ -339,7 +339,7 @@
 //So use VueMotion in simple animate and gsap for more complex one.
 
 export default {
-  name: "main_team",
+  name: "mainpart",
   props: {
     width: Number,
   },
