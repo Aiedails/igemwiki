@@ -343,9 +343,6 @@ export default {
   props: {
     width: Number,
   },
-  emits: {
-    isseen: Boolean,
-  },
 
   data: () => ({
     pos: 1, //used for v-stepper
