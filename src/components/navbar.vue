@@ -10,7 +10,7 @@
       style="left: 9px; top: 25px; right: 9px"
       app
       dark
-      class="blue lighten-4"
+      class="primary"
       :collapse="width < 1264"
       :class="width < 1264 ? 'small' : ''"
       overflow-hidden
@@ -26,7 +26,7 @@
       <template v-slot:img="{ props }">
         <v-img
           v-bind="props"
-          gradient="to top right, rgba(166,230,255,.7), rgba(41,121,255,.7)"
+          gradient="to top right, rgba(89,182,172,.6), #80DEEA"
           @load="loading=true"
         ></v-img> <!-- blue lighten-3 #90CAF6 -->
       </template>
