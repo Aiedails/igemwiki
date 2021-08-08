@@ -9,7 +9,6 @@
     <v-app-bar
       style="left: 9px; top: 25px; right: 9px"
       app
-      dark
       class="primary"
       :collapse="width < 1264"
       :class="width < 1264 ? 'small' : ''"
@@ -26,7 +25,7 @@
       <template v-slot:img="{ props }">
         <v-img
           v-bind="props"
-          gradient="to top right, rgba(89,182,172,.6), #80DEEA"
+          gradient="to top right, rgba(129,212,250,.7), #80DEEA"
           @load="loading=true"
         ></v-img> <!-- blue lighten-3 #90CAF6 -->
       </template>
@@ -40,15 +39,14 @@
         <v-icon>mdi-home</v-icon>
       </v-btn>
 
-      <v-toolbar-title style="padding-left: 16px; padding-bottom: 0; color: #1A237E" >
+      <v-toolbar-title style="padding-left: 16px; padding-bottom: 0;">
         Title
       </v-toolbar-title >
       <!-- use <v-toolbar-title> instead of <v-app-bar-title> to prevent displaying "Ti..." -->
       <template v-slot:extension>
         <v-btn 
           plain 
-          style="color: #1A237E;" 
-          href="https://2021.igem.org/Team:ShanghaiTech_China/Description"
+          href="https://2021.igem.org/Team:ShanghaiTech_China/"
         >
           HOME
         </v-btn>
@@ -63,7 +61,7 @@
           z-index="0"
         >
           <template v-slot:activator="{ on, attrs }">
-            <v-btn plain v-bind="attrs" v-on="on" style="color: #1A237E;">Project</v-btn>
+            <v-btn plain v-bind="attrs" v-on="on">Project</v-btn>
           </template>
           <v-list>
             <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Description">Description</v-list-item>
@@ -81,7 +79,7 @@
           z-index="0"
         >
           <template v-slot:activator="{ on, attrs }">
-            <v-btn plain v-bind="attrs" v-on="on" style="color: #1A237E;">Wet lab</v-btn>
+            <v-btn plain v-bind="attrs" v-on="on">Wet lab</v-btn>
           </template>
 
           <v-list>
@@ -103,7 +101,7 @@
           z-index="0"
         >
           <template v-slot:activator="{ on, attrs }">
-            <v-btn plain v-bind="attrs" v-on="on" style="color: #1A237E;">Dry lab</v-btn>
+            <v-btn plain v-bind="attrs" v-on="on">Dry lab</v-btn>
           </template>
 
           <v-list>
@@ -120,7 +118,7 @@
           z-index="0"
         >
           <template v-slot:activator="{ on, attrs }">
-            <v-btn plain v-bind="attrs" v-on="on" style="color: #1A237E;">Human Practices</v-btn>
+            <v-btn plain v-bind="attrs" v-on="on">Human Practices</v-btn>
           </template>
           <v-list>
             <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices">Integrated HP</v-list-item>
@@ -137,7 +135,7 @@
           z-index="0"
         >
           <template v-slot:activator="{ on, attrs }">
-            <v-btn plain v-bind="attrs" v-on="on" style="color: #1A237E;">Team</v-btn>
+            <v-btn plain v-bind="attrs" v-on="on">Team</v-btn>
           </template>
 
           <v-list>

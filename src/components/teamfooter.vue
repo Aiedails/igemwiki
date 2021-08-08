@@ -4,7 +4,6 @@
       <v-btn
         v-for="link in links"
         :key="link.name"
-        color="indigo"
         text
         rounded
         class="my-2"
@@ -12,7 +11,7 @@
       >
         {{ link.name }}
       </v-btn>
-      <v-col class="primary darken-1 py-4 text-center indigo--text body-1" cols="12">
+      <v-col class="primary darken-1 py-4 text-center body-1" cols="12">
         {{ new Date().getFullYear() }} - <strong>ShanghaiTech</strong>
       </v-col>
     </v-row>

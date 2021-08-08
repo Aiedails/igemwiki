@@ -1,12 +1,12 @@
 <template>
   <!-- disabled href="#..." in this components, because of bad experience. -->
   <!-- The final solution is to use v-col to manage the page. which may be better -->
-  <v-row justify="center" style="margin: auto 40px">
+  <v-row justify="center" style="margin: auto 3%"> <!-- 3% on v-row and 2% on fixed v-col work well. -->
     <v-col cols="2"></v-col>
     <!-- No ` margin-top: 35px;` is required on iGEM server -->
     <v-col
       cols="2"
-      style="position: fixed; left: 35px;"
+      style="position: fixed; left: 2%;"
       v-show="width >= 1264"
     >
       <!-- 1264px is the width between md(960~1264) & lg(1264~1904) -->
