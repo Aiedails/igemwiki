@@ -1,5 +1,11 @@
 <template>
-  <v-app dark style="background-color: #ebecee" id="app">
+  <v-app
+    dark
+    style="
+      background-image: linear-gradient(#E5F3FA, #9CD4CB 8%, #89BDD3 34%, #88BBBF 68%, #29B6F6);
+    "
+    id="app"
+  >
     <!-- the carousal -->
     <!--
     <v-card elevation="24" width="380" class="mx-auto">
@@ -24,9 +30,7 @@
     -->
 
     <navbar v-resize="onResize" :width="this.width"></navbar>
-    <v-main id="main">
-      <mainpart :width="this.width"></mainpart>
-    </v-main>
+    <mainpart :width="this.width" style="height: 17000px"></mainpart>
     <temfooter></temfooter>
   </v-app>
 </template>
@@ -47,6 +51,7 @@ export default {
 
   data: () => ({
     width: 1300,
+    height: 1000,
     istop: true,
     /* used for the carousel.
     colors: [
@@ -66,9 +71,7 @@ export default {
   methods: {
     onResize() {
       this.width = window.innerWidth; //While nav-bar collapses, let the v-main go up.
-      if (this.width <= 1264)
-        document.getElementById("main").style.top = "-140px";
-      else document.getElementById("main").style.top = "0px";
+      this.height = window.innerHeight;
     },
   },
   computed: {
@@ -89,7 +92,7 @@ export default {
 
 <style>
 ::selection {
-  background: #EF9A9A;
+  background: #ef9a9a;
   color: white;
 }
 #main {
@@ -111,7 +114,8 @@ p {
   margin: 0;
   font-size: 1rem;
 }
-a, a:hover{
+a,
+a:hover {
   text-decoration: none !important;
 }
 </style>
