@@ -89,7 +89,7 @@ export default {
 
 <style>
 ::selection {
-  background: #EF9A9A;
+  background: #4dd0e1;
   color: white;
 }
 #main {
@@ -111,7 +111,26 @@ p {
   margin: 0;
   font-size: 1rem;
 }
-a, a:hover{
+a,
+a:hover {
   text-decoration: none !important;
+}
+.list_number {
+  border-width: 0 0 0 4px;
+  border-color: #81d4fa !important;
+  border-style: solid;
+  padding: 0;
+}
+li::marker {
+  color: #81d4fa;
+}
+/*use to change the size of v-stepper-step's sign.*/
+.v-stepper__step__step {
+  height: 16px;
+  min-width: 16px;
+  width: 16px;
+}
+.v-stepper__step__step .v-icon.v-icon {
+  font-size: 0.75rem;
 }
 </style>

@@ -1,312 +1,436 @@
+
 <template>
-  <!-- disabled href="#..." in this components, because of bad experience. -->
-  <!-- The final solution is to use v-col to manage the page. which may be better -->
-  <v-row justify="center" style="margin: auto 3%"> <!-- 3% on v-row and 2% on fixed v-col work well. -->
+  <v-row justify="center" style="margin: auto 40px">
     <v-col cols="2"></v-col>
-    <!-- No ` margin-top: 35px;` is required on iGEM server -->
-    <v-col
-      cols="2"
-      style="position: fixed; left: 2%;"
-      v-show="width >= 1264"
-    >
-      <!-- 1264px is the width between md(960~1264) & lg(1264~1904) -->
-      <!-- steppers! Put here as reference.
-      <v-stepper v-model="e6" vertical>
-        <v-stepper-step :complete="e6 > 1" step="1">
-          Select an app
-          <small>Summarize if needed</sm>all>
-        </v-stepper-step>
-
-        <v-stepper-content step="1">
-          <v-card class="mb-12" outlined>
-            <v-list style="padding: 0">
-              <v-list-item link>aaa</v-list-item>
-              <v-list-item link>aaa</v-list-item>
-            </v-list>
-          </v-card>
-        </v-stepper-content>
-
-        <v-stepper-step :complete="e6 > 2" step="2">
-          Configure analytics for this app
-        </v-stepper-step>
-
-        <v-stepper-content step="2">
-          <v-card color="grey lighten-1" class="mb-12" height="200px"></v-card>
-        </v-stepper-content>
-
-        <v-stepper-step :complete="e6 > 3" step="3">
-          Select an ad format and name ad unit
-        </v-stepper-step>
-
-        <v-stepper-content step="3">
-          <v-card color="grey lighten-1" class="mb-12" height="200px"></v-card>
-        </v-stepper-content>
-
-        <v-stepper-step step="4"> View setup instructions </v-stepper-step>
-        <v-stepper-content step="4">
-          <v-card color="grey lighten-1" class="mb-12" height="200px"></v-card>
-        </v-stepper-content>
-      </v-stepper>
-       -->
+    <v-col cols="2" style="position: fixed; left: 35px" v-show="width >= 1264">
       <v-skeleton-loader
         v-show="firstload"
         type="list-item-two-line@2"
       ></v-skeleton-loader>
-      <v-stepper
-        v-show="!firstload"
-        v-model="pos"
-        vertical
-        style="transition: all 1s ease 1s"
-      >
-        <v-stepper-step
-          :complete="pos > 1"
-          step="1"
-          style="transition: all 1s ease 1s"
-          color="primary"
-        >
-          <v-container
-            v-ripple
-            @click="$vuetify.goTo('#description', options)"
-            color="brown--text"
-            class="body-1"
+      <v-hover>
+        <template v-slot:default="{ hover }">
+          <v-stepper
+            :class="`elevation-${hover ? 8 : 2}`"
+            class="transition-swing"
+            v-show="!firstload"
+            v-model="pos"
+            vertical
+            non-linear
+            style="transition: all 1s ease 1s; padding-bottom: 8px"
           >
-            Team members
-          </v-container>
-          <small>Some thing here...</small>
-        </v-stepper-step>
-        <v-stepper-step
-          :complete="pos > 2"
-          step="2"
-          style="transition: all 1s"
-          color="primary"
-        >
-          <v-container
-            v-ripple
-            @click="$vuetify.goTo('#professor', options)"
-            color="brown--text"
-            class="body-1"
-          >
-            Professors
-          </v-container>
-        </v-stepper-step>
-      </v-stepper>
+            <v-stepper-step
+              editable
+              edit-icon="1"
+              step="1"
+              @click="$vuetify.goTo('#prologue', options)"
+              :complete="pos > 1"
+              style="transition: all 1s ease 1s"
+              color="primary"
+              class="body-1"
+            >
+              Prologue
+            </v-stepper-step>
+            <v-stepper-step
+              editable
+              edit-icon="2"
+              step="2"
+              @click="$vuetify.goTo('#lab_safety', options)"
+              :complete="pos > 2"
+              style="transition: all 1s"
+              color="primary"
+              class="body-1"
+            >
+              Lab Safety
+            </v-stepper-step>
+            <v-stepper-step
+              editable
+              edit-icon="3"
+              step="3"
+              @click="$vuetify.goTo('#project_design', options)"
+              :complete="pos > 3"
+              style="transition: all 1s"
+              color="primary"
+              class="body-1"
+            >
+              Project_design
+            </v-stepper-step>
+          </v-stepper>
+        </template>
+      </v-hover>
     </v-col>
-    <!-- cards -->
     <!-- ####################################################################### -->
-    <!-- Below is really MAIN PART -->
     <v-col cols="12" xs="12" sm="12" md="12" lg="8">
-      <!-- this is used to make sure the col won't move when screen reach xl.
-             by the test, the col will move "a col" left, so we use offset to eliminate it.
-             but notice that the col will still get wider on the right.
-        -->
       <!-- This is a card for text. -->
       <v-skeleton-loader
         v-show="firstload"
         type="image, article@3"
       ></v-skeleton-loader>
-      <v-card
-        v-ripple="{ class: `primary--text` }"
-        style="text-decoration: none"
-        hover
-        id="description"
-        v-intersect="onIntersect"
-        v-scroll="updatepos"
-        v-show="!firstload"
-      >
-        <!-- Brown color? I prefer black. To turn it back to black, simply delete the line above -->
-        <!-- This `v-intersect` is used to emit the signal "You can see me!" -->
-        <v-img src="@/assets/temp_sht.jpg">
-          <template v-slot:placeholder>
-            <v-skeleton-loader type="image"></v-skeleton-loader>
-          </template>
-        </v-img>
-        <v-container style="padding: 20px">
-          <v-card-title class="text-h4"> Shanghaitech-China </v-card-title>
-          <v-card-text class="body-1">
-            <p class="body-1">
-              Vue (pronounced /vjuː/, like view) is a progressive framework for
-              building user interfaces. Unlike other monolithic frameworks, Vue
-              is designed from the ground up to be incrementally adoptable. The
-              core library is focused on the view layer only, and is easy to
-              pick up and integrate with other libraries or existing projects.
-              On the other hand, Vue is also perfectly capable of powering
-              sophisticated Single-Page Applications when used in combination
-              with modern tooling and supporting libraries.
-            </p>
-            <p class="body-1">
-              We are a friendly, kind family, always willing to help each other.
-            </p>
-          </v-card-text>
-        </v-container>
-      </v-card>
-      <v-skeleton-loader
-        v-show="firstload"
-        type="list-item-avatar-three-line@7"
-      ></v-skeleton-loader>
-      <v-card
-        v-show="!firstload"
-        hover
-        style="margin: 35px auto"
-        v-motion
-        :initial="{
-          opacity: 0,
-          y: 100,
-        }"
-        :enter="{
-          opacity: 1,
-          y: 0,
-        }"
-      >
-        <div
-          v-for="(person, index) in infor"
-          :key="index"
-          style="padding: 0; margin: 0"
-        >
-          <v-row align="center" dense justify="start" no-gutters>
-            <v-col style="max-width: 182px" cols="2">
-              <!-- 150 + 2 * 16 -->
-              <v-list-item-avatar
-                :size="width >= 300 ? '150px' : '80px'"
-                style="margin: 16px"
-              >
-                <v-img :src="person.photo"></v-img>
-              </v-list-item-avatar>
-            </v-col>
-            <!-- Abandon dividers -->
-            <v-col cols="12" sm="6" md="8" lg="8" xl="10">
-              <v-container>
-                <v-card-title>{{ person.name }}</v-card-title>
-                <v-card-subtitle>{{ person.role }}</v-card-subtitle>
-                <v-card-text>{{ person.discription }}</v-card-text>
-              </v-container>
-            </v-col>
-            <v-spacer></v-spacer>
-          </v-row>
-          <v-divider></v-divider>
-        </div>
-      </v-card>
-      <!-- Used to present Professors -->
+      <v-hover>
+        <template v-slot:default="{ hover }">
+          <v-card
+            :class="`elevation-${hover ? 8 : 2}`"
+            class="transition-swing"
+            style="text-decoration: none"
+            id="description"
+            v-intersect="onIntersect"
+            v-scroll="updatepos"
+            v-show="!firstload"
+          >
+            <v-container style="padding: 20px 3%">
+              <v-card-title class="text-h4" id="prologue">
+                Prologue
+              </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  Throughout the experiment, the members of Shanghaitech_China
+                  iGEM team put safety the first. During our experiment, experts
+                  who provide supervision and help to manage the risks we
+                  identified. After receiving strict experimental training, our
+                  experimenters can perform various operations with great care
+                  and proficiency. We will be able to successfully complete all
+                  the experiments in our project on the premise of ensuring our
+                  own safety, environmental safety, and microbial safety. All of
+                  our experimental plans and contents are under the guidance of
+                  PI and they confirmed that our experimental procedure does not
+                  have any biosafety concerns in the laboratory.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h4" id="lab_safety">
+                Lab Safety
+              </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  This time, our experiments were done in the molecular
+                  laboratory and the cell laboratory, whose laboratory levels
+                  were level1 and level2 respectively. In order to prevent
+                  cross-contamination, we arranged two different teams of
+                  students to complete these experiments respectively. In the
+                  process of the experiment, we strictly follow the university
+                  of Science and Technology laboratory safety inspection
+                  management method. In the laboratory, we have done including
+                  but not limited to:
+                </p>
+                <v-list style="padding-left: 16px">
+                  <v-list-item>
+                    <li class="body-2">
+                      The laboratory has a record of safety education and
+                      training, and all personnel must pass the laboratory
+                      safety examination.
+                    </li>
+                  </v-list-item>
+                  <v-list-item>
+                    <li class="body-2">
+                      The instruction of safety information board must be clear,
+                      with safety inspection and health duty management system.
+                      The ventilation system of the experimental site is in
+                      normal operation, the fume hood and bio-safety cabinet can
+                      be used normally, and the cabinet door is opened at an
+                      appropriate height. Put the goods neatly, do not pile up
+                      debris. When entering the laboratory, you should wear
+                      personal protective equipment as required. You should not
+                      leave the laboratory wearing PPE such as contaminated lab
+                      clothes and gloves. There is no food or drink in the
+                      laboratory. No accommodations are allowed in the
+                      laboratory.
+                    </li>
+                  </v-list-item>
+                  <v-list-item>
+                    <li class="body-2">
+                      The laboratory has an emergency evacuation route map, and
+                      the fire escape is unobstructed. The laboratory is
+                      equipped with suitable fire-fighting equipment, emergency
+                      spray, eye wash and first aid kit, which are regularly
+                      maintained.
+                    </li>
+                  </v-list-item>
+                  <v-list-item>
+                    <li class="body-2">
+                      The laboratory shall be insulated from electricity and
+                      shall not use electrical appliances in a dangerous manner.
+                    </li>
+                  </v-list-item>
+                  <v-list-item>
+                    <li class="body-2">
+                      The hazardous chemicals comply with the relevant
+                      regulations of the state and the school. Laboratory
+                      personnel should understand the hazardous characteristics
+                      of the chemicals used, safety protection knowledge,
+                      storage methods, waste treatment, emergency treatment
+                      methods, etc.
+                    </li>
+                  </v-list-item>
+                  <v-list-item>
+                    <li class="body-2">
+                      Do the corresponding experiments in the corresponding
+                      biological laboratory.
+                    </li>
+                  </v-list-item>
+                  <v-list-item>
+                    <li class="body-2">
+                      Hazardous waste and general waste shall be stored
+                      separately, and hazardous waste labels shall be posted.
+                    </li>
+                  </v-list-item>
+                  <v-list-item>
+                    <li class="body-2">
+                      Lab coats, gloves, glasses and masks must be worn when
+                      entering the lab.
+                    </li>
+                  </v-list-item>
+                </v-list>
+                <p class="body-1"></p>
+                <p class="body-1">Especially in cell lab:</p>
+                <v-list>
+                  <v-list-item>
+                    <li class="body-2">
+                      The cell lab is equipped with two transition rooms and is
+                      sterilized with ultraviolet lamps when no one is around.
+                      The laboratory is specially disinfected once every half a
+                      month, and the ultraviolet lamp is used when there is no
+                      person.
+                    </li>
+                  </v-list-item>
+                  <v-list-item>
+                    <li class="body-2">
+                      When entering the cell room, one should wear a head cover,
+                      a mask, special glasses and gloves, and wear a cell lab
+                      coat and sterilized slippers to ensure that the exposed
+                      skin is minimized. People with open wounds should not
+                      enter the cell room. This not only protects ourselves, but
+                      also protects the cell.
+                    </li>
+                  </v-list-item>
+                  <v-list-item>
+                    <li class="body-2">
+                      All experiments were performed in a biosafety cabinet.
+                    </li>
+                  </v-list-item>
+                </v-list>
+                <p class="body-1">
+                  For some other important details, we also did a good job.
+                  Before entering the laboratory, we first received the most
+                  general laboratory training, through which we were allowed to
+                  enter the laboratory. Next, we will familiarize ourselves with
+                  each experiment with our instructor before doing the
+                  experiment ourselves. In addition, we also need special
+                  training before using each instrument.
+                </p>
+                <p class="body-1">
+                  In the molecular laboratory, we use the ultra-clean table, PCR
+                  instrument, electrophoresis instrument, double steam machine,
+                  centrifuge, metal bath, water bath, bacteria shaking machine
+                  and nanodrop. In the cell lab, we use biosafety cabinets, cell
+                  incubators and microscopes. Before operating the equipment, we
+                  must read the operation guide and accept the teacher's
+                  instruction. When operating the equipment, we must strictly
+                  follow the instructions, stay next to the equipment all the
+                  time during use, and close it in time after use.
+                </p>
+                <p class="body-1">
+                  As mentioned before, our laboratories are regularly
+                  disinfected with 75% ethanol, well laid out, and the items are
+                  in good order and not crowded.
+                </p>
+                <p class="body-1">
+                  In terms of waste recycling, we will use disinfectant to kill
+                  the remaining bacteria after the experiment, and then pour it
+                  down the drain to make sure it is sterile. For the waste of
+                  molecular laboratory, we put it into the garbage bag of
+                  hazardous waste and give it to the professional company to
+                  deal with regularly. For cell lab waste, we put it in a closed
+                  container and give it to a professional company to deal with.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h4" id="project_design">
+                Project Design
+              </v-card-title>
+              <v-card-title class="text-h5">
+                General microorganism information and general project design
+              </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  For all E. coli, which belongs to risk group 1, we get
+                  commercial versions from companies, including Top10, Dh5α,
+                  Bl21 and stbl3. They are used to expand the number of plasmids
+                  and express our proteins of interest.
+                </p>
+                <p class="body-1">
+                  According to our project, in addition to the more secure E.
+                  coli, we need two homo sapiens belonging to the risk group 2,
+                  which are HUVECs and HEK293T. And we cultivate them in cells
+                  lab. We get these cells from some labs of our school, which
+                  means we have lots of experience to cultivate them and protect
+                  ourselves.
+                </p>
 
-      <v-skeleton-loader
-        v-show="firstload"
-        type="image, article@5"
-      ></v-skeleton-loader>
-      <v-card
-        v-show="!firstload"
-        v-ripple="{ class: `primary--text` }"
-        style="margin: 35px auto; text-decoration: none"
-        class="white"
-        hover
-        id="professor"
-        v-scroll="updatepos"
-      >
-        <v-img src="@/assets/temp_prof.jpg">
-          <template v-slot:placeholder>
-            <v-skeleton-loader type="image"></v-skeleton-loader>
-          </template>
-        </v-img>
-        <v-container style="padding: 20px">
-          <v-card-title class="text-h4"> Creative Professor </v-card-title>
-          <v-card-text class="body-1">
-            <v-card-title>Simplicity</v-card-title>
-            <p class="body-1">
-              Arch Linux defines simplicity as without unnecessary additions or
-              modifications. It ships software as released by the original
-              developers (upstream) with minimal distribution-specific
-              (downstream) changes: patches not accepted by upstream are
-              avoided, and Arch's downstream patches consist almost entirely of
-              backported bug fixes that are obsoleted by the project's next
-              release.
-            </p>
-            <p class="body-1">
-              In a similar fashion, Arch ships the configuration files provided
-              by upstream with changes limited to distribution-specific issues
-              like adjusting the system file paths. It does not add automation
-              features such as enabling a service simply because the package was
-              installed. Packages are only split when compelling advantages
-              exist, such as to save disk space in particularly bad cases of
-              waste. GUI configuration utilities are not officially provided,
-              encouraging users to perform most system configuration from the
-              shell and a text editor.
-            </p>
-            <v-card-title>Modernity</v-card-title>
-            <p class="body-1">
-              Arch Linux strives to maintain the latest stable release versions
-              of its software as long as systemic package breakage can be
-              reasonably avoided. It is based on a rolling-release system, which
-              allows a one-time installation with continuous upgrades.
-            </p>
-            <p class="body-1">
-              Arch incorporates many of the newer features available to
-              GNU/Linux users, including the systemd init system, modern file
-              systems, LVM2, software RAID, udev support and initcpio (with
-              mkinitcpio), as well as the latest available kernels.
-            </p>
-            <v-card-title>Pragmatism</v-card-title>
-            <p class="body-1">
-              Arch is a pragmatic distribution rather than an ideological one.
-              The principles here are only useful guidelines. Ultimately, design
-              decisions are made on a case-by-case basis through developer
-              consensus. Evidence-based technical analysis and debate are what
-              matter, not politics or popular opinion.
-            </p>
-            <p class="body-1">
-              The large number of packages and build scripts in the various Arch
-              Linux repositories offer free and open source software for those
-              who prefer it, as well as proprietary software packages for those
-              who embrace functionality over ideology.
-            </p>
-            <p class="body-1">This is a not rather long paragraph.</p>
-            <p class="body-1">We can even add a second line.</p>
-          </v-card-text>
-        </v-container>
-      </v-card>
-      <!-- Notes: Don't use `a` on description cards. Cause ugly ripple and grey color after click -->
-      <v-skeleton-loader
-        v-show="firstload"
-        type="list-item-avatar-three-line@3"
-      ></v-skeleton-loader>
-      <v-card
-        v-show="!firstload"
-        hover
-        style="margin: 35px auto"
-        v-motion
-        :initial="{
-          opacity: 0,
-          y: 100,
-        }"
-        :enter="{
-          opacity: 1,
-          y: 0,
-        }"
-      >
-        <div
-          v-for="(person, index) in prof"
-          :key="index"
-          style="padding: 0; margin: 0"
-        >
-          <v-row align="center" dense justify="start" no-gutters>
-            <v-col style="max-width: 182px" cols="2">
-              <!-- 150 + 2 * 16 -->
-              <v-list-item-avatar
-                :size="width >= 300 ? '150px' : '80px'"
-                style="margin: 16px"
-              >
-                <v-img :src="person.photo"></v-img>
-              </v-list-item-avatar>
-            </v-col>
-            <v-col cols="12" sm="6" md="8" lg="8" xl="10">
-              <v-container>
-                <v-card-title>{{ person.name }}</v-card-title>
-                <v-card-subtitle>{{ person.role }}</v-card-subtitle>
-                <v-card-text>{{ person.discription }}</v-card-text>
-              </v-container>
-            </v-col>
-            <v-spacer></v-spacer>
-          </v-row>
-          <v-divider></v-divider>
-        </div>
-      </v-card>
+                <p class="body-1">
+                  Our final constructed HEK-293T cell line is meant to live in
+                  the hydro gel and it can sense the mechanical force from the
+                  hydro gel to regulate the calcium signal cascade, which will
+                  result in the expression of related enzyme to degrade hydro
+                  gel.
+                </p>
+                <p class="body-1">
+                  So our experiments are divided into three parts:
+                </p>
+                <v-list class="list_number">
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <v-list-item-title class="body-2">
+                        1. build the calcium signal pathway.
+                      </v-list-item-title>
+                      <div style="padding-left: 16px" class="body-2">
+                        Overexpress piezo1 to improve the sensitivity for
+                        mechanical force: We get the constructed piezo1 plasmid
+                        from other lab and infect 293T cell lines by liposome;
+                        detect the influx of calcium: to make sure the piezo1
+                        can be activated by mechanical force from hydro gel, we
+                        use a commercial calcium probe to indicate the cytosol
+                        calcium concentration; the expression of downstream
+                        proteins of interest: we will construct a plasmid that
+                        can be regulated by calcium signal pathway.
+                      </div>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-content>
+                      <v-list-item-title class="body-2">
+                        2. test the living state of HEK-293T in hydro gel.
+                      </v-list-item-title>
+                      <div style="padding-left: 16px" class="body-2">
+                        We put cells such as HUVECs line into hydro gel to
+                        observe the cell state and how long can it live in the
+                        gel; Improve the hydro gel formulation to improve the
+                        living state of 293T.
+                      </div>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-content>
+                      <v-list-item-title class="body-2">
+                        3. connect HEK-293T to hydro gel.
+                      </v-list-item-title>
+                      <div style="padding-left: 16px" class="body-2">
+                        We want to achieve high quality and high intensity in
+                        hydro gel, so we want to add mussel mucin(mefp5) to
+                        improve the intensity. We will obtain mefp5 by protein
+                        purification (use BL21 expression system).
+                      </div>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-list>
+              </v-card-text>
+              <v-card-title class="text-h5">
+                Specific project design
+              </v-card-title>
+              <v-card-title class="text-h5"> Detection </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  There exist some risks. In molecular experiments, we engineer
+                  E. coli. If E. coli enters the environment, resistance genes
+                  may be lost, affecting other microbes in the environment. In
+                  addition, E. coli may proliferate somewhere and upset the
+                  biological balance. But it hardly affects people.
+                </p>
+                <p class="body-1">
+                  In cell experiments, if our modified cells enter the body
+                  through an open wound, it may have a bad effect on the body.
+                  But if it gets into the environment, which is almost
+                  impossible, fragile cells can't survive in the environment, so
+                  it doesn't have an impact on the environment.
+                </p>
+                <p class="body-1">
+                  Therefore, we need to take effective measures to avoid these
+                  problems.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h5"> Prevention </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  We will use disinfectant to kill the remaining bacteria after
+                  the experiment, and then pour it down the drain to make sure
+                  it is sterile. When entering the cell room, one should wear a
+                  head cover, a mask, special glasses, and gloves, and wear a
+                  cell lab coat and sterilized slippers to ensure that the
+                  exposed skin is minimized.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h5">
+                Use of harmful reagents and procedures
+              </v-card-title>
+              <v-card-title class="text-h6"> Detection </v-card-title>
+              <v-card-text>
+                <v-list>
+                  <v-list-item>
+                    <li class="body-2">
+                      Being exposed to ultraviolet for a long time, which may
+                      cause danger to both skin and eyes, which may occur when
+                      you are taking photo of gel or forget to turn off the
+                      ultraviolet light in clean bench
+                    </li>
+                  </v-list-item>
+                  <v-list-item>
+                    <li class="body-2">
+                      Being hurt by edge of knife or broken glass, which may
+                      happen when you are cutting an agarose gel
+                    </li>
+                  </v-list-item>
+                  <v-list-item>
+                    <li class="body-2">
+                      Getting burnt by splashing hot drops, which may occur when
+                      you are heating boiled liquid
+                    </li>
+                  </v-list-item>
+                  <v-list-item>
+                    <li class="body-2">
+                      Infection may occur in the wound if you touch the cell
+                      without any protection.
+                    </li>
+                  </v-list-item>
+                  <v-list-item>
+                    <li class="body-2">
+                      Getting burnt by utensils of high temperature, which may
+                      happen when you are making agarose gel or using alcohol
+                      lamp
+                    </li>
+                  </v-list-item>
+                  <v-list-item>
+                    <li class="body-2">
+                      Physical discomfort caused by the exposure to or smell of
+                      hazardous chemicals
+                    </li>
+                  </v-list-item>
+                </v-list>
+              </v-card-text>
+              <v-card-title class="text-h6"> Prevention </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  Lab coats, gloves, glasses and masks must be worn when
+                  entering the lab.
+                </p>
+                <p class="body-1">
+                  Before entering the laboratory, we first received the most
+                  general laboratory training, through which we were allowed to
+                  enter the laboratory. Next, we will familiarize ourselves with
+                  each experiment with our instructor before doing the
+                  experiment ourselves. In addition, we also need special
+                  training before using each instrument.
+                </p>
+                <p class="body-1">
+                  Before operating the equipment, we must read the operation
+                  guide and accept the teacher's instruction. When operating the
+                  equipment, we must strictly follow the instructions, stay next
+                  to the equipment all the time during use, and close it in time
+                  after use.
+                </p>
+                <p class="body-1">
+                  The above actions greatly avoid the detection outlined above.
+                </p>
+              </v-card-text>
+            </v-container>
+          </v-card>
+        </template>
+      </v-hover>
     </v-col>
     <v-col cols="2" v-if="width >= 1264"></v-col>
     <!-- The back-to btn, use the `istop` to judge show or not. -->
@@ -331,13 +455,7 @@
     </v-container>
   </v-row>
 </template>
-
 <script>
-//import { gsap } from "gsap"
-//uncomment this line to use gsap in this components
-//I recommend just to use gsap saperately, not gloably.
-//So use VueMotion in simple animate and gsap for more complex one.
-
 export default {
   name: "mainpart",
   props: {
@@ -355,64 +473,6 @@ export default {
       offset: 0,
       easing: "easeInQuad",
     },
-    infor: [
-      {
-        name: "sr",
-        photo: require("@/assets/1.png"),
-        discription: "very good people",
-        role: "Team Leader",
-      },
-      {
-        name: "zyy",
-        photo: require("@/assets/2.png"),
-        discription: "Very good people",
-        role: "Modeling Wiki Hardware",
-      },
-      {
-        name: "sj",
-        photo: require("@/assets/3.png"),
-        discription: "Very good people",
-        role: "Modeling Wiki lab",
-      },
-      {
-        name: "sj",
-        photo: require("@/assets/3.png"),
-        discription: "Very good people",
-        role: "Modeling Wiki lab",
-      },
-      {
-        name: "sj",
-        photo: require("@/assets/3.png"),
-        discription: "Very good people",
-        role: "Modeling Wiki lab",
-      },
-      {
-        name: "sj",
-        photo: require("@/assets/3.png"),
-        discription: "Very good people",
-        role: "Modeling Wiki lab",
-      },
-      {
-        name: "sj",
-        photo: require("@/assets/3.png"),
-        discription: "Very good people",
-        role: "Modeling Wiki lab",
-      },
-    ],
-    prof: [
-      {
-        name: "Yang Haitao",
-        photo: require("@/assets/3.png"),
-        discription: "very good professor",
-        role: "Some thing here...",
-      },
-      {
-        name: "Gao Yan",
-        photo: require("@/assets/3.png"),
-        discription: "Very good professor",
-        role: "Some thing here...",
-      },
-    ],
   }),
   methods: {
     onIntersect(entries) {
@@ -423,15 +483,17 @@ export default {
       this.istop = this.isIntersecting;
     },
     updatepos() {
-      var description = document.getElementById("description");
-      var professor = document.getElementById("professor");
-      var despos = description.getBoundingClientRect().top;
-      var propos = professor.getBoundingClientRect().top;
+      /*
+      var    = document.getElementById("  ");
+      var    = document.getElementById("  ");
+      var despos =   .getBoundingClientRect().top;
+      var propos =   .getBoundingClientRect().top;
       if (despos >= 200) this.pos = 0;
       else if (despos <= 200 && propos >= 200) this.pos = 1;
       else if (despos <= 200 && propos <= 200) this.pos = 2;
       console.log(despos);
       console.log(propos);
+      */
     },
   },
   mounted() {
@@ -451,4 +513,4 @@ export default {
 a {
   text-decoration: none;
 }
-</style>
+</style>    
