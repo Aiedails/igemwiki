@@ -133,4 +133,15 @@ li::marker {
 .v-stepper__step__step .v-icon.v-icon {
   font-size: 0.75rem;
 }
+.code {
+  padding: 16px;
+  border-width: 0 0 0 4px;
+  border-color: grey;
+  border-style: solid;
+  background-color: #EEEEEE;
+}
+.code::selection {
+  color: white;
+  background: #838383 !important;
+}
 </style>

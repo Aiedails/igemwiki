@@ -40,7 +40,7 @@
       </v-btn>
 
       <v-toolbar-title style="padding-left: 16px; padding-bottom: 0;">
-        Safety
+        Hardware
       </v-toolbar-title >
       <!-- use <v-toolbar-title> instead of <v-app-bar-title> to prevent displaying "Ti..." -->
       <template v-slot:extension>
