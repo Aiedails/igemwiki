@@ -13,7 +13,7 @@
             :class="`elevation-${hover ? 8 : 2}`"
             class="transition-swing"
             v-show="!firstload"
-            v-model="pos"
+            v-model="position"
             vertical
             non-linear
             style="transition: all 1s ease 1s; padding-bottom: 8px"
@@ -23,7 +23,7 @@
               edit-icon="1"
               step="1"
               @click="$vuetify.goTo('#prologue', options)"
-              :complete="pos > 1"
+              :complete="position > 1"
               style="transition: all 1s ease 1s"
               color="primary"
               class="body-1"
@@ -35,7 +35,7 @@
               edit-icon="2"
               step="2"
               @click="$vuetify.goTo('#lab_safety', options)"
-              :complete="pos > 2"
+              :complete="position > 2"
               style="transition: all 1s"
               color="primary"
               class="body-1"
@@ -46,13 +46,37 @@
               editable
               edit-icon="3"
               step="3"
-              @click="$vuetify.goTo('#project_design', options)"
-              :complete="pos > 3"
+              @click="$vuetify.goTo('#general_information', options)"
+              :complete="position > 3"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              Project_design
+              General microorganism information & general project design
+            </v-stepper-step>
+            <v-stepper-step
+              editable
+              edit-icon="4"
+              step="4"
+              @click="$vuetify.goTo('#specific_design', options)"
+              :complete="position > 4"
+              style="transition: all 1s"
+              color="primary"
+              class="body-1"
+            >
+              Specific project design
+            </v-stepper-step>
+            <v-stepper-step
+              editable
+              edit-icon="5"
+              step="5"
+              @click="$vuetify.goTo('#use_of_harmful', options)"
+              :complete="position > 5"
+              style="transition: all 1s"
+              color="primary"
+              class="body-1"
+            >
+              Use of harmful reagents and procedures
             </v-stepper-step>
           </v-stepper>
         </template>
@@ -77,7 +101,7 @@
             v-show="!firstload"
           >
             <v-container style="padding: 20px 3%">
-              <v-card-title class="text-h4" id="prologue">
+              <v-card-title class="text-h3" id="prologue">
                 Prologue
               </v-card-title>
               <v-card-text>
@@ -95,7 +119,7 @@
                   have any biosafety concerns in the laboratory.
                 </p>
               </v-card-text>
-              <v-card-title class="text-h4" id="lab_safety">
+              <v-card-title class="text-h3" id="lab_safety">
                 Lab Safety
               </v-card-title>
               <v-card-text>
@@ -180,7 +204,7 @@
                 </v-list>
                 <p class="body-1"></p>
                 <p class="body-1">Especially in cell lab:</p>
-                <v-list>
+                <v-list style="padding-left: 16px">
                   <v-list-item>
                     <li class="body-2">
                       The cell lab is equipped with two transition rooms and is
@@ -241,10 +265,10 @@
                   container and give it to a professional company to deal with.
                 </p>
               </v-card-text>
-              <v-card-title class="text-h4" id="project_design">
+              <v-card-title class="text-h3" id="project_design">
                 Project Design
               </v-card-title>
-              <v-card-title class="text-h5">
+              <v-card-title class="text-h4" id="general_information">
                 General microorganism information and general project design
               </v-card-title>
               <v-card-text>
@@ -320,7 +344,7 @@
                   </v-list-item>
                 </v-list>
               </v-card-text>
-              <v-card-title class="text-h5">
+              <v-card-title class="text-h4" id="specific_design">
                 Specific project design
               </v-card-title>
               <v-card-title class="text-h5"> Detection </v-card-title>
@@ -355,12 +379,12 @@
                   exposed skin is minimized.
                 </p>
               </v-card-text>
-              <v-card-title class="text-h5">
+              <v-card-title class="text-h4" id="use_of_harmful">
                 Use of harmful reagents and procedures
               </v-card-title>
-              <v-card-title class="text-h6"> Detection </v-card-title>
+              <v-card-title class="text-h5"> Detection </v-card-title>
               <v-card-text>
-                <v-list>
+                <v-list style="padding-left: 16px;">
                   <v-list-item>
                     <li class="body-2">
                       Being exposed to ultraviolet for a long time, which may
@@ -402,7 +426,7 @@
                   </v-list-item>
                 </v-list>
               </v-card-text>
-              <v-card-title class="text-h6"> Prevention </v-card-title>
+              <v-card-title class="text-h5"> Prevention </v-card-title>
               <v-card-text>
                 <p class="body-1">
                   Lab coats, gloves, glasses and masks must be worn when
@@ -463,7 +487,8 @@ export default {
   },
 
   data: () => ({
-    pos: 1, //used for v-stepper
+    step: [], //use for store position of title
+    position: 1, //use for v-stepper to know where we are
     isIntersecting: false,
     istop: true,
     firstload: true, //used for skeleton loader.
@@ -483,20 +508,21 @@ export default {
       this.istop = this.isIntersecting;
     },
     updatepos() {
-      /*
-      var    = document.getElementById("  ");
-      var    = document.getElementById("  ");
-      var despos =   .getBoundingClientRect().top;
-      var propos =   .getBoundingClientRect().top;
-      if (despos >= 200) this.pos = 0;
-      else if (despos <= 200 && propos >= 200) this.pos = 1;
-      else if (despos <= 200 && propos <= 200) this.pos = 2;
-      console.log(despos);
-      console.log(propos);
-      */
+      var pos = [];
+      var posnow = 0;
+      for (var i = 0; i < this.step.length; i++) {
+        pos[i] = this.step[i].getBoundingClientRect().top;
+        if (pos[i] <= 300) posnow = i;
+      }
+      this.position = posnow + 1;
     },
   },
   mounted() {
+    this.step[0] = document.getElementById("prologue");
+    this.step[1] = document.getElementById("lab_safety");
+    this.step[2] = document.getElementById("general_information");
+    this.step[3] = document.getElementById("specific_design");
+    this.step[4] = document.getElementById("use_of_harmful");
     this.updatepos();
     setTimeout(() => {
       this.firstload = false;
