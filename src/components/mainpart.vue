@@ -22,25 +22,61 @@
               editable
               edit-icon="1"
               step="1"
-              @click="$vuetify.goTo('#destination', options)"
+              @click="$vuetify.goTo('#abstract', options)"
               :complete="position > 1"
               style="transition: all 1s ease 1s"
               color="primary"
               class="body-1"
             >
-              Destination
+              Abstract
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="2"
               step="2"
-              @click="$vuetify.goTo('#solution', options)"
+              @click="$vuetify.goTo('#urban', options)"
               :complete="position > 2"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              Solution
+              Education in urban district
+            </v-stepper-step>
+            <v-stepper-step
+              editable
+              edit-icon="3"
+              step="3"
+              @click="$vuetify.goTo('#poverty', options)"
+              :complete="position > 3"
+              style="transition: all 1s"
+              color="primary"
+              class="body-1"
+            >
+              Education in poverty-stricken area
+            </v-stepper-step>
+            <v-stepper-step
+              editable
+              edit-icon="4"
+              step="4"
+              @click="$vuetify.goTo('#communication', options)"
+              :complete="position > 4"
+              style="transition: all 1s"
+              color="primary"
+              class="body-1"
+            >
+              Xinan, abroad -- Communication
+            </v-stepper-step>
+            <v-stepper-step
+              editable
+              edit-icon="5"
+              step="5"
+              @click="$vuetify.goTo('#online_popularization', options)"
+              :complete="position > 5"
+              style="transition: all 1s"
+              color="primary"
+              class="body-1"
+            >
+              Online popularization of synthetic biology
             </v-stepper-step>
           </v-stepper>
         </template>
@@ -51,117 +87,218 @@
       <!-- This is a card for text. -->
       <v-skeleton-loader
         v-show="firstload"
-        type="image, article@3"
+        type="image, article@6"
       ></v-skeleton-loader>
       <v-card
         style="text-decoration: none"
-        id="description"
         v-intersect="onIntersect"
         v-scroll="updatepos"
         v-show="!firstload"
       >
         <v-container style="padding: 20px">
-          <v-card-title class="text-h4" id="destination">
-            Destination
+          <v-card-title class="text-h3"> Education </v-card-title>
+          <v-card-title class="text-h4" id="abstract" v-intersect="onIntersect">
+            Abstract
           </v-card-title>
-          <p class="body-1">
-            In our project, we designed a mechanism to release the drug at a
-            specific point on the wound.
-          </p>
-          <v-card-title class="text-h4" id="solution"> Solution </v-card-title>
-          <p class="body-1">
-            First of all our mechanical structure took the classic belt and gear
-            drive. For the selection of the motor we used a 42 stepper motor,
-            configured with a 1.8 degree stepping angle and with 16
-            subdivisions.
-          </p>
-          <p class="body-1">【此处应有图,但是没拍】</p>
-          <p class="body-1">
-            A 13mm diameter gear is fixed to the motor shaft, and the motor gear
-            drive can drive the belt, which moves the fixing frame and allows
-            the drug release device to move to the desired position.
-          </p>
-          <p class="body-1">
-            Stepper motor according to external control pulses and direction
-            signals, through its internal logic circuit, control the stepper
-            motor windings in a certain timing sequence forward or reverse
-            energized, so that the motor forward / reverse rotation, or locked.
-          </p>
-          <p class="body-1">
-            Take our 1.8 degree two-phase stepper motor as an example: when both
-            phase windings are energized and excited, the motor output shaft
-            will be stationary and locked in position. The maximum torque that
-            will keep the motor locked at the rated current is the holding
-            torque. If the current in one of the phase windings changes
-            direction, the motor will rotate one step (1.8 degrees) in a given
-            direction. Similarly, if the current in the other winding changes
-            direction, the motor will rotate one step (1.8 degrees) in the
-            opposite direction of the former. When the currents through the coil
-            windings are sequentially redirected to excitation, the motor will
-            rotate in a continuous step in the given direction with very high
-            accuracy. For a 1.8 degree two-phase stepper motor, it takes 200
-            steps to rotate one week.
-          </p>
-          <p class="body-1">
-            At the same time we are equipped with 16 subdivision, subdivision is
-            actually an electronic damping technology on the stepper motor,
-            whose main purpose is to attenuate or eliminate the low frequency
-            vibration of the stepper motor and improve the running accuracy of
-            the motor. The actual step angle when the motor is running after
-            subdivision is a fraction of the basic step angle. Using our 16
-            subdivision as an example, after 16 pulses, the motor turns through
-            1.8 degrees.
-          </p>
-          <p class="body-1">
-            A pulse signal is an electrical signal where the voltage changes
-            repeatedly between ON and OFF.
-          </p>
-          <p class="body-1">
-            Each ON/OFF cycle is recorded as a pulse. A single pulse signal
-            commands one step of rotation of the motor output shaft.
-          </p>
-          <p class="body-1">
-            The signal levels corresponding to the voltage ON and OFF cases are
-            called "H" and "L", respectively.
-          </p>
-          <v-img src="@/assets/pulse_signal.jpg"></v-img>
-          <p class="body-1">
-            The rotation distance of a stepper motor is proportional to the
-            number of pulse signals (number of pulses) applied to the drive.
-          </p>
-          <p class="body-1">
-            $\theta$ is the motor rotation angle, $\theta_0$ is the motor
-            stepping angle, $A$ is the number of pulses, and $A_0$ is the
-            fraction of the fine.
-          </p>
-          <p class="body-1">
-            Meanwhile, according to the principle of mechanical transmission.
-          </p>
-          <p class="body-1">
-            From this, the number of pulses required to move a certain distance
-            can be calculated.
-          </p>
-          <p class="body-1">
-            Control the movement of the motor by operating the number and
-            direction of pulses from the Arduino via software.
-          </p>
-          <pre class="code">
-void step(boolean dir, byte dirPin, byte stepperPin, int steps)
-{
-  digitalWrite(dirPin, dir);
-  delay(50);
-  for (int i = 0; i &lt; steps; i++) {
-    digitalWrite(stepperPin, HIGH);
-    delayMicroseconds(1000); 
-    digitalWrite(stepperPin, LOW);
-    delayMicroseconds(1000); 
-  }
-} </pre>
-          <p class="body-1">
-            Also interact with Arduino on PC to determine the position of drug
-            release, input the x,y position on PC, read the relevant data on
-            Arduino and control the motor movement.
-          </p>
+          <v-card-text>
+            <p class="body-1">一段文字</p>
+          </v-card-text>
+          <v-card-title class="text-h4" id="offline_lectures">
+            Offline Lectures
+          </v-card-title>
+          <v-card-title class="text-h5" id="urban">
+            Education in urban district
+          </v-card-title>
+          <v-card-title class="text-h6">
+            Junior high school -- Activity of 'Scientists in campus'
+          </v-card-title>
+          <v-card-text>
+            <p class="body-1">一段文字+图</p>
+          </v-card-text>
+          <v-card-title class="text-h6">
+            Senior high school -- As summer volunteers
+          </v-card-title>
+          <v-card-text>
+            <p class="body-1">一段文字+图</p>
+          </v-card-text>
+          <v-card-title class="text-h6">
+            College - To arouse interests
+          </v-card-title>
+          <v-card-text>
+            <p class="body-1">
+              We also often give lectures in the field of synthetic biology on
+              campus. Considering college students' strong acceptance ability,
+              we will choose more interesting topics to talk about, such as
+              double-regulated suicide system. Interesting subjects make even
+              students in other majors can listen to with interest.
+            </p>
+            <p class="body-1"></p>
+            <p class="body-1">
+              Said some electrical engineering students, 'Through this form of
+              popular science, interdisciplinary communication can help them
+              have a more complete understanding of science and a deeper
+              understanding of their major.'
+            </p>
+            <v-img src="@/assets/ssy.jpg" />
+            <p class="body-1"></p>
+            <v-img src="@/assets/xq_ssy.jpg" />
+          </v-card-text>
+          <v-card-title class="text-h5" id="poverty">
+            Education in poverty-stricken area
+          </v-card-title>
+          <v-card-title class="text-h6">
+            Primary school in Yunnan - As volunteer teachers
+          </v-card-title>
+          <v-card-text>
+            <p class="body-1">
+              This year, we went to Yunlong county in Yunnan. As a village which
+              is 4 hours mountain road by car from city, it's hard for villager
+              to communicate with the outside world, leading to old and poor
+              education resources. Even though their classrooms are equipped
+              with advanced facilities, the elderly teachers rarely use them, so
+              we teach them through electronic presentations and the use of
+              these devices. When we meet the principle over there, he said
+              passionately, 'When I saw students of Shanghaitech, I saw hope of
+              our education.'. Our visit represent a big chance for students
+              there.
+            </p>
+            <v-img src="@/assets/dh_1.jpg" />
+            <p class="body-1"></p>
+            <v-img src="@/assets/dh_2.jpg" />
+            <p class="body-1">
+              Thinking about how little experience they have in learning
+              biology, We chose to introduce basic concepts in biology such as
+            </p>
+            <p class="body-1">
+              internal environment, cells, DNA and so on. We brought the
+              children along to draw cells, organelles, DNA and so on, which was
+              a great way to focus the children's attention. It turned out that
+              they can easily accept the knowledge through the analogy of cells
+              in the internal environment and the swimmer. So we tried to
+              explain the central dogma of inheritance. Although it was
+              relatively difficult for them, they listened with great interest
+              and did well in the Q&A section in the end. When we show the PV
+              video of our team and Xinan team, it seemed that we opened up new
+              worlds for them. A few brief introductory lessons kindled their
+              interest in biology.
+            </p>
+            <p class="body-1">
+              After class, we offered online courses and popular science videos
+              for them so that even when we leave, they can continue to study
+              biology and even use these learning methods to learn new content.
+              Also, we left their contact information and public account, to
+              answer their future study and life in the new questions.
+            </p>
+            <p class="body-1">
+              What moved us a lot was that some students quickly accepted
+              knowledge and excitedly told us that they want to become
+              scientists in the field of biology, which was undoubtedly the
+              biggest affirmation for us. Some of the students were able to
+              slowly say their answers together, even though they were ashamed
+              to stand up to answer the questions. We were overjoyed by the
+              progress of the students.
+            </p>
+          </v-card-text>
+          <v-card-title class="text-h6">
+            Junior high school in Yunnan - As volunteer teachers
+          </v-card-title>
+          <v-card-text>
+            <p class="body-1">
+              After talking to the students briefly, we realized that although
+              they had been exposed to a small amount of biological knowledge
+              about plants and animals, they still had no idea about biology. In
+              that case, rather than instilling a lot of knowledge, we want to
+              cultivate their interest in biology and tell them what biology,
+              especially synthetic biology, which I'm working on, is for, and
+              why should we study biology.
+            </p>
+            <p class="body-1">
+              For fun, I introduced junior high school students to the
+              structural colors of animals. I told them why chicken feathers
+              running around the village glow blue, why butterfly wings change
+              color, and, most intriguingly, how chameleons change color. In
+              this class, I found many videos from Bilibili, a video website, as
+              examples, which not only made students understand more thoroughly,
+              but also aroused their interest more than boring words. It is also
+              in this way that we show how to use resources to find learning
+              materials. I think this will help students more than biology. At
+              the same time, they were very interested in hearing about what we
+              were doing in the iGEM competition, and the application aspect of
+              it was very novel to them.
+            </p>
+            <v-img src="@/assets/dh_3.jpg" />
+            <p class="body-1">
+              More students were willing to communicate with us than the
+              elementary school group. They were more grateful for the invisible
+              things we brought to them than just talking about their feelings
+              in biology class. 'I understand a lot, have more motivation, good
+              study confidence is also more firm.', they said.
+            </p>
+            <v-img src="@/assets/dh_4.jpg" />
+          </v-card-text>
+          <v-card-title class="text-h6">
+            Junior high school in Anhui - As volunteer teachers
+          </v-card-title>
+          <v-card-text>
+            <p class="body-1">
+              In Anhui, we expanded the students' knowledge of botany. We try to
+              get out of the textbook and show them what common plants are in
+              their daily lives and how to make herbarium specimens. Let them
+              use living things. The students are having fun and learning.
+            </p>
+            <v-img src="@/assets/zch_1.jpg" />
+            <p class="body-1"></p>
+            <v-img src="@/assets/zch_2.jpg" />
+          </v-card-text>
+          <v-card-title class="text-h5" id="communication">
+            Xinan, abroad - Communicaton
+          </v-card-title>
+          <v-card-title class="text-h5">
+            Junior high school -- Road show
+          </v-card-title>
+          <v-card-text class="body-1">
+            <p class="body-1">一段文字</p>
+          </v-card-text>
+          <v-card-title class="text-h5">
+            Senior high school -- The living theatre
+          </v-card-title>
+          <v-card-text class="body-1">
+            <p class="body-1">一段文字</p>
+            <u>Specific format</u>
+          </v-card-text>
+          <v-card-title class="text-h5"> Conclusion </v-card-title>
+          <v-card-text>
+            <p class="body-1">一段文字+图</p>
+          </v-card-text>
+          <v-card-title class="text-h5" id="online_popularization">
+            Online popularization of synthetic biology
+          </v-card-title>
+          <v-card-title class="text-h6">
+            PV video publicity on Bilibili
+          </v-card-title>
+          <v-card-text>
+            <p class="body-1">一段文字+图</p>
+          </v-card-text>
+          <v-card-text>
+            <p class="body-1">
+              * Continuous popular science on our Wechat official accounts -
+              Also collaborate with Xinan
+            </p>
+            <p class="body-1">
+              To make your materials accessible to a wider audience, we publish
+              all the contents of the campus lectures to the public account,
+              which not only enables students to understand and review the
+              contents more systematically, but also enables more students who
+              are not in class to accept popular science in their spare time. At
+              the same time, considering that many children in poor areas are
+              not able to use the electronic products around them, we also leave
+              the courseware and our contact information when teaching offline,
+              so as to teach them how to use the existing resources to learn
+              better.
+            </p>
+            <p class="body-1"></p>
+            <p class="body-1">一段文字+图</p>
+          </v-card-text>
         </v-container>
       </v-card>
     </v-col>
@@ -227,8 +364,11 @@ export default {
     },
   },
   mounted() {
-    this.step[0] = document.getElementById("destination");
-    this.step[1] = document.getElementById("solution");
+    this.step[0] = document.getElementById("abstract");
+    this.step[1] = document.getElementById("urban");
+    this.step[2] = document.getElementById("poverty");
+    this.step[3] = document.getElementById("communication");
+    this.step[4] = document.getElementById("online_popularization");
     this.updatepos();
     setTimeout(() => {
       this.firstload = false;
