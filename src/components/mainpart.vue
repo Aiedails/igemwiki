@@ -22,61 +22,61 @@
               editable
               edit-icon="1"
               step="1"
-              @click="$vuetify.goTo('#abstract', options)"
+              @click="$vuetify.goTo('#introduction', options)"
               :complete="position > 1"
               style="transition: all 1s ease 1s"
               color="primary"
               class="body-1"
             >
-              Abstract
+              Introduction
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="2"
               step="2"
-              @click="$vuetify.goTo('#urban', options)"
+              @click="$vuetify.goTo('#activation', options)"
               :complete="position > 2"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              Education in urban district
+              Activation of PIEZO1 through mechanical force
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="3"
               step="3"
-              @click="$vuetify.goTo('#poverty', options)"
+              @click="$vuetify.goTo('#gene', options)"
               :complete="position > 3"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              Education in poverty-stricken area
+              Gene expression with $\ce{Ca^{2+}}$ signaling
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="4"
               step="4"
-              @click="$vuetify.goTo('#communication', options)"
+              @click="$vuetify.goTo('#enzyme', options)"
               :complete="position > 4"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              Xinan, abroad -- Communication
+              Enzyme diffusion and drug release
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="5"
               step="5"
-              @click="$vuetify.goTo('#online_popularization', options)"
+              @click="$vuetify.goTo('#backup', options)"
               :complete="position > 5"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              Online popularization of synthetic biology
+              Backup plan against over-expression
             </v-stepper-step>
           </v-stepper>
         </template>
@@ -96,209 +96,318 @@
         v-show="!firstload"
       >
         <v-container style="padding: 20px">
-          <v-card-title class="text-h3"> Education </v-card-title>
-          <v-card-title class="text-h4" id="abstract" v-intersect="onIntersect">
-            Abstract
-          </v-card-title>
-          <v-card-text>
-            <p class="body-1">一段文字</p>
-          </v-card-text>
-          <v-card-title class="text-h4" id="offline_lectures">
-            Offline Lectures
-          </v-card-title>
-          <v-card-title class="text-h5" id="urban">
-            Education in urban district
-          </v-card-title>
-          <v-card-title class="text-h6">
-            Junior high school -- Activity of 'Scientists in campus'
-          </v-card-title>
-          <v-card-text>
-            <p class="body-1">一段文字+图</p>
-          </v-card-text>
-          <v-card-title class="text-h6">
-            Senior high school -- As summer volunteers
-          </v-card-title>
-          <v-card-text>
-            <p class="body-1">一段文字+图</p>
-          </v-card-text>
-          <v-card-title class="text-h6">
-            College - To arouse interests
+          <v-card-title class="text-h4" id="introduction">
+            1. Introduction
           </v-card-title>
           <v-card-text>
             <p class="body-1">
-              We also often give lectures in the field of synthetic biology on
-              campus. Considering college students' strong acceptance ability,
-              we will choose more interesting topics to talk about, such as
-              double-regulated suicide system. Interesting subjects make even
-              students in other majors can listen to with interest.
+              In 2021, the team from ShanghaiTech has come up with a novel
+              method to help people suffering from bone fracture. Our modeling
+              group aims to gain insight into the project.
             </p>
             <p class="body-1"></p>
             <p class="body-1">
-              Said some electrical engineering students, 'Through this form of
-              popular science, interdisciplinary communication can help them
-              have a more complete understanding of science and a deeper
-              understanding of their major.'
+              We've modeled several procedures to verify and improve the
+              feasibility of the design. The first model is a physical one
+              showing how force applied from the ends of the gel activate PIEZO1
+              of inward cells. It provides basis for our design that
+              transmembrane protein PIEZO1 inside the hydrogel can be activated
+              by the mechanical force during the healing process of bones. Our
+              second model describes the hydrogel-degrading enzyme expression
+              triggered by $Ca^{2+}$ signaling. This can exhibit how the change
+              of $Ca^{2+}$, resulting from the activated PIEZO1 channel,
+              influences the expression of our target gene quantitatively.
+              Another model shows the diffusion of enzyme inside the hydrogel
+              and the subsequent events including the degradation of hydrogel
+              and the release of target medicine which has been encapsulated by
+              hydrogel. This part supports our idea of controlled release of
+              medicine. Finally, the last model is created as a backup plan in
+              case of the unexpected over-expression of the target gene.
             </p>
-            <v-img src="@/assets/ssy.jpg" />
-            <p class="body-1"></p>
-            <v-img src="@/assets/xq_ssy.jpg" />
           </v-card-text>
-          <v-card-title class="text-h5" id="poverty">
-            Education in poverty-stricken area
-          </v-card-title>
-          <v-card-title class="text-h6">
-            Primary school in Yunnan - As volunteer teachers
+          <v-card-title class="text-h4" id="activation">
+            Activation of PIEZO1 through mechanical force
           </v-card-title>
           <v-card-text>
-            <p class="body-1">
-              This year, we went to Yunlong county in Yunnan. As a village which
-              is 4 hours mountain road by car from city, it's hard for villager
-              to communicate with the outside world, leading to old and poor
-              education resources. Even though their classrooms are equipped
-              with advanced facilities, the elderly teachers rarely use them, so
-              we teach them through electronic presentations and the use of
-              these devices. When we meet the principle over there, he said
-              passionately, 'When I saw students of Shanghaitech, I saw hope of
-              our education.'. Our visit represent a big chance for students
-              there.
-            </p>
-            <v-img src="@/assets/dh_1.jpg" />
             <p class="body-1"></p>
-            <v-img src="@/assets/dh_2.jpg" />
-            <p class="body-1">
-              Thinking about how little experience they have in learning
-              biology, We chose to introduce basic concepts in biology such as
-            </p>
-            <p class="body-1">
-              internal environment, cells, DNA and so on. We brought the
-              children along to draw cells, organelles, DNA and so on, which was
-              a great way to focus the children's attention. It turned out that
-              they can easily accept the knowledge through the analogy of cells
-              in the internal environment and the swimmer. So we tried to
-              explain the central dogma of inheritance. Although it was
-              relatively difficult for them, they listened with great interest
-              and did well in the Q&A section in the end. When we show the PV
-              video of our team and Xinan team, it seemed that we opened up new
-              worlds for them. A few brief introductory lessons kindled their
-              interest in biology.
-            </p>
-            <p class="body-1">
-              After class, we offered online courses and popular science videos
-              for them so that even when we leave, they can continue to study
-              biology and even use these learning methods to learn new content.
-              Also, we left their contact information and public account, to
-              answer their future study and life in the new questions.
-            </p>
-            <p class="body-1">
-              What moved us a lot was that some students quickly accepted
-              knowledge and excitedly told us that they want to become
-              scientists in the field of biology, which was undoubtedly the
-              biggest affirmation for us. Some of the students were able to
-              slowly say their answers together, even though they were ashamed
-              to stand up to answer the questions. We were overjoyed by the
-              progress of the students.
-            </p>
+            <p class="body-1">【西南交大collaboration尚未完成】</p>
+            <p class="body-1"></p>
           </v-card-text>
-          <v-card-title class="text-h6">
-            Junior high school in Yunnan - As volunteer teachers
+          <v-card-title class="text-h4" id="gene">
+            2. Gene expression with $Ca^{2+}$ signaling
           </v-card-title>
           <v-card-text>
-            <p class="body-1">
-              After talking to the students briefly, we realized that although
-              they had been exposed to a small amount of biological knowledge
-              about plants and animals, they still had no idea about biology. In
-              that case, rather than instilling a lot of knowledge, we want to
-              cultivate their interest in biology and tell them what biology,
-              especially synthetic biology, which I'm working on, is for, and
-              why should we study biology.
-            </p>
-            <p class="body-1">
-              For fun, I introduced junior high school students to the
-              structural colors of animals. I told them why chicken feathers
-              running around the village glow blue, why butterfly wings change
-              color, and, most intriguingly, how chameleons change color. In
-              this class, I found many videos from Bilibili, a video website, as
-              examples, which not only made students understand more thoroughly,
-              but also aroused their interest more than boring words. It is also
-              in this way that we show how to use resources to find learning
-              materials. I think this will help students more than biology. At
-              the same time, they were very interested in hearing about what we
-              were doing in the iGEM competition, and the application aspect of
-              it was very novel to them.
-            </p>
-            <v-img src="@/assets/dh_3.jpg" />
-            <p class="body-1">
-              More students were willing to communicate with us than the
-              elementary school group. They were more grateful for the invisible
-              things we brought to them than just talking about their feelings
-              in biology class. 'I understand a lot, have more motivation, good
-              study confidence is also more firm.', they said.
-            </p>
-            <v-img src="@/assets/dh_4.jpg" />
-          </v-card-text>
-          <v-card-title class="text-h6">
-            Junior high school in Anhui - As volunteer teachers
-          </v-card-title>
-          <v-card-text>
-            <p class="body-1">
-              In Anhui, we expanded the students' knowledge of botany. We try to
-              get out of the textbook and show them what common plants are in
-              their daily lives and how to make herbarium specimens. Let them
-              use living things. The students are having fun and learning.
-            </p>
-            <v-img src="@/assets/zch_1.jpg" />
             <p class="body-1"></p>
-            <v-img src="@/assets/zch_2.jpg" />
-          </v-card-text>
-          <v-card-title class="text-h5" id="communication">
-            Xinan, abroad - Communicaton
-          </v-card-title>
-          <v-card-title class="text-h5">
-            Junior high school -- Road show
-          </v-card-title>
-          <v-card-text class="body-1">
-            <p class="body-1">一段文字</p>
+            <p class="body-1">
+              $Ca^{2+}$ signalling activates nuclear factor of activated T cells
+              (<strong><u>NFAT</u></strong>
+              ) , a family of four transcription factors (NFAT1-4, also known as
+              NFATc1-c4). The protein phosphatase
+              <strong><u>calcineurin</u></strong> plays a significant role in
+              this process. $Ca^{2+}$ activates calcineurin in two ways: binding
+              calcineurin directly and activating the $Ca^{2+}$ binding
+              regulatory protein, <strong><u>calcineurin</u></strong>
+              , which subsequently interacts with calcineurin. When calcineurin
+              is activated, it can then catalyze the dephosphorylation of NFAT.
+              Dephosphorylation of NFATs exposes a nuclear localization signal
+              which causes NFATs to be imported into the nucleus, regulated by
+              the action of a specific phosphatase and a number of kinases.
+              <sup>[1]</sup>
+              Finally, NFATs in the nuleus can induce the target gene
+              expression.
+            </p>
+            <v-img
+              src="https://tva1.sinaimg.cn/large/008i3skNgy1gt52jekpsoj30w30kwwge.jpg"
+              alt="图先意思意思，之后或许能让美工画？"
+            />
+            <v-row justify="center" style="margin-top: 16px">
+              <p>
+                fig.1 Schematic view of $\ce{Ca^{2+}}$ regulating gene
+                expression.
+              </p>
+            </v-row>
+            <p class="body-1"></p>
           </v-card-text>
           <v-card-title class="text-h5">
-            Senior high school -- The living theatre
-          </v-card-title>
-          <v-card-text class="body-1">
-            <p class="body-1">一段文字</p>
-            <u>Specific format</u>
-          </v-card-text>
-          <v-card-title class="text-h5"> Conclusion </v-card-title>
-          <v-card-text>
-            <p class="body-1">一段文字+图</p>
-          </v-card-text>
-          <v-card-title class="text-h5" id="online_popularization">
-            Online popularization of synthetic biology
-          </v-card-title>
-          <v-card-title class="text-h6">
-            PV video publicity on Bilibili
+            2.1 Intracellular $\ce{Ca^{2+}}$
           </v-card-title>
           <v-card-text>
-            <p class="body-1">一段文字+图</p>
+            <p class="body-1"></p>
+            <p class="body-1">【待定】</p>
+            <p class="body-1"></p>
           </v-card-text>
+          <v-card-title class="text-h5">
+            2.2 Binding of $Ca^{2+}$ to calmodulin
+          </v-card-title>
           <v-card-text>
+            <p class="body-1"></p>
+            <p class="body-1">【待定】</p>
             <p class="body-1">
-              * Continuous popular science on our Wechat official accounts -
-              Also collaborate with Xinan
-            </p>
-            <p class="body-1">
-              To make your materials accessible to a wider audience, we publish
-              all the contents of the campus lectures to the public account,
-              which not only enables students to understand and review the
-              contents more systematically, but also enables more students who
-              are not in class to accept popular science in their spare time. At
-              the same time, considering that many children in poor areas are
-              not able to use the electronic products around them, we also leave
-              the courseware and our contact information when teaching offline,
-              so as to teach them how to use the existing resources to learn
-              better.
+              $$ {d[CN_{off}]\over dt}= -k_{CN,a}\cdot [Ca^{2+}]^3 \cdot
+              [CN_{off}]+k_{CN,da} \cdot [CN] \tag{2.1} $$ $$ {d[CN]\over dt}=
+              k_{CN,a} \cdot [Ca^{2+}]^3 \cdot [CN_{off}]-k_{CN,da} \cdot [CN]
+              \tag{2.2} $$
             </p>
             <p class="body-1"></p>
-            <p class="body-1">一段文字+图</p>
           </v-card-text>
+          <v-card-title class="text-h5">
+            2.3 (De)phosphorylation of pNFAT
+          </v-card-title>
+          <v-card-text>
+            <p class="body-1"></p>
+            <p class="body-1">
+              Calcineurin acts as a catalyst in the dephosphorylation of
+              $\text{pNFAT}$ (the phosphorylated form of NFAT in cytoplasm),
+              which is simultaneously phosphorylated with the help of kinases.
+              The reaction is
+            </p>
+            <p class="body-1">
+              $$ [\text{pNFAT}]
+              \underset{E_{NK}}{\overset{E_{CN}}\rightleftarrows}
+              [pi]+[\text{NFAT}], $$
+            </p>
+            <p class="body-1"></p>
+            <p class="body-1">
+              and let $[pi]$ and $[\text{NFAT}]$ be the concentration of
+              phosphate and NFAT respectively. $E_{CN}$ represents the
+              calcineurin and $E_{NK}$ represents NFAT kinases as catalyst here.
+              We use Michaelis-Menten equation $(2.3)$ to describe these
+              enzymatic reactions.
+            </p>
+            <p class="body-1">In a typical enzymatic reaction</p>
+            <p class="body-1">
+              $$
+              X+E\underset{k_{-1}}{\overset{k_1}\rightleftarrows}C\overset{k_2}\rightarrow
+              E+P, $$
+            </p>
+            <p class="body-1">
+              a substrate $X$ binds to an enzyme $E$ to form a substrate-enzyme
+              complex $C$, then forming the product $P$ irreversibly. Applying
+              the Michaelis-Menten equation, one of the important ODEs is as
+              follows:
+            </p>
+            <p class="body-1">
+              $$ {d[P]\over dt}=V_m{[X]\over [X]+K_m} \tag{2.3} $$
+            </p>
+            <p class="body-1">
+              where $V_m$ is the maximum reaction rate of enzyme $E$, and $K_m$
+              is Michaelis-Menten constant of the enzyme.
+            </p>
+            <p class="body-1"></p>
+            <p class="body-1">
+              In our case, considering the two reactions we can get the ODEs:
+            </p>
+            <p class="body-1">
+              $$ {d[\text{NFAT}]\over dt}= {[CN]\over[CN]+[CN_{off}]} \cdot
+              {V_{mCN}[\text{pNFAT}]\over K_{mCN}+[\text{pNFAT}]}
+              -{V_{mNK}[\text{NFAT}]\over K_{mNK}+[\text{NFAT}]} \tag{2.4} $$
+            </p>
+            <p class="body-1"></p>
+            <p class="body-1">
+              $$ {d[\text{pNFAT}]\over dt}= -{[CN]\over[CN]+[CN_{off}]} \cdot
+              {V_{mCN}[\text{pNFAT}]\over K_{mCN}+[\text{pNFAT}]}
+              +{V_{mNK}[\text{NFAT}]\over K_{mNK}+[\text{NFAT}]} \tag{2.5} $$
+            </p>
+            <p class="body-1">【未完：入核的说明/参数/数据图】</p>
+            <p class="body-1"></p>
+          </v-card-text>
+          <v-card-title class="text-h5">
+            2.4 Nuclear regulation of NFAT
+          </v-card-title>
+          <v-card-text>
+            <p class="body-1"></p>
+            <p class="body-1">
+              In the nucleus, NFAT binds to a non-palindromic composite
+              <strong>NFAT-response element</strong> (RE), derived from IL2/8
+              promoter. Our design involves the target enzyme gene driven by 3
+              repeats of IL2 promoter ($3\times$ IL2 NFAT-RE).
+            </p>
+            <p class="body-1"></p>
+            <p class="body-1">
+              <v-img
+                src="https://tva1.sinaimg.cn/large/008i3skNly1gtk6nt7532j60uw0tmwhd02.jpg"
+              />
+            </p>
+            <p class="body-1"></p>
+            <v-row justify="center">
+              <p class="body-2">fig.2 Gene regulation of NFAT.</p>
+            </v-row>
+            <p class="body-1"></p>
+            <p class="body-1">
+              We use Hill kinetics to describe this process which contains more
+              than one binding site to take the influence of cooperation into
+              account, and also consider the degradation of mRNA:
+            </p>
+            <p class="body-1">
+              $$ {d[r]\over dt}=V_{mT}{[\text{NFAT}]^n\over
+              [\text{NFAT}]^n+\kappa_N}-\gamma_r\cdot [r] \tag{2.6} $$
+            </p>
+            <p class="body-1"></p>
+            <p class="body-1">
+              Let $[r]$ be the concentration of mRNA. $V_{mT}$, $\kappa_N$, $n$,
+              $\gamma_r$ represents the maximum rate of the transcription, hill
+              constant, hill coefficient and the degradation rate of mRNA
+              respectively.
+            </p>
+            <p class="body-1">Then we can get the ODE of the target enzyme:</p>
+            <p class="body-1">
+              $$ {d[E]\over dt}=k_{r}[r]-\lambda_{E}[E] \tag{2.7} $$
+            </p>
+            <p class="body-1">
+              where $[E]$ is the concentration of the target enzyme, and $k_r$,
+              $\lambda_E$ represents transcription rate of mRNA of the target
+              enzyme and degradation rate of the target enzyme respectively.
+            </p>
+            <p class="body-1">【未完：参数/数据图】</p>
+            <p class="body-1">
+              [^1]:
+              https://bmcimmunol.biomedcentral.com/articles/10.1186/1471-2172-1-1
+            </p>
+            <p class="body-1">[^2]: https://doi.org/10.1021/bi00557a009</p>
+            <p class="body-1">
+              [^3]:https://doi.org/10.1007/978-1-4939-9030-6_7
+            </p>
+          </v-card-text>
+          <v-card-title class="text-h4" id="enzyme">
+            3. Enzyme diffusion and drug release
+          </v-card-title>
+          <v-card-title class="text-h5"> 3.1 Diffusion</v-card-title>
+          <v-card-text>
+            <p class="body-1"></p>
+            <p class="body-1">
+              Given the complexity of the composition and structure of GELMA
+              hydrogels, we decided to simplify the model of enzyme diffusion in
+              the hydrogels and use a basic model to predict it.
+            </p>
+            <p class="body-1"></p>
+            <p class="body-1">
+              For larger spherical solutes immersed in a fluid, the relation
+              between solute diffusivity and fluid viscosity was reasoned by
+              Einstein using the kinetic theory of Brownian motion coupled with
+              results from continuum mechanics. The solute was assumed to be
+              large enough that diffusion would involve
+            </p>
+            <p class="body-1">
+              collisions with many smaller solvent (e.g. water) molecules and,
+              thus, an effective fluid drag would oppose solute motion. From
+              fluid mechanics, the frictional drag force f exerted by a fluid of
+              viscosity μ on a spherical particle of radius a moving at steady
+              velocity U through the fluid was already well known:
+            </p>
+            <p class="body-1">$$ f = 6πaμU $$</p>
+            <p class="body-1">
+              At the same time, the kinetic theory and the law of Van’t Hoff
+              (1852–1911) were known, the latter
+            </p>
+            <p class="body-1">
+              relating the concentration of solutes to the osmotic pressure
+              associated with solute collisions with container walls. The
+              resulting thought model involved a balance between
+            </p>
+            <p class="body-1">(1) the pressure gradient</p>
+            <p class="body-1">$$ \partial P^{os}/\partial x $$</p>
+            <p class="body-1">
+              (which has the units of a force density (Nm−3) and is proportional
+              to RT ∂ci/∂x from Van’t Hoff’s law) and
+            </p>
+            <p class="body-1"></p>
+            <p class="body-1">
+              (2) the force density associated with the frictional drag on the
+              total number of solutes per unit fluid volume , in which each
+              solute molecule is subjected to the drag force 6πaμU. Referring to
+              Figure 1.3, the “driving force” for diffusive flux in the +x
+              direction is
+            </p>
+            <p class="body-1">$$ -\partial c_i/\partial x $$</p>
+            <p class="body-1">
+              and, with zero net flux in equilibrium, the balance gives
+            </p>
+            <p class="body-1">
+              $$ \frac{-\partial P^{os}}{\partial x}=\frac{-RT\partial
+              c_i}{\partial x}=(6\pi a\eta U) (c_iN_{AV}) $$
+            </p>
+            <p class="body-1">
+              Besides, within an electrolyte medium, empirical evidence has
+              shown that the diffusive flux Ni of solute species i with respect
+              to the solvent is often linearly related to the local gradient in
+              the concentration of that species ci by
+            </p>
+            <p class="body-1">$$ N_i =-D_i\nabla c_i $$</p>
+            <p class="body-1">
+              Combining these two relations and noting that the product ci*U has
+              the units of flux Ni , we arrive at the Stokes–Einstein relation
+              for the diffusivity:
+            </p>
+            <p class="body-1">$$ D_i=\frac{k_BT}{6\pi a\eta} $$</p>
+            <p class="body-1">where the Boltzmann constant</p>
+            <p class="body-1">$$ k_B = \frac{RT}{N_{AV}} $$</p>
+            <p class="body-1">
+              R is the universal gas constant, and N is Avogadro’s number. We
+              also note that for a spherical particle, the radius a can be
+              approximated by (molecular weight)1/3. Thus, the diffusivity is
+              weakly dependent on the molecular weight.
+            </p>
+            <p class="body-1">So the diffusion equation will be written as:</p>
+            <p class="body-1">$$ \frac{∂c_i}{∂t}=D_i*\nabla^2c_i+R_i $$</p>
+            <p class="body-1">
+              there is a simpler model, whose diffusion equation could be like
+              this:
+            </p>
+            <p class="body-1">$$ Dt=r^2 $$</p>
+            <p class="body-1">
+              It is the model of Brownian motion and the major feature of
+              Brownian motion that we will use is that the average of the
+              distance squared covered by a diffusing particle grows linearly
+              with time, where D is also the diffusion constant given by the
+              Stokes–Einstein relation mentioned above.
+            </p>
+          </v-card-text>
+          <v-card-title class="text-h4" id="backup">
+            4. Backup plan against over-expression
+          </v-card-title>
+          <p class="body-1"></p>
+          <p class="body-1">【未完成】</p>
+          <p class="body-1"></p>
         </v-container>
       </v-card>
     </v-col>
@@ -364,11 +473,11 @@ export default {
     },
   },
   mounted() {
-    this.step[0] = document.getElementById("abstract");
-    this.step[1] = document.getElementById("urban");
-    this.step[2] = document.getElementById("poverty");
-    this.step[3] = document.getElementById("communication");
-    this.step[4] = document.getElementById("online_popularization");
+    this.step[0] = document.getElementById("introduction");
+    this.step[1] = document.getElementById("activation");
+    this.step[2] = document.getElementById("gene");
+    this.step[3] = document.getElementById("enzyme");
+    this.step[4] = document.getElementById("backup");
     this.updatepos();
     setTimeout(() => {
       this.firstload = false;
