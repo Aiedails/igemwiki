@@ -1,14 +1,11 @@
 <template>
   <!-- disabled href="#..." in this components, because of bad experience. -->
   <!-- The final solution is to use v-col to manage the page. which may be better -->
-  <v-row justify="center" style="margin: auto 3%"> <!-- 3% on v-row and 2% on fixed v-col work well. -->
+  <v-row justify="center" style="margin: auto 3%">
+    <!-- 3% on v-row and 2% on fixed v-col work well. -->
     <v-col cols="2"></v-col>
     <!-- No ` margin-top: 35px;` is required on iGEM server -->
-    <v-col
-      cols="2"
-      style="position: fixed; left: 2%;"
-      v-show="width >= 1264"
-    >
+    <v-col cols="2" style="position: fixed; left: 2%" v-show="width >= 1264">
       <!-- 1264px is the width between md(960~1264) & lg(1264~1904) -->
       <!-- steppers! Put here as reference.
       <v-stepper v-model="e6" vertical>
@@ -52,44 +49,44 @@
         v-show="firstload"
         type="list-item-two-line@2"
       ></v-skeleton-loader>
-      <v-stepper
-        v-show="!firstload"
-        v-model="pos"
-        vertical
-        style="transition: all 1s ease 1s"
-      >
-        <v-stepper-step
-          :complete="pos > 1"
-          step="1"
-          style="transition: all 1s ease 1s"
-          color="primary"
-        >
-          <v-container
-            v-ripple
-            @click="$vuetify.goTo('#description', options)"
-            color="brown--text"
-            class="body-1"
+      <v-hover>
+        <template v-slot:default="{ hover }">
+          <v-stepper
+            :class="`elevation-${hover ? 8 : 2}`"
+            class="transition-swing"
+            v-show="!firstload"
+            v-model="position"
+            vertical
+            non-linear
+            style="transition: all 1s ease 1s; padding-bottom: 8px"
           >
-            Team members
-          </v-container>
-          <small>Some thing here...</small>
-        </v-stepper-step>
-        <v-stepper-step
-          :complete="pos > 2"
-          step="2"
-          style="transition: all 1s"
-          color="primary"
-        >
-          <v-container
-            v-ripple
-            @click="$vuetify.goTo('#professor', options)"
-            color="brown--text"
-            class="body-1"
-          >
-            Professors
-          </v-container>
-        </v-stepper-step>
-      </v-stepper>
+            <v-stepper-step
+              editable
+              edit-icon="1"
+              step="1"
+              @click="$vuetify.goTo('#students', options)"
+              :complete="position > 1"
+              style="transition: all 1s ease 1s"
+              color="primary"
+              class="body-1"
+            >
+              Students
+            </v-stepper-step>
+            <v-stepper-step
+              editable
+              edit-icon="2"
+              step="2"
+              @click="$vuetify.goTo('#professors', options)"
+              :complete="position > 2"
+              style="transition: all 1s"
+              color="primary"
+              class="body-1"
+            >
+              professors
+            </v-stepper-step>
+          </v-stepper>
+        </template>
+      </v-hover>
     </v-col>
     <!-- cards -->
     <!-- ####################################################################### -->
@@ -102,211 +99,113 @@
       <!-- This is a card for text. -->
       <v-skeleton-loader
         v-show="firstload"
-        type="image, article@3"
-      ></v-skeleton-loader>
-      <v-card
-        v-ripple="{ class: `primary--text` }"
-        style="text-decoration: none"
-        hover
-        id="description"
-        v-intersect="onIntersect"
-        v-scroll="updatepos"
-        v-show="!firstload"
-      >
-        <!-- Brown color? I prefer black. To turn it back to black, simply delete the line above -->
-        <!-- This `v-intersect` is used to emit the signal "You can see me!" -->
-        <v-img src="@/assets/temp_sht.jpg">
-          <template v-slot:placeholder>
-            <v-skeleton-loader type="image"></v-skeleton-loader>
-          </template>
-        </v-img>
-        <v-container style="padding: 20px">
-          <v-card-title class="text-h4"> Shanghaitech-China </v-card-title>
-          <v-card-text class="body-1">
-            <p class="body-1">
-              Vue (pronounced /vjuː/, like view) is a progressive framework for
-              building user interfaces. Unlike other monolithic frameworks, Vue
-              is designed from the ground up to be incrementally adoptable. The
-              core library is focused on the view layer only, and is easy to
-              pick up and integrate with other libraries or existing projects.
-              On the other hand, Vue is also perfectly capable of powering
-              sophisticated Single-Page Applications when used in combination
-              with modern tooling and supporting libraries.
-            </p>
-            <p class="body-1">
-              We are a friendly, kind family, always willing to help each other.
-            </p>
-          </v-card-text>
-        </v-container>
-      </v-card>
-      <v-skeleton-loader
-        v-show="firstload"
         type="list-item-avatar-three-line@7"
       ></v-skeleton-loader>
-      <v-card
-        v-show="!firstload"
-        hover
-        style="margin: 35px auto"
-        v-motion
-        :initial="{
-          opacity: 0,
-          y: 100,
-        }"
-        :enter="{
-          opacity: 1,
-          y: 0,
-        }"
-      >
-        <div
-          v-for="(person, index) in infor"
-          :key="index"
-          style="padding: 0; margin: 0"
-        >
-          <v-row align="center" dense justify="start" no-gutters>
-            <v-col style="max-width: 182px" cols="2">
-              <!-- 150 + 2 * 16 -->
-              <v-list-item-avatar
-                :size="width >= 300 ? '150px' : '80px'"
-                style="margin: 16px"
-              >
-                <v-img :src="person.photo"></v-img>
-              </v-list-item-avatar>
-            </v-col>
-            <!-- Abandon dividers -->
-            <v-col cols="12" sm="6" md="8" lg="8" xl="10">
-              <v-container>
-                <v-card-title>{{ person.name }}</v-card-title>
-                <v-card-subtitle>{{ person.role }}</v-card-subtitle>
-                <v-card-text>{{ person.discription }}</v-card-text>
-              </v-container>
-            </v-col>
-            <v-spacer></v-spacer>
-          </v-row>
-          <v-divider></v-divider>
-        </div>
-      </v-card>
+      <v-hover>
+        <template v-slot:default="{ hover }">
+          <v-card
+            :class="`elevation-${hover ? 8 : 2}`"
+            class="transition-swing"
+            style="text-decoration: none"
+            id="description"
+            v-intersect="onIntersect"
+            v-scroll="updatepos"
+            v-show="!firstload"
+            v-motion
+            :initial="{
+              opacity: 0,
+              y: 100,
+            }"
+            :enter="{
+              opacity: 1,
+              y: 0,
+            }"
+          >
+            <v-container style="padding: 20px 3%">
+              <v-card-title class="text-h4"> Students </v-card-title>
+            </v-container>
+            <v-divider></v-divider>
+            <div
+              v-for="(person, index) in infor"
+              :key="index"
+              style="padding: 0; margin: 0"
+            >
+              <v-row align="center" dense justify="start" no-gutters>
+                <v-col style="max-width: 182px" cols="2">
+                  <!-- 150 + 2 * 16 -->
+                  <v-list-item-avatar
+                    :size="width >= 300 ? '150px' : '80px'"
+                    style="margin: 16px"
+                  >
+                    <v-img :src="person.photo"></v-img>
+                  </v-list-item-avatar>
+                </v-col>
+                <!-- Abandon dividers -->
+                <v-col cols="12" sm="6" md="8" lg="8" xl="10">
+                  <v-container>
+                    <v-card-title>{{ person.name }}</v-card-title>
+                    <v-card-subtitle>{{ person.role }}</v-card-subtitle>
+                    <v-card-text>{{ person.discription }}</v-card-text>
+                  </v-container>
+                </v-col>
+                <v-spacer></v-spacer>
+              </v-row>
+              <v-divider></v-divider>
+            </div>
+          </v-card>
+        </template>
+      </v-hover>
       <!-- Used to present Professors -->
-
-      <v-skeleton-loader
-        v-show="firstload"
-        type="image, article@5"
-      ></v-skeleton-loader>
-      <v-card
-        v-show="!firstload"
-        v-ripple="{ class: `primary--text` }"
-        style="margin: 35px auto; text-decoration: none"
-        class="white"
-        hover
-        id="professor"
-        v-scroll="updatepos"
-      >
-        <v-img src="@/assets/temp_prof.jpg">
-          <template v-slot:placeholder>
-            <v-skeleton-loader type="image"></v-skeleton-loader>
-          </template>
-        </v-img>
-        <v-container style="padding: 20px">
-          <v-card-title class="text-h4"> Creative Professor </v-card-title>
-          <v-card-text class="body-1">
-            <v-card-title>Simplicity</v-card-title>
-            <p class="body-1">
-              Arch Linux defines simplicity as without unnecessary additions or
-              modifications. It ships software as released by the original
-              developers (upstream) with minimal distribution-specific
-              (downstream) changes: patches not accepted by upstream are
-              avoided, and Arch's downstream patches consist almost entirely of
-              backported bug fixes that are obsoleted by the project's next
-              release.
-            </p>
-            <p class="body-1">
-              In a similar fashion, Arch ships the configuration files provided
-              by upstream with changes limited to distribution-specific issues
-              like adjusting the system file paths. It does not add automation
-              features such as enabling a service simply because the package was
-              installed. Packages are only split when compelling advantages
-              exist, such as to save disk space in particularly bad cases of
-              waste. GUI configuration utilities are not officially provided,
-              encouraging users to perform most system configuration from the
-              shell and a text editor.
-            </p>
-            <v-card-title>Modernity</v-card-title>
-            <p class="body-1">
-              Arch Linux strives to maintain the latest stable release versions
-              of its software as long as systemic package breakage can be
-              reasonably avoided. It is based on a rolling-release system, which
-              allows a one-time installation with continuous upgrades.
-            </p>
-            <p class="body-1">
-              Arch incorporates many of the newer features available to
-              GNU/Linux users, including the systemd init system, modern file
-              systems, LVM2, software RAID, udev support and initcpio (with
-              mkinitcpio), as well as the latest available kernels.
-            </p>
-            <v-card-title>Pragmatism</v-card-title>
-            <p class="body-1">
-              Arch is a pragmatic distribution rather than an ideological one.
-              The principles here are only useful guidelines. Ultimately, design
-              decisions are made on a case-by-case basis through developer
-              consensus. Evidence-based technical analysis and debate are what
-              matter, not politics or popular opinion.
-            </p>
-            <p class="body-1">
-              The large number of packages and build scripts in the various Arch
-              Linux repositories offer free and open source software for those
-              who prefer it, as well as proprietary software packages for those
-              who embrace functionality over ideology.
-            </p>
-            <p class="body-1">This is a not rather long paragraph.</p>
-            <p class="body-1">We can even add a second line.</p>
-          </v-card-text>
-        </v-container>
-      </v-card>
-      <!-- Notes: Don't use `a` on description cards. Cause ugly ripple and grey color after click -->
       <v-skeleton-loader
         v-show="firstload"
         type="list-item-avatar-three-line@3"
       ></v-skeleton-loader>
-      <v-card
-        v-show="!firstload"
-        hover
-        style="margin: 35px auto"
-        v-motion
-        :initial="{
-          opacity: 0,
-          y: 100,
-        }"
-        :enter="{
-          opacity: 1,
-          y: 0,
-        }"
-      >
-        <div
-          v-for="(person, index) in prof"
-          :key="index"
-          style="padding: 0; margin: 0"
-        >
-          <v-row align="center" dense justify="start" no-gutters>
-            <v-col style="max-width: 182px" cols="2">
-              <!-- 150 + 2 * 16 -->
-              <v-list-item-avatar
-                :size="width >= 300 ? '150px' : '80px'"
-                style="margin: 16px"
-              >
-                <v-img :src="person.photo"></v-img>
-              </v-list-item-avatar>
-            </v-col>
-            <v-col cols="12" sm="6" md="8" lg="8" xl="10">
-              <v-container>
-                <v-card-title>{{ person.name }}</v-card-title>
-                <v-card-subtitle>{{ person.role }}</v-card-subtitle>
-                <v-card-text>{{ person.discription }}</v-card-text>
-              </v-container>
-            </v-col>
-            <v-spacer></v-spacer>
-          </v-row>
-          <v-divider></v-divider>
-        </div>
-      </v-card>
+      <v-hover>
+        <template v-slot:default="{ hover }">
+          <v-card
+            :class="`elevation-${hover ? 8 : 2}`"
+            class="transition-swing"
+            style="margin-top: 35px"
+            v-show="!firstload"
+            v-motion
+            :initial="{
+              opacity: 0,
+              y: 100,
+            }"
+            :enter="{
+              opacity: 1,
+              y: 0,
+            }"
+          >
+            <div
+              v-for="(person, index) in prof"
+              :key="index"
+              style="padding: 0; margin: 0"
+            >
+              <v-row align="center" dense justify="start" no-gutters>
+                <v-col style="max-width: 182px" cols="2">
+                  <!-- 150 + 2 * 16 -->
+                  <v-list-item-avatar
+                    :size="width >= 300 ? '150px' : '80px'"
+                    style="margin: 16px"
+                  >
+                    <v-img :src="person.photo"></v-img>
+                  </v-list-item-avatar>
+                </v-col>
+                <v-col cols="12" sm="6" md="8" lg="8" xl="10">
+                  <v-container>
+                    <v-card-title>{{ person.name }}</v-card-title>
+                    <v-card-subtitle>{{ person.role }}</v-card-subtitle>
+                    <v-card-text>{{ person.discription }}</v-card-text>
+                  </v-container>
+                </v-col>
+                <v-spacer></v-spacer>
+              </v-row>
+              <v-divider></v-divider>
+            </div>
+          </v-card>
+        </template>
+      </v-hover>
     </v-col>
     <v-col cols="2" v-if="width >= 1264"></v-col>
     <!-- The back-to btn, use the `istop` to judge show or not. -->
@@ -345,7 +244,8 @@ export default {
   },
 
   data: () => ({
-    pos: 1, //used for v-stepper
+    step: [], //use for store position of title
+    position: 1, //use for v-stepper to know where we are
     isIntersecting: false,
     istop: true,
     firstload: true, //used for skeleton loader.
@@ -357,46 +257,150 @@ export default {
     },
     infor: [
       {
-        name: "sr",
+        name: "Rui Su",
         photo: require("@/assets/1.png"),
-        discription: "very good people",
+        discription:
+          "As the student leader, he did all kinds of things. He must had a big heart and good mood.\
+           He is a believer and lead the team.",
         role: "Team Leader",
       },
       {
-        name: "zyy",
+        name: "Chenghao Zhu",
+        photo: require("@/assets/1.png"),
+        discription:
+          "He is the finance chief and the leader of molecular experiment team. He was used to starting \
+          the experiment in the afternoon and keeping on doing it until midnight. NO ONE can force him to \
+          get up early but E.coli.",
+        role: "lab",
+      },
+      {
+        name: "Shiyue Ding",
         photo: require("@/assets/2.png"),
-        discription: "Very good people",
-        role: "Modeling Wiki Hardware",
+        discription: "Very good peopleShe is a student of biology who should have chosen a liberal arts \
+        major is now studying business herself. Currently, she is jointly responsible for the team's Human \
+        Practice section, committed to making the project more realistic from the perspective of business \
+        and creating more value for people.",
+        role: "Human Practice",
       },
       {
-        name: "sj",
+        name: "Huayu Wang",
         photo: require("@/assets/3.png"),
-        discription: "Very good people",
-        role: "Modeling Wiki lab",
+        discription: "If you want bewildering, provoking, saddening maddening, rapturing, crumbling, rumbling, \
+        tumbling, excruciatingly baffling babbling, he is your guy.",
+        role: "lab",
       },
       {
-        name: "sj",
+        name: "Han Ding",
         photo: require("@/assets/3.png"),
-        discription: "Very good people",
-        role: "Modeling Wiki lab",
+        discription: "She is in charge of education part. She fit in extremely quickly with her students and did \
+        surprisingly well as an educator, which may be an alternative after she loses her job in biology in the \
+        future.",
+        role: "Human Practice",
       },
       {
-        name: "sj",
+        name: "Zixuan Li",
         photo: require("@/assets/3.png"),
-        discription: "Very good people",
-        role: "Modeling Wiki lab",
+        discription: "She was mainly responsible for the experimental part, hope you enjoy her design in the project.",
+        role: "lab",
       },
       {
-        name: "sj",
+        name: "Zi'ao Ling",
         photo: require("@/assets/3.png"),
-        discription: "Very good people",
-        role: "Modeling Wiki lab",
+        discription: "Confirmedly willing to work on artificial organs to cure patients and develop the efficiency of \
+        medical field. Geography enthusiast, architecture lover and amateur runner.",
+        role: "lab",
       },
       {
-        name: "sj",
+        name: "Jieni Hu",
         photo: require("@/assets/3.png"),
-        discription: "Very good people",
-        role: "Modeling Wiki lab",
+        discription: "She participated in wet lab, art designing and collaboration part. She didn’t know anything \
+        at first and groped her way like an explorer. But she could always be passionate and motivated to meet new \
+        things and new people.",
+        role: "art lab",
+      },
+      {
+        name: "Zhiwen Huang",
+        photo: require("@/assets/3.png"),
+        discription: "Majoring in life science, he mainly took part in the experiment of our team. he also \
+        participated in the design of wiki, poster and videos out of his interest.",
+        role: "art lab",
+      },
+      {
+        name: "Zhuoya Li",
+        photo: require("@/assets/3.png"),
+        discription: "She was responsible for the work of the art design part of the team because she loves \
+        painting, design, and photography. She is also enjoying doing her favorite biology experiments in the \
+        lab in a white coat.Becoming a scientist who makes beneficial contributions is her dream.",
+        role: "art lab",
+      },
+      {
+        name: "Ruixuan Xue",
+        photo: require("@/assets/3.png"),
+        discription: "He is a creative, amiable and healthy sophomore with a little bit flair for doing \
+        experiments and interest in modelling. Glad to have him in ShanghaiTech_China.",
+        role: "model lab",
+      },
+      {
+        name: "Jing Sun",
+        photo: require("@/assets/3.png"),
+        discription: "She’s interested in biology! She’s interested in mathematical modeling! \
+        She’s interested in experiment!…",
+        role: "model lab",
+      },
+      {
+        name: "Yiyao Zhu",
+        photo: require("@/assets/3.png"),
+        discription: "He is good at embedded system and tries to combine this system with \
+        biology to simplify the experiments.",
+        role: "hardware lab",
+      },
+      {
+        name: "Yizhi Wang",
+        photo: require("@/assets/3.png"),
+        discription: "Majoring in computer science, this guy loves coding and turns his computer \
+        into his friend. He uses Arch btw.",
+        role: "wiki",
+      },
+      {
+        name: "Kaijun Wang",
+        photo: require("@/assets/3.png"),
+        discription: "She is a beginner in wet lab, but she has great passion in biology. She \
+        takes delight in finding explanations for unexpected results in experiments.",
+        role: "lab",
+      },
+      {
+        name: "Handi Jia",
+        photo: require("@/assets/3.png"),
+        discription: "He a life science student at ShanghaiTech University who focus on the \
+        experiment and video parts in this project. Immersing himself in the experiment and \
+        video production is always an attractive thing. ",
+        role: "lab",
+      },
+      {
+        name: "Shuyao Su",
+        photo: require("@/assets/3.png"),
+        discription: "She is a science biology undergraduate student from ShanghaiTech \
+        university. She adept at playing tennis，consistently innovating to create value \
+        and most importantly, loving biology!",
+        role: "lab",
+      },
+      {
+        name: "Qi Xin",
+        photo: require("@/assets/3.png"),
+        discription: "Responsible for the experimental part, often messed up the experiment \
+        but never give up. Have given several lectures about his iGEM teamwork, but unfortunately \
+        there was almost no audience. Never lose his love for life sciences.",
+        role: "lab",
+      },
+      {
+        name: "Ziding Zhou",
+        photo: require("@/assets/3.png"),
+        discription: "Zhouziding is a senior student majoring life and science technology. Although \
+        she didn‘t quite know about life and science when she was a freshman, but during learning \
+        about it, it shows its unique charm and opens a completely new world to her . Now she is \
+        interested in experiment design -- how to find simple and efficient ways to solve problems \
+        about the world.",
+        role: "lab",
       },
     ],
     prof: [
@@ -423,18 +427,20 @@ export default {
       this.istop = this.isIntersecting;
     },
     updatepos() {
-      var description = document.getElementById("description");
-      var professor = document.getElementById("professor");
-      var despos = description.getBoundingClientRect().top;
-      var propos = professor.getBoundingClientRect().top;
-      if (despos >= 200) this.pos = 0;
-      else if (despos <= 200 && propos >= 200) this.pos = 1;
-      else if (despos <= 200 && propos <= 200) this.pos = 2;
-      console.log(despos);
-      console.log(propos);
+      /*
+      var pos = [];
+      var posnow = 0;
+      for (var i = 0; i < this.step.length; i++) {
+        pos[i] = this.step[i].getBoundingClientRect().top;
+        if (pos[i] <= 300) posnow = i;
+      }
+      this.position = posnow + 1;
+      */
     },
   },
   mounted() {
+    this.step[0] = document.getElementById("prologue");
+    this.step[1] = document.getElementById("lab_safety");
     this.updatepos();
     setTimeout(() => {
       this.firstload = false;
