@@ -1,6 +1,14 @@
 $body-font-family: 'Source Sans Pro', sans-serif;
-$font-size-root: 17px;
+$font-size-root: 18px;
 $btn-font-sizes: (
     'default': 1rem,
 );
 $btn-font-weight: 600;
+$headings: (
+  'body-1': (
+    'size': 1.125rem,
+  ),
+  'body-2': (
+    'size': 1rem,
+  )
+);
