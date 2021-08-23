@@ -1,5 +1,5 @@
 /* The navigation bar of every page of the wiki.
- * This component in every page should be exactly the same.
+ * This component in every page should be exactly the same, except the title.
  * DO NOT FORMAT THIS DOCUMENT! The formatter is stupid.
  */
 
