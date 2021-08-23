@@ -2,7 +2,7 @@
   <v-app
     dark
     style="
-      background-image: linear-gradient(#E5F3FA, #9CD4CB 8%, #89BDD3 34%, #88BBBF 68%, #29B6F6);
+      background-image: linear-gradient(#1e88e5, #1e88e5);
     "
     id="app"
   >
@@ -30,7 +30,7 @@
     -->
 
     <navbar v-resize="onResize" :width="this.width"></navbar>
-    <mainpart :width="this.width" style="height: 17000px"></mainpart>
+    <mainpart :width="this.width" :height="this.height" style="height: 17000px"></mainpart>
     <temfooter></temfooter>
   </v-app>
 </template>
