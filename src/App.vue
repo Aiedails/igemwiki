@@ -1,5 +1,13 @@
 <template>
-  <v-app dark style="background-color: #ebecee" id="app">
+  <v-app
+    dark
+    style="
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    "
+    id="app"
+  >
     <!-- the carousal -->
     <!--
     <v-card elevation="24" width="380" class="mx-auto">
@@ -87,9 +95,12 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+$primary: #1388e5;
+$secondary: #4fc3f7;
+
 ::selection {
-  background: #4dd0e1;
+  background: $secondary;
   color: white;
 }
 #main {
@@ -117,12 +128,12 @@ a:hover {
 }
 .list_number {
   border-width: 0 0 0 4px;
-  border-color: #81d4fa !important;
+  border-color: $secondary !important;
   border-style: solid;
   padding: 0;
 }
 li::marker {
-  color: #81d4fa;
+  color: $secondary;
 }
 /*use to change the size of v-stepper-step's sign.*/
 .v-stepper__step__step {
@@ -138,10 +149,17 @@ li::marker {
   border-width: 0 0 0 4px;
   border-color: grey;
   border-style: solid;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
 .code::selection {
   color: white;
   background: #838383 !important;
+}
+.title {
+  box-shadow: inset 0px -12px $secondary;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 16px;
 }
 </style>
