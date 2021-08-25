@@ -7,40 +7,40 @@
         v-show="firstload"
         type="list-item-two-line@2"
       ></v-skeleton-loader>
-          <v-stepper
-            :class="`elevation-${hover ? 8 : 2}`"
-            class="transition-swing"
-            v-show="!firstload"
-            v-model="position"
-            vertical
-            non-linear
-            style="transition: all 1s ease 1s; padding-bottom: 8px"
-          >
-            <v-stepper-step
-              editable
-              edit-icon="1"
-              step="1"
-              @click="$vuetify.goTo('#students', options)"
-              :complete="position > 1"
-              style="transition: all 1s ease 1s"
-              color="primary"
-              class="body-1"
-            >
-              Students
-            </v-stepper-step>
-            <v-stepper-step
-              editable
-              edit-icon="2"
-              step="2"
-              @click="$vuetify.goTo('#professors', options)"
-              :complete="position > 2"
-              style="transition: all 1s"
-              color="primary"
-              class="body-1"
-            >
-              professors
-            </v-stepper-step>
-          </v-stepper>
+      <v-stepper
+        :class="`elevation-${hover ? 8 : 2}`"
+        class="transition-swing"
+        v-show="!firstload"
+        v-model="position"
+        vertical
+        non-linear
+        style="transition: all 1s ease 1s; padding-bottom: 8px"
+      >
+        <v-stepper-step
+          editable
+          edit-icon="1"
+          step="1"
+          @click="$vuetify.goTo('#students', options)"
+          :complete="position > 1"
+          style="transition: all 1s ease 1s"
+          color="primary"
+          class="body-1"
+        >
+          Students
+        </v-stepper-step>
+        <v-stepper-step
+          editable
+          edit-icon="2"
+          step="2"
+          @click="$vuetify.goTo('#professors', options)"
+          :complete="position > 2"
+          style="transition: all 1s"
+          color="primary"
+          class="body-1"
+        >
+          professors
+        </v-stepper-step>
+      </v-stepper>
     </v-col>
     <!-- cards -->
     <!-- ####################################################################### -->
@@ -80,19 +80,20 @@
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th>MIBOM technical interation</th>
-                    <th>Integrated Human Practice</th>
-                    <th>Entrepreneurship</th>
-                    <th>The practice of balancing educational resources</th>
-                    <th>Collaborative international education practice</th>
+                    <th class="text-center">MIBOM technical interation</th>
+                    <th class="text-center">Integrated Human Practice</th>
+                    <th class="text-center">Entrepreneurship</th>
+                    <th class="text-center">The practice of balancing educational resources</th>
+                    <th class="text-center">Collaborative international education practice</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr v-for="item in hphelp" :key="item.name">
                     <td>{{ item.name }}</td>
-                    <td v-for="(i, index) in item.isin" :key="index">
-                      <v-container :class="i > 0 ? 'primary' : ' ' ">
-                      </v-container>
+                    <td v-for="(i, index) in item.isin" :key="index" class="text-center">
+                      <v-list-item-avatar class="secondary" v-if="i > 0">
+                        <v-icon>mdi-comment-check-outline</v-icon>
+                      </v-list-item-avatar>
                     </td>
                   </tr>
                 </tbody>
@@ -126,18 +127,19 @@
                 <thead>
                   <tr>
                     <th>Name</th>
-                    <th>Reagents</th>
-                    <th>Equipment</th>
-                    <th>Mentorship</th>
-                    <th>Critical gene and cell</th>
+                    <th class="text-center">Reagents</th>
+                    <th class="text-center">Equipment</th>
+                    <th class="text-center">Mentorship</th>
+                    <th class="text-center">Critical gene and cell</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr v-for="item in practicehelp" :key="item.name">
                     <td>{{ item.name }}</td>
-                    <td v-for="(i, index) in item.isin" :key="index">
-                      <v-container :class="i > 0 ? 'primary' : ' ' ">
-                      </v-container>
+                    <td v-for="(i, index) in item.isin" :key="index" class="text-center">
+                      <v-list-item-avatar class="secondary" v-if="i > 0">
+                        <v-icon>mdi-clipboard-check-outline</v-icon>
+                      </v-list-item-avatar>
                     </td>
                   </tr>
                 </tbody>

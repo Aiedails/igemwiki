@@ -1,5 +1,13 @@
 <template>
-  <v-app dark  id="app">
+  <v-app
+    dark
+    style="
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    "
+    id="app"
+  >
     <!-- the carousal -->
     <!--
     <v-card elevation="24" width="380" class="mx-auto">
@@ -87,9 +95,12 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+$primary: #1388e5;
+$secondary: #4fc3f7;
+
 ::selection {
-  background: #EF9A9A;
+  background: $secondary;
   color: white;
 }
 #main {
@@ -111,7 +122,44 @@ p {
   margin: 0;
   font-size: 1rem;
 }
-a, a:hover{
+a,
+a:hover {
   text-decoration: none !important;
+}
+.list_number {
+  border-width: 0 0 0 4px;
+  border-color: $secondary !important;
+  border-style: solid;
+  padding: 0;
+}
+li::marker {
+  color: $secondary;
+}
+/*use to change the size of v-stepper-step's sign.*/
+.v-stepper__step__step {
+  height: 16px;
+  min-width: 16px;
+  width: 16px;
+}
+.v-stepper__step__step .v-icon.v-icon {
+  font-size: 0.75rem;
+}
+.code {
+  padding: 16px;
+  border-width: 0 0 0 4px;
+  border-color: grey;
+  border-style: solid;
+  background-color: #eeeeee;
+}
+.code::selection {
+  color: white;
+  background: #838383 !important;
+}
+.title {
+  box-shadow: inset 0px -12px $secondary;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 16px;
 }
 </style>
