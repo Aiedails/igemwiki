@@ -26,7 +26,7 @@
               :complete="position > 1"
               style="transition: all 1s ease 1s"
               color="primary"
-              class="body-1"
+              class="body-2"
             >
               Prologue
             </v-stepper-step>
@@ -38,7 +38,7 @@
               :complete="position > 2"
               style="transition: all 1s"
               color="primary"
-              class="body-1"
+              class="body-2"
             >
               Lab Safety
             </v-stepper-step>
@@ -50,7 +50,7 @@
               :complete="position > 3"
               style="transition: all 1s"
               color="primary"
-              class="body-1"
+              class="body-2"
             >
               General microorganism information & general project design
             </v-stepper-step>
@@ -62,7 +62,7 @@
               :complete="position > 4"
               style="transition: all 1s"
               color="primary"
-              class="body-1"
+              class="body-2"
             >
               Specific project design
             </v-stepper-step>
@@ -74,7 +74,7 @@
               :complete="position > 5"
               style="transition: all 1s"
               color="primary"
-              class="body-1"
+              class="body-2"
             >
               Use of harmful reagents and procedures
             </v-stepper-step>
@@ -101,9 +101,11 @@
             v-show="!firstload"
           >
             <v-container style="padding: 20px 3%">
-              <v-card-title class="text-h3" id="prologue">
-                Prologue
-              </v-card-title>
+              <v-row justify="center">
+                <v-card-title class="text-h4 title" id="prologue">
+                  Prologue</v-card-title
+                >
+              </v-row>
               <v-card-text>
                 <p class="body-1">
                   Throughout the experiment, the members of Shanghaitech_China
@@ -119,9 +121,11 @@
                   have any biosafety concerns in the laboratory.
                 </p>
               </v-card-text>
-              <v-card-title class="text-h3" id="lab_safety">
-                Lab Safety
-              </v-card-title>
+              <v-row justify="center">
+                <v-card-title class="text-h4 title" id="lab_safety">
+                  Lab Safety</v-card-title
+                >
+              </v-row>
               <v-card-text>
                 <p class="body-1">
                   This time, our experiments were done in the molecular
@@ -265,12 +269,15 @@
                   container and give it to a professional company to deal with.
                 </p>
               </v-card-text>
-              <v-card-title class="text-h3" id="project_design">
-                Project Design
-              </v-card-title>
-              <v-card-title class="text-h4" id="general_information">
-                General microorganism information and general project design
-              </v-card-title>
+              <v-row justify="center">
+                <v-card-title class="text-h4 title" id="project_design">
+                  Project Design</v-card-title
+                >
+              </v-row>
+              <v-card-title class="text-h5" id="general_information">
+                General microorganism information and general project
+                design</v-card-title
+              >
               <v-card-text>
                 <p class="body-1">
                   For all E. coli, which belongs to risk group 1, we get
@@ -344,10 +351,10 @@
                   </v-list-item>
                 </v-list>
               </v-card-text>
-              <v-card-title class="text-h4" id="specific_design">
-                Specific project design
-              </v-card-title>
-              <v-card-title class="text-h5"> Detection </v-card-title>
+              <v-card-title class="text-h5" id="specific_design">
+                Specific project design</v-card-title
+              >
+              <v-card-title class="text-h6">Detection</v-card-title>
               <v-card-text>
                 <p class="body-1">
                   There exist some risks. In molecular experiments, we engineer
@@ -368,7 +375,7 @@
                   problems.
                 </p>
               </v-card-text>
-              <v-card-title class="text-h5"> Prevention </v-card-title>
+              <v-card-title class="text-h6">Prevention</v-card-title>
               <v-card-text>
                 <p class="body-1">
                   We will use disinfectant to kill the remaining bacteria after
@@ -379,12 +386,12 @@
                   exposed skin is minimized.
                 </p>
               </v-card-text>
-              <v-card-title class="text-h4" id="use_of_harmful">
-                Use of harmful reagents and procedures
-              </v-card-title>
-              <v-card-title class="text-h5"> Detection </v-card-title>
+              <v-card-title class="text-h5" id="use_of_harmful">
+                Use of harmful reagents and procedures</v-card-title
+              >
+              <v-card-title class="text-h6">Detection</v-card-title>
               <v-card-text>
-                <v-list style="padding-left: 16px;">
+                <v-list style="padding-left: 16px">
                   <v-list-item>
                     <li class="body-2">
                       Being exposed to ultraviolet for a long time, which may
@@ -426,7 +433,7 @@
                   </v-list-item>
                 </v-list>
               </v-card-text>
-              <v-card-title class="text-h5"> Prevention </v-card-title>
+              <v-card-title class="text-h6">Prevention</v-card-title>
               <v-card-text>
                 <p class="body-1">
                   Lab coats, gloves, glasses and masks must be worn when
