@@ -61,16 +61,22 @@
         v-show="!firstload"
       >
         <v-container style="padding: 20px">
-          <v-card-title class="text-h4" id="destination">
-            Destination
-          </v-card-title>
+          <v-row justify="center">
+            <v-card-title class="text-h4 title" id="destination">
+              Destination</v-card-title
+            >
+          </v-row>
           <v-card-text>
             <p class="body-1">
               In our project, we designed a mechanism to release the drug at a
               specific point on the wound.
             </p>
           </v-card-text>
-          <v-card-title class="text-h4" id="solution"> Solution </v-card-title>
+          <v-row justify="center">
+            <v-card-title class="text-h4 title" id="solution">
+              Solution</v-card-title
+            >
+          </v-row>
           <v-card-text>
             <p class="body-1">
               First of all our mechanical structure took the classic belt and
@@ -160,7 +166,7 @@ void step(boolean dir, byte dirPin, byte stepperPin, int steps)
     digitalWrite(stepperPin, LOW);
     delayMicroseconds(1000); 
   }
-} </pre
+}</pre
             >
             <p class="body-1">
               Also interact with Arduino on PC to determine the position of drug
