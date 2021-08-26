@@ -95,12 +95,11 @@
             :class="`elevation-${hover ? 8 : 2}`"
             class="transition-swing"
             style="text-decoration: none"
-            v-intersect="onIntersect"
             v-scroll="updatepos"
             v-show="!firstload"
           >
             <v-container style="padding: 20px">
-              <v-row justify="center">
+              <v-row justify="center" v-intersect="onIntersect">
                 <v-card-title class="text-h4 title" id="introduction">
                   Introduction</v-card-title
                 >
@@ -447,7 +446,6 @@
             :class="`elevation-${hover ? 8 : 2}`"
             class="transition-swing"
             style="text-decoration: none; margin-top: 35px"
-            v-intersect="onIntersect"
             v-scroll="updatepos"
             v-show="!firstload"
           >
