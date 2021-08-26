@@ -83,16 +83,28 @@
                     <th class="text-center">MIBOM technical interation</th>
                     <th class="text-center">Integrated Human Practice</th>
                     <th class="text-center">Entrepreneurship</th>
-                    <th class="text-center">The practice of balancing educational resources</th>
-                    <th class="text-center">Collaborative international education practice</th>
+                    <th class="text-center">
+                      The practice of balancing educational resources
+                    </th>
+                    <th class="text-center">
+                      Collaborative international education practice
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr v-for="item in hphelp" :key="item.name">
                     <td>{{ item.name }}</td>
-                    <td v-for="(i, index) in item.isin" :key="index" class="text-center">
-                      <v-list-item-avatar class="secondary" v-if="i > 0">
-                        <v-icon>mdi-comment-check-outline</v-icon>
+                    <td
+                      v-for="(i, index) in item.isin"
+                      :key="index"
+                      class="text-center"
+                    >
+                      <v-list-item-avatar
+                        class="secondary"
+                        v-if="i > 0"
+                        size="30"
+                      >
+                        <v-icon dark>mdi-check</v-icon>
                       </v-list-item-avatar>
                     </td>
                   </tr>
@@ -136,9 +148,17 @@
                 <tbody>
                   <tr v-for="item in practicehelp" :key="item.name">
                     <td>{{ item.name }}</td>
-                    <td v-for="(i, index) in item.isin" :key="index" class="text-center">
-                      <v-list-item-avatar class="secondary" v-if="i > 0">
-                        <v-icon>mdi-clipboard-check-outline</v-icon>
+                    <td
+                      v-for="(i, index) in item.isin"
+                      :key="index"
+                      class="text-center"
+                    >
+                      <v-list-item-avatar
+                        class="secondary"
+                        v-if="i > 0"
+                        size="30"
+                      >
+                        <v-icon dark>mdi-check</v-icon>
                       </v-list-item-avatar>
                     </td>
                   </tr>
