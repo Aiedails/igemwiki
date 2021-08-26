@@ -22,61 +22,49 @@
               editable
               edit-icon="1"
               step="1"
-              @click="$vuetify.goTo('#abstract', options)"
+              @click="$vuetify.goTo('#overview', options)"
               :complete="position > 1"
               style="transition: all 1s ease 1s"
               color="primary"
               class="body-1"
             >
-              Abstract
+              overview
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="2"
               step="2"
-              @click="$vuetify.goTo('#urban', options)"
+              @click="$vuetify.goTo('#model', options)"
               :complete="position > 2"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              Education in urban district
+              cooperation in models
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="3"
               step="3"
-              @click="$vuetify.goTo('#poverty', options)"
+              @click="$vuetify.goTo('#hp', options)"
               :complete="position > 3"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              Education in poverty-stricken area
+              cooperation in human practice
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="4"
               step="4"
-              @click="$vuetify.goTo('#communication', options)"
+              @click="$vuetify.goTo('#develop', options)"
               :complete="position > 4"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              Xinan, abroad -- Communication
-            </v-stepper-step>
-            <v-stepper-step
-              editable
-              edit-icon="5"
-              step="5"
-              @click="$vuetify.goTo('#online_popularization', options)"
-              :complete="position > 5"
-              style="transition: all 1s"
-              color="primary"
-              class="body-1"
-            >
-              Online popularization of synthetic biology
+              Development of kill switch
             </v-stepper-step>
           </v-stepper>
         </template>
@@ -87,227 +75,160 @@
       <!-- This is a card for text. -->
       <v-skeleton-loader
         v-show="firstload"
-        type="image, article@6"
+        type="image, article@3"
       ></v-skeleton-loader>
-      <v-card
-        style="text-decoration: none"
-        v-intersect="onIntersect"
-        v-scroll="updatepos"
-        v-show="!firstload"
-      >
-        <v-container style="padding: 20px">
-          <v-row justify="center">
-            <v-card-title
-              class="text-h4 title"
-              id="abstract"
-              v-intersect="onIntersect"
-            >
-              Abstract
-            </v-card-title>
-          </v-row>
-          <v-card-text>
-            <p class="body-1">一段文字</p>
-          </v-card-text>
-          <v-row justify="center">
-            <v-card-title class="text-h4 title" id="offline_lectures">
-              Offline Lectures
-            </v-card-title>
-          </v-row>
-          <v-card-title class="text-h5" id="urban">
-            Education in urban district
-          </v-card-title>
-          <v-card-title class="text-h6">
-            Junior high school -- Activity of 'Scientists in campus'
-          </v-card-title>
-          <v-card-text>
-            <p class="body-1">一段文字+图</p>
-          </v-card-text>
-          <v-card-title class="text-h6">
-            Senior high school -- As summer volunteers
-          </v-card-title>
-          <v-card-text>
-            <p class="body-1">一段文字+图</p>
-          </v-card-text>
-          <v-card-title class="text-h6">
-            College - To arouse interests
-          </v-card-title>
-          <v-card-text>
-            <p class="body-1">
-              We also often give lectures in the field of synthetic biology on
-              campus. Considering college students' strong acceptance ability,
-              we will choose more interesting topics to talk about, such as
-              double-regulated suicide system. Interesting subjects make even
-              students in other majors can listen to with interest.
-            </p>
-            <p class="body-1"></p>
-            <p class="body-1">
-              Said some electrical engineering students, 'Through this form of
-              popular science, interdisciplinary communication can help them
-              have a more complete understanding of science and a deeper
-              understanding of their major.'
-            </p>
-            <v-img src="@/assets/ssy.jpg" />
-            <p class="body-1"></p>
-            <v-img src="@/assets/xq_ssy.jpg" />
-          </v-card-text>
-          <v-card-title class="text-h5" id="poverty">
-            Education in poverty-stricken area
-          </v-card-title>
-          <v-card-title class="text-h6">
-            Primary school in Yunnan - As volunteer teachers
-          </v-card-title>
-          <v-card-text>
-            <p class="body-1">
-              This year, we went to Yunlong county in Yunnan. As a village which
-              is 4 hours mountain road by car from city, it's hard for villager
-              to communicate with the outside world, leading to old and poor
-              education resources. Even though their classrooms are equipped
-              with advanced facilities, the elderly teachers rarely use them, so
-              we teach them through electronic presentations and the use of
-              these devices. When we meet the principle over there, he said
-              passionately, 'When I saw students of Shanghaitech, I saw hope of
-              our education.'. Our visit represent a big chance for students
-              there.
-            </p>
-            <v-img src="@/assets/dh_1.jpg" />
-            <p class="body-1"></p>
-            <v-img src="@/assets/dh_2.jpg" />
-            <p class="body-1">
-              Thinking about how little experience they have in learning
-              biology, We chose to introduce basic concepts in biology such as
-            </p>
-            <p class="body-1">
-              internal environment, cells, DNA and so on. We brought the
-              children along to draw cells, organelles, DNA and so on, which was
-              a great way to focus the children's attention. It turned out that
-              they can easily accept the knowledge through the analogy of cells
-              in the internal environment and the swimmer. So we tried to
-              explain the central dogma of inheritance. Although it was
-              relatively difficult for them, they listened with great interest
-              and did well in the Q&A section in the end. When we show the PV
-              video of our team and Xinan team, it seemed that we opened up new
-              worlds for them. A few brief introductory lessons kindled their
-              interest in biology.
-            </p>
-            <p class="body-1">
-              After class, we offered online courses and popular science videos
-              for them so that even when we leave, they can continue to study
-              biology and even use these learning methods to learn new content.
-              Also, we left their contact information and public account, to
-              answer their future study and life in the new questions.
-            </p>
-            <p class="body-1">
-              What moved us a lot was that some students quickly accepted
-              knowledge and excitedly told us that they want to become
-              scientists in the field of biology, which was undoubtedly the
-              biggest affirmation for us. Some of the students were able to
-              slowly say their answers together, even though they were ashamed
-              to stand up to answer the questions. We were overjoyed by the
-              progress of the students.
-            </p>
-          </v-card-text>
-          <v-card-title class="text-h6">
-            Junior high school in Yunnan - As volunteer teachers
-          </v-card-title>
-          <v-card-text>
-            <p class="body-1">
-              After talking to the students briefly, we realized that although
-              they had been exposed to a small amount of biological knowledge
-              about plants and animals, they still had no idea about biology. In
-              that case, rather than instilling a lot of knowledge, we want to
-              cultivate their interest in biology and tell them what biology,
-              especially synthetic biology, which I'm working on, is for, and
-              why should we study biology.
-            </p>
-            <p class="body-1">
-              For fun, I introduced junior high school students to the
-              structural colors of animals. I told them why chicken feathers
-              running around the village glow blue, why butterfly wings change
-              color, and, most intriguingly, how chameleons change color. In
-              this class, I found many videos from Bilibili, a video website, as
-              examples, which not only made students understand more thoroughly,
-              but also aroused their interest more than boring words. It is also
-              in this way that we show how to use resources to find learning
-              materials. I think this will help students more than biology. At
-              the same time, they were very interested in hearing about what we
-              were doing in the iGEM competition, and the application aspect of
-              it was very novel to them.
-            </p>
-            <v-img src="@/assets/dh_3.jpg" />
-            <p class="body-1">
-              More students were willing to communicate with us than the
-              elementary school group. They were more grateful for the invisible
-              things we brought to them than just talking about their feelings
-              in biology class. 'I understand a lot, have more motivation, good
-              study confidence is also more firm.', they said.
-            </p>
-            <v-img src="@/assets/dh_4.jpg" />
-          </v-card-text>
-          <v-card-title class="text-h6">
-            Junior high school in Anhui - As volunteer teachers
-          </v-card-title>
-          <v-card-text>
-            <p class="body-1">
-              In Anhui, we expanded the students' knowledge of botany. We try to
-              get out of the textbook and show them what common plants are in
-              their daily lives and how to make herbarium specimens. Let them
-              use living things. The students are having fun and learning.
-            </p>
-            <v-img src="@/assets/zch_1.jpg" />
-            <p class="body-1"></p>
-            <v-img src="@/assets/zch_2.jpg" />
-          </v-card-text>
-          <v-card-title class="text-h5" id="communication">
-            Xinan, abroad - Communicaton
-          </v-card-title>
-          <v-card-title class="text-h5">
-            Junior high school -- Road show
-          </v-card-title>
-          <v-card-text class="body-1">
-            <p class="body-1">一段文字</p>
-          </v-card-text>
-          <v-card-title class="text-h5">
-            Senior high school -- The living theatre
-          </v-card-title>
-          <v-card-text class="body-1">
-            <p class="body-1">一段文字</p>
-            <u>Specific format</u>
-          </v-card-text>
-          <v-card-title class="text-h5"> Conclusion </v-card-title>
-          <v-card-text>
-            <p class="body-1">一段文字+图</p>
-          </v-card-text>
-          <v-card-title class="text-h5" id="online_popularization">
-            Online popularization of synthetic biology
-          </v-card-title>
-          <v-card-title class="text-h6">
-            PV video publicity on Bilibili
-          </v-card-title>
-          <v-card-text>
-            <p class="body-1">一段文字+图</p>
-          </v-card-text>
-          <v-card-text>
-            <p class="body-1">
-              * Continuous popular science on our Wechat official accounts -
-              Also collaborate with Xinan
-            </p>
-            <p class="body-1">
-              To make your materials accessible to a wider audience, we publish
-              all the contents of the campus lectures to the public account,
-              which not only enables students to understand and review the
-              contents more systematically, but also enables more students who
-              are not in class to accept popular science in their spare time. At
-              the same time, considering that many children in poor areas are
-              not able to use the electronic products around them, we also leave
-              the courseware and our contact information when teaching offline,
-              so as to teach them how to use the existing resources to learn
-              better.
-            </p>
-            <p class="body-1"></p>
-            <p class="body-1">一段文字+图</p>
-          </v-card-text>
-        </v-container>
-      </v-card>
+      <v-hover>
+        <template v-slot:default="{ hover }">
+          <v-card
+            :class="`elevation-${hover ? 8 : 2}`"
+            class="transition-swing"
+            style="text-decoration: none"
+            id="description"
+            v-intersect="onIntersect"
+            v-scroll="updatepos"
+            v-show="!firstload"
+          >
+            <v-container style="padding: 20px">
+              <v-row justify="center">
+                <v-card-title class="text-h4 title" id="overview"
+                  >Overview</v-card-title
+                >
+              </v-row>
+              <v-card-text>
+                <p class="body-1">
+                  We established a connection GA_State_SW_Jiaotong through a
+                  regional online conference. Since that meeting, we have
+                  maintained a strong interest in each other's project content,
+                  so in following weeks, we held several online and offline
+                  meetings on experimental design, modeling, and human practice.
+                </p>
+              </v-card-text>
+              <v-row justify="center">
+                <v-card-title class="text-h4 title" id="model">
+                  The first stage-implement enlightment and cooperation in
+                  models</v-card-title
+                >
+              </v-row>
+              <v-card-text>
+                <p class="body-1">
+                  1.ShanghaiTech_China→GA_State_SW_Jiaotong: Implement
+                  enlightment
+                </p>
+                <p class="body-1">
+                  This year, GA_State_SW_Jiaotong's goal is to develop a
+                  treatment for baldness by altering e. coli to secrete Gas6 and
+                  EGF to promote hair growth. In the final implementation of the
+                  selection of materials, GA_State_SW_Jiaotong is still hesitant
+                  about E. coli(中间那个点应该是中心点，打不出来) packaging. In
+                  this regard, we rediscussed with them. In combination with our
+                  own gel project and system, we have provided a new idea: using
+                  hydrogel to encapsulate E. coli (同上)may be more beneficial
+                  to the survival and protein expression of engineered bacteria.
+                  And this can be applied to daily life better.
+                </p>
+                <p class="body-1">
+                  2.GA_State_SW_Jiaotong→ShanghaiTech_China: Cooperation in
+                  models
+                </p>
+                <p class="body-1">
+                  Our team ShanghaiTech_China is not good at mechanical
+                  analysis. In our envisioned model, we want to know how the
+                  mechanical force conduct from the hydrogel to the cells. But
+                  we do not know how to build such models. GA_State_SW_Jiaotong
+                  helped us on establishing the mechanical force conduction
+                  model and taught us how to analyze these kinds of models.
+                  During the first stage, we gained a lot from
+                  GA_State_SW_Jiaotong. We believed this communication benefited
+                  our project much.
+                </p>
+              </v-card-text>
+              <v-row justify="center">
+                <v-card-title class="text-h4 title" id="hp">
+                  The second stage-cooperation in Human practice:</v-card-title
+                >
+              </v-row>
+              <v-card-text>
+                <p class="body-1">
+                  1.ShanghaiTech_China→GA_State_SW_Jiaotong: Education in
+                  proverty-striken area
+                </p>
+                <p class="body-1">
+                  We have the resources to support education in underdeveloped
+                  areas. In order to expand the understanding of synthetic
+                  biology, we used this resource to write lecture materials in
+                  collaboration with GA_State_SW_Jiaotong to introduce two
+                  teams' projects in poor areas (middle and primary schools in
+                  Yunlong County, Yunnan Province, China, and Jing County, Anhui
+                  Province, China). Meanwhile, we introduced the students to the
+                  background of synthetic biology, comprehensive content, and
+                  designed interesting experiments to lead them to understand
+                  the content of synthetic biology.
+                </p>
+                <p class="body-1">
+                  (Education中还有一部分由于我们还没有开展科学家进校园，所以还没写)
+                </p>
+                <p class="body-1">
+                  2.GA_State_SW_Jiaotong→ShanghaiTech_China: Education in
+                  international
+                </p>
+                <p class="body-1">
+                  At present, GA_State_SW_Jiaotong has the educational resources
+                  of American middle and high schools, which can realize the
+                  teaching of synthetic biology for senior students. Using this
+                  resource,GA_State_SW_Jiaotong helped us design lessons and
+                  content for this educational practice, helping us publicize
+                  MIBOM design. This expanded the audience for our synthetic
+                  biology education. In addition, through the educational design
+                  of GA_State_SW_Jiaotong stage play, this cooperation also
+                  helps us expand the diversity and interest in our education,
+                  so that we can learn a lot of diversified teaching methods.
+                </p>
+                <p class="body-1">3.Mutual Collaboration:</p>
+                <p class="body-1">
+                  GA_State_SW_Jiaotong and ShanghaiTech_China both have official
+                  accounts of this project as online popularization tools. In
+                  response, we worked together to write synthetic biology
+                  popular tweets, and each suggested tweets about the project.
+                  This effectively expands the audience for our respective
+                  programs.
+                </p>
+              </v-card-text>
+              <v-row justify="center">
+                <v-card-title class="text-h4" id="develop">
+                  The third stage-development of kill switch:</v-card-title
+                >
+              </v-row>
+              <v-card-text>
+                <p class="body-1">
+                  1.ShanghaiTech_China→GA_State_SW_Jiaotong: Kill switch design
+                </p>
+                <p class="body-1">
+                  Since Hnoss of GA_State_SW_Jiaotong helps hair growth by
+                  expressing Gas6 and EGF molecules in EScherichia coli, the
+                  safety risks of EScherichia coli in human environment should
+                  be taken into account. For this, an effective kill switch is
+                  needed to solve the problem. After communicating with
+                  GA_State_SW_Jiaotong, we found that we had made a rigorous
+                  kill switch in the early design, which was conducive to the
+                  more efficient regulation of the termination and initiation of
+                  protein expression. Therefore, we reached a cooperation with
+                  Southwest Jiaotong University. We provided the design scheme,
+                  principle, sequence and plasmid, sequencing the effectiveness
+                  of the plasmid. Then we mailed the plasmid to
+                  GA_State_SW_Jiaotong. GA_State_SW_Jiaotong is responsible for
+                  the expression and experimental verification of the system.
+                  (结果未知)
+                </p>
+                <p class="body-1">
+                  2.xxx→ShanghaiTech_China: Expressing and Testing
+                </p>
+                <p class="body-1">(结果未知)</p>
+                <p class="body-1"></p>
+              </v-card-text>
+            </v-container>
+          </v-card>
+        </template>
+      </v-hover>
     </v-col>
     <v-col cols="2" v-if="width >= 1264"></v-col>
     <!-- The back-to btn, use the `istop` to judge show or not. -->
@@ -371,11 +292,10 @@ export default {
     },
   },
   mounted() {
-    this.step[0] = document.getElementById("abstract");
-    this.step[1] = document.getElementById("urban");
-    this.step[2] = document.getElementById("poverty");
-    this.step[3] = document.getElementById("communication");
-    this.step[4] = document.getElementById("online_popularization");
+    this.step[0] = document.getElementById("overview");
+    this.step[1] = document.getElementById("model");
+    this.step[2] = document.getElementById("hp");
+    this.step[3] = document.getElementById("develop");
     this.updatepos();
     setTimeout(() => {
       this.firstload = false;
@@ -385,7 +305,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+  }<style lang="scss">
 #backtobtn {
   position: fixed;
 }
