@@ -108,7 +108,6 @@
             class="transition-swing"
             style="text-decoration: none"
             id="description"
-            v-intersect="onIntersect"
             v-scroll="updatepos"
             v-show="!firstload"
             v-motion
@@ -122,7 +121,9 @@
             }"
           >
             <v-container style="padding: 20px 3%">
-              <v-card-title class="text-h4"> Students </v-card-title>
+              <v-card-title class="text-h4" v-intersect="onIntersect">
+                Students
+              </v-card-title>
             </v-container>
             <v-divider></v-divider>
             <div
@@ -143,9 +144,13 @@
                 <!-- Abandon dividers -->
                 <v-col cols="12" sm="6" md="8" lg="8" xl="10">
                   <v-container>
-                    <v-card-title>{{ person.name }}</v-card-title>
+                    <v-card-title class="body-1" style="font-weight: 400">{{
+                      person.name
+                    }}</v-card-title>
                     <v-card-subtitle>{{ person.role }}</v-card-subtitle>
-                    <v-card-text>{{ person.discription }}</v-card-text>
+                    <v-card-text class="body-2">{{
+                      person.discription
+                    }}</v-card-text>
                   </v-container>
                 </v-col>
                 <v-spacer></v-spacer>
@@ -276,7 +281,8 @@ export default {
       {
         name: "Shiyue Ding",
         photo: require("@/assets/2.png"),
-        discription: "Very good peopleShe is a student of biology who should have chosen a liberal arts \
+        discription:
+          "Very good peopleShe is a student of biology who should have chosen a liberal arts \
         major is now studying business herself. Currently, she is jointly responsible for the team's Human \
         Practice section, committed to making the project more realistic from the perspective of business \
         and creating more value for people.",
@@ -285,14 +291,16 @@ export default {
       {
         name: "Huayu Wang",
         photo: require("@/assets/3.png"),
-        discription: "If you want bewildering, provoking, saddening maddening, rapturing, crumbling, rumbling, \
+        discription:
+          "If you want bewildering, provoking, saddening maddening, rapturing, crumbling, rumbling, \
         tumbling, excruciatingly baffling babbling, he is your guy.",
         role: "lab",
       },
       {
         name: "Han Ding",
         photo: require("@/assets/3.png"),
-        discription: "She is in charge of education part. She fit in extremely quickly with her students and did \
+        discription:
+          "She is in charge of education part. She fit in extremely quickly with her students and did \
         surprisingly well as an educator, which may be an alternative after she loses her job in biology in the \
         future.",
         role: "Human Practice",
@@ -300,20 +308,23 @@ export default {
       {
         name: "Zixuan Li",
         photo: require("@/assets/3.png"),
-        discription: "She was mainly responsible for the experimental part, hope you enjoy her design in the project.",
+        discription:
+          "She was mainly responsible for the experimental part, hope you enjoy her design in the project.",
         role: "lab",
       },
       {
         name: "Zi'ao Ling",
         photo: require("@/assets/3.png"),
-        discription: "Confirmedly willing to work on artificial organs to cure patients and develop the efficiency of \
+        discription:
+          "Confirmedly willing to work on artificial organs to cure patients and develop the efficiency of \
         medical field. Geography enthusiast, architecture lover and amateur runner.",
         role: "lab",
       },
       {
         name: "Jieni Hu",
         photo: require("@/assets/3.png"),
-        discription: "She participated in wet lab, art designing and collaboration part. She didn’t know anything \
+        discription:
+          "She participated in wet lab, art designing and collaboration part. She didn’t know anything \
         at first and groped her way like an explorer. But she could always be passionate and motivated to meet new \
         things and new people.",
         role: "art lab",
@@ -321,14 +332,16 @@ export default {
       {
         name: "Zhiwen Huang",
         photo: require("@/assets/3.png"),
-        discription: "Majoring in life science, he mainly took part in the experiment of our team. he also \
+        discription:
+          "Majoring in life science, he mainly took part in the experiment of our team. he also \
         participated in the design of wiki, poster and videos out of his interest.",
         role: "art lab",
       },
       {
         name: "Zhuoya Li",
         photo: require("@/assets/3.png"),
-        discription: "She was responsible for the work of the art design part of the team because she loves \
+        discription:
+          "She was responsible for the work of the art design part of the team because she loves \
         painting, design, and photography. She is also enjoying doing her favorite biology experiments in the \
         lab in a white coat.Becoming a scientist who makes beneficial contributions is her dream.",
         role: "art lab",
@@ -336,42 +349,48 @@ export default {
       {
         name: "Ruixuan Xue",
         photo: require("@/assets/3.png"),
-        discription: "He is a creative, amiable and healthy sophomore with a little bit flair for doing \
+        discription:
+          "He is a creative, amiable and healthy sophomore with a little bit flair for doing \
         experiments and interest in modelling. Glad to have him in ShanghaiTech_China.",
         role: "model lab",
       },
       {
         name: "Jing Sun",
         photo: require("@/assets/3.png"),
-        discription: "She’s interested in biology! She’s interested in mathematical modeling! \
+        discription:
+          "She’s interested in biology! She’s interested in mathematical modeling! \
         She’s interested in experiment!…",
         role: "model lab",
       },
       {
         name: "Yiyao Zhu",
         photo: require("@/assets/3.png"),
-        discription: "He is good at embedded system and tries to combine this system with \
+        discription:
+          "He is good at embedded system and tries to combine this system with \
         biology to simplify the experiments.",
         role: "hardware lab",
       },
       {
         name: "Yizhi Wang",
         photo: require("@/assets/3.png"),
-        discription: "Majoring in computer science, this guy loves coding and turns his computer \
+        discription:
+          "Majoring in computer science, this guy loves coding and turns his computer \
         into his friend. He uses Arch btw.",
         role: "wiki",
       },
       {
         name: "Kaijun Wang",
         photo: require("@/assets/3.png"),
-        discription: "She is a beginner in wet lab, but she has great passion in biology. She \
+        discription:
+          "She is a beginner in wet lab, but she has great passion in biology. She \
         takes delight in finding explanations for unexpected results in experiments.",
         role: "lab",
       },
       {
         name: "Handi Jia",
         photo: require("@/assets/3.png"),
-        discription: "He a life science student at ShanghaiTech University who focus on the \
+        discription:
+          "He a life science student at ShanghaiTech University who focus on the \
         experiment and video parts in this project. Immersing himself in the experiment and \
         video production is always an attractive thing. ",
         role: "lab",
@@ -379,7 +398,8 @@ export default {
       {
         name: "Shuyao Su",
         photo: require("@/assets/3.png"),
-        discription: "She is a science biology undergraduate student from ShanghaiTech \
+        discription:
+          "She is a science biology undergraduate student from ShanghaiTech \
         university. She adept at playing tennis，consistently innovating to create value \
         and most importantly, loving biology!",
         role: "lab",
@@ -387,7 +407,8 @@ export default {
       {
         name: "Qi Xin",
         photo: require("@/assets/3.png"),
-        discription: "Responsible for the experimental part, often messed up the experiment \
+        discription:
+          "Responsible for the experimental part, often messed up the experiment \
         but never give up. Have given several lectures about his iGEM teamwork, but unfortunately \
         there was almost no audience. Never lose his love for life sciences.",
         role: "lab",
@@ -395,7 +416,8 @@ export default {
       {
         name: "Ziding Zhou",
         photo: require("@/assets/3.png"),
-        discription: "Zhouziding is a senior student majoring life and science technology. Although \
+        discription:
+          "Zhouziding is a senior student majoring life and science technology. Although \
         she didn‘t quite know about life and science when she was a freshman, but during learning \
         about it, it shows its unique charm and opens a completely new world to her . Now she is \
         interested in experiment design -- how to find simple and efficient ways to solve problems \

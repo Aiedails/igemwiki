@@ -16,19 +16,10 @@
       shrink-on-scroll
       dense
       short
-      src="https://picsum.photos/1920/1080?random"
-      fade-img-on-scroll
       elevation="8"
       elevate-on-scroll
       rounded="lg"
     >
-      <template v-slot:img="{ props }">
-        <v-img
-          v-bind="props"
-          gradient="to top right, rgba(129,212,250,.7), #80DEEA"
-          @load="loading=true"
-        ></v-img> <!-- blue lighten-3 #90CAF6 -->
-      </template>
       <!-- The nav-drawer icon -->
       <v-app-bar-nav-icon
         @click.stop="drawer = !drawer"
