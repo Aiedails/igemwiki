@@ -96,16 +96,23 @@
         v-show="!firstload"
       >
         <v-container style="padding: 20px">
-          <v-card-title class="text-h3"> Education </v-card-title>
-          <v-card-title class="text-h4" id="abstract" v-intersect="onIntersect">
-            Abstract
-          </v-card-title>
+          <v-row justify="center">
+            <v-card-title
+              class="text-h4 title"
+              id="abstract"
+              v-intersect="onIntersect"
+            >
+              Abstract
+            </v-card-title>
+          </v-row>
           <v-card-text>
             <p class="body-1">一段文字</p>
           </v-card-text>
-          <v-card-title class="text-h4" id="offline_lectures">
-            Offline Lectures
-          </v-card-title>
+          <v-row justify="center">
+            <v-card-title class="text-h4 title" id="offline_lectures">
+              Offline Lectures
+            </v-card-title>
+          </v-row>
           <v-card-title class="text-h5" id="urban">
             Education in urban district
           </v-card-title>
