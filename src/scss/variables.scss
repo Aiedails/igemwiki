@@ -1,7 +1,24 @@
 $body-font-family: 'Source Sans Pro', sans-serif;
-$heading-font-family: 'EB Garamond', serif;
-$font-size-root: 17px;
+$heading-font-family: "EB Garamond", serif;
+$font-size-root: 18px;
 $btn-font-sizes: (
     'default': 1rem,
 );
 $btn-font-weight: 600;
+$headings: (
+  'body-1': (
+    'size': 1.2rem,
+    'weight': 300,
+  ),
+  'body-2': (
+    'size': 1rem,
+    'weight': 300,
+  ),
+  'h4': (
+    'weight': 500,
+  ),
+  'h6': (
+    'size': 0.875rem,
+    'weight': 400,
+  )
+);
