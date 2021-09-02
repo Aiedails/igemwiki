@@ -4,7 +4,7 @@
  */
 
 <template>
-  <v-container>
+  <v-container style="padding: 0; margin: 0">
     <!-- normal nav -->
     <!-- mobile nav -->
     <v-btn
