@@ -9,7 +9,7 @@ const vuetify = new Vuetify({
         light: true,
         themes: {
             light: {
-                primary: colors.lightBlue.lighten3,
+                primary: colors.blue.darken1,
                 secondary: colors.blue.darken4,
                 accent: colors.cyan.lighten3,
                 error: colors.red.lighten3,

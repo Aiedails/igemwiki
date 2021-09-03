@@ -34,11 +34,12 @@
       <img class="mount7" src="@/assets/svgs/Mountain7.svg" />
       <img class="boat2" id="boat2" src="@/assets/svgs/Boat2.svg" />
     </div>
-    <v-row justify="center" style="margin-top: 100px">
+    <v-row id="part3" justify="center" style="margin-top: 100px">
       <v-col cols="12">
         <div
           style="margin-top: 35px; text-align: center; display: block"
-          class="text-h5"
+          class="text-h5 text-xl-h4"
+          id="text1"
         >
           Bone fracture is really common in daily life. <br />
           Sports, car accidents, falls, and certain medicall conditions <br />
@@ -46,7 +47,11 @@
         </div>
       </v-col>
       <v-col cols="12">
-        <div style="text-align: center; display: block" class="text-h5">
+        <div
+          style="text-align: center; display: block"
+          class="text-h5 text-xl-h4"
+          id="text2"
+        >
           Bone fracture is really common in daily life. <br />
           Sports, car accidents, falls, and certain medicall conditions <br />
           Sports, car accidents, falls, and certain medicall conditions <br />
@@ -55,15 +60,36 @@
       </v-col>
     </v-row>
     <v-row
+      id="part4"
       justify="center"
       align="center"
       class="white"
       style="margin-top: 50px"
     >
-      <v-col cols="12" sm="6" md="6" lg="6" xl="6" align-self="center">
-        <v-row justify="center" class="text-h1">{{fracture_number}}</v-row>
-        <v-row justify="center" class="text-h4"> Traumatic fractures </v-row>
-        <v-row justify="center" class="text-h4">
+      <v-col cols="12" sm="12" md="6" lg="6" xl="6" align-self="center">
+        <v-row
+          justify="center"
+          class="text-h2 text-sm-h1 text-md-h1 text-lg-h1 text-xl-h1"
+        >
+          <div
+            v-intersect="{
+              handler: numberup,
+              options: { threshold: 1.0 },
+            }"
+          >
+            {{ animatednumber }}
+          </div>
+        </v-row>
+        <v-row
+          justify="center"
+          class="text-h5 text-sm-h4 text-md-h4 text-lg-h4 text-xl-h4"
+        >
+          Traumatic fractures
+        </v-row>
+        <v-row
+          justify="center"
+          class="text-h5 text-sm-h4 text-md-h4 text-lg-h4 text-xl-h4"
+        >
           in China 2021 by estimate
         </v-row>
       </v-col>
@@ -76,6 +102,42 @@
         />
       </v-col>
     </v-row>
+    <v-row id="part5" justify="center" style="margin-top: 35px">
+      <v-col cols="12">
+        <div
+          style="margin-top: 35px; text-align: center; display: block"
+          class="text-h5 text-xl-h4"
+          id="text3"
+        >
+          Bone fracture is really common in daily life. <br />
+          Sports, car accidents, falls, and certain medicall conditions <br />
+          are all possible causes of bone fracture.
+        </div>
+      </v-col>
+    </v-row>
+    <div id="part6">
+      <div style="position: relative">
+        <img class="clock_0" src="@/assets/svgs/Clock_Under.svg" />
+        <img class="clock_1" src="@/assets/svgs/Clock_Above.svg" />
+      </div>
+      <v-row justify="center">
+        <v-col cols="12">
+          <div class="text-h3" style="display: inline-block">4.4h</div>
+          <div class="text-h5" style="display: inline-block; padding-left: 5px">
+            per week
+          </div>
+        </v-col>
+        <v-col cols="12">
+          <div
+            style="text-align: center; display: block; padding-right: 140px"
+            class="text-h3"
+          >
+            ≈2662
+          </div>
+          <div class="text-h5">routine fracture operations</div>
+        </v-col>
+      </v-row>
+    </div>
   </div>
 </template>
 
@@ -94,6 +156,8 @@ export default {
   data: () => ({
     fracture_number: 0,
 
+    step: [], //use for store position of title
+    position: 1, //use for v-stepper to know where we are
 
     isIntersecting: false,
     istop: true,
@@ -104,6 +168,11 @@ export default {
       easing: "easeInQuad",
     },
   }),
+  computed: {
+    animatednumber: function () {
+      return this.fracture_number.toFixed(0);
+    },
+  },
   methods: {
     onIntersect(entries) {
       // More information about these options
@@ -112,9 +181,135 @@ export default {
       console.log(this.isIntersecting);
       this.istop = this.isIntersecting;
     },
+    numberup(entries, observer, isIntersecting) {
+      if (this.fracture_number < 295526 && isIntersecting) {
+        gsap.to(this.$data, {
+          duration: 0.5,
+          delay: 1,
+          fracture_number: 295526,
+        });
+      }
+    },
+    updatepos() {
+      /*
+      var pos = [];
+      var posnow = 0;
+      for (var i = 0; i < this.step.length; i++) {
+        pos[i] = this.step[i].getBoundingClientRect().top;
+        if (pos[i] <= 300) posnow = i;
+      }
+      this.position = posnow + 1;
+      */
+    },
   },
   mounted() {
-    var tl_boat1 = gsap.timeline({ repeat: -1 });
+    this.step[0] = document.getElementById("text1");
+    this.step[1] = document.getElementById("text2");
+    this.step[2] = document.getElementById("general_information");
+    this.step[3] = document.getElementById("specific_design");
+    this.step[4] = document.getElementById("use_of_harmful");
+    this.updatepos();
+    setTimeout(() => {
+      this.firstload = false;
+      console.log("loaded");
+    }, 1000);
+    gsap.fromTo(
+      ".part1_middle",
+      { opacity: 0 },
+      { duration: 0.3, delay: 1, yPercent: -18, opacity: 1, ease: "back" }
+    );
+    gsap.fromTo(
+      ".mount1",
+      { opacity: 0, rotationY: -180 },
+      {
+        duration: 0.5,
+        delay: 1,
+        rotationY: 0,
+        opacity: 1,
+        ease: "back",
+        transformOrigin: "0% 0%",
+      }
+    );
+    gsap.fromTo(
+      ".mount4",
+      { opacity: 0, rotationY: 180 },
+      {
+        duration: 0.5,
+        delay: 1,
+        rotationY: 0,
+        opacity: 1,
+        ease: "back",
+        transformOrigin: "100% 0%",
+      }
+    );
+    gsap.fromTo(
+      ".mount2",
+      { opacity: 0, y: 80 },
+      {
+        duration: 0.3,
+        delay: 1,
+        y: 0,
+        opacity: 1,
+        ease: "back",
+        transformOrigin: "100% 0%",
+      }
+    );
+    gsap.fromTo(
+      ".mount3",
+      { opacity: 0, y: 80 },
+      {
+        duration: 0.3,
+        delay: 1,
+        y: 0,
+        opacity: 1,
+        ease: "back",
+        transformOrigin: "100% 0%",
+      }
+    );
+    gsap.fromTo(
+      ".cloud1",
+      { opacity: 0 },
+      {
+        duration: 3,
+        delay: 1.5,
+        y: 0,
+        opacity: 1,
+        ease: "back",
+        transformOrigin: "100% 0%",
+      }
+    );
+    gsap.fromTo(
+      ".cloud_ani",
+      { opacity: 0 },
+      {
+        duration: 3,
+        delay: 1.5,
+        y: 0,
+        opacity: 1,
+        ease: "back",
+        transformOrigin: "100% 0%",
+      }
+    );
+
+    gsap.fromTo(
+      "#part2",
+      { opacity: 0 },
+      {
+        duration: 0.3,
+        delay: 3,
+        y: 0,
+        opacity: 1,
+        ease: "power3.in",
+        transformOrigin: "100% 0%",
+      }
+    );
+    gsap.fromTo(
+      ".clock_1",
+      { rotate: -219 },
+      { duration: 0.6, delay: 1, rotate: 0 }
+    );
+
+    var tl_boat1 = gsap.timeline({ repeat: -1, delay: 3 });
     tl_boat1.from("#boat1", {
       duration: 0.8,
       opacity: 0,
@@ -128,7 +323,7 @@ export default {
       opacity: 0,
       ease: "sine.out",
     });
-    var tl_boat2 = gsap.timeline({ repeat: -1 });
+    var tl_boat2 = gsap.timeline({ repeat: -1, delay: 3 });
     tl_boat2.from("#boat2", {
       duration: 2.5,
       opacity: 0,
@@ -183,7 +378,7 @@ export default {
   margin-right: -3%;
   display: inline-flex;
   position: relative;
-  transform: translateY(-18%);
+  //transform: translateY(-18%);
 }
 .mid1 {
   margin: auto;
@@ -205,7 +400,7 @@ export default {
 .cloud1_1 {
   width: 37.7%;
   max-width: 294.814px;
-  top: 15.28%;
+  top: 15.27%;
   left: max(32.8%, 50% - (294.814px * 17.2 / 37.7));
   z-index: 5;
 }
@@ -213,7 +408,7 @@ export default {
   position: absolute;
   width: 10%;
   max-width: 170px;
-  left: 25%;
+  left: min(25%, 425px);
   top: 70%;
   z-index: 5;
 }
@@ -228,22 +423,23 @@ export default {
 .cloud2 {
   position: absolute;
   width: 23%;
-  left: 8%;
+  max-width: 391px;
+  left: min(8%, 135px);
   top: 63%;
   z-index: 3;
 }
 .cloud3_0 {
   position: absolute;
   width: min(10%, 170px);
-  left: 81%;
-  top: 30%;
+  left: max(81%, 100% - 323px);
+  top: 40%;
   z-index: 2;
 }
 .cloud3_1 {
   position: absolute;
   width: min(12%, 204px);
-  left: 80%;
-  top: 30%;
+  left: max(80%, 100% - 340px);
+  top: 40%;
   z-index: 4;
 }
 .boat1 {
@@ -251,7 +447,7 @@ export default {
   width: 40px;
   left: 65%;
   top: 70%;
-  z-index: 4;
+  z-index: 2;
 }
 #part2 {
   position: relative;
@@ -291,6 +487,24 @@ export default {
   left: 48%;
   top: 65%;
   z-index: 1;
+}
+#part6 {
+  text-align: center;
+  position: relative;
+  display: block;
+  margin-top: 35px;
+}
+.clock_0 {
+  width: 40%;
+  max-width: 680px;
+  margin: auto;
+}
+.clock_1 {
+  position: absolute;
+  width: 17%;
+  max-width: 289px;
+  top: 23%;
+  left: max(41.8%, 50% - 139.34px);
 }
 
 img {
