@@ -224,7 +224,7 @@
       <img class="hydrogel" src="@/assets/svgs/Hydrogel.svg" />
       <v-row>
         <v-col cols="8" sm="8" md="8" lg="8" xl="9">
-          <div class="text-h5 text-xl-h4" id="text6">
+          <div id="text6" class="text-h5 text-xl-h4">
             A Bicrosslinking system combining Alginate and Methacrylate Gelatin
             (GelMA) is chosen to make MIBOM more operational in medical surgery.
             GelMA is a type of biocompatible and nontoxic hydrogel, which can
@@ -248,8 +248,95 @@
         </v-col>
       </v-row>
     </div>
-    <img class="divider" src="@/assets/svgs/Divider.svg" />
+    <img
+      class="divider"
+      src="@/assets/svgs/Divider.svg"
+      style="margin-top: 65px"
+    />
     <div id="part11">
+      <img class="regulation" src="@/assets/svgs/Regulation.svg" />
+      <img class="stress" src="@/assets/svgs/Stress.svg" />
+      <div id="text7" class="text-h5 text-xl-h4">
+        To make MIBOM smarter, a stress-responsingn degradation system is
+        designed. The regulation is achieved by lading engineered autogenous
+        cells into the hydrogel. We utilized a stree-sensing membrane protein,
+        Piezo1, which can sense small stress changes in the microenvironment. In
+        the process of bone growth, the change of stress will activate piezo1
+        and induce the expression of downstream pathway. By introducing
+        downstream enzymes that degrade hydrogel, our osteogenic glue can
+        self-degrade as the bone grows back into its normal status.
+      </div>
+      <div class="r_graph">
+        <img class="axis" src="@/assets/svgs/Axises.svg" />
+        <img class="graph" src="@/assets/svgs/Graph.svg" />
+      </div>
+    </div>
+    <img
+      class="divider"
+      src="@/assets/svgs/Divider.svg"
+      style="margin-top: 65px"
+    />
+    <div id="part12">
+      <v-row>
+        <v-col cols="6">
+          <div class="d_steps">
+            <img class="d_step1" src="@/assets/svgs/D_step1.svg" />
+            <img class="d_step2" src="@/assets/svgs/D_step2.svg" />
+            <img class="d_step3" src="@/assets/svgs/D_step3.svg" />
+            <img class="d_line12" src="@/assets/svgs/D_line12.svg" />
+            <img class="d_line23" src="@/assets/svgs/D_line23.svg" />
+          </div>
+        </v-col>
+        <v-col cols="6">
+          <img class="drug" src="@/assets/svgs/Drug.svg" />
+          <div id="text8" class="text-h5 text-xl-h4">
+            The hydrogel system makes it possible for drug loading. We planned
+            to embed certain drugs in special nanoparticles, which cannot
+            diffuse outwards the hydrogel. With the degradation of the material,
+            nanoparticles are released into the internal environment, promoting
+            the process of injury recovery.
+          </div>
+        </v-col>
+      </v-row>
+    </div>
+    <img class="divider" src="@/assets/svgs/Divider.svg" />
+    <div id="part13">
+      <div id="text9" class="text-h5 text-xl-h4">
+        Although the internal systems in MIBOM are complex, doctors can simply
+        apply the MIBOM to the fracture and irradiate it with low-power UV for a
+        few seconds. Combined with the hardware we designed, doctors can
+        complete the operation in one step and omit the complex operations in
+        the past. We hope our MIBOM can greatly reduce the recovery time for the
+        patients and bring less pain with no second surgery. With this MIBOM, we
+        hope to promote the development of orthopedics and reduce the pain of
+        patients.
+      </div>
+      <div class="l_steps">
+        <img class="l_step1" src="@/assets/svgs/L_step1.svg" />
+        <img class="l_step2" src="@/assets/svgs/L_step2.svg" />
+        <img class="l_step3" src="@/assets/svgs/L_step3.svg" />
+        <img class="l_step4" src="@/assets/svgs/L_step4.svg" />
+        <img class="l_line12" src="@/assets/svgs/L_line.svg" />
+        <img class="l_line23" src="@/assets/svgs/L_line.svg" />
+        <img class="l_line34" src="@/assets/svgs/L_line.svg" />
+      </div>
+    </div>
+    <img class="divider" src="@/assets/svgs/Divider.svg" />
+    <div id="part14">
+      <div class="part14_inner">
+        <img class="frame" src="@/assets/svgs/Frame.svg" />
+        <img class="logo_project" src="@/assets/svgs/Logo_project.svg" />
+        <img class="logo_model" src="@/assets/svgs/Logo_model.svg" />
+        <img class="logo_hp" src="@/assets/svgs/Logo_hp.svg" />
+        <img class="logo_hardware" src="@/assets/svgs/Logo_hardware.svg" />
+        <img class="logo_parts" src="@/assets/svgs/Logo_parts.svg" />
+        <div class="text-h4 text-sm-h5 text_project">Project</div>
+        <div class="text-h4 text-sm-h5 text_model">Model</div>
+        <div class="text-h4 text-sm-h5 text_hp1">Human</div>
+        <div class="text-h4 text-sm-h5 text_hp2">Practice</div>
+        <div class="text-h4 text-sm-h5 text_hardware">Hardware</div>
+        <div class="text-h4 text-sm-h5 text_parts">Parts</div>
+      </div>
     </div>
   </div>
 </template>
@@ -304,23 +391,27 @@ export default {
       }
     },
     updatepos() {
-      /*
-      var pos = [];
+      if (this.position >= 9) return;
+      var pos;
       var posnow = 0;
-      for (var i = 0; i < this.step.length; i++) {
-        pos[i] = this.step[i].getBoundingClientRect().top;
-        if (pos[i] <= 300) posnow = i;
+      for (var i = this.position - 1; i < this.step.length; i++) {
+        pos = this.step[i].getBoundingClientRect().top;
+        if (pos <= 300) posnow = i;
       }
       this.position = posnow + 1;
-      */
+      console.log(this.position);
     },
   },
   mounted() {
     this.step[0] = document.getElementById("text1");
     this.step[1] = document.getElementById("text2");
-    this.step[2] = document.getElementById("general_information");
-    this.step[3] = document.getElementById("specific_design");
-    this.step[4] = document.getElementById("use_of_harmful");
+    this.step[2] = document.getElementById("text3");
+    this.step[3] = document.getElementById("text4");
+    this.step[4] = document.getElementById("text5");
+    this.step[5] = document.getElementById("text6");
+    this.step[6] = document.getElementById("text7");
+    this.step[7] = document.getElementById("text8");
+    this.step[8] = document.getElementById("text9");
     this.updatepos();
     setTimeout(() => {
       this.firstload = false;
@@ -420,6 +511,18 @@ export default {
       ".clock_1",
       { rotate: -219 },
       { duration: 0.6, delay: 1, rotate: 0 }
+    );
+    gsap.fromTo(
+      ".graph",
+      { opacity: 0, rotationY: -90 },
+      {
+        duration: 0.5,
+        delay: 1,
+        rotationY: 0,
+        opacity: 1,
+        ease: "back",
+        transformOrigin: "0% 0%",
+      }
     );
 
     var tl_boat1 = gsap.timeline({ repeat: -1, delay: 3 });
@@ -768,9 +871,9 @@ export default {
 .hydrogel {
   position: absolute;
   display: inline-block;
-  width: 35%;
+  width: 30%;
   max-width: 500px;
-  left: max(65%, 100% - 500px);
+  left: max(68%, 100% - 500px);
   top: 10%;
 }
 #text6 {
@@ -821,7 +924,215 @@ export default {
 }
 #part11 {
   position: relative;
+  margin: 65px 3%;
+}
+.regulation {
+  width: 60%;
+}
+.stress {
+  position: absolute;
+  width: calc(15% + 100px);
+  left: 65%;
+}
+#text7 {
+  display: inline-block;
+  margin-top: 35px;
+  width: 60%;
+}
+.r_graph {
+  display: inline-block;
+  position: relative;
+  width: 40%;
+  max-width: 485px;
+}
+.axis {
+  width: 80%;
+}
+.graph {
+  position: absolute;
+  width: 90%;
+  left: 15%;
+  top: 5%;
+}
+#part12 {
+  position: relative;
+  margin: 65px 3%;
+}
+.drug {
+}
+#text8 {
+}
+.d_step1 {
+  position: absolute;
+  width: 20%;
+  max-width: 250px;
+  left: calc(16% - 80px);
+}
+.d_step2 {
+  position: absolute;
+  width: 20%;
+  max-width: 250px;
+  left: calc(16% - 80px);
+  top: 40%;
+}
+.d_step3 {
+  position: absolute;
+  width: 25%;
+  max-width: 312.5px;
+  left: calc(16% - 100px);
+  top: 90%;
+}
+.d_line12 {
+  position: absolute;
+  width: 13%;
+  max-width: 200px;
+  left: 16%;
+  top: 25%;
+};
+.d_line23 {
+  position: absolute;
+  width: 13%;
+  max-width: 200px;
+  left: 16%;
+  top: 75%;
+}
+#part13 {
+  margin: 35px 3%;
+  text-align: center;
+}
+#text9 {
+  margin: auto;
+  max-width: 1000px;
+}
+.l_steps {
+  position: relative;
+  margin: 150px auto;
+  text-align: left;
+  max-width: calc(1700px * 0.94);
+}
+.l_step1 {
+  width: 5%;
+  margin-left: 10%;
+}
+.l_step2 {
+  position: absolute;
+  width: 17%;
+  left: 25%;
+  top: -36%;
+}
+.l_step3 {
+  position: absolute;
+  width: 6%;
+  left: 55%;
+}
+.l_step4 {
+  position: absolute;
+  width: 28%;
+  left: 70%;
+  top: -40%;
+}
+.l_line12 {
+  position: absolute;
+  width: 8%;
+  left: 18%;
+  top: 40%;
+}
+.l_line23 {
+  position: absolute;
+  width: 8%;
+  left: 42%;
+  top: 40%;
+}
+.l_line34 {
+  position: absolute;
+  width: 8%;
+  left: 63%;
+  top: 40%;
+}
+#part14 {
+  position: relative;
+  text-align: center;
   margin-top: 65px;
+  margin-bottom: 65px;
+}
+.part14_inner {
+  position: relative;
+  max-width: 1190px;
+  margin: 0 auto;
+}
+.frame {
+  width: 70%;
+}
+.logo_project {
+  position: absolute;
+  width: 7%;
+  max-width: 119px;
+  left: 18%;
+  top: 15%;
+}
+.logo_model {
+  position: absolute;
+  width: 7%;
+  max-width: 119px;
+  left: 33%;
+  top: 15%;
+}
+.logo_hp {
+  position: absolute;
+  width: 7%;
+  max-width: 119px;
+  left: 47%;
+  top: 15%;
+}
+.logo_hardware {
+  position: absolute;
+  width: 7%;
+  max-width: 119px;
+  left: 61%;
+  top: 15%;
+}
+.logo_parts {
+  position: absolute;
+  width: 7%;
+  max-width: 119px;
+  left: 75%;
+  top: 15%;
+}
+.text_project {
+  position: absolute;
+  width: 7%;
+  left: 18%;
+  top: 65%;
+}
+.text_model {
+  position: absolute;
+  width: 7%;
+  left: 33%;
+  top: 65%;
+}
+.text_hp1 {
+  position: absolute;
+  width: 7%;
+  left: 46.5%;
+  top: 55%;
+}
+.text_hp2 {
+  position: absolute;
+  width: 7%;
+  left: 46.5%;
+  top: 70%;
+}
+.text_hardware {
+  position: absolute;
+  width: 7%;
+  left: 59%;
+  top: 65%;
+}
+.text_parts {
+  position: absolute;
+  width: 7%;
+  left: 75%;
+  top: 65%;
 }
 
 img {
