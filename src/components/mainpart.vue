@@ -122,11 +122,11 @@
           id="text3"
         >
           According to our interviews with clinicians, the surgical time for
-          comminuted fractures is opacity: 0; // use for animatingtwice as long
-          as that for conventional fractures, which is mainly because of the
-          cumbersome fixation of bone fragments. This indicates at least 4.4
-          hours of surgery per week will be taken up due to the complex fixation
-          in one hospital. Medical resources are tied up in complex procedures.
+          comminuted fractures is use for animatingtwice as long as that for
+          conventional fractures, which is mainly because of the cumbersome
+          fixation of bone fragments. This indicates at least 4.4 hours of
+          surgery per week will be taken up due to the complex fixation in one
+          hospital. Medical resources are tied up in complex procedures.
         </div>
       </v-col>
     </v-row>
@@ -190,7 +190,7 @@
           REGULATION
         </div>
         <div class="text_d text-h6 text-sm-h5 text-md-h4 text-lg-h3 text-xl-h3">
-          DRUG RELEASING
+          DRUG RELEASE
         </div>
       </div>
     </div>
@@ -336,22 +336,34 @@
           <img class="logo_parts" src="@/assets/svgs/Logo_parts.svg" />
         </a>
         <a href="https://2021.igem.org/Team:ShanghaiTech_China/Description">
-          <div style="color: black;" class="text-h4 text-sm-h5 text_project">Project</div>
+          <div style="color: black" class="text-h4 text-sm-h5 text_project">
+            Project
+          </div>
         </a>
         <a href="https://2021.igem.org/Team:ShanghaiTech_China/Model">
-          <div style="color: black;" class="text-h4 text-sm-h5 text_model">Model</div>
+          <div style="color: black" class="text-h4 text-sm-h5 text_model">
+            Model
+          </div>
         </a>
         <a href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices">
-          <div style="color: black;" class="text-h4 text-sm-h5 text_hp1">Human</div>
+          <div style="color: black" class="text-h4 text-sm-h5 text_hp1">
+            Human
+          </div>
         </a>
         <a href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices">
-          <div style="color: black;" class="text-h4 text-sm-h5 text_hp2">Practice</div>
+          <div style="color: black" class="text-h4 text-sm-h5 text_hp2">
+            Practice
+          </div>
         </a>
         <a href="https://2021.igem.org/Team:ShanghaiTech_China/Hardware">
-          <div style="color: black;" class="text-h4 text-sm-h5 text_hardware">Hardware</div>
+          <div style="color: black" class="text-h4 text-sm-h5 text_hardware">
+            Hardware
+          </div>
         </a>
         <a href="https://2021.igem.org/Team:ShanghaiTech_China/Parts">
-          <div style="color: black;" class="text-h4 text-sm-h5 text_parts">Parts</div>
+          <div style="color: black" class="text-h4 text-sm-h5 text_parts">
+            Parts
+          </div>
         </a>
       </div>
     </div>
@@ -374,8 +386,8 @@ export default {
   data: () => ({
     fracture_number: 0,
     temp: 2,
-    isseen: [0, 0, 0, 0, 0, 0, 0], //0 is clock; 1 is a_steps; 2 is h_steps
-    // 3 is graph; 4 is d_steps; 5 is l_steps; 6 is number.
+    isseen: [0, 0, 0, 0, 0, 0, 0, 0], //0 is clock; 1 is a_steps; 2 is h_steps
+    // 3 is graph; 4 is d_steps; 5 is l_steps; 6 is number; 7 is menu;
 
     step: [], //use for store position of title
     position: 0, //use for v-stepper to know where we are
@@ -420,7 +432,7 @@ export default {
     numberup() {
       if (this.fracture_number < 295526) {
         gsap.to(this.$data, {
-          duration: 0.5,
+          duration: 3,
           delay: 1,
           fracture_number: 295526,
         });
@@ -437,7 +449,7 @@ export default {
           gsap.fromTo(
             ".clock_1",
             { rotate: -219 },
-            { duration: 0.6, delay: 0.6, rotate: 0 }
+            { duration: 0.6, delay: 0.6, opacity: 1, rotate: 0 }
           );
         }
       }
@@ -447,12 +459,12 @@ export default {
           .getBoundingClientRect().bottom;
         if (pos <= this.height + 10) {
           this.isseen[1] = 1;
-          var tl_a_steps = gsap.timeline({ delay: 0.6 });
-          tl_a_steps.to(".a_step1", { duration: 0.6, opacity: 1 }, 0);
-          tl_a_steps.to(".a_line12", { duration: 0.6, opacity: 1 }, 0.3);
-          tl_a_steps.to(".a_step2", { duration: 0.6, opacity: 1 }, 1);
-          tl_a_steps.to(".a_line23", { duration: 0.6, opacity: 1 }, 1.3);
-          tl_a_steps.to(".a_step3", { duration: 0.6, opacity: 1 }, 2);
+          var tl_a_steps = gsap.timeline();
+          tl_a_steps.to(".a_step1", { duration: 0.3, opacity: 1 }, 0);
+          tl_a_steps.to(".a_line12", { duration: 0.3, opacity: 1 }, 0.2);
+          tl_a_steps.to(".a_step2", { duration: 0.3, opacity: 1 }, 0.5);
+          tl_a_steps.to(".a_line23", { duration: 0.3, opacity: 1 }, 0.8);
+          tl_a_steps.to(".a_step3", { duration: 0.3, opacity: 1 }, 1.1);
         }
       }
       if (this.isseen[2] == 0) {
@@ -462,13 +474,13 @@ export default {
         if (pos <= this.height + 10) {
           this.isseen[2] = 1;
           var tl_h_steps = gsap.timeline();
-          tl_h_steps.to(".h_step1", { duration: 0.6, opacity: 1 }, 0);
-          tl_h_steps.to(".h_line12", { duration: 0.6, opacity: 1 }, 0.3);
-          tl_h_steps.to(".h_step2", { duration: 0.6, opacity: 1 }, 1);
-          tl_h_steps.to(".h_line23", { duration: 0.6, opacity: 1 }, 1.3);
-          tl_h_steps.to(".h_step3", { duration: 0.6, opacity: 1 }, 2);
-          tl_h_steps.to(".h_line34", { duration: 0.6, opacity: 1 }, 2.3);
-          tl_h_steps.to(".h_step4", { duration: 0.6, opacity: 1 }, 3);
+          tl_h_steps.to(".h_step1", { duration: 0.3, opacity: 1 }, 0);
+          tl_h_steps.to(".h_line12", { duration: 0.3, opacity: 1 }, 0.2);
+          tl_h_steps.to(".h_step2", { duration: 0.3, opacity: 1 }, 0.5);
+          tl_h_steps.to(".h_line23", { duration: 0.3, opacity: 1 }, 0.8);
+          tl_h_steps.to(".h_step3", { duration: 0.3, opacity: 1 }, 1.1);
+          tl_h_steps.to(".h_line34", { duration: 0.3, opacity: 1 }, 1.4);
+          tl_h_steps.to(".h_step4", { duration: 0.3, opacity: 1 }, 1.7);
         }
       }
       if (this.isseen[3] == 0) {
@@ -498,11 +510,11 @@ export default {
         if (pos <= this.height + 10) {
           this.isseen[4] = 1;
           var tl_d_steps = gsap.timeline({ delay: 0.6 });
-          tl_d_steps.to(".d_step1", { duration: 0.6, opacity: 1 }, 0);
-          tl_d_steps.to(".d_line12", { duration: 0.6, opacity: 1 }, 0.3);
-          tl_d_steps.to(".d_step2", { duration: 0.6, opacity: 1 }, 1);
-          tl_d_steps.to(".d_line23", { duration: 0.6, opacity: 1 }, 1.3);
-          tl_d_steps.to(".d_step3", { duration: 0.6, opacity: 1 }, 2);
+          tl_d_steps.to(".d_step1", { duration: 0.3, opacity: 1 }, 0);
+          tl_d_steps.to(".d_line12", { duration: 0.3, opacity: 1 }, 0.2);
+          tl_d_steps.to(".d_step2", { duration: 0.3, opacity: 1 }, 0.5);
+          tl_d_steps.to(".d_line23", { duration: 0.3, opacity: 1 }, 0.8);
+          tl_d_steps.to(".d_step3", { duration: 0.3, opacity: 1 }, 1.1);
         }
       }
       if (this.isseen[5] == 0) {
@@ -511,14 +523,14 @@ export default {
           .getBoundingClientRect().bottom;
         if (pos <= this.height + 10) {
           this.isseen[5] = 1;
-          var tl_l_steps = gsap.timeline({ delay: 0.6 });
-          tl_l_steps.to(".l_step1", { duration: 0.6, opacity: 1 }, 0);
-          tl_l_steps.to(".l_line12", { duration: 0.6, opacity: 1 }, 0.3);
-          tl_l_steps.to(".l_step2", { duration: 0.6, opacity: 1 }, 1);
-          tl_l_steps.to(".l_line23", { duration: 0.6, opacity: 1 }, 1.3);
-          tl_l_steps.to(".l_step3", { duration: 0.6, opacity: 1 }, 2);
-          tl_l_steps.to(".l_line34", { duration: 0.6, opacity: 1 }, 2.3);
-          tl_l_steps.to(".l_step4", { duration: 0.6, opacity: 1 }, 3);
+          var tl_l_steps = gsap.timeline({ delay: 0.3 });
+          tl_l_steps.to(".l_step1", { duration: 0.3, opacity: 1 }, 0);
+          tl_l_steps.to(".l_line12", { duration: 0.3, opacity: 1 }, 0.2);
+          tl_l_steps.to(".l_step2", { duration: 0.3, opacity: 1 }, 0.5);
+          tl_l_steps.to(".l_line23", { duration: 0.3, opacity: 1 }, 0.8);
+          tl_l_steps.to(".l_step3", { duration: 0.3, opacity: 1 }, 1.1);
+          tl_l_steps.to(".l_line34", { duration: 0.3, opacity: 1 }, 1.4);
+          tl_l_steps.to(".l_step4", { duration: 0.3, opacity: 1 }, 1.7);
         }
       }
       if (this.isseen[6] == 0) {
@@ -526,6 +538,23 @@ export default {
         if (pos <= this.height + 10) {
           this.isseen[6] = 1;
           this.numberup();
+        }
+      }
+      if (this.isseen[7] == 0) {
+        pos = document
+          .getElementsByClassName("menu")[0]
+          .getBoundingClientRect().bottom;
+        if (pos <= this.height + 10) {
+          this.isseen[7] = 1;
+          var tl_menu = gsap.timeline();
+          tl_menu.to(".logo_a", { duration: 0.5, opacity: 1 }, 0);
+          tl_menu.to(".text_a", { duration: 0.5, opacity: 1 }, 0);
+          tl_menu.to(".logo_h", { duration: 0.5, opacity: 1 }, 0.5);
+          tl_menu.to(".text_h", { duration: 0.5, opacity: 1 }, 0.5);
+          tl_menu.to(".logo_r", { duration: 0.5, opacity: 1 }, 1.0);
+          tl_menu.to(".text_r", { duration: 0.5, opacity: 1 }, 1.0);
+          tl_menu.to(".logo_d", { duration: 0.5, opacity: 1 }, 1.5);
+          tl_menu.to(".text_d", { duration: 0.5, opacity: 1 }, 1.5);
         }
       }
       //Texts.
@@ -851,6 +880,7 @@ export default {
   margin: auto;
 }
 .clock_1 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 17%;
   max-width: 289px;
@@ -882,56 +912,64 @@ export default {
   position: relative;
 }
 .menu {
-  width: 70%;
-  max-width: 1190px;
+  width: 60%;
+  max-width: 958.8px;
 }
 .logo_a {
+  opacity: 0; // use for animating
   position: absolute;
   width: 6%;
-  max-width: 102px;
-  left: min(59%, 1003px);
-  top: 3%;
+  max-width: 95px;
+  left: min(50%, 799px);
+  top: 1.6%;
 }
 .logo_h {
+  opacity: 0; // use for animating
   position: absolute;
   width: 12%;
-  max-width: 204px;
-  left: min(56.1%, 953.7px);
-  top: 29%;
+  max-width: 191px;
+  left: min(47.3%, 755.85px);
+  top: 27.5%;
 }
 .logo_r {
+  opacity: 0; // use for animating
   position: absolute;
   width: 12%;
-  max-width: 204px;
-  left: min(56.1%, 953.7px);
-  top: 54%;
+  max-width: 191px;
+  left: min(47.3%, 755.85px);
+  top: 52.5%;
 }
 .logo_d {
+  opacity: 0; // use for animating
   position: absolute;
-  width: 14%;
-  max-width: 238px;
-  left: min(55.5%, 943.5px);
-  top: 80%;
+  width: 13%;
+  max-width: 207px;
+  left: min(46.5%, 743.07px);
+  top: 79%;
 }
 .text_a {
+  opacity: 0; // use for animating
   position: absolute;
-  left: 72%;
+  left: 65%;
   top: 8%;
 }
 .text_h {
+  opacity: 0; // use for animating
   position: absolute;
-  left: 72%;
+  left: 65%;
   top: 34%;
 }
 .text_r {
+  opacity: 0; // use for animating
   position: absolute;
-  left: 72%;
-  top: 59%;
+  left: 65%;
+  top: 58%;
 }
 .text_d {
+  opacity: 0; // use for animating
   position: absolute;
-  left: 72%;
-  top: 83%;
+  left: 65%;
+  top: 80%;
 }
 .divider {
   width: 90%;
@@ -1078,7 +1116,7 @@ export default {
   display: inline-block;
   position: relative;
   width: 40%;
-  max-width: 485px;
+  max-width: 685px;
 }
 .axis {
   width: 80%;
@@ -1119,17 +1157,17 @@ export default {
 .d_line12 {
   opacity: 0; // use for animating
   position: absolute;
-  width: 13%;
+  width: 12%;
   max-width: 200px;
-  left: 16%;
+  left: 15%;
   top: 25%;
 }
 .d_line23 {
   opacity: 0; // use for animating
   position: absolute;
-  width: 13%;
+  width: 12%;
   max-width: 200px;
-  left: 16%;
+  left: 15%;
   top: 75%;
 }
 #part13 {
