@@ -30,6 +30,8 @@
     <div id="part2">
       <img class="mount5" src="@/assets/svgs/Mountain5.svg" />
       <img class="mount6" src="@/assets/svgs/Mountain6.svg" />
+      <img class="line1_0" src="@/assets/svgs/Line.svg" />
+      <img class="line1_1" src="@/assets/svgs/Line.svg" />
       <img class="bone_fracture" src="@/assets/svgs/Bone_Fracture.svg" />
       <img class="mount7" src="@/assets/svgs/Mountain7.svg" />
       <img class="boat2" id="boat2" src="@/assets/svgs/Boat2.svg" />
@@ -37,25 +39,35 @@
     <v-row id="part3" justify="center" style="margin-top: 100px">
       <v-col cols="12">
         <div
-          style="margin-top: 35px; text-align: center; display: block"
+          style="
+            margin: 35px auto 0;
+            max-width: 800px;
+            text-align: center;
+            display: block;
+          "
           class="text-h5 text-xl-h4"
           id="text1"
         >
-          Bone fracture is really common in daily life. <br />
-          Sports, car accidents, falls, and certain medicall conditions <br />
-          are all possible causes of bone fracture.
+          Bone fracture is really common in daily life. Sports, car accidents,
+          falls, and certain medicall conditions are all possible causes of bone
+          fracture.
         </div>
       </v-col>
       <v-col cols="12">
         <div
-          style="text-align: center; display: block"
+          style="
+            margin: 35px auto 0;
+            max-width: 800px;
+            text-align: center;
+            display: block;
+          "
           class="text-h5 text-xl-h4"
           id="text2"
         >
-          Bone fracture is really common in daily life. <br />
-          Sports, car accidents, falls, and certain medicall conditions <br />
-          Sports, car accidents, falls, and certain medicall conditions <br />
-          are all possible causes of bone fracture.
+          In china, it is estimated that in 2021, there will be 295526 traumatic
+          fractures, of which 10.21% will be femoral fractures. 95% of femoral
+          shaft fractures are comminuted. Therefore, there will be an average of
+          at least 280,000 comminuted fractures per year in China.
         </div>
       </v-col>
     </v-row>
@@ -105,13 +117,21 @@
     <v-row id="part5" justify="center" style="margin-top: 35px">
       <v-col cols="12">
         <div
-          style="margin-top: 35px; text-align: center; display: block"
+          style="
+            margin: 35px auto 0;
+            max-width: 800px;
+            text-align: center;
+            display: block;
+          "
           class="text-h5 text-xl-h4"
           id="text3"
         >
-          Bone fracture is really common in daily life. <br />
-          Sports, car accidents, falls, and certain medicall conditions <br />
-          are all possible causes of bone fracture.
+          According to our interviews with clinicians, the surgical time for
+          comminuted fractures is twice as long as that for conventional
+          fractures, which is mainly because of the cumbersome fixation of bone
+          fragments. This indicates at least 4.4 hours of surgery per week will
+          be taken up due to the complex fixation in one hospital. Medical
+          resources are tied up in complex procedures.
         </div>
       </v-col>
     </v-row>
@@ -137,6 +157,99 @@
           <div class="text-h5">routine fracture operations</div>
         </v-col>
       </v-row>
+    </div>
+    <div id="part7">
+      <img class="mibom" src="@/assets/svgs/Mibom.svg" />
+      <img class="line2_0" src="@/assets/svgs/Line.svg" />
+      <img class="line2_1" src="@/assets/svgs/Line.svg" />
+    </div>
+    <div id="part8">
+      <div
+        style="
+          margin: 35px auto 0;
+          max-width: 800px;
+          text-align: center;
+          display: block;
+        "
+        class="text-h5 text-xl-h4"
+        id="text4"
+      >
+        This year, ShanghaiTech_China developed a new flexible osteogenic glue--
+        MIBOM, Mussel Inspired Biologically Operation Material--to address these
+        limitations, which contains four systems, responsible for the adhesion,
+        structural strength, degradation and drug release respectively.
+      </div>
+      <div style="position: relative; margin: 35px 5%">
+        <img class="menu" src="@/assets/svgs/Menu.svg" />
+        <img class="logo_a" src="@/assets/svgs/Middle1.svg" />
+        <img class="logo_h" src="@/assets/svgs/Logo_hydrogel.svg" />
+        <img class="logo_r" src="@/assets/svgs/Logo_regulation.svg" />
+        <img class="logo_d" src="@/assets/svgs/Logo_drug.svg" />
+        <div class="text_a text-h6 text-sm-h5 text-md-h4 text-lg-h3 text-xl-h3">
+          ADHESION
+        </div>
+        <div class="text_h text-h6 text-sm-h5 text-md-h4 text-lg-h3 text-xl-h3">
+          HYDROGEL
+        </div>
+        <div class="text_r text-h6 text-sm-h5 text-md-h4 text-lg-h3 text-xl-h3">
+          REGULATION
+        </div>
+        <div class="text_d text-h6 text-sm-h5 text-md-h4 text-lg-h3 text-xl-h3">
+          DRUG RELEASING
+        </div>
+      </div>
+    </div>
+    <img class="divider" src="@/assets/svgs/Divider.svg" />
+    <div id="part9">
+      <img class="adhesion" src="@/assets/svgs/Adhesion.svg" />
+      <div class="text-h5 text-xl-h4" id="text5">
+        The first part of MIBOM is the adhesion system. We got the inspiration
+        for this design from mussels, a creature that can adhere themselves
+        tightly to reefs, thanks to the mussel foot protein(mfp-5). We
+        constructed modified mfp-5 in E.coli and extract it in a more effective
+        way, compared with the current natural extraction from the mussels.
+        These proteins can form firm bridges between the hydrogel medium and the
+        bone fragments, sticking them together, helping the bone to recorver.
+      </div>
+      <div class="a_steps">
+        <img class="a_step1" src="@/assets/svgs/A_step1.svg" />
+        <img class="a_step2" src="@/assets/svgs/A_step2.svg" />
+        <img class="a_step3" src="@/assets/svgs/A_step3.svg" />
+        <img class="a_line12" src="@/assets/svgs/A_line12.svg" />
+        <img class="a_line23" src="@/assets/svgs/A_line23.svg" />
+      </div>
+    </div>
+    <img class="divider" src="@/assets/svgs/Divider.svg" />
+    <div id="part10">
+      <img class="hydrogel" src="@/assets/svgs/Hydrogel.svg" />
+      <v-row>
+        <v-col cols="8" sm="8" md="8" lg="8" xl="9">
+          <div class="text-h5 text-xl-h4" id="text6">
+            A Bicrosslinking system combining Alginate and Methacrylate Gelatin
+            (GelMA) is chosen to make MIBOM more operational in medical surgery.
+            GelMA is a type of biocompatible and nontoxic hydrogel, which can
+            polymerize rapidly under UV conditions. In the case of an actual
+            medical surgery, the doctor can simply inject the glue into the
+            fractures and initiate polymerization with a short period of
+            ultraviolet light. And alginate to provide higher structural
+            strength.
+          </div>
+        </v-col>
+        <v-col cols="12" sm="12" md="8" lg="8" xl="10">
+          <div class="h_steps">
+            <img class="h_step1" src="@/assets/svgs/H_step1.svg" />
+            <img class="h_step2" src="@/assets/svgs/H_step2.svg" />
+            <img class="h_step3" src="@/assets/svgs/H_step3.svg" />
+            <img class="h_step4" src="@/assets/svgs/H_step4.svg" />
+            <img class="h_line12" src="@/assets/svgs/H_line12.svg" />
+            <img class="h_line23" src="@/assets/svgs/H_line23.svg" />
+            <img class="h_line34" src="@/assets/svgs/H_line34.svg" />
+          </div>
+        </v-col>
+      </v-row>
+    </div>
+    <img class="divider" src="@/assets/svgs/Divider.svg" />
+    <div id="part11">
     </div>
   </div>
 </template>
@@ -465,6 +578,18 @@ export default {
   top: 40%;
   z-index: 3;
 }
+.line1_0 {
+  position: absolute;
+  width: 13%;
+  left: 3%;
+  top: 60%;
+}
+.line1_1 {
+  position: absolute;
+  width: 13%;
+  left: 84%;
+  top: 60%;
+}
 .bone_fracture {
   position: absolute;
   width: 60%;
@@ -505,6 +630,198 @@ export default {
   max-width: 289px;
   top: 23%;
   left: max(41.8%, 50% - 139.34px);
+}
+#part7 {
+  position: relative;
+  text-align: center;
+}
+.mibom {
+  width: 50%;
+  max-width: 850px;
+  margin: auto;
+}
+.line2_0 {
+  position: absolute;
+  width: 13%;
+  left: 3%;
+  top: 50%;
+}
+.line2_1 {
+  position: absolute;
+  width: 13%;
+  left: 84%;
+  top: 50%;
+}
+#part8 {
+  position: relative;
+}
+.menu {
+  width: 70%;
+  max-width: 1190px;
+}
+.logo_a {
+  position: absolute;
+  width: 6%;
+  max-width: 102px;
+  left: min(59%, 1003px);
+  top: 3%;
+}
+.logo_h {
+  position: absolute;
+  width: 12%;
+  max-width: 204px;
+  left: min(56.1%, 953.7px);
+  top: 29%;
+}
+.logo_r {
+  position: absolute;
+  width: 12%;
+  max-width: 204px;
+  left: min(56.1%, 953.7px);
+  top: 54%;
+}
+.logo_d {
+  position: absolute;
+  width: 14%;
+  max-width: 238px;
+  left: min(55.5%, 943.5px);
+  top: 80%;
+}
+.text_a {
+  position: absolute;
+  left: 72%;
+  top: 8%;
+}
+.text_h {
+  position: absolute;
+  left: 72%;
+  top: 34%;
+}
+.text_r {
+  position: absolute;
+  left: 72%;
+  top: 59%;
+}
+.text_d {
+  position: absolute;
+  left: 72%;
+  top: 83%;
+}
+.divider {
+  width: 90%;
+  margin: 0 5%;
+}
+#part9 {
+  position: relative;
+  margin: 65px 3%;
+}
+.adhesion {
+  position: absolute;
+  display: inline-block;
+  width: 35%;
+  max-width: 595px;
+}
+#text5 {
+  display: inline-block;
+  margin-left: calc(50% - 100px);
+  width: 55%;
+  max-width: 935px;
+  min-height: 420px;
+}
+.a_steps {
+  position: relative;
+  margin: 35px 3%;
+  margin-left: max(3%, (100% - 1598px) / 2);
+  max-width: calc(1700px * 0.94);
+}
+.a_step1 {
+  width: 20%;
+  margin-left: 3%;
+}
+.a_step2 {
+  position: absolute;
+  width: 15%;
+  left: 35%;
+}
+.a_step3 {
+  position: absolute;
+  width: 35%;
+  left: 68%;
+  top: 20%;
+}
+.a_line12 {
+  position: absolute;
+  width: 21.5%;
+  left: 14%;
+  top: 45%;
+}
+.a_line23 {
+  position: absolute;
+  width: 30%;
+  left: 49.5%;
+  top: 12%;
+}
+#part10 {
+  position: relative;
+  margin: 0 5%;
+}
+.hydrogel {
+  position: absolute;
+  display: inline-block;
+  width: 35%;
+  max-width: 500px;
+  left: max(65%, 100% - 500px);
+  top: 10%;
+}
+#text6 {
+  margin-top: 65px;
+  margin-left: 5%;
+}
+.h_steps {
+  position: relative;
+  margin: 35px 3%;
+  max-width: 1200px;
+}
+.h_step1 {
+  width: 17%;
+}
+.h_step2 {
+  position: absolute;
+  width: 23%;
+  left: 22%;
+  top: -40%;
+}
+.h_step3 {
+  position: absolute;
+  width: 17%;
+  left: 56%;
+}
+.h_step4 {
+  position: absolute;
+  width: 14.5%;
+  left: 85%;
+  top: -5%;
+}
+.h_line12 {
+  position: absolute;
+  width: 13%;
+  top: 20%;
+}
+.h_line23 {
+  position: absolute;
+  width: 13%;
+  left: 44%;
+  top: 35%;
+}
+.h_line34 {
+  position: absolute;
+  width: 13%;
+  left: 71.5%;
+  top: 15%;
+}
+#part11 {
+  position: relative;
+  margin-top: 65px;
 }
 
 img {
