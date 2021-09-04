@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-scroll="updatepos">
     <div style="position: absolute; top: 100px; left: 300px">{{ width }}</div>
     <div id="part1">
       <div style="text-align: center">
@@ -83,12 +83,7 @@
           justify="center"
           class="text-h2 text-sm-h1 text-md-h1 text-lg-h1 text-xl-h1"
         >
-          <div
-            v-intersect="{
-              handler: numberup,
-              options: { threshold: 1.0 },
-            }"
-          >
+          <div>
             {{ animatednumber }}
           </div>
         </v-row>
@@ -127,11 +122,11 @@
           id="text3"
         >
           According to our interviews with clinicians, the surgical time for
-          comminuted fractures is twice as long as that for conventional
-          fractures, which is mainly because of the cumbersome fixation of bone
-          fragments. This indicates at least 4.4 hours of surgery per week will
-          be taken up due to the complex fixation in one hospital. Medical
-          resources are tied up in complex procedures.
+          comminuted fractures is opacity: 0; // use for animatingtwice as long
+          as that for conventional fractures, which is mainly because of the
+          cumbersome fixation of bone fragments. This indicates at least 4.4
+          hours of surgery per week will be taken up due to the complex fixation
+          in one hospital. Medical resources are tied up in complex procedures.
         </div>
       </v-col>
     </v-row>
@@ -325,17 +320,39 @@
     <div id="part14">
       <div class="part14_inner">
         <img class="frame" src="@/assets/svgs/Frame.svg" />
-        <img class="logo_project" src="@/assets/svgs/Logo_project.svg" />
-        <img class="logo_model" src="@/assets/svgs/Logo_model.svg" />
-        <img class="logo_hp" src="@/assets/svgs/Logo_hp.svg" />
-        <img class="logo_hardware" src="@/assets/svgs/Logo_hardware.svg" />
-        <img class="logo_parts" src="@/assets/svgs/Logo_parts.svg" />
-        <div class="text-h4 text-sm-h5 text_project">Project</div>
-        <div class="text-h4 text-sm-h5 text_model">Model</div>
-        <div class="text-h4 text-sm-h5 text_hp1">Human</div>
-        <div class="text-h4 text-sm-h5 text_hp2">Practice</div>
-        <div class="text-h4 text-sm-h5 text_hardware">Hardware</div>
-        <div class="text-h4 text-sm-h5 text_parts">Parts</div>
+        <a href="https://2021.igem.org/Team:ShanghaiTech_China/Description">
+          <img class="logo_project" src="@/assets/svgs/Logo_project.svg" />
+        </a>
+        <a href="https://2021.igem.org/Team:ShanghaiTech_China/Model">
+          <img class="logo_model" src="@/assets/svgs/Logo_model.svg" />
+        </a>
+        <a href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices">
+          <img class="logo_hp" src="@/assets/svgs/Logo_hp.svg" />
+        </a>
+        <a href="https://2021.igem.org/Team:ShanghaiTech_China/Hardware">
+          <img class="logo_hardware" src="@/assets/svgs/Logo_hardware.svg" />
+        </a>
+        <a href="https://2021.igem.org/Team:ShanghaiTech_China/Parts">
+          <img class="logo_parts" src="@/assets/svgs/Logo_parts.svg" />
+        </a>
+        <a href="https://2021.igem.org/Team:ShanghaiTech_China/Description">
+          <div style="color: black;" class="text-h4 text-sm-h5 text_project">Project</div>
+        </a>
+        <a href="https://2021.igem.org/Team:ShanghaiTech_China/Model">
+          <div style="color: black;" class="text-h4 text-sm-h5 text_model">Model</div>
+        </a>
+        <a href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices">
+          <div style="color: black;" class="text-h4 text-sm-h5 text_hp1">Human</div>
+        </a>
+        <a href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices">
+          <div style="color: black;" class="text-h4 text-sm-h5 text_hp2">Practice</div>
+        </a>
+        <a href="https://2021.igem.org/Team:ShanghaiTech_China/Hardware">
+          <div style="color: black;" class="text-h4 text-sm-h5 text_hardware">Hardware</div>
+        </a>
+        <a href="https://2021.igem.org/Team:ShanghaiTech_China/Parts">
+          <div style="color: black;" class="text-h4 text-sm-h5 text_parts">Parts</div>
+        </a>
       </div>
     </div>
   </div>
@@ -351,13 +368,17 @@ export default {
   name: "mainpart",
   props: {
     width: Number,
+    height: Number,
   },
 
   data: () => ({
     fracture_number: 0,
+    temp: 2,
+    isseen: [0, 0, 0, 0, 0, 0, 0], //0 is clock; 1 is a_steps; 2 is h_steps
+    // 3 is graph; 4 is d_steps; 5 is l_steps; 6 is number.
 
     step: [], //use for store position of title
-    position: 1, //use for v-stepper to know where we are
+    position: 0, //use for v-stepper to know where we are
 
     isIntersecting: false,
     istop: true,
@@ -368,6 +389,21 @@ export default {
       easing: "easeInQuad",
     },
   }),
+  watch: {
+    position: function () {
+      gsap.fromTo(
+        `#text${this.position}`,
+        { opacity: 0, y: -40 },
+        {
+          duration: 0.5,
+          delay: 0.2,
+          y: 0,
+          opacity: 1,
+          ease: "ease.inout",
+        }
+      );
+    },
+  },
   computed: {
     animatednumber: function () {
       return this.fracture_number.toFixed(0);
@@ -381,8 +417,8 @@ export default {
       console.log(this.isIntersecting);
       this.istop = this.isIntersecting;
     },
-    numberup(entries, observer, isIntersecting) {
-      if (this.fracture_number < 295526 && isIntersecting) {
+    numberup() {
+      if (this.fracture_number < 295526) {
         gsap.to(this.$data, {
           duration: 0.5,
           delay: 1,
@@ -391,15 +427,114 @@ export default {
       }
     },
     updatepos() {
-      if (this.position >= 9) return;
       var pos;
-      var posnow = 0;
-      for (var i = this.position - 1; i < this.step.length; i++) {
-        pos = this.step[i].getBoundingClientRect().top;
-        if (pos <= 300) posnow = i;
+      if (this.isseen[0] == 0) {
+        pos = document
+          .getElementsByClassName("clock_1")[0]
+          .getBoundingClientRect().bottom;
+        if (pos <= this.height + 10) {
+          this.isseen[0] = 1;
+          gsap.fromTo(
+            ".clock_1",
+            { rotate: -219 },
+            { duration: 0.6, delay: 0.6, rotate: 0 }
+          );
+        }
       }
-      this.position = posnow + 1;
-      console.log(this.position);
+      if (this.isseen[1] == 0) {
+        pos = document
+          .getElementsByClassName("a_steps")[0]
+          .getBoundingClientRect().bottom;
+        if (pos <= this.height + 10) {
+          this.isseen[1] = 1;
+          var tl_a_steps = gsap.timeline({ delay: 0.6 });
+          tl_a_steps.to(".a_step1", { duration: 0.6, opacity: 1 }, 0);
+          tl_a_steps.to(".a_line12", { duration: 0.6, opacity: 1 }, 0.3);
+          tl_a_steps.to(".a_step2", { duration: 0.6, opacity: 1 }, 1);
+          tl_a_steps.to(".a_line23", { duration: 0.6, opacity: 1 }, 1.3);
+          tl_a_steps.to(".a_step3", { duration: 0.6, opacity: 1 }, 2);
+        }
+      }
+      if (this.isseen[2] == 0) {
+        pos = document
+          .getElementsByClassName("h_steps")[0]
+          .getBoundingClientRect().bottom;
+        if (pos <= this.height + 10) {
+          this.isseen[2] = 1;
+          var tl_h_steps = gsap.timeline();
+          tl_h_steps.to(".h_step1", { duration: 0.6, opacity: 1 }, 0);
+          tl_h_steps.to(".h_line12", { duration: 0.6, opacity: 1 }, 0.3);
+          tl_h_steps.to(".h_step2", { duration: 0.6, opacity: 1 }, 1);
+          tl_h_steps.to(".h_line23", { duration: 0.6, opacity: 1 }, 1.3);
+          tl_h_steps.to(".h_step3", { duration: 0.6, opacity: 1 }, 2);
+          tl_h_steps.to(".h_line34", { duration: 0.6, opacity: 1 }, 2.3);
+          tl_h_steps.to(".h_step4", { duration: 0.6, opacity: 1 }, 3);
+        }
+      }
+      if (this.isseen[3] == 0) {
+        pos = document
+          .getElementsByClassName("graph")[0]
+          .getBoundingClientRect().top;
+        if (pos <= this.height + 10) {
+          this.isseen[3] = 1;
+          gsap.fromTo(
+            ".graph",
+            { opacity: 0, rotationY: -90 },
+            {
+              duration: 0.5,
+              delay: 0.3,
+              rotationY: 0,
+              opacity: 1,
+              ease: "back",
+              transformOrigin: "0% 0%",
+            }
+          );
+        }
+      }
+      if (this.isseen[4] == 0) {
+        pos = document
+          .getElementsByClassName("d_steps")[0]
+          .getBoundingClientRect().bottom;
+        if (pos <= this.height + 10) {
+          this.isseen[4] = 1;
+          var tl_d_steps = gsap.timeline({ delay: 0.6 });
+          tl_d_steps.to(".d_step1", { duration: 0.6, opacity: 1 }, 0);
+          tl_d_steps.to(".d_line12", { duration: 0.6, opacity: 1 }, 0.3);
+          tl_d_steps.to(".d_step2", { duration: 0.6, opacity: 1 }, 1);
+          tl_d_steps.to(".d_line23", { duration: 0.6, opacity: 1 }, 1.3);
+          tl_d_steps.to(".d_step3", { duration: 0.6, opacity: 1 }, 2);
+        }
+      }
+      if (this.isseen[5] == 0) {
+        pos = document
+          .getElementsByClassName("l_steps")[0]
+          .getBoundingClientRect().bottom;
+        if (pos <= this.height + 10) {
+          this.isseen[5] = 1;
+          var tl_l_steps = gsap.timeline({ delay: 0.6 });
+          tl_l_steps.to(".l_step1", { duration: 0.6, opacity: 1 }, 0);
+          tl_l_steps.to(".l_line12", { duration: 0.6, opacity: 1 }, 0.3);
+          tl_l_steps.to(".l_step2", { duration: 0.6, opacity: 1 }, 1);
+          tl_l_steps.to(".l_line23", { duration: 0.6, opacity: 1 }, 1.3);
+          tl_l_steps.to(".l_step3", { duration: 0.6, opacity: 1 }, 2);
+          tl_l_steps.to(".l_line34", { duration: 0.6, opacity: 1 }, 2.3);
+          tl_l_steps.to(".l_step4", { duration: 0.6, opacity: 1 }, 3);
+        }
+      }
+      if (this.isseen[6] == 0) {
+        pos = document.getElementById("part4").getBoundingClientRect().bottom;
+        if (pos <= this.height + 10) {
+          this.isseen[6] = 1;
+          this.numberup();
+        }
+      }
+      //Texts.
+      if (this.position >= 9) return;
+      pos = this.step[this.position].getBoundingClientRect().top;
+      if (pos <= this.height + 10) {
+        this.position++;
+        console.log(this.position);
+      }
     },
   },
   mounted() {
@@ -413,10 +548,7 @@ export default {
     this.step[7] = document.getElementById("text8");
     this.step[8] = document.getElementById("text9");
     this.updatepos();
-    setTimeout(() => {
-      this.firstload = false;
-      console.log("loaded");
-    }, 1000);
+
     gsap.fromTo(
       ".part1_middle",
       { opacity: 0 },
@@ -450,7 +582,7 @@ export default {
       ".mount2",
       { opacity: 0, y: 80 },
       {
-        duration: 0.3,
+        duration: 0.6,
         delay: 1,
         y: 0,
         opacity: 1,
@@ -470,6 +602,9 @@ export default {
         transformOrigin: "100% 0%",
       }
     );
+
+    //Below is scroll-linked animation.
+
     gsap.fromTo(
       ".cloud1",
       { opacity: 0 },
@@ -500,7 +635,7 @@ export default {
       { opacity: 0 },
       {
         duration: 0.3,
-        delay: 3,
+        delay: 2,
         y: 0,
         opacity: 1,
         ease: "power3.in",
@@ -511,18 +646,6 @@ export default {
       ".clock_1",
       { rotate: -219 },
       { duration: 0.6, delay: 1, rotate: 0 }
-    );
-    gsap.fromTo(
-      ".graph",
-      { opacity: 0, rotationY: -90 },
-      {
-        duration: 0.5,
-        delay: 1,
-        rotationY: 0,
-        opacity: 1,
-        ease: "back",
-        transformOrigin: "0% 0%",
-      }
     );
 
     var tl_boat1 = gsap.timeline({ repeat: -1, delay: 3 });
@@ -838,27 +961,32 @@ export default {
   max-width: calc(1700px * 0.94);
 }
 .a_step1 {
+  opacity: 0; // use for animating
   width: 20%;
   margin-left: 3%;
 }
 .a_step2 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 15%;
   left: 35%;
 }
 .a_step3 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 35%;
   left: 68%;
   top: 20%;
 }
 .a_line12 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 21.5%;
   left: 14%;
   top: 45%;
 }
 .a_line23 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 30%;
   left: 49.5%;
@@ -886,37 +1014,44 @@ export default {
   max-width: 1200px;
 }
 .h_step1 {
+  opacity: 0; // use for animating
   width: 17%;
 }
 .h_step2 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 23%;
   left: 22%;
   top: -40%;
 }
 .h_step3 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 17%;
   left: 56%;
 }
 .h_step4 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 14.5%;
   left: 85%;
   top: -5%;
 }
 .h_line12 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 13%;
   top: 20%;
 }
 .h_line23 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 13%;
   left: 44%;
   top: 35%;
 }
 .h_line34 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 13%;
   left: 71.5%;
@@ -956,19 +1091,17 @@ export default {
 }
 #part12 {
   position: relative;
-  margin: 65px 3%;
-}
-.drug {
-}
-#text8 {
+  margin: 65px 3% 105px;
 }
 .d_step1 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 20%;
   max-width: 250px;
   left: calc(16% - 80px);
 }
 .d_step2 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 20%;
   max-width: 250px;
@@ -976,6 +1109,7 @@ export default {
   top: 40%;
 }
 .d_step3 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 25%;
   max-width: 312.5px;
@@ -983,13 +1117,15 @@ export default {
   top: 90%;
 }
 .d_line12 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 13%;
   max-width: 200px;
   left: 16%;
   top: 25%;
-};
+}
 .d_line23 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 13%;
   max-width: 200px;
@@ -1011,39 +1147,46 @@ export default {
   max-width: calc(1700px * 0.94);
 }
 .l_step1 {
+  opacity: 0; // use for animating
   width: 5%;
   margin-left: 10%;
 }
 .l_step2 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 17%;
   left: 25%;
   top: -36%;
 }
 .l_step3 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 6%;
   left: 55%;
 }
 .l_step4 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 28%;
   left: 70%;
   top: -40%;
 }
 .l_line12 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 8%;
   left: 18%;
   top: 40%;
 }
 .l_line23 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 8%;
   left: 42%;
   top: 40%;
 }
 .l_line34 {
+  opacity: 0; // use for animating
   position: absolute;
   width: 8%;
   left: 63%;
@@ -1125,7 +1268,7 @@ export default {
 .text_hardware {
   position: absolute;
   width: 7%;
-  left: 59%;
+  left: 60%;
   top: 65%;
 }
 .text_parts {

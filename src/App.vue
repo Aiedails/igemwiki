@@ -30,7 +30,7 @@
     -->
 
     <navbar v-resize="onResize" :width="this.width"></navbar>
-    <mainpart :width="this.width"></mainpart>
+    <mainpart :width="this.width" :height="this.height"></mainpart>
     <temfooter></temfooter>
   </v-app>
 </template>
