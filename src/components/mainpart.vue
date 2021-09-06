@@ -3,7 +3,7 @@
     <div style="position: absolute; top: 100px; left: 300px">{{ width }}</div>
     <div id="part1">
       <div style="text-align: center">
-        <img class="logo" src="@/assets/svgs/Logo.svg" />
+        <img class="logo" src="https://2021.igem.org/wiki/images/f/fc/T--ShanghaiTech_China--home--Logo.svg" />
         <div class="text-h4 text-sm-h4 text-md-h3 text-lg-h2 text-xl-h1">
           M I B O M
         </div>
@@ -11,30 +11,30 @@
           Mussel Inspired Biological Opertional Material
         </div>
       </div>
-      <div style="margin-top: -30px">
-        <img class="mount1" src="@/assets/svgs/Mountain1.svg" />
+      <div style="margin-top: -30px; position: relative">
+        <img class="mount1" src="https://2021.igem.org/wiki/images/2/28/T--ShanghaiTech_China--home--Mountain1.svg" />
         <div class="part1_middle">
-          <img class="mid1" src="@/assets/svgs/Middle1.svg" />
-          <img class="cloud1_0 cloud1" src="@/assets/svgs/Cloud1_Under.svg" />
-          <img class="cloud1_1 cloud1" src="@/assets/svgs/Cloud1_Above.svg" />
+          <img class="mid1" src="https://2021.igem.org/wiki/images/c/c8/T--ShanghaiTech_China--home--Middle1.svg" />
+          <img class="cloud1_0 cloud1" src="https://2021.igem.org/wiki/images/c/cd/T--ShanghaiTech_China--home--Cloud1_Under.svg" />
+          <img class="cloud1_1 cloud1" src="https://2021.igem.org/wiki/images/6/60/T--ShanghaiTech_China--home--Cloud1_Above.svg" />
         </div>
-        <img class="mount4" src="@/assets/svgs/Mountain4.svg" />
+        <img class="mount4" src="https://2021.igem.org/wiki/images/5/58/T--ShanghaiTech_China--home--Mountain4.svg" />
       </div>
-      <img class="mount2" src="@/assets/svgs/Mountain2.svg" />
-      <img class="mount3" src="@/assets/svgs/Mountain3.svg" />
-      <img class="cloud2 cloud_ani" src="@/assets/svgs/Cloud2.svg" />
-      <img class="cloud3_0 cloud_ani" src="@/assets/svgs/Cloud3_Under.svg" />
-      <img class="cloud3_1 cloud_ani" src="@/assets/svgs/Cloud3_Above.svg" />
-      <img class="boat1" id="boat1" src="@/assets/svgs/Boat1.svg" />
+      <img class="mount2" src="https://2021.igem.org/wiki/images/d/da/T--ShanghaiTech_China--home--Mountain2.svg" />
+      <img class="mount3" src="https://2021.igem.org/wiki/images/f/f5/T--ShanghaiTech_China--home--Mountain3.svg" />
+      <img class="cloud2 cloud_ani" src="https://2021.igem.org/wiki/images/b/b1/T--ShanghaiTech_China--home--Cloud2.svg" />
+      <img class="cloud3_0 cloud_ani" src="https://2021.igem.org/wiki/images/3/31/T--ShanghaiTech_China--home--Cloud3_Under.svg" />
+      <img class="cloud3_1 cloud_ani" src="https://2021.igem.org/wiki/images/3/3f/T--ShanghaiTech_China--home--Cloud3_Above.svg" />
+      <img class="boat1" id="boat1" src="https://2021.igem.org/wiki/images/e/e2/T--ShanghaiTech_China--home--Boat1.svg" />
     </div>
     <div id="part2">
-      <img class="mount5" src="@/assets/svgs/Mountain5.svg" />
-      <img class="mount6" src="@/assets/svgs/Mountain6.svg" />
-      <img class="line1_0" src="@/assets/svgs/Line.svg" />
-      <img class="line1_1" src="@/assets/svgs/Line.svg" />
-      <img class="bone_fracture" src="@/assets/svgs/Bone_Fracture.svg" />
-      <img class="mount7" src="@/assets/svgs/Mountain7.svg" />
-      <img class="boat2" id="boat2" src="@/assets/svgs/Boat2.svg" />
+      <img class="mount5" src="https://2021.igem.org/wiki/images/9/9f/T--ShanghaiTech_China--home--Mountain5.svg" />
+      <img class="mount6" src="https://2021.igem.org/wiki/images/8/86/T--ShanghaiTech_China--home--Mountain6.svg" />
+      <img class="line1_0" src="https://2021.igem.org/wiki/images/3/3a/T--ShanghaiTech_China--home--Line.svg" />
+      <img class="line1_1" src="https://2021.igem.org/wiki/images/3/3a/T--ShanghaiTech_China--home--Line.svg" />
+      <img class="bone_fracture" src="https://2021.igem.org/wiki/images/b/b8/T--ShanghaiTech_China--home--Bone_Fracture.svg" />
+      <img class="mount7" src="https://2021.igem.org/wiki/images/2/2d/T--ShanghaiTech_China--home--Mountain7.svg" />
+      <img class="boat2" id="boat2" src="https://2021.igem.org/wiki/images/8/84/T--ShanghaiTech_China--home--Boat2.svg" />
     </div>
     <v-row id="part3" justify="center" style="margin-top: 100px">
       <v-col cols="12">
@@ -104,7 +104,7 @@
       <v-col cols="12" sm="12" md="6" lg="6" xl="6">
         <v-img
           :aspect-ratio="2231 / 1171"
-          src="@/assets/svgs/Pie.svg"
+          src="https://2021.igem.org/wiki/images/7/72/T--ShanghaiTech_China--home--Pie.svg"
           style="margin: auto 5%"
         />
       </v-col>
@@ -132,8 +132,8 @@
     </v-row>
     <div id="part6">
       <div style="position: relative">
-        <img class="clock_0" src="@/assets/svgs/Clock_Under.svg" />
-        <img class="clock_1" src="@/assets/svgs/Clock_Above.svg" />
+        <img class="clock_0" src="https://2021.igem.org/wiki/images/b/b5/T--ShanghaiTech_China--home--Clock_Under.svg" />
+        <img class="clock_1" src="https://2021.igem.org/wiki/images/c/ce/T--ShanghaiTech_China--home--Clock_Above.svg" />
       </div>
       <v-row justify="center">
         <v-col cols="12">
@@ -154,9 +154,9 @@
       </v-row>
     </div>
     <div id="part7">
-      <img class="mibom" src="@/assets/svgs/Mibom.svg" />
-      <img class="line2_0" src="@/assets/svgs/Line.svg" />
-      <img class="line2_1" src="@/assets/svgs/Line.svg" />
+      <img class="mibom" src="https://2021.igem.org/wiki/images/3/3c/T--ShanghaiTech_China--home--Mibom.svg" />
+      <img class="line2_0" src="https://2021.igem.org/wiki/images/3/3a/T--ShanghaiTech_China--home--Line.svg" />
+      <img class="line2_1" src="https://2021.igem.org/wiki/images/3/3a/T--ShanghaiTech_China--home--Line.svg" />
     </div>
     <div id="part8">
       <div
@@ -175,11 +175,11 @@
         structural strength, degradation and drug release respectively.
       </div>
       <div style="position: relative; margin: 35px 5%">
-        <img class="menu" src="@/assets/svgs/Menu.svg" />
-        <img class="logo_a" src="@/assets/svgs/Middle1.svg" />
-        <img class="logo_h" src="@/assets/svgs/Logo_hydrogel.svg" />
-        <img class="logo_r" src="@/assets/svgs/Logo_regulation.svg" />
-        <img class="logo_d" src="@/assets/svgs/Logo_drug.svg" />
+        <img class="menu" src="https://2021.igem.org/wiki/images/7/71/T--ShanghaiTech_China--home--Menu.svg" />
+        <img class="logo_a" src="https://2021.igem.org/wiki/images/c/c8/T--ShanghaiTech_China--home--Middle1.svg" />
+        <img class="logo_h" src="https://2021.igem.org/wiki/images/4/4f/T--ShanghaiTech_China--home--Logo_hydrogel.svg" />
+        <img class="logo_r" src="https://2021.igem.org/wiki/images/a/a8/T--ShanghaiTech_China--home--Logo_regulation.svg" />
+        <img class="logo_d" src="https://2021.igem.org/wiki/images/d/d6/T--ShanghaiTech_China--home--Logo_drug.svg" />
         <div class="text_a text-h6 text-sm-h5 text-md-h4 text-lg-h3 text-xl-h3">
           ADHESION
         </div>
@@ -194,9 +194,9 @@
         </div>
       </div>
     </div>
-    <img class="divider" src="@/assets/svgs/Divider.svg" />
+    <img class="divider" src="https://2021.igem.org/wiki/images/6/6a/T--ShanghaiTech_China--home--Divider.svg" />
     <div id="part9">
-      <img class="adhesion" src="@/assets/svgs/Adhesion.svg" />
+      <img class="adhesion" src="https://2021.igem.org/wiki/images/2/29/T--ShanghaiTech_China--home--Adhesion.svg" />
       <div class="text-h5 text-xl-h4" id="text5">
         The first part of MIBOM is the adhesion system. We got the inspiration
         for this design from mussels, a creature that can adhere themselves
@@ -207,16 +207,16 @@
         bone fragments, sticking them together, helping the bone to recorver.
       </div>
       <div class="a_steps">
-        <img class="a_step1" src="@/assets/svgs/A_step1.svg" />
-        <img class="a_step2" src="@/assets/svgs/A_step2.svg" />
-        <img class="a_step3" src="@/assets/svgs/A_step3.svg" />
-        <img class="a_line12" src="@/assets/svgs/A_line12.svg" />
-        <img class="a_line23" src="@/assets/svgs/A_line23.svg" />
+        <img class="a_step1" src="https://2021.igem.org/wiki/images/1/19/T--ShanghaiTech_China--home--A_step1.svg" />
+        <img class="a_step2" src="https://2021.igem.org/wiki/images/6/6b/T--ShanghaiTech_China--home--A_step2.svg" />
+        <img class="a_step3" src="https://2021.igem.org/wiki/images/5/55/T--ShanghaiTech_China--home--A_step3.svg" />
+        <img class="a_line12" src="https://2021.igem.org/wiki/images/3/3a/T--ShanghaiTech_China--home--A_line12.svg" />
+        <img class="a_line23" src="https://2021.igem.org/wiki/images/e/e5/T--ShanghaiTech_China--home--A_line23.svg" />
       </div>
     </div>
-    <img class="divider" src="@/assets/svgs/Divider.svg" />
+    <img class="divider" src="https://2021.igem.org/wiki/images/6/6a/T--ShanghaiTech_China--home--Divider.svg" />
     <div id="part10">
-      <img class="hydrogel" src="@/assets/svgs/Hydrogel.svg" />
+      <img class="hydrogel" src="https://2021.igem.org/wiki/images/9/9c/T--ShanghaiTech_China--home--Hydrogel.svg" />
       <v-row>
         <v-col cols="8" sm="8" md="8" lg="8" xl="9">
           <div id="text6" class="text-h5 text-xl-h4">
@@ -232,25 +232,25 @@
         </v-col>
         <v-col cols="12" sm="12" md="8" lg="8" xl="10">
           <div class="h_steps">
-            <img class="h_step1" src="@/assets/svgs/H_step1.svg" />
-            <img class="h_step2" src="@/assets/svgs/H_step2.svg" />
-            <img class="h_step3" src="@/assets/svgs/H_step3.svg" />
-            <img class="h_step4" src="@/assets/svgs/H_step4.svg" />
-            <img class="h_line12" src="@/assets/svgs/H_line12.svg" />
-            <img class="h_line23" src="@/assets/svgs/H_line23.svg" />
-            <img class="h_line34" src="@/assets/svgs/H_line34.svg" />
+            <img class="h_step1" src="https://2021.igem.org/wiki/images/5/5d/T--ShanghaiTech_China--home--H_step1.svg" />
+            <img class="h_step2" src="https://2021.igem.org/wiki/images/9/95/T--ShanghaiTech_China--home--H_step2.svg" />
+            <img class="h_step3" src="https://2021.igem.org/wiki/images/2/2c/T--ShanghaiTech_China--home--H_step3.svg" />
+            <img class="h_step4" src="https://2021.igem.org/wiki/images/2/2b/T--ShanghaiTech_China--home--H_step4.svg" />
+            <img class="h_line12" src="https://2021.igem.org/wiki/images/1/12/T--ShanghaiTech_China--home--H_line12.svg" />
+            <img class="h_line23" src="https://2021.igem.org/wiki/images/3/37/T--ShanghaiTech_China--home--H_line23.svg" />
+            <img class="h_line34" src="https://2021.igem.org/wiki/images/d/d1/T--ShanghaiTech_China--home--H_line34.svg" />
           </div>
         </v-col>
       </v-row>
     </div>
     <img
       class="divider"
-      src="@/assets/svgs/Divider.svg"
+      src="https://2021.igem.org/wiki/images/6/6a/T--ShanghaiTech_China--home--Divider.svg"
       style="margin-top: 65px"
     />
     <div id="part11">
-      <img class="regulation" src="@/assets/svgs/Regulation.svg" />
-      <img class="stress" src="@/assets/svgs/Stress.svg" />
+      <img class="regulation" src="https://2021.igem.org/wiki/images/2/28/T--ShanghaiTech_China--home--Regulation.svg" />
+      <img class="stress" src="https://2021.igem.org/wiki/images/d/dc/T--ShanghaiTech_China--home--Stress.svg" />
       <div id="text7" class="text-h5 text-xl-h4">
         To make MIBOM smarter, a stress-responsingn degradation system is
         designed. The regulation is achieved by lading engineered autogenous
@@ -262,28 +262,28 @@
         self-degrade as the bone grows back into its normal status.
       </div>
       <div class="r_graph">
-        <img class="axis" src="@/assets/svgs/Axises.svg" />
-        <img class="graph" src="@/assets/svgs/Graph.svg" />
+        <img class="axis" src="https://2021.igem.org/wiki/images/8/88/T--ShanghaiTech_China--home--Axises.svg" />
+        <img class="graph" src="https://2021.igem.org/wiki/images/1/10/T--ShanghaiTech_China--home--Graph.svg" />
       </div>
     </div>
     <img
       class="divider"
-      src="@/assets/svgs/Divider.svg"
+      src="https://2021.igem.org/wiki/images/6/6a/T--ShanghaiTech_China--home--Divider.svg"
       style="margin-top: 65px"
     />
     <div id="part12">
       <v-row>
         <v-col cols="6">
           <div class="d_steps">
-            <img class="d_step1" src="@/assets/svgs/D_step1.svg" />
-            <img class="d_step2" src="@/assets/svgs/D_step2.svg" />
-            <img class="d_step3" src="@/assets/svgs/D_step3.svg" />
-            <img class="d_line12" src="@/assets/svgs/D_line12.svg" />
-            <img class="d_line23" src="@/assets/svgs/D_line23.svg" />
+            <img class="d_step1" src="https://2021.igem.org/wiki/images/6/69/T--ShanghaiTech_China--home--D_step1.svg" />
+            <img class="d_step2" src="https://2021.igem.org/wiki/images/2/24/T--ShanghaiTech_China--home--D_step2.svg" />
+            <img class="d_step3" src="https://2021.igem.org/wiki/images/f/f5/T--ShanghaiTech_China--home--D_step3.svg" />
+            <img class="d_line12" src="https://2021.igem.org/wiki/images/f/f5/T--ShanghaiTech_China--home--D_line12.svg" />
+            <img class="d_line23" src="https://2021.igem.org/wiki/images/6/63/T--ShanghaiTech_China--home--D_line23.svg" />
           </div>
         </v-col>
         <v-col cols="6">
-          <img class="drug" src="@/assets/svgs/Drug.svg" />
+          <img class="drug" src="https://2021.igem.org/wiki/images/8/8e/T--ShanghaiTech_China--home--Drug.svg" />
           <div id="text8" class="text-h5 text-xl-h4">
             The hydrogel system makes it possible for drug loading. We planned
             to embed certain drugs in special nanoparticles, which cannot
@@ -294,7 +294,7 @@
         </v-col>
       </v-row>
     </div>
-    <img class="divider" src="@/assets/svgs/Divider.svg" />
+    <img class="divider" src="https://2021.igem.org/wiki/images/6/6a/T--ShanghaiTech_China--home--Divider.svg" />
     <div id="part13">
       <div id="text9" class="text-h5 text-xl-h4">
         Although the internal systems in MIBOM are complex, doctors can simply
@@ -307,33 +307,33 @@
         patients.
       </div>
       <div class="l_steps">
-        <img class="l_step1" src="@/assets/svgs/L_step1.svg" />
-        <img class="l_step2" src="@/assets/svgs/L_step2.svg" />
-        <img class="l_step3" src="@/assets/svgs/L_step3.svg" />
-        <img class="l_step4" src="@/assets/svgs/L_step4.svg" />
-        <img class="l_line12" src="@/assets/svgs/L_line.svg" />
-        <img class="l_line23" src="@/assets/svgs/L_line.svg" />
-        <img class="l_line34" src="@/assets/svgs/L_line.svg" />
+        <img class="l_step1" src="https://2021.igem.org/wiki/images/b/bc/T--ShanghaiTech_China--home--L_step1.svg" />
+        <img class="l_step2" src="https://2021.igem.org/wiki/images/4/45/T--ShanghaiTech_China--home--L_step2.svg" />
+        <img class="l_step3" src="https://2021.igem.org/wiki/images/c/cc/T--ShanghaiTech_China--home--L_step3.svg" />
+        <img class="l_step4" src="https://2021.igem.org/wiki/images/2/21/T--ShanghaiTech_China--home--L_step4.svg" />
+        <img class="l_line12" src="https://2021.igem.org/wiki/images/f/fe/T--ShanghaiTech_China--home--L_line.svg" />
+        <img class="l_line23" src="https://2021.igem.org/wiki/images/f/fe/T--ShanghaiTech_China--home--L_line.svg" />
+        <img class="l_line34" src="https://2021.igem.org/wiki/images/f/fe/T--ShanghaiTech_China--home--L_line.svg" />
       </div>
     </div>
-    <img class="divider" src="@/assets/svgs/Divider.svg" />
+    <img class="divider" src="https://2021.igem.org/wiki/images/6/6a/T--ShanghaiTech_China--home--Divider.svg" />
     <div id="part14">
       <div class="part14_inner">
-        <img class="frame" src="@/assets/svgs/Frame.svg" />
+        <img class="frame" src="https://2021.igem.org/wiki/images/5/58/T--ShanghaiTech_China--home--Frame.svg" />
         <a href="https://2021.igem.org/Team:ShanghaiTech_China/Description">
-          <img class="logo_project" src="@/assets/svgs/Logo_project.svg" />
+          <img class="logo_project" src="https://2021.igem.org/wiki/images/a/a9/T--ShanghaiTech_China--home--Logo_project.svg" />
         </a>
         <a href="https://2021.igem.org/Team:ShanghaiTech_China/Model">
-          <img class="logo_model" src="@/assets/svgs/Logo_model.svg" />
+          <img class="logo_model" src="https://2021.igem.org/wiki/images/3/31/T--ShanghaiTech_China--home--Logo_model.svg" />
         </a>
         <a href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices">
-          <img class="logo_hp" src="@/assets/svgs/Logo_hp.svg" />
+          <img class="logo_hp" src="https://2021.igem.org/wiki/images/8/8a/T--ShanghaiTech_China--home--Logo_hp.svg" />
         </a>
         <a href="https://2021.igem.org/Team:ShanghaiTech_China/Hardware">
-          <img class="logo_hardware" src="@/assets/svgs/Logo_hardware.svg" />
+          <img class="logo_hardware" src="https://2021.igem.org/wiki/images/2/27/T--ShanghaiTech_China--home--Logo_hardware.svg" />
         </a>
         <a href="https://2021.igem.org/Team:ShanghaiTech_China/Parts">
-          <img class="logo_parts" src="@/assets/svgs/Logo_parts.svg" />
+          <img class="logo_parts" src="https://2021.igem.org/wiki/images/8/83/T--ShanghaiTech_China--home--Logo_parts.svg" />
         </a>
         <a href="https://2021.igem.org/Team:ShanghaiTech_China/Description">
           <div style="color: black" class="text-h4 text-sm-h5 text_project">
@@ -521,7 +521,7 @@ export default {
         pos = document
           .getElementsByClassName("l_steps")[0]
           .getBoundingClientRect().bottom;
-        if (pos <= this.height + 10) {
+        if (pos <= this.height + 100) {
           this.isseen[5] = 1;
           var tl_l_steps = gsap.timeline({ delay: 0.3 });
           tl_l_steps.to(".l_step1", { duration: 0.3, opacity: 1 }, 0);
@@ -544,7 +544,7 @@ export default {
         pos = document
           .getElementsByClassName("menu")[0]
           .getBoundingClientRect().bottom;
-        if (pos <= this.height + 10) {
+        if (pos <= this.height + 300) {
           this.isseen[7] = 1;
           var tl_menu = gsap.timeline();
           tl_menu.to(".logo_a", { duration: 0.5, opacity: 1 }, 0);
@@ -731,10 +731,11 @@ export default {
   z-index: 3;
 }
 .mount4 {
-  position: relative;
+  position: absolute;
   display: inline-flex;
   width: 30%;
   max-width: 510px;
+  right: 0;
   padding-right: min(2%, 35px);
   padding-bottom: min(5%, 85px);
   z-index: 3;
@@ -745,7 +746,8 @@ export default {
   margin-left: -3%;
   margin-right: -3%;
   display: inline-flex;
-  position: relative;
+  position: absolute;
+  top: 20%;
   //transform: translateY(-18%);
 }
 .mid1 {
@@ -1238,11 +1240,13 @@ export default {
 }
 .part14_inner {
   position: relative;
+  text-align: center;
   max-width: 1190px;
   margin: 0 auto;
 }
 .frame {
   width: 70%;
+  margin: 0 15%;
 }
 .logo_project {
   position: absolute;

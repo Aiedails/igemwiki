@@ -14,6 +14,7 @@
       left
       top
       class="primary"
+      style="top: 25px"
     >
       <v-icon> mdi-menu </v-icon>
     </v-btn>
