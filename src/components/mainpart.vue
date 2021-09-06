@@ -22,61 +22,73 @@
               editable
               edit-icon="1"
               step="1"
-              @click="$vuetify.goTo('#prologue', options)"
+              @click="$vuetify.goTo('#overview', options)"
               :complete="position > 1"
               style="transition: all 1s ease 1s"
               color="primary"
               class="body-2"
             >
-              Prologue
+              Overview
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="2"
               step="2"
-              @click="$vuetify.goTo('#lab_safety', options)"
+              @click="$vuetify.goTo('#target', options)"
               :complete="position > 2"
               style="transition: all 1s"
               color="primary"
               class="body-2"
             >
-              Lab Safety
+              Target Users
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="3"
               step="3"
-              @click="$vuetify.goTo('#general_information', options)"
+              @click="$vuetify.goTo('#operation', options)"
               :complete="position > 3"
               style="transition: all 1s"
               color="primary"
               class="body-2"
             >
-              General microorganism information & general project design
+              Operation procedure
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="4"
               step="4"
-              @click="$vuetify.goTo('#specific_design', options)"
+              @click="$vuetify.goTo('#user', options)"
               :complete="position > 4"
               style="transition: all 1s"
               color="primary"
               class="body-2"
             >
-              Specific project design
+              User Experence Improvement
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="5"
               step="5"
-              @click="$vuetify.goTo('#use_of_harmful', options)"
+              @click="$vuetify.goTo('#safety', options)"
               :complete="position > 5"
               style="transition: all 1s"
               color="primary"
               class="body-2"
             >
-              Use of harmful reagents and procedures
+              Safety
+            </v-stepper-step>
+            <v-stepper-step
+              editable
+              edit-icon="6"
+              step="6"
+              @click="$vuetify.goTo('#develop', options)"
+              :complete="position > 6"
+              style="transition: all 1s"
+              color="primary"
+              class="body-2"
+            >
+              Development Plan
             </v-stepper-step>
           </v-stepper>
         </template>
@@ -96,366 +108,295 @@
             class="transition-swing"
             style="text-decoration: none"
             id="description"
-            v-intersect="onIntersect"
             v-scroll="updatepos"
             v-show="!firstload"
           >
             <v-container style="padding: 20px 3%">
               <v-row justify="center">
-                <v-card-title class="text-h4 title" id="prologue">
-                  Prologue</v-card-title
+                <v-card-title
+                  class="text-h4 title"
+                  id="overview"
+                  v-intersect="onIntersect"
+                  >Overview</v-card-title
                 >
               </v-row>
               <v-card-text>
                 <p class="body-1">
-                  Throughout the experiment, the members of Shanghaitech_China
-                  iGEM team put safety the first. During our experiment, experts
-                  who provide supervision and help to manage the risks we
-                  identified. After receiving strict experimental training, our
-                  experimenters can perform various operations with great care
-                  and proficiency. We will be able to successfully complete all
-                  the experiments in our project on the premise of ensuring our
-                  own safety, environmental safety, and microbial safety. All of
-                  our experimental plans and contents are under the guidance of
-                  PI and they confirmed that our experimental procedure does not
-                  have any biosafety concerns in the laboratory.
+                  According to the epidemiological survey conducted by Jordan KM
+                  et al., at the beginning of the 21st century, the number of
+                  brittle bone fractures worldwide reached 9 million per year.
+                  The incidence and cost of brittle bone fractures in the United
+                  States are expected to increase by 50% by 2025. Orthopedic
+                  diseases are highly correlated with age. Taking osteoporosis
+                  as an example, the incidence of this disease is significantly
+                  positively correlated with age, and the incidence of this
+                  disease is extremely high in women. Today, in the aging
+                  society with increasing life expectancy, fractures will
+                  continue to increase. At present, in response to traumatic
+                  fractures, bone plates made of titanium alloy and other
+                  materials are usually used. On the one hand, there is stress
+                  shield for bone healing, which leads to injury. On the other
+                  hand, patients need a second operation to remove the plate,
+                  which will bring multiple costs, occupation of medical
+                  resources, and intraoperative injury risks during the second
+                  operation. From the point of patients' view, the second
+                  operation also increases the time and economic cost of their
+                  return visit. Based on the number of known hospitals and
+                  surgeries, it is estimated that the average cost of orthopedic
+                  trauma implant removal in China is about $923, and the annual
+                  cost of secondary trauma surgery will be $616 million within a
+                  year. In order to break through the traditional fracture
+                  treatment plan and solve the problem of the pain point of the
+                  second operation, we designed MIBOM product.
+                </p>
+                <p class="body-1">
+                  MIBOM uses a modular design of "mussel mucin + hydrogel + cell
+                  engineering". On the one hand, MIBOM uses the adhesion
+                  strength of mussel mucin and hydrogel to fix the fracture,
+                  replacing the existing bone plate solution. On the other hand,
+                  MIBOM introduces Piezo regulation system to solve the problem
+                  of implant removal by regulating material degradation through
+                  cells. In terms of experiments, we have completed the
+                  purification of mussel mucin, the expression and testing of
+                  Piezo pathway, and the testing of cells under uv toxicity.
+                </p>
+                <p class="body-1">
+                  In purposed implement, we have developed corresponding
+                  strategies in the aspects of positioning users, improving user
+                  experience, ensuring project security, and making the project
+                  more perfect in the real world.
                 </p>
               </v-card-text>
               <v-row justify="center">
-                <v-card-title class="text-h4 title" id="lab_safety">
-                  Lab Safety</v-card-title
+                <v-card-title class="text-h4 title" id="target"
+                  >Target Users</v-card-title
                 >
               </v-row>
               <v-card-text>
                 <p class="body-1">
-                  This time, our experiments were done in the molecular
-                  laboratory and the cell laboratory, whose laboratory levels
-                  were level1 and level2 respectively. In order to prevent
-                  cross-contamination, we arranged two different teams of
-                  students to complete these experiments respectively. In the
-                  process of the experiment, we strictly follow the university
-                  of Science and Technology laboratory safety inspection
-                  management method. In the laboratory, we have done including
-                  but not limited to:
-                </p>
-                <v-list style="padding-left: 16px">
-                  <v-list-item>
-                    <li class="body-2">
-                      The laboratory has a record of safety education and
-                      training, and all personnel must pass the laboratory
-                      safety examination.
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      The instruction of safety information board must be clear,
-                      with safety inspection and health duty management system.
-                      The ventilation system of the experimental site is in
-                      normal operation, the fume hood and bio-safety cabinet can
-                      be used normally, and the cabinet door is opened at an
-                      appropriate height. Put the goods neatly, do not pile up
-                      debris. When entering the laboratory, you should wear
-                      personal protective equipment as required. You should not
-                      leave the laboratory wearing PPE such as contaminated lab
-                      clothes and gloves. There is no food or drink in the
-                      laboratory. No accommodations are allowed in the
-                      laboratory.
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      The laboratory has an emergency evacuation route map, and
-                      the fire escape is unobstructed. The laboratory is
-                      equipped with suitable fire-fighting equipment, emergency
-                      spray, eye wash and first aid kit, which are regularly
-                      maintained.
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      The laboratory shall be insulated from electricity and
-                      shall not use electrical appliances in a dangerous manner.
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      The hazardous chemicals comply with the relevant
-                      regulations of the state and the school. Laboratory
-                      personnel should understand the hazardous characteristics
-                      of the chemicals used, safety protection knowledge,
-                      storage methods, waste treatment, emergency treatment
-                      methods, etc.
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      Do the corresponding experiments in the corresponding
-                      biological laboratory.
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      Hazardous waste and general waste shall be stored
-                      separately, and hazardous waste labels shall be posted.
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      Lab coats, gloves, glasses and masks must be worn when
-                      entering the lab.
-                    </li>
-                  </v-list-item>
-                </v-list>
-                <p class="body-1"></p>
-                <p class="body-1">Especially in cell lab:</p>
-                <v-list style="padding-left: 16px">
-                  <v-list-item>
-                    <li class="body-2">
-                      The cell lab is equipped with two transition rooms and is
-                      sterilized with ultraviolet lamps when no one is around.
-                      The laboratory is specially disinfected once every half a
-                      month, and the ultraviolet lamp is used when there is no
-                      person.
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      When entering the cell room, one should wear a head cover,
-                      a mask, special glasses and gloves, and wear a cell lab
-                      coat and sterilized slippers to ensure that the exposed
-                      skin is minimized. People with open wounds should not
-                      enter the cell room. This not only protects ourselves, but
-                      also protects the cell.
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      All experiments were performed in a biosafety cabinet.
-                    </li>
-                  </v-list-item>
-                </v-list>
-                <p class="body-1">
-                  For some other important details, we also did a good job.
-                  Before entering the laboratory, we first received the most
-                  general laboratory training, through which we were allowed to
-                  enter the laboratory. Next, we will familiarize ourselves with
-                  each experiment with our instructor before doing the
-                  experiment ourselves. In addition, we also need special
-                  training before using each instrument.
+                  In the short-term six-year plan, MIBOM focuses on developing
+                  bone materials for treatment. In this regard, we target
+                  patients with traumatic fractures. Initially, our product will
+                  be used as an auxiliary degradable internal fixation for
+                  comminuted fracture patients, helping doctors to solve complex
+                  surgical problems in comminuted fracture treatment by
+                  assisting in the bonding of bone fragments. After the
+                  technology is developed, the final target of MIBOM will be
+                  patients with conventional traumatic fractures.
                 </p>
                 <p class="body-1">
-                  In the molecular laboratory, we use the ultra-clean table, PCR
-                  instrument, electrophoresis instrument, double steam machine,
-                  centrifuge, metal bath, water bath, bacteria shaking machine
-                  and nanodrop. In the cell lab, we use biosafety cabinets, cell
-                  incubators and microscopes. Before operating the equipment, we
-                  must read the operation guide and accept the teacher's
-                  instruction. When operating the equipment, we must strictly
-                  follow the instructions, stay next to the equipment all the
-                  time during use, and close it in time after use.
+                  During the six-year plan, the target users of MIBOM are
+                  patients and the main application scenarios are routine
+                  traumatic fractures. But the main customers, who will
+                  influence the use of MIBOM, are still doctors and hospital
+                  decision makers. MIBOM plans to build strong partnerships with
+                  hospitals and their orthopaedic departments to strengthen
+                  customer relationships.
                 </p>
                 <p class="body-1">
-                  As mentioned before, our laboratories are regularly
-                  disinfected with 75% ethanol, well laid out, and the items are
-                  in good order and not crowded.
+                  In the long-term planning, MIBOM will develop into beauty,
+                  trauma and repair products. In the long-term planning, MIBOM's
+                  target users are individual consumers. In the development
+                  plan, MIBOM develops two different product lines:
+                  popularization and precision, and the corresponding users are
+                  also divided into basic users and patients with complicated
+                  diseases with economic basis.
                 </p>
-                <p class="body-1">
-                  In terms of waste recycling, we will use disinfectant to kill
-                  the remaining bacteria after the experiment, and then pour it
-                  down the drain to make sure it is sterile. For the waste of
-                  molecular laboratory, we put it into the garbage bag of
-                  hazardous waste and give it to the professional company to
-                  deal with regularly. For cell lab waste, we put it in a closed
-                  container and give it to a professional company to deal with.
-                </p>
+                <p class="body-1">（用户的图片）</p>
               </v-card-text>
               <v-row justify="center">
-                <v-card-title class="text-h4 title" id="project_design">
-                  Project Design</v-card-title
+                <v-card-title class="text-h4 title" id="operation"
+                  >Operation procedure</v-card-title
                 >
               </v-row>
-              <v-card-title class="text-h5" id="general_information">
-                General microorganism information and general project
-                design</v-card-title
-              >
               <v-card-text>
                 <p class="body-1">
-                  For all E. coli, which belongs to risk group 1, we get
-                  commercial versions from companies, including Top10, Dh5α,
-                  Bl21 and stbl3. They are used to expand the number of plasmids
-                  and express our proteins of interest.
-                </p>
-                <p class="body-1">
-                  According to our project, in addition to the more secure E.
-                  coli, we need two homo sapiens belonging to the risk group 2,
-                  which are HUVECs and HEK293T. And we cultivate them in cells
-                  lab. We get these cells from some labs of our school, which
-                  means we have lots of experience to cultivate them and protect
-                  ourselves.
-                </p>
-
-                <p class="body-1">
-                  Our final constructed HEK-293T cell line is meant to live in
-                  the hydro gel and it can sense the mechanical force from the
-                  hydro gel to regulate the calcium signal cascade, which will
-                  result in the expression of related enzyme to degrade hydro
-                  gel.
-                </p>
-                <p class="body-1">
-                  So our experiments are divided into three parts:
+                  In order to clarify the operation standard, we developed a use
+                  process for MIBOM.
                 </p>
                 <v-list class="list_number">
-                  <v-list-item two-line>
+                  <v-list-item>
                     <v-list-item-content>
-                      <v-list-item-title class="body-2">
-                        1. build the calcium signal pathway.
+                      <v-list-item-title class="body-1">
+                        1. Remove the MIBOM 30 minutes before use and thaw it
+                        until it becomes liquid.
                       </v-list-item-title>
-                      <div style="padding-left: 16px" class="body-2">
-                        Overexpress piezo1 to improve the sensitivity for
-                        mechanical force: We get the constructed piezo1 plasmid
-                        from other lab and infect 293T cell lines by liposome;
-                        detect the influx of calcium: to make sure the piezo1
-                        can be activated by mechanical force from hydro gel, we
-                        use a commercial calcium probe to indicate the cytosol
-                        calcium concentration; the expression of downstream
-                        proteins of interest: we will construct a plasmid that
-                        can be regulated by calcium signal pathway.
-                      </div>
                     </v-list-item-content>
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-content>
-                      <v-list-item-title class="body-2">
-                        2. test the living state of HEK-293T in hydro gel.
+                      <v-list-item-title class="body-1">
+                        2. After thawing and before use, it is necessary to mix
+                        slightly to make the components in the gel evenly
+                        distributed and avoid excessive local concentration.
                       </v-list-item-title>
-                      <div style="padding-left: 16px" class="body-2">
-                        We put cells such as HUVECs line into hydro gel to
-                        observe the cell state and how long can it live in the
-                        gel; Improve the hydro gel formulation to improve the
-                        living state of 293T.
-                      </div>
                     </v-list-item-content>
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-content>
-                      <v-list-item-title class="body-2">
-                        3. connect HEK-293T to hydro gel.
+                      <v-list-item-title class="body-1">
+                        3. The fracture should be reduced, and the fracture end
+                        should be properly cleaned to ensure no soft tissue
+                        residue.
                       </v-list-item-title>
-                      <div style="padding-left: 16px" class="body-2">
-                        We want to achieve high quality and high intensity in
-                        hydro gel, so we want to add mussel mucin(mefp5) to
-                        improve the intensity. We will obtain mefp5 by protein
-                        purification (use BL21 expression system).
-                      </div>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-content>
+                      <v-list-item-title class="body-1">
+                        4. Shake slightly before opening, and fill into the
+                        injection device after sterile opening. The injection
+                        device injects MIBOM gel along the fracture/fracture
+                        suture.
+                      </v-list-item-title>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-content>
+                      <v-list-item-title class="body-1">
+                        5. After the injection of the colloid, the reduction
+                        should be confirmed again. Then, open the UV device and
+                        irradiated the colloid part for 2-8 seconds to fix the
+                        material. If second crosslinking is needed, add some
+                        crosslinking agents to make the double crosslinking.
+                      </v-list-item-title>
                     </v-list-item-content>
                   </v-list-item>
                 </v-list>
               </v-card-text>
-              <v-card-title class="text-h5" id="specific_design">
-                Specific project design</v-card-title
+              <v-card-text>
+                <v-img src="@/assets/temp.png" />
+              </v-card-text>
+              <v-row justify="center">
+                <v-card-title class="text-h4 title" id="user"
+                  >User Experience Improvement</v-card-title
+                >
+              </v-row>
+              <v-card-text>
+                <p class="body-1">
+                  To make the material easier to operate, we added a hardware
+                  system for treatment. The operation of MIBOM is reduction,
+                  followed by injection of gel for adjustment. And finally UV
+                  light (2-8s) is turned on to help solidify the material and
+                  bond the fracture end to high strength. By setting up the gel
+                  injection hardware as well as the UV hardware, we integrate
+                  the two steps of "injection" and "curing" into one operating
+                  hardware. This simplifies the operation, reduces the
+                  complexity of product use guidance, and at the same time
+                  lowers the operation threshold of traumatic orthopedic
+                  surgery, which is conducive to doctors in areas with low
+                  qualifications or lack of medical resources.
+                </p>
+                <p class="body-1">（hardware的图片）</p>
+              </v-card-text>
+              <v-row justify="center">
+                <v-card-title class="text-h4 title" id="safety"
+                  >Safety</v-card-title
+                >
+              </v-row>
+              <v-card-text>
+                <p class="body-1">
+                  The materials used in MIBOM, such as GelMA and mussel mucin,
+                  have high medical safety. At present, mussel mucin is widely
+                  used in cosmetic and wound repair applications, and GelMA has
+                  been approved by the FDA. To ensure the overall safety of the
+                  material, after the proof of concept, we will apply for a
+                  patent and perform in vitro validation. After in vitro
+                  validation, we will conduct in vivo validation to ensure that
+                  the material has no immune prototype problems and to ensure
+                  the safety of the material. At the end of these phases, we
+                  will proceed to clinical trials.
+                </p>
+              </v-card-text>
+              <v-row justify="center">
+                <v-card-title class="text-h4 title" id="develop"
+                  >Development Plan</v-card-title
+                >
+              </v-row>
+              <v-card-title class="text-h5">
+                MIBOM Current Business</v-card-title
               >
-              <v-card-title class="text-h6">Detection</v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  There exist some risks. In molecular experiments, we engineer
-                  E. coli. If E. coli enters the environment, resistance genes
-                  may be lost, affecting other microbes in the environment. In
-                  addition, E. coli may proliferate somewhere and upset the
-                  biological balance. But it hardly affects people.
-                </p>
-                <p class="body-1">
-                  In cell experiments, if our modified cells enter the body
-                  through an open wound, it may have a bad effect on the body.
-                  But if it gets into the environment, which is almost
-                  impossible, fragile cells can't survive in the environment, so
-                  it doesn't have an impact on the environment.
-                </p>
-                <p class="body-1">
-                  Therefore, we need to take effective measures to avoid these
-                  problems.
-                </p>
-              </v-card-text>
-              <v-card-title class="text-h6">Prevention</v-card-title>
-              <v-card-text>
-                <p class="body-1">
-                  We will use disinfectant to kill the remaining bacteria after
-                  the experiment, and then pour it down the drain to make sure
-                  it is sterile. When entering the cell room, one should wear a
-                  head cover, a mask, special glasses, and gloves, and wear a
-                  cell lab coat and sterilized slippers to ensure that the
-                  exposed skin is minimized.
+                  At present, MIBOM will focus on the development, registration,
+                  clinical and manufacturing of bone internal fixators, with the
+                  intention to develop auxiliary and conventional bone internal
+                  fixators. In view of long R&D cycle, for example, the
+                  development of the viscosity strength of mussel mucin will
+                  take a long time, MIBOM will first develop an auxiliary bone
+                  internal fixator for the treatment of highly comminuted
+                  fractures. After the technology is stabilized, MIBOM will
+                  develop the conventional product of bone internal fixation,
+                  test its feasibility, and take it as the main product of MIBOM
+                  team for multi-dimensional development, such as R&D, data
+                  modeling, marketing, etc. At the same time, in order to expand
+                  the product line and timely develop low-cost mass products
+                  with big selling points, MIBOM will develop modular products
+                  with "mussel mucin" as the core, and finally determine a
+                  variety of high compatibility "protein + cell + gel" products.
+                  This will help the team to reduce the total cost of
+                  development in other areas, faster and more effective
+                  development of new wound or beauty products.
                 </p>
               </v-card-text>
-              <v-card-title class="text-h5" id="use_of_harmful">
-                Use of harmful reagents and procedures</v-card-title
+              <v-card-title class="text-h5">
+                MIBOM Development Strategies</v-card-title
               >
-              <v-card-title class="text-h6">Detection</v-card-title>
               <v-card-text>
-                <v-list style="padding-left: 16px">
-                  <v-list-item>
-                    <li class="body-2">
-                      Being exposed to ultraviolet for a long time, which may
-                      cause danger to both skin and eyes, which may occur when
-                      you are taking photo of gel or forget to turn off the
-                      ultraviolet light in clean bench
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      Being hurt by edge of knife or broken glass, which may
-                      happen when you are cutting an agarose gel
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      Getting burnt by splashing hot drops, which may occur when
-                      you are heating boiled liquid
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      Infection may occur in the wound if you touch the cell
-                      without any protection.
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      Getting burnt by utensils of high temperature, which may
-                      happen when you are making agarose gel or using alcohol
-                      lamp
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      Physical discomfort caused by the exposure to or smell of
-                      hazardous chemicals
-                    </li>
-                  </v-list-item>
-                </v-list>
+                <p class="body-1">
+                  MIBOM plans that in the future, the modular R&D products of
+                  "mussel mucin + hydrogel + cell regulation system" will be
+                  used in nerve repair, wound repair, beauty and other fields.
+                  MIBOM will take advantage of the existing resources and
+                  technology advantages to rapidly develop innovative materials
+                  for wound repair, beauty and other track, and develop basic
+                  products with low price and popularity. At the same time,
+                  MIBOM will extending the customer base by broadening hospital
+                  customers to individual consumers, which will meet their needs
+                  in the field of wound, beauty and other fields, providing
+                  personalized skin protection products or wound repair products
+                  that are adjusted according to the state of the body.
+                  Accelerating product development for individual consumers,
+                  realizing industrial production and broadening the narrow
+                  application scenarios of MIBOM will be conducive to the
+                  capital turnover of MIBOM and provide financial guarantee for
+                  R&D risks. In addition, by popularizing basic products, MIBOM
+                  can establish its brand as soon as possible, so that the
+                  recognition of MIBOM in the medical field and the public can
+                  be improved.
+                </p>
               </v-card-text>
-              <v-card-title class="text-h6">Prevention</v-card-title>
+              <v-card-title class="text-h5"> MIBOM Ultimate Goal</v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  Lab coats, gloves, glasses and masks must be worn when
-                  entering the lab.
+                  MIBOM ultimately hopes to provide solutions to the imbalance
+                  of medical resources on the one hand, and provide customized
+                  personalized services on the other. After getting effective
+                  cash flow by multi-line products, MIBOM hopes to make the
+                  products go to the grass-roots level and solve the problem of
+                  medical resources. In this section, MIBOM plans to produce
+                  basic products in the product model of "mussel mucin +
+                  hydrogel", through which the gel degrades independently,
+                  removing the cellular regulatory system. Thus, the products
+                  can be oriented to patients and doctors at the grass-roots
+                  level, greatly reducing the production cost, product pricing
+                  and operation difficulty, and enabling MIBOM to alleviate the
+                  imbalance of medical resources and other problems from the
+                  perspective of materials. MIBOM, on the other hand, will
+                  provide personalized therapy, introducing regulatory systems
+                  into the patient's own cells, creating personalized treatment
+                  and drug delivery, and ultimately enabling precision therapy
+                  to solve difficult diseases such as cancer and spinal cord
+                  nerve injury.
                 </p>
                 <p class="body-1">
-                  Before entering the laboratory, we first received the most
-                  general laboratory training, through which we were allowed to
-                  enter the laboratory. Next, we will familiarize ourselves with
-                  each experiment with our instructor before doing the
-                  experiment ourselves. In addition, we also need special
-                  training before using each instrument.
-                </p>
-                <p class="body-1">
-                  Before operating the equipment, we must read the operation
-                  guide and accept the teacher's instruction. When operating the
-                  equipment, we must strictly follow the instructions, stay next
-                  to the equipment all the time during use, and close it in time
-                  after use.
-                </p>
-                <p class="body-1">
-                  The above actions greatly avoid the detection outlined above.
+                  In the former section, MIBOM plans to work with the government
+                  in the future to provide effective biodegradable bone implants
+                  to less developed areas. In the latter section, MIBOM plans to
+                  stabilize and expand the cooperation with hospitals, expand
+                  its own treatment team, data team and RESEARCH and development
+                  team, expand the team size, and expand and control personnel
+                  for personalized product development.
                 </p>
               </v-card-text>
             </v-container>
@@ -525,11 +466,12 @@ export default {
     },
   },
   mounted() {
-    this.step[0] = document.getElementById("prologue");
-    this.step[1] = document.getElementById("lab_safety");
-    this.step[2] = document.getElementById("general_information");
-    this.step[3] = document.getElementById("specific_design");
-    this.step[4] = document.getElementById("use_of_harmful");
+    this.step[0] = document.getElementById("overview");
+    this.step[1] = document.getElementById("target");
+    this.step[2] = document.getElementById("operation");
+    this.step[3] = document.getElementById("user");
+    this.step[4] = document.getElementById("safety");
+    this.step[5] = document.getElementById("develop");
     this.updatepos();
     setTimeout(() => {
       this.firstload = false;
