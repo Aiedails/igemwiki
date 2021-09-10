@@ -110,22 +110,38 @@
             id="description"
             v-scroll="updatepos"
             v-show="!firstload"
-            v-motion
-            :initial="{
-              opacity: 0,
-              y: 100,
-            }"
-            :enter="{
-              opacity: 1,
-              y: 0,
-            }"
           >
             <v-container style="padding: 20px 3%">
               <v-card-title class="text-h4" v-intersect="onIntersect">
-                Students
+                Team introduction
               </v-card-title>
+              <v-card-text class="body-1">
+                ShanghaiTech_China is an excellent team, focusing on changing
+                the world with synthetic biology. Most of our members have
+                interdisciplinary background or willingness, just like our
+                project MIBOM. The design of MIBOM is delicate and difficult,
+                combining the proteins, cells and materials. To finish the
+                MIBOM, we need to learn about many areas, familiar or not, and
+                combined them jointly. It is a hard work, but fortunately, we
+                make it! Now they are trying to promote the implementation of
+                products and grow into a new entrepreneurial team. There will be
+                many difficulties in the future, but they firmly believe that
+                they can overcome them and move towards a better future.
+              </v-card-text>
             </v-container>
-            <v-divider></v-divider>
+          </v-card>
+        </template>
+      </v-hover>
+      <v-hover>
+        <template v-slot:default="{ hover }">
+          <v-card
+            :class="`elevation-${hover ? 8 : 2}`"
+            class="transition-swing"
+            style="text-decoration: none; margin-top: 35px"
+            id="students"
+            v-scroll="updatepos"
+            v-show="!firstload"
+          >
             <div
               v-for="(person, index) in infor"
               :key="index"
@@ -172,15 +188,7 @@
             class="transition-swing"
             style="margin-top: 35px"
             v-show="!firstload"
-            v-motion
-            :initial="{
-              opacity: 0,
-              y: 100,
-            }"
-            :enter="{
-              opacity: 1,
-              y: 0,
-            }"
+            id="professors"
           >
             <div
               v-for="(person, index) in prof"
@@ -201,7 +209,7 @@
                   <v-container>
                     <v-card-title>{{ person.name }}</v-card-title>
                     <v-card-subtitle>{{ person.role }}</v-card-subtitle>
-                    <v-card-text>{{ person.discription }}</v-card-text>
+                    <v-card-text class="body-2">{{ person.discription }}</v-card-text>
                   </v-container>
                 </v-col>
                 <v-spacer></v-spacer>
@@ -427,16 +435,17 @@ export default {
     ],
     prof: [
       {
-        name: "Yang Haitao",
+        name: "Dr. Haitao Yang",
         photo: require("@/assets/3.png"),
-        discription: "very good professor",
-        role: "Some thing here...",
+        discription:
+          "Affiliation:School of Life Science and Technology, Shanghai Institute for Advanced Immunochemical Institute",
+        role: "PhD, Associate Professor",
       },
       {
-        name: "Gao Yan",
+        name: "Dr. Wei Shen",
         photo: require("@/assets/3.png"),
-        discription: "Very good professor",
-        role: "Some thing here...",
+        discription: "Affiliation:School of Life Science and Technology",
+        role: "PhD, Associate Professor",
       },
     ],
   }),
