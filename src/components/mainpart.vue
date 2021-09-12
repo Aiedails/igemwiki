@@ -22,61 +22,61 @@
               editable
               edit-icon="1"
               step="1"
-              @click="$vuetify.goTo('#prologue', options)"
+              @click="$vuetify.goTo('#background', options)"
               :complete="position > 1"
               style="transition: all 1s ease 1s"
               color="primary"
               class="body-2"
             >
-              Prologue
+              Background
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="2"
               step="2"
-              @click="$vuetify.goTo('#lab_safety', options)"
+              @click="$vuetify.goTo('#principle', options)"
               :complete="position > 2"
               style="transition: all 1s"
               color="primary"
               class="body-2"
             >
-              Lab Safety
+              Principles of human practice
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="3"
               step="3"
-              @click="$vuetify.goTo('#general_information', options)"
+              @click="$vuetify.goTo('#what', options)"
               :complete="position > 3"
               style="transition: all 1s"
               color="primary"
               class="body-2"
             >
-              General microorganism information & general project design
+              What efforts we have made?
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="4"
               step="4"
-              @click="$vuetify.goTo('#specific_design', options)"
+              @click="$vuetify.goTo('#how', options)"
               :complete="position > 4"
               style="transition: all 1s"
               color="primary"
               class="body-2"
             >
-              Specific project design
+              How did we improve the ethics of synthetic biology?
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="5"
               step="5"
-              @click="$vuetify.goTo('#use_of_harmful', options)"
+              @click="$vuetify.goTo('#overview', options)"
               :complete="position > 5"
               style="transition: all 1s"
               color="primary"
               class="body-2"
             >
-              Use of harmful reagents and procedures
+              Overview of the practice record
             </v-stepper-step>
           </v-stepper>
         </template>
@@ -96,367 +96,670 @@
             class="transition-swing"
             style="text-decoration: none"
             id="description"
-            v-intersect="onIntersect"
             v-scroll="updatepos"
             v-show="!firstload"
           >
             <v-container style="padding: 20px 3%">
               <v-row justify="center">
-                <v-card-title class="text-h4 title" id="prologue">
-                  Prologue</v-card-title
+                <v-card-title
+                  class="text-h4 title"
+                  id="background"
+                  v-intersect="onIntersect"
+                >
+                  Background</v-card-title
                 >
               </v-row>
               <v-card-text>
                 <p class="body-1">
-                  Throughout the experiment, the members of Shanghaitech_China
-                  iGEM team put safety the first. During our experiment, experts
-                  who provide supervision and help to manage the risks we
-                  identified. After receiving strict experimental training, our
-                  experimenters can perform various operations with great care
-                  and proficiency. We will be able to successfully complete all
-                  the experiments in our project on the premise of ensuring our
-                  own safety, environmental safety, and microbial safety. All of
-                  our experimental plans and contents are under the guidance of
-                  PI and they confirmed that our experimental procedure does not
-                  have any biosafety concerns in the laboratory.
+                  ShanghaiTech_China team is an organisation focussed on human
+                  health maintenance. From medical to ethical, we focus on
+                  fracture treatment, as well as the ethical norms of synthetic
+                  biology. We expect to our efforts will assist in the
+                  development of therapies based on synthetic biology. We are
+                  striving for the most efficient technological progress with
+                  the least waste. This is equally the value of
+                  ShanghaiTech_China team.
+                </p>
+                <v-img
+                  src="@/assets/background2.jpg"
+                  style="margin: 35px auto"
+                />
+                <p class="body-1">
+                  In the past six months, our team's efforts have received more
+                  than 1250 followings, cover an area of 4290733 square
+                  kilometers,. Over 50 experts on different fields gave us
+                  supporting. In order to optimize MIBOM products, we collected
+                  about 100 responses through interviews, and for promoting
+                  synthetic biology ethics, we received XXX responses from
+                  questionnaires, and initiated joint conventions with more than
+                  50 experts and 40 teams. Our practice spans the entire
+                  territory of China and is intended to make a greater
+                  contribution to fracture treatment and the global ethics of
+                  synthetic biology.
+                </p>
+                <v-img src="@/assets/1.jpg" style="margin: 35px auto" />
+                <p class="body-1">
+                  Thanks to professor Yang Haitao, Professor Shen Wei, Professor
+                  Gao Yan, Professor XXX, Professor Hong Suting and other xx
+                  experts in different fields who helped us to complete this
+                  human practice.
                 </p>
               </v-card-text>
               <v-row justify="center">
-                <v-card-title class="text-h4 title" id="lab_safety">
-                  Lab Safety</v-card-title
+                <v-card-title class="text-h4 title" id="principle">
+                  Principles of human practice</v-card-title
                 >
               </v-row>
-              <v-card-text>
-                <p class="body-1">
-                  This time, our experiments were done in the molecular
-                  laboratory and the cell laboratory, whose laboratory levels
-                  were level1 and level2 respectively. In order to prevent
-                  cross-contamination, we arranged two different teams of
-                  students to complete these experiments respectively. In the
-                  process of the experiment, we strictly follow the university
-                  of Science and Technology laboratory safety inspection
-                  management method. In the laboratory, we have done including
-                  but not limited to:
-                </p>
-                <v-list style="padding-left: 16px">
-                  <v-list-item>
-                    <li class="body-2">
-                      The laboratory has a record of safety education and
-                      training, and all personnel must pass the laboratory
-                      safety examination.
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      The instruction of safety information board must be clear,
-                      with safety inspection and health duty management system.
-                      The ventilation system of the experimental site is in
-                      normal operation, the fume hood and bio-safety cabinet can
-                      be used normally, and the cabinet door is opened at an
-                      appropriate height. Put the goods neatly, do not pile up
-                      debris. When entering the laboratory, you should wear
-                      personal protective equipment as required. You should not
-                      leave the laboratory wearing PPE such as contaminated lab
-                      clothes and gloves. There is no food or drink in the
-                      laboratory. No accommodations are allowed in the
-                      laboratory.
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      The laboratory has an emergency evacuation route map, and
-                      the fire escape is unobstructed. The laboratory is
-                      equipped with suitable fire-fighting equipment, emergency
-                      spray, eye wash and first aid kit, which are regularly
-                      maintained.
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      The laboratory shall be insulated from electricity and
-                      shall not use electrical appliances in a dangerous manner.
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      The hazardous chemicals comply with the relevant
-                      regulations of the state and the school. Laboratory
-                      personnel should understand the hazardous characteristics
-                      of the chemicals used, safety protection knowledge,
-                      storage methods, waste treatment, emergency treatment
-                      methods, etc.
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      Do the corresponding experiments in the corresponding
-                      biological laboratory.
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      Hazardous waste and general waste shall be stored
-                      separately, and hazardous waste labels shall be posted.
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      Lab coats, gloves, glasses and masks must be worn when
-                      entering the lab.
-                    </li>
-                  </v-list-item>
-                </v-list>
-                <p class="body-1"></p>
-                <p class="body-1">Especially in cell lab:</p>
-                <v-list style="padding-left: 16px">
-                  <v-list-item>
-                    <li class="body-2">
-                      The cell lab is equipped with two transition rooms and is
-                      sterilized with ultraviolet lamps when no one is around.
-                      The laboratory is specially disinfected once every half a
-                      month, and the ultraviolet lamp is used when there is no
-                      person.
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      When entering the cell room, one should wear a head cover,
-                      a mask, special glasses and gloves, and wear a cell lab
-                      coat and sterilized slippers to ensure that the exposed
-                      skin is minimized. People with open wounds should not
-                      enter the cell room. This not only protects ourselves, but
-                      also protects the cell.
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      All experiments were performed in a biosafety cabinet.
-                    </li>
-                  </v-list-item>
-                </v-list>
-                <p class="body-1">
-                  For some other important details, we also did a good job.
-                  Before entering the laboratory, we first received the most
-                  general laboratory training, through which we were allowed to
-                  enter the laboratory. Next, we will familiarize ourselves with
-                  each experiment with our instructor before doing the
-                  experiment ourselves. In addition, we also need special
-                  training before using each instrument.
-                </p>
-                <p class="body-1">
-                  In the molecular laboratory, we use the ultra-clean table, PCR
-                  instrument, electrophoresis instrument, double steam machine,
-                  centrifuge, metal bath, water bath, bacteria shaking machine
-                  and nanodrop. In the cell lab, we use biosafety cabinets, cell
-                  incubators and microscopes. Before operating the equipment, we
-                  must read the operation guide and accept the teacher's
-                  instruction. When operating the equipment, we must strictly
-                  follow the instructions, stay next to the equipment all the
-                  time during use, and close it in time after use.
-                </p>
-                <p class="body-1">
-                  As mentioned before, our laboratories are regularly
-                  disinfected with 75% ethanol, well laid out, and the items are
-                  in good order and not crowded.
-                </p>
-                <p class="body-1">
-                  In terms of waste recycling, we will use disinfectant to kill
-                  the remaining bacteria after the experiment, and then pour it
-                  down the drain to make sure it is sterile. For the waste of
-                  molecular laboratory, we put it into the garbage bag of
-                  hazardous waste and give it to the professional company to
-                  deal with regularly. For cell lab waste, we put it in a closed
-                  container and give it to a professional company to deal with.
-                </p>
-              </v-card-text>
-              <v-row justify="center">
-                <v-card-title class="text-h4 title" id="project_design">
-                  Project Design</v-card-title
-                >
-              </v-row>
-              <v-card-title class="text-h5" id="general_information">
-                General microorganism information and general project
-                design</v-card-title
+              <v-card-title class="text-h5"
+                >Principles of research and development(R&D)
+                process</v-card-title
               >
               <v-card-text>
                 <p class="body-1">
-                  For all E. coli, which belongs to risk group 1, we get
-                  commercial versions from companies, including Top10, Dh5α,
-                  Bl21 and stbl3. They are used to expand the number of plasmids
-                  and express our proteins of interest.
+                  In the process of developing MIBOM, we need to find a feasible
+                  management system to help us build it. After consulting Jean
+                  Dai, we built a set of R\&D processes based on the PDCA cycle.
+                </p>
+                <v-img
+                  src="@/assets/principle1.jpg"
+                  style="margin: 35px auto"
+                />
+                <p class="body-1">
+                  This R&D process includes design input, design review, final
+                  design approval and design output.Design input consists of
+                  continuous research of market demand information and prototype
+                  design. Afterwards, design review should be completed by
+                  communicating with others and collecting feedback from
+                  different groups of people. In the process of a product's
+                  R\&D, design input and design review will go through a large
+                  number of cycles.
                 </p>
                 <p class="body-1">
-                  According to our project, in addition to the more secure E.
-                  coli, we need two homo sapiens belonging to the risk group 2,
-                  which are HUVECs and HEK293T. And we cultivate them in cells
-                  lab. We get these cells from some labs of our school, which
-                  means we have lots of experience to cultivate them and protect
-                  ourselves.
+                  At the beginning of MIBOM, we were inspired by the experience
+                  of people around us, interviews with orthopedic doctors and
+                  the current market information of fracture, and completed the
+                  design input process. After that, we began to design
+                  Prototype, and completed the design review and collected
+                  feedback information through the process of meeting and
+                  teacher interview. In this process, we went through four
+                  cycles of input and review, and finally determined the overall
+                  design scheme and commercialization process of MIBOM.
                 </p>
-
+              </v-card-text>
+              <v-card-text class="text-h5"
+                >Principles of product investigation</v-card-text
+              >
+              <v-card-text>
                 <p class="body-1">
-                  Our final constructed HEK-293T cell line is meant to live in
-                  the hydro gel and it can sense the mechanical force from the
-                  hydro gel to regulate the calcium signal cascade, which will
-                  result in the expression of related enzyme to degrade hydro
-                  gel.
-                </p>
-                <p class="body-1">
-                  So our experiments are divided into three parts:
+                  According to the Best Practice for Survey Research published
+                  by American Association for Public Opinion Research, we
+                  conducted the design of Survey and interview based on its
+                  Recommendation.
                 </p>
                 <v-list class="list_number">
                   <v-list-item two-line>
                     <v-list-item-content>
-                      <v-list-item-title class="body-2">
-                        1. build the calcium signal pathway.
+                      <v-list-item-title class="body-1">
+                        <strong
+                          >1. Objectives and data collection method</strong
+                        >
                       </v-list-item-title>
-                      <div style="padding-left: 16px" class="body-2">
-                        Overexpress piezo1 to improve the sensitivity for
-                        mechanical force: We get the constructed piezo1 plasmid
-                        from other lab and infect 293T cell lines by liposome;
-                        detect the influx of calcium: to make sure the piezo1
-                        can be activated by mechanical force from hydro gel, we
-                        use a commercial calcium probe to indicate the cytosol
-                        calcium concentration; the expression of downstream
-                        proteins of interest: we will construct a plasmid that
-                        can be regulated by calcium signal pathway.
+                      <div style="padding-left: 16px" class="body-1">
+                        <p class="body-1">
+                          In the first cycle, we focused on developments in the
+                          orthopaedic market. MIBOM is inspired by the everyday
+                          scene of fracture. Therefore, we took desk research as
+                          the highest form of initial medical market research to
+                          investigate the industry background, existing
+                          treatment methods and market data. In order to be more
+                          realistic, we also considered interviewing doctors in
+                          third class hospitals.
+                        </p>
+                        <p class="body-1">
+                          In the second cycle, we focused on feedbacks from
+                          industry experts. Therefore, we collected suggestions
+                          and feedback from experts in sports medicine,
+                          immunology, orthopedic medicine and precision medicine
+                          on our project through interviews.
+                        </p>
+                        <p class="body-1">
+                          In the third cycle, our application scenarios changed
+                          in the second cycle, so we focused on collecting pain
+                          points in the comminuted fracture market. The primary
+                          target of this cycle is the end-user physician to
+                          understand the pain encountered in the operation and
+                          application of comminuted fractures. In terms of
+                          sample selection, we selected representative
+                          orthopedic trauma surgeons from third class hospitals
+                          for interview.
+                        </p>
+                        <p class="body-1">
+                          In the fourth cycle, we focus on the feedback of
+                          various people on the design of MIBOM after the third
+                          cycle, mainly targeting field experts, surgeons,
+                          rehabilitation doctors, device field managers,
+                          patients and so on. In order to cope with timeliness,
+                          we designed a brief questionnaire to collect feedback
+                          during the road show. For industry experts, we decide
+                          to collect feedback through interviews.
+                        </p>
                       </div>
                     </v-list-item-content>
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-content>
-                      <v-list-item-title class="body-2">
-                        2. test the living state of HEK-293T in hydro gel.
+                      <v-list-item-title class="body-1">
+                        <strong>2. Qualitative interviews</strong>
                       </v-list-item-title>
-                      <div style="padding-left: 16px" class="body-2">
-                        We put cells such as HUVECs line into hydro gel to
-                        observe the cell state and how long can it live in the
-                        gel; Improve the hydro gel formulation to improve the
-                        living state of 293T.
+                      <div style="padding-left: 16px" class="body-1">
+                        <p class="body-1">
+                          During Conducting interviews, we referenced Harvard
+                          University's 'Strategies for Qualitative
+                          Interviews'（这边要链接一个Pdf） to design questions
+                          and interview flow.
+                        </p>
+                        <p class="body-1">
+                          In order to elucidate the purpose of the interview, we
+                          designed a simple introduction for all interviewees to
+                          have a basic idea of our team. Before the interview,
+                          we also prepared some desk research for the interview,
+                          to ensure that the interview can avoid the other party
+                          to help us analyze the problem.
+                        </p>
+                        <p class="body-1">
+                          In the setting of questions, we adopt special
+                          questions as the main form of questions, to avoid a
+                          single answer. We also avoided conceptual problems,
+                          such as asking the surgeon to give an attitude on
+                          behalf of the whole.
+                        </p>
                       </div>
                     </v-list-item-content>
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-content>
-                      <v-list-item-title class="body-2">
-                        3. connect HEK-293T to hydro gel.
-                      </v-list-item-title>
-                      <div style="padding-left: 16px" class="body-2">
-                        We want to achieve high quality and high intensity in
-                        hydro gel, so we want to add mussel mucin(mefp5) to
-                        improve the intensity. We will obtain mefp5 by protein
-                        purification (use BL21 expression system).
+                      <v-list-item-title class="body-1"
+                        ><strong
+                          >3. Ethics and responsible research</strong
+                        ></v-list-item-title
+                      >
+                      <div style="padding-left: 16px" class="body-1">
+                        We have deeply studied the Declaration of Helsinki, and
+                        we have tried our best to avoid all ethical issues
+                        related to access and data collection, and to ensure the
+                        informed rights and privacy of all interviewees. Our
+                        classmates and friends who had broken bones had been
+                        treated under pseudonyms, and all the experts advising
+                        us had asked for their consent.
+                      </div>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item>
+                    <v-list-item-content>
+                      <v-list-item-title class="body-1"
+                        ><strong
+                          >4. Informed Consent and privacy protection</strong
+                        ></v-list-item-title
+                      >
+                      <div style="padding-left: 16px" class="body-1">
+                        In terms of informed consent, we have set up an informed
+                        consent commitment before all interviews and
+                        questionnaire
+                        collection（我不知道怎么加链接，要加一个知情同意书的pdf）,
+                        and all interviews will be released after the consent is
+                        obtained. We will do our best to ensure the
+                        interviewees' right to know and privacy.
                       </div>
                     </v-list-item-content>
                   </v-list-item>
                 </v-list>
               </v-card-text>
-              <v-card-title class="text-h5" id="specific_design">
-                Specific project design</v-card-title
+              <v-card-title class="text-h5" id="specific_design"
+                >Principles of questionaire</v-card-title
               >
-              <v-card-title class="text-h6">Detection</v-card-title>
+              <v-card-text class="body-1"> Coming soon... </v-card-text>
+              <v-row justify="center">
+                <v-card-title class="text-h4 title" id="what"
+                  >What efforts we have made for fracture
+                  treatment?</v-card-title
+                >
+              </v-row>
+              <v-card-text class="body-1">
+                Iterations in this section are detailed in
+                <a
+                  href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices"
+                  >Integrated Human Practice.</a
+                >
+              </v-card-text>
+              <v-card-title class="text-h5"
+                >Background & Painpoints</v-card-title
+              >
               <v-card-text>
                 <p class="body-1">
-                  There exist some risks. In molecular experiments, we engineer
-                  E. coli. If E. coli enters the environment, resistance genes
-                  may be lost, affecting other microbes in the environment. In
-                  addition, E. coli may proliferate somewhere and upset the
-                  biological balance. But it hardly affects people.
+                  Bone fracture is really common in daily life. Sports, car
+                  accidents, falls, and certain medical conditions are all
+                  possible causes of bone fracture.
+                </p>
+                <v-container>
+                  <video controls width="100%" style="object-fit: contain">
+                    <source src="@/assets/temp_video.mp4" type="video/mp4" />
+                  </video>
+                </v-container>
+                <p class="body-1">Something here.</p>
+                <p class="body-1">
+                  Based on existing epidemiological studies and frost Sullivan
+                  statistics, we have a current estimate of comminuted
+                  fractures.
                 </p>
                 <p class="body-1">
-                  In cell experiments, if our modified cells enter the body
-                  through an open wound, it may have a bad effect on the body.
-                  But if it gets into the environment, which is almost
-                  impossible, fragile cells can't survive in the environment, so
-                  it doesn't have an impact on the environment.
-                </p>
-                <p class="body-1">
-                  Therefore, we need to take effective measures to avoid these
-                  problems.
+                  In china, it is estimated that at 2021, there will be 295526
+                  traumatic fractures, of which 10.21% will be femoral
+                  fractures. According to the survery conducted by Wei, Y. P., &
+                  Lin, K. C., 95% of femoral shaft fractures are comminuted.
+                  Therefore, there will be an average of at least 280,000
+                  comminuted fractures per year in China.
                 </p>
               </v-card-text>
-              <v-card-title class="text-h6">Prevention</v-card-title>
+              <v-img src="@/assets/fracture-b-1.jpg" />
               <v-card-text>
                 <p class="body-1">
-                  We will use disinfectant to kill the remaining bacteria after
-                  the experiment, and then pour it down the drain to make sure
-                  it is sterile. When entering the cell room, one should wear a
-                  head cover, a mask, special glasses, and gloves, and wear a
-                  cell lab coat and sterilized slippers to ensure that the
-                  exposed skin is minimized.
+                  According to our interviews with doctors in the hospital’s
+                  orthopedic trauma team, the surgical time for comminuted
+                  fractures is twice as long as that for conventional fractures,
+                  which is mainly because of the cumbersome fixation of bone
+                  fragments. In a grade-A hospital in china, about nine hours of
+                  surgery a week are taken up by complex bone repair. From the
+                  point of view of national health resources, about 7,986
+                  operations a week will be taken up, which could cure an
+                  additional 7,986 people. Therefore, simplifying comminuted
+                  fractures will be a very necessary material development
+                  direction. On the other hand, comminuted sex fracture also
+                  brings about the circumstance such as bone is not connected
+                  extremely easily to happen
                 </p>
               </v-card-text>
-              <v-card-title class="text-h5" id="use_of_harmful">
-                Use of harmful reagents and procedures</v-card-title
-              >
-              <v-card-title class="text-h6">Detection</v-card-title>
+              <v-img src="@/assets/fracture-b-4.jpg" />
               <v-card-text>
+                <p class="body-1">
+                  Therefore, simplifying comminuted fractures will be a very
+                  necessary material development direction.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h5" id="use_of_harmful"
+                >How is MIBOM optimized?</v-card-title
+              >
+              <v-card-text>
+                <p class="body-1">
+                  To cope with the complex treatment of comminuted fractures, we
+                  developed the MIBOM project. We followed PDCA principles and
+                  contact different stakeholders during the project design and
+                  development phase, such as patients, surgeons, rehabilitation
+                  doctors, orthopaedic researchers, sports medicine experts,
+                  industry materials experts, bone materials medical device
+                  management experts, etc. During the six months of practice, we
+                  have completed four major tasks through iteration, namely,
+                  research and development design of materials and instruments,
+                  design of practical treatment process, design of prevention
+                  and rehabilitation process, and design of entrepreneurship and
+                  commercialization.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h6"
+                >Design of materials and instruments</v-card-title
+              >
+              <v-img />
+              <v-card-text>
+                <p class="body-1">
+                  At first, according to the existing situation of fracture, our
+                  team designed a double cross-linking system loaded with mussel
+                  mucin and gel through brainstorming, which was used for
+                  internal fixation of fracture. In order to verify the
+                  feasibility of the design and achieve biodegradability, Piezo1
+                  protein was introduced according to the inspiration of Teacher
+                  Wei Shen, and the cells containing Piezo1 were packed into the
+                  gel system. For optimization, we followed up with Dr. Xin Sun,
+                  Dr. Yang Tang and Professor Yifeng Zhang. Based on their
+                  feedback, we introduced a nanoparticle coated drug system into
+                  the gel to promote bone regeneration and designed the product
+                  as a regenerative internal fixation. Finally, considering the
+                  practical application scenario, we visited Dr. Hongyan Jiang,
+                  an expert in minimally invasive medicine. He suggested that we
+                  target the application scenario to comminuted fractures.
+                </p>
+                <p class="body-1">
+                  On the basis of all iterations, Dr. Yang Tang and Dr. Xin Sun
+                  emphasized the strength and biocompatibility of materials as
+                  the most important point. Our experimental basis also focuses
+                  on this.
+                </p>
+              </v-card-text>
+              <v-img src="@/assets/fracture-m-1.jpg" />
+              <v-card-text>
+                <p class="body-1">
+                  MIBOM plays an important role in biocompatibility,
+                  biodegradability and healing regeneration. After iterative
+                  design, MIBOM can become a modular product through gel
+                  carrier. On the function of degradation and promoting healing,
+                  different therapeutic effects can be given by simply
+                  regulating pathways and drug molecules. Therefore, compared
+                  with traditional internal fixators, the material advantages of
+                  the iterative design are greatly improved.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h6"
+                >Design of pratical treatment process</v-card-title
+              >
+              <v-img />
+              <v-card-text>
+                <p class="body-1">
+                  To make MIBOM practical, we went back to our research. We
+                  re-introduced the product to doctors and experts and collect
+                  doctors' feedback to modify the operation of practical
+                  application. According to the doctor's consideration of the
+                  operation time of gel curing, we designed the integrated
+                  hardware system of "injection + UV curing" to shorten the
+                  fixed time. On the other hand, considering the requirement of
+                  doctors for reversible operation, the gel curing system we
+                  used adopts dual modes of photocuring and ion curing. During
+                  the photocure phase, the gel will remain semi-liquid, allowing
+                  the doctor to make adjustments; In the ion curing stage, the
+                  gel will be fully formed to achieve a high strength structure.
+                  Moreover, experts also suggest that we consider the treatment
+                  of the wound, so we also take into account the size of the
+                  wound opening and cleaning. See Integrated Human
+                  Practice(这里IHP需要链接) for details.
+                </p>
+              </v-card-text>
+              <v-container>
+                <v-img src="@/assets/fracture-p-1.jpg" />
+              </v-container>
+              <v-card-text>
+                <p class="body-1">
+                  We also designed a set of instructions for using the product
+                  according to the surgeon's advice.
+                </p>
+
                 <v-list style="padding-left: 16px">
                   <v-list-item>
                     <li class="body-2">
-                      Being exposed to ultraviolet for a long time, which may
-                      cause danger to both skin and eyes, which may occur when
-                      you are taking photo of gel or forget to turn off the
-                      ultraviolet light in clean bench
+                      The MIBOM needs to be removed and thawed to a fluid 30
+                      minutes before use.
                     </li>
                   </v-list-item>
                   <v-list-item>
                     <li class="body-2">
-                      Being hurt by edge of knife or broken glass, which may
-                      happen when you are cutting an agarose gel
+                      After thawing and before use, it is necessary to carry out
+                      mild mixing to evenly distribute the ingredients in the
+                      gel and avoid excessive local concentration.
                     </li>
                   </v-list-item>
                   <v-list-item>
                     <li class="body-2">
-                      Getting burnt by splashing hot drops, which may occur when
-                      you are heating boiled liquid
+                      Reset the fractured end face to ensure alignment. The end
+                      face should be properly clean to ensure no residual soft
+                      tissue.
                     </li>
                   </v-list-item>
                   <v-list-item>
                     <li class="body-2">
-                      Infection may occur in the wound if you touch the cell
-                      without any protection.
+                      Gently shake before opening, and pour into injection
+                      device after aseptic opening. Using the device injects
+                      MIBOM colloid along the fracture or fracture seams.
                     </li>
                   </v-list-item>
                   <v-list-item>
                     <li class="body-2">
-                      Getting burnt by utensils of high temperature, which may
-                      happen when you are making agarose gel or using alcohol
-                      lamp
-                    </li>
-                  </v-list-item>
-                  <v-list-item>
-                    <li class="body-2">
-                      Physical discomfort caused by the exposure to or smell of
-                      hazardous chemicals
+                      After the colloid is injected, the reduction is confirmed
+                      again. Then, the UV device should be turned on and the
+                      colloid part should be irradiated by UV for 2-8 seconds to
+                      fix the colloid and the fracture end.
                     </li>
                   </v-list-item>
                 </v-list>
               </v-card-text>
-              <v-card-title class="text-h6">Prevention</v-card-title>
+              <v-img src="@/assets/fracture-p-2.jpg" />
               <v-card-text>
                 <p class="body-1">
-                  Lab coats, gloves, glasses and masks must be worn when
-                  entering the lab.
+                  In the application of the project, we will provide instruction
+                  manuals, initiate conference explanations in hospitals, and
+                  guide the operation through model drills and special personnel
+                  training.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h6"
+                >Design of prevention and rehabilitation process</v-card-title
+              >
+              <v-card-text>
+                <p class="body-1">
+                  We want MIBOM to be a product that takes into account all
+                  aspects of the patient, so whether it is prevention, treatment
+                  or rehabilitation. MIBOM is committed to provide the whole
+                  process of service. To this end, we consulted experts in the
+                  field of patient management, who told us to seek advice from
+                  nursing and rehabilitation doctors to understand how to
+                  provide better services for patients. Later, we found the
+                  rehabilitation doctor in Shanghai Ninth People's Hospital, who
+                  explained to us the patient's situation that should be paid
+                  attention to during the rehabilitation process. On the other
+                  hand, from the perspective of rehabilitation doctors, she also
+                  explained past cases in which instrument vendors participated
+                  in the rehabilitation process, and suggested that we could
+                  provide patients' personal manuals to provide detailed records
+                  of the whole treatment process, so that subsequent doctors
+                  could understand the situation.
+                </p>
+              </v-card-text>
+              <v-img src="@/assets/fracture-pr-1.jpg" />
+              <v-card-text>
+                <p class="body-1">
+                  After referring to the advice of rehabilitation doctors, we
+                  plan to provide a "patient portable manual" after the
+                  completion of the entire product development, which includes
+                  three parts: introduction of orthopedics and fracture,
+                  operation instructions and patient records, and rehabilitation
+                  instructions. The first part will supply the patient with an
+                  understanding of fractures and ease the patient's concerns
+                  about fractures and implants. In the process of operation, the
+                  manual will provide operation guidance for doctors, and in the
+                  process of treatment, will give detailed record location for
+                  doctors to record the recovery status, help patients transfer
+                  to hospital or rehabilitation to provide detailed records,
+                  reduce oral errors. In the rehabilitation phase, we provide
+                  guidance for rehabilitation judgment, providing a theoretical
+                  basis for rehabilitation doctors to judge the treatment of
+                  patients. To sum up, the patient-carrying manual will focus on
+                  the patient throughout the process and optimize all
+                  procedures. At present, we have made a prototype for
+                  reference.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h6"
+                >design of entrepreneurship</v-card-title
+              >
+              <img />
+              <v-card-text>
+                <p class="body-1">
+                  MIBOM is not empty plan, so the implementation of MIBOM still
+                  needs commercial scheming, strategy and management. In order
+                  to carry out Entrepreneurship reasonably, we have consulted
+                  experts in Entrepreneurship management and quality management.
+                  We learned business plan writing principles and PDCA cycle
+                  management. On the other hand, we also consulted experts from
+                  China Medical Device Industry Association to understand the
+                  strategy of medical device registration. As a class III
+                  medical device, registration and clinical trial are long, so
+                  we can take the lead in patent application. Therefore, we have
+                  entrusted the Technology Transfer Office for patent
+                  application and learned that patent materials can be submitted
+                  in the name of the school. It is expected that all our
+                  materials can be submitted to the application by the end of
+                  October.Learn more at
+                  <a
+                    href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices"
+                    >Integrated Human Practice.</a
+                  >
                 </p>
                 <p class="body-1">
-                  Before entering the laboratory, we first received the most
-                  general laboratory training, through which we were allowed to
-                  enter the laboratory. Next, we will familiarize ourselves with
-                  each experiment with our instructor before doing the
-                  experiment ourselves. In addition, we also need special
-                  training before using each instrument.
+                  For a better understanding of MIBOM's value chain, you can
+                  look at the following figures.
                 </p>
+              </v-card-text>
+              <v-img src="@/assets/fracture-bu-1.jpg" />
+              <v-card-text>
                 <p class="body-1">
-                  Before operating the equipment, we must read the operation
-                  guide and accept the teacher's instruction. When operating the
-                  equipment, we must strictly follow the instructions, stay next
-                  to the equipment all the time during use, and close it in time
-                  after use.
+                  MIBOM has built its own value chain, and its r&d, clinical and
+                  circulation segments will be the most competitive. We are
+                  still in basic development, but in the future we will be able
+                  to bring MIBOM to market. To this end, we have also formulated
+                  a development strategy.
                 </p>
+              </v-card-text>
+              <v-img src="@/assets/fracture-bu-2.jpg" />
+              <v-card-text>
                 <p class="body-1">
-                  The above actions greatly avoid the detection outlined above.
+                  In order to have a better understanding of ourselves, we
+                  analyzed ourselves through SWOT and gave corresponding
+                  strategies.
                 </p>
+              </v-card-text>
+              <v-img src="@/assets/fracture-bu-3.jpg" />
+              <v-card-text>
+                <p class="body-1">Corresponding strategies are as follows:</p>
+              </v-card-text>
+              <v-list class="list_number">
+                <v-list-item two-line>
+                  <v-list-item-content>
+                    <v-list-item-title class="body-1">
+                      <strong>1. SO Strategy -- Diversified layout:</strong>
+                    </v-list-item-title>
+                    <div style="padding-left: 16px" class="body-1">
+                      <p class="body-1">
+                        Accelerating the diversified product layout and further
+                        building the product layout across the medical, beauty,
+                        daily first aid and other fields will be conducive to
+                        the development of MIBOM layout. To develop prevalent
+                        products by giving full disyplay to the MIBOM team's
+                        product system with mussel mucin as the core is useful
+                        to making up for the shortage of cash flow and coping
+                        with the huge investment in early research and
+                        development. At the same time, MIBOM will release the
+                        potential abilities of modular design ideas, speed up
+                        the creation of product line broadening, for product
+                        diversity to lay the technology. Further improve the
+                        market share, brand.
+                      </p>
+                    </div>
+                  </v-list-item-content>
+                </v-list-item>
+                <v-list-item>
+                  <v-list-item-content>
+                    <v-list-item-title class="body-1">
+                      <strong
+                        >2. WO Strategy -- Industrial Chain Cooperation:</strong
+                      >
+                    </v-list-item-title>
+                    <div style="padding-left: 16px" class="body-1">
+                      <p class="body-1">
+                        MIBOM is scheming to integrate the industrial chain and
+                        broaden the cooperative relationship. For upwarding the
+                        integration for contract manufacturers, MIBOMis looking
+                        for a mature technology of water gel synthesis company,
+                        cooperation with related synthetic biology company.
+                        Based on their mature fermentation system or extract
+                        protein system constitute the value chain of the product
+                        quickly, MIBOM can overcome the problem of the early
+                        stage of the start-up inherent costs too much, and the
+                        layout of the chain is helpful to giving full play to
+                        the advantages of cooperation, further improve product
+                        quality, Better capture market share.
+                      </p>
+                    </div>
+                  </v-list-item-content>
+                </v-list-item>
+                <v-list-item>
+                  <v-list-item-content>
+                    <v-list-item-title class="body-1"
+                      ><strong
+                        >3. WO Strategy -- Industrial Chain Cooperation:</strong
+                      ></v-list-item-title
+                    >
+                    <div style="padding-left: 16px" class="body-1">
+                      MIBOM is scheming to integrate the industrial chain and
+                      broaden the cooperative relationship. For upwarding the
+                      integration for contract manufacturers, MIBOMis looking
+                      for a mature technology of water gel synthesis company,
+                      cooperation with related synthetic biology company. Based
+                      on their mature fermentation system or extract protein
+                      system constitute the value chain of the product quickly,
+                      MIBOM can overcome the problem of the early stage of the
+                      start-up inherent costs too much, and the layout of the
+                      chain is helpful to giving full play to the advantages of
+                      cooperation, further improve product quality, Better
+                      capture market share.
+                    </div>
+                  </v-list-item-content>
+                </v-list-item>
+                <v-list-item>
+                  <v-list-item-content>
+                    <v-list-item-title class="body-1"
+                      ><strong
+                        >4. ST Strategy -- Accelerate the development of
+                        multi-line products:</strong
+                      ></v-list-item-title
+                    >
+                    <div style="padding-left: 16px" class="body-1">
+                      The modular design advantages of MIBOM can greatly reduce
+                      the cost of research and development and develop products
+                      for different application scenarios as soon as possible,
+                      such as trauma, beauty and other skin care products. Thus,
+                      MIBOM should transform the overall product client from
+                      hospitals to individual consumers, expand the market, and
+                      improve the public's awareness of MIBOM products to meet
+                      the needs of cash flow turnover. When conducting mass
+                      product marketing, we should emphasize the safety,
+                      efficiency and high quality of products and sort out a
+                      good brand image, so as to lay a good foundation for the
+                      launch of subsequent products in the process of
+                      competition with similar products.
+                    </div>
+                  </v-list-item-content>
+                </v-list-item>
+                <v-list-item>
+                  <v-list-item-content>
+                    <v-list-item-title class="body-1"
+                      ><strong
+                        >5. WT Strategy --Build brand awareness:</strong
+                      ></v-list-item-title
+                    >
+                    <div style="padding-left: 16px" class="body-1">
+                      After product industrialization, we will improve brand
+                      awareness as soon as possible. As our target is not only
+                      the high-end medical market, but also the mass market, the
+                      reputation and brand effect based on the high-end medical
+                      market will greatly increase our market competitive
+                      advantage. Meanwhile, our personalized medical plan will
+                      help increase user engagement and stabilize relevant
+                      markets.
+                    </div>
+                  </v-list-item-content>
+                </v-list-item>
+              </v-list>
+              <v-row justify="center">
+                <v-card-title class="text-h4 title" id="how"
+                  >How did we improve the ethics of synthetic
+                  biology?</v-card-title
+                >
+              </v-row>
+              <v-card-text>
+                <p class="body-1">Coming soon</p>
+              </v-card-text>
+              <v-row justify="center">
+                <v-card-title class="text-h4 title" id="overview"
+                  >Overview of the practice record</v-card-title
+                >
+              </v-row>
+              <v-card-text>
+                <p class="body-1">Something here</p>
               </v-card-text>
             </v-container>
           </v-card>
@@ -525,11 +828,11 @@ export default {
     },
   },
   mounted() {
-    this.step[0] = document.getElementById("prologue");
-    this.step[1] = document.getElementById("lab_safety");
-    this.step[2] = document.getElementById("general_information");
-    this.step[3] = document.getElementById("specific_design");
-    this.step[4] = document.getElementById("use_of_harmful");
+    this.step[0] = document.getElementById("background");
+    this.step[1] = document.getElementById("principle");
+    this.step[2] = document.getElementById("what");
+    this.step[3] = document.getElementById("how");
+    this.step[4] = document.getElementById("overview");
     this.updatepos();
     setTimeout(() => {
       this.firstload = false;

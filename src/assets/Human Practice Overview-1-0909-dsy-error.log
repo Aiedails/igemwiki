@@ -1,0 +1,8 @@
+return {
+ ["filename"]="D:/学习/iGEM/wiki/文稿/Human Practice Overview-1-0909-dsy.tex",
+ ["lastcontext"]="\nl.1 \\documentclass\n                 [UTF8]{article}",
+ ["lastluaerror"]="?",
+ ["lasttexerror"]="! Undefined control sequence",
+ ["linenumber"]=1,
+ ["offset"]=10,
+}
