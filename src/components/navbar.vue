@@ -31,7 +31,7 @@
       </v-btn>
 
       <v-toolbar-title style="padding-left: 16px; padding-bottom: 0;">
-        Title
+        Education
       </v-toolbar-title >
       <!-- use <v-toolbar-title> instead of <v-app-bar-title> to prevent displaying "Ti..." -->
       <template v-slot:extension>
@@ -75,12 +75,11 @@
 
           <v-list>
             <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Design">Design</v-list-item>
-            <v-list-item class="body-1">Parts</v-list-item>
             <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Engineering">Engineering</v-list-item>
             <v-list-item class="body-1" >Protocols</v-list-item>
             <v-list-item class="body-1">Experiments</v-list-item>
             <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Results">Results</v-list-item>
-            <v-list-item class="body-1">Safty</v-list-item>
+            <v-list-item class="body-1">Safety</v-list-item>
           </v-list>
         </v-menu>
         <v-menu
@@ -100,6 +99,14 @@
             <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Hardware">Hardware</v-list-item>
           </v-list>
         </v-menu>
+
+        <v-btn 
+          plain 
+          href=""
+        >
+          Parts
+        </v-btn>
+
         <v-menu
           offset-y
           open-on-hover
@@ -158,7 +165,7 @@
       <v-divider></v-divider>
       <!-- normal mobile nav-drawer. on-use now. -->
       <v-list dense>
-        <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China" active-class="blue--text">
+        <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China">
           <v-list-item-icon>
             <v-icon>mdi-home</v-icon>
           </v-list-item-icon>
@@ -197,10 +204,6 @@
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Design </v-list-item-title>
           </v-list-item>
-          <v-list-item link>
-            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-            <v-list-item-title> Parts </v-list-item-title>
-          </v-list-item>
           <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Engineering">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Engineering </v-list-item-title>
@@ -236,6 +239,13 @@
             <v-list-item-title> Hardware </v-list-item-title>
           </v-list-item>
         </v-list-group>
+
+        <v-list-item link href="" active-class="blue--text">
+          <v-list-item-icon>
+            <v-icon>mdi-shape-square-rounded-plus</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>Parts</v-list-item-title>
+        </v-list-item>
 
         <v-list-group :value="false" prepend-icon="mdi-account-switch">
           <template v-slot:activator>
