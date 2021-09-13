@@ -95,10 +95,6 @@
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Design </v-list-item-title>
           </v-list-item>
-          <v-list-item link>
-            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-            <v-list-item-title> Parts </v-list-item-title>
-          </v-list-item>
           <v-list-item
             class="body-1"
             href="https://2021.igem.org/Team:ShanghaiTech_China/Engineering"
@@ -146,6 +142,13 @@
             <v-list-item-title> Hardware </v-list-item-title>
           </v-list-item>
         </v-list-group>
+
+        <v-list-item link href="" active-class="blue--text">
+          <v-list-item-icon>
+            <v-icon>mdi-shape-square-rounded-plus</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>Parts</v-list-item-title>
+        </v-list-item>
 
         <v-list-group :value="false" prepend-icon="mdi-account-switch">
           <template v-slot:activator>
