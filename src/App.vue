@@ -162,11 +162,4 @@ li::marker {
   padding-right: 0;
   margin-bottom: 16px;
 }
-.fig {
-  color: rgb(121, 121, 121);
-  text-align: center;
-}
-sup {
-  color: $primary;
-}
 </style>
