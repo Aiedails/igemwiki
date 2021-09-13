@@ -2,7 +2,9 @@
   <v-app
     dark
     style="
-      background-image: linear-gradient(#E5F3FA, #9CD4CB 8%, #89BDD3 34%, #88BBBF 68%, #29B6F6);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
     "
     id="app"
   >
@@ -30,7 +32,9 @@
     -->
 
     <navbar v-resize="onResize" :width="this.width"></navbar>
-    <mainpart :width="this.width" :height="this.height"></mainpart>
+    <v-main id="main">
+      <mainpart :width="this.width"></mainpart>
+    </v-main>
     <temfooter></temfooter>
   </v-app>
 </template>
@@ -51,7 +55,6 @@ export default {
 
   data: () => ({
     width: 1300,
-    height: 1000,
     istop: true,
     /* used for the carousel.
     colors: [
@@ -71,7 +74,9 @@ export default {
   methods: {
     onResize() {
       this.width = window.innerWidth; //While nav-bar collapses, let the v-main go up.
-      this.height = window.innerHeight;
+      if (this.width <= 1264)
+        document.getElementById("main").style.top = "-140px";
+      else document.getElementById("main").style.top = "0px";
     },
   },
   computed: {
@@ -90,9 +95,12 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+$primary: #1388e5;
+$secondary: #4fc3f7;
+
 ::selection {
-  background: #ef9a9a;
+  background: $secondary;
   color: white;
 }
 #main {
@@ -117,5 +125,41 @@ p {
 a,
 a:hover {
   text-decoration: none !important;
+}
+.list_number {
+  border-width: 0 0 0 4px;
+  border-color: $secondary !important;
+  border-style: solid;
+  padding: 0;
+}
+li::marker {
+  color: $secondary;
+}
+/*use to change the size of v-stepper-step's sign.*/
+.v-stepper__step__step {
+  height: 16px;
+  min-width: 16px;
+  width: 16px;
+}
+.v-stepper__step__step .v-icon.v-icon {
+  font-size: 0.75rem;
+}
+.code {
+  padding: 16px;
+  border-width: 0 0 0 4px;
+  border-color: grey;
+  border-style: solid;
+  background-color: #eeeeee;
+}
+.code::selection {
+  color: white;
+  background: #838383 !important;
+}
+.title {
+  box-shadow: inset 0px -12px $secondary;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 16px;
 }
 </style>
