@@ -2,8 +2,8 @@
   <v-app
     dark
     style="
-      background-repeat: no-repeat;
-      background-position: center;
+      background-repeat: repeat-y;
+      background-position: center top;
       background-size: contain;
     "
     id="app"
@@ -31,7 +31,10 @@
     </v-card>
     -->
 
-    <navbar v-resize="onResize" :width="this.width"></navbar>
+    <navbar
+      v-resize="onResize"
+      :width="this.width"
+    ></navbar>
     <v-main id="main">
       <mainpart :width="this.width"></mainpart>
     </v-main>
@@ -103,6 +106,9 @@ $secondary: #4fc3f7;
   background: $secondary;
   color: white;
 }
+#app {
+  background: url("https://2021.igem.org/wiki/images/7/70/T--ShanghaiTech_China--bg.svg");
+}
 #main {
   position: relative;
   top: 0px;
@@ -115,7 +121,7 @@ $secondary: #4fc3f7;
 #top_title {
   display: none;
 }
-#globalWrapper {
+#globalwrapper {
   padding: 0;
 }
 p {

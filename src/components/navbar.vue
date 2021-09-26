@@ -37,7 +37,7 @@
       <template v-slot:extension>
         <v-btn 
           plain 
-          href="https://2021.igem.org/Team:ShanghaiTech_China/"
+          href="https://2021.igem.org/Team:ShanghaiTech_China"
         >
           HOME
         </v-btn>

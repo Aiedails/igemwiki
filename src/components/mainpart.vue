@@ -137,7 +137,11 @@
                   cumbersome fixation of bone fragments. Moreover, There is no
                   good to fix some small fragments.
                 </p>
-                <v-img src="@/assets/svgs/pic_1.svg" contain />
+                <v-img
+                  src="https://2021.igem.org/wiki/images/e/e4/T--ShanghaiTech_China--des--pic_1.svg"
+                  contain
+                  max-height="600px"
+                />
                 <p class="body-1">
                   In this year, Team ShanghaiTech_China developed a completely
                   new strategy to the comminuted fracture. A new mussel inspired
@@ -147,10 +151,12 @@
                   <v-col cols="1" lg="2" xl="2"></v-col>
                   <v-col cols="2" @click="$vuetify.goTo('#adhesive', options)">
                     <v-hover v-slot="{ hover }">
-                      <v-img src="@/assets/svgs/a_pic.svg">
+                      <v-img
+                        src="https://2021.igem.org/wiki/images/5/5e/T--ShanghaiTech_China--des--a_pic.svg"
+                      >
                         <v-expand-transition>
                           <v-img
-                            src="@/assets/svgs/a_tex.svg"
+                            src="https://2021.igem.org/wiki/images/c/cc/T--ShanghaiTech_China--des--a_tex.svg"
                             v-if="hover"
                             class="d-flex transition-fast-in-fast-out"
                             style="height: 100%; width: 100%"
@@ -161,10 +167,12 @@
                   </v-col>
                   <v-col cols="2" @click="$vuetify.goTo('#hydrogel', options)">
                     <v-hover v-slot="{ hover }">
-                      <v-img src="@/assets/svgs/h_pic.svg">
+                      <v-img
+                        src="https://2021.igem.org/wiki/images/6/6e/T--ShanghaiTech_China--des--h_pic.svg"
+                      >
                         <v-expand-transition>
                           <v-img
-                            src="@/assets/svgs/h_tex.svg"
+                            src="https://2021.igem.org/wiki/images/d/d9/T--ShanghaiTech_China--des--h_tex.svg"
                             v-if="hover"
                             class="d-flex transition-fast-in-fast-out"
                             style="height: 100%"
@@ -173,12 +181,17 @@
                       </v-img>
                     </v-hover>
                   </v-col>
-                  <v-col cols="2" @click="$vuetify.goTo('#regulation', options)">
+                  <v-col
+                    cols="2"
+                    @click="$vuetify.goTo('#regulation', options)"
+                  >
                     <v-hover v-slot="{ hover }">
-                      <v-img src="@/assets/svgs/r_pic.svg">
+                      <v-img
+                        src="https://2021.igem.org/wiki/images/b/b3/T--ShanghaiTech_China--des--r_pic.svg"
+                      >
                         <v-expand-transition>
                           <v-img
-                            src="@/assets/svgs/r_tex.svg"
+                            src="https://2021.igem.org/wiki/images/8/89/T--ShanghaiTech_China--des--r_tex.svg"
                             v-if="hover"
                             class="d-flex transition-fast-in-fast-out"
                             style="height: 100%; width: 100%"
@@ -189,10 +202,12 @@
                   </v-col>
                   <v-col cols="2" @click="$vuetify.goTo('#drug', options)">
                     <v-hover v-slot="{ hover }">
-                      <v-img src="@/assets/svgs/d_pic.svg">
+                      <v-img
+                        src="https://2021.igem.org/wiki/images/4/47/T--ShanghaiTech_China--des--d_pic.svg"
+                      >
                         <v-expand-transition>
                           <v-img
-                            src="@/assets/svgs/d_tex.svg"
+                            src="https://2021.igem.org/wiki/images/2/2d/T--ShanghaiTech_China--des--d_tex.svg"
                             v-if="hover"
                             class="d-flex transition-fast-in-fast-out"
                             style="height: 100%; width: 100%"
@@ -223,8 +238,9 @@
                 </p>
                 <v-img
                   :aspect-ratio="1034 / 861"
-                  src="@/assets/svgs/pic_2.svg"
+                  src="https://2021.igem.org/wiki/images/e/e6/T--ShanghaiTech_China--des--pic_2.svg"
                   contain
+                  max-height="600px"
                 />
                 <p class="body-1">
                   For the above two reasons, we choose mussel protein mfp-5 to
@@ -238,7 +254,11 @@
                   Moreover, we do some modifications to the proteins to make it
                   more viscous. See more details on XXX page.
                 </p>
-                <v-img src="@/assets/svgs/pic_3.svg" contain />
+                <v-img
+                  src="https://2021.igem.org/wiki/images/f/fc/T--ShanghaiTech_China--des--pic_3.svg"
+                  contain
+                  max-height="600px"
+                />
               </v-card-text>
               <v-card-title class="text-h5" id="hydrogel"
                 >Hydrogel system</v-card-title
@@ -267,7 +287,11 @@
                   meet the structural strength requirement of bone recovery. The
                   design is based on interviews with clinicians' needs.
                 </p>
-                <v-img src="@/assets/svgs/pic_4.svg" contain />
+                <v-img
+                  src="https://2021.igem.org/wiki/images/2/27/T--ShanghaiTech_China--des--pic_4.svg"
+                  contain
+                  max-height="600px"
+                />
               </v-card-text>
               <v-card-title class="text-h5" id="regulation"
                 >Regulation system</v-card-title
@@ -285,7 +309,11 @@
                   material. We take the stress in fracture repair as a signal.
                   During the bone growth, the hydrogel is squeezed.
                 </p>
-                <v-img src="@/assets/svgs/pic_5.svg" contain />
+                <v-img
+                  src="https://2021.igem.org/wiki/images/8/84/T--ShanghaiTech_China--des--pic_5.svg"
+                  contain
+                  max-height="600px"
+                />
                 <p class="body-1">
                   We created a mechanics sensitive cell. They can sense the
                   mechanical force conducted from the hydrogel to cells and
@@ -302,8 +330,9 @@
                 </p>
                 <v-img
                   :aspect-ratio="1029 / 728"
-                  src="@/assets/svgs/pic_6.svg"
+                  src="https://2021.igem.org/wiki/images/e/e5/T--ShanghaiTech_China--des--pic_6.svg"
                   contain
+                  max-height="600px"
                 />
               </v-card-text>
               <v-card-title class="text-h5" id="drug">Drug system</v-card-title>
@@ -328,8 +357,9 @@
                 </p>
                 <v-img
                   :aspect-ratio="1029 / 728"
-                  src="@/assets/svgs/pic_7.svg"
+                  src="https://2021.igem.org/wiki/images/d/de/T--ShanghaiTech_China--des--pic_7.svg"
                   contain
+                  max-height="600px"
                 />
               </v-card-text>
               <v-card-title class="text-h6">Fuctions summary</v-card-title>
@@ -347,8 +377,9 @@
                 </p>
                 <v-img
                   :aspect-ratio="1029 / 728"
-                  src="@/assets/svgs/pic_8.svg"
+                  src="https://2021.igem.org/wiki/images/a/ae/T--ShanghaiTech_China--des--pic_8.svg"
                   contain
+                  max-height="600px"
                 />
               </v-card-text>
               <v-card-title class="text-h5" id="engineering"
@@ -372,8 +403,9 @@
                 </p>
                 <v-img
                   :aspect-ratio="1029 / 728"
-                  src="@/assets/svgs/pic_9.svg"
+                  src="https://2021.igem.org/wiki/images/8/81/T--ShanghaiTech_China--des--pic_9.svg"
                   contain
+                  max-height="600px"
                 />
               </v-card-text>
               <v-card-title class="text-h5"> More </v-card-title>
