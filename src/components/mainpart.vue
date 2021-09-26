@@ -123,7 +123,7 @@
               do.
             </p>
           </v-card-text>
-          <v-img src="@/assets/bilibili.jpg" />
+          <v-img src="https://2021.igem.org/wiki/images/6/63/T--ShanghaiTech_China--edu--bilibili.jpg" />
           <v-card-title class="text-h5">
             Continuous popular science on our Wechat official accounts - Also
             collaborate with GA_State_SW_Jiaotong
@@ -148,7 +148,7 @@
               can be spread to a wider range of places.
             </p>
           </v-card-text>
-          <v-img src="@/assets/gongzhonghao.jpg" />
+          <v-img src="https://2021.igem.org/wiki/images/a/a1/T--ShanghaiTech_China--edu--gongzhonghao.jpg" />
           <v-row justify="center">
             <v-card-title class="text-h4 title" id="offline">
               Offline Lectures</v-card-title
@@ -189,7 +189,7 @@
                     help them have a more complete understanding of science and
                     a deeper understanding of their major.'
                   </p>
-                  <v-img src="@/assets/xq_ssy.jpg" />
+                  <v-img src="https://2021.igem.org/wiki/images/b/be/T--ShanghaiTech_China--edu--xq_ssy.jpg" />
                 </v-card-text>
               </v-list-item>
             </v-list>
@@ -217,9 +217,9 @@
                   Shanghaitech, I saw hope of our education.'. Our visit
                   represent a big chance for students there.
                 </p>
-                <v-img src="@/assets/dh_1.jpg" />
+                <v-img src="https://2021.igem.org/wiki/images/8/8b/T--ShanghaiTech_China--edu--dh_1.jpg" />
                 <p class="body-1"></p>
-                <v-img src="@/assets/dh_2.jpg" />
+                <v-img src="https://2021.igem.org/wiki/images/0/0c/T--ShanghaiTech_China--edu--dh_2.jpg" />
                 <p class="body-1">
                   Thinking about how little experience they have in learning
                   biology, We chose to introduce basic concepts in biology such
@@ -288,7 +288,7 @@
                   the iGEM competition, and the application aspect of it was
                   very novel to them.
                 </p>
-                <v-img src="@/assets/dh_3.jpg" />
+                <v-img src="https://2021.igem.org/wiki/images/8/80/T--ShanghaiTech_China--edu--dh_3.jpg" />
                 <p class="body-1">
                   More students were willing to communicate with us than the
                   elementary school group. They were more grateful for the
@@ -297,7 +297,7 @@
                   more motivation, good study confidence is also more firm.',
                   they said.
                 </p>
-                <v-img src="@/assets/dh_4.jpg" />
+                <v-img src="https://2021.igem.org/wiki/images/3/31/T--ShanghaiTech_China--edu--dh_4.jpg" />
               </v-card-text>
             </v-list-item>
             <v-list-item>
@@ -314,7 +314,7 @@
                   specimens. Let them use living things. The students are having
                   fun and learning.
                 </p>
-                <v-img src="@/assets/zch_1.jpg" />
+                <v-img src="https://2021.igem.org/wiki/images/9/93/T--ShanghaiTech_China--edu--zch_1.jpg" />
               </v-card-text>
             </v-list-item>
           </v-list>
@@ -345,7 +345,7 @@
               their help, our project spread among foreign students. This
               partnership enables us to extend our outreach abroad.
             </p>
-            <v-img src="@/assets/pub.jpg" />
+            <v-img src="https://2021.igem.org/wiki/images/0/0b/T--ShanghaiTech_China--edu--pub.jpg" />
           </v-card-text>
           <v-row justify="center">
             <v-card-title class="text-h4 title" id="conclusion"> Conclusion </v-card-title>
