@@ -7,40 +7,44 @@
         v-show="firstload"
         type="list-item-two-line@2"
       ></v-skeleton-loader>
-      <v-stepper
-        :class="`elevation-${hover ? 8 : 2}`"
-        class="transition-swing"
-        v-show="!firstload"
-        v-model="position"
-        vertical
-        non-linear
-        style="transition: all 1s ease 1s; padding-bottom: 8px"
-      >
-        <v-stepper-step
-          editable
-          edit-icon="1"
-          step="1"
-          @click="$vuetify.goTo('#students', options)"
-          :complete="position > 1"
-          style="transition: all 1s ease 1s"
-          color="primary"
-          class="body-1"
-        >
-          Students
-        </v-stepper-step>
-        <v-stepper-step
-          editable
-          edit-icon="2"
-          step="2"
-          @click="$vuetify.goTo('#professors', options)"
-          :complete="position > 2"
-          style="transition: all 1s"
-          color="primary"
-          class="body-1"
-        >
-          professors
-        </v-stepper-step>
-      </v-stepper>
+      <v-hover>
+        <template v-slot:default="{ hover }">
+          <v-stepper
+            :class="`elevation-${hover ? 8 : 2}`"
+            class="transition-swing"
+            v-show="!firstload"
+            v-model="position"
+            vertical
+            non-linear
+            style="transition: all 1s ease 1s; padding-bottom: 8px"
+          >
+            <v-stepper-step
+              editable
+              edit-icon="1"
+              step="1"
+              @click="$vuetify.goTo('#students', options)"
+              :complete="position > 1"
+              style="transition: all 1s ease 1s"
+              color="primary"
+              class="body-1"
+            >
+              Students
+            </v-stepper-step>
+            <v-stepper-step
+              editable
+              edit-icon="2"
+              step="2"
+              @click="$vuetify.goTo('#professors', options)"
+              :complete="position > 2"
+              style="transition: all 1s"
+              color="primary"
+              class="body-1"
+            >
+              professors
+            </v-stepper-step>
+          </v-stepper>
+        </template>
+      </v-hover>
     </v-col>
     <!-- cards -->
     <!-- ####################################################################### -->

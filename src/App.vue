@@ -1,11 +1,7 @@
 <template>
   <v-app
     dark
-    style="
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-    "
+    style="background-position: center top; background-size: cover"
     id="app"
   >
     <!-- the carousal -->
@@ -103,6 +99,24 @@ $secondary: #4fc3f7;
   background: $secondary;
   color: white;
 }
+#app {
+  background: url("https://2021.igem.org/wiki/images/7/70/T--ShanghaiTech_China--bg.svg");
+}
+#HQ_page th {
+  background-color: white !important;
+  padding: 0 16px !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+  border: none !important;
+  border-bottom: thin solid rgba(0, 0, 0, 0.12) !important;
+  vertical-align: middle !important;
+}
+#HQ_page td {
+  padding: 0 16px !important;
+  border: none !important;
+  border-bottom: thin solid rgba(0, 0, 0, 0.12) !important;
+  vertical-align: middle !important;
+}
+
 #main {
   position: relative;
   top: 0px;
@@ -115,7 +129,7 @@ $secondary: #4fc3f7;
 #top_title {
   display: none;
 }
-#globalWrapper {
+#globalwrapper {
   padding: 0;
 }
 p {
