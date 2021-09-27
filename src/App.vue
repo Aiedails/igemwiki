@@ -157,9 +157,9 @@ li::marker {
 }
 .title {
   box-shadow: inset 0px -12px $secondary;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
   margin-bottom: 16px;
 }
 </style>
