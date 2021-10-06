@@ -22,61 +22,85 @@
               editable
               edit-icon="1"
               step="1"
-              @click="$vuetify.goTo('#prologue', options)"
+              @click="$vuetify.goTo('#overview', options)"
               :complete="position > 1"
               style="transition: all 1s ease 1s"
               color="primary"
               class="body-1"
             >
-              Prologue
+              Overview
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="2"
               step="2"
-              @click="$vuetify.goTo('#lab_safety', options)"
+              @click="$vuetify.goTo('#general', options)"
               :complete="position > 2"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              Lab Safety
+              General principles of product design and transformation
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="3"
               step="3"
-              @click="$vuetify.goTo('#general_information', options)"
+              @click="$vuetify.goTo('#cycle', options)"
               :complete="position > 3"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              General microorganism information & general project design
+              Cycle 1: Identifying the problem
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="4"
               step="4"
-              @click="$vuetify.goTo('#specific_design', options)"
+              @click="$vuetify.goTo('#cycle_2', options)"
               :complete="position > 4"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              Specific project design
+              Cycle 2: Birth and iteration of MIBOM
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="5"
               step="5"
-              @click="$vuetify.goTo('#use_of_harmful', options)"
+              @click="$vuetify.goTo('#cycle_3', options)"
               :complete="position > 5"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              Use of harmful reagents and procedures
+              Cycle 3: The concept of MIBOM is becoming practical.
+            </v-stepper-step>
+            <v-stepper-step
+              editable
+              edit-icon="6"
+              step="6"
+              @click="$vuetify.goTo('#cycle_4', options)"
+              :complete="position > 6"
+              style="transition: all 1s"
+              color="primary"
+              class="body-1"
+            >
+              Cycle 4: Practical implementation & Tech Transfer
+            </v-stepper-step>
+            <v-stepper-step
+              editable
+              edit-icon="7"
+              step="7"
+              @click="$vuetify.goTo('#conclusion', options)"
+              :complete="position > 7"
+              style="transition: all 1s"
+              color="primary"
+              class="body-1"
+            >
+              Conclusion: Evaluate our project value
             </v-stepper-step>
           </v-stepper>
         </template>
@@ -96,13 +120,18 @@
             class="transition-swing"
             style="text-decoration: none"
             id="description"
-            v-intersect="onIntersect"
             v-scroll="updatepos"
             v-show="!firstload"
           >
             <v-container style="padding: 20px">
               <v-row justify="center">
-                <v-card-title class="text-h4 title"> 1. Overview </v-card-title>
+                <v-card-title
+                  class="text-h4 title"
+                  id="overview"
+                  v-intersect="onIntersect"
+                >
+                  1. Overview
+                </v-card-title>
               </v-row>
               <v-card-text>
                 <p class="body-1">
@@ -133,7 +162,7 @@
                 </p>
               </v-card-text>
               <v-row justify="center">
-                <v-card-title class="text-h4 title">
+                <v-card-title class="text-h4 title" id="general">
                   2. General principles of product design and transformation
                 </v-card-title>
               </v-row>
@@ -143,7 +172,9 @@
               <v-card-title class="text-h6"> R&D process </v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  <v-img src="@/assets/1.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/e/e3/T--ShanghaiTech_China--hp--1.png"
+                  />
                 </p>
                 <p class="body-1">
                   It is not easy for the team manager to make the Integrated
@@ -171,7 +202,11 @@
                   >
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/principle1.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/d/da/T--ShanghaiTech_China--hp--principle1.jpg"
+                    contain
+                    max-height="650px"
+                  />
                 </p>
                 <v-row
                   justify="center"
@@ -214,7 +249,9 @@
                   identified, plans made, and implementation
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/2.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/b/bc/T--ShanghaiTech_China--hp--2.png"
+                  />
                 </p>
                 <v-row
                   justify="center"
@@ -312,7 +349,7 @@
                 </p>
               </v-card-text>
               <v-row justify="center">
-                <v-card-title class="text-h4 title">
+                <v-card-title class="text-h4 title" id="cycle">
                   3. Cycle 1: Identifying the problem
                 </v-card-title>
               </v-row>
@@ -401,7 +438,11 @@
                   homework.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/3.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/1/19/T--ShanghaiTech_China--hp--3.png"
+                    contain
+                    max-height="600px"
+                  />
                 </p>
                 <p class="body-1">
                   Based on their feedback, we learned that perhaps the biggest
@@ -417,7 +458,11 @@
                   surgeries each year are implants removal.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/4.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/5/52/T--ShanghaiTech_China--hp--4.png"
+                    contain
+                    max-height="400px"
+                  />
                 </p>
                 <p class="body-1">
                   Combined with our research, we found that there will be
@@ -432,7 +477,11 @@
                   through medical insurance, they are undoubtedly huge costs.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/3.a.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/1/14/T--ShanghaiTech_China--hp--3.a.png"
+                    contain
+                    max-height="600px"
+                  />
                 </p>
                 <v-row
                   justify="center"
@@ -470,7 +519,11 @@
                   seriously.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/5.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/8/89/T--ShanghaiTech_China--hp--5.png"
+                    contain
+                    max-height="400px"
+                  />
                 </p>
                 <p class="body-1">
                   To sum up, the problem of fracture is relatively obvious, and
@@ -512,7 +565,7 @@
                   solution, which is our technical iteration.
                 </p>
               </v-card-text>
-              <v-card-title class="text-h5">
+              <v-card-title class="text-h4" id="cycle_2">
                 4. Cycle 2: Birth and iteration of MIBOM
               </v-card-title>
               <v-card-title class="text-h5">
@@ -611,7 +664,9 @@
               <v-card-title class="text-h6"> Suggestion </v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  <v-img src="@/assets/6.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/8/8b/T--ShanghaiTech_China--hp--6.png"
+                  />
                 </p>
               </v-card-text>
               <v-card-title class="text-h6"> Response </v-card-title>
@@ -642,7 +697,9 @@
               <v-card-title class="text-h6"> Suggestion </v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  <v-img src="@/assets/7.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/f/f0/T--ShanghaiTech_China--hp--7.png"
+                  />
                 </p>
                 <p class="body-1">
                   We did not claim the right of Bailong Xiao's image, so we used
@@ -675,7 +732,9 @@
               <v-card-title class="text-h6"> Suggestion </v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  <v-img src="@/assets/8.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/c/c9/T--ShanghaiTech_China--hp--8.png"
+                  />
                 </p>
               </v-card-text>
               <v-card-title class="text-h6"> Response </v-card-title>
@@ -707,7 +766,9 @@
               <v-card-title class="text-h6"> Suggestion </v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  <v-img src="@/assets/9.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/4/42/T--ShanghaiTech_China--hp--9.png"
+                  />
                 </p>
               </v-card-text>
               <v-card-title class="text-h6"> Response </v-card-title>
@@ -750,7 +811,7 @@
                 </p>
               </v-card-text>
               <v-row justify="center">
-                <v-card-title class="text-h4 title">
+                <v-card-title class="text-h4 title" id="cycle_3">
                   5. Cycle 3: The concept of MIBOM is becoming practical.
                 </v-card-title>
               </v-row>
@@ -824,7 +885,9 @@
                   doctors and patients.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/10.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/5/54/T--ShanghaiTech_China--hp--10.png"
+                  />
                 </p>
                 <p class="body-1">
                   In the interview with the doctor, we learned that the duration
@@ -853,7 +916,11 @@
                   expanded.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/bp.jpg" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/8/82/T--ShanghaiTech_China--hp--bp.jpg"
+                    contain
+                    max-height="650px"
+                  />
                 </p>
                 <p class="body-1">
                   In order to confirm that our business plan really illustrates
@@ -864,7 +931,9 @@
                   our teachers for their support.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/11.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/b/b3/T--ShanghaiTech_China--hp--11.png"
+                  />
                 </p>
                 <p class="body-1">
                   We adjusted our business plan according to teacher Suting
@@ -910,7 +979,9 @@
                   cure an additional 7,982 people. (Figure.4)
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/fracture-b-1.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/3/3d/T--ShanghaiTech_China--hp--fracture-b-1.png"
+                  />
                 </p>
                 <v-row
                   justify="center"
@@ -942,10 +1013,14 @@
                   Therefore, simplifying comminuted fractures will be a very
                   necessary material development direction. On the other hand,
                   comminuted sex fracture also brings about the circumstance
-                  such as bone is not connected extremely easily to happen
+                  such as bone is not connected extremely easily to happen.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/fracture-b-5.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/b/b4/T--ShanghaiTech_China--hp--fracture-b-5.png"
+                    contain
+                    max-height="550px"
+                  />
                 </p>
               </v-card-text>
               <v-card-title class="text-h6"> Complex Operation </v-card-title>
@@ -1006,7 +1081,7 @@
                 </p>
               </v-card-text>
               <v-row justify="center">
-                <v-card-title class="text-h4 title">
+                <v-card-title class="text-h4 title" id="cycle_4">
                   6. Cycle 4: Practical implementation & Tech Transfer
                 </v-card-title>
               </v-row>
@@ -1025,7 +1100,9 @@
                   through the form of interview.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/13.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/d/de/T--ShanghaiTech_China--hp--13.png"
+                  />
                 </p>
                 <p class="body-1">
                   When determining the interviewees, Professor Jean Dai suggests
@@ -1053,7 +1130,9 @@
                   comminuted fractures.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/12.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/5/5d/T--ShanghaiTech_China--hp--12.png"
+                  />
                 </p>
                 <p class="body-1">
                   The advice given to us by Professor Chouwen Zhu was very
@@ -1071,7 +1150,11 @@
                   an implant.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/14.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/0/04/T--ShanghaiTech_China--hp--14.png"
+                    contain
+                    max-height="600px"
+                  />
                 </p>
                 <p class="body-1">
                   Both doctors gave us a lot of advice, which made us rethink
@@ -1099,7 +1182,11 @@
                   during the rehabilitation phase.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/15.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/7/71/T--ShanghaiTech_China--hp--15.png"
+                    contain
+                    max-height="400px"
+                  />
                 </p>
                 <p class="body-1">
                   According to Dr. Haixia Yang's suggestion, we think it is
@@ -1125,7 +1212,9 @@
                   management, and hope he can give us advice.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/16.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/8/85/T--ShanghaiTech_China--hp--16.png"
+                  />
                 </p>
                 <p class="body-1">
                   According to the advice of Teacher Yunfeng Qiu and the
@@ -1148,7 +1237,9 @@
                   considering wound treatment, dressings or sutures.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/17.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/4/45/T--ShanghaiTech_China--hp--17.png"
+                  />
                 </p>
               </v-card-text>
               <v-card-title class="text-h5">
@@ -1177,7 +1268,11 @@
                   manual operation.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/fracture-p-1.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/9/9e/T--ShanghaiTech_China--hp--fracture-p-1.png"
+                    contain
+                    max-height="500px"
+                  />
                 </p>
                 <p class="body-1">
                   To that end, this year's Hardware designed this feature to
@@ -1215,7 +1310,11 @@
                   with them and give them more appropriate medical advice.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/fracture-pr-1.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/0/00/T--ShanghaiTech_China--hp--fracture-pr-1.png"
+                    contain
+                    max-height="600px"
+                  />
                 </p>
               </v-card-text>
               <v-card-title class="text-h6"> (2) Patenting </v-card-title>
@@ -1231,7 +1330,9 @@
                   willing to give us such help.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/19.png" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/0/00/T--ShanghaiTech_China--hp--19.png"
+                  />
                 </p>
                 <p class="body-1">
                   Before submitting the Patent Cooperation Treaty, we hope to
@@ -1323,7 +1424,7 @@
                 </p>
               </v-card-text>
               <v-row justify="center">
-                <v-card-title class="text-h4 title">
+                <v-card-title class="text-h4 title" id="conclusion">
                   7. Conclusion: Evaluate our project value
                 </v-card-title>
               </v-row>
@@ -1510,7 +1611,6 @@ export default {
       this.istop = this.isIntersecting;
     },
     updatepos() {
-      /*
       var pos = [];
       var posnow = 0;
       for (var i = 0; i < this.step.length; i++) {
@@ -1518,15 +1618,16 @@ export default {
         if (pos[i] <= 300) posnow = i;
       }
       this.position = posnow + 1;
-      */
     },
   },
   mounted() {
-    this.step[0] = document.getElementById("prologue");
-    this.step[1] = document.getElementById("lab_safety");
-    this.step[2] = document.getElementById("general_information");
-    this.step[3] = document.getElementById("specific_design");
-    this.step[4] = document.getElementById("use_of_harmful");
+    this.step[0] = document.getElementById("overview");
+    this.step[1] = document.getElementById("general");
+    this.step[2] = document.getElementById("cycle");
+    this.step[3] = document.getElementById("cycle_2");
+    this.step[4] = document.getElementById("cycle_3");
+    this.step[5] = document.getElementById("cycle_4");
+    this.step[6] = document.getElementById("conclusion");
     this.updatepos();
     setTimeout(() => {
       this.firstload = false;
