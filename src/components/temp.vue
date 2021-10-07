@@ -106,587 +106,256 @@
           >
             <v-container style="padding: 20px">
         
+<v-card-title class="text-h3">
+Adhesion system
+</v-card-title>
+<v-card-text>
+ <p class = "body-1">
+<strong>Improved Part: <a href="http://parts.igem.org/Part:BBa_K1583002">BBa_K1583002</a></strong>
+</p>
+<p class = "body-1">
+We have done codon optimization on the original Mfp5 sequence and obtain the Basic Part <a href="http://parts.igem.org/Part:BBa_K3755002">BBa_K3755002</a> to increase the translation efficiency of recombinant protein in *E.coli*. To further improve protein production, we also introduced the AKTK expression tag and obtained the Composite Part <a href="http://parts.igem.org/Part:BBa_K3755011">BBa_K3755011</a>(AKTK-his tag-linker-Mfp5 CDS, Mfp 5-1). But unfortunately, the team(<a href="https://2015.igem.org/Team:TU_Delft">TU_Delft 2015) that registered the part <a href="http://parts.igem.org/Part:BBa_K1583002">BBa_K1583002</a> did not successfully purify Mfp5 (no target bands were obtained in SDS-Page) and didn't get the yield data. And due to time reasons, we only characterized the protein yield of our optimized sequence, and there was no time to characterize the original sequence. So the optimization verification for improving protein yield could not be completed according to the requirements in the Medal Criteria Sheet.
+</p>
+<p class = "body-1">
+<v-img src="@/assets/mfp5-1 第一次纯化.png" />
+</p>
+<p class = "body-1">
+> Fig.1a: SDS-PAGE of purificaton of Mfp5-1. We can clearly find the band of Mfp5-1 between 15-20 kDa, which means we have successfully purified the Mfp5-1 protein. After nickel ion affinity chromatograohy, we analyed the OD value of purified protein solution at 280 nm and calculated that the aveerage yield of Mfp5-1 was 24 mg per liter of bacteria solution. But due to the lack of yield data of the original sequence, this yield data could not be used as evidence of our improvement.
+</p>
+<p class = "body-1">
+However, in addition to yield, we have made another improvement. In the literature, we learned that repeating the sequence of Mfp5 can lead to higher adhesion. So we constructed the expression system of double repetition(Mfp5-2,[BBa_K3755012](http://parts.igem.org/Part:BBa_K3755012)) and triple repetition(cfa-n-Mfp5-2,<a href="http://parts.igem.org/Part:BBa_K3755030">BBa_K3755030</a> & cfa-c-Mfp5-1,<a href="http://parts.igem.org/Part:BBa_K3755029">BBa_K3755029</a>), and then obtained the purified and modified Mfp5-1 and Mfp5-2 proteins（Fig.1a&1b）. 
+</p>
+<p class = "body-1">
+<v-img src="@/assets/mfp5-2 第一次纯化.png" />
+</p>
+<p class = "body-1">
+> Fig.1b: SDS-PAGE of purificaton of Mfp5-2. We can clearly find the band of Mfp5-2 between 20-25 kDa, which means we have successfully purified the Mfp5-2 protein. However, an unexpected band between 15-20 kDa show in many samples, including after induction, supernatant, washing and elution. It did not result from nickel medium since the band also occurred in after induction and supernatant samples. So we inferred that mfp5-2 might break in half during expression since it is a fusion protein made up with two repeats of mfp5-1.
+</p>
+<p class = "body-1">
+We independently designed the protein adhesion test experiment(seen in <a href="https://2021.igem.org/Team:ShanghaiTech_China/Experiments">Experiments</a>), and finally obtained surprising experimental results(seen in <a href="https://2021.igem.org/Team:ShanghaiTech_China/Results">Results</a>).
+</p>
+<p class = "body-1">
+<v-img src="@/assets/粘性测试实验.jpg" />
+</p>
+<p class = "body-1">
+> Fig.2: Adhesion test experiment of Mfp5-1&Mfp5-2. To characterize as much as possible the viscosity of tyrosine enzyme-modified mefp5-1 and mefp5-2, take 20ul of the concentrated protein solution(concentration: mefp5-1=50mg/ml,mefp5-2=40mg/ml) to attach the PCR tube and the tube cover(top left and top right) (The PCR tube cover is trimmed and polished to a round face with a diameter of 7mm)to the center of the petri dish and perform a viscidity test after 48 hours of drying in a 37-degree oven. Lift the petri dish at a certain height through the PCR tube and add the glass beads one by one to the petri dish until the last glass bead is added to cause the petri dish to fall off with the PCR tube(bottom left and bottom right). The viscosity of the added protein can be calculated by weighing the total weight of the Petri dish and glass beads.
+</p>
+<p class = "body-1">
+We calculated the results by the following steps:
+</p>
+<p class = "body-1">
+Mfp5-1：
+</p>
+<p class = "body-1">
+- PCR tube cover area：
+</p>
+<p class = "body-1">
+- The total weight of the petri dish and glass beads, i.e. the maximum pull that Mfp5-1 can withstand in the experiment：
+</p>
+<p class = "body-1">
+  $$
+  F=43.24g×9.8kg/N=(43.24/1000)kg×9.8kg/N=0.42N
+  $$
+</p>
+<p class = "body-1">
+- The viscosity produced by Mfp5-1：
+</p>
+<p class = "body-1">
+  $$
+</p>
+<p class = "body-1">
+  P=F/S=0.42N/0.38cm^2=1.105N/cm^2=11.05KPa
+</p>
+<p class = "body-1">
+  $$
+</p>
+<p class = "body-1">
+- **The viscosity produced per milligram of protein:** 
+</p>
+<p class = "body-1">
+  $$
+</p>
+<p class = "body-1">
+  P'=P/m=11.05KPa/(50mg/ml×0.02ml)=11.05KPa/m
+</p>
+<p class = "body-1">
+  $$
+</p>
+</v-card-text>
+<v-card-title class="text-h">
+Mfp5-2
+</v-card-title>
 <v-card-text>
   <p class = "body-1">
-In our project, we designed a mechanism to release the drug at a specific point on the wound.
+- PCR tube cover area：
 </p>
 <p class = "body-1">
-First of all our mechanical structure took the classic belt and gear drive. For the selection of the motor we used a 42 stepper motor, configured with a 1.8 degree stepping angle and with 16 subdivisions.
+  $$
 </p>
 <p class = "body-1">
-<v-img src="@/assets/42stepper.png" />
+  S=π×r^2=π×(0.35cm)^2=0.38cm^2
 </p>
 <p class = "body-1">
-The motor shaft is fixed with a 13mm diameter gear, and the drive of the motor gear can drive the belt, thus moving the fixed frame and allowing the drug release device to move to the desired position.
+  $$
 </p>
 <p class = "body-1">
-Stepper motor according to the external control pulse and direction signal, through its internal logic circuit, control the stepper motor winding in a certain timing sequence forward or reverse energization, so that the motor forward / reverse rotation, or lock.
+- The total weight of the petri dish and glass beads, i.e. the maximum pull that Mfp5- can withstand in the experiment：
 </p>
 <p class = "body-1">
-Take our 1.8 degree two-phase stepper motor as an example: when both phase windings are energized and excited, the motor output shaft will be stationary and locked in position. The maximum torque that will keep the motor locked at the rated current is the holding torque. If the current in one of the phase windings changes direction, the motor will rotate one step (1.8 degrees) in a given direction. Similarly, if the current in the other winding changes direction, the motor will rotate one step (1.8 degrees) in the opposite direction of the former. When the currents through the coil windings are sequentially redirected to excitation, the motor will rotate in a continuous step in the given direction with very high accuracy. For 1.8 degrees two-phase stepping motor rotation a week need 200 steps.
+  $$
 </p>
 <p class = "body-1">
-At the same time we are equipped with 16 subdivision, subdivision is actually a kind of electronic damping technology on the stepper motor, its main purpose is to attenuate or eliminate the low frequency vibration of the stepper motor, improve the running accuracy of the motor. The actual step angle when the motor is running after subdivision is a fraction of the basic step angle. Take our 16 subdivision as an example, after 16 pulses, the motor turns through 1.8 degrees.
+  F=39.46g×9.8kg/N=(39.46/1000)kg×9.8kg/N=0.39N
 </p>
 <p class = "body-1">
-A pulse signal is an electrical signal where the voltage changes repeatedly between ON and OFF.
+  $$
 </p>
 <p class = "body-1">
-Each ON/OFF cycle is recorded as a pulse. A single pulse signal commands one step of rotation of the motor output shaft.
+- The viscosity produced by Mfp5-2：
 </p>
 <p class = "body-1">
-The signal levels corresponding to the voltage ON and OFF cases are called "H" and "L", respectively.
+  $$
 </p>
 <p class = "body-1">
-<v-img src="@/assets/pulse_signal.jpg" />
+  P=F/S=0.39N/0.38cm^2=1.026N/cm^2=10.26KPa
 </p>
 <p class = "body-1">
-The rotation distance of a stepper motor is proportional to the number of pulse signals (number of pulses) applied to the drive.
+  $$
 </p>
 <p class = "body-1">
-$$
-\theta = \theta_s\times A/A_0
-$$
+- **The viscosity produced per milligram of protein:** 
 </p>
 <p class = "body-1">
-<v-img src="@/assets/rotation_distance_and_pulse_number_pic.jpg" />
+  $$
 </p>
 <p class = "body-1">
-$\theta$ is the motor rotation angle, $\theta_0$ is the motor stepping angle, $A$ is the number of pulses, and $A_0$ is the fraction of the fine.
+  P'=P/m=10.26KPa/(40mg/ml×0.02ml)=12.83KPa/mg
 </p>
 <p class = "body-1">
-Meanwhile, according to the principle of mechanical transmission.
+  $$
 </p>
 <p class = "body-1">
-$$
-l = \theta \cdot r =r\cdot\theta_s\cdot A/A_0
-$$
+- Compared with the viscosity of **Mfp5-1** (11.05KPa/mg), the viscosity of **Mfp5-2** was improved to 12.83KPa/mg, which was 16.11% higher than that of Mfp5-1.
 </p>
 <p class = "body-1">
-From this, the number of pulses required to move a certain distance can be calculated.
+Therefore, we demonstrated, through comparative experiments, that the adhesion of the 2 repeats of Mfp5(Mfp5-2) was higher than that of the original Mfp5(Mfp5-1). The result shows that our improvement on the original part(<a href="http://parts.igem.org/Part:BBa_K1583002">BBa_K1583002</a>) is effective from the point of adhesion.
+</p>
+</v-card-text>
+<v-card-title class="text-h3">
+Regulation system
+</v-card-title>
+<v-card-text>
+  <p class = "body-1">
+**Improved Part:** <a href="http://parts.igem.org/Part:BBa_K3281005">BBa_K3281005</a>
 </p>
 <p class = "body-1">
-$$
-A=3200*(10/(1.25*3.24))
-$$
+We constructed a mechanosensory pathway in eukaryotic cells, which starts with the mechanosensory protein Piezo. The iGEM team <a href="https://2019.igem.org/Team:Harvard">Harvard 2019</a> had registered the **Mouse Piezo1 (mPiezo1)** into the registry but without any characterization data, and the **Assembly Compatibility** meets neither BioBrick <a href="http://parts.igem.org/Help:Standards/Assembly/RFC10">RFC[10]</a> nor <a href="http://parts.igem.org/Help:Standards/Assembly/Type_IIS">Type Type IIS</a>.
 </p>
 <p class = "body-1">
-In the main control chip, we choose ATmega328p here, this chip is compatible with Arduino environment, very easy in programming.
+We obtained plasmid pCDNA3.1 given by Dr. BaiLong Xiao containing **mPiezo1.1** and transfected it into HEK293 cells for characterization. The mPiezo1.1 is a splicing variant of mPiezo1 which lacks the deadbolt construction so gets the greater mechanical sensitivity. Even although our work on Piezo may not meet the standard of 'Improvement of an Existing Part' in the Medal Criteria Sheet, our efforts do contribute to the registry by supplementing the relevant data. 
 </p>
 <p class = "body-1">
-We also used CNC Shield V3 on top of Uno
+We supplemented a series of data about the characterization of Piezo1 and its pathways.
+</p>
+</v-card-text>
+<v-row justify="center"> <v-card-title class="text-h4 title">
+Overexpressing the Piezo1.1
+  </v-card-title>
+</v-row>
+<v-card-text>
+  <p class = "body-1">
+We firstly overexpressed the Piezo1.1 in HEK293 cells and test its expression by the red fluorescent protein mRuby2. The fluorescent photograph showed relatively good transfection productivity and cells' morphology.
 </p>
 <p class = "body-1">
-<v-img src="@/assets/Arduino-CNC-Shield-V3-Layout.png" />
+<v-img src="@/assets/0823-04-01.png" />
 </p>
 <p class = "body-1">
-<v-img src="@/assets/Real_Arduino-CNC-Shield-V3-Layout.jpg" />
+> Fig.1a: Transfected HEK293 cells in a 96 well, the red fluorescence is the mRuby2 after the Piezo1.1, the transfection reagent is lipofectamine2000 from Thermo Fisher Scientific. 4X objective
 </p>
 <p class = "body-1">
-This expansion board can easily drive 42 stepper motors.
+<v-img src="@/assets/0823-40-01.png" />
 </p>
 <p class = "body-1">
-<v-img src="@/assets/Arduino_Uno.jpg" />
+> Fig.1b:  Transfected HEK293 cells, showing normal morphology. The transfection reagent is lipofectamine2000 from Thermo Fisher Scientific, 40X objective
 </p>
 <p class = "body-1">
-Control the movement of the motor by operating the number and direction of pulses from the Arduino via software.
+Fig.1: Overexpressing the Piezo1.1 in HEK293 cells
 </p>
 <p class = "body-1">
-```C
+***<u>Fig.1a, Fig.1b放在同一行</u>***
 </p>
-<pre class="code">
-void step(boolean dir, byte dirPin, byte stepperPin, int steps)
-{
- digitalWrite(dirPin, dir);
- delay(50);
- for (int i = 0; i &lt; steps; i++) {
- digitalWrite(stepperPin, HIGH);
- delayMicroseconds(1000); 
- digitalWrite(stepperPin, LOW);
- delayMicroseconds(1000); 
- }
-}
-</pre>
-<p class = "body-1">
-Also interact with Arduino on PC to determine the position of drug release, input x,y position on PC, read the related data on Arduino and control the motor movement.
-The flowchart is as follows, first read the target position information and the present position information, determine whether the position is reached, if the position is reached then continue to wait for the PC input, anyway move to the target position.
-</p>
-<v-img src="@/assets/Flow_Chart_1.png" />
-<p class = "body-1">
-The way to interact with the PC is through the Arduino's serial communication, parsing the serial input. The input specified here is
-</p>
-<pre class="code">
--Format: M:<goal_x>,<goal_y>,<goal_z>
--Each input is .02f, similar to x.xx
--0&lt;=goal_x&lt;=25.00 cm
--0&lt;=goal_y&lt;=18.00 cm
--0&lt;=goal_z&lt;=1.00 cm
-</pre>
-<p class = "body-1">
-After this xyz three axis of freedom design is completed, we also added the x-axis-centered rotation, in order to fit the tricky angle for drug release more.
-</p>
-<v-img src="@/assets/Model_1.png" />
-<v-img src="@/assets/Real_1.jpg" />
-<p class = "body-1">
-Considering the torque provided by the servo, and our larger load. Here we choose the MG995 servo.
-</p>
-<v-img src="@/assets/mg995.jpg" />
-<p class = "body-1">
-In order to inject the drug in the syringe, an injection method by mechanical drive is designed here.
+</v-card-text>
+<v-row justify="center"> <v-card-title class="text-h4 title">
+Activating the Piezo1.1
+  </v-card-title>
+</v-row>
+<v-card-text>
+  <p class = "body-1">
+Using our pEGFP-GCaMP plasmid, we can test the activation of Piezo1 by cotransfecting the pEGFP-GCaMP plasmid and Piezo1.1 plasmid. Our data showed good cotransfection productivity and we recorded the activation of Piezo1.1. See more details on our <a href="https://2021.igem.org/Team:ShanghaiTech_China/Results">Results</a> page.
 </p>
 <p class = "body-1">
-When the rudder is turned through a certain angle, the drive rod will be pushed and the syringe will be squeezed and finally the drug will be injected.
+<v-img src="@/assets/Composite force.png" />
 </p>
 <p class = "body-1">
-<v-img src="@/assets/Model_2.png" />
+> Fig.2: Merge of the green channel and red channel, indicating the cotransfection of GCaMP and Piezo1.1
 </p>
 <p class = "body-1">
-<v-img src="@/assets/Real_2.jpg" />
+<video id="video" controls="" preload="none"> <source id="mp4" src="Yoda1 8times.mp4" type="video/mp4"> </video>
 </p>
 <p class = "body-1">
-The torque required here is not very large, so the SG90 servo was chosen.
+> Video.1: Fluorescence change of cells under the stimulation of 50uM Yoda, exposure time: 90ms, 20X objective
 </p>
 <p class = "body-1">
-<v-img src="@/assets/sg90.jpg" />
+<video id="video" controls="" preload="none"> <source id="mp4" src="force 4times.mp4" type="video/mp4"> </video>
 </p>
 <p class = "body-1">
-After the release of the drug requires UV curing, here we designed our own LED circuit for the UV lamp.
+> Video.2: Faster fluorescence change of cells under the stimulation of shear stress, exposure time: 90ms, 20X objective
 </p>
 <p class = "body-1">
-Here the wavelength of the light is 395nm.
+<video id="video" controls="" preload="none"> <source id="mp4" src="control_1.mp4" type="video/mp4"> </video>
 </p>
 <p class = "body-1">
-<v-img src="@/assets/UV_LED.JPG" />
+> Video.3: Fluorescence change of cells in control group, exposure time: 90ms, 20X objective
 </p>
 <p class = "body-1">
-Then again, a rotational degree of freedom is added to make it irradiate at a specific angle for curing.
+***<u>以上四个放在同一行</u>***
+</p>
+</v-card-text>
+<v-row justify="center"> <v-card-title class="text-h4 title">
+Downstream Pathway verification
+  </v-card-title>
+</v-row>
+<v-card-text>
+  <p class = "body-1">
+We designed a downstream pathway plasmid(<a href="http://parts.igem.org/Part:BBa_K3755014">BBa_K3755014</a>) pGL4.30-GFP to respond to the activation of Piezo1.1. The composite part (<a href="http://parts.igem.org/Part:BBa_K3755014">BBa_K3755014</a>) includes an NFAT-RE, Pmin and EGFP. Once Piezo1.1 is activated, cells with pGL4.30-GFP will express the EGFP. The data below showed the pathway is valid. See more details on our <a href="https://2021.igem.org/Team:ShanghaiTech_China/Results">Results</a> page.
 </p>
 <p class = "body-1">
-<v-img src="@/assets/Model_3.png" />
+<v-img src="@/assets/0928-40-03-green.png (green).png" />
 </p>
 <p class = "body-1">
-After that, in order to control the servo angle, we use Arduino Micro for control here.
+> Fig.3a: Green channel of the cells 24h after shaking, identifying the expression of EGFP, 40X objective
 </p>
 <p class = "body-1">
-<v-img src="@/assets/Arduino_Micro.jpg" />
+<v-img src="@/assets/0928-40-03-green.png (red).png" />
 </p>
 <p class = "body-1">
-Micro can control three different servos. The three different servos are named here as
+> Fig.3b: Red channel of the cells to identify the Piezo1.1, 40X objective
 </p>
 <p class = "body-1">
-S1:Rotary servo for LED <br/>
-S2:Rotary servo for syringe <br/>
-S3:Push servo for syringe <br/>
+<v-img src="@/assets/Composite.png" />
 </p>
 <p class = "body-1">
-The control command is: <code>&lt;servo name>:&lt;angle</code>
+> Fig.3c: Merge green and red channel to colocalize the cells 
 </p>
 <p class = "body-1">
-Angle between 0 and 180, such as let S1 turn to 90 degrees is S1:90
+**Fig.3: Downstream pathway verification of pGL4.30-GFP**
 </p>
 <p class = "body-1">
-The same goes for the control of UV LEDs.<br />
-Light on: L: On
-Off: L: Off
+***<u>上面三张图片放在一行</u>***
 </p>
 <p class = "body-1">
-The connection between Micro and Uno uses a soft serial connection, parsing the commands from the PC to Uno and forwarding them to Micro after judging that they are Micro's commands.
 </p>
-<p class = "body-1">
-All the circuit connections are shown in the following diagram. The connection between Micro and Uno uses a soft serial connection, parsing the commands from the PC to Uno and forwarding them to Micro after judging that they are Micro's commands.
-</p>
-<p class = "body-1">
-All the circuit connections are shown in the following diagram.
-</p>
-<p class = "body-1">
-<v-img src="@/assets/Circuit_Pic.png" />
-</p>
-<p class = "body-1">
-Such a hardware design can be applied not only in our project, but also in other iGem projects afterwards. 
-</p>
-<p class = "body-1">
-Our hardware can be used to automate different projects, such as fixed-point drug release and multiple test tube reactions, and reduce the workload.
-</p>
-<p class = "body-1">
-It is also very easy to replace the solvent in the injection tube. It can be adjusted for different application scenarios.
-</p>
-<p class = "body-1">
-The Micro controller code is following:
-<pre class="code">
-/*
-micro
- */
-#include &lt;Servo.h>
-#include &lt;string.h>
-#define LEDRoate 2
-#define TubeRoate 3
-#define Pusher 4
-#define UVLED 6
-#include&lt;SoftwareSerial.h>
-Servo TubeRoateServo;
-Servo LEDRoateServo;
-Servo PusherServo; 
-
-SoftwareSerial softSerial(10,11);
-int S1angle = 90;
-int S2angle = 90;
-int S3angle = 180;
- 
-void setup() {
-  Serial.begin(9600);
-  softSerial.begin(9600);
-  softSerial.listen();
-  TubeRoateServo.attach(TubeRoate);
-  LEDRoateServo.attach(LEDRoate);
-  PusherServo.attach(Pusher);
-  pinMode(UVLED, OUTPUT);
-  TubeRoateServo.write(90);
-  digitalWrite(UVLED, LOW);
-  LEDRoateServo.write(90);
-  PusherServo.write(180);
-}
-String Micro_String="";
-String Uno_String="";
-void loop() {
-  if(Serial.available()>0)
-  {
-    if(Serial.peek()!='\n')
-    {
-      Micro_String+=(char)Serial.read();
-    }
-    else
-    {
-      Serial.read();
-      Serial.print("Micro said:");
-      Serial.println(Micro_String);
-      softSerial.println(Micro_String);
-      Micro_String="";
-    }
-  }
-  String comdata = "";
-  String Newcomdata = "";
-  while (softSerial.available() > 0)  
-  {
-      comdata += char(softSerial.read());
-      delay(2);
-  }
-  if (comdata.length() > 0)
-  {
-      for(int i = 0; i &lt; comdata.length() ; i++)
-      {
-        if(comdata[i] != '\n' && comdata[i] != '\r')
-        {
-          Newcomdata += comdata[i];
-        }
-      }
-      if(Newcomdata[0] == 'L')
-      {
-        Serial.println(Newcomdata);
-        if(!Newcomdata.compareTo("L:On"))
-        {
-          
-          Serial.println("L:On");
-          softSerial.println("L:On");
-          digitalWrite(UVLED,HIGH);
-          delay(1000);
-          digitalWrite(UVLED,HIGH);
-        }
-        else if(!Newcomdata.compareTo("L:Off"))
-        {
-          
-          Serial.println("L:Off");
-          softSerial.println("L:Off");
-          digitalWrite(UVLED,LOW);
-        }
-      }
-      else if(Newcomdata[0] == 'S')
-      {
-        if(Newcomdata.length()>3 && Newcomdata[2] == ':')
-        {
-          if(Newcomdata[1] == '1')
-          {
-            if(Newcomdata[3] == '+')
-            {
-              S1angle += 10;
-            }
-            else if(Newcomdata[3] == '-')
-            {
-              S1angle -= 10;
-            }            
-            else
-            {
-              S1angle = 0;
-              for(int i = 3; i &lt; Newcomdata.length() ; i++)
-              {
-                S1angle = S1angle * 10 + (Newcomdata[i] - '0');
-              }
-            }
-            if(S1angle>=0 && S1angle&lt;=180)
-            {
-              TubeRoateServo.write(S1angle);
-              softSerial.print("S1:");
-              softSerial.println(S1angle);    
-            }
-          }
-          else if(Newcomdata[1] == '2')
-          {
-            if(Newcomdata[3] == '+')
-            {
-              S2angle += 10;
-            }
-            else if(Newcomdata[3] == '-')
-            {
-              S2angle -= 10;
-            }            
-            else
-            {
-              S2angle = 0;
-              for(int i = 3; i &lt; Newcomdata.length() ; i++)
-              {
-                S2angle = S2angle * 10 + (Newcomdata[i] - '0');
-              }
-            }
-            if(S2angle>=0 && S2angle&lt;=180)
-            {
-              LEDRoateServo.write(S2angle);
-              softSerial.print("S2:");
-              softSerial.println(S2angle);    
-            }                  
-          }
-          else if(Newcomdata[1] == '3')
-          {
-            if(Newcomdata[3] == '+')
-            {
-              S3angle += 10;
-            }
-            else if(Newcomdata[3] == '-')
-            {
-              S3angle -= 10;
-            }            
-            else
-            {
-              S3angle = 0;
-              for(int i = 3; i &lt; Newcomdata.length() ; i++)
-              {
-                S3angle = S3angle * 10 + (Newcomdata[i] - '0');
-              }
-            }
-            if(S3angle>=0 && S3angle&lt;=180)
-            {
-              PusherServo.write(S3angle);
-              softSerial.print("S3:");
-              softSerial.println(S3angle);    
-            }  
-          }
-        }
-      }
-      comdata = "";
-      Newcomdata = "";
-  }
-}
-<p class = "body-1">
-And Uno controller code is:
-</p>
-<pre class=code>
-
-/*
- arduino uno
- serial -----computer
- serial1----- nano softwearserial
- */
-#include&lt;SoftwareSerial.h>
-SoftwareSerial softSerial(12,11);
-#include &lt;string.h>
-#include &lt;stdlib.h>
-
-#define demo 1
-
-#define EN 8 
-#define X_DIR 6
-#define Y_DIR 5 
-#define Z_DIR 7 
-#define X_STP 3 
-#define Y_STP 2 
-#define Z_STP 4 
-#define Positive false
-#define Negitive true
-
-
-#define YMAX 15 
-#define XMAX 25 
-#define ZMAX 1
-String Uno_String="";
-String Mrico_String="";
-
-float now_x = 0;
-float now_y = 0;
-float now_z = 0;
-
-float goal_x = 0;
-float goal_y = 0;
-float goal_z = 0;
-
-int error_code = 0;
-
-float dis = 10;
-int dis_step = 3200*(dis/(1.3*3.14));
-char input[20] = "";
-
-float PWMPin[6] = {3, 5, 6, 9, 10, 11}, mark = 0;
-
-int cal_step(float now,float goal)
-{
-  return (3200*abs(goal-now)/(1.3*3.14));
-}
-
-void step(boolean dir, byte dirPin, byte stepperPin, int steps)
-{
- digitalWrite(dirPin, dir);
- delay(50);
- for (int i = 0; i &lt; steps; i++) 
- {
- digitalWrite(stepperPin, HIGH);
- delayMicroseconds(100); 
- digitalWrite(stepperPin, LOW);
- delayMicroseconds(100); 
- }
-}
-
- 
-void setup() {
-    Serial.begin(9600);
-    softSerial.begin(9600);
-    softSerial.listen();
-    pinMode(X_DIR, OUTPUT); pinMode(X_STP, OUTPUT);
-    pinMode(Y_DIR, OUTPUT); pinMode(Y_STP, OUTPUT);
-    pinMode(Z_DIR, OUTPUT); pinMode(Z_STP, OUTPUT);
-    pinMode(EN, OUTPUT);
-    digitalWrite(EN, LOW);
-    Serial.println("++++++++++++++++++++++++++++ ");
-    Serial.println("Ready");
-}
-
-
-void motor_move()
-{  
-  if(now_x != goal_x)
-  {
-    step((now_x &lt; goal_x), X_DIR, X_STP, cal_step(now_x,goal_x)); 
-    now_x = goal_x;
-  }  
-  
-  if(now_y != goal_y)
-  {
-    step((now_y > goal_y), Y_DIR, Y_STP, cal_step(now_y,goal_y));
-    now_y = goal_y;  
-  }
-  
-  if(now_z != goal_z)
-  {
-    step((now_z > goal_z), Z_DIR, Z_STP, cal_step(now_z,goal_z));
-    now_z = goal_z;
-  }
-
-  Serial.println("Arrived!");
-}
-
-
-
- 
-void loop() {
-  float numdata[6] = {0};
-  while(Serial.available()>0)
-  {
-    if(Serial.peek()!='\n')
-    {
-      Uno_String+=(char)Serial.read();
-     
-    }
-    else
-    {
-      Serial.read();
-      if(Uno_String.length()>=1)
-      {
-        if(Uno_String[0] == 'M')
-        {
-          Serial.print("Move data:");
-          Serial.println(Uno_String);
-          int point = 0;
-          int j = 0;
-          for(int i = 2; i &lt; Uno_String.length() ; i++)
-          {
-            if(Uno_String[i] == ',')
-            {
-              j++;
-              if(point != 0)
-              {
-                point = 0;
-              }
-            }
-            else if(Uno_String[i] == '.')
-            {
-               point = 1;
-            }
-            else if(Uno_String[i] != '.' && Uno_String[i] != ',')
-            {
-              if(point == 0)
-             {
-                numdata[j] = numdata[j] * 10 + (Uno_String[i] - '0');
-             }
-             else
-             {
-                numdata[j] = numdata[j] + (float)(Uno_String[i] - '0')/(pow(10,point));
-                point++;
-             }
-            }
-          }
-          for(int i = 0;i&lt;j+1;i++)
-          {
-            if(i == 0)
-            {
-              goal_x = numdata[i];
-              Serial.println(goal_x);
-            }
-            else if(i == 1)
-            {
-              goal_y = numdata[i];
-              Serial.println(goal_y);
-            }
-            else if(i == 2)
-            {
-              goal_z = numdata[i];
-              Serial.println(goal_z);
-            }
-          }
-        }
-        else if(Uno_String[0] == 'L' || Uno_String[0] == 'S')
-        {
-          Serial.print("Uno said:");
-          Serial.println(Uno_String);
-          softSerial.println(Uno_String);
-        }
-        Uno_String="";
-      }
-    }
-  }  
-  if(softSerial.available()>0)
-  {
-    if(softSerial.peek()!='\n')
-    {
-      Mrico_String+=(char)softSerial.read();
-    }
-    else
-    {
-      softSerial.read();
-      Serial.print("Mirco said:");
-      Serial.println(Mrico_String);
-      Mrico_String="";
-    }
-  }
-  delay(1000);
-  motor_move();
-}
-</pre>
+</v-card-text>
             </v-container>
           </v-card>
         </template>
