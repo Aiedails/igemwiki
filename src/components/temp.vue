@@ -107,255 +107,530 @@
             <v-container style="padding: 20px">
         
 <v-card-title class="text-h3">
+Proof of concept
+</v-card-title>
+<v-row justify="center"> <v-card-title class="text-h4 title">
+Overview
+  </v-card-title>
+</v-row>
+<v-card-text>
+  <p class = "body-1">
+This year, ShanghaiTech_China developed a new osteogenic glue with a mechanical sensory regulation system. To prove the concept and get a reliable product, we a series of experiments to prove the system is practicable. The results have almost fully convinced our concept.  See more experiment designs on our <a href="https://2021.igem.org/Team:ShanghaiTech_China/Design">Design</a> page, and more results on our <a href="https://2021.igem.org/Team:ShanghaiTech_China/Results">Results</a> page.
+</p>
+</v-card-text>
+<v-row justify="center"> <v-card-title class="text-h4 title">
 Adhesion system
+  </v-card-title>
+</v-row>
+<v-card-title class="text-h5">
+Expressing Mfp in *E.coli*
 </v-card-title>
 <v-card-text>
- <p class = "body-1">
-<strong>Improved Part: <a href="http://parts.igem.org/Part:BBa_K1583002">BBa_K1583002</a></strong>
+  <p class = "body-1">
+For the adhesion system, we firstly proved that *E.coli* can be a high-yield expression chasis for Mfp. We construct two kinds of mfp5 expression systems to prove the improvement of mfp5(See details on <a href="https://2021.igem.org/Team:ShanghaiTech_China/Improvement">Improvement</a> page). We have explored the induction conditions of the Mfp-expression system(Fig.1a) and successfully purified the mfp5-1 and Mfp5-2(Fig.1b, Fig.1c). These results show that *E.coli* can be a high-yield expression chasis for Mfp.
 </p>
 <p class = "body-1">
-We have done codon optimization on the original Mfp5 sequence and obtain the Basic Part <a href="http://parts.igem.org/Part:BBa_K3755002">BBa_K3755002</a> to increase the translation efficiency of recombinant protein in *E.coli*. To further improve protein production, we also introduced the AKTK expression tag and obtained the Composite Part <a href="http://parts.igem.org/Part:BBa_K3755011">BBa_K3755011</a>(AKTK-his tag-linker-Mfp5 CDS, Mfp 5-1). But unfortunately, the team(<a href="https://2015.igem.org/Team:TU_Delft">TU_Delft 2015) that registered the part <a href="http://parts.igem.org/Part:BBa_K1583002">BBa_K1583002</a> did not successfully purify Mfp5 (no target bands were obtained in SDS-Page) and didn't get the yield data. And due to time reasons, we only characterized the protein yield of our optimized sequence, and there was no time to characterize the original sequence. So the optimization verification for improving protein yield could not be completed according to the requirements in the Medal Criteria Sheet.
+<v-img src="@/assets/探索诱导条件.png" />
+</p>
+<p class = "body-1">
+> Fig.1a: SDS-PAGE of mfp5-1 expression in different induction conditions
 </p>
 <p class = "body-1">
 <v-img src="@/assets/mfp5-1 第一次纯化.png" />
 </p>
 <p class = "body-1">
-> Fig.1a: SDS-PAGE of purificaton of Mfp5-1. We can clearly find the band of Mfp5-1 between 15-20 kDa, which means we have successfully purified the Mfp5-1 protein. After nickel ion affinity chromatograohy, we analyed the OD value of purified protein solution at 280 nm and calculated that the aveerage yield of Mfp5-1 was 24 mg per liter of bacteria solution. But due to the lack of yield data of the original sequence, this yield data could not be used as evidence of our improvement.
-</p>
-<p class = "body-1">
-However, in addition to yield, we have made another improvement. In the literature, we learned that repeating the sequence of Mfp5 can lead to higher adhesion. So we constructed the expression system of double repetition(Mfp5-2,[BBa_K3755012](http://parts.igem.org/Part:BBa_K3755012)) and triple repetition(cfa-n-Mfp5-2,<a href="http://parts.igem.org/Part:BBa_K3755030">BBa_K3755030</a> & cfa-c-Mfp5-1,<a href="http://parts.igem.org/Part:BBa_K3755029">BBa_K3755029</a>), and then obtained the purified and modified Mfp5-1 and Mfp5-2 proteins（Fig.1a&1b）. 
+> Fig.1b: SDS-PAGE of first purification of mfp5-1
 </p>
 <p class = "body-1">
 <v-img src="@/assets/mfp5-2 第一次纯化.png" />
 </p>
 <p class = "body-1">
-> Fig.1b: SDS-PAGE of purificaton of Mfp5-2. We can clearly find the band of Mfp5-2 between 20-25 kDa, which means we have successfully purified the Mfp5-2 protein. However, an unexpected band between 15-20 kDa show in many samples, including after induction, supernatant, washing and elution. It did not result from nickel medium since the band also occurred in after induction and supernatant samples. So we inferred that mfp5-2 might break in half during expression since it is a fusion protein made up with two repeats of mfp5-1.
+> Fig.1c: SDS-PAGE of first purification of mfp5-2
 </p>
 <p class = "body-1">
-We independently designed the protein adhesion test experiment(seen in <a href="https://2021.igem.org/Team:ShanghaiTech_China/Experiments">Experiments</a>), and finally obtained surprising experimental results(seen in <a href="https://2021.igem.org/Team:ShanghaiTech_China/Results">Results</a>).
+**Fig.1: The expression of mfp5-1 and mfp5-2 in *E.coli*** 
 </p>
 <p class = "body-1">
-<v-img src="@/assets/粘性测试实验.jpg" />
-</p>
-<p class = "body-1">
-> Fig.2: Adhesion test experiment of Mfp5-1&Mfp5-2. To characterize as much as possible the viscosity of tyrosine enzyme-modified mefp5-1 and mefp5-2, take 20ul of the concentrated protein solution(concentration: mefp5-1=50mg/ml,mefp5-2=40mg/ml) to attach the PCR tube and the tube cover(top left and top right) (The PCR tube cover is trimmed and polished to a round face with a diameter of 7mm)to the center of the petri dish and perform a viscidity test after 48 hours of drying in a 37-degree oven. Lift the petri dish at a certain height through the PCR tube and add the glass beads one by one to the petri dish until the last glass bead is added to cause the petri dish to fall off with the PCR tube(bottom left and bottom right). The viscosity of the added protein can be calculated by weighing the total weight of the Petri dish and glass beads.
-</p>
-<p class = "body-1">
-We calculated the results by the following steps:
-</p>
-<p class = "body-1">
-Mfp5-1：
-</p>
-<p class = "body-1">
-- PCR tube cover area：
-</p>
-<p class = "body-1">
-- The total weight of the petri dish and glass beads, i.e. the maximum pull that Mfp5-1 can withstand in the experiment：
-</p>
-<p class = "body-1">
-  $$
-  F=43.24g×9.8kg/N=(43.24/1000)kg×9.8kg/N=0.42N
-  $$
-</p>
-<p class = "body-1">
-- The viscosity produced by Mfp5-1：
-</p>
-<p class = "body-1">
-  $$
-</p>
-<p class = "body-1">
-  P=F/S=0.42N/0.38cm^2=1.105N/cm^2=11.05KPa
-</p>
-<p class = "body-1">
-  $$
-</p>
-<p class = "body-1">
-- **The viscosity produced per milligram of protein:** 
-</p>
-<p class = "body-1">
-  $$
-</p>
-<p class = "body-1">
-  P'=P/m=11.05KPa/(50mg/ml×0.02ml)=11.05KPa/m
-</p>
-<p class = "body-1">
-  $$
+***<u>(a,b,c放在同一行)</u>***
 </p>
 </v-card-text>
-<v-card-title class="text-h">
-Mfp5-2
+<v-card-title class="text-h5">
+Mechanical test of Mfp
 </v-card-title>
 <v-card-text>
   <p class = "body-1">
-- PCR tube cover area：
+After extracting the Mfp, we then tested its mechanical properties in our application scenario. We used the common PCR tube and the tube cover and attached them by Mfp after drying in a 37-degree oven for 48 hours(The mussel protein solution does not have the adhesive ability, that is why we introduce a hydrogel system below).  The adhesion of mfp5-1 is measured as 11.05KPa/mg and mfp5-2 is measured as 12.83KPa/mg, which proved the improvement of mfp5-2 compared to mfp5-1. See more details on our <a href="https://2021.igem.org/Team:ShanghaiTech_China/Results">Results</a> page.
 </p>
 <p class = "body-1">
-  $$
+<v-img src="@/assets/5-1.png" />
 </p>
 <p class = "body-1">
-  S=π×r^2=π×(0.35cm)^2=0.38cm^2
+> Fig.2a: Add 20ul of protein solution to the center of the petri dish.
 </p>
 <p class = "body-1">
-  $$
+<v-img src="@/assets/5-11-16334099544521.png" />
 </p>
 <p class = "body-1">
-- The total weight of the petri dish and glass beads, i.e. the maximum pull that Mfp5- can withstand in the experiment：
+> Fig.2b: Attach PCR tube to the center of the petri dish
 </p>
 <p class = "body-1">
-  $$
+<v-img src="@/assets/9{SIIXS9UH`V9G9CNQ84$0P.png" />
 </p>
 <p class = "body-1">
-  F=39.46g×9.8kg/N=(39.46/1000)kg×9.8kg/N=0.39N
+> Fig.2c: Fill the petri dish one by one with glass beads.
 </p>
 <p class = "body-1">
-  $$
+<v-img src="@/assets/5-22.png" />
 </p>
 <p class = "body-1">
-- The viscosity produced by Mfp5-2：
+> Fig.2d: Record the weight of glass beads when separating petri dish from PCR tube.
 </p>
 <p class = "body-1">
-  $$
+**Fig.2: Testing the mechanical properties of Mfp in application scenario**
 </p>
 <p class = "body-1">
-  P=F/S=0.39N/0.38cm^2=1.026N/cm^2=10.26KPa
-</p>
-<p class = "body-1">
-  $$
-</p>
-<p class = "body-1">
-- **The viscosity produced per milligram of protein:** 
-</p>
-<p class = "body-1">
-  $$
-</p>
-<p class = "body-1">
-  P'=P/m=10.26KPa/(40mg/ml×0.02ml)=12.83KPa/mg
-</p>
-<p class = "body-1">
-  $$
-</p>
-<p class = "body-1">
-- Compared with the viscosity of **Mfp5-1** (11.05KPa/mg), the viscosity of **Mfp5-2** was improved to 12.83KPa/mg, which was 16.11% higher than that of Mfp5-1.
-</p>
-<p class = "body-1">
-Therefore, we demonstrated, through comparative experiments, that the adhesion of the 2 repeats of Mfp5(Mfp5-2) was higher than that of the original Mfp5(Mfp5-1). The result shows that our improvement on the original part(<a href="http://parts.igem.org/Part:BBa_K1583002">BBa_K1583002</a>) is effective from the point of adhesion.
-</p>
-</v-card-text>
-<v-card-title class="text-h3">
-Regulation system
-</v-card-title>
-<v-card-text>
-  <p class = "body-1">
-**Improved Part:** <a href="http://parts.igem.org/Part:BBa_K3281005">BBa_K3281005</a>
-</p>
-<p class = "body-1">
-We constructed a mechanosensory pathway in eukaryotic cells, which starts with the mechanosensory protein Piezo. The iGEM team <a href="https://2019.igem.org/Team:Harvard">Harvard 2019</a> had registered the **Mouse Piezo1 (mPiezo1)** into the registry but without any characterization data, and the **Assembly Compatibility** meets neither BioBrick <a href="http://parts.igem.org/Help:Standards/Assembly/RFC10">RFC[10]</a> nor <a href="http://parts.igem.org/Help:Standards/Assembly/Type_IIS">Type Type IIS</a>.
-</p>
-<p class = "body-1">
-We obtained plasmid pCDNA3.1 given by Dr. BaiLong Xiao containing **mPiezo1.1** and transfected it into HEK293 cells for characterization. The mPiezo1.1 is a splicing variant of mPiezo1 which lacks the deadbolt construction so gets the greater mechanical sensitivity. Even although our work on Piezo may not meet the standard of 'Improvement of an Existing Part' in the Medal Criteria Sheet, our efforts do contribute to the registry by supplementing the relevant data. 
-</p>
-<p class = "body-1">
-We supplemented a series of data about the characterization of Piezo1 and its pathways.
+***<u>(a,b放在同一行，c,d放在同一行)</u>***
 </p>
 </v-card-text>
 <v-row justify="center"> <v-card-title class="text-h4 title">
-Overexpressing the Piezo1.1
+Hydrogel system
   </v-card-title>
 </v-row>
+<v-card-title class="text-h5">
+Preparation of GelMA
+</v-card-title>
 <v-card-text>
   <p class = "body-1">
-We firstly overexpressed the Piezo1.1 in HEK293 cells and test its expression by the red fluorescent protein mRuby2. The fluorescent photograph showed relatively good transfection productivity and cells' morphology.
+Gelatin-methacryloyl(GelMA) is prepared by adding acrylic anhydride to the gelatin solution. Functional groups and degrees of methacryloyl modification are measured by Nuclear Magnetic Resonance Spectroscopy-1H(NMR-1H). 
+</p>
+<p class = "body-1">
+<v-img src="@/assets/GelMA1-1.png" />
+</p>
+<p class = "body-1">
+> Fig.3a: Identifying the functional group by the chemical shift(ppm)
+</p>
+<p class = "body-1">
+<v-img src="@/assets/GelMA2-2.png" />
+</p>
+<p class = "body-1">
+> Fig.3b: Identifying the degrees of methacryloyl modification in terms of relative integral of characteristic peak
+</p>
+<p class = "body-1">
+Fig.3 Preparation of Gelatin-methacryloyl(GelMA)
+</p>
+</v-card-text>
+<v-card-title class="text-h5">
+Rheological properties
+</v-card-title>
+<v-card-text>
+  <p class = "body-1">
+Our ideal osteogenic glue should have a moderate modulus and rapid polymerization. A moderate modulus(10^3-10^4)is to have good biocompatibility and rapid polymerization for a shorter surgery time. To test the rheological properties of our material, we used the TA Discovery HR-2 hybrid rheometer to test our material and we found the appropriate ratio of the three components(12.5% GelMA +1.25% Alginate + 4mg/ml Mussel protein)(Fig.4a). We used UV curing accessories to test the change of modulus during the solidification. We found that the UV curing time is around 2-8s, which is very rapid polymerization(Fig.4b). Moreover, we did the oscillation sweep to test its other rheological properties(Fig.4c, Fig.4d), the oscillation test showed our material can keep the modulus under 75% oscillation strain, bearing the biggest 300% oscillation strain, which is qualified to be an osteogenic glue. 
+</p>
+<p class = "body-1">
+<v-img src="@/assets/流变1.png" />
+</p>
+<p class = "body-1">
+> Fig.4a: A moderate modulus by changing the ratio of the three components
+</p>
+<p class = "body-1">
+<v-img src="@/assets/流变2.png" />
+</p>
+<p class = "body-1">
+> Fig.4b: A rapid UV polymerization, costing only 2-8s
+</p>
+<p class = "body-1">
+<v-img src="@/assets/2.png" />
+</p>
+<p class = "body-1">
+> Fig.4c: Modulus / Angular frequency curve of MIBOM
+</p>
+<p class = "body-1">
+<v-img src="@/assets/3.png" />
+</p>
+<p class = "body-1">
+> Fig.4d: Modulus / Oscillation strain curve of MIBOM
+</p>
+<p class = "body-1">
+**Fig.8: Rheological properties of the MIBOM**
+</p>
+</v-card-text>
+<v-card-title class="text-h5">
+Mechanical Test of hydrogel + Mfp
+</v-card-title>
+<v-card-text>
+  <p class = "body-1">
+To make a UV-crosslinking osteogenic glue, we combined the hydrogel system and adhesion system. We then used the same method to test the mechanical properties of hydrogel + Mfp in the application scenario. The adhesion of the GelMA+ Mfp system is measure as 37.02 *KPa* and the adhesion of GelMA only is measure as 27.18 *KPa*. The mussel mucin +GELMA system produced a stronger adhesion than GELMA hydrogel alone, which is increased by 36.2% compared with GelMA alone and increased by about 260.8% compared with mussel mucin alone. See more details on our <a href="https://2021.igem.org/Team:ShanghaiTech_China/Results">Results</a> page.
+</p>
+<p class = "body-1">
+<v-img src="@/assets/1-4.png" />
+</p>
+<p class = "body-1">
+> Fig.5a: Glue the PCR tube to the petri dish with GelMA or GelMA+Mussel mucin
+</p>
+<p class = "body-1">
+<v-img src="@/assets/1-5.png" />
+</p>
+<p class = "body-1">
+> Fig.5b: Use UV light to cure GelMA or GelMA+Mussel mucin
+</p>
+<p class = "body-1">
+<v-img src="@/assets/1-6.png" />
+</p>
+<p class = "body-1">
+> Fig.5c: Fill the petri dish one by one with glass beads and weights.
+</p>
+<p class = "body-1">
+<v-img src="@/assets/1-1.png" />
+</p>
+<p class = "body-1">
+> Fig.5d: Record the weight of glass beads when separated petri dish from PCR tube
+</p>
+<p class = "body-1">
+**Fig.5: Mechanical Test of GelMA + Mfp system** 
+</p>
+<p class = "body-1">
+***<u>(a,b 放在同一行，c,d放在同一行)</u>***
+</p>
+</v-card-text>
+<v-card-title class="text-h5">
+Cell survival test
+</v-card-title>
+<v-card-title class="text-h6">
+Phototoxicity test
+</v-card-title>
+<v-card-text>
+  <p class = "body-1">
+We had concerned that 405nm excitation light will kill the cells during the solidification. So we designed a phototoxicity test to see the influence of light. The death rate calculated showed a very small influence on cells(Fig.6a).
+</p>
+<p class = "body-1">
+<v-img src="@/assets/紫外-16334114370682.png" />
+</p>
+<p class = "body-1">
+> Fig.6: Death rate  of cells under different UV light exposure time
+</p>
+</v-card-text>
+<v-card-title class="text-h6">
+Viability of cells in hydrogel
+</v-card-title>
+<v-card-text>
+  <p class = "body-1">
+In our design, cells need to be encapsulated into the hydrogel and keep bioactive for a long time. So we do 7-day and 21-day viability of cells in hydrogel to indicate the short-term and long-term viability of cells in the hydrogel. (Fig.7a, Fig.7b)
+</p>
+<p class = "body-1">
+<v-img src="@/assets/7 day.png" />
+</p>
+<p class = "body-1">
+> Fig.7a: Short-term viability of cells in hydrogel
+</p>
+<p class = "body-1">
+<v-img src="@/assets/Long term.jpg" />
+</p>
+<p class = "body-1">
+> Fig.7b: Long-term viability of cells in hydrogel
+</p>
+<p class = "body-1">
+***<u>(a,b放在同一行)</u>***
+</p>
+</v-card-text>
+<v-row justify="center"> <v-card-title class="text-h4 title">
+Stress-sensitive regulation system 
+  </v-card-title>
+</v-row>
+<v-card-title class="text-h5">
+Overexpressing Piezo1.1 in HEK293 cells 
+</v-card-title>
+<v-card-text>
+  <p class = "body-1">
+Piezo1.1 is a kind of stress-sensitive membrane protein, we aim to build a Piezo1.1 overexpression cell line to feel the stress and then degrade the hydrogel. We firstly overexpressed the Piezo1.1 in HEK293 cells and find good transfection productivity and relatively good cell morphology. (Fig.8a, Fig.8b)
 </p>
 <p class = "body-1">
 <v-img src="@/assets/0823-04-01.png" />
 </p>
 <p class = "body-1">
-> Fig.1a: Transfected HEK293 cells in a 96 well, the red fluorescence is the mRuby2 after the Piezo1.1, the transfection reagent is lipofectamine2000 from Thermo Fisher Scientific. 4X objective
+> Fig.8a: Transfected HEK293 cells in a 96 well, the red fluorescence is the mRuby2 after the Piezo1.1, the transfection reagent is lipofectamine2000 from Thermo Fisher Scientific. 4X objective
 </p>
 <p class = "body-1">
 <v-img src="@/assets/0823-40-01.png" />
 </p>
 <p class = "body-1">
-> Fig.1b:  Transfected HEK293 cells, showing normal morphology. The transfection reagent is lipofectamine2000 from Thermo Fisher Scientific, 40X objective
-</p>
-<p class = "body-1">
-Fig.1: Overexpressing the Piezo1.1 in HEK293 cells
-</p>
-<p class = "body-1">
-***<u>Fig.1a, Fig.1b放在同一行</u>***
+> Fig.8b: Transfected HEK293 cells, showing normal morphology. The transfection reagent is lipofectamine2000 from Thermo Fisher Scientific. 40X objective
 </p>
 </v-card-text>
-<v-row justify="center"> <v-card-title class="text-h4 title">
+<v-card-title class="text-h5">
 Activating the Piezo1.1
-  </v-card-title>
-</v-row>
+</v-card-title>
+<v-card-title class="text-h6">
+Cotransfection of Piezo1.1 and GCaMP
+</v-card-title>
 <v-card-text>
   <p class = "body-1">
-Using our pEGFP-GCaMP plasmid, we can test the activation of Piezo1 by cotransfecting the pEGFP-GCaMP plasmid and Piezo1.1 plasmid. Our data showed good cotransfection productivity and we recorded the activation of Piezo1.1. See more details on our <a href="https://2021.igem.org/Team:ShanghaiTech_China/Results">Results</a> page.
+After overexpressing the Piezo1.1 in HEK293 cells, we then test the bioactivity of Piezo1.1. To indicate the influx of calcium ions, we used a genetically encoded calcium indicator, GCaMP6m, to test whether calcium entered cells after stimulations. Without calcium, GCaMP6m only has very low emitted light. When four calcium ions attach to CaM, the conformation of cpGFP will be changed, which lead to an obvious increase of emitted light at 510nm. The merge of the green and red channels showed good cotransfection productivity.
+</p>
+<p class = "body-1">
+<v-img src="@/assets/force 4times.png" />
+</p>
+<p class = "body-1">
+> Fig.9a: Green fluorescence of GCaMP after the activation of Piezo1.1 by force, 20X objective, indicating the transfection of pEGFP-GCaMP
+</p>
+<p class = "body-1">
+<v-img src="@/assets/0930 red 20 02.png" />
+</p>
+<p class = "body-1">
+> Fig.9b: Red fluorescence of Piezo1.1-mRuby2, indicating the transfection of Piezo1.1
 </p>
 <p class = "body-1">
 <v-img src="@/assets/Composite force.png" />
 </p>
 <p class = "body-1">
-> Fig.2: Merge of the green channel and red channel, indicating the cotransfection of GCaMP and Piezo1.1
+> Fig.9c: Merge of the green channel and red channel, indicating the cotransfection of GCaMP and Piezo1.1
 </p>
 <p class = "body-1">
-<video id="video" controls="" preload="none"> <source id="mp4" src="Yoda1 8times.mp4" type="video/mp4"> </video>
+<v-img src="@/assets/0930 bright 20 02.png" />
 </p>
 <p class = "body-1">
-> Video.1: Fluorescence change of cells under the stimulation of 50uM Yoda, exposure time: 90ms, 20X objective
+> Fig.9d: Bright field of the corresponding cells cotransfected with two plasmids
 </p>
 <p class = "body-1">
-<video id="video" controls="" preload="none"> <source id="mp4" src="force 4times.mp4" type="video/mp4"> </video>
+**Fig.17: Cotransfection of pEGFP-GCaMP and Piezo1.1**
+</p>
+</v-card-text>
+<v-card-title class="text-h6">
+Calcium influx detection
+</v-card-title>
+<v-card-text>
+  <p class = "body-1">
+We then gave shear stress to the cells by sucking out the culture medium, and we record an obvious fluorescence change during the process. (Video.1) And control group showed no obvious change in fluorescence(Video.2)
 </p>
 <p class = "body-1">
-> Video.2: Faster fluorescence change of cells under the stimulation of shear stress, exposure time: 90ms, 20X objective
+ <video id="video" controls="" preload="none"> <source id="mp4" src="force 4times.mp4" type="video/mp4"> </video>
+</p>
+<p class = "body-1">
+> Video.1: Faster fluorescence change of cells under the stimulation of shear stress, exposure time: 90ms, 20X objective
 </p>
 <p class = "body-1">
 <video id="video" controls="" preload="none"> <source id="mp4" src="control_1.mp4" type="video/mp4"> </video>
 </p>
 <p class = "body-1">
-> Video.3: Fluorescence change of cells in control group, exposure time: 90ms, 20X objective
+> Video.2: Faster fluorescence change of cells under the stimulation of shear stress, exposure time: 90ms, 20X objective
 </p>
 <p class = "body-1">
-***<u>以上四个放在同一行</u>***
+We also did the positive control group and developed a fluorescence quantitative analysis method to prove our concept. See more details on our <a href="https://2021.igem.org/Team:ShanghaiTech_China/Results">Results</a> page.
 </p>
 </v-card-text>
-<v-row justify="center"> <v-card-title class="text-h4 title">
-Downstream Pathway verification
-  </v-card-title>
-</v-row>
+<v-card-title class="text-h5">
+Downstream pathway verification
+</v-card-title>
+<v-card-title class="text-h6">
+Fluorescence colocalization
+</v-card-title>
 <v-card-text>
   <p class = "body-1">
-We designed a downstream pathway plasmid(<a href="http://parts.igem.org/Part:BBa_K3755014">BBa_K3755014</a>) pGL4.30-GFP to respond to the activation of Piezo1.1. The composite part (<a href="http://parts.igem.org/Part:BBa_K3755014">BBa_K3755014</a>) includes an NFAT-RE, Pmin and EGFP. Once Piezo1.1 is activated, cells with pGL4.30-GFP will express the EGFP. The data below showed the pathway is valid. See more details on our <a href="https://2021.igem.org/Team:ShanghaiTech_China/Results">Results</a> page.
+We added a GFP gene in the downstream plasmid pGL4.30-GFP. The downstream plasmid pGL4.30-GFP will be activated by calcium influx, which is the outcome of the activation of Piezo1.1. In this part, we are convinced that the downstream pathway is feasible. Once the pGL4.30-GFP is activated, the EGFP is expressed and the colocalization of two kinds of fluorescent protein will prove the feasibility of the downstream pathway.
+</p>
+<p class = "body-1">
+<v-img src="@/assets/下游测试.png" />
+</p>
+<p class = "body-1">
+> Fig.10a: Experiment procedure of testing the downstream pathway
 </p>
 <p class = "body-1">
 <v-img src="@/assets/0928-40-03-green.png (green).png" />
 </p>
 <p class = "body-1">
-> Fig.3a: Green channel of the cells 24h after shaking, identifying the expression of EGFP, 40X objective
+> Fig.10b: Green channel of the cells 24h after shaking, identifying the expression of EGFP, 40X objective
 </p>
 <p class = "body-1">
 <v-img src="@/assets/0928-40-03-green.png (red).png" />
 </p>
 <p class = "body-1">
-> Fig.3b: Red channel of the cells to identify the Piezo1.1, 40X objective
+> Fig.10c: Red channel of the cells to identify the Piezo1.1, 40X objective
 </p>
 <p class = "body-1">
 <v-img src="@/assets/Composite.png" />
 </p>
 <p class = "body-1">
-> Fig.3c: Merge green and red channel to colocalize the cells 
+> Fig.10d: Merge green and red channel to colocalize the cells 
 </p>
 <p class = "body-1">
-**Fig.3: Downstream pathway verification of pGL4.30-GFP**
+**Fig.10: Expression of pGL4.30-GFP and Piezo1.1 after the stimulation of shaking**
 </p>
 <p class = "body-1">
-***<u>上面三张图片放在一行</u>***
-</p>
-<p class = "body-1">
+We tried different ways to stimulate the cells and the results showed good fluorescence colocalization. See more details on our [Results](https://2021.igem.org/Team:ShanghaiTech_China/Results) page.
 </p>
 </v-card-text>
+<v-card-title class="text-h6">
+Activating the pathway in the hydrogel
+</v-card-title>
+<v-card-text>
+  <p class = "body-1">
+To further prove the Piezo1.1-based stress-sensitive regulation system is also useful in our application scenario, we encapsulated cells into hydrogels and applied force to the hydrogel. We want to prove the hydrogel can be a medium for mechanical conduction. Finally, we observe the fluorescent signal of the green channel(Fig.11a) and a good colocalization of two kinds of fluorescent signal(Fig.11b, Fig.11c)
+</p>
+<p class = "body-1">
+<v-img src="@/assets/0903-40-green-hydrogel-7.5s.png (green).png" />
+</p>
+<p class = "body-1">
+> Fig.11a: Green channel of the cells 24h after the stimulation of mechanical conduction of hydrogel, identifying the expression of EGFP, 20X objective
+</p>
+<p class = "body-1">
+<v-img src="@/assets/0903-40-green-hydrogel-7.5s.png (red).png" />
+</p>
+<p class = "body-1">
+> Fig.11b: Red channel of the cells to identify the Piezo1.1, 20X objective
+</p>
+<p class = "body-1">
+<v-img src="@/assets/Composite-16331936792826.png" />
+</p>
+<p class = "body-1">
+> Fig.11c: Merge green and red channel to colocalize the cells 
+</p>
+<p class = "body-1">
+**Fig.11: Expression of pGL4.30-GFP and Piezo1.1 after mechanical conduction of hydrogel and control group.**
+</p>
+</v-card-text>
+<v-row justify="center"> <v-card-title class="text-h4 title">
+Drug system
+  </v-card-title>
+</v-row>
+<v-card-title class="text-h6">
+Drug choices
+</v-card-title>
+<v-card-text>
+  <p class = "body-1">
+We interviewed some experts and looked through papers to identify some drugs that are beneficial to the bone repair, we collected these data and compiled them into the following table:
+</p>
+<v-simple-table>
+              <template v-slot:default>
+                <thead>
+                  <tr>
+                    <th class="text-center">Drug</th>
+                    <th class="text-center">Function</th>
+                    <th class="text-center">Reference</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="text-center">β-glycerophosphate</th>
+                    <th class="text-center">Phosphate provision</th>
+                    <th class="text-center">Gerstenfeld, L. C., Chipman, S. D., Glowacki, J., & Lian, J. B. (1987). Expression of differentiated function by mineralizing cultures of chicken osteoblasts. Developmental biology, 122(1), 49–60. <a href="https://doi.org/10.1016/0012-1606(87)90331-9">https://doi.org/10.1016/0012-1606(87)90331-9</a></th>
+                  </tr>
+                  <tr>
+                    <th class="text-center">L-ascorbic acid</th>
+                    <th class="text-center">Collagen biosynthesis</th>
+                    <th class="text-center">Jeffrey, J. J., & Martin, G. R. (1966). The role of ascorbic acid in the biosynthesis of collagen. I. Ascorbic acid requirement by embryonic chick tibia in tissue culture. Biochimica et biophysica acta, 121(2), 269–280. <a href="https://doi.org/10.1016/0304-4165(66)90116-4">https://doi.org/10.1016/0304-4165(66)90116-4</a></th>
+                  </tr>
+                  <tr>
+                    <th class="text-center">Dexamethasone</th>
+                    <th class="text-center">Disputablely believed as RUNX2 activation</th>
+                    <th class="text-center">Langenbach, F., & Handschel, J. (2013). Effects of dexamethasone, ascorbic acid and β-glycerophosphate on the osteogenic differentiation of stem cells in vitro. Stem cell research & therapy, 4(5), 117. <a href="https://doi.org/10.1186/scrt328">https://doi.org/10.1186/scrt328</a></th>
+                  </tr>
+                </tbody>
+              </template>
+</v-simple-table>
+<!--
+<p class = "body-1">
+|        Drug        |                 Function                  |                          Reference                           |
+</p>
+<p class = "body-1">
+| :----------------: | :---------------------------------------: | :----------------------------------------------------------: |
+</p>
+<p class = "body-1">
+| β-glycerophosphate |            Phosphate provision            | Gerstenfeld, L. C., Chipman, S. D., Glowacki, J., & Lian, J. B. (1987). Expression of differentiated function by mineralizing cultures of chicken osteoblasts. Developmental biology, 122(1), 49–60. <a href="https://doi.org/10.1016/0012-1606(87)90331-9">https://doi.org/10.1016/0012-1606(87)90331-9</a> |
+</p>
+<p class = "body-1">
+|  L-ascorbic acid   |           Collagen biosynthesis           | Jeffrey, J. J., & Martin, G. R. (1966). The role of ascorbic acid in the biosynthesis of collagen. I. Ascorbic acid requirement by embryonic chick tibia in tissue culture. Biochimica et biophysica acta, 121(2), 269–280. <a href="https://doi.org/10.1016/0304-4165(66)90116-4">https://doi.org/10.1016/0304-4165(66)90116-4</a> |
+</p>
+<p class = "body-1">
+|   Dexamethasone    | Disputablely believed as RUNX2 activation | Langenbach, F., & Handschel, J. (2013). Effects of dexamethasone, ascorbic acid and β-glycerophosphate on the osteogenic differentiation of stem cells in vitro. Stem cell research & therapy, 4(5), 117. <a href="https://doi.org/10.1186/scrt328">https://doi.org/10.1186/scrt328</a> |
+</p>
+-->
+</v-card-text>
+<v-card-title class="text-h6">
+Drug release experiment
+</v-card-title>
+<v-card-text>
+  <p class = "body-1">
+In this part, we cooperate with CSU_China to do a drug release experiment(See details on <a href="https://2021.igem.org/Team:ShanghaiTech_China/Partnership">Partnership</a> page). We encapsulated insulin into alginate hydrogel and measured its release rate. The insulin-releasing experiment is measured by Enzyme-Linked Immunosorbent Assay(ELISA). The data collected from the experiment helped us to correct the releasing math model. (See our drug-releasing model on <a href="https://2021.igem.org/Team:ShanghaiTech_China/Modeling">Modeling</a> page) . We made a solution of alginate and insulin in a DMEM culture medium, with an insulin concentration of 80ng/ml. After crosslinking, the hydrogel was merged into the DMEM culture medium and we test the insulin concentration in the medium in the following five days. The data is plotted as Fig.12 and this data helped us to correct our modeling(See more on <a href="https://2021.igem.org/Team:ShanghaiTech_China/Modeling">Modeling</a> page)
+</p>
+<p class = "body-1">
+<v-img src="@/assets/insulin.png" />
+</p>
+<p class = "body-1">
+> Fig.12: The drug release simulation model, based on the insulin encapsulated in the hydrogel
+</p>
+</v-card-text>
+<v-row justify="center"> <v-card-title class="text-h4 title">
+Hardware
+  </v-card-title>
+</v-row>
+<v-card-text>
+  <p class = "body-1">
+Our hardware part is also part of our proof of concept. We aim to build an intelligent machine that is combined with our material. We built a series of parts including the 3D printing design to help the future iGEM teams or others to use our hardware and reduced the use threshold of our materials. See more details on our <a href="https://2021.igem.org/Team:ShanghaiTech_China/Hardware">Hardware</a> page.
+</p>
+<v-simple-table>
+              <template v-slot:default>
+                <thead>
+                  <tr>
+                    <th class="text-center">Type</th>
+                    <th class="text-center">Number</th>
+                    <th class="text-center">Detail</th>
+                  </tr>
+                </thead>
+                <tbody>
+<tr>
+  <th class="text-center"> Motor             </th>
+  <th class="text-center"> 6      </th>
+  <th class="text-center"> 3 Stepper Motors and 3 Servo Motors                         </th>
+  </tr>
+<tr>
+  <th class="text-center"> Aluminum rods     </th>
+  <th class="text-center"> 3      </th>
+  <th class="text-center"> For X,Y,Z axis, each is 50 cm long                          </th>
+  </tr>
+<tr>
+  <th class="text-center"> Wheels            </th>
+  <th class="text-center"> 6      </th>
+  <th class="text-center"> Move on X,Y,Z axis                                          </th>
+  </tr>
+<tr>
+  <th class="text-center"> Micro Controllers </th>
+  <th class="text-center"> 2      </th>
+  <th class="text-center"> Arduino Uno and Arduino Micro                               </th>
+  </tr>
+<tr>
+  <th class="text-center"> Base Board        </th>
+  <th class="text-center"> 1      </th>
+  <th class="text-center"> 50cm * 50cm                                                 </th>
+  </tr>
+<tr>
+  <th class="text-center"> Belts             </th>
+  <th class="text-center"> 3      </th>
+  <th class="text-center"> 2 are 1m long(x,y axis) and 1 is 40 cm long(z axis), to move syringe</th>
+  </tr>
+<tr>
+  <th class="text-center"> Syringe           </th>
+  <th class="text-center"> 1      </th>
+  <th class="text-center"> Make bone bound                                             </th>
+  </tr>
+<tr>
+  <th class="text-center"> UV LED            </th>
+  <th class="text-center"> 1      </th>
+  <th class="text-center"> Solidify drug                                               </th>
+  </tr>
+<tr>
+  <th class="text-center"> Linker            </th>
+  <th class="text-center"> Serval </th>
+  <th class="text-center"> Combine Servo Motors on board, fix wheel on aluminum rods and other linking tasks</th>
+  </tr>
+<tr>
+  <th class="text-center"> Wires             </th>
+  <th class="text-center"> Serval </th>
+  <th class="text-center"> Connect I/O ports and power                                 </th>
+  </tr>
+<tr>
+  <th class="text-center"> Support materials </th>
+  <th class="text-center"> Serval </th>
+  <th class="text-center"> Nuts, screws                                                </th>
+  </tr>
             </v-container>
           </v-card>
         </template>
