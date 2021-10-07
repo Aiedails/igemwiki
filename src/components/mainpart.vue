@@ -299,8 +299,8 @@
 
                 <p class="body-1">
                   Our final constructed HEK-293T cell line is meant to live in
-                  the hydro gel and it can sense the mechanical force from the
-                  hydro gel to regulate the calcium signal cascade, which will
+                  the hydrogel and it can sense the mechanical force from the
+                  hydrogel to regulate the calcium signal cascade, which will
                   result in the expression of related enzyme to degrade hydro
                   gel.
                 </p>
@@ -318,7 +318,7 @@
                         mechanical force: We get the constructed piezo1 plasmid
                         from other lab and infect 293T cell lines by liposome;
                         detect the influx of calcium: to make sure the piezo1
-                        can be activated by mechanical force from hydro gel, we
+                        can be activated by mechanical force from hydrogel, we
                         use a commercial calcium probe to indicate the cytosol
                         calcium concentration; the expression of downstream
                         proteins of interest: we will construct a plasmid that
@@ -329,12 +329,12 @@
                   <v-list-item>
                     <v-list-item-content>
                       <v-list-item-title class="body-2">
-                        2. test the living state of HEK-293T in hydro gel.
+                        2. test the living state of HEK-293T in hydrogel.
                       </v-list-item-title>
                       <div style="padding-left: 16px" class="body-2">
-                        We put cells such as HUVECs line into hydro gel to
+                        We put cells such as HUVECs line into hydrogel to
                         observe the cell state and how long can it live in the
-                        gel; Improve the hydro gel formulation to improve the
+                        gel; Improve the hydrogel formulation to improve the
                         living state of 293T.
                       </div>
                     </v-list-item-content>
@@ -342,11 +342,11 @@
                   <v-list-item>
                     <v-list-item-content>
                       <v-list-item-title class="body-2">
-                        3. connect HEK-293T to hydro gel.
+                        3. connect HEK-293T to hydrogel.
                       </v-list-item-title>
                       <div style="padding-left: 16px" class="body-2">
                         We want to achieve high quality and high intensity in
-                        hydro gel, so we want to add mussel mucin(mefp5) to
+                        hydrogel, so we want to add mussel mucin(mefp5) to
                         improve the intensity. We will obtain mefp5 by protein
                         purification (use BL21 expression system).
                       </div>
