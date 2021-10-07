@@ -2,8 +2,8 @@
   <v-app
     dark
     style="
-      background-repeat: no-repeat;
-      background-position: center;
+      background-repeat: repeat-y;
+      background-position: center top;
       background-size: contain;
     "
     id="app"
@@ -31,7 +31,10 @@
     </v-card>
     -->
 
-    <navbar v-resize="onResize" :width="this.width"></navbar>
+    <navbar
+      v-resize="onResize"
+      :width="this.width"
+    ></navbar>
     <v-main id="main">
       <mainpart :width="this.width"></mainpart>
     </v-main>
@@ -43,16 +46,13 @@
 import mainpart from "./components/mainpart";
 import navbar from "./components/navbar";
 import temfooter from "./components/teamfooter";
-
 export default {
   name: "App",
-
   components: {
     mainpart,
     navbar,
     temfooter,
   },
-
   data: () => ({
     width: 1300,
     istop: true,
@@ -98,10 +98,12 @@ export default {
 <style lang="scss">
 $primary: #1388e5;
 $secondary: #4fc3f7;
-
 ::selection {
   background: $secondary;
   color: white;
+}
+#app {
+  background: url("https://2021.igem.org/wiki/images/7/70/T--ShanghaiTech_China--bg.svg");
 }
 #main {
   position: relative;
@@ -115,7 +117,7 @@ $secondary: #4fc3f7;
 #top_title {
   display: none;
 }
-#globalWrapper {
+#globalwrapper {
   padding: 0;
 }
 p {
@@ -156,10 +158,10 @@ li::marker {
   background: #838383 !important;
 }
 .title {
-  box-shadow: inset 0px -12px $secondary;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  margin-bottom: 16px;
+  box-shadow: inset 0px -12px $secondary !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-bottom: 16px !important;
 }
 </style>

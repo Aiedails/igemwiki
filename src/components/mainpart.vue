@@ -96,13 +96,16 @@
             class="transition-swing"
             style="text-decoration: none"
             id="description"
-            v-intersect="onIntersect"
             v-scroll="updatepos"
             v-show="!firstload"
           >
             <v-container style="padding: 20px 3%">
               <v-row justify="center">
-                <v-card-title class="text-h4 title" id="prologue">
+                <v-card-title
+                  class="text-h4 title"
+                  id="prologue"
+                  v-intersect="onIntersect"
+                >
                   Prologue</v-card-title
                 >
               </v-row>
