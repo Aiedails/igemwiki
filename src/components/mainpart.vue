@@ -113,9 +113,13 @@
           >
             <v-container style="padding: 20px">
               <v-row justify="center">
-                <v-card-title class="text-h4 title" id="overview"
-            v-intersect="onIntersect"
-                > Overview </v-card-title>
+                <v-card-title
+                  class="text-h4 title"
+                  id="overview"
+                  v-intersect="onIntersect"
+                >
+                  Overview
+                </v-card-title>
               </v-row>
               <v-card-text>
                 <p class="body-1">
@@ -159,9 +163,11 @@
                   mfp5-1 and Mfp5-2(Fig.1b, Fig.1c). These results show that
                   <i>E.coli</i> can be a high-yield expression chasis for Mfp.
                 </p>
-                <v-row justify="center">
+                <v-row justify="center" align="baseline">
                   <v-col cols="4">
-                    <v-img src="https://2021.igem.org/wiki/images/3/39/T--ShanghaiTech_China--pro--explore.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/3/39/T--ShanghaiTech_China--pro--explore.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -173,7 +179,9 @@
                     </v-row>
                   </v-col>
                   <v-col cols="4">
-                    <v-img src="https://2021.igem.org/wiki/images/9/98/T--ShanghaiTech_China--imp--mfp5-1_first.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/9/98/T--ShanghaiTech_China--imp--mfp5-1_first.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -184,7 +192,9 @@
                     </v-row>
                   </v-col>
                   <v-col cols="4">
-                    <v-img src="https://2021.igem.org/wiki/images/6/6f/T--ShanghaiTech_China--imp--mfp5-2_first.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/6/6f/T--ShanghaiTech_China--imp--mfp5-2_first.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -229,7 +239,9 @@
                 </p>
                 <v-row justify="center">
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/4/48/T--ShanghaiTech_China--pro--5-1.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/4/48/T--ShanghaiTech_China--pro--5-1.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -241,7 +253,9 @@
                     </v-row>
                   </v-col>
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/3/39/T--ShanghaiTech_China--pro--5-11-163.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/3/39/T--ShanghaiTech_China--pro--5-11-163.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -252,7 +266,9 @@
                     </v-row>
                   </v-col>
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/0/0b/T--ShanghaiTech_China--pro--9something.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/0/0b/T--ShanghaiTech_China--pro--9something.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -263,7 +279,9 @@
                     </v-row>
                   </v-col>
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/b/bd/T--ShanghaiTech_China--pro--5-22.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/b/bd/T--ShanghaiTech_China--pro--5-22.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -304,7 +322,9 @@
                 </p>
                 <v-row justify="center">
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/b/b5/T--ShanghaiTech_China--pro--gelma1-1.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/b/b5/T--ShanghaiTech_China--pro--gelma1-1.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -316,7 +336,9 @@
                     </v-row>
                   </v-col>
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/0/04/T--ShanghaiTech_China--pro--gelma2-2.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/0/04/T--ShanghaiTech_China--pro--gelma2-2.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -362,9 +384,11 @@
                   oscillation strain, which is qualified to be an osteogenic
                   glue.
                 </p>
-                <v-row justify="center">
+                <v-row justify="center" align="baseline">
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/b/be/T--ShanghaiTech_China--pro--flow1.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/b/be/T--ShanghaiTech_China--pro--flow1.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -376,7 +400,9 @@
                     </v-row>
                   </v-col>
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/a/aa/T--ShanghaiTech_China--pro--flow2.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/a/aa/T--ShanghaiTech_China--pro--flow2.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -387,7 +413,9 @@
                     </v-row>
                   </v-col>
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/8/87/T--ShanghaiTech_China--pro--2.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/8/87/T--ShanghaiTech_China--pro--2.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -398,7 +426,9 @@
                     </v-row>
                   </v-col>
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/d/d9/T--ShanghaiTech_China--pro--3.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/d/d9/T--ShanghaiTech_China--pro--3.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -443,7 +473,9 @@
                 </p>
                 <v-row justify="center">
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/d/d1/T--ShanghaiTech_China--pro--1-4.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/d/d1/T--ShanghaiTech_China--pro--1-4.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -455,7 +487,9 @@
                     </v-row>
                   </v-col>
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/e/e2/T--ShanghaiTech_China--pro--1-5.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/e/e2/T--ShanghaiTech_China--pro--1-5.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -466,7 +500,9 @@
                     </v-row>
                   </v-col>
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/2/20/T--ShanghaiTech_China--pro--1-6.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/2/20/T--ShanghaiTech_China--pro--1-6.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -478,7 +514,9 @@
                     </v-row>
                   </v-col>
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/6/6c/T--ShanghaiTech_China--pro--1-1.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/6/6c/T--ShanghaiTech_China--pro--1-1.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -537,7 +575,9 @@
                 </p>
                 <v-row justify="center">
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/2/23/T--ShanghaiTech_China--pro--7_day.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/2/23/T--ShanghaiTech_China--pro--7_day.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -548,7 +588,9 @@
                     </v-row>
                   </v-col>
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/8/81/T--ShanghaiTech_China--pro--long_term.jpg" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/8/81/T--ShanghaiTech_China--pro--long_term.jpg"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -579,7 +621,9 @@
                 </p>
                 <v-row justify="center">
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/a/a8/T--ShanghaiTech_China--imp--0823-04-01.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/a/a8/T--ShanghaiTech_China--imp--0823-04-01.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -593,7 +637,9 @@
                     </v-row>
                   </v-col>
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/f/fe/T--ShanghaiTech_China--imp--0823-40-01.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/f/fe/T--ShanghaiTech_China--imp--0823-40-01.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -629,7 +675,9 @@
                 </p>
                 <v-row justify="center">
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/e/e9/T--ShanghaiTech_China--pro--force_4times.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/e/e9/T--ShanghaiTech_China--pro--force_4times.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -642,7 +690,9 @@
                     </v-row>
                   </v-col>
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/e/ec/T--ShanghaiTech_China--pro--0930_red.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/e/ec/T--ShanghaiTech_China--pro--0930_red.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -654,7 +704,9 @@
                     </v-row>
                   </v-col>
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/4/44/T--ShanghaiTech_China--imp--composite_force.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/4/44/T--ShanghaiTech_China--imp--composite_force.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -666,7 +718,9 @@
                     </v-row>
                   </v-col>
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/7/7f/T--ShanghaiTech_China--pro--bright.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/7/7f/T--ShanghaiTech_China--pro--bright.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -724,7 +778,10 @@
                   <v-col cols="6">
                     <v-container>
                       <video controls width="100%" style="object-fit: contain">
-                        <source src="https://2021.igem.org/wiki/images/1/1f/T--ShanghaiTech_China--imp--control_1.mp4" type="video/mp4" />
+                        <source
+                          src="https://2021.igem.org/wiki/images/1/1f/T--ShanghaiTech_China--imp--control_1.mp4"
+                          type="video/mp4"
+                        />
                       </video>
                     </v-container>
                     <v-row
@@ -732,9 +789,9 @@
                       style="margin-top: 10px; margin-bottom: 10px"
                     >
                       <p class="body-2 fig">
-                        Video.2: Faster fluorescence change of cells under the
-                        stimulation of shear stress, exposure time: 90ms, 20X
-                        objective
+                        Video.2: Almost no fluoresecent change of cells under
+                        the stimulation of shear stress, exposure time, 90ms,
+                        20X objective
                       </p>
                     </v-row>
                   </v-col>
@@ -767,9 +824,11 @@
                   expressed and the colocalization of two kinds of fluorescent
                   protein will prove the feasibility of the downstream pathway.
                 </p>
-                <v-row justify="center">
+                <v-row justify="center" align="baseline">
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/7/74/T--ShanghaiTech_China--pro--downstream.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/7/74/T--ShanghaiTech_China--pro--downstream.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -781,7 +840,9 @@
                     </v-row>
                   </v-col>
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/6/6a/T--ShanghaiTech_China--imp--green.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/6/6a/T--ShanghaiTech_China--imp--green.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -793,7 +854,9 @@
                     </v-row>
                   </v-col>
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/a/a2/T--ShanghaiTech_China--imp--green_red.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/a/a2/T--ShanghaiTech_China--imp--green_red.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -805,7 +868,9 @@
                     </v-row>
                   </v-col>
                   <v-col cols="6">
-                    <v-img src="https://2021.igem.org/wiki/images/4/4f/T--ShanghaiTech_China--imp--composite.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/4/4f/T--ShanghaiTech_China--imp--composite.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -883,7 +948,9 @@
                     </v-row>
                   </v-col>
                   <v-col cols="4">
-                    <v-img src="https://2021.igem.org/wiki/images/4/4c/T--ShanghaiTech_China--pro--composite_something.png" />
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/4/4c/T--ShanghaiTech_China--pro--composite_something.png"
+                    />
                     <v-row
                       justify="center"
                       style="margin-top: 10px; margin-bottom: 10px"
@@ -910,7 +977,9 @@
                 <p class="body-1"></p>
               </v-card-text>
               <v-row justify="center">
-                <v-card-title class="text-h4 title" id="drug"> Drug system </v-card-title>
+                <v-card-title class="text-h4 title" id="drug">
+                  Drug system
+                </v-card-title>
               </v-row>
               <v-card-title class="text-h6"> Drug choices </v-card-title>
               <v-card-text>
@@ -1009,7 +1078,11 @@
                   >
                   page)
                 </p>
-                <v-img src="https://2021.igem.org/wiki/images/6/63/T--ShanghaiTech_China--pro--insulin.png" contain max-height="600px"/>
+                <v-img
+                  src="https://2021.igem.org/wiki/images/6/63/T--ShanghaiTech_China--pro--insulin.png"
+                  contain
+                  max-height="600px"
+                />
                 <v-row
                   justify="center"
                   style="margin-top: 10px; margin-bottom: 10px"
@@ -1021,7 +1094,9 @@
                 </v-row>
               </v-card-text>
               <v-row justify="center">
-                <v-card-title class="text-h4 title" id="hardware"> Hardware </v-card-title>
+                <v-card-title class="text-h4 title" id="hardware">
+                  Hardware
+                </v-card-title>
               </v-row>
               <v-card-text>
                 <p class="body-1">
