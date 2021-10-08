@@ -21,49 +21,62 @@
               editable
               edit-icon="1"
               step="1"
-              @click="$vuetify.goTo('#adhesion', options)"
+              @click="$vuetify.goTo('#summary', options)"
               :complete="position > 1"
               style="transition: all 1s ease 1s"
               color="primary"
               class="body-1"
             >
-              Adhesion system
+              1. Summary
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="2"
               step="2"
-              @click="$vuetify.goTo('#hydrogel', options)"
+              @click="$vuetify.goTo('#potential', options)"
               :complete="position > 2"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              Hydrogel system
+                  2. Potential Customers & Unmet needs
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="3"
               step="3"
-              @click="$vuetify.goTo('#stress', options)"
+              @click="$vuetify.goTo('#mibom', options)"
               :complete="position > 3"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              Stress-sensitive regulation system
+                  3. MIBOM's feasibility & inventivity
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="4"
               step="4"
-              @click="$vuetify.goTo('#drug', options)"
+              @click="$vuetify.goTo('#development', options)"
               :complete="position > 4"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              Drug system
+                  4. Development plans and required capabilities, funds, and
+                  stakeholders
+            </v-stepper-step>
+            <v-stepper-step
+              editable
+              edit-icon="5"
+              step="5"
+              @click="$vuetify.goTo('#long', options)"
+              :complete="position > 5"
+              style="transition: all 1s"
+              color="primary"
+              class="body-1"
+            >
+                  5. Long-term Impacts
             </v-stepper-step>
           </v-stepper>
         </template>
@@ -90,790 +103,1331 @@
               <v-row justify="center">
                 <v-card-title
                   class="text-h4 title"
-                  id="adhesion"
+                  id="summary"
                   v-intersect="onIntersect"
                 >
-                  Adhesion system
+                  1. Summary
                 </v-card-title>
               </v-row>
-              <v-card-title class="text-h5">
-                Construction of plasmid
-              </v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  We constructed a pET28a-cfaC-mfp5-1(<a
-                    href="http://parts.igem.org/Part:BBa_K3755011"
-                    >BBa_K3755011</a
-                  >) plasmid and a pET28a-mfp5-2-cfaN(<a
-                    href="http://parts.igem.org/Part:BBa_K3755012"
-                    >BBa_K3755012</a
-                  >) plasmid(Fig.1a, Fig.1b) , expressing in <i>E.coli</i>. We
-                  linearized the pET28a backbone and gene segment to do the
-                  homologous recombination. The agarose gel electrophoresis of
-                  Mfp5-2-CfaN and CfaC-Mfp5-1 are shown in Fig.1c, linearized
-                  pET28a is shown in Fig.1d.
+                  In the past six months, we have initiated the technology
+                  transfer and commercialization process for the MIBOM project.
+                  MIBOM is a new bone glue based on the mussel mucin + hydrogel
+                  + cell engineering module for the treatment of
+                  non-load-bearing bone fractures. It has 'high viscous
+                  strength', 'self-regulation and degradation ability', 'promote
+                  bone regeneration','fast curing', 'flexible operation' and
+                  other functions. Compared with the steel plate on the market,
+                  its degradability has a huge advantage. Compared to similar
+                  biodegradable products, MIBOM's high viscous strength and
+                  load-bearing capacity also give it a powerful capability. At
+                  present, to accelerate the speed of technology transformation
+                  and reduce the patent application cycle, we will submit a
+                  class 2 patent application in October to speed up the process
+                  of patent protection.
                 </p>
-                <v-row justify="center" align="baseline">
-                  <v-col cols="6">
-                    <v-img
-                      src="@/assets/PET28a_cfaC_mfp5_1 Map-16333125300861.png"
-                    />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.1a: Construction of pET28a-cfaC-mfp5-1
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img
-                      src="@/assets/pet28a_mefp5_2_cfaN Map-16333125424992.png"
-                    />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.1b: Construction of pET28a-mfp5-2-cfaN
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/C1和2N.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.1c: Linearized segments of Mfp5-2-CfaN and
-                        CfaC-Mfp5-1
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/pet28.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.1d: Linearized plasmid backbone pET28a
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-row
-                    justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                <p class="body-1">
+                  We have identified our key customer base and their real needs.
+                  From purchase decision makers to purchase payers, we deeply
+                  investigated the obstacles encountered by doctors and patients
+                  in existing treatment methods, hoping to enable them to
+                  benefit from MIBOM, which including government medical sponsor
+                  institutions, clinicians and ordinary consumers. According to
+                  our POC design, we have received feedback from the trauma
+                  orthopedic medical team in well-known hospitals, as well as
+                  from ordinary consumer 'patients', who put forward higher
+                  requirements for our strength and price.
+                </p>
+                <p class="body-1">
+                  For long-term sustainability, our current treatment scenario
+                  will focus on comminuted fractures and continue to develop
+                  conventional fractures as the technology matures in the
+                  future. We have received feedback from MicroPort. We took a
+                  conservative approach, focused on comminution, and then
+                  started to address non-load-bearing fractures. At present,
+                  most degradable bone implants are limited by their
+                  load-bearing strength and cannot be made a breakthrough in
+                  form. Therefore, we choose to focus on comminuted fractures
+                  and non-load-bearing bones and propose revolutionary
+                  solutions. MIBOM will have a wider range of applications.
+                </p>
+                <p class="body-1">
+                  We went through the peer [competitor analysis] and found that
+                  the current consumables are often optimized in the material.
+                  The existing bone nail, bone plate and other forms are
+                  constantly updated to improve the strength, biocompatibility
+                  and biodegradability of the material. This greatly increases
+                  the cost of material modification, and MIBOM's bone glue can
+                  have a strong cost advantage. Through the development of
+                  synthetic biology, mussel mucin + hydrogels can form a double
+                  cross-linked system with the ability to rival the strength of
+                  existing biodegradable materials, and the cost of consumables
+                  can be greatly reduced through biological extraction. MIBOM
+                  has greatly improved the flexibility of operation because of
+                  the subversion of fracture treatment.
+                </p>
+                <p class="body-1">
+                  We developed a marketing Gantt chart for MIBOM technology
+                  transformation and business practices. This planning diagram
+                  includes research and development planning, patent application
+                  planning, clinical registration planning, medical device
+                  planning, enterprise cooperation and data platform planning
+                  and construction. It will take about five years to develop,
+                  promote and enter the market.
+                </p>
+                <p class="body-1">
+                  Based on our stakeholders, we analyzed their behavior. In
+                  order to get more support or feedback from them, we wrote
+                  different versions of profiles, business plans and other
+                  contents. Our important work is to build stronger partnerships
+                  with our stakeholders, especially our suppliers or
+                  distributors, whose support will greatly optimize our
+                  production costs.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  To get more financial support, we launched roadshows in all
+                  directions. We analyzed the events that we could participate
+                  in with an 80% certainty and estimated that we could earn
+                  $76,000 (500,000 RMB). At present, we have received 10000RMB
+                  from Synbiopunk Challenge for the development and approval of
+                  our project, and we expect to receive 100,000 RMB in early
+                  October. At the same time, our school also provides us with
+                  effective research funds, so in the early stage of research
+                  and development, we will not face too much tightening of the
+                  funding chain.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  Our long-term impact is to bring new solutions to fracture
+                  treatment. We will influence the application and development
+                  of implant consumables across bone materials. Bone glue will
+                  become a more flexible, convenient and cheap option. This
+                  could not only upend existing treatments but also bring
+                  benefits to under-resourced areas. The low cost would allow
+                  more patients to afford it and would give local hospitals more
+                  opportunities to treat patients instead of diverting them to
+                  central provincial hospitals. It could also increase medical
+                  resources across China.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  Of course, there could be a downside to MIBOM. Due to the
+                  existence of MIBOM cellular system, it is necessary to take
+                  extra care in the waste treatment of MIBOM to prevent spillage
+                  and contamination. At the same time, MIBOM also has the
+                  pressure of treatment safety, any kind of medical error for
+                  the patient is unbearable, this is also unbearable for MIBOM.
+                  We want to address potential safety risks with experimental
+                  integrity and rigor.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  Please refer to our
+                  <a
+                    href="https://2021.igem.org/wiki/images/7/77/T--ShanghaiTech_China--hp--BP.pdf"
+                    >business plan</a
                   >
-                    <p class="body-1">
-                      <strong
-                        >Fig.1: Construction of two mussel-expressing
-                        plasmids.</strong
-                      >
-                    </p>
-                  </v-row>
-                </v-row>
+                  for more information about MIBOM products.
+                </p>
+              </v-card-text>
+              <v-row justify="center">
+                <v-card-title class="text-h4 title" id="potential">
+                  2. Potential Customers & Unmet needs
+                </v-card-title>
+              </v-row>
+              <v-card-text>
+                <p class="body-1">
+                  Doctors, patients and healthcare organizations can benefit
+                  from MIBOM in different ways. Not only does MIBOM optimize
+                  surgical procedures for surgeons, but it also reduces the risk
+                  of nonunion in patients and costs for medical organizations.
+                  MIBOM is a revolutionary treatment solution because its
+                  biodegradability and ease of handling make it irreplaceable
+                  among conventional biodegradable materials. We will analyze it
+                  from the perspectives of core competitiveness, user analysis,
+                  scene positioning and demand satisfaction.
+                </p>
               </v-card-text>
               <v-card-title class="text-h5">
-                Extraction of mussel protein
+                2.1 Unmet needs & Pain points
               </v-card-title>
               <v-card-title class="text-h6">
-                Explore the induction conditions of mfp5-1
+                Problems with implant removal surgery
               </v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  Before protein purification, we decided to explore the proper
-                  induction conditions. So we made two control groups and four
-                  experimental groups. In Fig.2, we could find that mfp5-1 was
-                  successfully expressed in four groups since there was an
-                  obvious band between 15-20 kDa compared with blank
-                  control(Blank BL21(DE3)) and negative control(Before
-                  induction).
+                  According to the research results of ShanghaiTech_China team,
+                  the removal of implants will occupy a large number of medical
+                  costs and resources. The team investigated the market
+                  situation of bone implants in China and the current actual
+                  situation. Also, ShanghaiTech_China team has interviewed the
+                  orthopedic trauma surgery team of Shanghai Ninth People's
+                  Hospital (North Hospital) to obtain the main plans and
+                  problems in the treatment of traumatic fractures. According to
+                  the feedback, our team found that due to the safety issues
+                  such as stress shield injury, friction and wear, toxicity and
+                  other issues caused by orthopedic implant treatment, and the
+                  limited acceptance capacity of bone-implant in domestic public
+                  psychology, most traumatic fracture surgeries in China are
+                  performed twice.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  Depending on the field survey, taking Shanghai Ninth People's
+                  Hospital as an example, there were about 2,040 fracture
+                  operations annually, of which 29.25% were implant-removal
+                  operations.
                 </p>
                 <p class="body-1">
-                  Notably, there was a slight band in the negative
-                  control(Before induction). We inferred that leaked expression
-                  of mfp5-1 might happen in the negative control.
+                  <strong>（1）Huge medical expences</strong>
                 </p>
-                <v-img
-                  src="@/assets/探索诱导条件.png"
-                  contain
-                  max-height="600px"
-                />
+                <p class="body-1">
+                  In China, the cost of a lower limb internal fixation removal
+                  is about 7000-8000 yuan, and the cost of upper limb internal
+                  fixation removal is about 6000-7000 yuan. According to
+                  statistics from the Health Bureau in 2017, there were 1,331
+                  grade-A, three-level hospitals in China. According to the
+                  sampling statistics of five grade A hospitals (Zhongda
+                  Hospital affiliated to Southeast University, The First
+                  Affiliated Hospital of Shantou University, Nanjing Gulou
+                  Hospital, Shanghai Sixth People's Hospital and Beijing Third
+                  People's Hospital), each hospital had an average of 1730
+                  orthopedic trauma surgeries in a year. According to
+                  preliminary modeling analysis, for 1331 grade A hospitals in
+                  China, secondary trauma surgeries will generate an average
+                  annual medical cost of 4.06 billion yuan. (1331(Grade A
+                  hospitals)*1730(orthopedic trauma)* 29.25%(ratio of secondary
+                  surgery)*6000(removal cost) = 4.06 billion RMB/year)
+                </p>
+                <p class="body-1">
+                  <strong>(2）Occupation of medical resources</strong>
+                </p>
+                <p class="body-1">
+                  Taking Shanghai Ninth People's Hospital as an example, the
+                  department of orthopedics has 200 beds, about 40% of which are
+                  orthopedic trauma groups. In one trauma group, there were
+                  about 150 patients undergoing implant removal annually, and
+                  one bed was occupied for a second operation every 2.5 days,
+                  while implant removal patients occupied the bed for 3-4 days
+                  on average. According to the data, a single orthopedic trauma
+                  group admitted an average of 2-3 patients with implant removal
+                  per week, accounting for 32.82 % of the number of beds.
+                  Therefore, it is estimated by modeling that Shanghai Ninth
+                  People's Hospital will undertake more than 1200 cases of
+                  implant removal surgery every year, and about 25 beds will be
+                  occupied by the second operation every week. The national
+                  scale of orthopedic implant removal operations will affect the
+                  use of more than 33,275 beds per week. (1331(Grade A
+                  hospitals) *25 (orthopedic secondary surgery beds/weekly/per
+                  hospital) = 33,275 beds)
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h6">
+                The damage from the alloy implants
+              </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  At present, most conventional fractures are fixed with
+                  titanium implants. However, titanium alloy, stainless steel
+                  and other implants will produce gap corrosion, friction
+                  corrosion and fatigue corrosion fracture, and will cause
+                  prosthesis loosening due to friction and wear problems, and
+                  ultimately lead to implant failure, the main reason is stress
+                  shielding. For titanium alloy bone plate and bone nail, the
+                  mismatch between heavy limbs and bone elastic wood will make
+                  the load cannot be well transferred from the implant to the
+                  adjacent bone tissue, resulting in stress shielding
+                  phenomenon, resulting in bone absorption around the heavy
+                  limbs, and ultimately causing implant loosening or fracture,
+                  resulting in implant failure. There are also tumors associated
+                  with implant loosening, which are easy to form near the
+                  implant, indicating that allogenic reaction is the main
+                  mechanism of carcinogenesis. Therefore, titanium alloy and
+                  other implants still have great defects in biocompatibility
+                  and other fields, requiring secondary surgical removal to
+                  eliminate their potential safety risks.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h6">
+                Operational dilemmas in the treatment of comminuted fractures
+              </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  In China, it is estimated that in 2021, there will be 295526
+                  traumatic fractures, of which 10.21% will be femoral
+                  fractures. 95% of femoral shaft fractures are comminuted.
+                  Therefore, there will be an average of at least 280,000
+                  comminuted fractures per year in China.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  According to our interviews with doctors in the hospital’s
+                  orthopedic trauma team, the surgical time for comminuted
+                  fractures is twice as long as that for conventional fractures,
+                  which is mainly because of the cumbersome fixation of bone
+                  fragments. In a grade-A hospital in china, about nine hours of
+                  surgery a week are taken up by complex bone repair. From the
+                  point of view of national health resources, about 7,986
+                  operations a week will be taken up, which could cure an
+                  additional 7,986 people. Therefore, simplifying comminuted
+                  fractures will be a very necessary material development
+                  direction. On the other hand, comminuted sex fracture also
+                  brings about the circumstance such as bone is not connected
+                  extremely easily to happen.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h5">
+                2.2 Potential customers & Application scenarios
+              </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  MIBOM is a bone glue product developed for comminuted or
+                  non-load-bearing fractures for the internal fixation of bones.
+                  MIBOM hopes to solve the problem of bone-implant degradation,
+                  and at the same time simplify surgical procedures and shorten
+                  the surgical time. Especially in comminuted fractures, the
+                  implantation of fixation materials takes up most of the time,
+                  which consumes a lot of surgical resources. Second surgeries,
+                  on the other hand, impose high costs, huge resources and
+                  scarring burdens on medical institutions and patients. We want
+                  to solve these problems. Because bearing fractures is a
+                  procedure that needs to be validated in long-term clinical
+                  studies, resolving these fractures is not a feasible plan.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h6"> Potential Customers </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  <v-img src="@/assets/1.jpg" contain max-height="600px" />
+                </p>
                 <v-row
                   justify="center"
                   style="margin-top: 10px; margin-bottom: 10px"
                 >
-                  <p class="body-1">
-                    Fig.2: SDS-PAGE of mfp5-1 expression in different induction
-                    conditions
+                  <p class="body-2 fig">
+                    Table 1. Identified customer groups & their value
+                    propositions
                   </p>
                 </v-row>
+                <p class="body-1">
+                  <strong>MIBOM’s first potential customers: Hospitals</strong>
+                </p>
+                <p class="body-1">
+                  MIBOM will inevitably carry out clinical trials first, and our
+                  first partnership is reached through the hospital. In human
+                  practice, we also show that the doctors of Shanghai Ninth
+                  People's Hospital have a certain recognition of our practice.
+                  With strength and convenience, they also say they can move
+                  forward with clinical applications after in vivo testing. As
+                  an immobilized consumable that upends traditional therapeutic
+                  models, the use of MIBOM is new to doctors, so they need more
+                  proof of effective strength to convince them. Still, they say,
+                  it's something that can be done.
+                </p>
               </v-card-text>
               <v-card-title class="text-h6">
-                Purification of mfp5-1
+                Application scenarios
               </v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  We ran SDS-PAGE after each mfp5-1 purification. Fig.3a is the
-                  results of our first purification. It was obvious that a great
-                  amount of mfp5-1 was expressed in BL21 (compared samples
-                  before induction and after induction), and it totally
-                  dissolved in the lysis buffer. After elution, we got purified
-                  mfp5-1, but some mfp5-1 still remained on nickel medium. Since
-                  Fig.3a lacked flow through and washing samples, we did another
-                  purification, which was Fig.3b.
-                </p>
-                <p class="body-1">
-                  Fig.3a almost shows the same results as Fig.3a. We could find
-                  the band of mfp5-1 in flow-through, indicating that the amount
-                  of mfp5-1 had saturated nickel medium. Moreover, low
-                  concentration imidazole could elute some mfp5-1 as well.
-                </p>
-                <p class="body-1">
-                  We found there was an unexpected band between 20-25 kDa in
-                  washing and elution samples(Fig.3b), which is not shown in
-                  Fig.3a. It may be caused by the nickel medium since we used it
-                  to purify mfp5-2 before purification of mfp5-1 and did not
-                  clear it totally. The band of mfp5-2 is actually between 20-25
-                  kDa.
-                </p>
-                <v-row justify="center" align="baseline">
-                  <v-col cols="6">
-                    <v-img src="@/assets/mfp5-1 第一次纯化.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.3a: SDS-PAGE of first purification of mfp5-1
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/mfp5-1 第二次纯化.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.3b: SDS-PAGE of second purification of mfp5-1
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-row
-                    justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                  <strong
+                    >(1) Non-stress fracture internal fixation materials</strong
                   >
-                    <p class="body-1">
-                      <strong>Fig.3: Purification of mfp5-1</strong>
-                    </p>
-                  </v-row>
-                </v-row>
+                </p>
+                <p class="body-1">
+                  Non-load-bearing fracture and comminuted fracture will be the
+                  main application scenarios of MIBOM.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  The consumables, costs and time of the second operation have
+                  caused huge occupation and loss of patients and medical
+                  resources. Patients need to bear the cost of titanium alloy
+                  plate consumables, the cost of removal and the impact of
+                  hospital stay on daily life. Medical resources need to carry
+                  patients undergoing removal of internal fixation, so more
+                  medical resources are occupied. On the other hand, the
+                  treatment of more serious comminuted fractures takes a long
+                  time because of its complex operation process, which increases
+                  the burden of doctors' energy and operation level. Therefore,
+                  MIBOM was developed to be a new generation of fracture
+                  treatment options for non-load-bearing trauma and comminuted
+                  fractures.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  MIBOM has the load-bearing strength required for
+                  non-load-bearing bones and can handle comminuted fractures
+                  with flexible handling capabilities. Therefore, in comminuted
+                  fractures, cumbersome bone block treatment, bone nail repair
+                  will be replaced by MIBOM bone glue. For conventional
+                  fractures, MIBOM can directly treat non-load-bearing fractures
+                  by cementing the fracture ends with bone glue and reducing
+                  plate removal and injury to the bone.
+                </p>
+                <p class="body-1">
+                  <strong
+                    >(2)Future application scenario -- trauma dressing</strong
+                  >
+                </p>
+                <p class="body-1">
+                  Mussel mucin has a hydrophobic force, which can effectively
+                  form a nano-level protective film at the local microscopic
+                  level and effectively protect the wound surface or skin
+                  mucosa. The special structure of mussel mucin can also provide
+                  extended support for normal tissue cells around the wound,
+                  which is beneficial for cells to crawl and grow from the
+                  middle or from the bottom up and promote wound healing.
+                  Therefore, mussel mucin can not only facilitate the exudation
+                  of a wound and mucosal environment with fluid but also provide
+                  a strong environment for wound healing.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  Hydrogel modules, such as hyaluronic acid or hydrogel, help to
+                  block the outer structure and prevent microbes from entering,
+                  achieving an antibacterial effect. At the same time, the gel
+                  can absorb exudate and toxic substances, providing an
+                  effective environment for wound healing. At present, there are
+                  many repair gels in circulation, which is one of the current
+                  treatment schemes for wound repair.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  Therefore, using the MIBOM module, the gel can be loaded with
+                  mussel mucin, providing antibacterial, adhesion, absorption of
+                  exudate, and providing a wound healing environment, helping
+                  wound healing once. According to the module development, skin
+                  or cell growth factor can be added into the gel, and a certain
+                  regulatory system can be added to achieve steady control.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  The wound dressing has a variety of application directions,
+                  and corresponding products can be developed for different
+                  types of trauma. The use of flexible MIBOM modules will enable
+                  faster development and save r&d costs for concept exploration.
+                </p>
               </v-card-text>
-              <v-card-title class="text-h6">
-                Purification of mfp5-2
+              <v-card-title class="text-h5">
+                2.3 Competitive analysis
               </v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  The protocol of mfp5-2 purification is the same as mfp5-1
-                  purification since they share almost the same features except
-                  for molecular weight. We can find the band of mfp5-2(Fig.4)
-                  between 20-25 kDa, suggesting the successful expression of
-                  mfp5-2. However, an unexpected band between 15-20 kDa shows in
-                  many samples, including after induction, supernatant, washing
-                  and elution. It did not result from nickel medium since the
-                  band also occurred after induction and supernatant samples. So
-                  we inferred that mfp5-2 might break in half during expression
-                  since it is a fusion protein made up of two repeats of mfp5-1.
+                  Internal fixation of bone material properties of biodegradable
+                  is the orthopedic medical research and development of tuyere,
+                  and there is no completely absorbable internal fixation
+                  materials are widely used in the traumatic fracture, so most
+                  bone material equipment companies will be main direction
+                  positioning on the biodegradable material, to fill the blank
+                  of the technology of the fractures of the clinical and break
+                  through the traditional treatment.
                 </p>
-                <v-img
-                  src="@/assets/mfp5-2 第一次纯化.png"
+              </v-card-text>
+              <v-card-title class="text-h6">
+                Core competitiveness & Inventivity
+              </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  <strong
+                    >(1) Unique biological autonomic regulatory system</strong
+                  >
+                </p>
+                <p class="body-1">
+                  MIBOM uses cells integrated into the hydrogel to autonomously
+                  regulate the gel, and can autonomously respond according to
+                  the state of bone healing. Compared with biodegradable
+                  inorganic implants such as PLGA/PLLA, MIBOM can be adjusted
+                  according to the patient's own condition and is more
+                  patient-friendly. At the same time, MIBOM can release drugs
+                  through bioregulation, allowing better-targeted treatment at
+                  the fracture site. In the case of cytotoxicity, osteoblast
+                  stem cells or the patient's own cells are used in the cell
+                  regulation system, resulting in a smaller immune prototype and
+                  less harm to the human body. The biological autonomic
+                  regulation system enables MIBOM to pay more attention to the
+                  feelings and state of patients and provide better solutions
+                  for traumatic fractures.
+                </p>
+                <p class="body-1">
+                  <strong>(2) Efficient protein extraction solution</strong>
+                </p>
+                <p class="body-1">
+                  Compared with traditional mussel mucin extraction, using
+                  synthetic biology method to modify and extract mussel mucin
+                  can greatly reduce the cost and loss of extraction, and
+                  improve the efficiency and quality of extraction. The new
+                  technology solution provides MIBOM with lower costs and higher
+                  quality materials. At the same time, the technical
+                  transformation of mussel mucin gives MIBOM a more solid
+                  research and development foundation, which is conducive to the
+                  development of more products based on mussel mucin in the
+                  future.
+                </p>
+                <p class="body-1">
+                  <strong
+                    >(3)Modular design, flexible research and
+                    development</strong
+                  >
+                </p>
+                <p class="body-1">
+                  Compared to traditional r&d methods, MIBOM has a more flexible
+                  modular r&d approach. The four modules of adhesive system,
+                  regulation system, drug delivery system and gel system have
+                  high compatibility and can be replaced and transformed. This
+                  allows the team to quickly remove or develop a new feature in
+                  one of these modules and verify its feasibility, rather than
+                  considering the overall development plan and feasibility. The
+                  modular research and development system is conducive to the
+                  verification of different modules, making small modules more
+                  efficient trial and error, iteration, and the development of
+                  better preclinical concepts. Such a new way is beneficial to
+                  personnel allocation, reducing the cost of r&d coordination,
+                  reducing the cost of trial and error of large programs, and
+                  achieving a more lean research and development.
+                </p>
+                <p class="body-1">
+                  <strong
+                    >(4) Raw materials have reliable certification, low safety
+                    risk</strong
+                  >
+                </p>
+                <p class="body-1">
+                  GelMA has been approved by FDA and has a high safety factor.
+                  Mussel mucin is widely used in the medical cosmetology
+                  industry with high acceptance and product safety. Security and
+                  reliability make the proof of concept of MIBOM more guaranteed
+                  and help reduce the security risks caused by MIBOM
+                  implantation.
+                </p>
+                <p class="body-1">
+                  <strong
+                    >(5)No complex technology transformation, fast product
+                    iteration</strong
+                  >
+                </p>
+                <p class="body-1">
+                  MIBOM initially develops products with the market as its
+                  demand and target. Compared with transforming existing
+                  research achievements into reliable technologies, MIBOM will
+                  save a lot of transformation costs and coordination costs. In
+                  addition, as a start-up company, MIBOM is more sensitive to
+                  the market. Meanwhile, all MIBOM technologies are the team's
+                  independent property rights. Therefore, MIBOM can efficiently
+                  respond to the market feedback and new demand for product
+                  improvement, through modular research and development in a
+                  short period of time to iterate better products, in a timely
+                  line with the market dynamics.
+                </p>
+                <p class="body-1">
+                  <strong
+                    >(6)Diversified professional team and excellent R&D
+                    atmosphere</strong
+                  >
+                </p>
+                <p class="body-1">
+                  Diversified team building enables MIBOM team to become an
+                  excellent start-up team. First of all,MIBOM has an
+                  experimental team of more than ten people, which enables MIBOM
+                  team to complete the basic idea of the experiment in the three
+                  fields of molecular and genetic, cell and genetic, and
+                  biological materials. At the same time, MIBOM team has
+                  excellent modeling talents, management talents, hardware
+                  development, front-end production and a series of talent
+                  reserves, which can fully meet the product design, R & D
+                  testing, hardware development, front-end publicity, company
+                  management and other processes, and can quickly span the
+                  process from start-up team to start-up company. 84.2% of all
+                  talents come from biology-related majors. The team has strong
+                  expertise in biotechnology development and strong teamwork
+                  ability. The team has a separate molecular and cell
+                  laboratory. Every week, the team will put forward 2-3 new
+                  schemes or iterative schemes, and the overall scientific
+                  research atmosphere is strong.
+                </p>
+                <p class="body-1">
+                  <strong
+                    >(7)Rich academic resources and strong technical
+                    support</strong
+                  >
+                </p>
+                <p class="body-1">
+                  The academic support from Shanghai University of Science and
+                  Technology is one of our great strengths. ShanghaiTech
+                  University (HEREINAFTER referred to as ShanghaiTech
+                  University) is a full-time institution of higher learning
+                  jointly established and built by Shanghai Municipal People's
+                  Government and Chinese Academy of Sciences. The official
+                  establishment was approved by the Ministry of Education on
+                  September 30, 2013. The university is committed to serving the
+                  national economic and social development strategy, cultivating
+                  talents for scientific and technological innovation and
+                  entrepreneurship, providing scientific and technological
+                  solutions, and playing the role of a think tank. The
+                  university is actively engaged in the reform of higher
+                  education, participating in the construction of Shanghai
+                  Science and Innovation Center, and striving to build itself
+                  into a small-scale, high-level, international,
+                  research-oriented and innovative university. The MIBOM project
+                  is strongly supported by ShanghaiTech University with
+                  long-term guidance from Yang Haitao, Executive Director of
+                  Institute of ImmunoChemistry, ShanghaiTech University,
+                  Professor Shen Wei, School of Life Sciences and Technology,
+                  ShanghaiTech University, and Gao Yan, associate researcher of
+                  ShanghaiTech University. Received the guidance of Professor
+                  Zhang Yifeng from the school of Life and Technology, Professor
+                  Hong Suting from School of Entrepreneurship and Management,
+                  ShanghaiTech University, Professor Xiao Bailong from Tsinghua
+                  University, Office of Tech Transfer, ShanghaiTech University
+                  and Shanghai Ninth Institute.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h6"> Competitor Profile </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  <strong
+                    >(1) Chengdu Dikang Zhongke Biomedical Materials Co., LTD.
+                    (dikang Zhongke)</strong
+                  >
+                </p>
+                <p class="body-1">
+                  <strong>Main products:</strong> absorbable fracture internal
+                  fixation screws, absorbable medical anti-adhesion film. font>
+                </p>
+                <p class="body-1">
+                  <strong>Indications:</strong>all kinds of non - bearing parts
+                  of fracture internal fixation, osteotomy, joint fusion
+                </p>
+                <p class="body-1">
+                  <strong>Scientific research Foundation:</strong> Scientific
+                  research achievement of "Ultra-high molecular weight
+                  poly-DL-lactic acid fracture internal fixation system", which
+                  was undertaken by Chengdu Institute of Organic Chemistry,
+                  Chinese Academy of Sciences.
+                </p>
+                <p class="body-1">
+                  <strong>Basic Status:</strong> Chengdu Dikang Zhongke
+                  Biomedical Materials Co., Ltd. successfully applied for the
+                  2002 National Special appropriation of new materials for
+                  high-tech industrialization of 4 million yuan on the basis of
+                  "ultra-high molecular weight poly-DL-lactic acid and its
+                  fracture internal fixation system". The construction scale of
+                  the project is 200 kg of PLA per year, which can absorb
+                  300,000 pieces of bone fixers, 1 million pieces of medical
+                  anti-adhesion film and 5 million sutures. The annual output
+                  value of the whole project reaches 1 billion yuan. At present,
+                  the company is the largest poly-DL-lactic acid production base
+                  in China.
+                </p>
+                <p class="body-1">
+                  <strong>(2) Syntellix AG</strong>
+                </p>
+                <p class="body-1">
+                  <strong>Main products:</strong> First-generation magnesium
+                  alloy orthopedic trauma compression internal fixation screw
+                  MAGNEZIX MgYREZr
+                </p>
+                <p class="body-1">
+                  <strong>Indications:</strong> hand, foot small fracture, and
+                  fracture nonunion
+                </p>
+                <p class="body-1">
+                  <strong>Scientific research Foundation:</strong> Berlin
+                  University School of Medicine
+                </p>
+                <p class="body-1">
+                  <strong>Basic Status：</strong> In 2008, Syntellix AG was
+                  founded based on the scientific research and technology
+                  foundation of the Medical School of The University of Berlin.
+                  In 2013, the MAGNEZIX MgYREZr (WE43) degradable magnesium
+                  alloy compression screw developed by Germany's Sytellix AG
+                  became the world's first Ce-certified orthopedic product for
+                  small and fragment fixation. In December 2018, MAGNEZIX(WE43)
+                  degradable magnesium alloy compression screw was registered as
+                  an NMPA Innovative medical device in China. In 2019, MAGNEXZIX
+                  screw will begin a multi-center clinical trial in China.
+                </p>
+                <p class="body-1">
+                  <strong>(3) Dongguan Eontec Co., Ltd.</strong>
+                </p>
+                <p class="body-1">
+                  <strong>Main products:</strong> ‘99.99 % high purity
+                  magnesium’ orthopaedic internal fixation screws
+                </p>
+                <p class="body-1">
+                  <strong>Indications:</strong> femoral head necrosis bone flap
+                  transplantation operation fixation.
+                </p>
+                <p class="body-1">
+                  <strong>Scientific research Foundation:</strong>Professor Qin
+                  Ling, Faculty of Medicine, CuHK
+                </p>
+                <p class="body-1">
+                  <strong>Basic Status:</strong> In 2013, Eontec led the "China
+                  Medical Magnesium Alloy Innovation Alliance" and the
+                  biological magnesium alloy research team of Germany APP
+                  Implantate AG. In 2014, Eontec applied for "degradable
+                  magnesium bone internal fixation screws" and passed the
+                  special approval application for innovative medical devices.
+                  Since 2015, clinical trials of high-purity magnesium
+                  orthopedic screws have been carried out in Zhongshan Hospital
+                  affiliated to Dalian University, with more than 100 cases.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h6">
+                Competitive Frame<v-img
+                  src="@/assets/wpsD322.tmp.jpg"
                   contain
                   max-height="600px"
                 />
+              </v-card-title>
+              <v-card-text>
                 <v-row
                   justify="center"
                   style="margin-top: 10px; margin-bottom: 10px"
                 >
-                  <p class="body-1">
-                    Fig.4: SDS-PAGE of first purification of mfp5-2
+                  <p class="body-2 fig">
+                    Figure 1. The competitive frame of degradable internal
+                    fixation material
                   </p>
                 </v-row>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  By comparing the technical indicators, clinical application
+                  and price of the above enterprises, it can be found that
+                  currently, the degradable internal fixators are still in the
+                  embryonic stage of trauma bone materials, and most of them are
+                  in the process of technological transformation. Most materials
+                  advocate the use of ultra-high molecular PLLA/PLGA or
+                  magnesium and magnesium alloys, which greatly improves the
+                  control of degradation ability and cannot bear excessive
+                  weight. Therefore, MIBOM has great advantages in degradation
+                  regulation ability, clinical application range, operational
+                  flexibility and price setting. Moreover, the internal fixators
+                  of ultra-high molecular materials are prone to damage and
+                  other problems. Therefore, although Dikang Zhongke is listed,
+                  it cannot completely solve all the needs of internal fixation.
+                  However, most of the new degradable bone materials are based
+                  on the transformation of existing research and development
+                  technology, there is a big gap between the middle and the
+                  market, and the transfer cost is high. MIBOM transcends the
+                  long process of technology transformation and is more
+                  sensitive to the market. Therefore, in the design process,
+                  MIBOM directly faces the market and continuously iterates,
+                  which can feed the market demand back more quickly, adjust
+                  timely and obtain effective product solutions.
+                </p>
+              </v-card-text>
+              <v-row justify="center">
+                <v-card-title class="text-h4 title" id="mibom">
+                  3. MIBOM's feasibility & inventivity
+                </v-card-title>
+              </v-row>
+              <v-card-text>
+                <p class="body-1">
+                  MIBOM is a realistic solution. In this part, we will prove the
+                  development potential and entrepreneurial feasibility of
+                  MIBOM. At the same time, we will also demonstrate the
+                  extensibility and creativity of MIBOM to prove that this
+                  concept is indeed capable of creating diverse product lines to
+                  meet the needs of the market.
+                </p>
               </v-card-text>
               <v-card-title class="text-h5">
-                Improvement of mussel protein
+                3.1 The development potential of MIBOM
+              </v-card-title>
+              <v-card-title class="text-h6">
+                Market background: aging society is approaching, and the
+                incidence of orthopedic diseases is increasing significantly
               </v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  To characterize as much as possible the adhesion of tyrosine
-                  enzyme-modified mefp5-1 and mefp5-2, take 20ul of the
-                  concentrated protein solution(concentration:
-                  mefp5-1=50mg/ml,mefp5-2=40mg/ml) to attach the PCR tube and
-                  the tube cover （Fig.5a,5b)(The PCR tube cover is trimmed and
-                  polished to a round face with a diameter of 7mm)to the center
-                  of the petri dish and perform a viscidity test after 48 hours
-                  of drying in a 37-degree oven.
+                  According to the National Bureau of Statistics of China, the
+                  number and proportion of the population aged over 65 continued
+                  to increase in 2013, with 176 million people at the end of
+                  2019, accounting for 12.57% of the total population, up 2.90
+                  percentage points from 2013.<sup
+                    @click="$vuetify.goTo('#references', options)"
+                    >[1]</sup
+                  >
                 </p>
-                <v-row justify="center">
-                  <v-col cols="6">
-                    <v-img src="@/assets/5-1.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.5a Add 20ul of protein solution to the center of the
-                        petri dish.
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/5-11.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.5b Attach PCR tube to the center of the petri dish
-                      </p>
-                    </v-row>
-                  </v-col>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  The incidence of orthopedic diseases is highly correlated with
+                  age. Taking osteoporosis as an example, the incidence of such
+                  diseases is significantly positively correlated with age, and
+                  the incidence is extremely high in women. According to the
+                  epidemiological survey conducted by K M Jordan, C Cooper et
+                  al., there are 9 million brittle bone fractures every year,
+                  and women aged 65 and older account for 74% of all fractures
+                  in the United States.
+                  <sup @click="$vuetify.goTo('#references', options)">[2]</sup
+                  >The burden of brittle fractures will increase as the
+                  population ages, with the annual incidence and cost of brittle
+                  fractures projected to increase by 50 percent in the United
+                  States by 2025. In 2018, the National Health Commission
+                  released the results of the epidemiological survey on
+                  osteoporosis in China for the first time, which showed that
+                  the prevalence of osteoporosis in people over 65 years old was
+                  as high as 32.0%, 10.7% in men and 51.6% in women. According
+                  to the relevant orthopedic epidemiological survey, the
+                  proportion of age groups with orthopedic diseases in China is
+                  over 60 years old, accounting for 44.1%. With the aging
+                  population increasing and average life expectancy increasing,
+                  the incidence of fracture diseases will continue to grow.
+                  China's orthopedic industry is further concentrated, and the
+                  market demand for bone implants is gradually increasing.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h5"> 3.2 Market size </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  According to the Frost Sullivan database, the market size of
+                  Bone implants in China has also increased from 7.2 billion
+                  yuan in 2010 to 30.4 billion yuan in 2019, with a compound
+                  annual growth rate of 17.36%.<sup
+                    @click="$vuetify.goTo('#references', options)"
+                    >[3]</sup
+                  >
+                  It is expected to maintain a steady growth rate of about 15%
+                  from 2019 to 2023, and the market size will exceed 53 billion
+                  yuan in 2023.
+                </p>
+                <p class="body-1">
+                  <v-img src="@/assets/5.png" contain max-height="600px" />
                   <v-row
                     justify="center"
                     style="margin-top: 10px; margin-bottom: 10px"
                   >
+                    <p class="body-2 fig">
+                      Figure 2. Market size and forecast of Orthopedic implant
+                      in China from 2010 to 2023
+                    </p>
                   </v-row>
-                </v-row>
-                <p class="body-1">
-                  Lift the petri dish at a certain height through the PCR tube
-                  and add the glass beads one by one to the petri dish until the
-                  last glass bead is added to cause the petri dish to fall off
-                  with the PCR tube. The adhesion of the added protein can be
-                  calculated by weighing the total weight of the Petri dish and
-                  glass beads.（Fig.6a,6b)
                 </p>
-                <v-row justify="center">
-                  <v-col cols="6">
-                    <v-img src="@/assets/9{SIIXS9UH`V9G9CNQ84$0P.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.6a Fill the petri dish one by one with glass beads.
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/5-22.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.6b Record the weight of glass beads when separating
-                        petri dish from PCR tube.
-                      </p>
-                    </v-row>
-                  </v-col>
+                <p class="body-1">
+                  In the orthopedic market segment, according to IQVIA
+                  statistics, Trauma products in China accounted for 24% of the
+                  market. At present, as of 2013-2018, the sales revenue of the
+                  trauma market has increased from 3.8 billion yuan to 7.7
+                  billion yuan, and it is expected that the sales of the trauma
+                  implantation market will reach 14.3 billion yuan in 2023, with
+                  a compound growth rate of 13.3% within five years. It can be
+                  concluded that the trauma bone material market is mature and
+                  has sufficient market share, while the budding of new
+                  technology will have a huge space for development.
+                </p>
+                <p class="body-1">
+                  <v-img src="@/assets/4.png" contain max-height="600px" />
                   <v-row
                     justify="center"
                     style="margin-top: 10px; margin-bottom: 10px"
                   >
+                    <p class="body-2 fig">
+                      Figure 3. Trauma implant consumables market in China
+                    </p>
                   </v-row>
-                </v-row>
-                <p class="body-1">
-                  Each experiment was recorded with a video camera, and every
-                  moment of falling off was recorded.(Video.1)
                 </p>
-                <v-container>
-                  <video controls width="100%" style="object-fit: contain">
-                    <source src="@/assets/粘性测定.mp4" type="video/mp4" />
-                  </video>
-                </v-container>
+              </v-card-text>
+              <v-card-title class="text-h5"> 3.3 Market Capacity </v-card-title>
+              <v-card-text>
                 <p class="body-1">
-                  We calculated the results by the following steps:
+                  On the basis of the National Bureau of Statistics, the number
+                  and proportion of the population aged over 65 continued to
+                  increase in 2013, reaching 176 million at the end of 2019,
+                  accounting for 12.57% of the total population, up 2.90
+                  percentage points from 2013. Meanwhile, the average life
+                  expectancy of Chinese residents has increased from 74.83 years
+                  in 2010 to 77.3 years in 2020, according to the National
+                  Health Commission.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  The incidence of orthopedic diseases is highly correlated with
+                  age. Taking osteoporosis as an example, the incidence of such
+                  diseases is significantly positively correlated with age, and
+                  the incidence is extremely high in women. According to the
+                  epidemiological survey conducted by K M Jordan, C Cooper et
+                  al., the number of brittle bone fractures is 9 million every
+                  year, and in the United States, Women aged 65 years and older
+                  accounted for 74%. The burden of brittle fractures will
+                  increase as the population ages, with the annual incidence and
+                  cost of brittle fractures projected to increase by 50 % in the
+                  United States by 2025. In 2018, the National Health Commission
+                  released the results of the epidemiological survey on
+                  osteoporosis in China for the first time, which showed that
+                  the prevalence of osteoporosis in people over 65 years old was
+                  as high as 32.0%, 10.7% in males and 51.6% in females.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  According to the relevant orthopedic epidemiological survey,
+                  the proportion of age group of orthopedic diseases in China is
+                  also 44.1% over 60 years old. With the increase of aging and
+                  average life expectancy, the incidence of fracture diseases
+                  will continue to grow, the development of the orthopedic
+                  industry will be further concentrated, and the market demand
+                  for bone implants will gradually increase.
                 </p>
                 <p class="body-1">
-                  <strong>mefp5-1:</strong>
+                  <v-img src="@/assets/3.png" contain max-height="600px" />
+                  <v-row
+                    justify="center"
+                    style="margin-top: 10px; margin-bottom: 10px"
+                  >
+                    <p class="body-2 fig">
+                      Figure 4. China 2012-2021 Estimated orthopedic surgery
+                      Volume
+                    </p>
+                  </v-row>
                 </p>
-                <p class="body-1">PCR tube cover area:</p>
-                <p class="body-1">$$ S=π×r^2=π×(0.35cm)^2=0.38cm^2 $$</p>
+              </v-card-text>
+              <v-card-title class="text-h5">
+                3.4 Feasibility Analysis:
+              </v-card-title>
+              <v-card-title class="text-h6">
+                Technical feasibility:
+              </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  In order to verify the feasibility of the overall scheme, we
+                  designed the division and arrangement of the preliminary
+                  experiment in vitro. The experiment is divided into three
+                  parts: the extraction and measurement of mussel mucin, the
+                  culture and measurement of cells in the hydrogel, and the
+                  activation and measurement of Piezo1 pathway.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  In the case of mussel mucin, we intend to first extract it and
+                  then test the viscosity and mechanical strength of "gel +
+                  mussel mucin". For the experiment of cell culture in the
+                  hydrogel, we plan to prepare hydrogel first, then culture and
+                  phototoxicity test at the same time. Finally, in the
+                  activation and testing experiment section of Piezo1 pathway,
+                  we plan to express Piezo1, then test the flow of CALCIUM ions
+                  indicating Piezo1, and finally express the plasmids downstream
+                  of Piezo1.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  As for the overall experimental scheme, we plan to complete
+                  all the preliminary in vitro experiments before September 30,
+                  followed by the next step of mass production of mussel mucin
+                  and in vivo experimental verification.
+                </p>
+                <p class="body-1">
+                  <v-img src="@/assets/6.png" contain max-height="600px" />
+                  <v-row
+                    justify="center"
+                    style="margin-top: 10px; margin-bottom: 10px"
+                  >
+                    <p class="body-2 fig">
+                      Table 1. MIBOM in VITRO experiment schedule
+                    </p>
+                  </v-row>
+                </p>
+                <p class="body-1">
+                  So far, MIBOM has completed the proof-of-concept of its design
+                  and has tentatively verified the strength of the
+                  dual-crosslinked system and the feasibility of Piezo1. You can
+                  refer to the
+                  <a
+                    href="https://2021.igem.org/Team:ShanghaiTech_China/Experiment"
+                    >Experiment</a
+                  >
+                  and
+                  <a
+                    href="https://2021.igem.org/Team:ShanghaiTech_China/Results"
+                    >Results</a
+                  >
+                  sections.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h6"> Safety: </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  At present, MIBOM materials have been approved by the FDA or
+                  have been widely used in the medical and health field (GelMA
+                  has been approved by the FDA, mussel mucin has been widely
+                  used in the medical beauty industry). Therefore, MIBOM can
+                  maximize patient safety prior to clinical trials.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h6"> Economic viability: </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  <strong>(1) Expectation market share:</strong>
+                </p>
+                <p class="body-1">
+                  In our product development plan, we plan to cover medical
+                  devices, medical cosmetology, postoperative rehabilitation and
+                  other industries. Such products have a large and steady
+                  demand.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  At present, MIBOM is a new biodegradable material, which will
+                  be developed in the orthopedic medical industry at the initial
+                  stage, and in the beauty and trauma treatment industry at the
+                  later stage. The product is in the embryonic stage of
+                  development in the above industries. During the implementation
+                  period, there are few competitors, and the profitability will
+                  be greatly enhanced. According to the earnings forecast, if it
+                  is introduced into the market in 2023, the return on equity
+                  will reach 7%, and with the growth of the year, the return on
+                  equity will reach 24% five years after it is put into the
+                  market.
+                </p>
+                <p class="body-1">
+                  <v-img
+                    src="@/assets/table 3.png"
+                    contain
+                    max-height="600px"
+                  />
+                  <v-row
+                    justify="center"
+                    style="margin-top: 10px; margin-bottom: 10px"
+                  >
+                    <p class="body-2 fig">
+                      Table 2. Estimated yield of MIBOM project
+                    </p>
+                  </v-row>
+                </p>
 
                 <p class="body-1">
-                  The total weight of the petri dish and glass beads, i.e. the
-                  maximum pull that mefp5-1 can withstand in the experiment：
+                  <strong>(2)Cost input</strong>
                 </p>
                 <p class="body-1">
-                  $$ F=43.24g×9.8kg/N=(43.24/1000)kg×9.8kg/N=0.42N $$
-                </p>
-                <p class="body-1">The viscosity produced by mefp5-1:</p>
-                <p class="body-1">
-                  $$ P=F/S=0.42N/0.38cm^2=1.105N/cm^2=11.05KPa $$
+                  Our product production is mainly divided into two parts, one
+                  is purification and modification of mussel mucin, the other is
+                  cell culture and preparation of hydrogel bone nails.
                 </p>
                 <p class="body-1">
-                  <strong
-                    >The viscosity produced per milligram of protein:</strong
-                  >
+                  In general, the cost of raw materials for the two parts is
+                  very low. On average, the cost of materials for preparing 1ml
+                  hydrogel is about 5 yuan. Another major cost of the product is
+                  hardware facilities. The purchase of high-speed centrifuges,
+                  ultra-clean tables, shakers and other equipment will be a
+                  considerable expenditure, and the estimated price will be
+                  about 1 million yuan. Therefore, considering the cost of
+                  facilities, materials and labor, the cost of our product will
+                  be 20 yuan /ml. The cost is much lower than the same type of
+                  products on the market.
                 </p>
                 <p class="body-1">
-                  $$ P'=P/m=11.05KPa/(50mg/ml×0.02ml)=11.05KPa/m $$
+                  <strong>(3）Product Pricing</strong>
+                </p>
+                <p class="body-1">
+                  Given the low cost of the product, we can use pricing that is
+                  well below the industry average. At present, the price of a
+                  degradable bone nail in the market is about 3000-4000 RMB,
+                  while our product is estimated to be priced at 1000-1500 RMB.
+                  It is a product worthy of investment and development with high
+                  quality and low price and large profit space.
+                </p>
+                <p class="body-1">
+                  <strong>(4)Operation Capacity</strong>
+                </p>
+                <p class="body-1">
+                  Our products cover medical devices, medical cosmetology,
+                  postoperative rehabilitation and other industries. These
+                  industries have a large and steady demand for products.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  Every year, countless patients suffer from fractures, burns
+                  and other trauma, and our products such as bone repair gel and
+                  burn treatment gel will be favored by a large number of
+                  consumers because they can reduce the pain of patients in the
+                  treatment process and shorten the time of postoperative
+                  rehabilitation while being stable and efficient.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  In recent years, people demand for beauty products show stable
+                  growth trend, the mussel mucin microscopic nanoscale
+                  protective film can be formed, the physical barrier,
+                  antioxidation, and at the same time, under the action of local
+                  anti-inflammatory have acne pitting scar, rapid repair wound
+                  skin, inhibit itching and melanin and multiple effects,
+                  Coupled with the fact that our mussel mucin extract is of low
+                  cost and high quality, our beauty products will quickly find a
+                  niche in the market.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  To sum up, due to the extremely high market and the fact that
+                  as a new and pioneering product, there are almost no
+                  competitors in the industry at the initial stage of promotion,
+                  it is preliminarily predicted that the project will have
+                  strong profitability. After being in the market for a while
+                  and building your own brand, profitability will be more
+                  substantial.
+                </p>
+                <v-img
+                  src="@/assets/image-20211002002538730-16331055437322.png"
+                  contain
+                  max-height="600px"
+                />
+                <v-row
+                  justify="center"
+                  style="margin-top: 10px; margin-bottom: 10px"
+                >
+                  <p class="body-2 fig">Table 3. Profitability of MIBOM</p>
+                </v-row>
+              </v-card-text>
+
+              <v-card-title class="text-h5"> 3.5 Scalability </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  Due to its modular 4 systems (Adhensive, Hydrogel, Regulation,
+                  and drug delivery), MIBOM can be adapted to various
+                  requirements such as drug redesign when later modified. At the
+                  same time, a modular system like MIBOM is also conducive to
+                  the development of products in other areas, such as beauty,
+                  trauma repair and so on.
+                </p>
+                <p class="body-1">
+                  <v-img src="@/assets/7.png" contain max-height="600px" />
+                </p>
+                <p class="body-1">
+                  For the needs of different areas, MIBOM only needs to adjust
+                  each module to design new products. This can significantly
+                  reduce the cost and time of the concept design and validation
+                  phase. Due to the flexibility of design, MIBOM can also be
+                  adjusted according to the needs of users, so that the product
+                  can better adapt to the needs of users. The cost of the
+                  overall adjustment of MIBOM is far less than that of a product
+                  with only one idea from beginning to end.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  From a developmental perspective, modular MIBOM will
+                  facilitate the development of materials adapted to different
+                  fields and environments. By simply replacing one module,
+                  cellular regulatory systems and materials that adapt to
+                  different environments and feel different conditions can be
+                  obtained. Thus, MIBOM can make more creative creations in the
+                  transformation of functional materials.
                 </p>
               </v-card-text>
-              <p class="body-1"><strong>mefp5-2</strong></p>
+              <v-card-title class="text-h5"> 3.6 Sustainability: </v-card-title>
+              <v-card-title class="text-h6">
+                Ecological sustainability
+              </v-card-title>
               <v-card-text>
-                <p class="body-1">PCR tube cover area:</p>
-                <p class="body-1">$$ S=π×r^2=π×(0.35cm)^2=0.38cm^2 $$</p>
                 <p class="body-1">
-                  The total weight of the petri dish and glass beads, i.e. the
-                  maximum pull that mefp5- can withstand in the experiment:
+                  We have modified existing mussel mucins through synthetic
+                  biology. We hope that the expression of mussel mucin in
+                  Escherichia coli can improve the viscosity of mussel mucin and
+                  reduce the cost of the artificial purchase of mussel mucin.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  Mussel mucin was originally produced and extracted from mussel
+                  byssus, which was prepared by crushing, extraction,
+                  chromatographic purification and concentration. Mussel mucin
+                  is a potential resource in the biomedical field because of its
+                  high viscosity, flexibility, water resistance and
+                  biodegradability. Because of its special structure, mussel
+                  mucin has strong waterproof properties and promoting healing
+                  ability, which makes it can be developed as a medical
+                  adhesive, medical coating or wound repair product. However,
+                  its biggest feature of stickiness still has potential
+                  development in other fields. So mussel mucin has become a
+                  popular biomaterial.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  At present, the mainstream method of industrial extraction of
+                  mussel mucin still adopts mass purification of the mussel foot
+                  gland, but due to the low secretion of mussel mucin, the
+                  amount of mussel mucin can be extracted from 10,000 mussels is
+                  about 1mg. As a result, the extraction process and cost
+                  significantly increased the price of mussel mucin-related
+                  products. For example, Biopolymers, a Swedish company, sells
+                  an adhesive called "Cell-tak" for $115 per mg in the United
+                  States. A 10mg dose can cost around 7,500 yuan. On the other
+                  hand, the product obtained from mass purification of the
+                  mussel foot gland could not obtain higher strength viscosity
+                  due to the limitation of the extraction process. This limits
+                  the scope of application of mussel mucin. Currently, adhesive
+                  products are mostly used for adhesion between non-adherent
+                  cells and Petri dishes in cell culture. Therefore, the current
+                  mussel mucin extraction process has high consumption, low
+                  yield and low adhesion, which will lead to very large mussel
+                  loss and waste.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  In order to reduce the waste of mussel raw material and reduce
+                  the cost of mussel mucin, we choose to independently develop
+                  mussel mucin production.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  We designed a microbial expression and purification system for
+                  mussel mucin meFP5 to reduce the extraction cost and prepare
+                  mussel mucin of higher quality. The experimental scheme was
+                  designed to construct two and three repeated MEFP5 genes while
+                  expressing mussel mucin. We have now tested the properties of
+                  mussel mucin after this modification. In the future, we will
+                  try to use in vitro tyrosinase expression and purification
+                  system.
                 </p>
                 <p class="body-1">
-                  $$ F=39.46g×9.8kg/N=(39.46/1000)kg×9.8kg/N=0.39N $$
-                </p>
-                <p class="body-1">The viscosity produced by mefp5-2:</p>
-                <p class="body-1">
-                  $$ P=F/S=0.39N/0.38cm^2=1.026N/cm^2=10.26KPa $$
-                </p>
-                <p class="body-1">
-                  <strong
-                    >The viscosity produced per milligram of protein:</strong
-                  >
+                  We plan to test the feasibility of mussel mucin through
+                  Escherichia coli in the stage of increased viscosity, and in
+                  the production stage, we will use a yeast system to express
+                  mussel mucin, which simplifies the protein extraction process,
+                  reduces the cost and increases the yield.
                 </p>
                 <p class="body-1">
-                  $$ P'=P/m=10.26KPa/(40mg/ml×0.02ml)=12.83KPa/mg $$
+                  In short, by increasing the strength and yield of mussel mucin
+                  from the perspective of synthetic biology, instead of
+                  traditional mass extraction methods, this solution will
+                  greatly reduce the waste of natural mussels and reduce the
+                  cost of extraction. It is also more in line with sustainable
+                  development and can protect limited Marine resources.
+                  Meanwhile, artificial mussel mucins developed through
+                  synthetic biology will be stickier and more stable than
+                  natural mussel mucins. This is more conducive to expanding the
+                  application scenarios of mussel mucin and developing the
+                  potential of mussel mucin as a real medical material.
                 </p>
+              </v-card-text>
+              <v-card-title class="text-h6">
+                Health support for poor areas
+              </v-card-title>
+              <v-card-text>
                 <p class="body-1">
-                  Compared with the viscosity of
-                  <strong>mefp5-1</strong> (11.05KPa/mg), the viscosity of
-                  <strong>mefp5-2</strong> was improved to 12.83KPa/mg, which
-                  was 16.11% higher than that of MEFP5-1.
+                  MIBOM plans to adopt two product routes in the future: 1.
+                  Primary products: 'mussel + gel' treatment products; 2.
+                  High-quality products : 'mussel + gel + cell regulation'
+                  treatment products.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  Grassroots products will be promoted to the general public,
+                  especially hospitals in small cities, and low costs and low
+                  prices will help grassroots. In areas of extreme poverty or
+                  unrest, MIBOM's base products are useful for emergency
+                  fracture repair. As mass production of mussel mucin can be
+                  achieved by yeast modification to meet industrial production
+                  requirements, the cost of mussel mucin will be extremely low.
+                  This helps MIBOM provide low-cost products for groups that do
+                  not want to pay too much for treatment. On the other hand, as
+                  adhesions and other functions make surgery more convenient and
+                  flexible, the threshold of surgery will be relatively lower,
+                  which is more conducive to the operation of doctors in areas
+                  with insufficient medical resources. The low price and ease of
+                  operation also make MIBOM useful in disaster first aid to
+                  provide scalable, cost-effective treatment.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  MIBOM team always pursues the value concept of "Least waste,
+                  Best Technology", and wants to reduce waste through excellent
+                  technical transformation and provide low-cost and effective
+                  labor solutions. In the future development planning, we plan
+                  to cooperate with the government after the official launch of
+                  MIBOM to promote the product to grassroots hospitals, reduce
+                  the threshold of surgical operation, and help more areas
+                  lacking medical resources.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h5"> 3.7 Patenting: </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  When we want to commercialize, Suting Hong, a professor in the
+                  field of entrepreneurial management at Shanghai University of
+                  Science and Technology, and Mr. Yunfeng Qiu, an expert in the
+                  medical device industry, both proposed that we should take the
+                  lead in protecting our concepts and products. Office of Tech
+                  Transfer at ShanghaiTech University provides us with support
+                  for patent applications. Patent applications require novelty,
+                  innovation and industrial utility. The experts who helped us
+                  saw that MIBOM had all three qualities and were willing to
+                  support us. In addition, according to Mr. Yunfeng Qiu's
+                  opinion, we can apply for an invention patent and utility
+                  model patent at the same time to shorten the application
+                  period and protect our concept in advance.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  Before submitting the Patent Cooperation Treaty, we hope to
+                  protect MIBOM by applying for a national Patent, which will
+                  allow us to continue to have exclusive rights to the
+                  technology in the future. We can have the opportunity to
+                  develop intellectual property. On the other hand, the patent
+                  can also prove the feasibility of MIBOM, increase the
+                  competitiveness of MIBOM, attract investors more easily, and
+                  persuade them to cooperate with us.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  Office of Tech Transfer on behalf of the university is helping
+                  us prepare the national patent application, which will be
+                  filed on November 7, 202.
                 </p>
               </v-card-text>
               <v-row justify="center">
-                <v-card-title class="text-h4 title" id="hydrogel">
-                  Hydrogel system
+                <v-card-title class="text-h4 title" id="development">
+                  4. Development plans and required capabilities, funds, and
+                  stakeholders
                 </v-card-title>
               </v-row>
               <v-card-title class="text-h5">
-                Preparation of GelMA
+                4.1 SWOT analysis & strategies
               </v-card-title>
               <v-card-text>
-                <p class="body-1">
-                  Gelatin-methacryloyl(GelMA) is prepared by adding acrylic
-                  anhydride to the gelatin solution. GelMA with different
-                  degrees of methacryloyl modification is tested by Nuclear
-                  Magnetic Resonance Spectroscopy-1H(NMR-1H). We can identify
-                  the functional group by the chemical shift(Fig.7a) and judge
-                  the degrees of methacryloyl modification in terms of the
-                  relative integral of characteristic peak(Fig.7b)
-                </p>
-                <v-row justify="center">
-                  <v-col cols="6">
-                    <v-img src="@/assets/GelMA1-1.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.7a: Identifying the functional group by the chemical
-                        shift(ppm)
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/GelMA2-2.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.7b: Identifying the degrees of methacryloyl
-                        modification in terms of relative integral of
-                        characteristic peak
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-row
-                    justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
-                  >
-                  </v-row>
-                </v-row>
-              </v-card-text>
-              <v-card-title class="text-h5">
-                Rheological properties
-              </v-card-title>
-              <v-card-text>
-                <p class="body-1">
-                  Our ideal osteogenic glue should have a moderate modulus and
-                  rapid polymerization. A moderate modulus(10^3-10^4)is to have
-                  good biocompatibility and rapid polymerization for a shorter
-                  surgery time. To test the rheological properties of our
-                  material, we used the TA Discovery HR-2 hybrid rheometer to
-                  test our material and we found the appropriate ratio of the
-                  three components(12.5% GelMA +1.25% Alginate + 4mg/ml Mussel
-                  protein)(Fig.8a). We used UV curing accessories to test the
-                  change of modulus during the solidification. We found that the
-                  UV curing time is around 2-8s, which is very rapid
-                  polymerization(Fig.8b). Moreover, we did the oscillation sweep
-                  to test its other rheological properties(Fig.8c, Fig.8d), the
-                  oscillation test showed our material can keep the modulus
-                  under 75% oscillation strain, bearing the biggest 300%
-                  oscillation strain, which is qualified to be an osteogenic
-                  glue.
-                </p>
-                <v-row justify="center" align="baseline">
-                  <v-col cols="6">
-                    <v-img src="@/assets/流变1.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.8a: A moderate modulus by changing the ratio of the
-                        three components
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/流变2.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.8b: A rapid UV polymerization, costing only 2-8s
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/2.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.8c: Modulus / Angular frequency curve of MIBOM
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/3.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.8d: Modulus / Oscillation strain curve of MIBOM
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-row
-                    justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
-                  >
-                    <p class="body-1">
-                      <strong>
-                        Fig.8: Rheological properties of the MIBOM
-                      </strong>
-                    </p>
-                  </v-row>
-                </v-row>
-              </v-card-text>
-              <v-card-title class="text-h5">
-                Mechanical Test of hydrogel + Mfp
-              </v-card-title>
-              <v-card-title class="text-h6">
-                Determinate the adhesion of hydrogel and hydrogel-mussel mucin
-                mixture system
-              </v-card-title>
-              <v-card-text>
-                <p class="body-1">
-                  To compare the adhesion and mechanical strength of the
-                  Hydrogel system and Hydrogel-Mussel mucin system, the same way
-                  as in the last experiment was used to measure the adhesion.
-                </p>
-                <p class="body-1">
-                  We measured the adhesion of the hydrogel alone. 50ul hydrogel
-                  (GelMA or Hydrogel-Mussel mucin: GelMA+Mussel
-                  mucin(mefp5-2))was used to glue the PCR tube cap with a
-                  diameter of 7mm along with the tube body to the center of the
-                  petri dish. (Fig. 9a)The adhesion of GelMA was measured after
-                  curing with UV lamp for 15 seconds. (Fig. 9b)
-                </p>
-                <v-row justify="center">
-                  <v-col cols="6">
-                    <v-img src="@/assets/1-4.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig. 9a: Glue the PCR tube to the petri dish with GelMA
-                        or GelMA+Mussel mucin
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/1-5.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.9b: Use UV light to cure GelMA or GelMA+Mussel mucin
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-row
-                    justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
-                  >
-                    <p class="body-1">
-                      <strong>
-                        Fig.9: Mechanical test of GelMA+mussel protein
-                      </strong>
-                    </p>
-                  </v-row>
-                </v-row>
-                <p class="body-1">
-                  To prevent the sliding of the added glass beads from changing
-                  the overall center of gravity, which results in uneven forces
-                  on the contact surface between the PCR tube and the petri
-                  dish, double-sided adhesive was affixed to the bottom of the
-                  petri dish to fix the position of the glass beads and
-                  stabilize the center of gravity(Fig.10a). Glass beads and
-                  weights were added to the petri dish one by one until the PCR
-                  tube separated from the petri dish(Fig.10b).
-                </p>
-                <v-row justify="center">
-                  <v-col cols="6">
-                    <v-img src="@/assets/1-6.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.10a: Fill the petri dish one by one with glass beads
-                        and weights.
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/1-1.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.10b: Record the weight of glass beads when separated
-                        petri dish from PCR tube
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-row
-                    justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
-                  >
-                  </v-row>
-                </v-row>
-              </v-card-text>
-              <v-card-title class="text-h6"> Calculating results </v-card-title>
-              <v-card-text>
-                <p class="body-1"><strong>Hydrogel system</strong>:</p>
-                <p class="body-1">PCR tube cover area:</p>
-                <p class="body-1">$$S=π×r^2=π×(0.35cm)^2=0.38cm^2 $$</p>
-                <p class="body-1">
-                  The total weight of the petri dish, glass beads and weights,
-                  i.e. the maximum pull that GelMA can withstand in the
-                  experiment：
-                </p>
-                <p class="body-1">
-                  $$ F=105.47g×9.8kg/N=(105.47/1000)kg×9.8kg/N=1.033N $$
-                </p>
-                <p class="body-1">The adhesion produced by GelMA:</p>
-                <p class="body-1">
-                  $$P=F/S=1.033N/0.38cm^2=2.718N/cm^2=27.18KPa$$
-                </p>
-                <p class="body-1">
-                  <strong>Hydrogel-Mussel Mucin</strong>(GelMA+Mussel
-                  mucin(mefp5-2))
-                </p>
-                <p class="body-1">PCR tube cover area:</p>
-                <p class="body-1">$$S=π×r^2=π×(0.35cm)^2=0.38cm^2$$</p>
-                <p class="body-1">
-                  The total weight of the petri dish, glass beads and weights,
-                  i.e. the maximum pull that GelMA+ Mussel mucin can withstand
-                  in the experiment:
-                </p>
-                <p class="body-1">
-                  $$ F'=143.54g×9.8kg/N=(143.54/1000)kg×9.8kg/N=1.407N $$
-                </p>
-                <p class="body-1">
-                  The adhesion produced by GelMA + Mussel mucin:
-                </p>
-                <p class="body-1">
-                  $$ P'=F'/S=1.407N/0.38cm^2=3.702N/cm^2=37.02KPa $$
-                </p>
-                <p class="body-1">The adhesion compared to GelMA alone</p>
-                <p class="body-1">
-                  $$ \frac {(P'-P)} {P}\% =(37.02KPa-27.18KPa)/27.18KPa×100\%
-                  =36.2\% $$
-                </p>
-                <p class="body-1">
-                  The adhesion compared to mussel mucin(mefp5-2) alone
-                </p>
-                <p class="body-1">
-                  $$ \frac {(P'-P)} {P}\% =(37.02KPa-10.26KPa)/10.26KPa×100\%
-                  =260.8\% $$
-                </p>
-                <p class="body-1">
-                  The mussel mucin +GELMA system produced a stronger adhesion
-                  than GELMA hydrogel alone,which is increased by 36.2% compared
-                  with GelMA alone and increased by about 260.8% compared to
-                  mussel mucin alone.
-                </p>
-              </v-card-text>
-              <v-card-title class="text-h5"> Cell survival test </v-card-title>
-              <v-card-title class="text-h6">
-                Live/dead staining with FDA and PI
-              </v-card-title>
-              <v-card-text>
-                <p class="body-1">
-                  We used FDA( Fluorescein diacetate)/PI(Propidium Iodide) to
-                  count the living and dead data of cells and identify the death
-                  rate of cells. Under the fluorescence microscope, living cells
-                  are dyed green(Fig.11a) and dead cells are dyed red(Fig.11b),
-                  and the FDA/PI can enter the hydrogel and dye the cells.
-                  (Fig.11a, Fig.11b) Some haloes appear in fluorescent
-                  pictures(Fig.11c) because the hydrogel itself has a certain
-                  thickness, and the cells are not located on the same plane. We
-                  can see different layers of cells by fine adjustment.
-                  (Video.3)
-                </p>
-                <v-row justify="center" align="baseline">
-                  <v-col cols="6">
-                    <v-img src="@/assets/0816-20-07.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.11a: Living cells are dyed green by FDA, the cells
-                        are encapsulated into the hydrogel, 20X objective
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/0816-20-06.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.11b: Dead cells are dyed red by PI, the cells are
-                        encapsulated into the hydrogel, 20X objective
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/0816-04-04.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.11c: Cells encapsulated into the hydrogel, 4X
-                        objective
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-container>
-                      <video controls width="100%" style="object-fit: contain">
-                        <source src="@/assets/录像_4.mp4" type="video/mp4" />
-                      </video>
-                    </v-container>
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Video.2: We can see different layers of cells by fine
-                        adjustment
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-row
-                    justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
-                  >
-                    <p class="body-1">
-                      <strong>Fig.11: FDA/PI staining in hydrogel</strong>
-                    </p>
-                  </v-row>
-                </v-row>
-              </v-card-text>
-              <v-card-title class="text-h6"> Phototoxicity test </v-card-title>
-              <v-card-text>
-                <p class="body-1">
-                  We had concerned that 405nm excitation light will kill the
-                  cells during the solidification. So we designed a
-                  phototoxicity test to see the influence of light. We tested
-                  phototoxicity by directly irradiating cells for 10s, 30s and
-                  60s. This irradiation time is much longer than the need for
-                  curing. And the death rate of cells is very low, indicating
-                  very little harm of excitation light to the cells(Fig.12) The
-                  surviving rate is calculated by the following equation:
-                </p>
-                <p class="body-1">
-                  $$ R_{Death}=\frac{N_{death}}{N_{live}+N_{death}} $$
-                </p>
-                <v-img src="@/assets/紫外.png" />
+                <v-img src="@/assets/8.png" contain max-height="600px" />
                 <v-row
                   justify="center"
                   style="margin-top: 10px; margin-bottom: 10px"
                 >
-                  <p class="body-2 fig">
-                    Fig.12: Death rate of cells under different UV light
-                    exposure time
-                  </p>
+                  <p class="body-2 fig">Table 4. SWOT analysis</p>
                 </v-row>
               </v-card-text>
-              <v-card-title class="text-h6">
-                Viability of cells in hydrogel
+
+              <v-card-title class="text-h5">
+                4.2 Risk assessment & Response
               </v-card-title>
               <v-card-text>
-                <p class="body-1">
-                  We first test the short-term viability of cells in the
-                  hydrogel, encapsulating the cells into the hydrogel, and do
-                  Live/Dead staining every day for a 7-day test. Therefore, we
-                  can get scientific survival data of cells living in the
-                  hydrogel. (Fig.13)
-                </p>
-                <v-img src="@/assets/7 day.png" contain max-height="600px" />
+                <v-img
+                  src="@/assets/Risk assessment & response_A1E6.png"
+                  contain
+                  max-height="600px"
+                />
                 <v-row
                   justify="center"
                   style="margin-top: 10px; margin-bottom: 10px"
                 >
-                  <p class="body-2 fig">
-                    Fig.13: Short-term viability of cells in hydrogel
-                  </p>
+                  <p class="body-2 fig">Table 5. Risk assessment</p>
                 </v-row>
+              </v-card-text>
+
+              <v-card-title class="text-h5">
+                4.3 Development plans
+              </v-card-title>
+              <v-card-text>
                 <p class="body-1">
-                  To test the Long-term viability of cells in the hydrogel, we
-                  encapsulated the cells into the hydrogel and do Live/Dead
-                  staining every 3 days for a 21-day test. The survival rate
-                  data showed that the cells' survival rate remains 60%, which
-                  means the cell can adjust to the hydrogel environment and
-                  remain its bioactive abilities. (Fig.14)
+                  ShanghaiTech_China team initially plans to develop a product
+                  for comminuted fractures and develop an adrenal product for
+                  internal fracture fixation, followed by clinical registration.
+                  At the same time of registration, ShanghaiTech_China team
+                  plans to further develop the viscosity and strength of the
+                  product and upgrade MIBOM into a conventional degradable bone
+                  fixation material. It is planned that clinical trials of MIBOM
+                  comminuted fracture products will be completed in about 5
+                  years and formal product distribution will begin. The
+                  following is MIBOM's 5-year development plan:
                 </p>
                 <v-img
-                  src="@/assets/Long term.jpg"
+                  src="@/assets/fracture-bu-2.png"
                   contain
                   max-height="600px"
                 />
@@ -882,878 +1436,341 @@
                   style="margin-top: 10px; margin-bottom: 10px"
                 >
                   <p class="body-2 fig">
-                    Fig.14: Long-term viability of cells in hydrogel
+                    Table 6. Guideline of MIBOM development
                   </p>
                 </v-row>
               </v-card-text>
+              <v-card-title class="text-h5"> 4.4 Stakeholders </v-card-title>
+              <v-card-title class="text-h6">
+                Upstream Stakeholders
+              </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  MIBOM upstream stakeholders include suppliers, sponsors,
+                  investors and so on.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  The price of traditional equipment suppliers, such as
+                  centrifuges and shakers, is fixed, and there is no intention
+                  to develop or cooperate with large equipment companies in the
+                  field of medical equipment at present. Therefore, we cannot
+                  have too much cooperation with equipment suppliers.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  As for the upstream stakeholders such as investors, we hope to
+                  reach cooperation or agreement with them as much as possible,
+                  especially the large enterprises of site supply or incubation
+                  supply. A good partnership with this type of investor will
+                  help us get more capital and incubation resources, as well as
+                  the subsequent expansion of MIBOM's R&D and other departments.
+                  Therefore, we made contact with Dr. Hongyan Jiang, the
+                  business mentor of MicroPort, relying on the resources of the
+                  school, and confirmed that we are expected to receive guidance
+                  from the official technical evaluation team of MicroPort in
+                  the future.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h6">
+                Midstream stakeholders
+              </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  MIBOM will meet multiple midstream stakeholders, the most
+                  important of which are the managers of the National Medical
+                  Products Administration, the managers of National Healthcare
+                  Security Administration and the decision-makers of hospitals.
+                  All of the above stakeholders will influence the clinical,
+                  registration, approval, health insurance payment and listing
+                  issues.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  The administrator of the National Medical Products
+                  Administration mainly influences the clinical registration of
+                  MIBOM and the approval of medical devices. Of all the
+                  processes, MIBOM will have the longest contact time with the
+                  National Medical Products Administration. Especially in the
+                  approval process of medical devices, our team will repeatedly
+                  contact and communicate with its managers to improve the
+                  approval requirements. The manager's decision will greatly
+                  affect the final flow of MIBOM. We hope to learn more about
+                  medical device management requirements through the Yangtze
+                  River Delta branch of China National Medical Products
+                  Administration, so as to save time and avoid the need for us
+                  to go to Beijing for understanding.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  The administrator of the National Healthcare Security
+                  Administration will be the ultimate payer of MIBOM, and
+                  medical insurance will bear most of the cost of MIBOM.
+                  Therefore, we need to go into the catalog of health insurance
+                  and make an agreement with the Healthcare Security
+                  Administration to ensure that the product has the ultimate
+                  payer. That requires us to negotiate. Of course, it will be
+                  relatively easy to cooperate with other commercial insurance
+                  companies. MIBOM will try its best to cooperate with
+                  commercial insurance companies in the future to provide a
+                  better medical experience to patients.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  Hospital decision-makers will have the greatest influence on
+                  the progress of our clinical trials. At the same time,
+                  hospital decision-makers will also influence the final
+                  distribution channel of MIBOM downstream. If they have a good
+                  clinical cooperation relationship with their decision-makers,
+                  MIBOM can also be distributed in the original partner
+                  hospitals after being approved and listed. Therefore, we will
+                  try our best to find well-known third-class hospitals for
+                  cooperation.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h6">
+                Downstream stakeholders
+              </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  The downstream stakeholders of MIBOM are very diverse, it can
+                  be purchasing decision-makers, doctors; It could be a user, a
+                  patient. Of course, rehabilitation doctors, nurses, are also
+                  downstream stakeholders of MIBOM.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  For orthopedic surgeons, the primary decision will be whether
+                  the patient will use MIBOM, and they will operate directly
+                  with MIBOM. Therefore, safety and strength were crucial to
+                  their persuasion. On the other hand, the guidance and training
+                  of doctors also depend on the needs of doctors. Therefore, we
+                  hope that by providing a product use guidance session, doctors
+                  can fully understand MIBOM and also enable them to operate
+                  fully with MIBOM.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  For patients, it is necessary to explain the product to them
+                  because they are the ultimate users and beneficiaries.
+                  Patients often learn about the treatment of a fracture from a
+                  doctor's dictation. There is some deviation in the way of
+                  dictation. In order to enable patients to make better
+                  decisions, MIBOM will provide patient-specific product
+                  descriptions and information on fractures to increase their
+                  recognition of MIBOM.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  For rehabilitation doctors and nurses, they want to know more
+                  about patients' physical conditions. This is beneficial for
+                  rehabilitation doctors to conduct further rehabilitation
+                  guidance. Therefore, in order to avoid the deviation of
+                  dictation, MIBOM wants to provide a full range of intensive
+                  treatment services. A 'patient manual' will be provided to
+                  document the patient's condition. At the same time, the manual
+                  also provides rehabilitation guidance, so that rehabilitation
+                  doctors can better understand the problems that need to be
+                  paid attention to during MIBOM treatment and some
+                  rehabilitation data that can be referred to.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h5"> 4.5 Funding </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  In order to further develop our program, we need additional
+                  funding for experimental, clinical and operational purposes.
+                  Most of our cost structure is made up of R&D, and this part of
+                  the cost will determine the final pricing. Fixed lab
+                  consumables cost for MIBOM is only $153 / month. But we can't
+                  estimate the cost of manpower and time. Due to the high risk
+                  of development, it is impossible to estimate the cost of
+                  previous concept trials. In order to establish an effective
+                  capital chain, we planned our possible capital sources in the
+                  early stages.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  Entrepreneurship competitions organized by students or the
+                  government are the most effective source of initial funding.
+                  Compared with fundraising activities or incubator roadshows,
+                  such entrepreneurship competitions require a relatively low
+                  level of managerial competence and threshold. At the same
+                  time, this kind of entrepreneurship competition can also give
+                  some financial support to the start-up team in the initial
+                  stage of project establishment and r&d. Currently,
+                  ShanghaiTech_China has three sources of funding for an
+                  entrepreneurship competition. The first is the Synbiopunk
+                  Challenge hosted by Ailurusbiotech, for which we have received
+                  \$1538 and we expect to receive a total of \$16,922 by October
+                  9th. Second, there is funding from the Bio+ competition, which
+                  will be held on October 27th and we expect to receive $15,384.
+                  Third, TechIES2021, sponsored by Shanghai University of
+                  Science and Technology, will give us at least \$1538 in
+                  support.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  Furthermore, an innovative medical device r&d competition from
+                  the National Medical Products Administration will help us get
+                  more funding. On the other hand, in order to get further
+                  support, roadshows can effectively get feedback and support
+                  from venture capitalists, who will be our first investors and
+                  clients. This type of funding can be very effective in the
+                  late stages of development. Of course, in this case, we have
+                  the full financing plan.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  The first round of funding will be used to develop and
+                  manufacture bone repair hydrogels and further improve mussel
+                  mucin extraction technology. The remaining funds will be used
+                  for market registration, market research and sales promotion.
+                  The capital of each part of the preliminary idea is as
+                  follows: 60% for scientific research and development, 10% for
+                  market registration, 15% for market research and 15% for sales
+                  promotion.
+                </p>
+                <v-img src="@/assets/9.png" contain max-height="600px" />
+                <v-row
+                  justify="center"
+                  style="margin-top: 10px; margin-bottom: 10px"
+                >
+                  <p class="body-2 fig">Figure 5. Financing plan</p>
+                </v-row>
+              </v-card-text>
+
               <v-row justify="center">
-                <v-card-title class="text-h4 title" id="stress">
-                  Stress-sensitive regulation system
+                <v-card-title class="text-h4 title" id="long">
+                  5. Long-term Impacts:
                 </v-card-title>
               </v-row>
               <v-card-title class="text-h5">
-                Overexpressing Piezo1.1
+                5.1 Operational planning
               </v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  Although some papers have successfully overexpressed Piezo1 or
-                  Piezo1.1 in human cell lines, we need to test its transfection
-                  productivity and observe its effect on cell
-                  morphology(Transfection may influence the cell morphology a
-                  lot). Moreover, the Piezo1.1 plasmid is longer than the normal
-                  plasmid(13720bp)(Fig.15b), which makes it relatively hard to
-                  enter the cells. Piezo1.1 is connected with a red fluorescent
-                  protein mRuby2 after it(<a
-                    href="http://parts.igem.org/Part:BBa_K3755017"
-                    >BBa_K3755017</a
-                  >)(Fig.15a). So we firstly transfected the Piezo1.1 plasmid
-                  into HEK293 cells to test its expression productivity by red
-                  fluorescence and examined cells' morphology. (Fig.15c,
-                  Fig.15d)
+                  <strong>(1)The current business</strong>
                 </p>
-                <v-row justify="center" align="baseline">
-                  <v-col cols="6">
-                    <v-img src="@/assets/Piezo1.1.jpg" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.15a: Gene circuit of Piezo1.1 overexpression system
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img
-                      src="@/assets/mPiezo1.1-isoform-mRuby2-flag-pcdna3.1 Map.png"
-                    />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.15b: Plasmid
-                        mPiezo1.1-isoform-mRuby2-flag-pcdna3.1(13720bp)
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/0823-04-01.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.15c: Transfected HEK293 cells in a 96 well, the red
-                        fluorescence is the mRuby2 after the Piezo1.1, the
-                        transfection reagent is lipofectamine2000 from Thermo
-                        Fisher Scientific. 4X objective
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/0823-40-01.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.15d: Transfected HEK293 cells, showing normal
-                        morphology. The transfection reagent is
-                        lipofectamine2000 from Thermo Fisher Scientific. 40X
-                        objective
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-row
-                    justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
-                  >
-                    <p class="body-1">
-                      <strong
-                        >Fig.15: Gene circuit of Piezo1.1 and its expression in
-                        cells</strong
-                      >
-                    </p>
-                  </v-row>
-                </v-row>
                 <p class="body-1">
-                  Fig.15c shows an obvious red fluorescence, indicating
-                  relatively good transfection productivity. And Fig.15d shows a
-                  normal cell morphology. These outcomes indicate that the
-                  overexpression of Piezo1.1 in HEK293 cells is successful. This
-                  is the first step to make a stress-sensitive pathway.
+                  At present, MIBOM mainly focuses on the research and
+                  development, registration, clinical and production of bone
+                  implants, and intends to develop auxiliary bone implants and
+                  conventional bone implants successively. Due to the long study
+                  period, the development of viscous strength of mussel mucin
+                  requires a long trial period. Therefore, MIBOM will first
+                  develop an auxiliary bone fixation for the treatment of highly
+                  comminuted fractures. After the technology stabilizes, MIBOM
+                  will develop a conventional version of the bone-implant to
+                  test its feasibility. This is the main product of the MIBOM
+                  team, and we will do research and development, data modeling,
+                  marketing and other multi-dimensional development. Further, in
+                  order to expand the product line and timely develop low-cost
+                  and popular products with high selling points, MIBOM will
+                  develop modular products with "mussel mucin" as the core, and
+                  finally determine a variety of highly compatible "protein +
+                  cell + gel" products. This will help the team to reduce the
+                  total cost of other areas of development, faster and more
+                  effective development of new wound or beauty products.
+                </p>
+                <p class="body-1">
+                  <strong>(2) Growth strategy</strong>
+                </p>
+                <p class="body-1">
+                  In the future, the modular research and development products
+                  of "mussel mucin + hydrogel + cell regulation system" will be
+                  used in nerve repair, wound repair, beauty and other fields.
+                  MIBOM will take advantage of existing resources and technology
+                  advantages to rapidly develop innovative materials for wound
+                  repair and beauty, and develop basic products with low price
+                  and mass popularity. At the same time, MIBOM will broaden its
+                  customer base and expand the hospital customer base to
+                  individual consumers to meet their needs in the wound, beauty
+                  and other fields, providing personalized skin protection
+                  products or wound repair products that are adjusted according
+                  to the body state. We will also accelerate product development
+                  for individual consumers, achieve industrial production and
+                  broaden the narrow application scenarios of MIBOM. This will
+                  benefit MIBOM's capital flow and provide financial protection
+                  for r&d risks. In addition, we will popularize basic products
+                  so that MIBOM can establish its brand as soon as possible and
+                  gain recognition among the medical field and the public.
+                </p>
+                <p class="body-1">
+                  <strong>(3) Ultimate goal</strong>
+                </p>
+                <p class="body-1">
+                  Ultimately, MIBOM hopes to provide solutions to uneven medical
+                  resources on the one hand, and customized personalized
+                  services on the other. After the multi-line products provide
+                  effective cash flow, MIBOM hopes to bring the products to the
+                  grassroots and solve the problem of medical resources. In this
+                  segment, MIBOM plans to produce basic products based on the
+                  "mussel mucin + hydrogel" product model, which eliminates
+                  cellular regulatory systems through self-degradation of the
+                  gel. Therefore, we hope to make the product more accessible to
+                  patients and doctors at the grassroots level, greatly reduce
+                  the production cost, product pricing and operation difficulty,
+                  so that MIBOM can alleviate the imbalance of medical resources
+                  from the perspective of materials. MIBOM, on the other hand,
+                  will provide personalized therapy by introducing regulatory
+                  systems into the patient's own cells to generate personalized
+                  treatment and medication regimens, and ultimately solve
+                  difficult diseases such as cancer and spinal cord nerve injury
+                  through precision therapy.
                 </p>
               </v-card-text>
               <v-card-title class="text-h5">
-                Activating the Piezo1.1
+                5.2 Beneficial influence of the MIBOM
               </v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  After successfully transfecting Piezo1.1 into cells, we tried
-                  to activate the Piezo1.1. To indicate the influx of calcium
-                  ions, we used a genetically encoded calcium indicator,
-                  GCaMP6m, to test whether calcium entered cells after
-                  stimulations. Without calcium, GCaMP6m only has very low
-                  emitted light. When four calcium ions attach to CaM, the
-                  conformation of cpGFP will be changed, which lead to an
-                  obvious increase of emitted light at 510nm.
+                  MIBOM has the advantages of easy operation, low price,
+                  biological regeneration and biodegradation. It will allow
+                  patients to avoid secondary surgery and the high cost of
+                  equipment, and it will revolutionize the treatment of
+                  fractures and provide a new way of treating the medical
+                  community. MIBOM is affordable, easy to operate and will
+                  benefit patients in areas with inadequate medical resources.
+                  Such patients are often unable to afford the high amount of
+                  medical equipment, and at the same time cannot enjoy good
+                  doctor treatment. As a result, MIBOM will lower the threshold
+                  for physicians to operate and provide better benefits to
+                  patients through technology.
                 </p>
-              </v-card-text>
-              <v-card-title class="text-h6">
-                Construction of pEGFP-GCaMP
-              </v-card-title>
-              <v-card-text>
+                <p class="body-1"></p>
                 <p class="body-1">
-                  We get a GCaMP plasmid from our secondary PI's lab, but it is
-                  designed into a cre-loxp system which is impossible to express
-                  in HEK293 cells. So we decided to linearize a plasmid backbone
-                  from pEGFP-EGFP(<a
-                    href="http://parts.igem.org/Part:BBa_K3755023"
-                    >BBa_K3755023</a
-                  >) which has a CMV promotor and enhancer and get GCaMP6m from
-                  pAAV.Syn.Flex.GCaMP6m.WPRE.SV40(<a
-                    href="http://parts.igem.org/Part:BBa_K3755032"
-                    >BBa_K3755032</a
-                  >). Then, we get a pEGFP-GCaMP plasmid which can express in
-                  HEK293 cells theoretically.
+                  In the long run, MIBOM will overturn the treatment plan, and
+                  on the other hand, it will gradually empty medical resources.
+                  In the future, fewer patients will have to be hospitalized to
+                  occupy hospital beds because of implant removal, and more beds
+                  and time will be reserved for patients undergoing emergency
+                  surgery. Doctors will have more time to think about how to
+                  provide good care for ordinary patients.
                 </p>
-                <v-row justify="center" align="baseline">
-                  <v-col cols="6">
-                    <v-img src="@/assets/GCaMP vector.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.16a: Gene circuit of GCaMP composite part
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/pEGFP_GCaMP Map.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.16b: Construction of pEGFP-GCaMP, which is able to
-                        express in HEK293 cells
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/pEGFP-GFP-16331357931311.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.16c: Agarose gel electrophoresis of pEGFP and GFP,
-                        getting a plasmid backbone
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/GcaMP.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.16d: Agarose gel electrophoresis of GCaMP6 and
-                        Linearized pEGFP
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-row
-                    justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
-                  >
-                    <p class="body-1">
-                      <strong
-                        >Fig.16: Construction of a GCaMP plasmid that can
-                        express in HEK293 cells</strong
-                      >
-                    </p>
-                  </v-row>
-                </v-row>
-              </v-card-text>
-              <v-card-title class="text-h6">
-                Cotransfection of pEGFP-GCaMP and Piezo1.1
-              </v-card-title>
-              <v-card-text>
-                <p class="body-1">
-                  After getting a proper GCaMP plasmid, we firstly test the
-                  productivity of GCaMP and Piezo1.1. We tried different
-                  cotransfection conditions and found the best concentration of
-                  Lipofectamine 2000 reagent and plasmid. (See more details on
-                  Protocol pages) Importantly, the cotransfection productivity
-                  is largely dependent on the cell state. A bad cell state will
-                  cause very low productivity of cotransfection, which is the
-                  reason why we fail to see the activation of GCaMP at first.
-                </p>
-                <v-row justify="center" align="baseline">
-                  <v-col cols="6">
-                    <v-img src="@/assets/force 4times.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.17a: Green fluorescence of GCaMP after the
-                        activation of Piezo1.1 by force, 20X objective,
-                        indicating the transfection of pEGFP-GCaMP
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/0930 red 20 02.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.17b: Red fluorescence of Piezo1.1-mRuby2, indicating
-                        the transfection of Piezo1.1
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/Composite force.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.17c: Merge of the green channel and red channel,
-                        indicating the cotransfection of GCaMP and Piezo1.1
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/0930 bright 20 02.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.17d: Bright field of the corresponding cells
-                        cotransfected with two plasmids
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-row
-                    justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
-                  >
-                    <p class="body-1">
-                      <strong
-                        >Fig.17: Cotransfection of pEGFP-GCaMP and
-                        Piezo1.1</strong
-                      >
-                    </p>
-                  </v-row>
-                </v-row>
-              </v-card-text>
-              <v-card-title class="text-h6">
-                Calcium influx detection
-              </v-card-title>
-              <v-card-text>
-                <p class="body-1">
-                  Small molecule agonist Yoda1 has been proved to be effective
-                  in activating Piezo1.11 So we used Yoda1 as a positive control
-                  to test the Activation of Piezo1.1 and to see the change of
-                  green fluorescence to indicate the calcium influx. The
-                  experimental group and positive control group are all cells
-                  transfected with Piezo1.1 and GCaMP, the control group is
-                  cells transfected with GCaMP and an unrelated plasmid. The
-                  positive control group is activated by Yoda1, with a
-                  concentration of 50uM(Fig.18). An obvious change of
-                  fluorescence is observed after the Yoda1 is added to the
-                  well(Video.3). The experimental group is activated by
-                  force(Fig.18), which is shear stress to the cells applied by
-                  sucking out the culture medium. A faster change of
-                  fluorescence is observed after shear stress is given.
-                  (Video.4) No obvious change of fluorescence is observed in the
-                  control group under the condition of Yoda1 and shear stress.
-                  (Video.5)
-                </p>
-                <v-img
-                  src="@/assets/Gcamp共转实验-16331481926033.png"
-                  contain
-                  max-height="600px"
-                />
-                <v-row
-                  justify="center"
-                  style="margin-top: 10px; margin-bottom: 10px"
-                >
-                  <p class="body-2 fig">
-                    Fig.18: Experiment procedure to test the calcium influxa
-                  </p>
-                </v-row>
-                <v-row justify="center" align="baseline">
-                  <v-col cols="4">
-                    <v-container>
-                      <video controls width="100%" style="object-fit: contain">
-                        <source
-                          src="@/assets/Yoda1 8times.mp4"
-                          type="video/mp4"
-                        />
-                      </video>
-                    </v-container>
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Video.3: Fluorescence change of cells under the
-                        stimulation of 50uM Yoda, exposure time: 90ms, 20X
-                        objective
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="4">
-                    <v-container>
-                      <video controls width="100%" style="object-fit: contain">
-                        <source
-                          src="@/assets/force 4times.mp4"
-                          type="video/mp4"
-                        />
-                      </video>
-                    </v-container>
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Video.4: Faster fluorescence change of cells under the
-                        stimulation of shear stress, exposure time: 90ms, 20X
-                        objective
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="4">
-                    <v-container>
-                      <video controls width="100%" style="object-fit: contain">
-                        <source src="@/assets/control_1.mp4" type="video/mp4" />
-                      </video>
-                    </v-container>
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Video.5: Faster fluorescence change of cells under the
-                        stimulation of shear stress, exposure time: 90ms, 20X
-                        objective
-                      </p>
-                    </v-row>
-                  </v-col>
-                </v-row>
-              </v-card-text>
-              <v-card-title class="text-h6">
-                Quantitative analysis of fluorescence changes
-              </v-card-title>
-              <v-card-text>
-                <p class="body-1">
-                  To quantitatively analyze the change of fluorescence, we
-                  develop a program based on MATLAB(See details on
-                  <a href="https://2021.igem.org/Team:ShanghaiTech_China/Model"
-                    >Model</a
-                  >
-                  page) to test the change of fluorescent signal. We also hoped
-                  this program will help other teams in the future when using
-                  the GCaMP part(BBa_K3755007). We used this program to get the
-                  quantitative analysis of fluorescence changes. The curve
-                  showed the characteristics of rising first and then falling
-                  under the condition of force and Yoda1. (Fig.19b, Fig.19a)
-                  This is important to show a decreased fluorescence intensity,
-                  which is consistent with the features of Piezo1.1. The control
-                  group showed no obvious fluorescence change. (Fig.19c)
-                </p>
-                <v-row justify="center" align="baseline">
-                  <v-col cols="4">
-                    <v-img src="@/assets/force.jpg" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.19a: Relative fluorescence of cells under the
-                        stimulation of Yoda1
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="4">
-                    <v-img src="@/assets/Yoda1.jpg" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.19b: Relative fluorescence of cells under the
-                        stimulation of Yoda1
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="4">
-                    <v-img src="@/assets/Control.jpg" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.19c: Control group with no obvious fluorescence
-                        change
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-row
-                    justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
-                  >
-                    <p class="body-1">
-                      <strong
-                        >Fig.19: Relative fluorescence curve obtained by program
-                        based on MATLAB</strong
-                      >
-                    </p>
-                  </v-row>
-                </v-row>
               </v-card-text>
               <v-card-title class="text-h5">
-                Downstream pathway verification
-              </v-card-title>
-              <v-card-title class="text-h6">
-                Construction of pGL4.30-GFP
+                5.3 Adverse effect of MIBOM
               </v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  In our application scenario, the activation of Piezo1.1 will
-                  cause the influx of calcium ions, then the influx of calcium
-                  ion should be able to activate another plasmid, on which an
-                  NFAT-RE and Pmin (<a
-                    href="http://parts.igem.org/Part:BBa_K3755014"
-                    >BBa_K3755014</a
-                  >)are placed. We can simply change the gene module after the
-                  Pmin to get a different function. In this part, we inserted an
-                  EGFP gene after the Pmin(Fig.20a), and use two kinds of
-                  fluorescence to colocalize the cells. Similarly, we got the
-                  pGL4.30 by linearizing the backbone pGL4.30 and EGFP.
-                  (Fig.20c)
+                  Due to the storage of cells, MIBOM does not last long.
+                  Therefore, MIBOM can easily be disposed of as medical waste.
+                  In the process of treatment, there will be a lot of cell
+                  overflow, material contamination occurs. At the same time,
+                  MIBOM itself has great safety risks in the treatment process.
+                  MIBOM may be displaced, infected, inflamed, bone nonunion,
+                  secondary fracture and other situations, which are major
+                  safety risks for patients. And this is something that we, in
+                  human practice, doctors tell us over and over again. We need
+                  to ensure the safety and strength of MIBOM, so in vivo
+                  experiments need to be carried out as soon as possible.
                 </p>
-                <v-row justify="center" align="center">
-                  <v-col cols="5">
-                    <v-row justify="center">
-                      <v-col cols="12">
-                        <v-img src="@/assets/PGL4.30.jpg" />
-                        <v-row
-                          justify="center"
-                          style="margin-top: 10px; margin-bottom: 10px"
-                        >
-                          <p class="body-2 fig">
-                            Fig.20a: Gene circuit of pGL4.30-GFP
-                          </p>
-                        </v-row>
-                      </v-col>
-                      <v-col cols="12">
-                        <v-img src="@/assets/pGL-GFP Map.png" />
-                        <v-row
-                          justify="center"
-                          style="margin-top: 10px; margin-bottom: 10px"
-                        >
-                          <p class="body-2 fig">Fig.20b: Map of pGL4.30-EGFP</p>
-                        </v-row>
-                      </v-col>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/pGL4.30.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.20c: Agarose gel electrophoresis of EGFP and
-                        Linearized pGL4.30
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-row
-                    justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
-                  >
-                    <p class="body-1">
-                      <strong>Fig.20: Construction of pGL4.30-GFP</strong>
-                    </p>
-                  </v-row>
-                </v-row>
-              </v-card-text>
-              <v-card-title class="text-h6">
-                Fluorescence colocalization
-              </v-card-title>
-              <v-card-text>
-                <p class="body-1">
-                  After we successfully get the plasmid pGL4.30-GFP, we tried to
-                  use two fluorescent proteins to colocalize the cells. 24 hours
-                  after cotransfecting cells with pGL4.30-GFP and Piezo1.1, we
-                  apply mechanical stimulation to cells in two ways, sucking out
-                  the culture medium or placing it on a horizontal shaker for
-                  10min, 200rpm. (Fig.21a) They are both effective ways to
-                  stimulate the cells and activate the Piezo1.1. In practice, we
-                  observed a green fluorescence in the shaking group under the
-                  excitation light of 388nm(Fig.21b) and the colocalization of
-                  two fluorescence(Fig.21c, Fig.21d) shows a good cotransfection
-                  of the cells.
-                </p>
-                <v-img src="@/assets/GCaMP vector.png" />
-                <v-row
-                  justify="center"
-                  style="margin-top: 10px; margin-bottom: 10px"
-                >
-                  <p class="body-2 fig">
-                    Fig.21a: Experiment procedure of testing the downstream
-                    pathway
-                  </p>
-                </v-row>
-                <v-row justify="center" align="baseline">
-                  <v-col cols="4">
-                    <v-img src="@/assets/0928-40-03-green.png (green).png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.21b: Green channel of the cells 24h after shaking,
-                        identifying the expression of EGFP, 40X objective
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="4">
-                    <v-img src="@/assets/0928-40-03-green.png (red).png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.21c: Red channel of the cells to identify the
-                        Piezo1.1, 40X objective
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="4">
-                    <v-img src="@/assets/Composite.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.21d: Merge green and red channel to colocalize the
-                        cells
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-row
-                    justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
-                  >
-                    <p class="body-1">
-                      <strong
-                        >Fig.21: Expression of pGL4.30-GFP and Piezo1.1 after
-                        the stimulation of shaking</strong
-                      >
-                    </p>
-                  </v-row>
-                </v-row>
-                <p class="body-1">
-                  The group with stimulation of replacing the culture medium was
-                  also observed a fluorescent signal under the green
-                  channel.(Fig.22a) and the colocalization is obvious(Fig.22b,
-                  Fig.22c). The control group with no stimulation showed no
-                  fluorescent signal under the green channel. (Fig.22d)
-                </p>
-                <v-row justify="center" align="baseline">
-                  <v-col cols="6">
-                    <v-img src="@/assets/0903-40-5s-green.png (green).png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.22a: Green channel of the cells 24h after the
-                        stimulation of replacing the culture medium, identifying
-                        the expression of EGFP, 40X objective
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/0903-40-5s-green.png (red).png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.22b: Red channel of the cells to identify the
-                        Piezo1.1, 40X objective
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/Composite1.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.22c: Merge green and red channel to colocalize the
-                        cells
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img src="@/assets/0902-20-2.73-green.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.22d: Cells with no stimulation and no fluorescent
-                        signal is detected by microscope.
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-row
-                    justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
-                  >
-                    <p class="body-1">
-                      <strong
-                        >Fig.22: Expression of pGL4.30-GFP and Piezo1.1 after
-                        the stimulation of replacing medium and control
-                        group.</strong
-                      >
-                    </p>
-                  </v-row>
-                </v-row>
-              </v-card-text>
-              <v-card-title class="text-h6">
-                Activating the pathway in the hydrogel
-              </v-card-title>
-              <v-card-text>
-                <p class="body-1">
-                  To further prove the Piezo1.1-based stress-sensitive
-                  regulation system is also useful in our application scenario,
-                  we encapsulated cells into hydrogels and applied force to the
-                  hydrogel. We want to prove the hydrogel can be a medium for
-                  mechanical conduction. Finally, we observe the fluorescent
-                  signal of the green channel(Fig.23a) and a good colocalization
-                  of two kinds of fluorescent signals(Fig.23b, Fig.23c).
-                </p>
-                <v-row justify="center" align="baseline">
-                  <v-col cols="4">
-                    <v-img
-                      src="@/assets/0903-40-green-hydrogel-7.5s.png (green).png"
-                    />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.23a: Green channel of the cells 24h after the
-                        stimulation of mechanical conduction of hydrogel,
-                        identifying the expression of EGFP, 20X objective
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="4">
-                    <v-img
-                      src="@/assets/0903-40-green-hydrogel-7.5s.png (red).png"
-                    />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.23b: Red channel of the cells to identify the
-                        Piezo1.1, 20X objective
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="4">
-                    <v-img src="@/assets/Composite-16331936792826.png" />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.23c: Merge green and red channel to colocalize the
-                        cells
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-row
-                    justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
-                  >
-                    <p class="body-1">
-                      <strong
-                        >Fig.23: Expression of pGL4.30-GFP and Piezo1.1 after
-                        mechanical conduction of hydrogel and control
-                        group.</strong
-                      >
-                    </p>
-                  </v-row>
-                </v-row>
-              </v-card-text>
-              <v-row justify="center">
-                <v-card-title class="text-h4 title" id="drug">
-                  Drug system
-                </v-card-title>
-              </v-row>
-              <v-card-title class="text-h5"> Drug choices </v-card-title>
-              <v-card-text>
-                <p class="body-1">
-                  We interviewed some experts and looked through papers to
-                  identify some drugs that are beneficial to bone repair, we
-                  collected these data and compiled them into the following
-                  table:
-                </p>
-                <v-simple-table>
-                  <template v-slot:default>
-                    <thead>
-                      <tr>
-                        <th class="text-center">Drug</th>
-                        <th class="text-center">Function</th>
-                        <th class="text-center">Reference</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th class="text-center">β-glycerophosphate</th>
-                        <th class="text-center">Phosphate provision</th>
-                        <th class="text-center">
-                          Gerstenfeld, L. C., Chipman, S. D., Glowacki, J., &
-                          Lian, J. B. (1987). Expression of differentiated
-                          function by mineralizing cultures of chicken
-                          osteoblasts. Developmental biology, 122(1), 49–60.
-                          <a href="https://doi.org/10.1016/0012-1606(87)90331-9"
-                            >https://doi.org/10.1016/0012-1606(87)90331-9</a
-                          >
-                        </th>
-                      </tr>
-                      <tr>
-                        <th class="text-center">L-ascorbic acid</th>
-                        <th class="text-center">Collagen biosynthesis</th>
-                        <th class="text-center">
-                          Jeffrey, J. J., & Martin, G. R. (1966). The role of
-                          ascorbic acid in the biosynthesis of collagen. I.
-                          Ascorbic acid requirement by embryonic chick tibia in
-                          tissue culture. Biochimica et biophysica acta, 121(2),
-                          269–280.
-                          <a href="https://doi.org/10.1016/0304-4165(66)90116-4"
-                            >https://doi.org/10.1016/0304-4165(66)90116-4</a
-                          >
-                        </th>
-                      </tr>
-                      <tr>
-                        <th class="text-center">Dexamethasone</th>
-                        <th class="text-center">
-                          Disputablely believed as RUNX2 activation
-                        </th>
-                        <th class="text-center">
-                          Langenbach, F., & Handschel, J. (2013). Effects of
-                          dexamethasone, ascorbic acid and β-glycerophosphate on
-                          the osteogenic differentiation of stem cells in vitro.
-                          Stem cell research & therapy, 4(5), 117.
-                          <a href="https://doi.org/10.1186/scrt328"
-                            >https://doi.org/10.1186/scrt328</a
-                          >
-                        </th>
-                      </tr>
-                    </tbody>
-                  </template>
-                </v-simple-table>
-                <!--
-                <p class="body-1">| Drug | Function | Reference |</p>
-                <p class="body-1">
-                  | :----------------: |
-                  :---------------------------------------: |
-                  :----------------------------------------------------------: |
-                </p>
-                <p class="body-1">
-                  | β-glycerophosphate | Phosphate provision | Gerstenfeld, L.
-                  C., Chipman, S. D., Glowacki, J., & Lian, J. B. (1987).
-                  Expression of differentiated function by mineralizing cultures
-                  of chicken osteoblasts. Developmental biology, 122(1), 49–60.
-                  https://doi.org/10.1016/0012-1606(87)90331-9 |
-                </p>
-                <p class="body-1">
-                  | L-ascorbic acid | Collagen biosynthesis | Jeffrey, J. J., &
-                  Martin, G. R. (1966). The role of ascorbic acid in the
-                  biosynthesis of collagen. I. Ascorbic acid requirement by
-                  embryonic chick tibia in tissue culture. Biochimica et
-                  biophysica acta, 121(2), 269–280.
-                  https://doi.org/10.1016/0304-4165(66)90116-4 |
-                </p>
-                <p class="body-1">
-                  | Dexamethasone | Disputablely believed as RUNX2 activation |
-                  Langenbach, F., & Handschel, J. (2013). Effects of
-                  dexamethasone, ascorbic acid and β-glycerophosphate on the
-                  osteogenic differentiation of stem cells in vitro. Stem cell
-                  research & therapy, 4(5), 117. https://doi.org/10.1186/scrt328
-                  |
-                </p>
-                -->
-              </v-card-text>
-              <v-card-title class="text-h5">
-                Drug release experiment
-              </v-card-title>
-              <v-card-text>
-                <p class="body-1">
-                  In this part, we cooperate with CSU_China to do a drug release
-                  experiment(See details on
-                  <a
-                    href="https://2021.igem.org/Team:ShanghaiTech_China/Partnership"
-                    >Partnership</a
-                  > page). We encapsulated insulin into alginate hydrogel and
-                  measured its release rate. The insulin-releasing experiment is
-                  measured by Enzyme-Linked Immunosorbent Assay(ELISA). The data
-                  collected from the experiment helped us to correct the
-                  releasing math model. (See our drug-releasing model on XXX
-                  page) . We made a solution of alginate and insulin in a DMEM
-                  culture medium, with an insulin concentration of 80ng/ml.
-                  After crosslinking, the hydrogel was merged into the DMEM
-                  culture medium and we test the insulin concentration in the
-                  medium in the following five days. The data is plotted as
-                  Fig.24 and this data helped us to correct our modeling(See
-                  more on
-                  <a
-                    href="https://2021.igem.org/Team:ShanghaiTech_China/Modeling"
-                    >Model</a
-                  >
-                  page)
-                </p>
-                <v-img
-                  src="https://2021.igem.org/wiki/images/6/63/T--ShanghaiTech_China--pro--insulin.png"
-                  contain
-                  max-height="600px"
-                />
-                <v-row
-                  justify="center"
-                  style="margin-top: 10px; margin-bottom: 10px"
-                >
-                  <p class="body-2 fig">
-                    Fig.12: The drug release simulation model, based on the
-                    insulin encapsulated in the hydrogel
-                  </p>
-                </v-row>
               </v-card-text>
             </v-container>
           </v-card>
         </template>
       </v-hover>
-
       <v-hover>
         <template v-slot:default="{ hover }">
           <v-card
@@ -1774,11 +1791,25 @@
               </v-row>
               <v-card-text>
                 <p class="body-2">
-                  [1]: Jie Geng, Wenhao Liu, Heng Zhou, Tingxin Zhang, Li Wang,
-                  Mingmin Zhang, Yiran Li, Bo Shen, Xueming Li, Bailong Xiao, A
-                  Plug-and-Latch Mechanism for Gating the Mechanosensitive Piezo
-                  Channel, Neuron,Volume 106, Issue 3,2020, Pages
-                  438-451.e6,ISSN 0896-6273
+                  [1]: Bulletin of the Seventh National Census (No. 1) .
+                  [Internet] National Bureau of Statistics. 2019 [cited 1
+                  October 2021]. Available from:<a
+                    href="https://data.stats.gov.cn/easyquery.htm?cn=C01"
+                    >https://data.stats.gov.cn/easyquery.htm?cn=C01</a
+                  >
+                </p>
+                <p class="body-2">
+                  [2]:Jordan KM, Cooper C. Epidemiology of osteoporosis. Best
+                  Pract Res Clin Rheumatol. 2002 Dec;16(5):795-806. doi:
+                  10.1053/berh.2002.0264. PMID: 12473274.
+                </p>
+                <p class="body-2">
+                  [3]:Innovations in Neuromodulation, Connected Health,
+                  Microneedles, Telemedicine, and Advanced Orthopedic Implants.
+                  [Internet] Frost Sullivan. 2018 [cited 1 October 2021].
+                  Available from:<a href="http://www.frostchina.com/?p=8494"
+                    >http://www.frostchina.com/?p=8494</a
+                  >
                 </p>
               </v-card-text>
             </v-container>
@@ -1848,10 +1879,11 @@ export default {
     },
   },
   mounted() {
-    this.step[0] = document.getElementById("adhesion");
-    this.step[1] = document.getElementById("hydrogel");
-    this.step[2] = document.getElementById("stress");
-    this.step[3] = document.getElementById("drug");
+    this.step[0] = document.getElementById("summary");
+    this.step[1] = document.getElementById("potential");
+    this.step[2] = document.getElementById("mibom");
+    this.step[3] = document.getElementById("development");
+    this.step[4] = document.getElementById("long");
     this.updatepos();
     setTimeout(() => {
       this.firstload = false;
