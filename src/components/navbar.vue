@@ -130,7 +130,7 @@
           </template>
           <v-list>
             <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Hp_overview">Overview</v-list-item>
-            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices">Integrated HP</v-list-item>
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices">Integrated Human Practices</v-list-item>
             <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Communication">Communication & Education</v-list-item>
             <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Entrepreneurship">Entrepreneurship</v-list-item>
             <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Sustainable">Sustainable</v-list-item>
@@ -296,7 +296,7 @@
           </v-list-item>
           <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-            <v-list-item-title> Human Practices </v-list-item-title>
+            <v-list-item-title> Integrated Human Practices </v-list-item-title>
           </v-list-item>
           <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Communication">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>

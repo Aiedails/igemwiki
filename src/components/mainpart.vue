@@ -21,61 +21,49 @@
               editable
               edit-icon="1"
               step="1"
-              @click="$vuetify.goTo('#prologue', options)"
+              @click="$vuetify.goTo('#adhesion', options)"
               :complete="position > 1"
               style="transition: all 1s ease 1s"
               color="primary"
               class="body-1"
             >
-              Prologue
+              Adhesion system
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="2"
               step="2"
-              @click="$vuetify.goTo('#lab_safety', options)"
+              @click="$vuetify.goTo('#hydrogel', options)"
               :complete="position > 2"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              Lab Safety
+              Hydrogel system
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="3"
               step="3"
-              @click="$vuetify.goTo('#general_information', options)"
+              @click="$vuetify.goTo('#stress', options)"
               :complete="position > 3"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              General microorganism information & general project design
+              Stress-sensitive regulation system
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="4"
               step="4"
-              @click="$vuetify.goTo('#specific_design', options)"
+              @click="$vuetify.goTo('#drug', options)"
               :complete="position > 4"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              Specific project design
-            </v-stepper-step>
-            <v-stepper-step
-              editable
-              edit-icon="5"
-              step="5"
-              @click="$vuetify.goTo('#use_of_harmful', options)"
-              :complete="position > 5"
-              style="transition: all 1s"
-              color="primary"
-              class="body-1"
-            >
-              Use of harmful reagents and procedures
+              Drug system
             </v-stepper-step>
           </v-stepper>
         </template>
@@ -95,13 +83,16 @@
             class="transition-swing"
             style="text-decoration: none"
             id="description"
-            v-intersect="onIntersect"
             v-scroll="updatepos"
             v-show="!firstload"
           >
             <v-container style="padding: 20px">
               <v-row justify="center">
-                <v-card-title class="text-h4 title">
+                <v-card-title
+                  class="text-h4 title"
+                  id="adhesion"
+                  v-intersect="onIntersect"
+                >
                   Adhesion system
                 </v-card-title>
               </v-row>
@@ -463,7 +454,7 @@
                 </p>
               </v-card-text>
               <v-row justify="center">
-                <v-card-title class="text-h4 title">
+                <v-card-title class="text-h4 title" id="hydrogel">
                   Hydrogel system
                 </v-card-title>
               </v-row>
@@ -535,7 +526,7 @@
                   oscillation strain, which is qualified to be an osteogenic
                   glue.
                 </p>
-                <v-row justify="center">
+                <v-row justify="center" align="baseline">
                   <v-col cols="6">
                     <v-img src="@/assets/流变1.png" />
                     <v-row
@@ -764,7 +755,7 @@
                   can see different layers of cells by fine adjustment.
                   (Video.3)
                 </p>
-                <v-row justify="center">
+                <v-row justify="center" align="baseline">
                   <v-col cols="6">
                     <v-img src="@/assets/0816-20-07.png" />
                     <v-row
@@ -896,7 +887,7 @@
                 </v-row>
               </v-card-text>
               <v-row justify="center">
-                <v-card-title class="text-h4 title">
+                <v-card-title class="text-h4 title" id="stress">
                   Stress-sensitive regulation system
                 </v-card-title>
               </v-row>
@@ -1616,7 +1607,9 @@
                 </v-row>
               </v-card-text>
               <v-row justify="center">
-                <v-card-title class="text-h4 title"> Drug system </v-card-title>
+                <v-card-title class="text-h4 title" id="drug">
+                  Drug system
+                </v-card-title>
               </v-row>
               <v-card-title class="text-h5"> Drug choices </v-card-title>
               <v-card-text>
@@ -1723,7 +1716,7 @@
                   <a
                     href="https://2021.igem.org/Team:ShanghaiTech_China/Partnership"
                     >Partnership</a
-                  >] page). We encapsulated insulin into alginate hydrogel and
+                  > page). We encapsulated insulin into alginate hydrogel and
                   measured its release rate. The insulin-releasing experiment is
                   measured by Enzyme-Linked Immunosorbent Assay(ELISA). The data
                   collected from the experiment helped us to correct the
@@ -1738,7 +1731,8 @@
                   <a
                     href="https://2021.igem.org/Team:ShanghaiTech_China/Modeling"
                     >Model</a
-                  > page)
+                  >
+                  page)
                 </p>
                 <v-img
                   src="https://2021.igem.org/wiki/images/6/63/T--ShanghaiTech_China--pro--insulin.png"
@@ -1844,7 +1838,6 @@ export default {
       this.istop = this.isIntersecting;
     },
     updatepos() {
-      /*
       var pos = [];
       var posnow = 0;
       for (var i = 0; i < this.step.length; i++) {
@@ -1852,15 +1845,13 @@ export default {
         if (pos[i] <= 300) posnow = i;
       }
       this.position = posnow + 1;
-      */
     },
   },
   mounted() {
-    this.step[0] = document.getElementById("prologue");
-    this.step[1] = document.getElementById("lab_safety");
-    this.step[2] = document.getElementById("general_information");
-    this.step[3] = document.getElementById("specific_design");
-    this.step[4] = document.getElementById("use_of_harmful");
+    this.step[0] = document.getElementById("adhesion");
+    this.step[1] = document.getElementById("hydrogel");
+    this.step[2] = document.getElementById("stress");
+    this.step[3] = document.getElementById("drug");
     this.updatepos();
     setTimeout(() => {
       this.firstload = false;
