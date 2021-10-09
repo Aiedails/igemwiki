@@ -1189,7 +1189,7 @@
                   style="margin-top: 10px; margin-bottom: 10px"
                 >
                   <p class="body-2 fig">
-                    Fig.18: Experiment procedure to test the calcium influxa
+                    Fig.18: Experiment procedure to test the calcium influx
                   </p>
                 </v-row>
                 <v-row justify="center" align="baseline">
