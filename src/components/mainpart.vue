@@ -22,61 +22,61 @@
               editable
               edit-icon="1"
               step="1"
-              @click="$vuetify.goTo('#prologue', options)"
+              @click="$vuetify.goTo('#overview', options)"
               :complete="position > 1"
               style="transition: all 1s ease 1s"
               color="primary"
               class="body-1"
             >
-              Prologue
+              Overview
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="2"
               step="2"
-              @click="$vuetify.goTo('#lab_safety', options)"
+              @click="$vuetify.goTo('#adhesion', options)"
               :complete="position > 2"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              Lab Safety
+              Adhesion system
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="3"
               step="3"
-              @click="$vuetify.goTo('#general_information', options)"
+              @click="$vuetify.goTo('#hydrogel', options)"
               :complete="position > 3"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              General microorganism information & general project design
+              Hydrogel system
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="4"
               step="4"
-              @click="$vuetify.goTo('#specific_design', options)"
+              @click="$vuetify.goTo('#stress', options)"
               :complete="position > 4"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              Specific project design
+              Stress-sensitive regulation system
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="5"
               step="5"
-              @click="$vuetify.goTo('#use_of_harmful', options)"
+              @click="$vuetify.goTo('#summary', options)"
               :complete="position > 5"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              Use of harmful reagents and procedures
+              Summary
             </v-stepper-step>
           </v-stepper>
         </template>
@@ -96,16 +96,17 @@
             class="transition-swing"
             style="text-decoration: none"
             id="description"
-            v-intersect="onIntersect"
             v-scroll="updatepos"
             v-show="!firstload"
           >
             <v-container style="padding: 20px">
-              <v-card-text>
-                <p class="body-1"></p>
-              </v-card-text>
               <v-row justify="center">
-                <v-card-title class="text-h4 title"> Overview </v-card-title>
+                <v-card-title
+                  class="text-h4 title"
+                  id="overview"
+                  v-intersect="onIntersect"
+                  >Overview</v-card-title
+                >
               </v-row>
               <v-card-text>
                 <p class="body-1"></p>
@@ -170,7 +171,7 @@
                 <p class="body-1"></p>
               </v-card-text>
               <v-row justify="center">
-                <v-card-title class="text-h4 title">
+                <v-card-title class="text-h4 title" id="adhesion">
                   Adhesion system
                 </v-card-title>
               </v-row>
@@ -190,7 +191,7 @@
               <v-card-text>
                 <p class="body-1"></p>
               </v-card-text>
-              <v-card-title class="text-h6"> Design</v-card-title>
+              <v-card-title class="text-h6">Design</v-card-title>
               <v-card-text>
                 <p class="body-1"></p>
                 <p class="body-1">
@@ -240,7 +241,7 @@
                   </v-col>
                 </v-row>
               </v-card-text>
-              <v-card-title class="text-h6"> Build</v-card-title>
+              <v-card-title class="text-h6">Build</v-card-title>
               <v-card-text>
                 <p class="body-1"></p>
                 <p class="body-1">
@@ -384,7 +385,7 @@
                 <p class="body-1"></p>
               </v-card-text>
               <v-row justify="center">
-                <v-card-title class="text-h4 title">
+                <v-card-title class="text-h4 title" id="hydrogel">
                   Hydrogel system
                 </v-card-title>
               </v-row>
@@ -497,7 +498,7 @@
                   </v-col>
                 </v-row>
               </v-card-text>
-              <v-card-title class="text-h6"> learn</v-card-title>
+              <v-card-title class="text-h6">Learn</v-card-title>
               <v-card-text>
                 <p class="body-1"></p>
                 <p class="body-1">
@@ -575,7 +576,7 @@
                   </v-col>
                 </v-row>
               </v-card-text>
-              <v-card-title class="text-h6"> Learn</v-card-title>
+              <v-card-title class="text-h6">Learn</v-card-title>
               <v-card-text>
                 <p class="body-1"></p>
                 <p class="body-1">
@@ -587,7 +588,7 @@
                 <p class="body-1"></p>
               </v-card-text>
               <v-row justify="center">
-                <v-card-title class="text-h4 title">
+                <v-card-title class="text-h4 title" id="stress">
                   Stress-sensitive regulation system
                 </v-card-title>
               </v-row>
@@ -739,39 +740,45 @@
                   >
                   page.
                 </p>
-                <p class="body-1"></p>
-<v-img
-                  src="https://2021.igem.org/wiki/images/5/54/T--ShanghaiTech_China--res--gcamp_trans.jpg"
-                  contain
-                  max-height="500px"
-                />
-                <v-row
-                  justify="center"
-                  style="margin-top: 10px; margin-bottom: 10px"
-                >
-                  <p class="body-2 fig">
-                  > Fig.10a: Experiment procedure to test the calcium influx
-                  </p>
+                <v-row justify="center" align="baseline">
+                  <v-col cols="6">
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/5/54/T--ShanghaiTech_China--res--gcamp_trans.jpg"
+                      contain
+                      max-height="500px"
+                    />
+                    <v-row
+                      justify="center"
+                      style="margin-top: 10px; margin-bottom: 10px"
+                    >
+                      <p class="body-2 fig">
+                        Fig.10: Experiment procedure to test the calcium influx
+                      </p>
+                    </v-row>
+                  </v-col>
+                  <v-col cols="6">
+                    <v-container>
+                      <video controls width="100%" style="object-fit: contain">
+                        <source
+                          src="https://2021.igem.org/wiki/images/c/ca/T--ShanghaiTech_China--imp--force_4times.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </v-container>
+                    <v-row
+                      justify="center"
+                      style="margin-top: 10px; margin-bottom: 10px"
+                    >
+                      <p class="body-2 fig">
+                        Video1: Faster fluorescence change of cells under the
+                        stimulation of shear stress, exposure time: 90ms, 20X
+                        objective
+                      </p>
+                    </v-row>
+                  </v-col>
                 </v-row>
-
-                <p class="body-1"></p>
-                <p class="body-1">
-                </p>
-                <p class="body-1"></p>
-                <p class="body-1">
-                  <video id="video" controls="" preload="none">
-                    <source id="mp4" src="force 4times.mp4" type="video/mp4" />
-                  </video>
-                </p>
-                <p class="body-1"></p>
-                <p class="body-1">
-                  > Video1: Faster fluorescence change of cells under the
-                  stimulation of shear stress, exposure time: 90ms, 20X
-                  objective
-                </p>
-                <p class="body-1"></p>
               </v-card-text>
-              <v-card-title class="text-h6"> Learn </v-card-title>
+              <v-card-title class="text-h6">Learn</v-card-title>
               <v-card-text>
                 <p class="body-1"></p>
                 <p class="body-1">
@@ -782,38 +789,56 @@
               </v-card-text>
               <v-card-title class="text-h5">
                 Parts:
-                [BBa_K3755014](http://parts.igem.org/Part:BBa_K3755014)</v-card-title
+                <a href="http://parts.igem.org/Part:BBa_K3755014"
+                  >BBa_K3755014</a
+                ></v-card-title
               >
               <v-card-text>
                 <p class="body-1"></p>
               </v-card-text>
-              <v-card-title class="text-h6"> Design</v-card-title>
+              <v-card-title class="text-h6">Design</v-card-title>
               <v-card-text>
                 <p class="body-1"></p>
                 <p class="body-1">
                   We designed a downstream pathway and placed it on a plasmid.
                   The reporter gene is EGFP. This is the part
-                  [BBa_K3755014](http://parts.igem.org/Part:BBa_K3755014). In
-                  this part, we inserted an EGFP gene after the Pmin(Fig.11a),
-                  and use two kinds of fluorescence to colocalize the cells.
-                  Similarly, we got the pGL4.30 by linearizing the backbone
-                  pGL4.30 and EGFP. (Fig.11b)
+                  <a href="http://parts.igem.org/Part:BBa_K3755014"
+                    >BBa_K3755014</a
+                  >. In this part, we inserted an EGFP gene after the
+                  Pmin(Fig.11a), and use two kinds of fluorescence to colocalize
+                  the cells. Similarly, we got the pGL4.30 by linearizing the
+                  backbone pGL4.30 and EGFP. (Fig.11b)
                 </p>
-                <p class="body-1"></p>
-                <p class="body-1">
-                  <v-img src="@/assets/PGL4.30.jpg" />
-                </p>
-
-                <p class="body-1"></p>
-                <p class="body-1">> Fig.11a: Gene circuit of pGL4.30-GFP</p>
-                <p class="body-1"></p>
-                <p class="body-1">
-                  <v-img src="@/assets/pGL-GFP Map.png" />
-                </p>
-
-                <p class="body-1"></p>
-                <p class="body-1">> Fig.11b: Map of pGL4.30-EGFP</p>
-                <p class="body-1"></p>
+                <v-row justify="center" align="center">
+                  <v-col cols="5">
+                    <v-row justify="center">
+                      <v-col cols="12">
+                        <v-img
+                          src="https://2021.igem.org/wiki/images/0/07/T--ShanghaiTech_China--res--PGL4.30.jpg"
+                        />
+                        <v-row
+                          justify="center"
+                          style="margin-top: 10px; margin-bottom: 10px"
+                        >
+                          <p class="body-2 fig">
+                            Fig.11a: Gene circuit of pGL4.30-GFP
+                          </p>
+                        </v-row>
+                      </v-col>
+                      <v-col cols="12">
+                        <v-img
+                          src="https://2021.igem.org/wiki/images/1/11/T--ShanghaiTech_China--res--pGL-GFP_Map.png"
+                        />
+                        <v-row
+                          justify="center"
+                          style="margin-top: 10px; margin-bottom: 10px"
+                        >
+                          <p class="body-2 fig">Fig.11b: Map of pGL4.30-EGFP</p>
+                        </v-row>
+                      </v-col>
+                    </v-row>
+                  </v-col>
+                </v-row>
               </v-card-text>
               <v-card-title class="text-h6"> Build and test</v-card-title>
               <v-card-text>
@@ -831,49 +856,69 @@
                   two fluorescence(Fig.12c, Fig.12d) shows a good cotransfection
                   of the cells.
                 </p>
-                <p class="body-1"></p>
-                <p class="body-1">
-                  <v-img src="@/assets/下游测试.png" />
-                </p>
-
-                <p class="body-1"></p>
-                <p class="body-1">
-                  > Fig.12a: Experiment procedure of testing the downstream
-                  pathway
-                </p>
-                <p class="body-1"></p>
-                <p class="body-1">
-                  <v-img src="@/assets/0928-40-03-green.png (green).png" />
-                </p>
-
-                <p class="body-1"></p>
-                <p class="body-1">
-                  > Fig.12b: Green channel of the cells 24h after shaking,
-                  identifying the expression of EGFP, 40X objective
-                </p>
-                <p class="body-1"></p>
-                <p class="body-1">
-                  <v-img src="@/assets/0928-40-03-green.png (red).png" />
-                </p>
-
-                <p class="body-1"></p>
-                <p class="body-1">
-                  > Fig.12c: Red channel of the cells to identify the Piezo1.1,
-                  40X objective
-                </p>
-                <p class="body-1"></p>
-                <p class="body-1">
-                  <v-img src="@/assets/Composite.png" />
-                </p>
-
-                <p class="body-1"></p>
-                <p class="body-1">
-                  > Fig.12d: Merge green and red channel to colocalize the cells
-                </p>
-                <p class="body-1"></p>
+                <v-img
+                  src="https://2021.igem.org/wiki/images/7/74/T--ShanghaiTech_China--pro--downstream.png"
+                  contain
+                  max-height="500px"
+                />
+                <v-row
+                  justify="center"
+                  style="margin-top: 10px; margin-bottom: 10px"
+                >
+                  <p class="body-2 fig">
+                    Fig.12a: Experiment procedure of testing the downstream
+                    pathway
+                  </p>
+                </v-row>
+                <v-row justify="center" align="baseline">
+                  <v-col cols="4">
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/4/40/T--ShanghaiTech_China--res--0928-40-03-green_green.png"
+                    />
+                    <v-row
+                      justify="center"
+                      style="margin-top: 10px; margin-bottom: 10px"
+                    >
+                      <p class="body-2 fig">
+                        Fig.12b: Green channel of the cells 24h after shaking,
+                        identifying the expression of EGFP, 40X objective
+                      </p>
+                    </v-row>
+                  </v-col>
+                  <v-col cols="4">
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/a/a6/T--ShanghaiTech_China--res--0928-40-03-green_red.png"
+                    />
+                    <v-row
+                      justify="center"
+                      style="margin-top: 10px; margin-bottom: 10px"
+                    >
+                      <p class="body-2 fig">
+                        Fig.12c: Red channel of the cells to identify the
+                        Piezo1.1, 40X objective
+                      </p>
+                    </v-row>
+                  </v-col>
+                  <v-col cols="4">
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/3/36/T--ShanghaiTech_China--res--composite.png"
+                    />
+                    <v-row
+                      justify="center"
+                      style="margin-top: 10px; margin-bottom: 10px"
+                    >
+                      <p class="body-2 fig">
+                        Fig.12d: Merge green and red channel to colocalize the
+                        cells
+                      </p>
+                    </v-row>
+                  </v-col>
+                </v-row>
               </v-card-text>
               <v-row justify="center">
-                <v-card-title class="text-h4 title"> Summary </v-card-title>
+                <v-card-title class="text-h4 title" id="summary"
+                  >Summary</v-card-title
+                >
               </v-row>
               <v-card-text>
                 <p class="body-1"></p>
@@ -941,7 +986,6 @@ export default {
       this.istop = this.isIntersecting;
     },
     updatepos() {
-      /*
       var pos = [];
       var posnow = 0;
       for (var i = 0; i < this.step.length; i++) {
@@ -949,15 +993,14 @@ export default {
         if (pos[i] <= 300) posnow = i;
       }
       this.position = posnow + 1;
-      */
     },
   },
   mounted() {
-    this.step[0] = document.getElementById("prologue");
-    this.step[1] = document.getElementById("lab_safety");
-    this.step[2] = document.getElementById("general_information");
-    this.step[3] = document.getElementById("specific_design");
-    this.step[4] = document.getElementById("use_of_harmful");
+    this.step[0] = document.getElementById("overview");
+    this.step[1] = document.getElementById("adhesion");
+    this.step[2] = document.getElementById("hydrogel");
+    this.step[3] = document.getElementById("stress");
+    this.step[4] = document.getElementById("summary");
     this.updatepos();
     setTimeout(() => {
       this.firstload = false;
