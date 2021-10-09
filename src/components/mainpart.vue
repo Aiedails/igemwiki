@@ -400,7 +400,7 @@
               <v-card-title class="text-h6"> Potential Customers </v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  <v-img src="@/assets/1.jpg" contain max-height="600px" />
+                  <v-img src="https://2021.igem.org/wiki/images/5/5c/T--ShanghaiTech_China--ent--1.jpg" contain max-height="600px" />
                 </p>
                 <v-row
                   justify="center"
@@ -750,7 +750,7 @@
                   screw will begin a multi-center clinical trial in China.
                 </p>
                 <p class="body-1">
-                  <strong>(3) Dongguan Eontec Co., Ltd.</strong>
+                  <strong>(3)Dongguan Eontec Co., Ltd.</strong>
                 </p>
                 <p class="body-1">
                   <strong>Main products:</strong> ‘99.99 % high purity
@@ -778,7 +778,7 @@
               </v-card-text>
               <v-card-title class="text-h6">
                 Competitive Frame<v-img
-                  src="@/assets/wpsD322.tmp.jpg"
+                  src="https://2021.igem.org/wiki/images/f/ff/T--ShanghaiTech_China--ent--wpsD322.jpg"
                   contain
                   max-height="600px"
                 />
@@ -896,7 +896,7 @@
                   yuan in 2023.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/5.png" contain max-height="600px" />
+                  <v-img src="https://2021.igem.org/wiki/images/c/c0/T--ShanghaiTech_China--ent--5.png" contain max-height="600px" />
                   <v-row
                     justify="center"
                     style="margin-top: 10px; margin-bottom: 10px"
@@ -920,7 +920,7 @@
                   technology will have a huge space for development.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/4.png" contain max-height="600px" />
+                  <v-img src="https://2021.igem.org/wiki/images/4/4e/T--ShanghaiTech_China--ent--4.png" contain max-height="600px" />
                   <v-row
                     justify="center"
                     style="margin-top: 10px; margin-bottom: 10px"
@@ -972,7 +972,7 @@
                   for bone implants will gradually increase.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/3.png" contain max-height="600px" />
+                  <v-img src="https://2021.igem.org/wiki/images/1/14/T--ShanghaiTech_China--hp--3.a.png" contain max-height="600px" />
                   <v-row
                     justify="center"
                     style="margin-top: 10px; margin-bottom: 10px"
@@ -1019,7 +1019,7 @@
                   and in vivo experimental verification.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/6.png" contain max-height="600px" />
+                  <v-img src="https://2021.igem.org/wiki/images/3/30/T--ShanghaiTech_China--ent--6.png" contain max-height="600px" />
                   <v-row
                     justify="center"
                     style="margin-top: 10px; margin-bottom: 10px"
@@ -1083,7 +1083,7 @@
                 </p>
                 <p class="body-1">
                   <v-img
-                    src="@/assets/table 3.png"
+                    src="https://2021.igem.org/wiki/images/e/e3/T--ShanghaiTech_China--ent--table3.png"
                     contain
                     max-height="600px"
                   />
@@ -1168,7 +1168,7 @@
                   substantial.
                 </p>
                 <v-img
-                  src="@/assets/image-20211002002538730-16331055437322.png"
+                  src="https://2021.igem.org/wiki/images/6/60/T--ShanghaiTech_China--ent--image-2021-352.png"
                   contain
                   max-height="600px"
                 />
@@ -1191,7 +1191,7 @@
                   trauma repair and so on.
                 </p>
                 <p class="body-1">
-                  <v-img src="@/assets/7.png" contain max-height="600px" />
+                  <v-img src="https://2021.igem.org/wiki/images/5/51/T--ShanghaiTech_China--ent--7.png" contain max-height="600px" />
                 </p>
                 <p class="body-1">
                   For the needs of different areas, MIBOM only needs to adjust
@@ -1384,7 +1384,7 @@
                 4.1 SWOT analysis & strategies
               </v-card-title>
               <v-card-text>
-                <v-img src="@/assets/8.png" contain max-height="600px" />
+                <v-img src="https://2021.igem.org/wiki/images/d/dd/T--ShanghaiTech_China--ent--8.png" contain max-height="600px" />
                 <v-row
                   justify="center"
                   style="margin-top: 10px; margin-bottom: 10px"
@@ -1398,7 +1398,7 @@
               </v-card-title>
               <v-card-text>
                 <v-img
-                  src="@/assets/Risk assessment & response_A1E6.png"
+                  src="https://2021.igem.org/wiki/images/6/61/T--ShanghaiTech_China--ent--risk.png"
                   contain
                   max-height="600px"
                 />
@@ -1427,7 +1427,7 @@
                   following is MIBOM's 5-year development plan:
                 </p>
                 <v-img
-                  src="@/assets/fracture-bu-2.png"
+                  src="https://2021.igem.org/wiki/images/e/ef/T--ShanghaiTech_China--ent--fracture-bu-2.png"
                   contain
                   max-height="600px"
                 />
@@ -1631,7 +1631,7 @@
                   market registration, 15% for market research and 15% for sales
                   promotion.
                 </p>
-                <v-img src="@/assets/9.png" contain max-height="600px" />
+                <v-img src="https://2021.igem.org/wiki/images/7/7f/T--ShanghaiTech_China--ent--9.png" contain max-height="600px" />
                 <v-row
                   justify="center"
                   style="margin-top: 10px; margin-bottom: 10px"
