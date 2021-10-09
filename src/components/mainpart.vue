@@ -740,13 +740,22 @@
                   page.
                 </p>
                 <p class="body-1"></p>
-                <p class="body-1">
-                  <v-img src="@/assets/Gcamp共转实验.png" />
-                </p>
+<v-img
+                  src="https://2021.igem.org/wiki/images/5/54/T--ShanghaiTech_China--res--gcamp_trans.jpg"
+                  contain
+                  max-height="500px"
+                />
+                <v-row
+                  justify="center"
+                  style="margin-top: 10px; margin-bottom: 10px"
+                >
+                  <p class="body-2 fig">
+                  > Fig.10a: Experiment procedure to test the calcium influx
+                  </p>
+                </v-row>
 
                 <p class="body-1"></p>
                 <p class="body-1">
-                  > Fig.10a: Experiment procedure to test the calcium influx
                 </p>
                 <p class="body-1"></p>
                 <p class="body-1">
