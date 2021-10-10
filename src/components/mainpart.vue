@@ -95,7 +95,7 @@
               </v-row>
               <v-row justify="center">
                 <v-col cols="1" lg="2" xl="2"></v-col>
-                <v-col cols="2" @click="$vuetify.goTo('#adhesive', options)">
+                <v-col cols="2" @click="$vuetify.goTo('#adhesion', options)">
                   <v-hover v-slot="{ hover }">
                     <v-img
                       src="https://2021.igem.org/wiki/images/5/5e/T--ShanghaiTech_China--des--a_pic.svg"
@@ -127,7 +127,7 @@
                     </v-img>
                   </v-hover>
                 </v-col>
-                <v-col cols="2" @click="$vuetify.goTo('#regulation', options)">
+                <v-col cols="2" @click="$vuetify.goTo('#stress', options)">
                   <v-hover v-slot="{ hover }">
                     <v-img
                       src="https://2021.igem.org/wiki/images/b/b3/T--ShanghaiTech_China--des--r_pic.svg"
