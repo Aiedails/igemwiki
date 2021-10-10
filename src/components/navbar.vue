@@ -38,10 +38,7 @@
       <v-divider></v-divider>
       <!-- normal mobile nav-drawer. on-use now. -->
       <v-list dense>
-        <v-list-item
-          href="https://2021.igem.org/Team:ShanghaiTech_China"
-          active-class="blue--text"
-        >
+        <v-list-item href="https://2021.igem.org/Team:ShanghaiTech_China">
           <v-list-item-icon>
             <v-icon>mdi-home</v-icon>
           </v-list-item-icon>
@@ -81,6 +78,13 @@
               <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
               <v-list-item-title>Implementation</v-list-item-title>
             </v-list-item>
+            <v-list-item
+              class="body-1"
+              href="https://2021.igem.org/Team:ShanghaiTech_China/Excellence_in_Another_Area"
+            >
+              <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+              <v-list-item-title>Excellence in Another Area</v-list-item-title>
+            </v-list-item>
           </v-list>
         </v-list-group>
 
@@ -102,11 +106,10 @@
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Engineering </v-list-item-title>
           </v-list-item>
-          <v-list-item link>
-            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-            <v-list-item-title> Protocols </v-list-item-title>
-          </v-list-item>
-          <v-list-item link>
+          <v-list-item
+            class="body-1"
+            href="https://2021.igem.org/Team:ShanghaiTech_China/Experiments"
+          >
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Experiments </v-list-item-title>
           </v-list-item>
@@ -117,9 +120,12 @@
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Results </v-list-item-title>
           </v-list-item>
-          <v-list-item link>
+          <v-list-item
+            class="body-1"
+            href="https://2021.igem.org/Team:ShanghaiTech_China/Safety"
+          >
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-            <v-list-item-title> Safty </v-list-item-title>
+            <v-list-item-title> Safety </v-list-item-title>
           </v-list-item>
         </v-list-group>
 
@@ -132,7 +138,7 @@
             href="https://2021.igem.org/Team:ShanghaiTech_China/Model"
           >
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-            <v-list-item-title> Modeling </v-list-item-title>
+            <v-list-item-title> Model </v-list-item-title>
           </v-list-item>
           <v-list-item
             class="body-1"
@@ -143,12 +149,28 @@
           </v-list-item>
         </v-list-group>
 
-        <v-list-item link href="" active-class="blue--text">
-          <v-list-item-icon>
-            <v-icon>mdi-shape-square-rounded-plus</v-icon>
-          </v-list-item-icon>
-          <v-list-item-title>Parts</v-list-item-title>
-        </v-list-item>
+        <v-list-group
+          :value="false"
+          prepend-icon="mdi-shape-square-rounded-plus"
+        >
+          <template v-slot:activator>
+            <v-list-item-title>Parts</v-list-item-title>
+          </template>
+          <v-list-item
+            class="body-1"
+            href="https://2021.igem.org/Team:ShanghaiTech_China/Parts"
+          >
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title>Parts</v-list-item-title>
+          </v-list-item>
+          <v-list-item
+            class="body-1"
+            href="https://2021.igem.org/Team:ShanghaiTech_China/Improvement"
+          >
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Improvement </v-list-item-title>
+          </v-list-item>
+        </v-list-group>
 
         <v-list-group :value="false" prepend-icon="mdi-account-switch">
           <template v-slot:activator>
@@ -156,17 +178,24 @@
           </template>
           <v-list-item
             class="body-1"
-            href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices"
+            href="https://2021.igem.org/Team:ShanghaiTech_China/Hp_overview"
           >
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-            <v-list-item-title> Human Practices </v-list-item-title>
+            <v-list-item-title> Overview </v-list-item-title>
           </v-list-item>
           <v-list-item
             class="body-1"
-            href="https://2021.igem.org/Team:ShanghaiTech_China/Education"
+            href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices"
           >
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-            <v-list-item-title> Education </v-list-item-title>
+            <v-list-item-title> Integrated Human Practices </v-list-item-title>
+          </v-list-item>
+          <v-list-item
+            class="body-1"
+            href="https://2021.igem.org/Team:ShanghaiTech_China/Communication"
+          >
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Communication & Education </v-list-item-title>
           </v-list-item>
           <v-list-item
             class="body-1"
@@ -175,9 +204,16 @@
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Entrepreneurship </v-list-item-title>
           </v-list-item>
+          <v-list-item
+            class="body-1"
+            href="https://2021.igem.org/Team:ShanghaiTech_China/Sustainable"
+          >
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Sustainable </v-list-item-title>
+          </v-list-item>
         </v-list-group>
 
-        <v-list-group :value="true" prepend-icon="mdi-account-multiple-check">
+        <v-list-group :value="false" prepend-icon="mdi-account-multiple-check">
           <template v-slot:activator>
             <v-list-item-title>Team</v-list-item-title>
           </template>
@@ -201,6 +237,26 @@
           >
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Collaborations </v-list-item-title>
+          </v-list-item>
+          <v-list-item
+            class="body-1"
+            href="https://2021.igem.org/Team:ShanghaiTech_China/Partnership"
+          >
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Partnership </v-list-item-title>
+          </v-list-item>
+        </v-list-group>
+
+        <v-list-group :value="false" prepend-icon="mdi-license">
+          <template v-slot:activator>
+            <v-list-item-title>Awards</v-list-item-title>
+          </template>
+          <v-list-item
+            class="body-1"
+            href="https://2021.igem.org/Team:ShanghaiTech_China/Judging"
+          >
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Judging </v-list-item-title>
           </v-list-item>
         </v-list-group>
       </v-list>

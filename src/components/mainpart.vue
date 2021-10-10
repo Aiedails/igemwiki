@@ -1,6 +1,5 @@
 <template>
   <div v-scroll="updatepos">
-    <div style="position: absolute; top: 100px; left: 300px">{{ width }}</div>
     <div id="part1">
       <div style="text-align: center">
         <img class="logo" src="https://2021.igem.org/wiki/images/f/fc/T--ShanghaiTech_China--home--Logo.svg" />
@@ -64,7 +63,7 @@
           class="text-h5 text-xl-h4"
           id="text2"
         >
-          In china, it is estimated that in 2021, there will be 295526 traumatic
+          In China, it is estimated that in 2021, there will be 295526 traumatic
           fractures, of which 10.21% will be femoral fractures. 95% of femoral
           shaft fractures are comminuted. Therefore, there will be an average of
           at least 280,000 comminuted fractures per year in China.
