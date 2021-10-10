@@ -229,12 +229,17 @@
                 <p class="body-1">
                   To achieve our goal, we firstly think about how to adjoin bone
                   fragments in the humoral environment(aqueous environment). A
-                  magical creature, mussel, inspired us. Mussels can adhere
+                  magical creature, mussels, inspired us. The Mussel can adhere
                   tightly to reefs through mussel proteins in aqueous
-                  environment. Among all mussel proteins, mfp-5 plays a major
-                  role in adhesion. On top of the adhesive properties of mussel
-                  proteins, research has identified MFP's as biocompatible,
-                  showing minimal immune reactions in the body.
+                  environment. Among all mussel proteins, mfp-5 palys a major
+                  role in adhesion
+                  <sup @click="$vuetify.goTo('#references', options)">[2-4]</sup
+                  >. On top of the adhesive properties of mussel proteins,
+                  research has identified MFP's as biocompatible, showing
+                  minimal immune reactions in the body<sup
+                    @click="$vuetify.goTo('#references', options)"
+                    >[5]</sup
+                  >.
                 </p>
                 <v-img
                   :aspect-ratio="1034 / 861"
@@ -252,7 +257,12 @@
                   than the traditional method of extracting mussel proteins from
                   mussels, which can get 1mg mussel protein from 10000 mussels.
                   Moreover, we do some modifications to the proteins to make it
-                  more viscous. See more details on XXX page.
+                  more viscous. See more details on
+                  <a
+                    href="https://2021.igem.org/Team:ShanghaiTech_China/Results"
+                    >Results</a
+                  >
+                  page.
                 </p>
                 <v-img
                   src="https://2021.igem.org/wiki/images/f/fc/T--ShanghaiTech_China--des--pic_3.svg"
@@ -278,14 +288,19 @@
                   GelMA system. Sodium alginate crosslinked and formed a second
                   layer of crosslinking network to provide better strength. We
                   also plan to try more crosslinking system to mach the
-                  application, see more details on XXXX page. Moreover, during
-                  surgery, doctors can simply fix and reset the bones through
-                  the first layer of optical crosslinking, in which the material
-                  has a relatively low structural strength. When no more
-                  operation is needed, the material is solidified into high
-                  strength gel through second layers of ionic crosslinking to
-                  meet the structural strength requirement of bone recovery. The
-                  design is based on interviews with clinicians' needs.
+                  application, see more details on
+                  <a
+                    href="https://2021.igem.org/Team:ShanghaiTech_China/Results"
+                    >Results</a
+                  >
+                  page. Moreover, during surgery, doctors can simply fix and
+                  reset the bones through the first layer of optical
+                  crosslinking, in which the material has a relatively low
+                  structural strength. When no more operation is needed, the
+                  material is solidified into high strength gel through second
+                  layers of ionic crosslinking to meet the structural strength
+                  requirement of bone recovery. The design is based on
+                  interviews with clinicians' needs.
                 </p>
                 <v-img
                   src="https://2021.igem.org/wiki/images/2/27/T--ShanghaiTech_China--des--pic_4.svg"
@@ -326,7 +341,12 @@
                   cell mechanics-sensitive pathway is based on a membrane
                   protein called Piezo1. To get it more sensitive, we also do
                   some modifications to Piezo1 and get a better one, Piezo1.1.
-                  See more details on XXX page
+                  See more details on
+                  <a
+                    href="https://2021.igem.org/Team:ShanghaiTech_China/Results"
+                    >Results</a
+                  >
+                  page
                 </p>
                 <v-img
                   :aspect-ratio="1029 / 728"
@@ -416,12 +436,20 @@
                   identify the problem. We communicated with professors to
                   determine the drugs and feasibilities of the project. We also
                   do a lot about the entreprenuership. See more details on
-                  XXXpage! We have thought a lot about the communication and
-                  ethics of synthetic biology. We attached great importance to
-                  the impact of synthetic biology on the public and
-                  practitioners. We have made many new attempts in the
-                  dissemination and education of synthetic biology. See more
-                  details on XXXpage!
+                  <a
+                    href="https://2021.igem.org/Team:ShanghaiTech_China/Results"
+                    >Results</a
+                  >
+                  page! We have thought a lot about the communication and ethics
+                  of synthetic biology. We attached great importance to the
+                  impact of synthetic biology on the public and practitioners.
+                  We have made many new attempts in the dissemination and
+                  education of synthetic biology. See more details on
+                  <a
+                    href="https://2021.igem.org/Team:ShanghaiTech_China/Results"
+                    >Results</a
+                  >
+                  page!
                 </p>
                 <p class="body-1"></p>
               </v-card-text>
@@ -454,7 +482,34 @@
                   infra-isthmus shaft fracture: A STROBE compliant study.
                   Medicine, 100(17), e25708.
                 </p>
-              </v-card-text>
+                <p class="body-2">
+                  [2]Danner EW, Kan Y, Hammer MU, Israelachvili JN, Waite JH.
+                  Adhesion of mussel foot protein Mefp-5 to mica: an underwater
+                  superglue. Biochemistry. 2012 Aug 21;51(33):6511-8. doi:
+                  10.1021/bi3002538. Epub 2012 Aug 8. PMID: 22873939; PMCID:
+                  PMC3428132.
+                </p>
+                <p class="body-2">
+                  [3]Kord Forooshani P, Lee BP. Recent approaches in designing
+                  bioadhesive materials inspired by mussel adhesive protein. J
+                  Polym Sci A Polym Chem. 2017 Jan 1;55(1):9-33. doi:
+                  10.1002/pola.28368. Epub 2016 Oct 11. PMID: 27917020; PMCID:
+                  PMC5132118.
+                </p>
+                <p class="body-2">
+                  [4]Lee BP, Messersmith PB, Israelachvili JN, Waite JH.
+                  Mussel-Inspired Adhesives and Coatings. Annu Rev Mater Res.
+                  2011 Aug 1;41:99-132. doi:
+                  10.1146/annurev-matsci-062910-100429. PMID: 22058660; PMCID:
+                  PMC3207216.
+                </p>
+                <p class="body-2">
+                  [5]Huang J, Li H, Wang Q. [Development of double-component
+                  rapid curing bioadhesive]. Sheng Wu Yi Xue Gong Cheng Xue Za
+                  Zhi. 2018 Dec 25;35(6):921-927. Chinese. doi:
+                  10.7507/1001-5515.201805045. PMID: 30583318.
+                </p></v-card-text
+              >
             </v-container>
           </v-card>
         </template>
