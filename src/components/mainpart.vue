@@ -22,73 +22,25 @@
               editable
               edit-icon="1"
               step="1"
-              @click="$vuetify.goTo('#background', options)"
+              @click="$vuetify.goTo('#overview', options)"
               :complete="position > 1"
               style="transition: all 1s ease 1s"
               color="primary"
-              class="body-2"
+              class="body-1"
             >
-              Background
+              Overview
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="2"
               step="2"
-              @click="$vuetify.goTo('#adhesive', options)"
+              @click="$vuetify.goTo('#part', options)"
               :complete="position > 2"
               style="transition: all 1s"
               color="primary"
-              class="body-2"
+              class="body-1"
             >
-              Adhesive system
-            </v-stepper-step>
-            <v-stepper-step
-              editable
-              edit-icon="3"
-              step="3"
-              @click="$vuetify.goTo('#hydrogel', options)"
-              :complete="position > 3"
-              style="transition: all 1s"
-              color="primary"
-              class="body-2"
-            >
-              Hydrogel system
-            </v-stepper-step>
-            <v-stepper-step
-              editable
-              edit-icon="4"
-              step="4"
-              @click="$vuetify.goTo('#regulation', options)"
-              :complete="position > 4"
-              style="transition: all 1s"
-              color="primary"
-              class="body-2"
-            >
-              Regulation system
-            </v-stepper-step>
-            <v-stepper-step
-              editable
-              edit-icon="5"
-              step="5"
-              @click="$vuetify.goTo('#drug', options)"
-              :complete="position > 5"
-              style="transition: all 1s"
-              color="primary"
-              class="body-2"
-            >
-              Drug system
-            </v-stepper-step>
-            <v-stepper-step
-              editable
-              edit-icon="6"
-              step="6"
-              @click="$vuetify.goTo('#engineering', options)"
-              :complete="position > 6"
-              style="transition: all 1s"
-              color="primary"
-              class="body-2"
-            >
-              Engineering and modularization
+              Part collection
             </v-stepper-step>
           </v-stepper>
         </template>
@@ -111,405 +63,599 @@
             v-scroll="updatepos"
             v-show="!firstload"
           >
-            <v-container style="padding: 20px 3%">
-              <v-card-title
-                class="text-h5"
-                id="background"
-                v-intersect="onIntersect"
-                >Background</v-card-title
-              >
-              <v-card-text>
-                <p class="body-1">
-                  We are living in a world with many accidents, among which The
-                  hardest part of our body - bones can be broken. Sports, car
-                  accidents, falls, and certain medical conditions are all
-                  possible causes of bone fracture. The most serious of all bone
-                  injuries is the comminuted fracture, in which your bones break
-                  into many fragments. Among all femoral fracture cases, 95% of
-                  them are comminuted fractures. In 2021, it is estimated that
-                  there will be more than 290000 people suffering the comminuted
-                  fractures in China.<sup
-                    @click="$vuetify.goTo('#references', options)"
-                    >[1]</sup
-                  >
-                  Compared with simple fractures, comminuted fractures take
-                  twice the operation time on average. The main reason is the
-                  cumbersome fixation of bone fragments. Moreover, There is no
-                  good to fix some small fragments.
-                </p>
-                <v-img
-                  src="https://2021.igem.org/wiki/images/e/e4/T--ShanghaiTech_China--des--pic_1.svg"
-                  contain
-                  max-height="600px"
-                />
-                <p class="body-1">
-                  In this year, Team ShanghaiTech_China developed a completely
-                  new strategy to the comminuted fracture. A new mussel inspired
-                  biologically operational materail, the MIBOM is coming.
-                </p>
-                <v-row justify="center">
-                  <v-col cols="1" lg="2" xl="2"></v-col>
-                  <v-col cols="2" @click="$vuetify.goTo('#adhesive', options)">
-                    <v-hover v-slot="{ hover }">
-                      <v-img
-                        src="https://2021.igem.org/wiki/images/5/5e/T--ShanghaiTech_China--des--a_pic.svg"
-                      >
-                        <v-expand-transition>
-                          <v-img
-                            src="https://2021.igem.org/wiki/images/c/cc/T--ShanghaiTech_China--des--a_tex.svg"
-                            v-if="hover"
-                            class="d-flex transition-fast-in-fast-out"
-                            style="height: 100%; width: 100%"
-                          />
-                        </v-expand-transition>
-                      </v-img>
-                    </v-hover>
-                  </v-col>
-                  <v-col cols="2" @click="$vuetify.goTo('#hydrogel', options)">
-                    <v-hover v-slot="{ hover }">
-                      <v-img
-                        src="https://2021.igem.org/wiki/images/6/6e/T--ShanghaiTech_China--des--h_pic.svg"
-                      >
-                        <v-expand-transition>
-                          <v-img
-                            src="https://2021.igem.org/wiki/images/d/d9/T--ShanghaiTech_China--des--h_tex.svg"
-                            v-if="hover"
-                            class="d-flex transition-fast-in-fast-out"
-                            style="height: 100%"
-                          />
-                        </v-expand-transition>
-                      </v-img>
-                    </v-hover>
-                  </v-col>
-                  <v-col
-                    cols="2"
-                    @click="$vuetify.goTo('#regulation', options)"
-                  >
-                    <v-hover v-slot="{ hover }">
-                      <v-img
-                        src="https://2021.igem.org/wiki/images/b/b3/T--ShanghaiTech_China--des--r_pic.svg"
-                      >
-                        <v-expand-transition>
-                          <v-img
-                            src="https://2021.igem.org/wiki/images/8/89/T--ShanghaiTech_China--des--r_tex.svg"
-                            v-if="hover"
-                            class="d-flex transition-fast-in-fast-out"
-                            style="height: 100%; width: 100%"
-                          />
-                        </v-expand-transition>
-                      </v-img>
-                    </v-hover>
-                  </v-col>
-                  <v-col cols="2" @click="$vuetify.goTo('#drug', options)">
-                    <v-hover v-slot="{ hover }">
-                      <v-img
-                        src="https://2021.igem.org/wiki/images/4/47/T--ShanghaiTech_China--des--d_pic.svg"
-                      >
-                        <v-expand-transition>
-                          <v-img
-                            src="https://2021.igem.org/wiki/images/2/2d/T--ShanghaiTech_China--des--d_tex.svg"
-                            v-if="hover"
-                            class="d-flex transition-fast-in-fast-out"
-                            style="height: 100%; width: 100%"
-                          />
-                        </v-expand-transition>
-                      </v-img>
-                    </v-hover>
-                  </v-col>
-                  <v-col cols="1" lg="2" xl="2"></v-col>
-                </v-row>
-                <v-row justify="center" class="text-h5"
-                  >Four systems of our project</v-row
-                >
-              </v-card-text>
-              <v-card-title class="text-h5" id="adhesive"
-                >Adhesive system</v-card-title
-              >
-              <v-card-text>
-                <p class="body-1">
-                  To achieve our goal, we firstly think about how to adjoin bone
-                  fragments in the humoral environment(aqueous environment). A
-                  magical creature, mussels, inspired us. The Mussel can adhere
-                  tightly to reefs through mussel proteins in aqueous
-                  environment. Among all mussel proteins, mfp-5 palys a major
-                  role in adhesion
-                  <sup @click="$vuetify.goTo('#references', options)">[2-4]</sup
-                  >. On top of the adhesive properties of mussel proteins,
-                  research has identified MFP's as biocompatible, showing
-                  minimal immune reactions in the body<sup
-                    @click="$vuetify.goTo('#references', options)"
-                    >[5]</sup
-                  >.
-                </p>
-                <v-img
-                  :aspect-ratio="1034 / 861"
-                  src="https://2021.igem.org/wiki/images/e/e6/T--ShanghaiTech_China--des--pic_2.svg"
-                  contain
-                  max-height="600px"
-                />
-                <p class="body-1">
-                  For the above two reasons, we choose mussel protein mfp-5 to
-                  provide the adhesive properties. Using the method of synthetic
-                  biology, we successfully constructed the protein expression
-                  system in E. coli and extracted the viscous mussel protein.
-                  This method makes it possible for us to get large amount of
-                  mussel protein. This method is more effective and sustainable
-                  than the traditional method of extracting mussel proteins from
-                  mussels, which can get 1mg mussel protein from 10000 mussels.
-                  Moreover, we do some modifications to the proteins to make it
-                  more viscous. See more details on
-                  <a
-                    href="https://2021.igem.org/Team:ShanghaiTech_China/Results"
-                    >Results</a
-                  >
-                  page.
-                </p>
-                <v-img
-                  src="https://2021.igem.org/wiki/images/f/fc/T--ShanghaiTech_China--des--pic_3.svg"
-                  contain
-                  max-height="600px"
-                />
-              </v-card-text>
-              <v-card-title class="text-h5" id="hydrogel"
-                >Hydrogel system</v-card-title
-              >
-              <v-card-text>
-                <p class="body-1">
-                  Mussel protein itself can not provide enough structural
-                  strength to adjoin the fragments. So we designed a functional
-                  hydrogel system to provide structural strength. We tried
-                  Methacrylate Gelatin(GelMA), sodium alginate, and their double
-                  crosslinking system. Doctors only need to irradiate with a
-                  portable UV lamp for a few seconds(or our integrated
-                  hardware), the monomer polymerizes and the material
-                  solidifies. The introduction of hydrogels can provide
-                  structural strength. To achieve better strength, we introduced
-                  a double crosslinking system on the basis of the original
-                  GelMA system. Sodium alginate crosslinked and formed a second
-                  layer of crosslinking network to provide better strength. We
-                  also plan to try more crosslinking system to mach the
-                  application, see more details on
-                  <a
-                    href="https://2021.igem.org/Team:ShanghaiTech_China/Results"
-                    >Results</a
-                  >
-                  page. Moreover, during surgery, doctors can simply fix and
-                  reset the bones through the first layer of optical
-                  crosslinking, in which the material has a relatively low
-                  structural strength. When no more operation is needed, the
-                  material is solidified into high strength gel through second
-                  layers of ionic crosslinking to meet the structural strength
-                  requirement of bone recovery. The design is based on
-                  interviews with clinicians' needs.
-                </p>
-                <v-img
-                  src="https://2021.igem.org/wiki/images/2/27/T--ShanghaiTech_China--des--pic_4.svg"
-                  contain
-                  max-height="600px"
-                />
-              </v-card-text>
-              <v-card-title class="text-h5" id="regulation"
-                >Regulation system</v-card-title
-              >
-              <v-card-text>
-                <p class="body-1">
-                  After solving the structural strength problem, another problem
-                  follows. Although the materials we used are all biocompatible,
-                  as the structral strength increases, the degradation of the
-                  material is important. More terribly, the recovery time
-                  depends on the damage and age, which makes it hard to design
-                  the material degradation.Fortunately, hydrogel is a good
-                  living environment for cells inside it. To solve the
-                  degradation problem, we developed a regulation system in the
-                  material. We take the stress in fracture repair as a signal.
-                  During the bone growth, the hydrogel is squeezed.
-                </p>
-                <v-img
-                  src="https://2021.igem.org/wiki/images/8/84/T--ShanghaiTech_China--des--pic_5.svg"
-                  contain
-                  max-height="600px"
-                />
-                <p class="body-1">
-                  We created a mechanics sensitive cell. They can sense the
-                  mechanical force conducted from the hydrogel to cells and
-                  secrete enzymes(such as alginate enzyme) to accelerate
-                  material degradation. When the surroundings are degraded, the
-                  cells lose their scaffold and can not sense the force. In this
-                  way, we do not need to care about material degradation, we
-                  establish a mechanics-degradation system. During the recovery,
-                  the degradation speed depends on the recovery ability. The
-                  cell mechanics-sensitive pathway is based on a membrane
-                  protein called Piezo1. To get it more sensitive, we also do
-                  some modifications to Piezo1 and get a better one, Piezo1.1.
-                  See more details on
-                  <a
-                    href="https://2021.igem.org/Team:ShanghaiTech_China/Results"
-                    >Results</a
-                  >
-                  page
-                </p>
-                <v-img
-                  :aspect-ratio="1029 / 728"
-                  src="https://2021.igem.org/wiki/images/e/e5/T--ShanghaiTech_China--des--pic_6.svg"
-                  contain
-                  max-height="600px"
-                />
-              </v-card-text>
-              <v-card-title class="text-h5" id="drug">Drug system</v-card-title>
-              <v-card-text>
-                <p class="body-1">
-                  Although existing orthopaedic surgical instruments have no
-                  medical effect (a steel plate can not accelerate the recovery,
-                  for it is just a mechanical supporting), our MIBOM provide
-                  chances to bring some medical effects. Hydrogel system make it
-                  possible for us to load mutiple drugs in MIBOM. Before the
-                  polymerization, doctors can just mix the drugs with the
-                  material, and drugs are kept after polymerization. We targetd
-                  tens of drugs that can promote the recovery such as vitamin D.
-                  Although these drugs are identified as effective in some
-                  articles, We have no conditions for animal experiments to test
-                  these drugs function. But we establish a model to simulate the
-                  process, which can help us to determine how the drug molecules
-                  are released. We also cooperate with other teams such as
-                  CSU_China to test durg release parameters.We hope this can
-                  help doctors to determine the amount of drugs loaded in the
-                  hydrogel.
-                </p>
-                <v-img
-                  :aspect-ratio="1029 / 728"
-                  src="https://2021.igem.org/wiki/images/d/de/T--ShanghaiTech_China--des--pic_7.svg"
-                  contain
-                  max-height="600px"
-                />
-              </v-card-text>
-              <v-card-title class="text-h6">Fuctions summary</v-card-title>
-              <v-card-text>
-                <p class="body-1">
-                  When MIBOM is injected into the fracture, the mussel protein
-                  will play the role of adhesion. GelMA will form the first
-                  crosslinking network under UV condition. When the fixation is
-                  determined, alginate will form the second crosslinking network
-                  induced by calcium ion. During the bone growth, the stress
-                  will be sensed by cells inside the hydrogel and activate the
-                  Piezo based pathway. Cells will degrade the material and drugs
-                  are released. All these functions make MIBOM be a new
-                  generation of bone repair material.
-                </p>
-                <v-img
-                  :aspect-ratio="1029 / 728"
-                  src="https://2021.igem.org/wiki/images/a/ae/T--ShanghaiTech_China--des--pic_8.svg"
-                  contain
-                  max-height="600px"
-                />
-              </v-card-text>
-              <v-card-title class="text-h5" id="engineering"
-                >Engineering and modularization</v-card-title
-              >
-              <v-card-text>
-                <p class="body-1">
-                  ShanghaiTech_China has always adhered to the concept of
-                  sustainability. All engineerings are design to be sustainable
-                  and safe. Our method of extracting mussel protein is more
-                  efficient than that from natural mussels with thounds of times
-                  lower cost. The hydrogels we made are very safe and cheap.
-                  Modularization is also a highlight of the MIBOM. Developed in
-                  a blocking method, MIBOM's system can be changed easily
-                  according to the application. For example, the hydrogel can be
-                  changed or modified to satisfy different applications and you
-                  can just change the downstream corresponding enzymes, the
-                  system still works. Four systems of MIBOM are independent of
-                  others but have connections. We believe this modeularization
-                  design will expand the application of MIBOM.
-                </p>
-                <v-img
-                  :aspect-ratio="1029 / 728"
-                  src="https://2021.igem.org/wiki/images/8/81/T--ShanghaiTech_China--des--pic_9.svg"
-                  contain
-                  max-height="600px"
-                />
-              </v-card-text>
-              <v-card-title class="text-h5"> More </v-card-title>
-              <v-card-text>
-                <p class="body-1">
-                  During the design of MIBOM, our Integrated Human Practice
-                  benefits a lot. We interviewed many clinicians and patients to
-                  identify the problem. We communicated with professors to
-                  determine the drugs and feasibilities of the project. We also
-                  do a lot about the entreprenuership. See more details on
-                  <a
-                    href="https://2021.igem.org/Team:ShanghaiTech_China/Results"
-                    >Results</a
-                  >
-                  page! We have thought a lot about the communication and ethics
-                  of synthetic biology. We attached great importance to the
-                  impact of synthetic biology on the public and practitioners.
-                  We have made many new attempts in the dissemination and
-                  education of synthetic biology. See more details on
-                  <a
-                    href="https://2021.igem.org/Team:ShanghaiTech_China/Results"
-                    >Results</a
-                  >
-                  page!
-                </p>
-                <p class="body-1"></p>
-              </v-card-text>
-            </v-container>
-          </v-card>
-        </template>
-      </v-hover>
-      <v-hover>
-        <template v-slot:default="{ hover }">
-          <v-card
-            :class="`elevation-${hover ? 8 : 2}`"
-            class="transition-swing"
-            style="text-decoration: none; margin-top: 35px"
-            v-scroll="updatepos"
-            v-show="!firstload"
-          >
             <v-container style="padding: 20px">
-              <v-row>
+              <v-row justify="center">
                 <v-card-title
-                  class="title"
-                  style="margin-left: 16px"
-                  id="references"
-                  >References</v-card-title
+                  class="text-h4 title"
+                  v-intersect="onIntersect"
+                  id="overview"
                 >
+                  Overview
+                </v-card-title>
               </v-row>
               <v-card-text>
-                <p class="body-2">
-                  [1]:Wei, Y. P., & Lin, K. C. (2021). Dual-construct fixation
-                  is recommended in ipsilateral femoral neck fractures with
-                  infra-isthmus shaft fracture: A STROBE compliant study.
-                  Medicine, 100(17), e25708.
+                <p class="body-1">
+                  Since MIBOM comes from a multi-system design, the parts we've
+                  built to support the project are quite diverse and
+                  fascinating. Our parts are mainly concentrated in the adhesive
+                  system and the regulatory system. We carefully submitted the
+                  components we developed to perform one specific function into
+                  <u><strong>Basic Part</strong></u> in
+                  <strong><u>Registry</u></strong
+                  >, then each basic part is meaningfully combined with others
+                  to compose functional <strong><u>Composite Parts</u></strong
+                  >, and finally submitted in <strong><u>Registry</u></strong
+                  >.
                 </p>
-                <p class="body-2">
-                  [2]Danner EW, Kan Y, Hammer MU, Israelachvili JN, Waite JH.
-                  Adhesion of mussel foot protein Mefp-5 to mica: an underwater
-                  superglue. Biochemistry. 2012 Aug 21;51(33):6511-8. doi:
-                  10.1021/bi3002538. Epub 2012 Aug 8. PMID: 22873939; PMCID:
-                  PMC3428132.
+              </v-card-text>
+              <v-card-title class="text-h5"> Basic Parts </v-card-title>
+              <v-simple-table>
+                <template v-slot:default>
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Short Description</th>
+                      <th>Long Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>
+                        <a href="http://parts.igem.org/Part:BBa_K3755006"
+                          >BBa_K3755006</a
+                        >
+                      </th>
+                      <th>mouse Piezo1.1</th>
+                      <th>
+                        A splicing variant of mPiezo1 which is more sensitive to
+                        mechanical stimulation.
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="http://parts.igem.org/Part:BBa_K3755007"
+                          >BBa_K3755007</a
+                        >
+                      </th>
+                      <th>GCaMP6m</th>
+                      <th>A genetically encoded calcium indicator</th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="http://parts.igem.org/Part:BBa_K3755010"
+                          >BBa_K3755010</a
+                        >
+                      </th>
+                      <th>NFAT response element</th>
+                      <th>
+                        NFAT can bind to this part to activate downstream gene
+                        transicription.
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="http://parts.igem.org/Part:BBa_K3755013"
+                          >BBa K3755013</a
+                        >
+                      </th>
+                      <th>Alginate lyase with human IL-2 signal sequence</th>
+                      <th>
+                        Alginate lyase can degrade alginate. With human IL-2
+                        signal sequence, secretion of the alginate lyase in
+                        mammalian cells can be achieved.
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="http://parts.igem.org/Part:BBa_K3755018"
+                          >BBa_K3755018</a
+                        >
+                      </th>
+                      <th>IL2-algH-EGFP</th>
+                      <th>
+                        This is a fusion protein that consist of an alginate
+                        lyase with human IL-2 signal sequence and EGFP.
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="http://parts.igem.org/Part:BBa_K3755015"
+                          >BBa_K3755015</a
+                        >
+                      </th>
+                      <th>mRuby2 red fluorescent protein</th>
+                      <th>
+                        monomeric red fluorescent protein derived from mRuby,
+                        with improved photophysical properties
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="http://parts.igem.org/Part:BBa_K3755002"
+                          >BBa_K3755002</a
+                        >
+                      </th>
+                      <th>Mfp5 CDS</th>
+                      <th>
+                        Recombinant mussel foot protein coding sequence,
+                        isolated from Mytilus galloprovincialis, expressed in
+                        <i>E.coli</i> BL21.
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="http://parts.igem.org/Part:BBa_K3755003"
+                          >BBa_K3755003</a
+                        >
+                      </th>
+                      <th>2*Mfp5 CDS</th>
+                      <th>
+                        Two consecutive recombinant mussel foot protein type-5
+                        coding sequences, isolated from Mytilus
+                        galloprovincialis, expressed in <i>E.coli</i> BL21.
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="http://parts.igem.org/Part:BBa_K3755021"
+                          >BBa_K3755021</a
+                        >
+                      </th>
+                      <th>linker for Mfp5 CDS&His tag</th>
+                      <th>
+                        The linker connecting His tag to Mfps CDS, containing
+                        BioBrick cut sites
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="http://parts.igem.org/Part:BBa_K3755004"
+                          >BBa_K3755004</a
+                        >
+                      </th>
+                      <th>cfa-N</th>
+                      <th>
+                        Codon optimized N-terminal spontaneous splicing−ligation
+                        peptide sequnece for 3*Mfp5 CDS assembly, connected
+                        downstream of the 2*Mfp5 CDS
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="http://parts.igem.org/Part:BBa_K3755005"
+                          >BBa_K3755005</a
+                        >
+                      </th>
+                      <th>cfa-C</th>
+                      <th>
+                        Codon optimized C-terminal spontaneous splicing−ligation
+                        peptide sequnece for 3*Mfp5 CDS assembly, connected
+                        downstream of the Mfp5 CDS
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="http://parts.igem.org/Part:BBa_K3755009"
+                          >BBa_K3755009</a
+                        >
+                      </th>
+                      <th>AKTK expression tag</th>
+                      <th>
+                        To increase translation initiation rates for protein
+                        expression
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="http://parts.igem.org/Part:BBa_K3755022"
+                          >BBa_K3755022</a
+                        >
+                      </th>
+                      <th>hSyn promoter</th>
+                      <th>
+                        Human synapsin I promoter，confers neuron-specific
+                        expression
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="http://parts.igem.org/Part:BBa_K3755025"
+                          >BBa_K3755025</a
+                        >
+                      </th>
+                      <th>loxP site-1</th>
+                      <th>
+                        A sequence containing a Lox2272 site and a LoxP site,
+                        which can be recognized by Cyclization Recombinatation
+                        Enzyme(CRE), upstream of GCaMP6m in
+                        pAAV.Syn.Flex.GCaMP6m.WPRE.SV40
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="http://parts.igem.org/Part:BBa_K3755026"
+                          >BBa_K3755026</a
+                        >
+                      </th>
+                      <th>loxP site-2</th>
+                      <th>
+                        A sequence containing a Lox2272 site and a LoxP site,
+                        which can be recognized by Cyclization Recombinatation
+                        Enzyme(CRE), downstream of GCaMP6m in
+                        pAAV.Syn.Flex.GCaMP6m.WPRE.SV40
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="http://parts.igem.org/Part:BBa_K3755027"
+                          >BBa_K3755027</a
+                        >
+                      </th>
+                      <th>WPRE</th>
+                      <th>
+                        Woodchuck hepatitis virus posttranscriptional regulatory
+                        element
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <a href="http://parts.igem.org/Part:BBa_K3755020"
+                          >BBa_K3755020</a
+                        >
+                      </th>
+                      <th>6*His tag</th>
+                      <th>
+                        Attached to the upstream or downstream of the protein,
+                        used to bind the protein to the medium in nickel ion
+                        affinity chromatography during the protein purification
+                      </th>
+                    </tr>
+                  </tbody>
+                </template>
+              </v-simple-table>
+              <v-card-title class="text-h5"> Composite Parts </v-card-title>
+              <v-card-text>
+                <v-simple-table>
+                  <template v-slot:default>
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Short Description</th>
+                        <th>Long Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755014"
+                            >BBa_K3755014</a
+                          >
+                        </th>
+                        <th>NFAT-RE+minP+EGFP</th>
+                        <th>
+                          To prove that the calcium signal activates downstream
+                          gene expression.
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755016"
+                            >BBa_K3755016</a
+                          >
+                        </th>
+                        <th>
+                          CMV enhancer+CMV promoter+mPiezo1+mRuby2+bGH PolyA
+                          signal
+                        </th>
+                        <th>To express mPiezo1 in mammalian cells.</th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755017"
+                            >BBa_K3755017</a
+                          >
+                        </th>
+                        <th>
+                          CMV enhancer+CMV promoter+mPiezo1.1+mRuby2+bGH PolyA
+                          signal
+                        </th>
+                        <th>To express mPiezo1.1 in mammalian cells.</th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755023"
+                            >BBa_K3755023</a
+                          >
+                        </th>
+                        <th>
+                          CMV enhancer+CMV promoter+IL2-AlgH-EGFP+SV40 PolyA
+                          signal
+                        </th>
+                        <th>To express IL2-AlgH-EGFP.</th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755041"
+                            >BBa_K3755041</a
+                          >
+                        </th>
+                        <th>
+                          CMV enhancer+CMV promoter+GCaMP6m+SV40 PolyA signal
+                        </th>
+                        <th>To express GCaMP6m in mammalian cells.</th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755011"
+                            >BBa_K3755011</a
+                          >
+                        </th>
+                        <th>ATKT-His tag-linker-Mfp5 CDS(Mfp5-1)</th>
+                        <th>
+                          Composite CDS to be put in protein expression
+                          plasmid(for example: pET28) to express Mfp5 protein in
+                          <i>E.coli</i> BL21
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755012"
+                            >BBa_K3755012</a
+                          >
+                        </th>
+                        <th>ATKT-His tag-linker-2*Mfp5 CDS(Mfp5-2)</th>
+                        <th>
+                          Composite CDS to be put in protein expression
+                          plasmid(for example: pET28) to express 2*Mfp5 protein
+                          in <i>E.coli</i> BL21
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755030"
+                            >BBa_K3755030</a
+                          >
+                        </th>
+                        <th>AKTK tag-2*Mfp CDS-cfa-n</th>
+                        <th>
+                          Produce 3*Mfp5 CDS by splicing−ligation with
+                          <a href="http://parts.igem.org/Part:BBa_K3755029"
+                            >BBa_K3755029</a
+                          >
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755029"
+                            >BBa_K3755029</a
+                          >
+                        </th>
+                        <th>cfa-C-Mfp5 CDS-his tag</th>
+                        <th>
+                          Produce 3*Mfp5 CDS by splicing−ligation with
+                          <a href="http://parts.igem.org/Part:BBa_K3755030"
+                            >BBa_K3755030</a
+                          >
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755031"
+                            >BBa_K3755031</a
+                          >
+                        </th>
+                        <th>backbone of pAAV.Syn.Flex.GCaMP6m.WPRE.SV40</th>
+                        <th>
+                          Contain ori(high-copy-number ColE1/pMB1/pBR322/pUC
+                          origin of replication), AmpR promoter,
+                          AmpR(β-lactamase) and f1 ori(f1 bacteriophage origin
+                          of replication)
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755032"
+                            >BBa_K3755032</a
+                          >
+                        </th>
+                        <th>pAAV.Syn.Flex.GCaMP6m.WPRE.SV40</th>
+                        <th>
+                          From Wei Shen's lab of Shanghaitech university, the
+                          clone template of
+                          <a href="http://parts.igem.org/Part:BBa_K3755007"
+                            >BBa_K3755007</a
+                          >
+                        </th>
+                      </tr>
+                    </tbody>
+                  </template>
+                </v-simple-table>
+              </v-card-text>
+              <v-row justify="center">
+                <v-card-title class="text-h4 title" id="part">
+                  Part Collection
+                </v-card-title>
+              </v-row>
+              <v-card-title class="text-h5"> Mfp5 Part Collction </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  To satisfy our adhesive system, we have created a complete
+                  part collection containing all kinds of CDSs and functional
+                  tags. All these CDSs and functional tags have been arranged in
+                  several specific forms as several composite CDSs, which can
+                  simply be put into the multiple cloning site of a protein
+                  expression plasmid of <i>E.coli</i> and produce our
+                  recombinant Mfp5 proteins in different multiples. To make it
+                  more convenient for future teams to use our collection, we
+                  have made a detailed description of all parts on pages in
+                  <strong><u>Registry</u></strong
+                  >.
                 </p>
-                <p class="body-2">
-                  [3]Kord Forooshani P, Lee BP. Recent approaches in designing
-                  bioadhesive materials inspired by mussel adhesive protein. J
-                  Polym Sci A Polym Chem. 2017 Jan 1;55(1):9-33. doi:
-                  10.1002/pola.28368. Epub 2016 Oct 11. PMID: 27917020; PMCID:
-                  PMC5132118.
+                <v-simple-table>
+                  <template v-slot:default>
+                    <thead>
+                      <tr>
+                        <th>CDSs</th>
+                        <th>Tag</th>
+                        <th>Composite CDSs</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755002"
+                            >BBa_K3755002</a
+                          >
+                        </th>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755009"
+                            >BBa_K3755009</a
+                          >
+                        </th>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755011"
+                            >BBa_K3755011</a
+                          >
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755003"
+                            >BBa_K3755003</a
+                          >
+                        </th>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755020"
+                            >BBa_K3755020</a
+                          >
+                        </th>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755012"
+                            >BBa_K3755012</a
+                          >
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755021"
+                            >BBa_K3755021</a
+                          >
+                        </th>
+                        <th></th>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755030"
+                            >BBa_K3755030</a
+                          >
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755004"
+                            >BBa_K3755004</a
+                          >
+                        </th>
+                        <th></th>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755029"
+                            >BBa_K3755029</a
+                          >
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755005"
+                            >BBa_K3755005</a
+                          >
+                        </th>
+                        <th></th>
+                        <th></th>
+                      </tr>
+                    </tbody>
+                  </template>
+                </v-simple-table>
+              </v-card-text>
+              <v-card-title class="text-h5">
+                Regulation System Part Collction
+              </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  We build a part collection to achieve mechanical
+                  stimulus-activated gene expression, which is the key of our
+                  regulation system. A mechanosensitive ion channel, Piezo1 or
+                  Piezo1.1 is the initiator of this system. It can cause a
+                  mechanosensitive intracellular calcium signal. GCaMP6m is an
+                  indicator of calcium signal. The NFAT response element is a
+                  cis-acting element. The minP is a minimum TATA-box promoter
+                  with low basal activity. The reporter of this pathway consists
+                  of NFAT-RE, minP, and EGFP. While the intracellular calcium
+                  concentration improves, NFAT-RE can be combined with a
+                  transcriptional activator, minP will be more active, and more
+                  EGFP will be produced leading to a higher brightness under a
+                  fluorescence microscope. All of the parts included in this
+                  part collection are shown below.
                 </p>
-                <p class="body-2">
-                  [4]Lee BP, Messersmith PB, Israelachvili JN, Waite JH.
-                  Mussel-Inspired Adhesives and Coatings. Annu Rev Mater Res.
-                  2011 Aug 1;41:99-132. doi:
-                  10.1146/annurev-matsci-062910-100429. PMID: 22058660; PMCID:
-                  PMC3207216.
-                </p>
-                <p class="body-2">
-                  [5]Huang J, Li H, Wang Q. [Development of double-component
-                  rapid curing bioadhesive]. Sheng Wu Yi Xue Gong Cheng Xue Za
-                  Zhi. 2018 Dec 25;35(6):921-927. Chinese. doi:
-                  10.7507/1001-5515.201805045. PMID: 30583318.
-                </p></v-card-text
-              >
+                <v-simple-table>
+                  <template v-slot:default>
+                    <thead>
+                      <tr>
+                        <th>Initiator</th>
+                        <th>Indicator</th>
+                        <th>Reporter</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755006"
+                            >BBa_K3755006</a
+                          >
+                        </th>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755007"
+                            >BBa_K3755007</a
+                          >
+                        </th>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755010"
+                            >BBa_K3755010</a
+                          >
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755016"
+                            >BBa_K3755016</a
+                          >
+                        </th>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755041"
+                            >BBa_K3755041</a
+                          >
+                        </th>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755014"
+                            >BBa_K3755014</a
+                          >
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755017"
+                            >BBa_K3755017</a
+                          >
+                        </th>
+                        <th></th>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755032"
+                            >BBa_K3755032</a
+                          >
+                        </th>
+                        <th></th>
+                      </tr>
+                    </tbody>
+                  </template>
+                </v-simple-table>
+              </v-card-text>
             </v-container>
           </v-card>
         </template>
@@ -546,8 +692,8 @@ export default {
   },
 
   data: () => ({
-    step: [], //use for store position of title
-    position: 1, //use for v-stepper to know where we are
+    step: [],
+    position: 1, //used for v-stepper
     isIntersecting: false,
     istop: true,
     firstload: true, //used for skeleton loader.
@@ -577,12 +723,8 @@ export default {
     },
   },
   mounted() {
-    this.step[0] = document.getElementById("background");
-    this.step[1] = document.getElementById("adhesive");
-    this.step[2] = document.getElementById("hydrogel");
-    this.step[3] = document.getElementById("regulation");
-    this.step[4] = document.getElementById("drug");
-    this.step[5] = document.getElementById("engineering");
+    this.step[0] = document.getElementById("overview");
+    this.step[1] = document.getElementById("part");
     this.updatepos();
     setTimeout(() => {
       this.firstload = false;
@@ -592,7 +734,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+  }<style lang="scss">
 #backtobtn {
   position: fixed;
 }
