@@ -202,7 +202,7 @@
                   also divided into basic users and patients with complicated
                   diseases with economic basis.
                 </p>
-                <p class="body-1">（用户的图片）</p>
+                <v-img src="https://2021.igem.org/wiki/images/5/5c/T--ShanghaiTech_China--ent--1.jpg" contain max-height="600px" />
               </v-card-text>
               <v-row justify="center">
                 <v-card-title class="text-h4 title" id="operation"
@@ -287,7 +287,7 @@
                   surgery, which is conducive to doctors in areas with low
                   qualifications or lack of medical resources.
                 </p>
-                <p class="body-1">（hardware的图片）</p>
+                <v-img src="https://2021.igem.org/wiki/images/9/9c/T--ShanghaiTech_China--har--Real_1.jpg" contain max-height="600px"/>
               </v-card-text>
               <v-row justify="center">
                 <v-card-title class="text-h4 title" id="safety"
