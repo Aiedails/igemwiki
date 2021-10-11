@@ -31,10 +31,7 @@
     </v-card>
     -->
 
-    <navbar
-      v-resize="onResize"
-      :width="this.width"
-    ></navbar>
+    <navbar v-resize="onResize" :width="this.width"></navbar>
     <v-main id="main">
       <mainpart :width="this.width"></mainpart>
     </v-main>
@@ -163,5 +160,22 @@ li::marker {
   padding-left: 0 !important;
   padding-right: 0 !important;
   margin-bottom: 16px !important;
+}
+#HQ_page table {
+  margin: 0 !important;
+}
+#HQ_page th {
+  background-color: white !important;
+  padding: 0 16px !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+  border: none !important;
+  border-bottom: thin solid rgba(0, 0, 0, 0.12) !important;
+  vertical-align: middle !important;
+}
+#HQ_page td {
+  padding: 0 16px !important;
+  border: none !important;
+  border-bottom: thin solid rgba(0, 0, 0, 0.12) !important;
+  vertical-align: middle !important;
 }
 </style>

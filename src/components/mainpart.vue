@@ -123,7 +123,11 @@
                   with 16 subdivisions.
                 </p>
                 <p class="body-1">
-                  <v-img src="https://2021.igem.org/wiki/images/1/1b/T--ShanghaiTech_China--har--42stepper.png" contain max-height="600px"/>
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/1/1b/T--ShanghaiTech_China--har--42stepper.png"
+                    contain
+                    max-height="600px"
+                  />
                 </p>
                 <p class="body-1">
                   The motor shaft is fixed with a 13mm diameter gear, and the
@@ -179,7 +183,11 @@
                   cases are called "H" and "L", respectively.
                 </p>
                 <p class="body-1">
-                  <v-img src="https://2021.igem.org/wiki/images/6/64/T--ShanghaiTech_China--har--pulse_signal.jpg" contain max-height="600px"/>
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/6/64/T--ShanghaiTech_China--har--pulse_signal.jpg"
+                    contain
+                    max-height="600px"
+                  />
                 </p>
                 <p class="body-1">
                   The rotation distance of a stepper motor is proportional to
@@ -190,7 +198,8 @@
                 <p class="body-1">
                   <v-img
                     src="https://2021.igem.org/wiki/images/b/b3/T--ShanghaiTech_China--har--rotation.jpg"
-                    contain max-height="600px"
+                    contain
+                    max-height="600px"
                   />
                 </p>
                 <p class="body-1">
@@ -217,16 +226,28 @@
                 </p>
                 <p class="body-1">We also used CNC Shield V3 on top of Uno</p>
                 <p class="body-1">
-                  <v-img src="https://2021.igem.org/wiki/images/4/4e/T--ShanghaiTech_China--har--Arduino.png" contain max-height="600px"/>
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/4/4e/T--ShanghaiTech_China--har--Arduino.png"
+                    contain
+                    max-height="600px"
+                  />
                 </p>
                 <p class="body-1">
-                  <v-img src="https://2021.igem.org/wiki/images/1/1e/T--ShanghaiTech_China--har--real.jpg" contain max-height="600px"/>
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/1/1e/T--ShanghaiTech_China--har--real.jpg"
+                    contain
+                    max-height="600px"
+                  />
                 </p>
                 <p class="body-1">
                   This expansion board can easily drive 42 stepper motors.
                 </p>
                 <p class="body-1">
-                  <v-img src="https://2021.igem.org/wiki/images/c/ce/T--ShanghaiTech_China--har--Arduino_Uno.png" contain max-height="600px"/>
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/c/ce/T--ShanghaiTech_China--har--Arduino_Uno.png"
+                    contain
+                    max-height="600px"
+                  />
                 </p>
                 <p class="body-1">
                   Control the movement of the motor by operating the number and
@@ -255,7 +276,11 @@ void step(boolean dir, byte dirPin, byte stepperPin, int steps)
                   is reached, if the position is reached then continue to wait
                   for the PC input, anyway move to the target position.
                 </p>
-                <v-img src="https://2021.igem.org/wiki/images/1/1d/T--ShanghaiTech_China--har--Flow_Chart_1.png" contain max-height="600px"/>
+                <v-img
+                  src="https://2021.igem.org/wiki/images/1/1d/T--ShanghaiTech_China--har--Flow_Chart_1.png"
+                  contain
+                  max-height="600px"
+                />
                 <p class="body-1">
                   The way to interact with the PC is through the Arduino's
                   serial communication, parsing the serial input. The input
@@ -274,13 +299,25 @@ void step(boolean dir, byte dirPin, byte stepperPin, int steps)
                   also added the x-axis-centered rotation, in order to fit the
                   tricky angle for drug release more.
                 </p>
-                <v-img src="https://2021.igem.org/wiki/images/e/ed/T--ShanghaiTech_China--har--Model_1.jpg" contain max-height="600px"/>
-                <v-img src="https://2021.igem.org/wiki/images/9/9c/T--ShanghaiTech_China--har--Real_1.jpg" contain max-height="600px"/>
+                <v-img
+                  src="https://2021.igem.org/wiki/images/e/ed/T--ShanghaiTech_China--har--Model_1.jpg"
+                  contain
+                  max-height="600px"
+                />
+                <v-img
+                  src="https://2021.igem.org/wiki/images/9/9c/T--ShanghaiTech_China--har--Real_1.jpg"
+                  contain
+                  max-height="600px"
+                />
                 <p class="body-1">
                   Considering the torque provided by the servo, and our larger
                   load. Here we choose the MG995 servo.
                 </p>
-                <v-img src="https://2021.igem.org/wiki/images/4/47/T--ShanghaiTech_China--har--mg995.jpg" contain max-height="600px"/>
+                <v-img
+                  src="https://2021.igem.org/wiki/images/4/47/T--ShanghaiTech_China--har--mg995.jpg"
+                  contain
+                  max-height="600px"
+                />
                 <p class="body-1">
                   In order to inject the drug in the syringe, an injection
                   method by mechanical drive is designed here.
@@ -291,17 +328,29 @@ void step(boolean dir, byte dirPin, byte stepperPin, int steps)
                   finally the drug will be injected.
                 </p>
                 <p class="body-1">
-                  <v-img src="https://2021.igem.org/wiki/images/6/69/T--ShanghaiTech_China--har-Model_2.jpg" contain max-height="600px"/>
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/6/69/T--ShanghaiTech_China--har-Model_2.jpg"
+                    contain
+                    max-height="600px"
+                  />
                 </p>
                 <p class="body-1">
-                  <v-img src="https://2021.igem.org/wiki/images/8/8a/T--ShanghaiTech_China--har--Real_2.jpg" contain max-height="600px"/>
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/8/8a/T--ShanghaiTech_China--har--Real_2.jpg"
+                    contain
+                    max-height="600px"
+                  />
                 </p>
                 <p class="body-1">
                   The torque required here is not very large, so the SG90 servo
                   was chosen.
                 </p>
                 <p class="body-1">
-                  <v-img src="https://2021.igem.org/wiki/images/8/8c/T--ShanghaiTech_China--har-sg90.jpg" contain max-height="600px"/>
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/8/8c/T--ShanghaiTech_China--har-sg90.jpg"
+                    contain
+                    max-height="600px"
+                  />
                 </p>
                 <p class="body-1">
                   After the release of the drug requires UV curing, here we
@@ -309,21 +358,33 @@ void step(boolean dir, byte dirPin, byte stepperPin, int steps)
                 </p>
                 <p class="body-1">Here the wavelength of the light is 395nm.</p>
                 <p class="body-1">
-                  <v-img src="https://2021.igem.org/wiki/images/c/c0/T--ShanghaiTech_China--har-UV_LED.jpg" contain max-height="600px"/>
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/c/c0/T--ShanghaiTech_China--har-UV_LED.jpg"
+                    contain
+                    max-height="600px"
+                  />
                 </p>
                 <p class="body-1">
                   Then again, a rotational degree of freedom is added to make it
                   irradiate at a specific angle for curing.
                 </p>
                 <p class="body-1">
-                  <v-img src="https://2021.igem.org/wiki/images/d/df/T--ShanghaiTech_China--har--Model_3.jpg" contain max-height="600px"/>
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/d/df/T--ShanghaiTech_China--har--Model_3.jpg"
+                    contain
+                    max-height="600px"
+                  />
                 </p>
                 <p class="body-1">
                   After that, in order to control the servo angle, we use
                   Arduino Micro for control here.
                 </p>
                 <p class="body-1">
-                  <v-img src="https://2021.igem.org/wiki/images/0/0a/T--ShanghaiTech_China--har--Arduino_Micro.jpg" contain max-height="600px"/>
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/0/0a/T--ShanghaiTech_China--har--Arduino_Micro.jpg"
+                    contain
+                    max-height="600px"
+                  />
                 </p>
                 <p class="body-1">
                   Micro can control three different servos. The three different
@@ -364,7 +425,11 @@ void step(boolean dir, byte dirPin, byte stepperPin, int steps)
                   diagram.
                 </p>
                 <p class="body-1">
-                  <v-img src="https://2021.igem.org/wiki/images/5/55/T--ShanghaiTech_China--har--Circuit_Pic.png" contain max-height="600px"/>
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/5/55/T--ShanghaiTech_China--har--Circuit_Pic.png"
+                    contain
+                    max-height="600px"
+                  />
                 </p>
                 <p class="body-1">
                   Such a hardware design can be applied not only in our project,
@@ -379,6 +444,14 @@ void step(boolean dir, byte dirPin, byte stepperPin, int steps)
                   It is also very easy to replace the solvent in the injection
                   tube. It can be adjusted for different application scenarios.
                 </p>
+                <v-container>
+                  <video controls width="100%" style="object-fit: contain">
+                    <source
+                      src="https://2021.igem.org/wiki/images/3/3a/T--Shanghaitech_China--har--hardware.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </v-container>
                 <p class="body-1">The Micro controller code is following:</p>
                 <pre class="code">
 /*
