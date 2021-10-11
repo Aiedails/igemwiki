@@ -31,13 +31,13 @@
       </v-btn>
 
       <v-toolbar-title style="padding-left: 16px; padding-bottom: 0;">
-        Human Practice
+        Integrated Human Practices
       </v-toolbar-title >
       <!-- use <v-toolbar-title> instead of <v-app-bar-title> to prevent displaying "Ti..." -->
       <template v-slot:extension>
         <v-btn 
           plain 
-          href="https://2021.igem.org/Team:ShanghaiTech_China/"
+          href="https://2021.igem.org/Team:ShanghaiTech_China"
         >
           HOME
         </v-btn>
@@ -112,7 +112,7 @@
             <v-btn plain v-bind="attrs" v-on="on">Parts</v-btn>
           </template>
           <v-list>
-            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Part_Collection">Parts</v-list-item>
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Parts">Parts</v-list-item>
             <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Improvement">Improvement</v-list-item>
           </v-list>
         </v-menu>
@@ -129,7 +129,8 @@
             <v-btn plain v-bind="attrs" v-on="on">Human Practices</v-btn>
           </template>
           <v-list>
-            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices">Integrated HP</v-list-item>
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Hp_overview">Overview</v-list-item>
+            <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices">Integrated Human Practices</v-list-item>
             <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Communication">Communication & Education</v-list-item>
             <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Entrepreneurship">Entrepreneurship</v-list-item>
             <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Sustainable">Sustainable</v-list-item>
@@ -253,7 +254,7 @@
           </v-list-item>
           <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Safety">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-            <v-list-item-title> Safty </v-list-item-title>
+            <v-list-item-title> Safety </v-list-item-title>
           </v-list-item>
         </v-list-group>
 
@@ -275,7 +276,7 @@
           <template v-slot:activator>
             <v-list-item-title>Parts</v-list-item-title>
           </template>
-          <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Part_Collection">
+          <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Parts">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title>Parts</v-list-item-title>
           </v-list-item>
@@ -289,17 +290,25 @@
           <template v-slot:activator>
             <v-list-item-title>Human Practices</v-list-item-title>
           </template>
+          <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Hp_overview">
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Overview </v-list-item-title>
+          </v-list-item>
           <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-            <v-list-item-title> Human Practices </v-list-item-title>
+            <v-list-item-title> Integrated Human Practices </v-list-item-title>
           </v-list-item>
-          <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Education">
+          <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Communication">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
-            <v-list-item-title> Education </v-list-item-title>
+            <v-list-item-title> Communication & Education </v-list-item-title>
           </v-list-item>
           <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Entrepreneurship">
             <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
             <v-list-item-title> Entrepreneurship </v-list-item-title>
+          </v-list-item>
+          <v-list-item class="body-1" href="https://2021.igem.org/Team:ShanghaiTech_China/Sustainable">
+            <v-list-item-icon> <v-icon></v-icon> </v-list-item-icon>
+            <v-list-item-title> Sustainable </v-list-item-title>
           </v-list-item>
         </v-list-group>
 
