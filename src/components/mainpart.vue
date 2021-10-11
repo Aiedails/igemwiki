@@ -120,7 +120,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.1a: Construction of pET28a-cfaC-mfp5-1
@@ -133,7 +133,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.1b: Construction of pET28a-mfp5-2-cfaN
@@ -144,7 +144,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/f/f6/T--ShanghaiTech_China--res--C1%262N.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.1c: Linearized segments of Mfp5-2-CfaN and
@@ -156,7 +156,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/d/d5/T--ShanghaiTech_China--res--pet28.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.1d: Linearized plasmid backbone pET28a
@@ -165,7 +165,7 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                   >
                     <p class="body-1">
                       <strong
@@ -204,7 +204,7 @@
                 />
                 <v-row
                   justify="center"
-                  style="margin-top: 10px; margin-bottom: 10px"
+                  style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                 >
                   <p class="body-1">
                     Fig.2: SDS-PAGE of mfp5-1 expression in different induction
@@ -245,7 +245,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/9/98/T--ShanghaiTech_China--imp--mfp5-1_first.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.3a: SDS-PAGE of first purification of mfp5-1
@@ -256,7 +256,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/0/09/T--ShanghaiTech_China--res--mfp5-1_second.jpg" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.3b: SDS-PAGE of second purification of mfp5-1
@@ -265,7 +265,7 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                   >
                     <p class="body-1">
                       <strong>Fig.3: Purification of mfp5-1</strong>
@@ -296,7 +296,7 @@
                 />
                 <v-row
                   justify="center"
-                  style="margin-top: 10px; margin-bottom: 10px"
+                  style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                 >
                   <p class="body-1">
                     Fig.4: SDS-PAGE of first purification of mfp5-2
@@ -322,7 +322,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/d/d2/T--ShanghaiTech_China--res--5-1.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.5a Add 20ul of protein solution to the center of the
@@ -334,7 +334,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/f/fa/T--ShanghaiTech_China--res--5-11.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.5b Attach PCR tube to the center of the petri dish
@@ -343,7 +343,7 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                   >
                   </v-row>
                 </v-row>
@@ -360,7 +360,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/0/0b/T--ShanghaiTech_China--pro--9something.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.6a Fill the petri dish one by one with glass beads.
@@ -371,7 +371,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/e/e0/T--ShanghaiTech_China--res--5-22.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.6b Record the weight of glass beads when separating
@@ -381,7 +381,7 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                   >
                   </v-row>
                 </v-row>
@@ -476,7 +476,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/5/55/T--ShanghaiTech_China--res--gelma1-1.jpg" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.7a: Identifying the functional group by the chemical
@@ -488,7 +488,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/0/01/T--ShanghaiTech_China--res--gelma2-2.jpg" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.7b: Identifying the degrees of methacryloyl
@@ -499,7 +499,7 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                   >
                   </v-row>
                 </v-row>
@@ -531,7 +531,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/b/be/T--ShanghaiTech_China--pro--flow1.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.8a: A moderate modulus by changing the ratio of the
@@ -543,7 +543,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/a/aa/T--ShanghaiTech_China--pro--flow2.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.8b: A rapid UV polymerization, costing only 2-8s
@@ -554,7 +554,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/b/b6/T--ShanghaiTech_China--res--2.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.8c: Modulus / Angular frequency curve of MIBOM
@@ -565,7 +565,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/3/34/T--ShanghaiTech_China--res--3.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.8d: Modulus / Oscillation strain curve of MIBOM
@@ -574,7 +574,7 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                   >
                     <p class="body-1">
                       <strong>
@@ -610,7 +610,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/5/54/T--ShanghaiTech_China--res--1-4.jpg" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig. 9a: Glue the PCR tube to the petri dish with GelMA
@@ -622,7 +622,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/a/aa/T--ShanghaiTech_China--res--1-5.jpg" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.9b: Use UV light to cure GelMA or GelMA+Mussel mucin
@@ -631,7 +631,7 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                   >
                     <p class="body-1">
                       <strong>
@@ -655,7 +655,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/1/1a/T--ShanghaiTech_China--res--1-6.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.10a: Fill the petri dish one by one with glass beads
@@ -667,7 +667,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/d/d6/T--ShanghaiTech_China--res--1-1.jpg" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.10b: Record the weight of glass beads when separated
@@ -677,7 +677,7 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                   >
                   </v-row>
                 </v-row>
@@ -760,7 +760,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/e/e4/T--ShanghaiTech_China--res--0816-20-07.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.11a: Living cells are dyed green by FDA, the cells
@@ -772,7 +772,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/5/51/T--ShanghaiTech_China--res--0816-20-06.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.11b: Dead cells are dyed red by PI, the cells are
@@ -784,7 +784,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/3/38/T--ShanghaiTech_China--res--0816-04-04.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.11c: Cells encapsulated into the hydrogel, 4X
@@ -800,7 +800,7 @@
                     </v-container>
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Video.2: We can see different layers of cells by fine
@@ -810,7 +810,7 @@
                   </v-col>
                   <v-row
                     justify="center" align="baseline"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                   >
                     <p class="body-1">
                       <strong>Fig.11: FDA/PI staining in hydrogel</strong>
@@ -836,7 +836,7 @@
                 <v-img src="https://2021.igem.org/wiki/images/e/e4/T--ShanghaiTech_China--pro--purple.png" contain max-height="600px"/>
                 <v-row
                   justify="center"
-                  style="margin-top: 10px; margin-bottom: 10px"
+                  style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                 >
                   <p class="body-2 fig">
                     Fig.12: Death rate of cells under different UV light
@@ -858,7 +858,7 @@
                 <v-img src="https://2021.igem.org/wiki/images/6/6e/T--ShanghaiTech_China--res--7_day.png" contain max-height="600px" />
                 <v-row
                   justify="center"
-                  style="margin-top: 10px; margin-bottom: 10px"
+                  style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                 >
                   <p class="body-2 fig">
                     Fig.13: Short-term viability of cells in hydrogel
@@ -879,7 +879,7 @@
                 />
                 <v-row
                   justify="center"
-                  style="margin-top: 10px; margin-bottom: 10px"
+                  style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                 >
                   <p class="body-2 fig">
                     Fig.14: Long-term viability of cells in hydrogel
@@ -916,7 +916,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/6/66/T--ShanghaiTech_China--res--Piezo1.1.jpg" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.15a: Gene circuit of Piezo1.1 overexpression system
@@ -929,7 +929,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.15b: Plasmid
@@ -941,7 +941,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/a/a8/T--ShanghaiTech_China--imp--0823-04-01.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.15c: Transfected HEK293 cells in a 96 well, the red
@@ -955,7 +955,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/f/fe/T--ShanghaiTech_China--imp--0823-40-01.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.15d: Transfected HEK293 cells, showing normal
@@ -967,7 +967,7 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                   >
                     <p class="body-1">
                       <strong
@@ -1023,7 +1023,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/0/07/T--ShanghaiTech_China--res--gcamp_vector.jpg" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.16a: Gene circuit of GCaMP composite part
@@ -1034,7 +1034,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/6/61/T--ShanghaiTech_China--res--pEFP_GCaMP.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.16b: Construction of pEGFP-GCaMP, which is able to
@@ -1046,7 +1046,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/7/75/T--ShanghaiTech_China--res--pEGFP-GFP.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.16c: Agarose gel electrophoresis of pEGFP and GFP,
@@ -1058,7 +1058,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/d/df/T--ShanghaiTech_China--res--gcamp.jpg" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.16d: Agarose gel electrophoresis of GCaMP6 and
@@ -1068,7 +1068,7 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                   >
                     <p class="body-1">
                       <strong
@@ -1098,7 +1098,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/e/e9/T--ShanghaiTech_China--pro--force_4times.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.17a: Green fluorescence of GCaMP after the
@@ -1111,7 +1111,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/e/ec/T--ShanghaiTech_China--pro--0930_red.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.17b: Red fluorescence of Piezo1.1-mRuby2, indicating
@@ -1123,7 +1123,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/4/44/T--ShanghaiTech_China--imp--composite_force.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.17c: Merge of the green channel and red channel,
@@ -1135,7 +1135,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/7/7f/T--ShanghaiTech_China--pro--bright.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.17d: Bright field of the corresponding cells
@@ -1145,7 +1145,7 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                   >
                     <p class="body-1">
                       <strong
@@ -1186,7 +1186,7 @@
                 />
                 <v-row
                   justify="center"
-                  style="margin-top: 10px; margin-bottom: 10px"
+                  style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                 >
                   <p class="body-2 fig">
                     Fig.18: Experiment procedure to test the calcium influx
@@ -1204,7 +1204,7 @@
                     </v-container>
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Video.3: Fluorescence change of cells under the
@@ -1224,7 +1224,7 @@
                     </v-container>
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Video.4: Faster fluorescence change of cells under the
@@ -1241,7 +1241,7 @@
                     </v-container>
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Video.5: Faster fluorescence change of cells under the
@@ -1277,7 +1277,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/8/8c/T--ShanghaiTech_China--res--force.jpg" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.19a: Relative fluorescence of cells under the
@@ -1289,7 +1289,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/a/ab/T--ShanghaiTech_China--res--Yoda1.jpg" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.19b: Relative fluorescence of cells under the
@@ -1301,7 +1301,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/e/e9/T--ShanghaiTech_China--res--control.jpg" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.19c: Control group with no obvious fluorescence
@@ -1311,7 +1311,7 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                   >
                     <p class="body-1">
                       <strong
@@ -1350,7 +1350,7 @@
                         <v-img src="https://2021.igem.org/wiki/images/0/07/T--ShanghaiTech_China--res--PGL4.30.jpg" />
                         <v-row
                           justify="center"
-                          style="margin-top: 10px; margin-bottom: 10px"
+                          style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                         >
                           <p class="body-2 fig">
                             Fig.20a: Gene circuit of pGL4.30-GFP
@@ -1361,7 +1361,7 @@
                         <v-img src="https://2021.igem.org/wiki/images/1/11/T--ShanghaiTech_China--res--pGL-GFP_Map.png" />
                         <v-row
                           justify="center"
-                          style="margin-top: 10px; margin-bottom: 10px"
+                          style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                         >
                           <p class="body-2 fig">Fig.20b: Map of pGL4.30-EGFP</p>
                         </v-row>
@@ -1372,7 +1372,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/b/b2/T--ShanghaiTech_China--res--pGL4.30.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.20c: Agarose gel electrophoresis of EGFP and
@@ -1382,7 +1382,7 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                   >
                     <p class="body-1">
                       <strong>Fig.20: Construction of pGL4.30-GFP</strong>
@@ -1410,7 +1410,7 @@
                 <v-img src="https://2021.igem.org/wiki/images/0/07/T--ShanghaiTech_China--res--gcamp_vector.jpg" contain max-height="500px"/>
                 <v-row
                   justify="center"
-                  style="margin-top: 10px; margin-bottom: 10px"
+                  style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                 >
                   <p class="body-2 fig">
                     Fig.21a: Experiment procedure of testing the downstream
@@ -1422,7 +1422,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/4/40/T--ShanghaiTech_China--res--0928-40-03-green_green.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.21b: Green channel of the cells 24h after shaking,
@@ -1434,7 +1434,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/a/a6/T--ShanghaiTech_China--res--0928-40-03-green_red.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.21c: Red channel of the cells to identify the
@@ -1446,7 +1446,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/3/36/T--ShanghaiTech_China--res--composite.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.21d: Merge green and red channel to colocalize the
@@ -1456,7 +1456,7 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                   >
                     <p class="body-1">
                       <strong
@@ -1478,7 +1478,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/6/6a/T--ShanghaiTech_China--imp--green.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.22a: Green channel of the cells 24h after the
@@ -1491,7 +1491,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/a/a2/T--ShanghaiTech_China--imp--green_red.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.22b: Red channel of the cells to identify the
@@ -1503,7 +1503,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/7/78/T--ShanghaiTech_China--res--composite1.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.22c: Merge green and red channel to colocalize the
@@ -1515,7 +1515,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/1/1c/T--ShanghaiTech_China--res--0902-20-2.73-green.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.22d: Cells with no stimulation and no fluorescent
@@ -1525,7 +1525,7 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                   >
                     <p class="body-1">
                       <strong
@@ -1557,7 +1557,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.23a: Green channel of the cells 24h after the
@@ -1572,7 +1572,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.23b: Red channel of the cells to identify the
@@ -1584,7 +1584,7 @@
                     <v-img src="https://2021.igem.org/wiki/images/4/4c/T--ShanghaiTech_China--pro--composite_something.png" />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                     >
                       <p class="body-2 fig">
                         Fig.23c: Merge green and red channel to colocalize the
@@ -1594,7 +1594,7 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                   >
                     <p class="body-1">
                       <strong
@@ -1741,7 +1741,7 @@
                 />
                 <v-row
                   justify="center"
-                  style="margin-top: 10px; margin-bottom: 10px"
+                  style="margin-top: 10px; margin-bottom: 10px; margin-right: 16px; margin-left: 16px;"
                 >
                   <p class="body-2 fig">
                     Fig.24: The drug release simulation model, based on the
