@@ -89,230 +89,233 @@
                 </p>
               </v-card-text>
               <v-card-title class="text-h5"> Basic Parts </v-card-title>
-              <v-simple-table>
-                <template v-slot:default>
-                  <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>Short Description</th>
-                      <th>Long Description</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>
-                        <a href="http://parts.igem.org/Part:BBa_K3755006"
-                          >BBa_K3755006</a
-                        >
-                      </th>
-                      <th>mouse Piezo1.1</th>
-                      <th>
-                        A splicing variant of mPiezo1 which is more sensitive to
-                        mechanical stimulation.
-                      </th>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a href="http://parts.igem.org/Part:BBa_K3755007"
-                          >BBa_K3755007</a
-                        >
-                      </th>
-                      <th>GCaMP6m</th>
-                      <th>A genetically encoded calcium indicator</th>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a href="http://parts.igem.org/Part:BBa_K3755010"
-                          >BBa_K3755010</a
-                        >
-                      </th>
-                      <th>NFAT response element</th>
-                      <th>
-                        NFAT can bind to this part to activate downstream gene
-                        transicription.
-                      </th>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a href="http://parts.igem.org/Part:BBa_K3755013"
-                          >BBa K3755013</a
-                        >
-                      </th>
-                      <th>Alginate lyase with human IL-2 signal sequence</th>
-                      <th>
-                        Alginate lyase can degrade alginate. With human IL-2
-                        signal sequence, secretion of the alginate lyase in
-                        mammalian cells can be achieved.
-                      </th>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a href="http://parts.igem.org/Part:BBa_K3755018"
-                          >BBa_K3755018</a
-                        >
-                      </th>
-                      <th>IL2-algH-EGFP</th>
-                      <th>
-                        This is a fusion protein that consist of an alginate
-                        lyase with human IL-2 signal sequence and EGFP.
-                      </th>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a href="http://parts.igem.org/Part:BBa_K3755015"
-                          >BBa_K3755015</a
-                        >
-                      </th>
-                      <th>mRuby2 red fluorescent protein</th>
-                      <th>
-                        monomeric red fluorescent protein derived from mRuby,
-                        with improved photophysical properties
-                      </th>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a href="http://parts.igem.org/Part:BBa_K3755002"
-                          >BBa_K3755002</a
-                        >
-                      </th>
-                      <th>Mfp5 CDS</th>
-                      <th>
-                        Recombinant mussel foot protein coding sequence,
-                        isolated from Mytilus galloprovincialis, expressed in
-                        <i>E.coli</i> BL21.
-                      </th>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a href="http://parts.igem.org/Part:BBa_K3755003"
-                          >BBa_K3755003</a
-                        >
-                      </th>
-                      <th>2*Mfp5 CDS</th>
-                      <th>
-                        Two consecutive recombinant mussel foot protein type-5
-                        coding sequences, isolated from Mytilus
-                        galloprovincialis, expressed in <i>E.coli</i> BL21.
-                      </th>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a href="http://parts.igem.org/Part:BBa_K3755021"
-                          >BBa_K3755021</a
-                        >
-                      </th>
-                      <th>linker for Mfp5 CDS&His tag</th>
-                      <th>
-                        The linker connecting His tag to Mfps CDS, containing
-                        BioBrick cut sites
-                      </th>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a href="http://parts.igem.org/Part:BBa_K3755004"
-                          >BBa_K3755004</a
-                        >
-                      </th>
-                      <th>cfa-N</th>
-                      <th>
-                        Codon optimized N-terminal spontaneous splicing−ligation
-                        peptide sequnece for 3*Mfp5 CDS assembly, connected
-                        downstream of the 2*Mfp5 CDS
-                      </th>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a href="http://parts.igem.org/Part:BBa_K3755005"
-                          >BBa_K3755005</a
-                        >
-                      </th>
-                      <th>cfa-C</th>
-                      <th>
-                        Codon optimized C-terminal spontaneous splicing−ligation
-                        peptide sequnece for 3*Mfp5 CDS assembly, connected
-                        downstream of the Mfp5 CDS
-                      </th>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a href="http://parts.igem.org/Part:BBa_K3755009"
-                          >BBa_K3755009</a
-                        >
-                      </th>
-                      <th>AKTK expression tag</th>
-                      <th>
-                        To increase translation initiation rates for protein
-                        expression
-                      </th>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a href="http://parts.igem.org/Part:BBa_K3755022"
-                          >BBa_K3755022</a
-                        >
-                      </th>
-                      <th>hSyn promoter</th>
-                      <th>
-                        Human synapsin I promoter，confers neuron-specific
-                        expression
-                      </th>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a href="http://parts.igem.org/Part:BBa_K3755025"
-                          >BBa_K3755025</a
-                        >
-                      </th>
-                      <th>loxP site-1</th>
-                      <th>
-                        A sequence containing a Lox2272 site and a LoxP site,
-                        which can be recognized by Cyclization Recombinatation
-                        Enzyme(CRE), upstream of GCaMP6m in
-                        pAAV.Syn.Flex.GCaMP6m.WPRE.SV40
-                      </th>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a href="http://parts.igem.org/Part:BBa_K3755026"
-                          >BBa_K3755026</a
-                        >
-                      </th>
-                      <th>loxP site-2</th>
-                      <th>
-                        A sequence containing a Lox2272 site and a LoxP site,
-                        which can be recognized by Cyclization Recombinatation
-                        Enzyme(CRE), downstream of GCaMP6m in
-                        pAAV.Syn.Flex.GCaMP6m.WPRE.SV40
-                      </th>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a href="http://parts.igem.org/Part:BBa_K3755027"
-                          >BBa_K3755027</a
-                        >
-                      </th>
-                      <th>WPRE</th>
-                      <th>
-                        Woodchuck hepatitis virus posttranscriptional regulatory
-                        element
-                      </th>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a href="http://parts.igem.org/Part:BBa_K3755020"
-                          >BBa_K3755020</a
-                        >
-                      </th>
-                      <th>6*His tag</th>
-                      <th>
-                        Attached to the upstream or downstream of the protein,
-                        used to bind the protein to the medium in nickel ion
-                        affinity chromatography during the protein purification
-                      </th>
-                    </tr>
-                  </tbody>
-                </template>
-              </v-simple-table>
+              <v-card-test>
+                <v-simple-table>
+                  <template v-slot:default>
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Short Description</th>
+                        <th>Long Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755006"
+                            >BBa_K3755006</a
+                          >
+                        </th>
+                        <th>mouse Piezo1.1</th>
+                        <th>
+                          A splicing variant of mPiezo1 which is more sensitive
+                          to mechanical stimulation.
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755007"
+                            >BBa_K3755007</a
+                          >
+                        </th>
+                        <th>GCaMP6m</th>
+                        <th>A genetically encoded calcium indicator</th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755010"
+                            >BBa_K3755010</a
+                          >
+                        </th>
+                        <th>NFAT response element</th>
+                        <th>
+                          NFAT can bind to this part to activate downstream gene
+                          transicription.
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755013"
+                            >BBa K3755013</a
+                          >
+                        </th>
+                        <th>Alginate lyase with human IL-2 signal sequence</th>
+                        <th>
+                          Alginate lyase can degrade alginate. With human IL-2
+                          signal sequence, secretion of the alginate lyase in
+                          mammalian cells can be achieved.
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755018"
+                            >BBa_K3755018</a
+                          >
+                        </th>
+                        <th>IL2-algH-EGFP</th>
+                        <th>
+                          This is a fusion protein that consist of an alginate
+                          lyase with human IL-2 signal sequence and EGFP.
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755015"
+                            >BBa_K3755015</a
+                          >
+                        </th>
+                        <th>mRuby2 red fluorescent protein</th>
+                        <th>
+                          monomeric red fluorescent protein derived from mRuby,
+                          with improved photophysical properties
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755002"
+                            >BBa_K3755002</a
+                          >
+                        </th>
+                        <th>Mfp5 CDS</th>
+                        <th>
+                          Recombinant mussel foot protein coding sequence,
+                          isolated from Mytilus galloprovincialis, expressed in
+                          <i>E.coli</i> BL21.
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755003"
+                            >BBa_K3755003</a
+                          >
+                        </th>
+                        <th>2*Mfp5 CDS</th>
+                        <th>
+                          Two consecutive recombinant mussel foot protein type-5
+                          coding sequences, isolated from Mytilus
+                          galloprovincialis, expressed in <i>E.coli</i> BL21.
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755021"
+                            >BBa_K3755021</a
+                          >
+                        </th>
+                        <th>linker for Mfp5 CDS&His tag</th>
+                        <th>
+                          The linker connecting His tag to Mfps CDS, containing
+                          BioBrick cut sites
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755004"
+                            >BBa_K3755004</a
+                          >
+                        </th>
+                        <th>cfa-N</th>
+                        <th>
+                          Codon optimized N-terminal spontaneous
+                          splicing−ligation peptide sequnece for 3*Mfp5 CDS
+                          assembly, connected downstream of the 2*Mfp5 CDS
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755005"
+                            >BBa_K3755005</a
+                          >
+                        </th>
+                        <th>cfa-C</th>
+                        <th>
+                          Codon optimized C-terminal spontaneous
+                          splicing−ligation peptide sequnece for 3*Mfp5 CDS
+                          assembly, connected downstream of the Mfp5 CDS
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755009"
+                            >BBa_K3755009</a
+                          >
+                        </th>
+                        <th>AKTK expression tag</th>
+                        <th>
+                          To increase translation initiation rates for protein
+                          expression
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755022"
+                            >BBa_K3755022</a
+                          >
+                        </th>
+                        <th>hSyn promoter</th>
+                        <th>
+                          Human synapsin I promoter，confers neuron-specific
+                          expression
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755025"
+                            >BBa_K3755025</a
+                          >
+                        </th>
+                        <th>loxP site-1</th>
+                        <th>
+                          A sequence containing a Lox2272 site and a LoxP site,
+                          which can be recognized by Cyclization Recombinatation
+                          Enzyme(CRE), upstream of GCaMP6m in
+                          pAAV.Syn.Flex.GCaMP6m.WPRE.SV40
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755026"
+                            >BBa_K3755026</a
+                          >
+                        </th>
+                        <th>loxP site-2</th>
+                        <th>
+                          A sequence containing a Lox2272 site and a LoxP site,
+                          which can be recognized by Cyclization Recombinatation
+                          Enzyme(CRE), downstream of GCaMP6m in
+                          pAAV.Syn.Flex.GCaMP6m.WPRE.SV40
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755027"
+                            >BBa_K3755027</a
+                          >
+                        </th>
+                        <th>WPRE</th>
+                        <th>
+                          Woodchuck hepatitis virus posttranscriptional
+                          regulatory element
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755020"
+                            >BBa_K3755020</a
+                          >
+                        </th>
+                        <th>6*His tag</th>
+                        <th>
+                          Attached to the upstream or downstream of the protein,
+                          used to bind the protein to the medium in nickel ion
+                          affinity chromatography during the protein
+                          purification
+                        </th>
+                      </tr>
+                    </tbody>
+                  </template>
+                </v-simple-table>
+              </v-card-test>
               <v-card-title class="text-h5"> Composite Parts </v-card-title>
               <v-card-text>
                 <v-simple-table>
@@ -455,16 +458,14 @@
                       <tr>
                         <th>
                           <a href="http://parts.igem.org/Part:BBa_K3755032"
-                            >BBa_K3755032</a
+                            >BBa_K3755042</a
                           >
                         </th>
-                        <th>pAAV.Syn.Flex.GCaMP6m.WPRE.SV40</th>
+                        <th>mouse Piezo1.1</th>
                         <th>
-                          From Wei Shen's lab of Shanghaitech university, the
-                          clone template of
-                          <a href="http://parts.igem.org/Part:BBa_K3755007"
-                            >BBa_K3755007</a
-                          >
+                          Mechanosensory calcium channel protein isolated from
+                          mouse which is RCF10 assembly compatibe after codon
+                          modification.
                         </th>
                       </tr>
                     </tbody>
@@ -645,11 +646,7 @@
                           >
                         </th>
                         <th></th>
-                        <th>
-                          <a href="http://parts.igem.org/Part:BBa_K3755032"
-                            >BBa_K3755032</a
-                          >
-                        </th>
+                        <th></th>
                         <th></th>
                       </tr>
                     </tbody>
