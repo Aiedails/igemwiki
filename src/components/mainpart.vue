@@ -46,8 +46,20 @@
               editable
               edit-icon="3"
               step="3"
-              @click="$vuetify.goTo('#gene', options)"
+              @click="$vuetify.goTo('#diffusion', options)"
               :complete="position > 3"
+              style="transition: all 1s"
+              color="primary"
+              class="body-2"
+            >
+              Diffusion
+            </v-stepper-step>
+            <v-stepper-step
+              editable
+              edit-icon="4"
+              step="4"
+              @click="$vuetify.goTo('#gene', options)"
+              :complete="position > 4"
               style="transition: all 1s"
               color="primary"
               class="body-2"
@@ -56,27 +68,15 @@
             </v-stepper-step>
             <v-stepper-step
               editable
-              edit-icon="4"
-              step="4"
-              @click="$vuetify.goTo('#appendix', options)"
-              :complete="position > 4"
-              style="transition: all 1s"
-              color="primary"
-              class="body-2"
-            >
-              Appendix
-            </v-stepper-step>
-            <v-stepper-step
-              editable
               edit-icon="5"
               step="5"
-              @click="$vuetify.goTo('#references', options)"
+              @click="$vuetify.goTo('#appendix', options)"
               :complete="position > 5"
               style="transition: all 1s"
               color="primary"
               class="body-2"
             >
-              References
+              Appendix
             </v-stepper-step>
           </v-stepper>
         </template>
@@ -107,26 +107,26 @@
               <v-card-text>
                 <p class="body-1">
                   In 2021, the team from ShanghaiTech has come up with a novel
-                  method to help people suffering from bone fracture. Our
+                  method to help people suffering from bone fractures. Our
                   modeling group aims to gain insight into the project.
                 </p>
-                <p class="body-1"></p>
                 <p class="body-1">
                   We've modeled several procedures to verify and improve the
                   feasibility of the design. The first model is a physical one
                   showing how forces applied from the ends of the gel activate
-                  PIEZO1 of inward cells. It provides basis for our design that
-                  transmembrane protein PIEZO1 inside the hydrogel can be
+                  Piezo1 of inward cells. It provides a basis for our design
+                  that transmembrane protein Piezo1 inside the hydrogel can be
                   activated by the mechanical force during the healing process
                   of bones. Our second model describes the hydrogel-degrading
-                  enzyme expression triggered by $\ce{Ca^{2+}}$ signaling. This
-                  can exhibit how the change of $\ce{Ca^{2+}}$, resulting from
-                  the activated PIEZO1 channel, influences the expression of our
-                  target gene quantitatively. Another model shows the diffusion
-                  of enzyme inside the hydrogel and the subsequent events
-                  including the degradation of hydrogel and the release of
-                  target medicine which has been encapsulated by hydrogel. This
-                  part supports our idea of controlled release of medicine.
+                  enzyme expression triggered by $\text{Ca}^{2+}$ signaling.
+                  This can exhibit how the change of $\text{Ca}^{2+}$, resulting
+                  from the activated Piezo1 channel, influences the expression
+                  of our target gene quantitatively. Another model shows the
+                  diffusion of the enzyme inside the hydrogel and the subsequent
+                  events including the degradation of hydrogel and the release
+                  of target medicine which has been encapsulated by the
+                  hydrogel. This part supports our idea of the controlled
+                  release of medicine.
                 </p>
               </v-card-text>
               <v-row justify="center">
@@ -136,7 +136,7 @@
               </v-row>
               <v-row justify="center" style="margin-top: -20px">
                 <v-card-title class="text-h6">
-                  --Activation of PIEZO1 through mechanical force</v-card-title
+                  --Activation of piezo1 through mechanical force</v-card-title
                 >
               </v-row>
               <v-card-text>
@@ -154,7 +154,8 @@
                   shown in $\text{fig.1}$.
                 </p>
                 <v-img
-                  src="https://tva1.sinaimg.cn/large/008i3skNgy1gud72d30tpj62040rg41a02.jpg"
+                  src="https://2021.igem.org/wiki/images/2/20/T--ShanghaiTech_China--mod--fig1.jpg"
+                  contain max-height="600px"
                 />
                 <v-row
                   justify="center"
@@ -176,7 +177,8 @@
                 <p class="body-1">$$ F_1={F\over2\cos\theta} \tag{1.1} $$</p>
                 <v-img
                   src="
-                  https://tva1.sinaimg.cn/large/008i3skNgy1gud8f6rhb8j60y60u0t9l02.jpg"
+                  https://2021.igem.org/wiki/images/5/53/T--ShanghaiTech_China--mod--fig2.jpg"
+                  contain max-height="600px"
                 />
                 <v-row
                   justify="center"
@@ -207,7 +209,7 @@
               >
               <v-card-text>
                 <p class="body-1">
-                  As the bones grow, hydrogel with high elasticity gets
+                  As the bones grow, a hydrogel with high elasticity gets
                   compressed and stressed. It has been shown that the
                   compression stress grows exponentially with increasing strain
                   ratio $S\%$.<sup
@@ -215,37 +217,26 @@
                     >[1]</sup
                   >
                 </p>
-                <v-img
-                  src="https://tva1.sinaimg.cn/large/008i3skNgy1gud7ps3npuj61hp0u0dio02.jpg"
-                />
-                <v-row
-                  justify="center"
-                  style="margin-top: 10px; margin-bottom: 10px"
-                >
-                  <p class="body-2 fig">
-                    $\text{fig.3}$ Compressive stress-strain curves of hydrogel
-                    PAAm<sup @click="$vuetify.goTo('#references', options)"
-                      >[1]</sup
-                    >
-                  </p>
-                </v-row>
                 <p class="body-1">
-                  There isn't any appropriate arithmetic expression of this
-                  function. Thus we take points on the curve in $\text{fig.3}$
-                  evenly, using Spline interpolation to fit the curve. With the
-                  help of MATLAB, we can get the well-fit ($R^2=0.997$) result
-                  shown in $\text{fig.4}$.
+                  We took points on the curve in the literature up in *fig.3*
+                  evenly to get an appropriate arithmetic expression of it,
+                  using Spline interpolation to fit the curve. With the help of
+                  MATLAB, we got the well-fit ($R^2=0.997$) result shown in
+                  <strong>fig.3</strong>.
                 </p>
                 <v-img
-                  src="
-                  https://tva1.sinaimg.cn/large/008i3skNgy1gudach9okmj60n20b4dg702.jpg"
+                  src="https://2021.igem.org/wiki/images/e/e6/T--ShanghaiTech_China--mod--fig3.jpg"
+                  contain max-height="600px"
                 />
                 <v-row
                   justify="center"
                   style="margin-top: 10px; margin-bottom: 10px"
                 >
                   <p class="body-2 fig">
-                    $\text{fig.4}$ Result curve of Spline interpolation
+                    $\text{fig.3}$ Simulated compressive stress-strain curves of
+                    hydrogel<sup @click="$vuetify.goTo('#references', options)"
+                      >[1]</sup
+                    >
                   </p>
                 </v-row>
                 <p class="body-1">
@@ -253,29 +244,31 @@
                   stress-strain curve can be drawn ($\text{fig.5}$).
                 </p>
                 <v-img
-                  src="https://tva1.sinaimg.cn/large/008i3skNgy1gudamto3uzj60n20cct8x02.jpg"
+                  src="https://2021.igem.org/wiki/images/7/79/T--ShanghaiTech_China--mod--fig4.jpg"
+                  contain max-height="600px"
                 />
                 <v-row
                   justify="center"
                   style="margin-top: 10px; margin-bottom: 10px"
                 >
                   <p class="body-2 fig">
-                    $\text{fig.5}$ Actual inner stress-strain curve of hydrogel
+                    $\text{fig.4}$ Actual inner stress-strain curve of hydrogel
                   </p>
                 </v-row>
                 <p class="body-1">
                   Given the relationship of normalized response of PIEZO1
-                  protein versus pressure ($\text{fig.6}$),
+                  protein versus pressure ($\text{fig.5}$),
                 </p>
                 <v-img
-                  src="https://tva1.sinaimg.cn/large/008i3skNgy1gudarchezwj60k60iu0tt02.jpg"
+                  src="https://2021.igem.org/wiki/images/1/1e/T--ShanghaiTech_China--mod--fig5.jpg"
+                  contain max-height="600px"
                 />
                 <v-row
                   justify="center"
                   style="margin-top: 10px; margin-bottom: 10px"
                 >
                   <p class="body-2 fig">
-                    $\text{fig.6}$ Normalized response of PIEZO1 protein versus
+                    $\text{fig.5}$ Normalized response of PIEZO1 protein versus
                     pressure<sup @click="$vuetify.goTo('#references', options)"
                       >[2]</sup
                     >
@@ -284,10 +277,10 @@
                 <p class="body-1">
                   it can be seen that when the compressive strain is $35\%$, the
                   compressive pressure is $10.77\text{kPa}$ or $80\text{mmHg}$,
-                  and the normalized response of PIEZO is nearly $100\%$. Also,
+                  and the normalized response of Piezo is nearly $100\%$. Also,
                   when the compressive strain is as low as $22\%$, the
-                  normalized PIEZO response can still reach $50\%$. Therefore,
-                  we've ascertained that PIEZO can be activated inside the
+                  normalized Piezo response can still reach $50\%$. Therefore,
+                  we've ascertained that Piezo can be activated inside the
                   hydrogel.
                 </p>
               </v-card-text>
@@ -304,31 +297,32 @@
               </v-row>
               <v-card-text>
                 <p class="body-1">
-                  $\text{Ca}^{2+}$ signalling activates nuclear factor of
+                  $\text{Ca}^{2+}$ signaling activates the nuclear factor of
                   activated T cells (<strong><u>NFAT</u></strong
-                  >), a family of transcription factors . The protein
-                  phosphatase <strong><u>calcineurin</u></strong> plays a
-                  significant role in this process. $\text{Ca}^{2+}$ activates
-                  calcineurin in two ways: binding calcineurin directly and
-                  activating the $\text{Ca}^{2+}$ binding regulatory protein,
-                  calmodulin, which subsequently interacts with calcineurin.
-                  When calcineurin is activated, it can then catalyze the
-                  dephosphorylation of NFAT. Dephosphorylation of NFATs exposes
-                  a nuclear localization signal which causes NFATs to be
-                  imported into the nucleus, regulated by the action of a
-                  specific phosphatase and a number of kinases. Finally, NFATs
-                  in the nuleus can induce the target gene expression.
+                  >), a family of transcription factors. The phosphatase
+                  <strong><u>calcineurin</u></strong> plays a significant role
+                  in this process. $\text{Ca}^{2+}$ activates calcineurin in two
+                  ways: binding calcineurin directly and activating the
+                  $\text{Ca}^{2+}$ binding regulatory protein, calmodulin, which
+                  subsequently interacts with calcineurin. When calcineurin is
+                  activated, it can then catalyze the dephosphorylation of NFAT.
+                  Dephosphorylation of NFATs exposes a nuclear localization
+                  signal which causes NFATs to be imported into the nucleus,
+                  regulated by the action of a specific phosphatase and several
+                  kinases. Finally, NFATs in the nucleus can induce the target
+                  gene expression.
                 </p>
                 <v-img
                   src="
-                  https://tva1.sinaimg.cn/large/008i3skNgy1gudcfuenu4j616f0u0n3g02.jpg"
+                  https://2021.igem.org/wiki/images/2/2c/T--ShanghaiTech_China--mod--fig6.jpg"
+                  contain max-height="600px"
                 />
                 <v-row
                   justify="center"
                   style="margin-top: 10px; margin-bottom: 10px"
                 >
                   <p class="body-2 fig">
-                    $\text{fig.7}$ Schematic view of $\text{Ca}^{2+}$ regulating
+                    $\text{fig.6}$ Schematic view of $\text{Ca}^{2+}$ regulating
                     gene expression.
                   </p>
                 </v-row>
@@ -346,14 +340,15 @@
                 </p>
                 <v-img
                   src="
-                  https://tva1.sinaimg.cn/large/008i3skNly1gudd93tnlgj60uq0ej0tj02.jpg"
+                  https://2021.igem.org/wiki/images/0/09/T--ShanghaiTech_China--mod--fig7.jpg"
+                  contain max-height="600px"
                 />
                 <v-row
                   justify="center"
                   style="margin-top: 10px; margin-bottom: 10px"
                 >
                   <p class="body-2 fig">
-                    $\text{fig.8}$ PIEZO mediated $\text{Ca}^{2+}$
+                    $\text{fig.7}$ PIEZO mediated $\text{Ca}^{2+}$
                     concentration<br />
                     (left: experimental data from literature<sup
                       @click="$vuetify.goTo('#references', options)"
@@ -372,10 +367,17 @@
                   subsequently to one calcineurin molecule. Here we simplify the
                   model by considering only the binding between $\text{Ca}^{2+}$
                   and calcineurin. The deactivation of calcineurin is also
-                  thought about. Let $\text{CN}$ and $\text{CN}_{off}$ be
-                  activated and inactivated form of calcineurin respectively,
-                  then ODEs $(2.1)$ and $(2.2)$ that describe their rates can be
-                  written:
+                  thought about.
+                </p>
+                <p class="body-1">
+                  $$ \text{CN}_{off}+3\text{Ca}^{2+} \underset{k_{\text{CN},da}}
+                  { \overset{k_{\text{CN},a}} \rightleftarrows } \text{CN} $$
+                </p>
+                <p class="body-1">
+                  Let $\text{CN}$ and $\text{CN}_{off}$ be the activated and
+                  inactivated form of calcineurin respectively, then their
+                  ordinary differential equations (ODEs) $(2.1)$ and $(2.2)$
+                  that describe their rates can be written:
                 </p>
                 <p class="body-1">
                   $$ {d[\text{CN}_{off}]\over dt}= -k_{\text{CN},a}\cdot
@@ -394,10 +396,10 @@
               <v-card-text>
                 <p class="body-1">
                   Calcineurin acts as a catalyst in the dephosphorylation of
-                  $\text{pNFAT}$ (phosphorylated form of NFAT in cytoplasm),
-                  which is simultaneously phosphorylated with the help of
-                  kinases such as protein kinase A (PKA) and glycogen synthase
-                  kinase 3 beta (GSK3β). These reactions are
+                  $\text{pNFAT}$ (a phosphorylated form of NFAT in the
+                  cytoplasm), which is simultaneously phosphorylated with the
+                  help of kinases such as protein kinase A (PKA) and glycogen
+                  synthase kinase 3 beta (GSK3Î˛). These reactions are
                 </p>
                 <p class="body-1">
                   $$ [\text{pNFAT}]
@@ -498,14 +500,15 @@
                   know the concentration of the substances versus time.
                 </p>
                 <v-img
-                  src="https://tva1.sinaimg.cn/large/008i3skNly1gudgj3wfvmj60u011nq4c02.jpg"
+                  src="https://2021.igem.org/wiki/images/e/e1/T--ShanghaiTech_China--mod--fig8.jpg"
+                  contain max-height="600px"
                 />
                 <v-row
                   justify="center"
                   style="margin-top: 10px; margin-bottom: 10px"
                 >
                   <p class="body-2 fig">
-                    $\text{fig.9}$ Concentration of $\text{Ca}^{2+}$,
+                    $\text{fig.8}$ Concentration of $\text{Ca}^{2+}$,
                     $\text{CN}_{on}$ and $\text{NFAT}$ versus time in the first
                     300 seconds
                   </p>
@@ -525,18 +528,353 @@
                   advantageous to our design of controlled drug release.
                 </p>
                 <v-img
-                  src="https://tva1.sinaimg.cn/large/008i3skNly1gudgztz27zj60t00ykmy602.jpg"
+                  src="https://2021.igem.org/wiki/images/a/ad/T--ShanghaiTech_China--mod--fig9.jpg"
+                  contain max-height="600px"
                 />
                 <v-row
                   justify="center"
                   style="margin-top: 10px; margin-bottom: 10px"
                 >
                   <p class="body-2 fig">
-                    $\text{fig.10}$ Concentration of $\text{mRNA}$ and
-                    $\text{E}$ (trypsin) versus time in the first 1.4e6 seconds
+                    $\text{fig.9}$ Concentration of $\text{mRNA}$ and $\text{E}$
+                    (trypsin) versus time in the first 1.4e6 seconds
                   </p>
                 </v-row>
               </v-card-text>
+              <v-row justify="center">
+                <v-card-title class="text-h4 title" id="diffusion"
+                  >Diffusion</v-card-title
+                >
+              </v-row>
+              <v-card-text>
+                <p class="body-1">
+                  Cells are distributed inside the hydrogel. The diffusion of
+                  the enzymes they produce from the cell membrane to far should
+                  be considered. We use MATHEMATICA to visualize this process:
+                </p>
+                <v-container>
+                  <video controls width="100%" style="object-fit: contain">
+                    <source
+                      src="https://2021.igem.org/wiki/images/2/25/T--ShanghaiTech_China--mod--diff.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </v-container>
+                <v-row
+                  justify="center"
+                  style="margin-top: 10px; margin-bottom: 10px"
+                >
+                  <p class="body-2 fig">
+                    $\text{fig.9}$ Concentration of $\text{mRNA}$ and $\text{E}$
+                    (trypsin) versus time in the first 1.4e6 seconds
+                  </p>
+                </v-row>
+                <p class="body-1">
+                  The white circle in the center represents a cell in a plane.
+                  The color of points on the plane describes the concentration:
+                  blue is the lowest, followed by white and yellow, and red is
+                  the highest. This simulation is based on the diffusion
+                  equation, which is discussed in detail below. With this, the
+                  process in three-dimensional space can be easily imagined due
+                  to the symmetry.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h5">Diffusion coefficient</v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  Given the complexity of the composition and structure of GELMA
+                  hydrogels, we decided to simplify the model of enzyme
+                  diffusion in the hydrogels and use a basic model to predict
+                  it.
+                </p>
+                <p class="body-1">
+                  For larger spherical solutes immersed in a fluid, the relation
+                  between solute diffusivity and fluid viscosity was reasoned by
+                  Einstein using the kinetic theory of Brownian motion coupled
+                  with results from continuum mechanics. The solute was assumed
+                  to be large enough that diffusion would involve collisions
+                  with many smaller solvent (<i>e.g.</i> water) molecules and,
+                  thus, an effective fluid drag would oppose the solute motion.
+                  From fluid mechanics, the frictional drag force $f$ exerted by
+                  a fluid of viscosity $μ$ on a spherical particle of radius a
+                  moving at a steady velocity $U$ through the fluid was already
+                  well known:
+                </p>
+                <p class="body-1">$$ f = 6πaμU $$</p>
+                <p class="body-1">
+                  At the same time, the kinetic theory and the law of Van’t Hoff
+                  (1852–1911) were known, the latter
+                </p>
+                <p class="body-1">
+                  relating the concentration of solutes to the osmotic pressure
+                  associated with solute collisions with container walls. The
+                  resulting thought model involved a balance between
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  (1) the pressure gradient $ \frac{\partial P^{os}}{\partial
+                  x}$ (which has the units of a force density ($\text{N}\
+                  \text{m}^{−3}$) and is proportional to $ RT\frac{\partial
+                  c_i}{\partial x}$ from Van’t Hoff’s law) and (2) the force
+                  density associated with the frictional drag on the total
+                  number of solutes per unit fluid volume, in which each solute
+                  molecule is subjected to the drag force 6πaμU. The “driving
+                  force” for diffusive flux in the $+x$ direction is $
+                  \frac{-\partial c_i}{\partial x} $ and, with zero net flux in
+                  equilibrium, the balance gives $\frac{-\partial
+                  P^{os}}{\partial x}=\frac{-RT\partial c_i}{\partial x}=(6\pi
+                  a\mu U) (c_iN_{AV})$. Besides, within an electrolyte medium,
+                  empirical evidence has shown that the diffusive flux $ N_i $
+                  of solute species $i$ with respect to the solvent is often
+                  linearly related to the local gradient in the concentration of
+                  that species $ c_i $ by $N_i =-D_i\nabla c_i$. Combining these
+                  two relations and noting that the product $ c_i U$ has the
+                  units of flux $ N_i $ , we arrive at the Stokes–Einstein
+                  relation for the diffusivity:
+                </p>
+                <p class="body-1">$$ D_0=\frac{k_BT}{6\pi a\mu} $$</p>
+                <p class="body-1">
+                  where the Boltzmann constant $k_B = \frac{RT}{N_{AV}}$. $R$ is
+                  the universal gas constant, and $N$ is Avogadro’s number. We
+                  also note that for a spherical particle, the radius a can be
+                  approximated by $(\text{molecular weight})^{1/3}$. Thus, the
+                  diffusivity is weakly dependent on the molecular weight.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  The $D$ mentioned above is the diffusion coefficient of the
+                  solute in the pure solvent. When it comes to the diffusion
+                  coefficient in gels, we can assume that the diffusivity in a
+                  gel can be written as a product of factors $F$ and $S$, where
+                  $F$ accounts for hydrodynamic effects and $S$ for steric or
+                  tortuosity effects. The resulting expression is
+                  $\frac{D}{D_0}=FS(f)$<sup
+                    @click="$vuetify.goTo('#references', options)"
+                    >[9]</sup
+                  >, where $ \frac{D}{D_0}$ is the ratio of the diffusivity in
+                  the gel to that in solution at infinitely dilute solute
+                  concentrations and the parameter $f$ is an adjusted volume
+                  fraction given by $f=(1+\frac{r_s}{r_f})^2 \phi$, where $\phi$
+                  is the actual polymer volume fraction and $r_s$ and $r_f$ are
+                  the radius of the solute and polymer, respectively. Besides,
+                  $F$ could be given in a stretched exponential form
+                  $F(\lambda,\phi)=e^{-a\phi^b}$, where $\lambda$ is the ratio
+                  of polymer radius to solute radius ($ \lambda = {r_f\over r_s}
+                  $), and one can calculate $a$ and $b$ using the expressions $a
+                  = 3.727-2.640\lambda + 0.822\lambda^2$ and $b = 0.358 +
+                  0.366\lambda -0.0939\lambda^2$ . The steric factor $S(f)$ can
+                  also be calculated as follows: $S(f) = e^{-0.84f^{1.09}}$
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">so the ratio could be given as</p>
+                <p class="body-1">
+                  $$ \frac{D}{D_0}=e^{-0.84{((1+\frac{r_s}{r_f})^2
+                  \phi)}^{1.09}-{(3.727-2.640\frac{r_s}{r_f} +
+                  0.822(\frac{r_s}{r_f})^2)}\phi^{0.358 + 0.366\frac{r_s}{r_f}
+                  -0.0939(\frac{r_s}{r_f})^2}} $$
+                </p>
+                <p class="body-1">
+                  so the diffusion coefficient in the hydrogels is
+                </p>
+                <p class="body-1">
+                  $$ D=\frac{k_BT}{6\pi a\eta}e^{-0.84{((1+\frac{r_s}{r_f})^2
+                  \phi)}^{1.09}-{(3.727-2.640\frac{r_s}{r_f} +
+                  0.822(\frac{r_s}{r_f})^2)}\phi^{0.358 + 0.366\frac{r_s}{r_f}
+                  -0.0939(\frac{r_s}{r_f})^2}} $$
+                </p>
+                <p class="body-1"></p>
+              </v-card-text>
+              <v-card-title class="text-h5"> Diffusion equation</v-card-title>
+              <v-card-text>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  After we have got the diffusion coefficient, we could turn to
+                  the diffusion equation. As we know, within an electrolyte
+                  medium, empirical evidence has shown that the diffusive flux $
+                  N_i $ of solute species $i$ with respect to the solvent is
+                  often linearly related to the local gradient in the
+                  concentration of that species $c_i$ by:<sup
+                    @click="$vuetify.goTo('#references', options)"
+                    >[10]</sup
+                  >
+                </p>
+                <p class="body-1">$$ N_i =-D_i\nabla c_i \tag{3.1} $$</p>
+                <p class="body-1">
+                  Having established the basic point-by-point constitutive
+                  relation between the solute flux and the local solute
+                  concentration gradient, we now use the integral form of
+                  continuity (conservation) to describe the global relation
+                  between solute accumulation in a region of space, the net flux
+                  of solute entering the region, and the rate at which solutes
+                  are generated or lost by chemical reactions within that
+                  region. The continuity law then takes the form:
+                </p>
+                <p class="body-1">
+                  $$ \frac{\text{d}}{\text{d}t}\int_V c_i\text{d}V =- \oint_S
+                  N_i*n \text{d}a + \int_VR_i\text{d}V \tag{3.2} $$
+                </p>
+                <p class="body-1">
+                  where the left-hand term is the net accumulation of solute in
+                  $V$, and the minus sign in front of the surface integral on
+                  the right corresponds to net flux crossing into the control
+                  volume. $ R_i$ ($\text{mol} \ \text m^{−3} \text{s}^{−1}$) is
+                  the net volume rate of formation of species $ i$ by chemical
+                  reaction. The volume $V$ and surface $S$ are assumed to be
+                  fixed in space.
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  After that, we can then derive the point-by-point differential
+                  form of continuity by using Gauss’ theorem:
+                </p>
+                <p class="body-1">
+                  $$ \oint_S N_in\text{d}a=\int_V \nabla N_i \text{d}V \tag{3.3}
+                  $$
+                </p>
+                <p class="body-1">
+                  and noting that the time derivative of the left hand term of
+                  $(3.2)$ can be brought inside the volume integral since $V$
+                  and $S$ are stationary:
+                </p>
+                <p class="body-1">
+                  $$ \int_V(\frac{\partial c_i}{\partial t}+\nabla N_i -
+                  R_i)\text{d}V =0 \tag{3.4} $$
+                </p>
+                <p class="body-1">
+                  Since the volume element $\text{d}V$ is arbitrary, we can set
+                  the sum of the integrands in $(3.4)$ to be zero, giving the
+                  differential form of continuity in the absence of convective
+                  or electrical forces:
+                </p>
+                <p class="body-1">
+                  $$ \frac{\partial c_i}{\partial t}+\nabla N_i - R_i =0
+                  \tag{3.5} $$
+                </p>
+                <p class="body-1">
+                  Combining the flux constitutive law $(3.1)$ with the
+                  continuity law $(3.5)$ in the absence of chemical reactions
+                  gives:
+                </p>
+                <p class="body-1">
+                  $$ \frac{\partial c_i}{\partial t} =\nabla (D_0\nabla c_i)
+                  \tag{3.6} $$
+                </p>
+                <p class="body-1">
+                  For cases in which $D_i$ is a constant independent of
+                  position, $(3.6)$ gives the classic form of the diffusion
+                  equation (Fick’s second law):
+                </p>
+                <p class="body-1">
+                  $$ \frac{\partial c_i}{\partial t} =D_0\nabla^2 c_i \tag{3.7}
+                  $$
+                </p>
+                <p class="body-1">
+                  Considering the chemical reactions, the equation could be
+                  rewritten as:
+                </p>
+                <p class="body-1">
+                  $$ \frac{∂c_i}{∂t}=D_i*\nabla^2c_i+R_i \tag{3.8} $$
+                </p>
+                <p class="body-1">
+                  Plugging in the data to solve this partial differential
+                  equation, we can get the concentration as a function of time
+                  and displacement:
+                </p>
+                <p class="body-1">$$ c =f(x,t) $$</p>
+                <p class="body-1">
+                  For equation $(3.7)$ and $(3.8)$, we have solutions as
+                  follows:
+                </p>
+                <p class="body-1">
+                  $$ \frac{∂c_i}{∂t}=D_i*\nabla^2c_i+R_i \tag{3.8} $$
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">$$ u_{t=0} = \varphi(x) \tag{I.C.} $$</p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  The solution of the equation has the following form:
+                </p>
+                <p class="body-1">
+                  $$ u(x,t)=\frac{1}{(2\sqrt{D\pi
+                  t})^n}\int_{R^n}e^{-\frac{(x-\xi)^2}{4Dt}}\varphi(\xi)\text{d}\xi+\int_0^t
+                  \int_{R^n}\frac{1}{(2\sqrt{D\pi
+                  (t-\tau)})^n}e^{-\frac{(x-\xi)^2}{4D(t-\tau)}}f(\xi,r)\text{d}\xi
+                  \text{d}r $$
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  Because of the computational constraint, we can not give a
+                  general solution to the equation under all conditions. But we
+                  can still estimate the distribution of the enzyme based on the
+                  elementary solution of this equation: $c(x,t)=c_0(t)
+                  \frac{1}{\sqrt{4\pi Dt}}e^{-\frac{x^2}{4Dt}}$ where
+                  $D=1.62449\times 10^{-4}\ \text s^{-1} $. For example, the
+                  concentration of the enzyme at $1\ \text{cm}$ from the cell
+                  after $30\ \text{days}$ would be $1280.1\ \text{pM}$. The
+                  result could be shown by the following figure:
+                </p>
+                <v-img
+                  src="https://2021.igem.org/wiki/images/a/ad/T--ShanghaiTech_China--mod--fig9.jpg"
+                  contain max-height="600px"
+                />
+                <v-row
+                  justify="center"
+                  style="margin-top: 10px; margin-bottom: 10px"
+                >
+                  <p class="body-2 fig">
+                    $\text{fig.10}$ Enzyme concentration versus time and
+                    distance
+                  </p>
+                </v-row>
+                <p class="body-1"></p>
+                <p class="body-1"></p>
+              </v-card-text>
+              <v-card-title class="text-h5">Something else</v-card-title>
+              <v-card-text>
+                <p class="body-1"></p>
+                <p class="body-1">A possible attempt for modeling:</p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  Assuming that the enzyme is a particle which is confined to a
+                  straight line and can only move in two directions: move
+                  forward & move backwards. Besides that, the possibility that
+                  the particle move in each direction is equal. The distance the
+                  enzyme move forward or backwards in $\Delta t$ is $\Delta x$
+                  ,which could be calculated through the equation $\Delta x
+                  =(\frac{D\Delta t}{\pi})^\frac{1}{2}$ . Based on the
+                  assumption mentioned above, the probability of the case "the
+                  particle is $m\Delta x$ away from the origin at $n\Delta t$"
+                  can be given as:
+                </p>
+                <p class="body-1">
+                  $$
+                  P(m,n)=\frac{(n!)(\frac{1}{2})^n}{(\frac{1}{2}(m+n)!)(\frac{1}{2}(m-n)!)}
+                  $$
+                </p>
+                <p class="body-1">
+                  where $m=\frac{x}{\Delta x}$ and $n=\frac{t}{\Delta t}$ .
+                </p>
+                <p class="body-1"></p>
+                <p class="body-1">
+                  When $n$ is large (it should be large when we observe this
+                  model), we can approximate the equation above using the
+                  Stirling formula $n! \approx \sqrt{2\pi}
+                  e^{-n}n^{n+\frac{1}{2}} $ and it could be written like this:
+                </p>
+                <p class="body-1">
+                  $$ P(m,n)=\sqrt{\frac{2}{\pi
+                  n}}(1-(\frac{m}{n})^2)^{-\frac{1}{2}(n+1)}(1+\frac{m}{n})^{-\frac{1}{2}m}(1-\frac{m}{n})^{\frac{1}{2}m}
+                  $$
+                </p>
+                <p class="body-1">
+                  If we set $\Delta t$ same as the amount of time t takes to
+                  produce an enzyme, then we can calculate the total possibility
+                  that the particle appear at $x=m\Delta x$ and $t=k\Delta t$ by
+                  just summing them up:
+                </p>
+                <p class="body-1">$$ P=(\Sigma)_{i=0}^{k} P(m,n-i) $$</p>
+              </v-card-text>
+
               <v-row justify="center">
                 <v-card-title class="text-h4 title" id="appendix"
                   >Appendix</v-card-title
@@ -728,8 +1066,8 @@
                             reaction</strong
                           >
                         </th>
-                        <th class="body-2">$\text{NAN}$</th>
-                        <th class="body-2">NONE</th>
+                        <th class="body-2">$3$</th>
+                        <th class="body-2">3</th>
                         <th class="body-2">
                           Number of binding sequence repeats
                         </th>
@@ -895,6 +1233,17 @@
                     [8]: https://doi.org/10.1016/j.biochi.2020.01.015
                   </a>
                 </p>
+                <p class="body-2">
+                  <a href="https://doi.org/10.1016/S0006-3495(00)76566-0">
+                    [9]: https://doi.org/10.1016/S0006-3495(00)76566-0
+                  </a>
+                </p>
+                <p class="body-2">
+                  [10]: Fields, Forces, and Flows in Biological Systems. By Alan
+                  J. Grodzinsky; with the technical and editorial assistance of,
+                  Eliot H. Frank. London and New York: Garland Science (Taylor &
+                  Francis Group). ISBN:978-0-8153-4212-0
+                </p>
               </v-card-text>
             </v-container>
           </v-card>
@@ -965,9 +1314,9 @@ export default {
   mounted() {
     this.step[0] = document.getElementById("introduction");
     this.step[1] = document.getElementById("activation");
-    this.step[2] = document.getElementById("gene");
-    this.step[3] = document.getElementById("appendix");
-    this.step[4] = document.getElementById("references");
+    this.step[2] = document.getElementById("diffusion");
+    this.step[3] = document.getElementById("gene");
+    this.step[4] = document.getElementById("appendix");
     this.updatepos();
     setTimeout(() => {
       this.firstload = false;
