@@ -125,18 +125,8 @@
             class="transition-swing"
             style="text-decoration: none; margin-top: 35px"
             id="description"
-            v-intersect="onIntersect"
             v-scroll="updatepos"
             v-show="!firstload"
-            v-motion
-            :initial="{
-              opacity: 0,
-              y: 100,
-            }"
-            :enter="{
-              opacity: 1,
-              y: 0,
-            }"
           >
             <v-simple-table>
               <template v-slot:default>
@@ -165,6 +155,85 @@
                         <v-icon dark>mdi-check</v-icon>
                       </v-list-item-avatar>
                     </td>
+                  </tr>
+                </tbody>
+              </template>
+            </v-simple-table>
+          </v-card>
+        </template>
+      </v-hover>
+      <v-hover>
+        <template v-slot:default="{ hover }">
+          <v-card
+            :class="`elevation-${hover ? 8 : 2}`"
+            class="transition-swing"
+            style="text-decoration: none; margin-top: 35px"
+            id="description"
+            v-scroll="updatepos"
+            v-show="!firstload"
+          >
+            <v-simple-table>
+              <template v-slot:default>
+                <thead>
+                  <tr>
+                    <th>Attributions</th>
+                    <th>Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Leader</th>
+                    <th>Rui Su</th>
+                  </tr>
+                  <tr>
+                    <th>Molecular experiments leader</th>
+                    <th>Chenghao Zhu</th>
+                  </tr>
+                  <tr>
+                    <th>Finance</th>
+                    <th>Chenghao Zhu</th>
+                  </tr>
+                  <tr>
+                    <th>Molecular experiments participants</th>
+                    <th>
+                      Huayu Wang, Han Ding, Ziding Zhou, Zixuan Li, Qi Xin,
+                      Kaijun Wang, Shuyao Su, Zhiwen Huang, Handi Jia, Zhuoya
+                      Li, Yujie Wen
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>Cell experiments leader</th>
+                    <th>Rui su</th>
+                  </tr>
+                  <tr>
+                    <th>Cell experiments participants</th>
+                    <th>
+                      Ziao Ling, Jieni Hu, Jing Sun, Ruixuan Xue, Zhiwen Huang
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>Model</th>
+                    <th>Jing Sun, Ruixuan Xue</th>
+                  </tr>
+                  <tr>
+                    <th>Integrated Human Practice</th>
+                    <th>Shiyue Ding</th>
+                  </tr>
+                  <tr>
+                    <th>Art Design</th>
+                    <th>Zhiwen Huang, Jieni Hu, Zhuoya Li, Shiyue Ding</th>
+                  </tr>
+                  <tr>
+                    <th>Wiki</th>
+                    <th>Zhiyi Wang</th>
+                  </tr>
+                  <tr>
+                    <th>Hardware</th>
+                    <th>Yiyao Zhu</th>
+                  </tr>
+                  <tr>
+                    <th>Advisor</th>
+                    <th>Kaida Zhang, Mingzhe Chen</th>
                   </tr>
                 </tbody>
               </template>
