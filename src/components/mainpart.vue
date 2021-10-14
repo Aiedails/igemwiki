@@ -454,6 +454,19 @@
                   synthetic biology and gave us a deeper insight into our
                   projects.
                 </p>
+                <v-img
+                  src="https://2021.igem.org/wiki/images/0/04/T--ShanghaiTech_China--par--gbu.png"
+                  contain
+                  max-height="600px"
+                />
+                <v-row
+                  justify="center"
+                  style="margin-top: 10px; margin-bottom: 10px"
+                >
+                  <p class="body-2 fig">
+                    Fig.5: GBU sharing in COP15 online conference
+                  </p>
+                </v-row>
                 <p class="body-1">
                   See more details about our work about sustainable development
                   on
@@ -473,7 +486,7 @@
                   style="margin-top: 10px; margin-bottom: 10px"
                 >
                   <p class="body-2 fig">
-                    Fig.5 COP15 conference, ShanghaiTech_China, GreatBay_United
+                    Fig.6 COP15 conference, ShanghaiTech_China, GreatBay_United
                     and Jiangnan_China are invited to share the projects.
                   </p>
                 </v-row>
@@ -537,7 +550,7 @@
                       style="margin-top: 10px; margin-bottom: 10px"
                     >
                       <p class="body-2 fig">
-                        Fig.6a: CSU_China presentation in CCiC
+                        Fig.7a: CSU_China presentation in CCiC
                       </p>
                     </v-row>
                   </v-col>
@@ -552,7 +565,7 @@
                       style="margin-top: 10px; margin-bottom: 10px"
                     >
                       <p class="body-2 fig">
-                        Fig.6b: ShanghaiTech_China presentation in CCiC
+                        Fig.7b: ShanghaiTech_China presentation in CCiC
                       </p>
                     </v-row>
                   </v-col>
@@ -590,7 +603,7 @@
                   style="margin-top: 10px; margin-bottom: 10px"
                 >
                   <p class="body-2 fig">
-                    Fig.7: Offline meet up with Jiangnan_China
+                    Fig.8: Offline meet up with Jiangnan_China
                   </p>
                 </v-row>
                 <p class="body-1"></p>
@@ -618,7 +631,7 @@
                   style="margin-top: 10px; margin-bottom: 10px"
                 >
                   <p class="body-2 fig">
-                    Fig.8: ShanghaiTech_China presentation at Synbiopunk
+                    Fig.9: ShanghaiTech_China presentation at Synbiopunk
                     challenge
                   </p>
                 </v-row>
@@ -628,7 +641,7 @@
                   friend in iGEM competition!
                 </p>
                 <v-img
-                  src="https://2021.igem.org/wiki/images/8/8a/T--ShanghaiTech_China--par--fig1_something.jpg"
+                  src="https://2021.igem.org/wiki/images/f/f7/T--ShanghaiTech_China--par--jiangnan.png"
                   contain
                   max-height="600px"
                 />
@@ -637,8 +650,7 @@
                   style="margin-top: 10px; margin-bottom: 10px"
                 >
                   <p class="body-2 fig">
-                    Fig.8: ShanghaiTech_China presentation at Synbiopunk
-                    challenge
+                    Fig.10: Sharing of project in COP15 online conference
                   </p>
                 </v-row>
               </v-card-text>
