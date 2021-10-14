@@ -46,32 +46,20 @@
               editable
               edit-icon="3"
               step="3"
-              @click="$vuetify.goTo('#what', options)"
+              @click="$vuetify.goTo('#efforts', options)"
               :complete="position > 3"
               style="transition: all 1s"
               color="primary"
               class="body-2"
             >
-              What efforts we have made?
+              Efforts made for fracture treatment
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="4"
               step="4"
-              @click="$vuetify.goTo('#how', options)"
-              :complete="position > 4"
-              style="transition: all 1s"
-              color="primary"
-              class="body-2"
-            >
-              How did we improve the ethics of synthetic biology?
-            </v-stepper-step>
-            <v-stepper-step
-              editable
-              edit-icon="5"
-              step="5"
               @click="$vuetify.goTo('#overview', options)"
-              :complete="position > 5"
+              :complete="position > 4"
               style="transition: all 1s"
               color="primary"
               class="body-2"
@@ -113,36 +101,39 @@
                 <p class="body-1">
                   ShanghaiTech_China team is an organisation focussed on human
                   health maintenance. From medical to ethical, we focus on
-                  fracture treatment, as well as the ethical norms of synthetic
-                  biology. We expect to our efforts will assist in the
-                  development of therapies based on synthetic biology. We are
-                  striving for the most efficient technological progress with
-                  the least waste. This is equally the value of
+                  fracture treatment. We expect to our efforts will assist in
+                  the development of therapies based on synthetic biology. We
+                  are striving for the most efficient technological progress
+                  with the least waste. This is equally the value of
                   ShanghaiTech_China team.
                 </p>
                 <v-img
-                  src="@/assets/background2.jpg"
+                  src="https://2021.igem.org/wiki/images/0/05/T--ShanghaiTech_China--hpo--background2.png"
                   style="margin: 35px auto"
+                  contain
+                  max-height="600px"
                 />
                 <p class="body-1">
                   In the past six months, our team's efforts have received more
                   than 1250 followings, cover an area of 4290733 square
-                  kilometers,. Over 50 experts on different fields gave us
+                  kilometers, Over 50 experts on different fields gave us
                   supporting. In order to optimize MIBOM products, we collected
-                  about 100 responses through interviews, and for promoting
-                  synthetic biology ethics, we received XXX responses from
-                  questionnaires, and initiated joint conventions with more than
-                  50 experts and 40 teams. Our practice spans the entire
-                  territory of China and is intended to make a greater
+                  about 100 responses through interviews. Our practice spans the
+                  entire territory of China and is intended to make a greater
                   contribution to fracture treatment and the global ethics of
                   synthetic biology.
                 </p>
-                <v-img src="@/assets/1.jpg" style="margin: 35px auto" />
+                <v-img
+                  src="https://2021.igem.org/wiki/images/d/d9/T--ShanghaiTech_China--hpo--1.jpg"
+                  style="margin: 35px auto"
+                  contain
+                  max-height="600px"
+                />
                 <p class="body-1">
                   Thanks to professor Yang Haitao, Professor Shen Wei, Professor
-                  Gao Yan, Professor XXX, Professor Hong Suting and other xx
-                  experts in different fields who helped us to complete this
-                  human practice.
+                  Gao Yan, Professor Hong Suting and Professor Jin Dai and other
+                  more than 10 experts in different fields who helped us to
+                  complete this human practice.
                 </p>
               </v-card-text>
               <v-row justify="center">
@@ -151,18 +142,19 @@
                 >
               </v-row>
               <v-card-title class="text-h5"
-                >Principles of research and development(R&D)
-                process</v-card-title
+                >Principles of R&D process</v-card-title
               >
               <v-card-text>
                 <p class="body-1">
                   In the process of developing MIBOM, we need to find a feasible
                   management system to help us build it. After consulting Jean
-                  Dai, we built a set of R\&D processes based on the PDCA cycle.
+                  Dai, we built a set of R&D processes based on the PDCA cycle.
                 </p>
                 <v-img
-                  src="@/assets/principle1.jpg"
+                  src="https://2021.igem.org/File:T--ShanghaiTech_China--hp--principle1.jpg"
                   style="margin: 35px auto"
+                  contain
+                  max-height="600px"
                 />
                 <p class="body-1">
                   This R&D process includes design input, design review, final
@@ -170,9 +162,9 @@
                   continuous research of market demand information and prototype
                   design. Afterwards, design review should be completed by
                   communicating with others and collecting feedback from
-                  different groups of people. In the process of a product's
-                  R\&D, design input and design review will go through a large
-                  number of cycles.
+                  different groups of people. In the process of a product's R&D,
+                  design input and design review will go through a large number
+                  of cycles.
                 </p>
                 <p class="body-1">
                   At the beginning of MIBOM, we were inspired by the experience
@@ -186,55 +178,62 @@
                   design scheme and commercialization process of MIBOM.
                 </p>
               </v-card-text>
-              <v-card-text class="text-h5"
-                >Principles of product investigation</v-card-text
+              <v-card-text class="text-h6"
+                >Objectives and data collection method</v-card-text
               >
               <v-card-text>
-                <p class="body-1">
-                  According to the Best Practice for Survey Research published
-                  by American Association for Public Opinion Research, we
-                  conducted the design of Survey and interview based on its
-                  Recommendation.
-                </p>
                 <v-list class="list_number">
                   <v-list-item two-line>
                     <v-list-item-content>
-                      <v-list-item-title class="body-1">
-                        <strong
-                          >1. Objectives and data collection method</strong
-                        >
-                      </v-list-item-title>
                       <div style="padding-left: 16px" class="body-1">
                         <p class="body-1">
-                          In the first cycle, we focused on developments in the
-                          orthopaedic market. MIBOM is inspired by the everyday
-                          scene of fracture. Therefore, we took desk research as
-                          the highest form of initial medical market research to
-                          investigate the industry background, existing
-                          treatment methods and market data. In order to be more
-                          realistic, we also considered interviewing doctors in
-                          third class hospitals.
+                          1. In the first cycle, we focused on developments in
+                          the orthopaedic market. MIBOM is inspired by the
+                          everyday scene of fracture. Therefore, we took desk
+                          research as the highest form of initial medical market
+                          research to investigate the industry background,
+                          existing treatment methods and market data. In order
+                          to be more realistic, we also considered interviewing
+                          doctors in third class hospitals.
                         </p>
+                      </div>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <div style="padding-left: 16px" class="body-1">
                         <p class="body-1">
-                          In the second cycle, we focused on feedbacks from
+                          2. In the second cycle, we focused on feedbacks from
                           industry experts. Therefore, we collected suggestions
                           and feedback from experts in sports medicine,
                           immunology, orthopedic medicine and precision medicine
                           on our project through interviews.
                         </p>
+                      </div>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <div style="padding-left: 16px" class="body-1">
                         <p class="body-1">
-                          In the third cycle, our application scenarios changed
-                          in the second cycle, so we focused on collecting pain
-                          points in the comminuted fracture market. The primary
-                          target of this cycle is the end-user physician to
-                          understand the pain encountered in the operation and
-                          application of comminuted fractures. In terms of
-                          sample selection, we selected representative
-                          orthopedic trauma surgeons from third class hospitals
-                          for interview.
+                          3. In the third cycle, our application scenarios
+                          changed in the second cycle, so we focused on
+                          collecting pain points in the comminuted fracture
+                          market. The primary target of this cycle is the
+                          end-user physician to understand the pain encountered
+                          in the operation and application of comminuted
+                          fractures. In terms of sample selection, we selected
+                          representative orthopedic trauma surgeons from third
+                          class hospitals for interview.
                         </p>
+                      </div>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <div style="padding-left: 16px" class="body-1">
                         <p class="body-1">
-                          In the fourth cycle, we focus on the feedback of
+                          4. In the fourth cycle, we focus on the feedback of
                           various people on the design of MIBOM after the third
                           cycle, mainly targeting field experts, surgeons,
                           rehabilitation doctors, device field managers,
@@ -246,82 +245,151 @@
                       </div>
                     </v-list-item-content>
                   </v-list-item>
-                  <v-list-item>
+                </v-list>
+              </v-card-text>
+              <v-card-text class="text-h5"
+                >Principles of product investigation</v-card-text
+              >
+              <v-card-text>
+                <p class="body-1">
+                  According to the
+                  <a
+                    href="https://www.aapor.org/Standards-Ethics/Best-Practices.aspx#best10"
+                    >Best Practice for Survey Research</a
+                  >
+                  published by American Association for Public Opinion Research,
+                  we conducted the design of Survey and interview based on its
+                  Recommendation.
+                </p>
+              </v-card-text>
+              <v-card-text class="text-h6">Qualitative interviews</v-card-text>
+              <v-card-text>
+                <p class="body-1">
+                  During Conducting interviews, we referenced Harvard
+                  University's
+                  <a
+                    href="https://sociology.fas.harvard.edu/files/sociology/files/interview_strategies.pdf"
+                    >'Strategies for Qualitative Interviews'</a
+                  >
+                  to design questions and interview flow.
+                </p>
+                <p class="body-1">
+                  In order to elucidate the purpose of the interview, we
+                  designed a simple introduction for all interviewees to have a
+                  basic idea of our team. Before the interview, we also prepared
+                  some desk research for the interview, to ensure that the
+                  interview can avoid the other party to help us analyze the
+                  problem.
+                </p>
+                <p class="body-1">
+                  In the setting of questions, we adopt special questions as the
+                  main form of questions, to avoid a single answer. We also
+                  avoided conceptual problems, such as asking the surgeon to
+                  give an attitude on behalf of the whole.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h6"
+                >Ethics and responsible research</v-card-title
+              >
+              <v-card-text>
+                <p class="body-1">
+                  We have deeply studied the Declaration of Helsinki, and we
+                  have tried our best to avoid all ethical issues related to
+                  access and data collection, and to ensure the informed rights
+                  and privacy of all interviewees. Our classmates and friends
+                  who had broken bones had been treated under pseudonyms, and
+                  all the experts advising us had asked for their consent.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h6"
+                >Informed consent and privacy protection</v-card-title
+              >
+              <v-card-text>
+                <p class="body-1">
+                  In terms of informed consent, we have set up an
+                  <a
+                    href="https://2021.igem.org/wiki/images/7/78/T--ShanghaiTech_China--hpo--consulting_informed_consent.pdf"
+                    >informed consent commitment</a
+                  >
+                  before all interviews and questionnaire collection, and all
+                  interviews will be released after the consent is obtained. We
+                  will do our best to ensure the interviewees' right to protect
+                  their privacy.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h5"
+                >Principles of education and entrepreneurship</v-card-title
+              >
+              <v-card-title class="text-h6"
+                >Education & Publicitation</v-card-title
+              >
+              <v-card-text>
+                <p class="body-1">
+                  In order to make our popular science education better carried
+                  out and understood by students and the society, we need to
+                  explain in simple terms so that they can master
+                  ShanghaiTech_China's program this year and have a simple
+                  understanding of synthetic biology. In this regard, we have
+                  developed two plans: 1. In order for the educational
+                  experience to continue to be referred to by the team in the
+                  future, we must have a record of courseware. 2. In order for
+                  ordinary people to understand ShanghaiTech_China's project
+                  this year and the story of synthetic biology, we need to
+                  design a set of easy to understand introduction.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h6"
+                >Business plan execution strategy</v-card-title
+              >
+              <v-card-text>
+                <p class="body-1">
+                  In the implementation of the business plan, we must consider
+                  the users, feasibility, competition and development planning,
+                  future impact and other four aspects. We developed a set of
+                  Outlines for the implementation of the business plan:
+                </p>
+                <v-list class="list_number">
+                  <v-list-item two-line>
                     <v-list-item-content>
-                      <v-list-item-title class="body-1">
-                        <strong>2. Qualitative interviews</strong>
-                      </v-list-item-title>
                       <div style="padding-left: 16px" class="body-1">
                         <p class="body-1">
-                          During Conducting interviews, we referenced Harvard
-                          University's 'Strategies for Qualitative
-                          Interviews'（这边要链接一个Pdf） to design questions
-                          and interview flow.
-                        </p>
-                        <p class="body-1">
-                          In order to elucidate the purpose of the interview, we
-                          designed a simple introduction for all interviewees to
-                          have a basic idea of our team. Before the interview,
-                          we also prepared some desk research for the interview,
-                          to ensure that the interview can avoid the other party
-                          to help us analyze the problem.
-                        </p>
-                        <p class="body-1">
-                          In the setting of questions, we adopt special
-                          questions as the main form of questions, to avoid a
-                          single answer. We also avoided conceptual problems,
-                          such as asking the surgeon to give an attitude on
-                          behalf of the whole.
+                          1. Potential customers and unmet needs
                         </p>
                       </div>
                     </v-list-item-content>
                   </v-list-item>
-                  <v-list-item>
+                  <v-list-item two-line>
                     <v-list-item-content>
-                      <v-list-item-title class="body-1"
-                        ><strong
-                          >3. Ethics and responsible research</strong
-                        ></v-list-item-title
-                      >
                       <div style="padding-left: 16px" class="body-1">
-                        We have deeply studied the Declaration of Helsinki, and
-                        we have tried our best to avoid all ethical issues
-                        related to access and data collection, and to ensure the
-                        informed rights and privacy of all interviewees. Our
-                        classmates and friends who had broken bones had been
-                        treated under pseudonyms, and all the experts advising
-                        us had asked for their consent.
+                        <p class="body-1">
+                          2. MIBOM's feasibility & Inventivity
+                        </p>
                       </div>
                     </v-list-item-content>
                   </v-list-item>
-                  <v-list-item>
+                  <v-list-item two-line>
                     <v-list-item-content>
-                      <v-list-item-title class="body-1"
-                        ><strong
-                          >4. Informed Consent and privacy protection</strong
-                        ></v-list-item-title
-                      >
                       <div style="padding-left: 16px" class="body-1">
-                        In terms of informed consent, we have set up an informed
-                        consent commitment before all interviews and
-                        questionnaire
-                        collection（我不知道怎么加链接，要加一个知情同意书的pdf）,
-                        and all interviews will be released after the consent is
-                        obtained. We will do our best to ensure the
-                        interviewees' right to know and privacy.
+                        <p class="body-1">
+                          3. Development plans & strategies, funds, and
+                          stakeholders
+                        </p>
+                      </div>
+                    </v-list-item-content>
+                  </v-list-item>
+                  <v-list-item two-line>
+                    <v-list-item-content>
+                      <div style="padding-left: 16px" class="body-1">
+                        <p class="body-1">4. Long-term impacts</p>
                       </div>
                     </v-list-item-content>
                   </v-list-item>
                 </v-list>
               </v-card-text>
-              <v-card-title class="text-h5" id="specific_design"
-                >Principles of questionaire</v-card-title
-              >
-              <v-card-text class="body-1"> Coming soon... </v-card-text>
+
               <v-row justify="center">
-                <v-card-title class="text-h4 title" id="what"
-                  >What efforts we have made for fracture
-                  treatment?</v-card-title
+                <v-card-title class="text-h4 title" id="efforts"
+                  >Efforts made for fracture treatment</v-card-title
                 >
               </v-row>
               <v-card-text class="body-1">
@@ -340,27 +408,60 @@
                   accidents, falls, and certain medical conditions are all
                   possible causes of bone fracture.
                 </p>
-                <v-container>
-                  <video controls width="100%" style="object-fit: contain">
-                    <source src="@/assets/temp_video.mp4" type="video/mp4" />
-                  </video>
-                </v-container>
-                <p class="body-1">Something here.</p>
+                <v-img
+                  src="https://2021.igem.org/wiki/images/d/d5/T--ShanghaiTech_China--hpo--3.png"
+                  contain
+                  max-height="600px"
+                />
                 <p class="body-1">
-                  Based on existing epidemiological studies and frost Sullivan
-                  statistics, we have a current estimate of comminuted
+                  Two students from Shanghai University of Science and
+                  Technology mentioned that a broken bone might be a good
+                  inspiration. They were our close classmates who shared their
+                  fracture experiences with us. When applying for their photos
+                  and names, we processed aliases and alternative vector images
+                  as they requested.
+                </p>
+                <p class="body-1">
+                  In the treatment of fracture, imported steel plate cannot
+                  enter the medical insurance, two scars left by the removal
+                  operation, and the pain caused by the implant in rainy
+                  weather, all make the fracture patients suffer from long-term
+                  torture in the process of bone healing. Daneil Huang shares
+                  that he still has to wear a brace on his wrist, which makes it
+                  difficult for him to move and bathe. The fracture caused him
+                  great trouble in his life. Urean Zhou also said she was
+                  troubled by the huge medical costs and postoperative scars.
+                  Based on the advice of doctors from The Ninth People's
+                  Hospital, we further focused on the medical costs and other
+                  troubles caused by the secondary removal of the implants, such
+                  as scarring. We further investigated the dilemmas of second
+                  surgery.
+                </p>
+                <p class="body-1">
+                  Based on existing epidemiological studies and statistics from
+                  Frost Sullivan, we have a current estimate of comminuted
                   fractures.
                 </p>
                 <p class="body-1">
-                  In china, it is estimated that at 2021, there will be 295526
-                  traumatic fractures, of which 10.21% will be femoral
-                  fractures. According to the survery conducted by Wei, Y. P., &
-                  Lin, K. C., 95% of femoral shaft fractures are comminuted.
-                  Therefore, there will be an average of at least 280,000
-                  comminuted fractures per year in China.
+                  In China, it is estimated that at 2021, there will be 295526
+                  traumatic fractures<sup
+                    @click="$vuetify.goTo('#references', options)"
+                    >[1]</sup
+                  >, of which 10.21% will be femoral fractures<sup
+                    @click="$vuetify.goTo('#references', options)"
+                    >[2]</sup
+                  >. According to the survery conducted by Wei, Y. P., & Lin, K.
+                  C.<sup @click="$vuetify.goTo('#references', options)">[3]</sup
+                  >, 95% of femoral shaft fractures are comminuted. Therefore,
+                  there will be an average of at least 280,000 comminuted
+                  fractures per year in China.
                 </p>
               </v-card-text>
-              <v-img src="@/assets/fracture-b-1.jpg" />
+              <v-img
+                src="https://2021.igem.org/wiki/images/4/40/T--ShanghaiTech_China--hpo--fracture-b-1.jpg"
+                contain
+                max-height="600px"
+              />
               <v-card-text>
                 <p class="body-1">
                   According to our interviews with doctors in the hospital’s
@@ -378,7 +479,11 @@
                   extremely easily to happen
                 </p>
               </v-card-text>
-              <v-img src="@/assets/fracture-b-4.jpg" />
+              <v-img
+                src="https://2021.igem.org/wiki/images/c/cc/T--ShanghaiTech_China--hpo--fracture-b-4.jpg"
+                contain
+                max-height="600px"
+              />
               <v-card-text>
                 <p class="body-1">
                   Therefore, simplifying comminuted fractures will be a very
@@ -388,6 +493,11 @@
               <v-card-title class="text-h5" id="use_of_harmful"
                 >How is MIBOM optimized?</v-card-title
               >
+              <v-img
+                src="https://2021.igem.org/wiki/images/b/b5/T--ShanghaiTech_China--hpo--photo1.jpg"
+                contain
+                max-height="600px"
+              />
               <v-card-text>
                 <p class="body-1">
                   To cope with the complex treatment of comminuted fractures, we
@@ -403,38 +513,17 @@
                   and rehabilitation process, and design of entrepreneurship and
                   commercialization.
                 </p>
-              </v-card-text>
-              <v-card-title class="text-h6"
-                >Design of materials and instruments</v-card-title
-              >
-              <v-img />
-              <v-card-text>
-                <p class="body-1">
-                  At first, according to the existing situation of fracture, our
-                  team designed a double cross-linking system loaded with mussel
-                  mucin and gel through brainstorming, which was used for
-                  internal fixation of fracture. In order to verify the
-                  feasibility of the design and achieve biodegradability, Piezo1
-                  protein was introduced according to the inspiration of Teacher
-                  Wei Shen, and the cells containing Piezo1 were packed into the
-                  gel system. For optimization, we followed up with Dr. Xin Sun,
-                  Dr. Yang Tang and Professor Yifeng Zhang. Based on their
-                  feedback, we introduced a nanoparticle coated drug system into
-                  the gel to promote bone regeneration and designed the product
-                  as a regenerative internal fixation. Finally, considering the
-                  practical application scenario, we visited Dr. Hongyan Jiang,
-                  an expert in minimally invasive medicine. He suggested that we
-                  target the application scenario to comminuted fractures.
-                </p>
                 <p class="body-1">
                   On the basis of all iterations, Dr. Yang Tang and Dr. Xin Sun
                   emphasized the strength and biocompatibility of materials as
                   the most important point. Our experimental basis also focuses
                   on this.
                 </p>
-              </v-card-text>
-              <v-img src="@/assets/fracture-m-1.jpg" />
-              <v-card-text>
+                <v-img
+                  src="https://2021.igem.org/wiki/images/2/2c/T--ShanghaiTech_China--hpo--fracture-m-1.jpg"
+                  contain
+                  max-height="600px"
+                />
                 <p class="body-1">
                   MIBOM plays an important role in biocompatibility,
                   biodegradability and healing regeneration. After iterative
@@ -446,10 +535,14 @@
                   the iterative design are greatly improved.
                 </p>
               </v-card-text>
-              <v-card-title class="text-h6"
+              <v-card-title class="text-h5"
                 >Design of pratical treatment process</v-card-title
               >
-              <v-img />
+              <v-img
+                src="https://2021.igem.org/wiki/images/b/bd/T--ShanghaiTech_China--hpo--photo2.jpg"
+                contain
+                max-height="600px"
+              />
               <v-card-text>
                 <p class="body-1">
                   To make MIBOM practical, we went back to our research. We
@@ -466,12 +559,20 @@
                   gel will be fully formed to achieve a high strength structure.
                   Moreover, experts also suggest that we consider the treatment
                   of the wound, so we also take into account the size of the
-                  wound opening and cleaning. See Integrated Human
-                  Practice(这里IHP需要链接) for details.
+                  wound opening and cleaning. See
+                  <a
+                    href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices"
+                    >Integrated Human Practice</a
+                  >
+                  for details.
                 </p>
               </v-card-text>
               <v-container>
-                <v-img src="@/assets/fracture-p-1.jpg" />
+                <v-img
+                  src="https://2021.igem.org/wiki/images/c/cc/T--ShanghaiTech_China--hpo--fracture-p-1.jpg"
+                  contain
+                  max-height="600px"
+                />
               </v-container>
               <v-card-text>
                 <p class="body-1">
@@ -517,7 +618,11 @@
                   </v-list-item>
                 </v-list>
               </v-card-text>
-              <v-img src="@/assets/fracture-p-2.jpg" />
+              <v-img
+                src="https://2021.igem.org/wiki/images/2/24/T--ShanghaiTech_China--hpo--fracture-p-2.jpg"
+                contain
+                max-height="600px"
+              />
               <v-card-text>
                 <p class="body-1">
                   In the application of the project, we will provide instruction
@@ -526,7 +631,7 @@
                   training.
                 </p>
               </v-card-text>
-              <v-card-title class="text-h6"
+              <v-card-title class="text-h5"
                 >Design of prevention and rehabilitation process</v-card-title
               >
               <v-card-text>
@@ -549,34 +654,19 @@
                   could understand the situation.
                 </p>
               </v-card-text>
-              <v-img src="@/assets/fracture-pr-1.jpg" />
-              <v-card-text>
-                <p class="body-1">
-                  After referring to the advice of rehabilitation doctors, we
-                  plan to provide a "patient portable manual" after the
-                  completion of the entire product development, which includes
-                  three parts: introduction of orthopedics and fracture,
-                  operation instructions and patient records, and rehabilitation
-                  instructions. The first part will supply the patient with an
-                  understanding of fractures and ease the patient's concerns
-                  about fractures and implants. In the process of operation, the
-                  manual will provide operation guidance for doctors, and in the
-                  process of treatment, will give detailed record location for
-                  doctors to record the recovery status, help patients transfer
-                  to hospital or rehabilitation to provide detailed records,
-                  reduce oral errors. In the rehabilitation phase, we provide
-                  guidance for rehabilitation judgment, providing a theoretical
-                  basis for rehabilitation doctors to judge the treatment of
-                  patients. To sum up, the patient-carrying manual will focus on
-                  the patient throughout the process and optimize all
-                  procedures. At present, we have made a prototype for
-                  reference.
-                </p>
-              </v-card-text>
-              <v-card-title class="text-h6"
-                >design of entrepreneurship</v-card-title
+              <v-img
+                src="https://2021.igem.org/wiki/images/a/ae/T--ShanghaiTech_China--hpo--fracture-pr-1.jpg"
+                contain
+                max-height="600px"
+              />
+              <v-card-title class="text-h5"
+                >Design of entrepreneurship</v-card-title
               >
-              <img />
+              <v-img
+                src="https://2021.igem.org/wiki/images/c/c0/T--ShanghaiTech_China--hpo--photo3.jpg"
+                contain
+                max-height="600px"
+              />
               <v-card-text>
                 <p class="body-1">
                   MIBOM is not empty plan, so the implementation of MIBOM still
@@ -596,15 +686,24 @@
                   October.Learn more at
                   <a
                     href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices"
-                    >Integrated Human Practice.</a
+                    >Integrated Human Practice</a
                   >
+                  and
+                  <a
+                    href="https://2021.igem.org/Team:ShanghaiTech_China/Entrepreneurship"
+                    >Entrepreneurship</a
+                  >.
                 </p>
                 <p class="body-1">
                   For a better understanding of MIBOM's value chain, you can
                   look at the following figures.
                 </p>
               </v-card-text>
-              <v-img src="@/assets/fracture-bu-1.jpg" />
+              <v-img
+                src="https://2021.igem.org/wiki/images/7/75/T--ShanghaiTech_China--hpo--fracture-bu-1.jpg"
+                contain
+                max-height="600px"
+              />
               <v-card-text>
                 <p class="body-1">
                   MIBOM has built its own value chain, and its r&d, clinical and
@@ -614,7 +713,11 @@
                   a development strategy.
                 </p>
               </v-card-text>
-              <v-img src="@/assets/fracture-bu-2.jpg" />
+              <v-img
+                src="https://2021.igem.org/wiki/images/f/fc/T--ShanghaiTech_China--hpo--fracture-bu-2.jpg"
+                contain
+                max-height="600px"
+              />
               <v-card-text>
                 <p class="body-1">
                   In order to have a better understanding of ourselves, we
@@ -622,7 +725,11 @@
                   strategies.
                 </p>
               </v-card-text>
-              <v-img src="@/assets/fracture-bu-3.jpg" />
+              <v-img
+                src="https://2021.igem.org/wiki/images/0/01/T--ShanghaiTech_China--hpo--fracture-bu-3.png"
+                contain
+                max-height="600px"
+              />
               <v-card-text>
                 <p class="body-1">Corresponding strategies are as follows:</p>
               </v-card-text>
@@ -745,21 +852,107 @@
                 </v-list-item>
               </v-list>
               <v-row justify="center">
-                <v-card-title class="text-h4 title" id="how"
-                  >How did we improve the ethics of synthetic
-                  biology?</v-card-title
-                >
-              </v-row>
-              <v-card-text>
-                <p class="body-1">Coming soon</p>
-              </v-card-text>
-              <v-row justify="center">
                 <v-card-title class="text-h4 title" id="overview"
                   >Overview of the practice record</v-card-title
                 >
               </v-row>
+              <v-card-title class="text-h5"
+                >Integrated Human Practice overview</v-card-title
+              >
               <v-card-text>
-                <p class="body-1">Something here</p>
+                <v-img
+                  src="https://2021.igem.org/wiki/images/f/f7/T--ShanghaiTech_China--hpo--photo7.jpg"
+                  contain
+                  max-height="600px"
+                />
+                <p class="body-1">
+                  We conducted 4 cycles in Integrated Human Practice,
+                  interviewing students with fracture experience, surgeons,
+                  rehabilitation doctors, medical device managers, experts in
+                  the field of technology, experts in the field of
+                  entrepreneurship, experts in the field of management and
+                  technical experts in the bone implant industry. It gives us
+                  more perspective on fracture treatment. At the same time, we
+                  also made brochures and participated in road shows to promote
+                  our products and let more people know about our
+                  ShanghaiTech_China and MIBOM products.
+                </p>
+                <v-img
+                  src="https://2021.igem.org/wiki/images/f/fc/T--ShanghaiTech_China--hpo--photo6.jpg"
+                  contain
+                  max-height="600px"
+                />
+                <p class="body-1">
+                  Click here to learn more about
+                  <a
+                    href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices"
+                    >Integrated Human Practice</a
+                  >
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h5">Education overview</v-card-title>
+              <v-card-text>
+                <v-img
+                  src="https://2021.igem.org/wiki/images/8/82/T--ShanghaiTech_China--hpo--photo4.jpg"
+                  contain
+                  max-height="600px"
+                />
+                <p class="body-1">
+                  We have done a lot of work on Education in terms of regional
+                  differences, age differences, subject differences and
+                  population differences. In order to make the educational
+                  resources more equal, we carried out synthetic biology popular
+                  science education in Shanghai, Chengdu and other areas with
+                  abundant educational resources. In counties with relatively
+                  poor educational resources, such as Yunlong County in Yunnan
+                  Province and Jing County in Anhui Province, we carried out
+                  biological curriculum degradation and synthetic biology
+                  popular science education for local primary and junior high
+                  school students. We have carried out science popularization
+                  across academic backgrounds. From primary school to junior
+                  high school, then to senior high school, and then to
+                  university, we have made different education science
+                  popularization work for students at different knowledge
+                  stages. In order to give full play to the practical
+                  application of synthetic biology, we mainly carried out
+                  synthetic biology lectures "Hello iGEM" and "Follow the
+                  iGEMers" on university campuses for students from other
+                  science schools or engineering disciplines to arouse their
+                  interest in the combined application of biology and computer,
+                  physics and chemistry. Arouse their desire to devote
+                  themselves to synthetic biology in the future. Finally, for
+                  different groups of people, we also carried out online
+                  popularization activities, such as the official account and
+                  Bilibili platform, to publicize MIBOM and explain synthetic
+                  biology.
+                </p>
+                <p class="body-1">
+                  Click
+                  <a
+                    href="https://2021.igem.org/Team:ShanghaiTech_China/Communication"
+                    >Education and Communication</a
+                  >
+                  page for more information.
+                </p></v-card-text
+              >
+              <v-card-title class="text-h5">Other works</v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  In addition to Integrated Human Practice and Education, we
+                  also carried out planning of
+                  <a
+                    href="https://2021.igem.org/Team:ShanghaiTech_China/Entrepreneurship"
+                    >Entrepreneurship</a
+                  >
+                  and
+                  <a
+                    href="https://2021.igem.org/Team:ShanghaiTech_China/Sustainable"
+                    >Sustainable</a
+                  >. We hope that these commercialization efforts will turn
+                  MIBOM into a real product that can be applied to human reality
+                  and contribute to the sustainable development of human beings.
+                  Click on the blue for details.
+                </p>
               </v-card-text>
             </v-container>
           </v-card>
@@ -830,9 +1023,8 @@ export default {
   mounted() {
     this.step[0] = document.getElementById("background");
     this.step[1] = document.getElementById("principle");
-    this.step[2] = document.getElementById("what");
-    this.step[3] = document.getElementById("how");
-    this.step[4] = document.getElementById("overview");
+    this.step[2] = document.getElementById("efforts");
+    this.step[3] = document.getElementById("overview");
     this.updatepos();
     setTimeout(() => {
       this.firstload = false;
