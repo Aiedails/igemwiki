@@ -1,3 +1,4 @@
+
 <template>
   <v-row justify="center" style="margin: auto 40px">
     <v-col cols="2"></v-col>
@@ -21,61 +22,37 @@
               editable
               edit-icon="1"
               step="1"
-              @click="$vuetify.goTo('#ga', options)"
+              @click="$vuetify.goTo('#summary', options)"
               :complete="position > 1"
               style="transition: all 1s ease 1s"
               color="primary"
               class="body-1"
             >
-              GA_State_SW_Jiaotong
+              Summary
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="2"
               step="2"
-              @click="$vuetify.goTo('#xmu', options)"
+              @click="$vuetify.goTo('#contri', options)"
               :complete="position > 2"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              XMU-China
+              Contributions according to SDG
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="3"
               step="3"
-              @click="$vuetify.goTo('#great', options)"
+              @click="$vuetify.goTo('#action', options)"
               :complete="position > 3"
               style="transition: all 1s"
               color="primary"
               class="body-1"
             >
-              GreatBay_United
-            </v-stepper-step>
-            <v-stepper-step
-              editable
-              edit-icon="4"
-              step="4"
-              @click="$vuetify.goTo('#csu', options)"
-              :complete="position > 4"
-              style="transition: all 1s"
-              color="primary"
-              class="body-1"
-            >
-              CSU_China
-            </v-stepper-step>
-            <v-stepper-step
-              editable
-              edit-icon="5"
-              step="5"
-              @click="$vuetify.goTo('#jiangnan', options)"
-              :complete="position > 5"
-              style="transition: all 1s"
-              color="primary"
-              class="body-1"
-            >
-              Jiangnan_China
+              Actions for sustainable development
             </v-stepper-step>
           </v-stepper>
         </template>
@@ -99,53 +76,39 @@
             v-show="!firstload"
           >
             <v-container style="padding: 20px">
-              <v-row justify="center">
-                <v-card-title
-                  class="text-h4 title"
-                  id="ga"
-                  v-intersect="onIntersect"
+              <v-row justify="center" v-intersect="onIntersect">
+                <v-card-title class="text-h4 title" id="summary">
+                  Summary</v-card-title
                 >
-                  GA_State_SW_Jiaotong
-                </v-card-title>
               </v-row>
-              <v-card-title class="text-h5">
-                Experiment & Modeling
-              </v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  Shanghai University of Science and Technology and
-                  GA_State_SW_Jiaotong reached cooperation in experimental
-                  design and modeling through online and In-person meetings in
-                  June and July. In the online meeting in June, the two teams
-                  communicated and exchanged views on modeling design and
-                  experimental design. In terms of modeling design, we solicited
-                  relevant design ideas from the modeling team of
-                  GA_State_SW_Jiaotong to predict the viscosity of mussel mucin.
-                  GA_State_SW_Jiaotong suggested that, with less data, the
-                  viscosity prediction of proteins could be achieved by
-                  establishing equations based on biological properties such as
-                  hydrophobicity, molecular weight, and ion charge. As for the
-                  experimental aspect, we shared the design idea of the E.coli
-                  toxin-antitoxin (TA) system for GA_State_SW_Jiaotong. Unlike
-                  GA_State_SW_Jiaotong's previous design, which used temperature
-                  conditions to induce bacillus subtilis suicide, the TA system
-                  is a dual-modulated suicide system that uses tryptophan and
-                  lactose to induce bacterial suicide. As soon as the bacteria
-                  leave the scalp environment and fall into an external
-                  environment free of tryptophan and lactose, they will commit
-                  suicide. In the In-person meeting in July, the two teams had
-                  in-depth discussions on the design of the suicide switch and
-                  the design of the protein viscosity prediction model. We
-                  provided a more detailed design plan for GA_State_SW_Jiaotong
-                  and answered the specific questions on plasmid copy number and
-                  vector construction. GA_State_SW_Jiaotong also answered the
-                  questions we had on model design. After that, we found some
-                  experts in stem cells, antibody drugs, and hair loss treatment
-                  for GA_State_SW_Jiaotong to provide them with more information
-                  channels.
+                  In Sustainable, we are committed to solving many problems such
+                  as Marine life, human health, poverty, education imbalance and
+                  so on. We get a lot of information from the XMU-China.(See our
+                  partnership on
+                  <a
+                    href="https://2021.igem.org/Team:ShanghaiTech_China/Partnership"
+                    >Partnership</a
+                  >
+                  page) We're at Life Below Water, Good Health and Well-Being,
+                  Industry, Innovation and Infrastructure, Nopoverty, Quality
+                  Education and other five SDG sections have made certain
+                  contributions. We also participated in two major competitions
+                  for sustainability and biodiversity conservation and achieved
+                  good results. We hope that MIBOM can continue to contribute to
+                  the sustainable development of human beings and shoulder the
+                  social responsibility of products and teams.
                 </p>
+              </v-card-text>
+              <v-row justify="center">
+                <v-card-title class="text-h4 title" id="contri">
+                  Contributions according to SDG
+                </v-card-title>
+              </v-row>
+              <v-card-text>
                 <v-img
-                  src="https://2021.igem.org/wiki/images/2/2d/T--ShanghaiTech_China--par--5453.jpg"
+                  src="https://2021.igem.org/wiki/images/d/d2/T--ShanghaiTech_China--sus--1.jpg"
                   contain
                   max-height="600px"
                 />
@@ -154,493 +117,483 @@
                   style="margin-top: 10px; margin-bottom: 10px"
                 >
                   <p class="body-2 fig">
-                    Fig.1: In-person meet up with GA_State_SW_Jiaotong
-                  </p>
-                </v-row>
-              </v-card-text>
-              <v-card-title class="text-h5"> Human Practice </v-card-title>
-              <v-card-text>
-                <p class="body-1">
-                  GA_State_SW_Jiaotong and ShanghaiTech_China not only
-                  cooperated in experiment and modeling but also carried out
-                  in-depth communication and cooperation in Human Practice.
-                </p>
-              </v-card-text>
-              <v-card-title class="text-h5"> Public education </v-card-title>
-              <v-card-text>
-                <p class="body-1">
-                  The two teams have set up their own Wechat official accounts,
-                  and take turns to write articles to introduce the basic
-                  principles and the latest progress of synthetic biology to the
-                  public, as well as the iGEM competition and popularization of
-                  scientific knowledge. In summer vacation, to enhance the
-                  educational influence of both programs, we introduced this
-                  year's iGEM program into the rural volunteer teaching program
-                  for social practice and introduced the relevant knowledge of
-                  synthetic biology to the rural students, as well as the iGEM
-                  program of the two teams this year, which broadened the
-                  horizon for the local students. To increase the interest of
-                  rural students in scientific exploration, our iGEM team
-                  members also customized the field taxidermy course for local
-                  children. This way of popularizing science through fun and
-                  learning has been loved by local students and teachers. On
-                  September 19, GA_State_SW_Jiaotong held a community exhibition
-                  in Furong Community, Chengdu, to introduce the basic knowledge
-                  of stress alopecia, treatment after fracture, and related
-                  nursing methods to the residents. GA_State_SW_Jiaotong
-                  prepared promotional materials and gifts for the participants
-                  and distributed brochures of the two teams to the passing
-                  residents. The residents read our leaflets, scanned the QR
-                  code, followed the Wechat official accounts of the two teams,
-                  and filled in the questionnaires related to the projects after
-                  hearing and learning about our projects. During the game
-                  session, residents participated in mini-games such as memory
-                  cards and flip cards. These games combine science with common
-                  sense, allowing residents to have fun while learning about
-                  synthetic biology. Through community outreach, we have
-                  successfully delivered the most advanced research results to
-                  the public, giving them a taste of the real-world applications
-                  of synthetic biology. By working together, we hope to expand
-                  the impact and educational significance of our programs in all
-                  fields.
-                </p>
-              </v-card-text>
-              <v-card-title class="text-h5"> Campus propaganda </v-card-title>
-              <v-card-text>
-                <p class="body-1">
-                  On September 17th,ShanghaiTech_China held a program
-                  introduction and popular science lecture for the freshmen of
-                  ShanghaiTech University who will enter this fall semester,
-                  introducing ShanghaiTech_China and GA_State_SW_Jiaotong
-                  project for the new students.
-                </p>
-                <p class="body-1">
-                  In the lecture, we introduced the development history of iGEM
-                  competition, and also introduced the mechanism and process of
-                  iGEM competition for students by taking the excellent projects
-                  of iGEM competition over the years as an example.
-                </p>
-                <p class="body-1">
-                  We also invited the former iGEM players to introduce their
-                  achievements and experiences in the iGEM competition.During
-                  the lecture, students were very interested in the two teams'
-                  participating projects this year and asked many interesting
-                  questions. We also gained many new ideas from students.
-                </p>
-                <p class="body-1">
-                  On September 24, THE GA_State_SW_Jiaotong team introduced
-                  their iGEM project and ShanghaiTech_China's iGEM project to
-                  teachers and students from different majors in Southwest
-                  Jiaotong University.In the exchange activities, the
-                  GA_State_SW_Jiaotong team introduced the design idea and
-                  experimental design method of this project. Secondly, the
-                  GA_State_SW_Jiaotong team members introduced
-                  ShanghaiTech_China bone injury repair project. students from
-                  different grades and majors participated in the Q&A session
-                  and showed their keen interest in our project and iGEM
-                  competition.
-                </p>
-                <v-row justify="center" align="baseline">
-                  <v-col cols="6">
-                    <v-img
-                      src="https://2021.igem.org/wiki/images/7/7d/T--ShanghaiTech_China--par--fig1.jpg"
-                      contain
-                      max-height="600px"
-                    />
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img
-                      src="https://2021.igem.org/wiki/images/0/04/T--ShanghaiTech_China--par--fig2.jpg"
-                      contain
-                      max-height="600px"
-                    />
-                  </v-col>
-                  <v-row
-                    justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
-                  >
-                    <p class="body-2 fig">
-                      Fig.2: Campus propaganda in ShanghaiTech University
-                    </p>
-                  </v-row>
-                </v-row>
-                <p class="body-1">
-                  See the other side view of our partnership, see
-                  <a
-                    href="https://2021.igem.org/Team:GA_State_SW_Jiaotong/Partnership"
-                    >this</a
-                  >
-                  page
-                </p>
-              </v-card-text>
-              <v-row justify="center">
-                <v-card-title class="text-h4 title" id="xmu"
-                  >XMU-China</v-card-title
-                >
-              </v-row>
-              <v-card-text>
-                <p class="body-1">
-                  In this year's Partnership project, ShanghaiTech_China and
-                  XMU-China have maintained good communication and positive
-                  cooperation.
-                </p>
-                <p class="body-1">
-                  Thanks to the CCIC meet-up in April, we found a partner iGEM
-                  team on mussel research. We kept in touch and did a lot of
-                  research on mussel protein. We both found the mussel protein
-                  was too expensive to buy and extraction of mussel protein from
-                  <strong><i>E.coli</i></strong> was a good way. From that
-                  moment on, we exchanged a lot of experience about the mussel
-                  protein.
-                </p>
-                <v-img
-                  src="https://2021.igem.org/wiki/images/a/ab/T--ShanghaiTech_China--par--4411.jpg"
-                  contain
-                  max-height="600px"
-                />
-                <v-row
-                  justify="center"
-                  style="margin-top: 10px; margin-bottom: 10px"
-                >
-                  <p class="body-2 fig">Fig.3: Online meet up with XMU-China</p>
-                </v-row>
-                <p class="body-1">
-                  Because the project design of the two teams involved the
-                  application and expansion of mussel mucin, the two teams had
-                  in-depth communication and cooperation in the expression and
-                  purification of mussel mucin, as well as protein modification,
-                  viscosity determination, and tension determination.
-                  ShanghaiTech_China provided plasmids and strains of mussel
-                  mucin MEFP5-1 for XMU-China and provided suggestions on
-                  protein purification. At the same time, XMU-CHINA also
-                  provided technical guidance for our mussel mucin viscosity
-                  measurement experiment. With their help, we successfully
-                  measured the viscosity data of mussel mucin. The communication
-                  and cooperation between the two sides played a key role in
-                  promoting our project, and we also gained a lot of knowledge
-                  in communication.
-                </p>
-                <p class="body-1">
-                  Moreover, we had a collaboration on Human Practice and
-                  Sustainable development. For ShanghaiTech_China, the Human
-                  Practice focused on the medical cycle about patients,
-                  clinicians, and hospitals. XMU-China's Human Practice was
-                  mainly about the mussel problem. We got a lot of information
-                  from XMU-China's Human Practice work and this is really
-                  beneficial for our Sustainable development work. See more
-                  details on our
-                  <a
-                    href="https://2021.igem.org/Team:ShanghaiTech_China/Sustainable"
-                    >Sustainable</a
-                  >
-                  page.
-                </p>
-                <v-simple-table>
-                  <template v-slot:default>
-                    <thead>
-                      <tr>
-                        <th class="text-center">Time</th>
-                        <th>Events</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th class="text-center">April</th>
-                        <th>
-                          We attended a CCiC meet up and got to know the
-                          projects of XMU-China, exchanging the experience of
-                          getting mussel protein. We suggested that the
-                          extraction of Mfp from ***E.coli*** is good way.
-                        </th>
-                      </tr>
-                      <tr>
-                        <th class="text-center">July</th>
-                        <th>
-                          The plasmid constructed by them has always had the
-                          problem of mutation. At the same time, our strain was
-                          constructed. We provided the constructed strain and
-                          exchanged our experience in protein purification and
-                          modification. In the same communication, they provided
-                          us with a scheme to measure the mechanical properties
-                          of mussel mucin, which provided inspiration for our
-                          later experimental design.
-                        </th>
-                      </tr>
-                      <tr>
-                        <th class="text-center">October</th>
-                        <th>
-                          We want to do more work on sustainable development,
-                          but our Human Practice was mainly about the medical
-                          cycle. We got a lot information from XMU-China's Human
-                          Practice. At the same time, XMU-China got the data of
-                          mechanical properties of mussel protein, we discussed
-                          about the data and got a better understanding of the
-                          mussel protein.
-                        </th>
-                      </tr>
-                    </tbody>
-                  </template>
-                </v-simple-table>
-                <p class="body-1">
-                  See the other side view of our partnership, see
-                  <a href="https://2021.igem.org/Team:XMU-China/Partnership"
-                    >this page</a
-                  >.
-                </p>
-              </v-card-text>
-              <v-row justify="center">
-                <v-card-title class="text-h4 title" id="great">
-                  GreatBay_United
-                </v-card-title>
-              </v-row>
-              <v-card-text>
-                <p class="body-1">
-                  ShanghaiTech_China is very concerned about current
-                  environmental protection issues, especially Marine environment
-                  and biodiversity protection. Therefore, in the design process
-                  of the project, we used the technology of synthetic biology to
-                  rely on escherichia coli to express mussel mucin instead of
-                  extracting proteins directly from mussels in the traditional
-                  industry. We also hope to raise public awareness of the
-                  protection of Marine life through public publicity. The
-                  project of GreatBay_United has attracted the attention of
-                  ShanghaiTech_China team. GreatBay_United hopes to develop a
-                  new set of efficient and accurate bacterial endotoxin
-                  detection solutions through the method of synthetic biology to
-                  replace the traditional turtle blood reagent. To try to save
-                  the future of an endangered species. After communication and
-                  exchange, we found that both teams took the protection of the
-                  Marine environment as one of the priorities of the project, so
-                  we decided to have deeper cooperation in project design and
-                  Human Practice.
-                </p>
-                <p class="body-1">
-                  In order to understand the public's awareness of Marine animal
-                  protection, we made a questionnaire survey and found that most
-                  people know little about turtles and mussels. Therefore,
-                  GreatBay_United and ShanghaiTech_China hope to let more people
-                  know about the situation of these two Marine creatures through
-                  lectures. Therefore, through communication and negotiation, we
-                  were invited to have a lecture at Guangzhou Ulink College on
-                  October 14. However, due to the epidemic situation, we could
-                  not arrive at the scene, so we made a video to introduce
-                  ShanghaiTech_China's project this year and mussel-related
-                  knowledge to the audience. The seminar organized by
-                  GreatBay_United and ShanghaiTech_China was well received by
-                  the teachers and students who participated in the seminar,
-                  which enabled Ulink College students to understand the
-                  importance of protecting marine animals.
-                </p>
-                <v-img src="" contain max-height="600px" />
-                <v-row
-                  justify="center"
-                  style="margin-top: 10px; margin-bottom: 10px"
-                >
-                  <p class="body-2 fig">Fig.4</p>
-                </v-row>
-                <p class="body-1">
-                  At the same time, GreatBay_United and ShanghaiTech_China also
-                  participated in the COP15 Youth Biodiversity Science
-                  Exploration activity. This activity was jointly initiated by
-                  the Publicity and Education Center of the Ministry of Ecology
-                  and Environment and POLARHUB to learn and practice
-                  biodiversity conservation through scientific exploration and
-                  rethink the relationship between man and nature.
-                  ShanghaiTech_China reported this year's iGEM project and also
-                  had a heated and friendly discussion with the participating
-                  teams and scientists on the topic of "How to use synthetic
-                  biology to protect biodiversity?". The conference broadened
-                  our understanding of the range of ideas and applications of
-                  synthetic biology and gave us a deeper insight into our
-                  projects.
-                </p>
-                <p class="body-1">
-                  See more details about our work about sustainable development
-                  on
-                  <a
-                    href="https://2021.igem.org/Team:ShanghaiTech_China/Sustainable"
-                    >Sustainable</a
-                  >
-                  page.
-                </p>
-                <v-img
-                  src="https://2021.igem.org/wiki/images/0/03/T--ShanghaiTech_China--par--cop15.png"
-                  contain
-                  max-height="600px"
-                />
-                <v-row
-                  justify="center"
-                  style="margin-top: 10px; margin-bottom: 10px"
-                >
-                  <p class="body-2 fig">
-                    Fig.5 COP15 conference, ShanghaiTech_China, GreatBay_United
-                    and Jiangnan_China are invited to share the projects.
-                  </p>
-                </v-row>
-                <p class="body-1">
-                  See the other side view of our partnership, see
-                  <a
-                    href="https://2021.igem.org/Team:GreatBay_United/Partnership"
-                    >this page</a
-                  >.
-                </p>
-              </v-card-text>
-              <v-row justify="center">
-                <v-card-title class="text-h4 title" id="csu"
-                  >CSU_China</v-card-title
-                >
-              </v-row>
-              <v-card-text>
-                <p class="body-1">
-                  Since our project involves the survival rate of cells in the
-                  hydrogel, and we hope to add drugs to promote bone recovery in
-                  the hydrogel system in the further project design, we must
-                  have a deeper understanding of the diffusion model and
-                  diffusion rate of drug molecules in the hydrogel, to optimize
-                  the design. ShanghaiTech_China team members have excellent
-                  cell culture ability, but we have little difficulty in the
-                  experimental design of drug diffusion detection. Therefore,
-                  finding a team with complementary advantages for cooperation
-                  is a choice for better development of the project. CSU_China
-                  and ShanghaiTech_China hit it off! CSU_China's 2021 project
-                  focuses on finding a new method of treating type 1 diabetes
-                  with the help of synthetic biology. CSU_China came up with the
-                  idea of using hydrogel as a carrier for cell growth to make
-                  cells play a role in the humoral environment. This is also
-                  what ShanghaiTech_China has done! Therefore, in subsequent
-                  communication, the two teams discussed with each other the
-                  feasibility of immobilizing cells in hydrogel culture and what
-                  kind of hydrogel culture cells should be used. Our team tested
-                  the viability of CSU_China cells in hydrogel to verify the
-                  feasibility of using hydrogel to immobilize cells. CSU_China
-                  also provided key guidance for the design of our drug release
-                  experiment and completed the drug release experiment in the
-                  hydrogel. In the process of cooperation between the two teams,
-                  we communicated with each other and learned from each other,
-                  so that our project moved forward quickly and well.
-                </p>
-                <p class="body-1">
-                  Thanks to the CCiC, we have an offline meet-up with CSU_China,
-                  and we are glad that we have a close friend and make a
-                  contribution together in exploring the boundary of synthetic
-                  biology.
-                </p>
-                <v-row justify="center" align="baseline">
-                  <v-col cols="6">
-                    <v-img
-                      src="https://2021.igem.org/wiki/images/0/0a/T--ShanghaiTech_China--par--3549.jpg"
-                      contain
-                      max-height="600px"
-                    />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.6a: CSU_China presentation in CCiC
-                      </p>
-                    </v-row>
-                  </v-col>
-                  <v-col cols="6">
-                    <v-img
-                      src="https://2021.igem.org/wiki/images/1/14/T--ShanghaiTech_China--par--3559.jpg"
-                      contain
-                      max-height="600px"
-                    />
-                    <v-row
-                      justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
-                    >
-                      <p class="body-2 fig">
-                        Fig.6b: ShanghaiTech_China presentation in CCiC
-                      </p>
-                    </v-row>
-                  </v-col>
-                </v-row>
-              </v-card-text>
-              <v-row justify="center">
-                <v-card-title class="text-h4 title" id="jiangnan">
-                  Jiangnan_China
-                </v-card-title>
-              </v-row>
-              <v-card-text>
-                <p class="body-1">
-                  We started working with Jiangnan_China in April to introduce
-                  the Gadusol synthetic pathway in zebrafish into yeast to
-                  produce a biosunscreen that is not harmful to coral or the
-                  ocean. In July, the two teams had in-depth and detailed
-                  communication and discussion on the experimental design of the
-                  project. In August, the two teams participated in the 8th
-                  China Regional iGEMer Exchange (CCiC conference). The two
-                  teams also carried out further communication on project design
-                  and finalized the cooperation of the team in the experiment.
-                </p>
-                <p class="body-1">
-                  After that, we helped Jiangnan_China test the cytotoxicity of
-                  its biological sunscreen, which proved its biosafety and
-                  environmental friendliness.
-                </p>
-                <v-img
-                  src="https://2021.igem.org/wiki/images/b/b5/T--ShanghaiTech_China--par--2313.jpg"
-                  contain
-                  max-height="600px"
-                />
-                <v-row
-                  justify="center"
-                  style="margin-top: 10px; margin-bottom: 10px"
-                >
-                  <p class="body-2 fig">
-                    Fig.7: Offline meet up with Jiangnan_China
+                    Figure 1. Sustainable Development Goals(Data sources:
+                    Gestamp<sup @click="$vuetify.goTo('#references', options)"
+                      >[1]</sup
+                    >)
                   </p>
                 </v-row>
                 <p class="body-1"></p>
+              </v-card-text>
+              <v-card-title class="text-h5">
+                SDG 14: Life below water
+              </v-card-title>
+              <v-card-text>
                 <p class="body-1">
-                  On October 9th, the two teams participated in the sustainable
-                  Development competition of Synbiopunk Challenge sponsored by
-                  Ailurus Biotech and won good prize in the junior college.
-                  Jiangnan_China and ShanghaiTech_China participated in the
-                  COP15 Youth Biodiversity Science Exploration Activity on
-                  October 14. During the activity, the two teams put forward
-                  many constructive suggestions on Marine biodiversity
-                  protection and feasible plans based on our respective
-                  professional directions. In the future, ShanghaiTech_China and
-                  Jiangnan_China will continue to devote their efforts to
-                  promoting biodiversity conservation and applying their
-                  expertise to environmental protection.
+                  We have made great efforts for the extraction of mussel and
+                  its protein, which is an underwater organism. By optimizing
+                  the current industrial extraction technology, we can
+                  effectively save the waste of mussel resources.
                 </p>
-                <v-img
-                  src="https://2021.igem.org/wiki/images/8/8a/T--ShanghaiTech_China--par--fig1_something.jpg"
-                  contain
-                  max-height="600px"
-                />
-                <v-row
-                  justify="center"
-                  style="margin-top: 10px; margin-bottom: 10px"
-                >
-                  <p class="body-2 fig">
-                    Fig.8: ShanghaiTech_China presentation at Synbiopunk
-                    challenge
-                  </p>
-                </v-row>
                 <p class="body-1">
-                  We appreciated that the communication with Jiangnan_China is
-                  really beneficial and we are glad that we made such a good
-                  friend in iGEM competition!
+                  We have modified existing mussel mucins through synthetic
+                  biology. We hope that expression of mussel mucin in
+                  EScherichia coli can improve the viscosity of mussel mucin and
+                  reduce the cost of artificial purchase of mussel mucin.
                 </p>
-                <v-img
-                  src="https://2021.igem.org/wiki/images/8/8a/T--ShanghaiTech_China--par--fig1_something.jpg"
-                  contain
-                  max-height="600px"
-                />
-                <v-row
-                  justify="center"
-                  style="margin-top: 10px; margin-bottom: 10px"
+                <p class="body-1">
+                  Mussel mucin was originally produced and extracted from mussel
+                  byssus, which was prepared by crushing, extraction,
+                  chromatographic purification and concentration. Mussel mucin
+                  is a potential resource in biomedical field because of its
+                  high viscosity, flexibility, water resistance and
+                  biodegradability. Because of its special structure, mussel
+                  mucin has strong waterproof properties and promoting healing
+                  ability, which makes it can be developed as a medical
+                  adhesive, medical coating or wound repair product. However,
+                  its biggest feature of stickiness still has potential
+                  development in other fields. So mussel mucin has become a
+                  popular biomaterial.
+                </p>
+                <p class="body-1">
+                  At present, the mainstream method of industrial extraction of
+                  mussel mucin still adopts mass purification of mussel foot
+                  gland, but due to the low secretion of mussel mucin, the
+                  amount of mussel mucin can be extracted from 10,000 mussels is
+                  about 1mg. As a result, the extraction process and cost
+                  significantly increased the price of mussel mucin-related
+                  products. For example, Biopolymers, a Swedish company, sells
+                  an adhesive called "Cell-tak" for $115 per mg in the United
+                  States. A 10mg dose can cost around 7,500 yuan. On the other
+                  hand, the product obtained from mass purification of mussel
+                  foot gland could not obtain higher strength viscosity due to
+                  the limitation of extraction process. This limits the scope of
+                  application of mussel mucin. Currently, adhesive products are
+                  mostly used for adhesion between non-adherent cells and petri
+                  dishes in cell culture. Therefore, the current mussel mucin
+                  extraction process has high consumption, low yield and low
+                  adhesion, which will lead to very large mussel loss and waste.
+                </p>
+                <p class="body-1">
+                  In order to reduce the waste of mussel raw material and reduce
+                  the cost of mussel mucin, we choose to independently develop
+                  mussel mucin production.
+                </p>
+                <p class="body-1">
+                  We designed a microbial expression and purification system for
+                  mussel mucin meFP5 to reduce the extraction cost and prepare
+                  mussel mucin of higher quality. The experimental scheme was
+                  designed to construct two and three repeated MEFP5 genes while
+                  expressing mussel mucin. We have now tested the properties of
+                  mussel mucin after this modification. In the future, we will
+                  try to use in vitro tyrosinase expression and purification
+                  system.
+                </p>
+                <p class="body-1">
+                  We plan to test the feasibility of mussel mucin through
+                  EScherichia coli in the stage of increased viscosity, and in
+                  the production stage, we will use yeast system to express
+                  mussel mucin, which simplifies the protein extraction process,
+                  reduces the cost and increases the yield.
+                </p>
+                <p class="body-1">
+                  In short, by increasing the strength and yield of mussel mucin
+                  from the perspective of synthetic biology, instead of
+                  traditional mass extraction methods, this solution will
+                  greatly reduce the waste of natural mussels and reduce the
+                  cost of extraction. It is also more in line with sustainable
+                  development and can protect limited Marine resources.
+                  Meanwhile, artificial mussel mucins developed through
+                  synthetic biology will be stickier and more stable than
+                  natural mussel mucins. This is more conducive to expanding the
+                  application scenarios of mussel mucin and developing the
+                  potential of mussel mucin as a real medical material.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h5">
+                SDG 3: Good Health and Well-Being
+              </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  MIBOM is dedicated to solving human health problems. At
+                  present, MIBOM is solving the dilemma caused by fracture,
+                  starting from comminuted fracture, to solve the dilemma of
+                  difficult operation, long time and poor repair. In the future,
+                  MIBOM also hopes to replace plate consumables as a new bone
+                  implant to overturn the traditional fracture treatment method
+                  and become a new biodegradable implant.
+                </p>
+                <p class="body-1">
+                  MIBOM designed a more flexible glue for internal fixation,
+                  focusing on the difficulty of comminuted fractures and the
+                  poor healing effect of comminuted fractures. MIBOM has also
+                  designed drug systems to promote bone regeneration. In
+                  addition, MIBOM also incorporates a control system to
+                  facilitate the degradation of implants, increasing the ease of
+                  implant removal. In all these aspects, MIBOM has the
+                  outstanding ability to become a new fracture treatment method,
+                  opening a new way for the future fracture treatment.
+                </p>
+                <p class="body-1">
+                  At the same time, we also consulted the attending doctors from
+                  the Rehabilitation Department of Shanghai Ninth People's
+                  Hospital and other practitioners. They point out that we could
+                  add manuals, similar to the discharge summary, to help doctors
+                  better understand patients during the handover. The feedback
+                  from doctors is that they pay more attention to the patient's
+                  physical condition, so as to set the operation time and
+                  recovery plan, so the patient's physical condition is crucial.
+                  To this end, we also designed a 'patient manual' to record the
+                  daily situation of patients. At the same time, the product
+                  description section should be set up in the manual to give
+                  doctors a clear description of rehabilitation indicators.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h5">
+                SDG 9: Industry, innovation and infrastructure
+              </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  Due to MIBOM's modular design and 4 systems (Adhensive,
+                  Hydrogel, Regulation, and drug delivery), MIBOM can be adapted
+                  to various requirements such as drug redesign when later
+                  modified. At the same time, the modular system like MIBOM is
+                  also conducive to the development of products in other areas,
+                  such as beauty, trauma repair and so on.
+                </p>
+                <p class="body-1">
+                  For the needs of different areas, MIBOM only needs to adjust
+                  each module to design new products. This can significantly
+                  reduce the cost and time of the concept design and validation
+                  phase. Due to the flexibility of design, MIBOM can also be
+                  adjusted according to the needs of users, so that the product
+                  can better adapt to the needs of users. The cost of overall
+                  adjustment of MIBOM is far less than that of a product with
+                  only one idea from beginning to end.
+                </p>
+                <p class="body-1">
+                  From a developmental perspective, modular MIBOM will
+                  facilitate the development of materials adapted to different
+                  fields and environments. By simply replacing one module,
+                  cellular regulatory systems and materials that adapt to
+                  different environments and feel different conditions can be
+                  obtained. Thus, MIBOM can make more creative creations in the
+                  transformation of functional materials.
+                </p>
+                <p class="body-1">
+                  We use social media platforms to educate people of all ages
+                  about medicine and biology. We use Bilibili's platform to
+                  carry out popular science on medical treatment, fracture and
+                  other contents. The main users of this platform are young
+                  people. We also use an official account to carry out popular
+                  science and reprint articles related to medical knowledge.
+                  Users of this platform can be people of all ages. So far, our
+                  popular science account and Bilibili popular science video
+                  have received more than 3,000 followers. We believe that the
+                  rich popular science courses will enable our audience to
+                  understand the medical knowledge and basic.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h5"> SDG 1: No poverty </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  MIBOM plans to adopt two product routes in the future: 1.
+                  Primary products : 'mussel + gel' treatment products; 2. High
+                  quality products : 'mussel + gel + cell regulation' treatment
+                  products.
+                </p>
+                <p class="body-1">
+                  Grassroots products will be promoted to the general public,
+                  especially hospitals in small cities. Low costs and low prices
+                  will help grassroots. In areas of extreme poverty or unrest,
+                  MIBOM's base products are useful for emergency fracture
+                  repair. As mass production of mussel mucin can be achieved by
+                  yeast modification to meet industrial production requirements,
+                  the cost of mussel mucin will be extremely low. This helps
+                  MIBOM provide low-cost products for groups that do not want to
+                  pay too much for treatment. On the other hand, as adhesions
+                  and other functions make surgery more convenient and flexible,
+                  the threshold of surgery will be relatively lower, which is
+                  more conducive to the operation of doctors in areas with
+                  insufficient medical resources. The low price and ease of
+                  operation also make MIBOM useful in disaster first aid to
+                  provide scalable, cost-effective treatment.
+                </p>
+                <p class="body-1">
+                  MIBOM team always pursues the value concept of "Least waste,
+                  Best Technology", and wants to reduce waste through excellent
+                  technical transformation and provide low-cost and effective
+                  labor solutions. In the future development planning, we plan
+                  to cooperate with the government after the official launch of
+                  MIBOM to promote the product to grassroots hospitals, reduce
+                  the threshold of surgical operation, and help more areas
+                  lacking medical resources.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h5">
+                SDG 4：Quality Education
+              </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  In July 2021, we went to a village that had just been lifted
+                  out of poverty for volunteer teaching. Our team went to
+                  Jingxian County in Anhui province and Yunlong County in Yunnan
+                  province for volunteer teaching. Basic education resources in
+                  primary and junior high schools there are weak, and the high
+                  school enrollment rate is only about 20%. We hope that
+                  volunteer teaching can help them see the outside world and
+                  develop their love for biology. We also hope that such
+                  volunteer teaching activities can give them a systematic
+                  understanding of biology for the first time and give them
+                  confidence to explore the natural ecology. Finally, we also
+                  hope that such persistence in supporting education can make
+                  education resources no longer a big difference between urban
+                  and rural areas.
+                </p>
+                <p class="body-1">
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/8/8a/T--ShanghaiTech_China--sus--2.jpg"
+                    contain
+                    max-height="600px"
+                  />
+                </p>
+              </v-card-text>
+              <v-row justify="center">
+                <v-card-title class="text-h4 title" id="action">
+                  Actions for sustainable development
+                </v-card-title>
+              </v-row>
+              <v-card-title class="text-h5">
+                Synbiopunk Challenge
+              </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  Hosted by Ailurus Biotech, Synbiopunk 2021 launched the
+                  Synbiopunk Challenge and we participated in the offline
+                  roadshow of Synbiopunk Challenge on October 09, 2019.
+                  Synbiopunk Challenge aims to integrate resources to deliver
+                  sustainable synthetic biology solutions to the sustainable
+                  Development Goals.
+                </p>
+                <p class="body-1">
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/7/72/T--ShanghaiTech_China--sus--4.jpg"
+                    contain
+                    max-height="600px"
+                  />
+                </p>
+                <p class="body-1">
+                  We featured SDG14: Life Below Water from the Sustainable
+                  Development Goals, highlighting our transformation of mussel
+                  mucin. At the same time, with SDG3: Good Health and Well-being
+                  as the main goal of MIBOM, we emphasize MIBOM's long-standing
+                  vision of contributing to the treatment of human Health. We
+                  hope MIBOM can truly optimize the existing mussel mucin
+                  extraction resources and become a truly clean and sustainable
+                  scientific innovation product to change the traditional way of
+                  fracture treatment and usher in a new era of fracture
+                  treatment.
+                </p>
+                <p class="body-1">
+                  We have placed third in the Synbiopunk Challenge and won
+                  10,000 RMB as our start-up fund. We hope MIBOM can become a
+                  real development product to help meet people's health needs.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h5">COP15</v-card-title>
+              <v-card-title class="text-h6">
+                “Youth Biodiversity Science Exploration Series: Synthetic
+                Biology special session”
+              </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  COP15 Youth Biodiversity Science Exploration activity is
+                  co-sponsored by the Publicity and Education Center of the
+                  Ministry of Ecology and Environment and Polar Future. It is a
+                  scientific exploration activity to learn and practice
+                  biodiversity conservation and rethink the relationship between
+                  man and nature.
+                </p>
+                <p class="body-1">
+                  Synthetic biology is a budding revolution in the life
+                  sciences, and this new field is about to embrace its youth. As
+                  one of the important issues concerned by the Convention on
+                  Biological Diversity (CBD), synthetic biology has been
+                  attracting much attention for biodiversity conservation and
+                  sustainable use.
+                </p>
+                <p class="body-1">
+                  COP15 has a special session on synthetic biology, bringing
+                  together young teams of biodiversity explorers to share their
+                  practices in biodiversity conservation. We are fortunate to
+                  participate in this activity to share.
+                </p>
+                <p class="body-1">
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/0/03/T--ShanghaiTech_China--par--cop15.png"
+                    contain
+                    max-height="600px"
+                  />
+                </p>
+                <p class="body-1">
+                  We shared MIBOM's efforts in biodiversity conservation,
+                  especially the extraction, purification and modification of
+                  mussel mucin. We optimized the existing extraction process and
+                  applied the biological preparation method to extract mussel.
+                  This is a good way to reduce mussel waste. At the meeting, our
+                  sharing was recognized by many experts, and after that, we
+                  kept in close contact with several of them to help us develop
+                  further.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h5">
+                Science popularization
+              </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  We uploaded our PV video on Bilibili, a video platform in
+                  China, which has a lot of young fans. It can deliver our
+                  projects to strangers thousands of miles away. With Chinese
+                  subtitles and cute animated illustrations, it is easy for
+                  children to understand.
+                </p>
+                <p class="body-1">
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/d/d4/T--ShanghaiTech_China--sus--6.png"
+                    contain
+                    max-height="600px"
+                  />
+                </p>
+                <p class="body-1">
+                  To make our materials accessible to a wider audience, we
+                  publish all the contents of the campus lectures to the public
+                  account, which not only enables students to understand and
+                  review the contents more systematically but also enables more
+                  students who are not in class to accept popular science in
+                  their spare time. At the same time, considering that many
+                  children in poor areas are not able to use the electronic
+                  products around them, we also leave the courseware and our
+                  contact information when teaching offline, so as to teach them
+                  how to use the existing resources to learn better.
+                </p>
+                <p class="body-1">
+                  In addition, we have also reached cooperation with
+                  GA_State_SW_Jiaotong. Every two weeks, we will forward each
+                  other's popular science content, so that more and better
+                  content can be spread to a wider range of places.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h5"> Support education </v-card-title>
+              <v-card-title class="text-h6">
+                · In Yunlong County, Yunnan Province
+              </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  This year, we went to Yunlong county in Yunnan. As a village
+                  which is 4 hours mountain road by car from the city, it's hard
+                  for a villager to communicate with the outside world, leading
+                  to mold and poor educational resources. Even though their
+                  classrooms are equipped with advanced facilities, the elderly
+                  teachers rarely use them, so we teach them through electronic
+                  presentations and the use of these devices. When we meet the
+                  principal over there, he said passionately, 'When I saw
+                  students of ShanghaiTech University, I saw the hope of our
+                  education.'. Our visit represents a big chance for students
+                  there.
+                </p>
+                <p class="body-1">
+                  Thinking about how little experience they have in learning
+                  biology, We chose to introduce basic concepts in biology such
+                  as internal environment, cells, DNA, and so on. We brought the
+                  children along to draw cells, organelles, DNA, and so on,
+                  which was a great way to focus the children's attention. It
+                  turned out that they can easily accept the knowledge through
+                  the analogy of cells in the internal environment and the
+                  swimmer. So we tried to explain the central dogma of
+                  inheritance. Although it was relatively difficult for them,
+                  they listened with great interest and did well in the Q&A
+                  section in the end. When we show the PV video of our team and
+                  GA_State_SW_Jiaotong, it seemed that we opened up new worlds
+                  for them. A few brief introductory lessons kindled their
+                  interest in biology.
+                </p>
+                <p class="body-1">
+                  After class, we offered online courses and popular science
+                  videos for them so that even when we leave, they can continue
+                  to study biology and even use these learning methods to learn
+                  new content. Also, we left their contact information and
+                  public account, to answer their future study and life in the
+                  new questions.
+                </p>
+                <p class="body-1">
+                  What moved us a lot was that some students quickly accepted
+                  knowledge and excitedly told us that they want to become
+                  scientists in the field of biology, which was undoubtedly the
+                  biggest affirmation for us. Some of the students were able to
+                  slowly say their answers together, even though they were
+                  ashamed to stand up to answer the questions. We were overjoyed
+                  by the progress of the students.
+                </p>
+                <p class="body-1">
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/7/78/T--ShanghaiTech_China--sus--eduacation-yunlong.png"
+                    contain
+                    max-height="600px"
+                  />
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h6">
+                · In Jingxian County, Anhui Province
+              </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  In Anhui, we expanded the students' knowledge of botany. We
+                  try to get out of the textbook and show them what common
+                  plants are in their daily lives and how to make herbarium
+                  specimens. Let them use living things. We also brought a
+                  variety of leaves and flowers so that students could listen to
+                  the class and see the plants up close or play with them. The
+                  students are having fun and learning.
+                </p>
+                <p class="body-1">
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/4/43/T--ShanghaiTech_China--sus--eduacation-jingxian.jpg"
+                    contain
+                    max-height="600px"
+                  />
+                </p>
+                <p class="body-1"></p>
+              </v-card-text>
+            </v-container>
+          </v-card>
+        </template>
+      </v-hover>
+      <v-hover>
+        <template v-slot:default="{ hover }">
+          <v-card
+            :class="`elevation-${hover ? 8 : 2}`"
+            class="transition-swing"
+            style="text-decoration: none; margin-top: 35px"
+            v-scroll="updatepos"
+            v-show="!firstload"
+          >
+            <v-container style="padding: 20px">
+              <v-row>
+                <v-card-title
+                  class="title"
+                  style="margin-left: 16px"
+                  id="references"
+                  >References</v-card-title
                 >
-                  <p class="body-2 fig">
-                    Fig.8: ShanghaiTech_China presentation at Synbiopunk
-                    challenge
-                  </p>
-                </v-row>
+              </v-row>
+              <v-card-text>
+                <p class="body-2">
+                  [1]:Sustainable development goals, Available from
+                  <a
+                    href="https://www.gestamp.com/cn/%E5%8F%AF%E6%8C%81%E7%BB%AD%E6%80%A7/%E5%8F%AF%E6%8C%81%E7%BB%AD%E5%8F%91%E5%B1%95%E7%9B%AE%E6%A0%87-(SDG)"
+                    >here</a
+                  >
+                </p>
               </v-card-text>
             </v-container>
           </v-card>
@@ -709,11 +662,9 @@ export default {
     },
   },
   mounted() {
-    this.step[0] = document.getElementById("ga");
-    this.step[1] = document.getElementById("xmu");
-    this.step[2] = document.getElementById("great");
-    this.step[3] = document.getElementById("csu");
-    this.step[4] = document.getElementById("jiangnan");
+    this.step[0] = document.getElementById("summary");
+    this.step[1] = document.getElementById("contri");
+    this.step[2] = document.getElementById("action");
     this.updatepos();
     setTimeout(() => {
       this.firstload = false;
