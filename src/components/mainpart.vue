@@ -463,11 +463,8 @@ export default {
         photo:
           "https://2021.igem.org/wiki/images/c/c2/T--ShanghaiTech_China--mem--wyj.jpg",
         discription:
-          "Zhouziding is a senior student majoring life and science technology. Although \
-        she didn‘t quite know about life and science when she was a freshman, but during learning \
-        about it, it shows its unique charm and opens a completely new world to her . Now she is \
-        interested in experiment design -- how to find simple and efficient ways to solve problems \
-        about the world.",
+          "As a veteran of the last iGEM competition, he loved experimentation and video \
+          production, and this year he continues to storm!",
         role: "lab",
       },
     ],
@@ -481,7 +478,8 @@ export default {
       },
       {
         name: "Mingzhe Chen",
-        photo: "https://2021.igem.org/wiki/images/1/11/T--ShanghaiTech_China--team--cmz.jpg",
+        photo:
+          "https://2021.igem.org/wiki/images/1/11/T--ShanghaiTech_China--team--cmz.jpg",
         discription: "full-stack bio-developer; 2017 ShanghaiTech igem leader",
         role: "master student at ETH Zurich",
       },
