@@ -112,9 +112,11 @@
             v-show="!firstload"
           >
             <v-container style="padding: 20px 3%">
-              <v-card-title class="text-h4" v-intersect="onIntersect">
-                Team introduction
-              </v-card-title>
+              <v-row justify="center" v-intersect="onIntersect">
+                <v-card-title class="text-h4 title" id="introduction">
+                  Team introduction
+                </v-card-title>
+              </v-row>
               <v-card-text class="body-1">
                 ShanghaiTech_China is an excellent team, focusing on changing
                 the world with synthetic biology. Most of our members have
@@ -190,6 +192,9 @@
             v-show="!firstload"
             id="professors"
           >
+            <v-card-text class="body-1"
+              >And here're our creative professors and advisors.</v-card-text
+            >
             <div
               v-for="(person, index) in prof"
               :key="index"
@@ -209,7 +214,9 @@
                   <v-container>
                     <v-card-title>{{ person.name }}</v-card-title>
                     <v-card-subtitle>{{ person.role }}</v-card-subtitle>
-                    <v-card-text class="body-2">{{ person.discription }}</v-card-text>
+                    <v-card-text class="body-2">{{
+                      person.discription
+                    }}</v-card-text>
                   </v-container>
                 </v-col>
                 <v-spacer></v-spacer>
@@ -271,7 +278,8 @@ export default {
     infor: [
       {
         name: "Rui Su",
-        photo: require("@/assets/1.png"),
+        photo:
+          "https://2021.igem.org/wiki/images/b/b4/T--ShanghaiTech_China--mem--sr.jpg",
         discription:
           "As the student leader, he did all kinds of things. He must had a big heart and good mood.\
            He is a believer and lead the team.",
@@ -279,7 +287,8 @@ export default {
       },
       {
         name: "Chenghao Zhu",
-        photo: require("@/assets/1.png"),
+        photo:
+          "https://2021.igem.org/wiki/images/a/a8/T--ShanghaiTech_China--mem--zch.jpg",
         discription:
           "He is the finance chief and the leader of molecular experiment team. He was used to starting \
           the experiment in the afternoon and keeping on doing it until midnight. NO ONE can force him to \
@@ -288,9 +297,10 @@ export default {
       },
       {
         name: "Shiyue Ding",
-        photo: require("@/assets/2.png"),
+        photo:
+          "https://2021.igem.org/wiki/images/f/fb/T--ShanghaiTech_China--team--dsy.jpg",
         discription:
-          "Very good peopleShe is a student of biology who should have chosen a liberal arts \
+          "She is a student of biology who should have chosen a liberal arts \
         major is now studying business herself. Currently, she is jointly responsible for the team's Human \
         Practice section, committed to making the project more realistic from the perspective of business \
         and creating more value for people.",
@@ -298,7 +308,8 @@ export default {
       },
       {
         name: "Huayu Wang",
-        photo: require("@/assets/3.png"),
+        photo:
+          "https://2021.igem.org/wiki/images/b/b6/T--ShanghaiTech_China--mem--why.jpg",
         discription:
           "If you want bewildering, provoking, saddening maddening, rapturing, crumbling, rumbling, \
         tumbling, excruciatingly baffling babbling, he is your guy.",
@@ -306,7 +317,8 @@ export default {
       },
       {
         name: "Han Ding",
-        photo: require("@/assets/3.png"),
+        photo:
+          "https://2021.igem.org/wiki/images/0/00/T--ShanghaiTech_China--mem--dh.jpg",
         discription:
           "She is in charge of education part. She fit in extremely quickly with her students and did \
         surprisingly well as an educator, which may be an alternative after she loses her job in biology in the \
@@ -315,14 +327,16 @@ export default {
       },
       {
         name: "Zixuan Li",
-        photo: require("@/assets/3.png"),
+        photo:
+          "https://2021.igem.org/wiki/images/a/ac/T--ShanghaiTech_China--mem--lzx.jpg",
         discription:
           "She was mainly responsible for the experimental part, hope you enjoy her design in the project.",
         role: "lab",
       },
       {
-        name: "Zi'ao Ling",
-        photo: require("@/assets/3.png"),
+        name: "Ziao Ling",
+        photo:
+          "https://2021.igem.org/wiki/images/b/b8/T--ShanghaiTech_China--mem--lza.jpg",
         discription:
           "Confirmedly willing to work on artificial organs to cure patients and develop the efficiency of \
         medical field. Geography enthusiast, architecture lover and amateur runner.",
@@ -330,7 +344,8 @@ export default {
       },
       {
         name: "Jieni Hu",
-        photo: require("@/assets/3.png"),
+        photo:
+          "https://2021.igem.org/wiki/images/2/2d/T--ShanghaiTech_China--mem--hjn.jpg",
         discription:
           "She participated in wet lab, art designing and collaboration part. She didn’t know anything \
         at first and groped her way like an explorer. But she could always be passionate and motivated to meet new \
@@ -339,7 +354,8 @@ export default {
       },
       {
         name: "Zhiwen Huang",
-        photo: require("@/assets/3.png"),
+        photo:
+          "https://2021.igem.org/wiki/images/4/48/T--ShanghaiTech_China--mem--hzw.jpg",
         discription:
           "Majoring in life science, he mainly took part in the experiment of our team. he also \
         participated in the design of wiki, poster and videos out of his interest.",
@@ -347,7 +363,8 @@ export default {
       },
       {
         name: "Zhuoya Li",
-        photo: require("@/assets/3.png"),
+        photo:
+          "https://2021.igem.org/wiki/images/9/9b/T--ShanghaiTech_China--mem--lzy.jpg",
         discription:
           "She was responsible for the work of the art design part of the team because she loves \
         painting, design, and photography. She is also enjoying doing her favorite biology experiments in the \
@@ -356,7 +373,8 @@ export default {
       },
       {
         name: "Ruixuan Xue",
-        photo: require("@/assets/3.png"),
+        photo:
+          "https://2021.igem.org/wiki/images/a/a9/T--ShanghaiTech_China--mem--xrx.jpg",
         discription:
           "He is a creative, amiable and healthy sophomore with a little bit flair for doing \
         experiments and interest in modelling. Glad to have him in ShanghaiTech_China.",
@@ -364,7 +382,8 @@ export default {
       },
       {
         name: "Jing Sun",
-        photo: require("@/assets/3.png"),
+        photo:
+          "https://2021.igem.org/wiki/images/0/03/T--ShanghaiTech_China--mem--sj.jpg",
         discription:
           "She’s interested in biology! She’s interested in mathematical modeling! \
         She’s interested in experiment!…",
@@ -372,15 +391,17 @@ export default {
       },
       {
         name: "Yiyao Zhu",
-        photo: require("@/assets/3.png"),
+        photo:
+          "https://2021.igem.org/wiki/images/1/1d/T--ShanghaiTech_China--mem--zyy.jpg",
         discription:
           "He is good at embedded system and tries to combine this system with \
         biology to simplify the experiments.",
         role: "hardware lab",
       },
       {
-        name: "Yizhi Wang",
-        photo: require("@/assets/3.png"),
+        name: "Zhiyi Wang",
+        photo:
+          "https://2021.igem.org/wiki/images/e/e6/T--ShanghaiTech_China--mem--wzy.jpg",
         discription:
           "Majoring in computer science, this guy loves coding and turns his computer \
         into his friend. He uses Arch btw.",
@@ -388,7 +409,8 @@ export default {
       },
       {
         name: "Kaijun Wang",
-        photo: require("@/assets/3.png"),
+        photo:
+          "https://2021.igem.org/wiki/images/9/9e/T--ShanghaiTech_China--mem--wkj.jpg",
         discription:
           "She is a beginner in wet lab, but she has great passion in biology. She \
         takes delight in finding explanations for unexpected results in experiments.",
@@ -396,7 +418,8 @@ export default {
       },
       {
         name: "Handi Jia",
-        photo: require("@/assets/3.png"),
+        photo:
+          "https://2021.igem.org/wiki/images/6/6e/T--ShanghaiTech_China--mem--jhd.jpg",
         discription:
           "He a life science student at ShanghaiTech University who focus on the \
         experiment and video parts in this project. Immersing himself in the experiment and \
@@ -405,7 +428,8 @@ export default {
       },
       {
         name: "Shuyao Su",
-        photo: require("@/assets/3.png"),
+        photo:
+          "https://2021.igem.org/wiki/images/9/9d/T--ShanghaiTech_China--mem--ssy.jpg",
         discription:
           "She is a science biology undergraduate student from ShanghaiTech \
         university. She adept at playing tennis，consistently innovating to create value \
@@ -414,7 +438,8 @@ export default {
       },
       {
         name: "Qi Xin",
-        photo: require("@/assets/3.png"),
+        photo:
+          "https://2021.igem.org/wiki/images/e/ed/T--ShanghaiTech_China--mem--xq.jpg",
         discription:
           "Responsible for the experimental part, often messed up the experiment \
         but never give up. Have given several lectures about his iGEM teamwork, but unfortunately \
@@ -423,7 +448,20 @@ export default {
       },
       {
         name: "Ziding Zhou",
-        photo: require("@/assets/3.png"),
+        photo:
+          "https://2021.igem.org/wiki/images/0/04/T--ShanghaiTech_China--mem--zzd.jpg",
+        discription:
+          "Zhouziding is a senior student majoring life and science technology. Although \
+        she didn‘t quite know about life and science when she was a freshman, but during learning \
+        about it, it shows its unique charm and opens a completely new world to her . Now she is \
+        interested in experiment design -- how to find simple and efficient ways to solve problems \
+        about the world.",
+        role: "lab",
+      },
+      {
+        name: "Yujie Wen",
+        photo:
+          "https://2021.igem.org/wiki/images/c/c2/T--ShanghaiTech_China--mem--wyj.jpg",
         discription:
           "Zhouziding is a senior student majoring life and science technology. Although \
         she didn‘t quite know about life and science when she was a freshman, but during learning \
@@ -435,16 +473,39 @@ export default {
     ],
     prof: [
       {
+        name: "Kaida Zhang",
+        photo:
+          "https://2021.igem.org/wiki/images/b/bd/T--ShanghaiTech_China--mem--zkd.jpg",
+        discription: "Something",
+        role: "what",
+      },
+      {
+        name: "Mingzhe Chen",
+        photo: "",
+        discription: "Something",
+        role: "what",
+      },
+      {
         name: "Dr. Haitao Yang",
-        photo: require("@/assets/3.png"),
+        photo:
+          "https://2021.igem.org/wiki/images/0/00/T--ShanghaiTech_China--team--yht.jpg",
         discription:
           "Affiliation:School of Life Science and Technology, Shanghai Institute for Advanced Immunochemical Institute",
         role: "PhD, Associate Professor",
       },
       {
         name: "Dr. Wei Shen",
-        photo: require("@/assets/3.png"),
+        photo:
+          "https://2021.igem.org/wiki/images/6/61/T--ShanghaiTech_China--team--sw.jpg",
         discription: "Affiliation:School of Life Science and Technology",
+        role: "PhD, Associate Professor",
+      },
+      {
+        name: "Dr. Yan Gao",
+        photo:
+          "https://2021.igem.org/wiki/images/d/d1/T--ShanghaiTech_China--team--gy.jpg",
+        discription:
+          "Affiliation:School of Life Science and Technology, Shanghai Institute for Advanced Immunochemical Institute",
         role: "PhD, Associate Professor",
       },
     ],
@@ -458,7 +519,6 @@ export default {
       this.istop = this.isIntersecting;
     },
     updatepos() {
-      /*
       var pos = [];
       var posnow = 0;
       for (var i = 0; i < this.step.length; i++) {
@@ -466,12 +526,11 @@ export default {
         if (pos[i] <= 300) posnow = i;
       }
       this.position = posnow + 1;
-      */
     },
   },
   mounted() {
-    this.step[0] = document.getElementById("prologue");
-    this.step[1] = document.getElementById("lab_safety");
+    this.step[0] = document.getElementById("students");
+    this.step[1] = document.getElementById("professors");
     this.updatepos();
     setTimeout(() => {
       this.firstload = false;
