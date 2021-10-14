@@ -24,10 +24,11 @@ export default {
   data: () => ({
     links: [
       { name: "Home", href: "https://2021.igem.org/Team:ShanghaiTech_China" },
-      { name: "Team", href: "https://2021.igem.org/Team:ShanghaiTech_China/Team" },
       { name: "Description", href: "https://2021.igem.org/Team:ShanghaiTech_China/Description" },
-      { name: "Modeling", href: "https://2021.igem.org/Team:ShanghaiTech_China/Model" },
+      { name: "Model", href: "https://2021.igem.org/Team:ShanghaiTech_China/Model" },
       { name: "Human practices", href: "https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices" },
+      { name: "Team", href: "https://2021.igem.org/Team:ShanghaiTech_China/Team" },
+      { name: "Results", href: "https://2021.igem.org/Team:ShanghaiTech_China/Results" },
     ],
   }),
 };
