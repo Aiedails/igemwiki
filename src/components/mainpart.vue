@@ -476,14 +476,14 @@ export default {
         name: "Kaida Zhang",
         photo:
           "https://2021.igem.org/wiki/images/b/bd/T--ShanghaiTech_China--mem--zkd.jpg",
-        discription: "Something",
-        role: "what",
+        discription: "Affiliation: School of Life Science and Technology",
+        role: "Undergraduate",
       },
       {
         name: "Mingzhe Chen",
-        photo: "",
-        discription: "Something",
-        role: "what",
+        photo: "https://2021.igem.org/wiki/images/1/11/T--ShanghaiTech_China--team--cmz.jpg",
+        discription: "full-stack bio-developer; 2017 ShanghaiTech igem leader",
+        role: "master student at ETH Zurich",
       },
       {
         name: "Dr. Haitao Yang",
