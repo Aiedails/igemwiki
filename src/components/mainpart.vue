@@ -134,7 +134,7 @@
                   society with increasing life expectancy, fractures will
                   continue to increase. At present, in response to traumatic
                   fractures, bone plates made of titanium alloy and other
-                  materials are usually used. On the one hand, there is stress
+                  materials are usually used. On the one hand, there a stress
                   shield for bone healing, which leads to injury. On the other
                   hand, patients need a second operation to remove the plate,
                   which will bring multiple costs, occupation of medical
@@ -147,18 +147,18 @@
                   cost of secondary trauma surgery will be $616 million within a
                   year. In order to break through the traditional fracture
                   treatment plan and solve the problem of the pain point of the
-                  second operation, we designed MIBOM product.
+                  second operation, we designed the MIBOM product.
                 </p>
                 <p class="body-1">
                   MIBOM uses a modular design of "mussel mucin + hydrogel + cell
                   engineering". On the one hand, MIBOM uses the adhesion
                   strength of mussel mucin and hydrogel to fix the fracture,
                   replacing the existing bone plate solution. On the other hand,
-                  MIBOM introduces Piezo regulation system to solve the problem
-                  of implant removal by regulating material degradation through
-                  cells. In terms of experiments, we have completed the
+                  MIBOM introduces a Piezo regulation system to solve the
+                  problem of implant removal by regulating material degradation
+                  through cells. In terms of experiments, we have completed the
                   purification of mussel mucin, the expression and testing of
-                  Piezo pathway, and the testing of cells under uv toxicity.
+                  the Piezo pathway, and the testing of cells under UV toxicity.
                 </p>
                 <p class="body-1">
                   In purposed implement, we have developed corresponding
@@ -189,20 +189,24 @@
                   patients and the main application scenarios are routine
                   traumatic fractures. But the main customers, who will
                   influence the use of MIBOM, are still doctors and hospital
-                  decision makers. MIBOM plans to build strong partnerships with
-                  hospitals and their orthopaedic departments to strengthen
+                  decision-makers. MIBOM plans to build strong partnerships with
+                  hospitals and their orthopedic departments to strengthen
                   customer relationships.
                 </p>
                 <p class="body-1">
-                  In the long-term planning, MIBOM will develop into beauty,
-                  trauma and repair products. In the long-term planning, MIBOM's
-                  target users are individual consumers. In the development
-                  plan, MIBOM develops two different product lines:
-                  popularization and precision, and the corresponding users are
-                  also divided into basic users and patients with complicated
-                  diseases with economic basis.
+                  In long term planning, MIBOM will develop into beauty, trauma
+                  and repair products. In the long-term planning, MIBOM's target
+                  users are individual consumers. In the development plan, MIBOM
+                  develops two different product lines: popularization and
+                  precision, and the corresponding users are also divided into
+                  basic users and patients with complicated diseases with an
+                  economic basis.
                 </p>
-                <v-img src="https://2021.igem.org/wiki/images/5/5c/T--ShanghaiTech_China--ent--1.jpg" contain max-height="600px" />
+                <v-img
+                  src="https://2021.igem.org/wiki/images/5/5c/T--ShanghaiTech_China--ent--1.jpg"
+                  contain
+                  max-height="600px"
+                />
               </v-card-text>
               <v-row justify="center">
                 <v-card-title class="text-h4 title" id="operation"
@@ -217,49 +221,49 @@
                 <v-list class="list_number">
                   <v-list-item>
                     <v-list-item-content>
-                      <v-list-item-title class="body-1">
+                      <p class="body-1">
                         1. Remove the MIBOM 30 minutes before use and thaw it
                         until it becomes liquid.
-                      </v-list-item-title>
+                      </p>
                     </v-list-item-content>
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-content>
-                      <v-list-item-title class="body-1">
+                      <p class="body-1">
                         2. After thawing and before use, it is necessary to mix
                         slightly to make the components in the gel evenly
                         distributed and avoid excessive local concentration.
-                      </v-list-item-title>
+                      </p>
                     </v-list-item-content>
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-content>
-                      <v-list-item-title class="body-1">
+                      <p class="body-1">
                         3. The fracture should be reduced, and the fracture end
                         should be properly cleaned to ensure no soft tissue
                         residue.
-                      </v-list-item-title>
+                      </p>
                     </v-list-item-content>
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-content>
-                      <v-list-item-title class="body-1">
+                      <p class="body-1">
                         4. Shake slightly before opening, and fill into the
                         injection device after sterile opening. The injection
                         device injects MIBOM gel along the fracture/fracture
                         suture.
-                      </v-list-item-title>
+                      </p>
                     </v-list-item-content>
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-content>
-                      <v-list-item-title class="body-1">
+                      <p class="body-1">
                         5. After the injection of the colloid, the reduction
                         should be confirmed again. Then, open the UV device and
                         irradiated the colloid part for 2-8 seconds to fix the
                         material. If second crosslinking is needed, add some
                         crosslinking agents to make the double crosslinking.
-                      </v-list-item-title>
+                      </p>
                     </v-list-item-content>
                   </v-list-item>
                 </v-list>
@@ -275,19 +279,23 @@
               <v-card-text>
                 <p class="body-1">
                   To make the material easier to operate, we added a hardware
-                  system for treatment. The operation of MIBOM is reduction,
-                  followed by injection of gel for adjustment. And finally UV
-                  light (2-8s) is turned on to help solidify the material and
-                  bond the fracture end to high strength. By setting up the gel
-                  injection hardware as well as the UV hardware, we integrate
-                  the two steps of "injection" and "curing" into one operating
-                  hardware. This simplifies the operation, reduces the
-                  complexity of product use guidance, and at the same time
-                  lowers the operation threshold of traumatic orthopedic
-                  surgery, which is conducive to doctors in areas with low
-                  qualifications or lack of medical resources.
+                  system for treatment. The operation of MIBOM is reduced to
+                  reduction, followed by injection of gel for adjustment.
+                  Finally UV light (2-8s) is turned on to help solidify the
+                  material and bond the fracture end to high strength. By
+                  setting up the gel injection hardware as well as the UV
+                  hardware, we integrate the two steps of "injection" and
+                  "curing" into one operating hardware. This simplifies the
+                  operation, reduces the complexity of product use guidance, and
+                  at the same time lowers the operation threshold of traumatic
+                  orthopedic surgery, which is conducive to doctors in areas
+                  with low qualifications or lack of medical resources.
                 </p>
-                <v-img src="https://2021.igem.org/wiki/images/9/9c/T--ShanghaiTech_China--har--Real_1.jpg" contain max-height="600px"/>
+                <v-img
+                  src="https://2021.igem.org/wiki/images/9/9c/T--ShanghaiTech_China--har--Real_1.jpg"
+                  contain
+                  max-height="600px"
+                />
               </v-card-text>
               <v-row justify="center">
                 <v-card-title class="text-h4 title" id="safety"
@@ -351,7 +359,7 @@
                   technology advantages to rapidly develop innovative materials
                   for wound repair, beauty and other track, and develop basic
                   products with low price and popularity. At the same time,
-                  MIBOM will extending the customer base by broadening hospital
+                  MIBOM will extend the customer base by broadening hospital
                   customers to individual consumers, which will meet their needs
                   in the field of wound, beauty and other fields, providing
                   personalized skin protection products or wound repair products
@@ -359,7 +367,7 @@
                   Accelerating product development for individual consumers,
                   realizing industrial production and broadening the narrow
                   application scenarios of MIBOM will be conducive to the
-                  capital turnover of MIBOM and provide financial guarantee for
+                  capital turnover of MIBOM and provide a financial guarantee for
                   R&D risks. In addition, by popularizing basic products, MIBOM
                   can establish its brand as soon as possible, so that the
                   recognition of MIBOM in the medical field and the public can
