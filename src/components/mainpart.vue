@@ -424,7 +424,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.4: Merge of the green channel and red channel,
@@ -443,7 +443,7 @@
                     </v-container>
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Video.1: Fluorescence change of cells under the
@@ -463,7 +463,7 @@
                     </v-container>
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Video.2: Faster fluorescence change of cells under the
@@ -480,7 +480,7 @@
                     </v-container>
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Video.3: Fluorescence change of cells in control group,
@@ -519,10 +519,10 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
-                        Fig.4a: Green channel of the cells 24h after shaking,
+                        Fig.5a: Green channel of the cells 24h after shaking,
                         identifying the expression of EGFP, 40X objective
                       </p>
                     </v-row>
@@ -533,10 +533,10 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
-                        Fig.4b: Red channel of the cells to identify the
+                        Fig.5b: Red channel of the cells to identify the
                         Piezo1.1, 40X objective
                       </p>
                     </v-row>
@@ -547,10 +547,10 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
-                        Fig.4c: Merge green and red channel to colocalize the
+                        Fig.5c: Merge green and red channel to colocalize the
                         cells
                       </p>
                     </v-row>
@@ -561,7 +561,7 @@
                   >
                     <p class="body-1">
                       <strong>
-                        Fig.4: Downstream pathway verification of pGL4.30-GFP
+                        Fig.5: Downstream pathway verification of pGL4.30-GFP
                       </strong>
                     </p>
                   </v-row>
