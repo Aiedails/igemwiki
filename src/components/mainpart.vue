@@ -166,7 +166,7 @@
                   Adhesion system
                 </v-card-title>
               </v-row>
-              <v-card-title class="text-h5"> Overview </v-card-title>
+              <v-card-title class="text-h5">Overview</v-card-title>
               <v-card-text>
                 <p class="body-1">
                   The first system of MIBOM is the adhesion system. We got
@@ -196,7 +196,7 @@
                   tag is used to purify mfp5 by affinity chromatography.
                   Finally, two repeats of the natural mfp5 gene follow the
                   His-tag. The previous study has proved that the amino acid
-                  length and tyrosine concentration in the mussel foot proteins
+                  length and tyrosine concentration in the mussel foot protein
                   affect its adhesive capacity.
                 </p>
               </v-card-text>
@@ -208,7 +208,7 @@
               <v-card-text>
                 <p class="body-1">
                   Our goal is to make the yield of mfp5-2 as high as possible,
-                  so we choose the BL21(DE3) strain to be our expression chasis
+                  so we choose the BL21(DE3) strain to be our expression chassis
                   because the RNA polymerase of T7 phage is integrated into the
                   genome of BL21(DE3), adapting to pET 28a vector. The T7
                   promoter in this vector is a strong promoter, which can
@@ -230,16 +230,16 @@
                   Mfp5-2 is a special protein that has obviously distinct
                   properties compared with other soluble proteins. First, since
                   the length of Mfp5-2 is quite short and its natural form
-                  contains irregular structures, the induced BL21(DE3)need to be
-                  cultured at 37° for 8-10 hours to get the highest expression.
-                  Moreover, most Mfp5-2 exist as the form of inclusion body in
-                  BL21(DE3), which means denaturation is required to dissolve
-                  all the insoluble mfp5-2.
+                  contains irregular structures, the induced BL21(DE3) need to
+                  be cultured at 37° for 8-10 hours to get the highest
+                  expression. Moreover, most Mfp5-2 exist as the form of
+                  inclusion body in BL21(DE3), which means denaturation is
+                  required to dissolve all the insoluble mfp5-2.
                 </p>
                 <p class="body-1">
                   The modification of mfp5-2 employs tyrosinase, whose function
                   is to catalyze the oxidate of tyrosine residues into DOPA
-                  groups, The two hydroxyl groups on the benzene ring of DOPA
+                  groups. The two hydroxyl groups on the benzene ring of DOPA
                   can form non-covalent bonds on the surface of other materials
                   in the aqueous environment. However, the optimal pH of
                   tyrosinase, which is around 6.0, indicates that we need to
@@ -256,7 +256,7 @@
               </v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  We prepare many kinds of buffers for different processes.
+                  We prepared many kinds of buffers for different processes.
                 </p>
                 <p class="body-1">
                   Lysis Buffer: 6 M guanidine hydrochloride, 50 mM potassium
@@ -275,7 +275,7 @@
                   pH 5.5
                 </p>
               </v-card-text>
-              <v-card-title class="text-h"> Induction </v-card-title>
+              <v-card-title class="text-h6"> Induction </v-card-title>
               <v-card-text>
                 <p class="body-1">
                   The BL21(DE3) is cultured in a 1L system. We use IPTG to
@@ -289,7 +289,7 @@
                 contain
                 max-height="600px"
               />
-              <v-card-title class="text-h"> purification </v-card-title>
+              <v-card-title class="text-h6">Purification</v-card-title>
               <v-card-text>
                 <p class="body-1">
                   The harvested BL21 is resuspended by lysis buffer and lysed by
@@ -297,14 +297,14 @@
                   Insoluble mfp5-2 will then quickly dissolve in the buffer.
                   Then centrifugation is needed to separate the supernatant,
                   containing mfp5-2, from sediment. The supernatant is then
-                  loaded into the nickel affinity chromatography column, The his
-                  tag of mfp5-2 from a strong connection with the nickel column
-                  while other proteins just flow through. Then wash buffer is
-                  used to clear other proteins and elution buffer is used to
-                  elute mfp5-2.
+                  loaded into the nickel affinity chromatography column, the
+                  his-tag of mfp5-2 form a strong connection with the nickel
+                  column while other proteins just flow through. Then wash
+                  buffer is used to clear other proteins and elution buffer is
+                  used to elute mfp5-2.
                 </p>
               </v-card-text>
-              <v-card-title class="text-h"> Modification </v-card-title>
+              <v-card-title class="text-h6"> Modification </v-card-title>
               <v-card-text>
                 <p class="body-1">
                   The pH of the eluted mfp5-2 solution is 7.4, which may greatly
@@ -326,8 +326,9 @@
                   adhesive ability but does not have cohesion, so the Mfp-5
                   itself can not adjoin objects together. In other words, the
                   Mfp-5 itself is just a kind of slightly viscous liquid, if you
-                  want it to adjoin objects, you need to wait for a very long
-                  time(about 24h) until it is completely dry(See our results on
+                  want to use it to adjoin objects, you need to wait for a very
+                  long time(about 24h) until it is completely dry(See our
+                  results on
                   <a
                     href="https://2021.igem.org/Team:ShanghaiTech_China/Results"
                     >Results</a
@@ -344,17 +345,17 @@
                   friendly for clinicians to operate.
                 </p>
                 <p class="body-1">
-                  However, the way to solidify the gel is important. Setting
-                  times of an orthopedic adhesive are of great importance in
-                  practical application.<sup
+                  However, the way to solidify the gel needs to be considered
+                  seriously. Setting times of an orthopedic adhesive are of
+                  great importance in practical application.<sup
                     @click="$vuetify.goTo('#references', options)"
-                    >[2-1]</sup
+                    >[1]</sup
                   >
                   Reversible adhesiveness is essential to provide ample working
                   window for surgeons to splice fragments which need repeated
                   adjustments for full reduction.<sup
                     @click="$vuetify.goTo('#references', options)"
-                    >[2-2]</sup
+                    >[2]</sup
                   >
                   This is consistent with our interview results. After many
                   iterations, we decided on a dual-crosslinking system,
@@ -371,15 +372,15 @@
                   Some papers have developed some flexible osteogenic glue based
                   on the mixing of several reagents<sup
                     @click="$vuetify.goTo('#references', options)"
-                    >[2-1]</sup
+                    >[1]</sup
                   >. But actually, the extended setting process could take up
-                  extensive time during operation which is obviously unfavored,
-                  and too fast setting of the adhesive could also leave surgeon
-                  insufficient time to prepare and fully mixing adhesive
-                  components which are also not desired<sup
+                  extensive time during operation which is obviously unfavored.
+                  And a too fast setting of the adhesive could also leave
+                  surgeons insufficient time to prepare and fully mixing
+                  adhesive components which are also not desired<sup
                     @click="$vuetify.goTo('#references', options)"
-                    >[2-3]</sup
-                  >. So we decide to change the strategy and introduce a
+                    >[3]</sup
+                  >. So we decided to change the strategy and introduce a
                   photo-crosslinking network to make the curing completely
                   controllable.
                 </p>
@@ -393,15 +394,15 @@
                   methacryloyl modification was proved to have good
                   biocompatibility and suitable for photo-crosslinking<sup
                     @click="$vuetify.goTo('#references', options)"
-                    >[2-4]</sup
+                    >[4]</sup
                   >. And it provides a broad spectrum of tunable parameters,
-                  which lead to the creation of hydrogel networks with different
-                  stiffness and pore architectures<sup
+                  which leads to the creation of hydrogel networks with
+                  different stiffness and pore architectures<sup
                     @click="$vuetify.goTo('#references', options)"
-                    >[2-5][2-6][2-7][2-8]</sup
+                    >[5][6][7][8]</sup
                   >. Based on these advantages, we chose GelMA as our ideal
-                  monomer. At first, we want to purchase GelMA from the company,
-                  but due to financial constraints, we had to make the
+                  monomer. At first, we planed to purchase GelMA from the
+                  company, but due to financial constraints, we had to make the
                   preparation of GelMA by ourselves. We prepared the GelMA with
                   different degrees of methacryloyl modification by adding a
                   different portion of acrylic anhydride to the gelatin
@@ -438,12 +439,12 @@
               <v-card-title class="text-h6"> Phototoxicity test </v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  We had concerned that 405nm excitation light will kill the
-                  cells during the solidification. So we designed a
-                  phototoxicity test to see the influence of light. We tested
-                  phototoxicity by directly irradiating cells for 10s, 30s and
-                  60s. This irradiation time is much longer than the need for
-                  curing.
+                  We had concerned that the 405nm excitation light may kill the
+                  cells during the solidification step. So we designed a
+                  phototoxicity test to observe the influence of light. We
+                  tested phototoxicity by directly irradiating cells for 10s,
+                  30s and 60s. This irradiation time is much longer than the
+                  need for curing.
                 </p>
               </v-card-text>
               <v-img
@@ -457,7 +458,7 @@
               <v-card-text>
                 <p class="body-1">
                   Live/dead staining can be performed with Fluorescein
-                  diacetate(FDA) and Propidium Iodide(PI). FDA is taken up by
+                  Diacetate(FDA) and Propidium Iodide(PI). FDA is taken up by
                   cells that convert the non-fluorescent FDA into the green
                   fluorescent metabolite fluorescein. The measured signal serves
                   as the indicator for viable cells, as the conversion is
@@ -502,14 +503,14 @@
                   of papers have shown cells' viability in hydrogels such as
                   GelMA and Alginate<sup
                     @click="$vuetify.goTo('#references', options)"
-                    >[2-4][2-5][2-6][2-7]</sup
-                  >, We need to make sure that the cells survive until callus
+                    >[4][5][6][7]</sup
+                  >, we needed to make sure that the cells survive until callus
                   formation. However, due to the epidemic, we were unable to
-                  obtain GelMA at first, so we choose the alginate to test
-                  cells' viability in the hydrogel. The cells are encapsulated
-                  into the hydrogel and we do this 3D culture for 21 days.
-                  Live/dead staining was done with FDA/PI to get a survival
-                  curve. The same as the ways mentioned above.
+                  obtain GelMA at first, so we chose the alginate to test cells'
+                  viability in the hydrogel. The cells were encapsulated into
+                  the hydrogel and we did this 3D culture for 21 days. Live/dead
+                  staining was done with FDA/PI to get a survival curve. The
+                  same as the ways mentioned above.
                 </p>
               </v-card-text>
               <v-img
@@ -527,9 +528,9 @@
                   the school of materials and borrowed the rheometer to test the
                   rheological properties. All rheological properties are
                   measured by the TA Discovery HR-2 hybrid rheometer. We also
-                  test the change of Rheological properties during
-                  photo-crosslinking and compare other new osteogenic glue with
-                  our MIBOM.
+                  tested the change of rheological properties during
+                  photo-crosslinking process and compared other new osteogenic
+                  glue with our MIBOM.
                 </p>
               </v-card-text>
               <v-img
@@ -548,8 +549,8 @@
                   The degradation of the biomaterial is important. Although the
                   GelMA and Alginate are all degradable materials, the rate of
                   degradation is important during bone recovery. We also
-                  consider a problem that is often ignored: the recovery time of
-                  people of different ages is different. We tried to find a
+                  considered a problem that is easily ignored: the recovery time
+                  of people of different ages is different. We tried to find a
                   relatively "smart" regulation system to control the
                   degradation of materials with bone growth. We found that with
                   the growth of bone, the gel would be squeezed. The force
@@ -569,15 +570,15 @@
                   pressure regulation. Piezo1 is one of the mechanosensitive
                   cation-selective channels found in higher eukaryotic
                   cells.<sup @click="$vuetify.goTo('#references', options)"
-                    >[3-1]</sup
+                    >[9]</sup
                   >
                   Its broad role in mechanotransduction caught our attention.
                   When researchers applied pressure to cells with Piezo1
                   proteins, a significant current change could be observed<sup
                     @click="$vuetify.goTo('#references', options)"
-                    >[3-2]</sup
+                    >[10]</sup
                   >, because Piezo1 channels were mechanically activated and
-                  induce the permeation of calcium ions.
+                  induced the permeation of calcium ions.
                 </p>
                 <p class="body-1">
                   In our design, we made use of the sensitivity to the
@@ -598,12 +599,12 @@
                   Piezo1.1) to optimize its single-channel conductance and
                   sensitized mechanosensitivity.<sup
                     @click="$vuetify.goTo('#references', options)"
-                    >[3-3]</sup
+                    >[11]</sup
                   >
-                  We are grateful to get the plasmid with gene of Piezo1.1 from
-                  the professor in charge of the original work. Piezo1.1 and a
-                  red fluorescent protein mRuby2 after it is placed on one
-                  plasmid.
+                  We are grateful for getting the plasmid with gene of Piezo1.1
+                  from the professor in charge of the original work. Piezo1.1
+                  and a red fluorescent protein mRuby2 after it are placed on
+                  one plasmid.
                 </p>
               </v-card-text>
               <v-img
@@ -622,7 +623,7 @@
                   permuted GFP (cpGFP), calmodulin (CaM), and a
                   calmodulin-binding peptide(CBP). Without calcium, GCaMP6m only
                   has very low emitted light. When four calciums attach to CaM,
-                  the conformation of cpGFP will be changed, which lead to an
+                  the conformation of cpGFP will be changed, which leads to an
                   obvious increase of emitted light at 510nm. We inserted it
                   after CMV promoter using pEGFP as the backbone, to make sure
                   GCaMP6m can be expressed in our cells.
@@ -651,12 +652,12 @@
                   protein by some, is a ubiquitous protein found in all tissues
                   examined thus far.<sup
                     @click="$vuetify.goTo('#references', options)"
-                    >[3-4]</sup
+                    >[12]</sup
                   >
                   With the binding of three calcium ions, the calmodulin
                   molecule can then activate one calcineurin molecule.<sup
                     @click="$vuetify.goTo('#references', options)"
-                    >[3-5]</sup
+                    >[13]</sup
                   >
                   Calcineurin is a serine/threonine phosphatase. Upon activation
                   by calmodulin, calcineurin dephosphorylates the cytoplasmic
@@ -668,7 +669,7 @@
                   exposes a nuclear localization signal which causes NFATs to be
                   imported into the nucleus.<sup
                     @click="$vuetify.goTo('#references', options)"
-                    >[3-6]</sup
+                    >[14]</sup
                   >
                   Then NFATs in the nucleus recognize specific DNA
                   sequences——the NFAT-response elements (REs), derived from
@@ -676,13 +677,13 @@
                   and bind to the sequence by cooperating with partner
                   transcription factors such as AP-1.<sup
                     @click="$vuetify.goTo('#references', options)"
-                    >[3-7]</sup
+                    >[15]</sup
                   >
-                  In our design, we use plasmid pGL4.30, where our target genes
+                  In our design, we used plasmid pGL4.30, where our target genes
                   are driven by 3 repeats of IL2 promoter (
                   <strong>IL2 NFAT-RE</strong>). The binding of nuclear NFATs
-                  and NFAT-REs promote the expression of the downstream enzyme
-                  gene and also the number of enzymes.
+                  and NFAT-REs promotes the expression of the downstream enzyme
+                  gene and also increases the number of enzymes.
                 </p>
               </v-card-text>
               <v-img
@@ -696,13 +697,13 @@
               <v-card-text>
                 <p class="body-1">
                   We construct a downstream plasmid contains NFAT-RE and a
-                  report gene after it. In our design, the reporter gene is the
-                  alginate enzyme. When Piezo1 is activated, alginate enzymes
-                  are secreted out of the cells and degrade the surrounding
-                  hydrogel. To verify the pathway, we change the report gene to
-                  a green fluorescent protein EGFP. The colocalization of two
-                  fluorescent proteins can help us to verify the downstream
-                  pathway. See our results on our
+                  reporter gene after it. In our design, the reporter gene is
+                  the alginate enzyme. When Piezo1 is activated, alginate
+                  enzymes are secreted out of the cells and degrade the
+                  surrounding hydrogel. To verify the pathway, we change the
+                  report gene to a green fluorescent protein EGFP. The
+                  colocalization of two fluorescent proteins can help us to
+                  verify the downstream pathway. See our results on our
                   <a
                     href="https://2021.igem.org/Team:ShanghaiTech_China/Results"
                     >Results</a
@@ -719,12 +720,11 @@
               <v-card-text>
                 <p class="body-1">
                   Alginate enzyme can degrade alginate, and its product is
-                  alginate Disaccharide, trisaccharide, and tetrasaccharide.
+                  alginate disaccharide, trisaccharide, and tetrasaccharide.
                   Through literature reading, we found an article applying
                   alginate enzyme to sodium alginate degradation, but the
-                  article is alginate enzyme expressed in <i>E. coli</i
-                  ><sup @click="$vuetify.goTo('#references', options)"
-                    >[3-8]</sup
+                  article is about alginate enzyme expressed in <i>E. coli</i
+                  ><sup @click="$vuetify.goTo('#references', options)">[16]</sup
                   >. Because we need to express and secrete alginate enzyme
                   after eukaryotic cells are stimulated by stress in the process
                   of bone repair, we replaced the secretory peptide of
@@ -740,7 +740,7 @@
               <v-img
                 src="https://2021.igem.org/wiki/images/7/78/T--ShanghaiTech_China--design--fig17.jpg"
                 contain
-                max-height="600px"
+                max-height="400px"
               />
               <v-row justify="center">
                 <v-card-title class="text-h4 title" id="drug">
@@ -750,16 +750,16 @@
               <v-card-title class="text-h5"> Overview </v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  Drugs can be encapsulated into the hydrogel by mixing the
-                  drugs and monomers before curing. When it is solidified, the
-                  drugs can be released and play a role in bone repair. In this
-                  part, we do a drug release experiment to identify the drug
-                  release process and assisted our math modeling. We aim to
-                  build a releasing model to help clinicians to identify the
-                  kinds and amount of the drugs. In practice, clinicians can
-                  simply mix the drugs with the monomers before curing, the
-                  drugs are encapsulated into the hydrogel and release as the
-                  material degrades.
+                  Drugs can be encapsulated into the hydrogel in the way of
+                  mixing the drugs and monomers before curing. When it is
+                  solidified, the drugs can be released and play a role in bone
+                  repair. In this part, we did a drug release experiment to
+                  identify the drug release process and assist our math
+                  modeling. We aimed to build a releasing model to help
+                  clinicians to identify the kinds and amount of the drugs. In
+                  practice, clinicians can simply mix the drugs with the
+                  monomers before curing, the drugs are encapsulated into the
+                  hydrogel and released as the material degrades.
                 </p>
               </v-card-text>
               <v-card-title class="text-h5"> Drug choices </v-card-title>
@@ -847,6 +847,72 @@
                   >
                   page)
                 </p>
+                <v-img
+                  src="https://2021.igem.org/wiki/images/6/60/T--ShanghaiTech_China--design--fig18.jpg"
+                  contain
+                  max-height="600px"
+                />
+              </v-card-text>
+              <v-row justify="center">
+                <v-card-title class="text-h4 title" id="suicide">
+                  Suicide system
+                </v-card-title>
+              </v-row>
+              <v-card-title class="text-h5">Overview</v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  Since we use E. coli to express and purify mfps, it is
+                  necessary to make sure that E. coli can not spread into the
+                  natural environment and damage the ecological equilibrium.
+                  Therefore, we design a suicide system to keep gene-edited E.
+                  coli into the lab as insurance. The system contains two basic
+                  parts--a sok gene expression part regulated by lac operon and
+                  a hox gene expression part regulated by Trp operon. These two
+                  parts interact with each other to lock E. coli into our
+                  culture system.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h5"
+                >Hok gene expression part</v-card-title
+              >
+              <v-card-text>
+                <p class="body-1">
+                  Hok is a transmembrane protein that is quite toxic to E. coli
+                  by damaging its membrane integrity. We choose Hok as our
+                  target toxic protein because it is a typical and effective
+                  protein that has been improved by many researchers. Since the
+                  expression of the Hok gene need to be inhibited when E. coli
+                  is normally cultured, we combine it with the Trp operon.
+                  Therefore, when E. coli is cultured in the system containing
+                  Trp, the expression of the Hok gene will be inhibited, which
+                  means E. coli can proliferate and grow normally. Once it leaks
+                  into the natural environment which has fewer Trp, the toxic
+                  Hok will be expressed and kill E. coli, preventing further
+                  pollution.
+                </p>
+              </v-card-text>
+              <v-card-title class="text-h5"
+                >Sok gene expression part</v-card-title
+              >
+              <v-card-text>
+                <p class="body-1">
+                  However, considering the leaking expression of the Hok gene
+                  even if E. coli grows in our culture system, we design a
+                  second pathway to eliminate this risk. Sok, a small RNA, can
+                  specifically bind to the mRNA of mok which encodes the leading
+                  peptide of Hok, protecting E. coli from Hok. Since the Sok
+                  gene is required during normal culture, we combine it with lac
+                  operon. Therefore, when E. coli is cultured in the system
+                  containing IPTG, the Sok gene will be expressed and further
+                  inhibit the expression of Hok. Once it leaks into the natural
+                  environment which contains no IPTG, the Sok gene will not be
+                  expressed anymore.
+                </p>
+                <v-img
+                  src="https://2021.igem.org/wiki/images/e/eb/T--ShanghaiTech_China--design--tasystem.jpg"
+                  contain
+                  max-height="600px"
+                />
               </v-card-text>
             </v-container>
           </v-card>
@@ -872,7 +938,7 @@
               </v-row>
               <v-card-text>
                 <p class="body-2">
-                  [2-1]: Tang, J., Xi, K., Chen, H., Wang, L., Li, D., Xu, Y.,
+                  [1]: Tang, J., Xi, K., Chen, H., Wang, L., Li, D., Xu, Y.,
                   Xin, T., Wu, L., Zhou, Y., Bian, J., Cai, Z., Yang, H., Deng,
                   L., Gu, Y., Cui, W., Chen, L., 2021. Flexible Osteogenic Glue
                   as an All‐In‐One Solution to Assist Fracture Fixation and
@@ -880,80 +946,79 @@
                   doi:10.1002/adfm.202102465
                 </p>
                 <p class="body-2">
-                  [2-2]: a) C. Shao, L. Meng, M. Wang, C. Cui, B. Wang, C. R.
-                  Han, F. Xu, J. Yang, ACS Appl. Mater. Interfaces 2019, 11,
-                  5885; b) L. Han, L. W. Yan, K. F. Wang, L. M. Fang, H. P.
-                  Zhang, Y. H. Tang, Y. H. Ding, L. T. Weng, J. L. Xu, J. Weng,
-                  Y. J. Liu, F. Z. Ren, X. Lu, NPG Asia Mater. 2017, 9, 12.
+                  [2]: a) C. Shao, L. Meng, M. Wang, C. Cui, B. Wang, C. R. Han,
+                  F. Xu, J. Yang, ACS Appl. Mater. Interfaces 2019, 11, 5885; b)
+                  L. Han, L. W. Yan, K. F. Wang, L. M. Fang, H. P. Zhang, Y. H.
+                  Tang, Y. H. Ding, L. T. Weng, J. L. Xu, J. Weng, Y. J. Liu, F.
+                  Z. Ren, X. Lu, NPG Asia Mater. 2017, 9, 12.
                 </p>
                 <p class="body-2">
-                  [2-3]:D. F. Farrar, Int. J. Adhes. Adhes. 2012, 33, 89.
+                  [3]:D. F. Farrar, Int. J. Adhes. Adhes. 2012, 33, 89.
                 </p>
                 <p class="body-2">
-                  [2-4]: J.W. Nichol, S.T. Koshy, H. Bae, C.M. Hwang, S.
-                  Yamanlar, A. Khademhosseini, Cell-laden microengineered
-                  gelatin methacrylate hydrogels,Biomaterials 31(2010)
-                  5536e5544.
+                  [4]: J.W. Nichol, S.T. Koshy, H. Bae, C.M. Hwang, S. Yamanlar,
+                  A. Khademhosseini, Cell-laden microengineered gelatin
+                  methacrylate hydrogels,Biomaterials 31(2010) 5536e5544.
                 </p>
                 <p class="body-2">
-                  [2-5]: Pepelanova, I.; Kruppa, K.; Scheper, T.; Lavrentieva,
-                  A. Gelatin-Methacryloyl (GelMA) hydrogels with defined degree
-                  of functionalization as a versatile toolkit for 3D cell
-                  culture and extrusion bioprinting. Bioengineering 2018, 5, 55.
+                  [5]: Pepelanova, I.; Kruppa, K.; Scheper, T.; Lavrentieva, A.
+                  Gelatin-Methacryloyl (GelMA) hydrogels with defined degree of
+                  functionalization as a versatile toolkit for 3D cell culture
+                  and extrusion bioprinting. Bioengineering 2018, 5, 55.
                 </p>
                 <p class="body-2">
-                  [2-6]: Loessner, D.; Meinert, C.; Kaemmerer, E.; Martine,
-                  L.C.; Yue, K.; A Levett, P.; Klein, T.J.; Melchels, F.P.W.;
+                  [6]: Loessner, D.; Meinert, C.; Kaemmerer, E.; Martine, L.C.;
+                  Yue, K.; A Levett, P.; Klein, T.J.; Melchels, F.P.W.;
                   Khademhosseini, A.; Hutmacher, D.W. Functionalization,
                   preparation and use of cell-laden gelatin methacryloyl–based
                   hydrogels as modular tissue culture platforms. Nat. Protoc.
                   2016, 11, 727–746.
                 </p>
                 <p class="body-2">
-                  [2-7]: Nichol, J.W.; Koshy, S.T.; Bae, H.; Hwang, C.M.;
+                  [7]: Nichol, J.W.; Koshy, S.T.; Bae, H.; Hwang, C.M.;
                   Yamanlar, S.; Khademhosseini, A. Cell-laden microengineered
                   gelatin methacrylate hydrogels. Biomaterials 2010, 31,
                   5536–5544.
                 </p>
                 <p class="body-2">
-                  [2-8]: Bulcke, A.I.V.D.; Bogdanov, B.; De Rooze, N.; Schacht,
+                  [8]: Bulcke, A.I.V.D.; Bogdanov, B.; De Rooze, N.; Schacht,
                   E.H.; Cornelissen, M.; Berghmans, H. Structural and
                   rheological properties of methacrylamide modified gelatin
                   hydrogels. Biomacromolecules 2000, 1, 31–38.
                 </p>
                 <p class="body-2">
-                  [3-1]: Coste, B., Mathur, J., Schmidt, M., Earley, T. J.,
+                  [9]: Coste, B., Mathur, J., Schmidt, M., Earley, T. J.,
                   Ranade, S., Petrus, M. J., . . . Patapoutian, A. (2010).
                   Piezo1 and Piezo2 Are Essential Components of Distinct
                   Mechanically Activated Cation Channels. Science, 330(6000),
                   55-60. doi:doi:10.1126/science.1193270
                 </p>
                 <p class="body-2">
-                  [3-2]: Moroni, M., Servin-Vences, M.R., Fleischer, R.,
+                  [10]: Moroni, M., Servin-Vences, M.R., Fleischer, R.,
                   Sánchez-Carranza, O., Lewin, G.R., 2018. Voltage gating of
                   mechanosensitive PIEZO channels. Nature Communications 9..
                   doi:10.1038/s41467-018-03502-7
                 </p>
                 <p class="body-2">
-                  [3-3]: Jie Geng, Wenhao Liu, Heng Zhou, Tingxin Zhang, Li
-                  Wang, Mingmin Zhang, Yiran Li, Bo Shen, Xueming Li, Bailong
-                  Xiao, A Plug-and-Latch Mechanism for Gating the
-                  Mechanosensitive Piezo Channel, Neuron,Volume 106, Issue
-                  3,2020, Pages 438-451.e6,ISSN 0896-6273
+                  [11]: Jie Geng, Wenhao Liu, Heng Zhou, Tingxin Zhang, Li Wang,
+                  Mingmin Zhang, Yiran Li, Bo Shen, Xueming Li, Bailong Xiao, A
+                  Plug-and-Latch Mechanism for Gating the Mechanosensitive Piezo
+                  Channel, Neuron,Volume 106, Issue 3,2020, Pages
+                  438-451.e6,ISSN 0896-6273
                 </p>
                 <p class="body-2">
-                  [3-4]: Thomas H. Crouch and Claude B. Klee Biochemistry 1980
-                  19 (16), 3692-3698, DOI: 10.1021/bi00557a009
+                  [12]: Thomas H. Crouch and Claude B. Klee Biochemistry 1980 19
+                  (16), 3692-3698, DOI: 10.1021/bi00557a009
                 </p>
-                <p class="body-2">[3-5]: doi: 10.4149/gpb_2017022</p>
+                <p class="body-2">[13]: doi: 10.4149/gpb_2017022</p>
                 <p class="body-2">
-                  [3-6]: Yousang Gwack, Stefan Feske, Sonal Srikanth, Patrick G.
+                  [14]: Yousang Gwack, Stefan Feske, Sonal Srikanth, Patrick G.
                   Hogan, Anjana Rao, Signalling to transcription: Store-operated
                   Ca2+ entry and NFAT activation in lymphocytes, Cell Calcium,
                   Volume 42, Issue 2, 2007, Pages 145-156, ISSN 0143-4160,
                 </p>
                 <p class="body-2">
-                  [3-7]: Zhang, W., Takahara, T., Achiha, T., Shibata, H., Maki,
+                  [15]: Zhang, W., Takahara, T., Achiha, T., Shibata, H., Maki,
                   M., 2019. Cellular Ca2+-Responding Nanoluciferase Reporter
                   Gene System Directed by Tandemly Repeated Pseudo-palindromic
                   NFAT-Response Elements, in: Methods in Molecular Biology.
@@ -961,7 +1026,7 @@
                   doi:10.1007/978-1-4939-9030-6_7
                 </p>
                 <p class="body-2">
-                  [3-8]: Yan, J., Chen, P., Zeng, Y., Men, Y., Mu, S., Zhu, Y.,
+                  [16]: Yan, J., Chen, P., Zeng, Y., Men, Y., Mu, S., Zhu, Y.,
                   Chen, Y., Sun, Y., 2019. The Characterization and Modification
                   of a Novel Bifunctional and Robust Alginate Lyase Derived from
                   Marinimicrobium sp. H1. Marine Drugs 17, 545..
