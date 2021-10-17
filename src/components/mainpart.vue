@@ -278,6 +278,22 @@
                   We still face multiple PDCA cycles to refine the project and
                   the subsequent technology transformation logic.
                 </p>
+                <p class="body-1">
+                  We have conducted four cycles, during which we interviewed
+                  various stakeholders. From patients to doctors, from
+                  technology experts to entrepreneurial experts, from management
+                  experts to governments and regulators. In order to make MIBOM
+                  a more perfect product, we have made great efforts in
+                  practical application. We hope that MIBOM can bring benefits
+                  to patients not only in the treatment process, but also in the
+                  prevention and rehabilitation process. Therefore, we also
+                  interviewed rehabilitation doctors and other stakeholders.
+                </p>
+                <v-img
+                  src="https://2021.igem.org/wiki/images/e/ec/T--ShanghaiTech_China--hpo--20.png"
+                  contain
+                  max-height="600px"
+                />
               </v-card-text>
               <v-card-title class="text-h5">
                 2.2 Principles of investigation
@@ -855,8 +871,8 @@
                   for the experiment to validate it. In this respect, teachers
                   Haitao Yang, Wei Shen and Yan Gao provided us with technical
                   guidance. Teachers Jing Yang and Xuesong Chen provided us with
-                  laboratory and financial support. Teacher Ying Xi and Teacher
-                  Yanfen Liu provided 293T cell line for us. Many teachers from
+                  laboratory and financial support. Prof. Ying Xi and Prof.
+                  Yijun Zheng provided 293T cell line for us. Many teachers from
                   Shanghai University of Science and Technology provided
                   experimental conditions for us to carry out further
                   experiments. The Results of our Experiments can be seen from
