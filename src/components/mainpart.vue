@@ -30,12 +30,14 @@
               <template v-slot:default>
                 <thead>
                   <tr>
-                    <th>Protocols and record</th>
+                    <th class="text-center">Description</th>
+                    <th class="text-center">Protocols and record</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>
+                    <td class="text-center">Cell experiment record</td>
+                    <td class="text-center">
                       <a
                         href="https://2021.igem.org/wiki/images/9/9d/T--ShanghaiTech_China--exp--cell_experiment_record.pdf"
                         >Cell Experiment Record.pdf</a
@@ -43,15 +45,17 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td class="text-center">Protocols of cell experiment</td>
+                    <td class="text-center">
                       <a
                         href="https://2021.igem.org/wiki/images/c/c4/T--ShanghaiTech_China--exp--protocols_and_results.pdf"
-                        >Protocols And Results.pdf</a
+                        >Protocols of cell experiment.pdf</a
                       >
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td class="text-center">Protocols of cell lipofectamine LTX transfaction</td>
+                    <td class="text-center">
                       <a
                         href="https://2021.igem.org/wiki/images/c/c7/T--ShanghaiTech_China--exp--lipofectamine_ltx_and_plus_protocol_v2.0.pdf"
                         >lipofectamine_ltx_and_plus_protocol_v2.0.pdf</a
@@ -59,7 +63,8 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td class="text-center">Protocols of staining with FDA and PI</td>
+                    <td class="text-center">
                       <a
                         href="https://2021.igem.org/wiki/images/9/95/T--ShanghaiTech_China--exp--ibidi_AN33_Live_Dead_staining_with_FDA_and_PI.pdf"
                         >ibidi_AN33_Live_Dead_staining_with_FDA_and_PI.pdf</a
@@ -67,7 +72,8 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
+                    <td class="text-center">Protocols of cell lipofectamine 2000 transfaction</td>
+                    <td class="text-center">
                       <a
                         href="https://2021.igem.org/wiki/images/f/f7/T--ShanghaiTech_China--exp--Lipofectamine_2000_Reag_protocol.pdf"
                         >Lipofectamine_2000_Reag_protocol.pdf</a
