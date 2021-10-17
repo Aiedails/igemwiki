@@ -39,7 +39,7 @@
               color="primary"
               class="body-1"
             >
-                  2. Potential Customers & Unmet needs
+              2. Potential Customers & Unmet needs
             </v-stepper-step>
             <v-stepper-step
               editable
@@ -51,7 +51,7 @@
               color="primary"
               class="body-1"
             >
-                  3. MIBOM's feasibility & inventivity
+              3. MIBOM's feasibility & inventivity
             </v-stepper-step>
             <v-stepper-step
               editable
@@ -63,8 +63,7 @@
               color="primary"
               class="body-1"
             >
-                  4. Development plans and required capabilities, funds, and
-                  stakeholders
+              4. Development plans,strategies,funds and stakeholders
             </v-stepper-step>
             <v-stepper-step
               editable
@@ -76,7 +75,7 @@
               color="primary"
               class="body-1"
             >
-                  5. Long-term Impacts
+              5. Long-term Impacts
             </v-stepper-step>
           </v-stepper>
         </template>
@@ -400,7 +399,11 @@
               <v-card-title class="text-h6"> Potential Customers </v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  <v-img src="https://2021.igem.org/wiki/images/5/5c/T--ShanghaiTech_China--ent--1.jpg" contain max-height="600px" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/5/5c/T--ShanghaiTech_China--ent--1.jpg"
+                    contain
+                    max-height="600px"
+                  />
                 </p>
                 <v-row
                   justify="center"
@@ -694,7 +697,7 @@
                 </p>
                 <p class="body-1">
                   <strong>Main products:</strong> absorbable fracture internal
-                  fixation screws, absorbable medical anti-adhesion film. font>
+                  fixation screws, absorbable medical anti-adhesion film.
                 </p>
                 <p class="body-1">
                   <strong>Indications:</strong>all kinds of non - bearing parts
@@ -896,7 +899,11 @@
                   yuan in 2023.
                 </p>
                 <p class="body-1">
-                  <v-img src="https://2021.igem.org/wiki/images/c/c0/T--ShanghaiTech_China--ent--5.png" contain max-height="600px" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/c/c0/T--ShanghaiTech_China--ent--5.png"
+                    contain
+                    max-height="600px"
+                  />
                   <v-row
                     justify="center"
                     style="margin-top: 10px; margin-bottom: 10px"
@@ -920,7 +927,11 @@
                   technology will have a huge space for development.
                 </p>
                 <p class="body-1">
-                  <v-img src="https://2021.igem.org/wiki/images/4/4e/T--ShanghaiTech_China--ent--4.png" contain max-height="600px" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/4/4e/T--ShanghaiTech_China--ent--4.png"
+                    contain
+                    max-height="600px"
+                  />
                   <v-row
                     justify="center"
                     style="margin-top: 10px; margin-bottom: 10px"
@@ -972,7 +983,11 @@
                   for bone implants will gradually increase.
                 </p>
                 <p class="body-1">
-                  <v-img src="https://2021.igem.org/wiki/images/1/14/T--ShanghaiTech_China--hp--3.a.png" contain max-height="600px" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/1/14/T--ShanghaiTech_China--hp--3.a.png"
+                    contain
+                    max-height="600px"
+                  />
                   <v-row
                     justify="center"
                     style="margin-top: 10px; margin-bottom: 10px"
@@ -1019,7 +1034,11 @@
                   and in vivo experimental verification.
                 </p>
                 <p class="body-1">
-                  <v-img src="https://2021.igem.org/wiki/images/3/30/T--ShanghaiTech_China--ent--6.png" contain max-height="600px" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/3/30/T--ShanghaiTech_China--ent--6.png"
+                    contain
+                    max-height="600px"
+                  />
                   <v-row
                     justify="center"
                     style="margin-top: 10px; margin-bottom: 10px"
@@ -1191,7 +1210,11 @@
                   trauma repair and so on.
                 </p>
                 <p class="body-1">
-                  <v-img src="https://2021.igem.org/wiki/images/5/51/T--ShanghaiTech_China--ent--7.png" contain max-height="600px" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/5/51/T--ShanghaiTech_China--ent--7.png"
+                    contain
+                    max-height="600px"
+                  />
                 </p>
                 <p class="body-1">
                   For the needs of different areas, MIBOM only needs to adjust
@@ -1376,15 +1399,18 @@
               </v-card-text>
               <v-row justify="center">
                 <v-card-title class="text-h4 title" id="development">
-                  4. Development plans and required capabilities, funds, and
-                  stakeholders
+                  4. Development plans,strategies,funds and stakeholders
                 </v-card-title>
               </v-row>
               <v-card-title class="text-h5">
                 4.1 SWOT analysis & strategies
               </v-card-title>
               <v-card-text>
-                <v-img src="https://2021.igem.org/wiki/images/d/dd/T--ShanghaiTech_China--ent--8.png" contain max-height="600px" />
+                <v-img
+                  src="https://2021.igem.org/wiki/images/d/dd/T--ShanghaiTech_China--ent--8.png"
+                  contain
+                  max-height="600px"
+                />
                 <v-row
                   justify="center"
                   style="margin-top: 10px; margin-bottom: 10px"
@@ -1602,11 +1628,11 @@
                   ShanghaiTech_China has three sources of funding for an
                   entrepreneurship competition. The first is the Synbiopunk
                   Challenge hosted by Ailurusbiotech, for which we have received
-                  \$1538 and we expect to receive a total of \$16,922 by October
+                  $1538 and we expect to receive a total of $16,922 by October
                   9th. Second, there is funding from the Bio+ competition, which
                   will be held on October 27th and we expect to receive $15,384.
                   Third, TechIES2021, sponsored by Shanghai University of
-                  Science and Technology, will give us at least \$1538 in
+                  Science and Technology, will give us at least $1538 in
                   support.
                 </p>
                 <p class="body-1"></p>
@@ -1631,7 +1657,11 @@
                   market registration, 15% for market research and 15% for sales
                   promotion.
                 </p>
-                <v-img src="https://2021.igem.org/wiki/images/7/7f/T--ShanghaiTech_China--ent--9.png" contain max-height="600px" />
+                <v-img
+                  src="https://2021.igem.org/wiki/images/7/7f/T--ShanghaiTech_China--ent--9.png"
+                  contain
+                  max-height="600px"
+                />
                 <v-row
                   justify="center"
                   style="margin-top: 10px; margin-bottom: 10px"
