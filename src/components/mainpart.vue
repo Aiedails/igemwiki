@@ -170,7 +170,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.1a: SDS-PAGE of mfp5-1 expression in different
@@ -184,10 +184,10 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
-                        Fig.1b: SDS-PAGE of first purification of mfp5-1
+                        Fig.1b: SDS-PAGE of the first purification of mfp5-1
                       </p>
                     </v-row>
                   </v-col>
@@ -197,10 +197,10 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
-                        Fig.1c: SDS-PAGE of first purification of mfp5-2
+                        Fig.1c: SDS-PAGE of the first purification of mfp5-2
                       </p>
                     </v-row>
                   </v-col>
@@ -244,7 +244,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.2a: Add 20ul of protein solution to the center of
@@ -258,7 +263,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.2b: Attach PCR tube to the center of the petri dish
@@ -271,7 +281,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.2c: Fill the petri dish one by one with glass beads.
@@ -284,7 +299,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.2d: Record the weight of glass beads when separating
@@ -294,11 +314,16 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="
+                      margin-top: 10px;
+                      margin-bottom: 10px;
+                      margin-left: 16px;
+                      margin-right: 16px;
+                    "
                   >
                     <p class="body-1">
                       <strong
-                        >Fig.2: Testing the mechanical properties of Mfp in
+                        >Fig.2: Testing the mechanical properties of Mfp in the
                         application scenario</strong
                       >
                     </p>
@@ -327,7 +352,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.3a: Identifying the functional group by the chemical
@@ -341,18 +371,28 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.3b: Identifying the degrees of methacryloyl
-                        modification in terms of relative integral of
+                        modification in terms of the relative integral of the
                         characteristic peak
                       </p>
                     </v-row>
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="
+                      margin-top: 10px;
+                      margin-bottom: 10px;
+                      margin-left: 16px;
+                      margin-right: 16px;
+                    "
                   >
                     <p class="body-1">
                       <strong>
@@ -391,7 +431,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.4a: A moderate modulus by changing the ratio of the
@@ -405,7 +450,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.4b: A rapid UV polymerization, costing only 2-8s
@@ -418,7 +468,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.4c: Modulus / Angular frequency curve of MIBOM
@@ -431,7 +486,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.4d: Modulus / Oscillation strain curve of MIBOM
@@ -440,7 +500,12 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="
+                      margin-top: 10px;
+                      margin-bottom: 10px;
+                      margin-left: 16px;
+                      margin-right: 16px;
+                    "
                   >
                     <p class="body-1">
                       <strong
@@ -478,7 +543,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.5a: Glue the PCR tube to the petri dish with GelMA
@@ -492,7 +562,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.5b: Use UV light to cure GelMA or GelMA+Mussel mucin
@@ -505,7 +580,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.5c: Fill the petri dish one by one with glass beads
@@ -519,17 +599,27 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
-                        Fig.5d: Record the weight of glass beads when separated
-                        petri dish from PCR tube
+                        Fig.5d: Record the weight of glass beads when the petri
+                        dish separated from the PCR tube
                       </p>
                     </v-row>
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="
+                      margin-top: 10px;
+                      margin-bottom: 10px;
+                      margin-left: 16px;
+                      margin-right: 16px;
+                    "
                   >
                     <p class="body-1">
                       <strong
@@ -580,7 +670,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.7a: Short-term viability of cells in hydrogel
@@ -593,7 +688,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.7b: Long-term viability of cells in hydrogel
@@ -626,7 +726,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.8a: Transfected HEK293 cells in a 96 well, the red
@@ -642,7 +747,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.8b: Transfected HEK293 cells, showing normal
@@ -680,7 +790,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.9a: Green fluorescence of GCaMP after the activation
@@ -695,7 +810,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.9b: Red fluorescence of Piezo1.1-mRuby2, indicating
@@ -709,7 +829,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.9c: Merge of the green channel and red channel,
@@ -723,7 +848,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.9d: Bright field of the corresponding cells
@@ -733,7 +863,12 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="
+                      margin-top: 10px;
+                      margin-bottom: 10px;
+                      margin-left: 16px;
+                      margin-right: 16px;
+                    "
                   >
                     <p class="body-1">
                       <strong
@@ -766,7 +901,12 @@
                     </v-container>
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Video.1: Faster fluorescence change of cells under the
@@ -786,10 +926,15 @@
                     </v-container>
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
-                        Video.2: Almost no fluoresecent change of cells under
+                        Video.2: Almost no fluorescent change of cells under
                         the stimulation of shear stress, exposure time, 90ms,
                         20X objective
                       </p>
@@ -831,7 +976,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.10a: Experiment procedure of testing the downstream
@@ -845,7 +995,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.10b: Green channel of the cells 24h after shaking,
@@ -859,7 +1014,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.10c: Red channel of the cells to identify the
@@ -873,7 +1033,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.10d: Merge green and red channel to colocalize the
@@ -924,7 +1089,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.11a: Green channel of the cells 24h after the
@@ -939,7 +1109,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.11b: Red channel of the cells to identify the
@@ -953,7 +1128,12 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 16px;
+                        margin-right: 16px;
+                      "
                     >
                       <p class="body-2 fig">
                         Fig.11c: Merge green and red channel to colocalize the
@@ -963,7 +1143,12 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="
+                      margin-top: 10px;
+                      margin-bottom: 10px;
+                      margin-left: 16px;
+                      margin-right: 16px;
+                    "
                   >
                     <p class="body-1">
                       <strong
