@@ -226,81 +226,118 @@
                   <template v-slot:default>
                     <thead>
                       <tr>
-                        <th>Teams who used Mfp5</th>
+                        <th class="text-center">Teams who used Mfp5</th>
+                        <th class="text-center">URLs</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th>
+                        <th class="text-center">
+                            Berkeley_Wetlab 2009
+                        </th>
+                        <th class="text-center">
                           <a href="http://2009.igem.org/Team:Berkeley_Wetlab"
-                            >Berkeley_Wetlab 2009</a
+                            >http://2009.igem.org/Team:Berkeley_Wetlab</a
                           >
                         </th>
                       </tr>
                       <tr>
-                        <th>
+                        <th class="text-center">
+                            Tu-Delft 2011
+                        </th>
+                        <th class="text-center">
                           <a href="http://2011.igem.org/Team:TU-Delft"
-                            >Tu-Delft 2011</a
+                            >http://2011.igem.org/Team:TU-Delft</a
                           >
                         </th>
                       </tr>
                       <tr>
-                        <th>
-                          <a href="http://2014.igem.org/Team:Yale">Yale 2014</a>
+                        <th class="text-center">
+                          Yale 2014
+                        </th>
+                        <th class="text-center">
+                          <a href="http://2014.igem.org/Team:Yale"
+                          >http://2014.igem.org/Team:Yale</a
+                          >
                         </th>
                       </tr>
                       <tr>
-                        <th>
+                        <th class="text-center">
+                            Tu_Delft 2015
+                        </th>
+                        <th class="text-center">
                           <a href="http://2015.igem.org/Team:TU_Delft"
-                            >Tu_Delft 2015</a
+                            >http://2015.igem.org/Team:TU_Delft</a
                           >
                         </th>
                       </tr>
                       <tr>
-                        <th>
-                          <a href="http://2015.igem.org/Team:UCSF">UCSF 2015</a>
+                        <th class="text-center">
+                          UCSF 2015
                         </th>
-                      </tr>
-                      <tr>
-                        <th>
-                          <a
-                            href="http://2018.igem.org/Team:Stanford-Brown-RISD"
-                            >Stanford-Brown-RISD 2018</a
+                        <th class="text-center">
+                          <a href="http://2015.igem.org/Team:UCSF"
+                          >http://2015.igem.org/Team:UCSF</a
                           >
                         </th>
                       </tr>
                       <tr>
-                        <th>
+                        <th class="text-center">
+                            Stanford-Brown-RISD 2018
+                        </th>
+                        <th class="text-center">
+                          <a href="http://2018.igem.org/Team:Stanford-Brown-RISD"
+                            >http://2018.igem.org/Team:Stanford-Brown-RISD</a
+                          >
+                        </th>
+                      </tr>
+                      <tr>
+                        <th class="text-center">
+                            Greatbay_SCIE 2019
+                        </th>
+                        <th class="text-center">
                           <a href="https://2019.igem.org/Team:Greatbay_SCIE"
-                            >Greatbay_SCIE 2019</a
+                            >https://2019.igem.org/Team:Greatbay_SCIE</a
                           >
                         </th>
                       </tr>
                       <tr>
-                        <th>
+                        <th class="text-center">
+                            Shenzhen SFLS 2019
+                        </th>
+                        <th class="text-center">
                           <a href="https://2019.igem.org/Team:Shenzhen_SFLS"
-                            >Shenzhen SFLS 2019</a
+                            >https://2019.igem.org/Team:Shenzhen_SFLS</a
                           >
                         </th>
                       </tr>
                       <tr>
-                        <th>
+                        <th class="text-center">
+                            Being_4ELEVEN 2020
+                        </th>
+                        <th class="text-center">
                           <a href="https://2020.igem.org/Team:Beijing_4ELEVEN"
-                            >Being_4ELEVEN 2020</a
+                            >https://2020.igem.org/Team:Beijing_4ELEVEN</a
                           >
                         </th>
                       </tr>
                       <tr>
-                        <th>
+                        <th class="text-center">
+                            KCL_UK 2020
+                        </th>
+                        <th class="text-center">
                           <a href="https://2020.igem.org/Team:KCL_UK"
-                            >KCL_UK 2020</a
+                            >https://2020.igem.org/Team:KCL_UK</a
                           >
                         </th>
                       </tr>
                       <tr>
-                        <th>
+                        <th class="text-center">
+                            PuiChing_Macau 2020
+                        </th>
+                        <th class="text-center">
                           <a href="https://2020.igem.org/Team:PuiChing_Macau"
-                            >PuiChing_Macau 2020</a
+                            >https://2020.igem.org/Team:PuiChing_Macau</a
                           >
                         </th>
                       </tr>
