@@ -219,7 +219,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.1a: Construction of pET28a-cfaC-mfp5-1
@@ -232,7 +232,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.1b: Construction of pET28a-mfp5-2-cfaN
@@ -258,7 +258,7 @@
                   />
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                   >
                     <p class="body-2 fig">
                       Fig.2: SDS-PAGE of mfp5-1 expression in different
@@ -278,7 +278,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.3a: SDS-PAGE of first purification of mfp5-1
@@ -291,7 +291,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.3b: SDS-PAGE of second purification of mfp5-1
@@ -300,7 +300,7 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                   >
                     <p class="body-1">
                       <strong>Fig.3: Purification of mfp5-1</strong>
@@ -330,7 +330,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.4a Add 20ul of protein solution to the center of the
@@ -344,7 +344,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.4b Attach PCR tube to the center of the petri dish
@@ -357,7 +357,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.4c: Test the mechanical properties of Mfp5-1 and
@@ -367,7 +367,7 @@
                   </v-col>
                   <v-row
                     justify="center"
-                    style="margin-top: 10px; margin-bottom: 10px"
+                    style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                   >
                   </v-row>
                 </v-row>
@@ -418,7 +418,7 @@
                 />
                 <v-row
                   justify="center"
-                  style="margin-top: 10px; margin-bottom: 10px"
+                  style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                 >
                   <p class="body-2 fig">
                     Fig.5: Identifying the functional group by the chemical
@@ -449,7 +449,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.6a: A rapid UV polymerization, costing only 2-8s
@@ -462,7 +462,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.6b: Modulus / Oscillation strain curve of MIBOM
@@ -475,7 +475,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.6c: Use UV light to cure GelMA or GelMA+Mussel mucin
@@ -488,7 +488,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.6d: Mechanical properties of hydrogel + mussel
@@ -538,7 +538,7 @@
                 <p class="body-1"></p>
                 <p class="body-1">
                   We used the FDA/PI staining to statistic the survival of
-                  cells. The short-erm test and long-term test both showed
+                  cells. The short-term test and long-term test both showed
                   relatively good viability of cells. (Fig.7a, Fig.7b) See more
                   details on our
                   <a
@@ -554,7 +554,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.7a: Short-term viability of cells in hydrogel
@@ -567,7 +567,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.7b: Long-term viability of cells in hydrogel
@@ -635,7 +635,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.8a: Gene circuit of GCaMP composite part
@@ -648,7 +648,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.8b: Construction of pEGFP-GCaMP, which is able to
@@ -673,7 +673,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.9a: Green fluorescence of GCaMP after the activation
@@ -688,7 +688,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.9b: Red fluorescence of Piezo1.1-mRuby2, indicating
@@ -702,7 +702,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.9c: Merge of the green channel and red channel,
@@ -716,7 +716,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.9d: Bright field of the corresponding cells
@@ -749,7 +749,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.10: Experiment procedure to test the calcium influx
@@ -767,7 +767,7 @@
                     </v-container>
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Video1: Faster fluorescence change of cells under the
@@ -818,7 +818,7 @@
                         />
                         <v-row
                           justify="center"
-                          style="margin-top: 10px; margin-bottom: 10px"
+                          style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                         >
                           <p class="body-2 fig">
                             Fig.11a: Gene circuit of pGL4.30-GFP
@@ -831,7 +831,7 @@
                         />
                         <v-row
                           justify="center"
-                          style="margin-top: 10px; margin-bottom: 10px"
+                          style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                         >
                           <p class="body-2 fig">Fig.11b: Map of pGL4.30-EGFP</p>
                         </v-row>
@@ -863,7 +863,7 @@
                 />
                 <v-row
                   justify="center"
-                  style="margin-top: 10px; margin-bottom: 10px"
+                  style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                 >
                   <p class="body-2 fig">
                     Fig.12a: Experiment procedure of testing the downstream
@@ -877,7 +877,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.12b: Green channel of the cells 24h after shaking,
@@ -891,7 +891,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.12c: Red channel of the cells to identify the
@@ -905,7 +905,7 @@
                     />
                     <v-row
                       justify="center"
-                      style="margin-top: 10px; margin-bottom: 10px"
+                      style="margin-top: 10px; margin-bottom: 10px; margin-left: 16px; margin-right: 16px"
                     >
                       <p class="body-2 fig">
                         Fig.12d: Merge green and red channel to colocalize the
