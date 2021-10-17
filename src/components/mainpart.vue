@@ -80,6 +80,15 @@
                       >
                     </td>
                   </tr>
+                  <tr>
+                    <td class="text-center">Molecular experiments record</td>
+                    <td class="text-center">
+                      <a
+                        href="https://2021.igem.org/wiki/images/e/e9/T--Shanghaitech_China--exp--timeline.pdf"
+                        >Molecular_experiments_record.pdf</a
+                      >
+                    </td>
+                  </tr>
                 </tbody>
               </template>
             </v-simple-table>
