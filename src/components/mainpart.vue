@@ -431,12 +431,18 @@
                   which enabled Ulink College students to understand the
                   importance of protecting marine animals.
                 </p>
-                <v-img src="" contain max-height="600px" />
+                <v-img
+                  src="https://2021.igem.org/wiki/images/e/e3/T--ShanghaiTech_China--edu--8150.jpg"
+                  contain
+                  max-height="600px"
+                />
                 <v-row
                   justify="center"
                   style="margin-top: 10px; margin-bottom: 10px"
                 >
-                  <p class="body-2 fig">Fig.4</p>
+                  <p class="body-2 fig">
+                    Fig.4: Online MIBOM presentation at GreatBay_United
+                  </p>
                 </v-row>
                 <p class="body-1">
                   At the same time, GreatBay_United and ShanghaiTech_China also
