@@ -2,7 +2,10 @@
   <div v-scroll="updatepos">
     <div id="part1">
       <div style="text-align: center">
-        <img class="logo" src="https://2021.igem.org/wiki/images/f/fc/T--ShanghaiTech_China--home--Logo.svg" />
+        <img
+          class="logo"
+          src="https://2021.igem.org/wiki/images/f/fc/T--ShanghaiTech_China--home--Logo.svg"
+        />
         <div class="text-h4 text-sm-h4 text-md-h3 text-lg-h2 text-xl-h1">
           M I B O M
         </div>
@@ -11,29 +14,85 @@
         </div>
       </div>
       <div style="margin-top: -30px; position: relative">
-        <img class="mount1" src="https://2021.igem.org/wiki/images/2/28/T--ShanghaiTech_China--home--Mountain1.svg" />
+        <img
+          class="mount1"
+          src="https://2021.igem.org/wiki/images/2/28/T--ShanghaiTech_China--home--Mountain1.svg"
+        />
         <div class="part1_middle">
-          <img class="mid1" src="https://2021.igem.org/wiki/images/c/c8/T--ShanghaiTech_China--home--Middle1.svg" />
-          <img class="cloud1_0 cloud1" src="https://2021.igem.org/wiki/images/c/cd/T--ShanghaiTech_China--home--Cloud1_Under.svg" />
-          <img class="cloud1_1 cloud1" src="https://2021.igem.org/wiki/images/6/60/T--ShanghaiTech_China--home--Cloud1_Above.svg" />
+          <img
+            class="mid1"
+            src="https://2021.igem.org/wiki/images/c/c8/T--ShanghaiTech_China--home--Middle1.svg"
+          />
+          <img
+            class="cloud1_0 cloud1"
+            src="https://2021.igem.org/wiki/images/c/cd/T--ShanghaiTech_China--home--Cloud1_Under.svg"
+          />
+          <img
+            class="cloud1_1 cloud1"
+            src="https://2021.igem.org/wiki/images/6/60/T--ShanghaiTech_China--home--Cloud1_Above.svg"
+          />
         </div>
-        <img class="mount4" src="https://2021.igem.org/wiki/images/5/58/T--ShanghaiTech_China--home--Mountain4.svg" />
+        <img
+          class="mount4"
+          src="https://2021.igem.org/wiki/images/5/58/T--ShanghaiTech_China--home--Mountain4.svg"
+        />
       </div>
-      <img class="mount2" src="https://2021.igem.org/wiki/images/d/da/T--ShanghaiTech_China--home--Mountain2.svg" />
-      <img class="mount3" src="https://2021.igem.org/wiki/images/f/f5/T--ShanghaiTech_China--home--Mountain3.svg" />
-      <img class="cloud2 cloud_ani" src="https://2021.igem.org/wiki/images/b/b1/T--ShanghaiTech_China--home--Cloud2.svg" />
-      <img class="cloud3_0 cloud_ani" src="https://2021.igem.org/wiki/images/3/31/T--ShanghaiTech_China--home--Cloud3_Under.svg" />
-      <img class="cloud3_1 cloud_ani" src="https://2021.igem.org/wiki/images/3/3f/T--ShanghaiTech_China--home--Cloud3_Above.svg" />
-      <img class="boat1" id="boat1" src="https://2021.igem.org/wiki/images/e/e2/T--ShanghaiTech_China--home--Boat1.svg" />
+      <img
+        class="mount2"
+        src="https://2021.igem.org/wiki/images/d/da/T--ShanghaiTech_China--home--Mountain2.svg"
+      />
+      <img
+        class="mount3"
+        src="https://2021.igem.org/wiki/images/f/f5/T--ShanghaiTech_China--home--Mountain3.svg"
+      />
+      <img
+        class="cloud2 cloud_ani"
+        src="https://2021.igem.org/wiki/images/b/b1/T--ShanghaiTech_China--home--Cloud2.svg"
+      />
+      <img
+        class="cloud3_0 cloud_ani"
+        src="https://2021.igem.org/wiki/images/3/31/T--ShanghaiTech_China--home--Cloud3_Under.svg"
+      />
+      <img
+        class="cloud3_1 cloud_ani"
+        src="https://2021.igem.org/wiki/images/3/3f/T--ShanghaiTech_China--home--Cloud3_Above.svg"
+      />
+      <img
+        class="boat1"
+        id="boat1"
+        src="https://2021.igem.org/wiki/images/e/e2/T--ShanghaiTech_China--home--Boat1.svg"
+      />
     </div>
     <div id="part2">
-      <img class="mount5" src="https://2021.igem.org/wiki/images/9/9f/T--ShanghaiTech_China--home--Mountain5.svg" />
-      <img class="mount6" src="https://2021.igem.org/wiki/images/8/86/T--ShanghaiTech_China--home--Mountain6.svg" />
-      <img class="line1_0" src="https://2021.igem.org/wiki/images/3/3a/T--ShanghaiTech_China--home--Line.svg" />
-      <img class="line1_1" src="https://2021.igem.org/wiki/images/3/3a/T--ShanghaiTech_China--home--Line.svg" />
-      <img class="bone_fracture" src="https://2021.igem.org/wiki/images/b/b8/T--ShanghaiTech_China--home--Bone_Fracture.svg" />
-      <img class="mount7" src="https://2021.igem.org/wiki/images/2/2d/T--ShanghaiTech_China--home--Mountain7.svg" />
-      <img class="boat2" id="boat2" src="https://2021.igem.org/wiki/images/8/84/T--ShanghaiTech_China--home--Boat2.svg" />
+      <img
+        class="mount5"
+        src="https://2021.igem.org/wiki/images/9/9f/T--ShanghaiTech_China--home--Mountain5.svg"
+      />
+      <img
+        class="mount6"
+        src="https://2021.igem.org/wiki/images/8/86/T--ShanghaiTech_China--home--Mountain6.svg"
+      />
+      <img
+        class="line1_0"
+        src="https://2021.igem.org/wiki/images/3/3a/T--ShanghaiTech_China--home--Line.svg"
+      />
+      <img
+        class="line1_1"
+        src="https://2021.igem.org/wiki/images/3/3a/T--ShanghaiTech_China--home--Line.svg"
+      />
+      <img
+        class="bone_fracture"
+        src="https://2021.igem.org/wiki/images/b/b8/T--ShanghaiTech_China--home--Bone_Fracture.svg"
+      />
+      <img
+        class="mount7"
+        src="https://2021.igem.org/wiki/images/2/2d/T--ShanghaiTech_China--home--Mountain7.svg"
+      />
+      <img
+        class="boat2"
+        id="boat2"
+        src="https://2021.igem.org/wiki/images/8/84/T--ShanghaiTech_China--home--Boat2.svg"
+      />
     </div>
     <v-row id="part3" justify="center" style="margin-top: 100px">
       <v-col cols="12">
@@ -48,7 +107,7 @@
           id="text1"
         >
           Bone fracture is really common in daily life. Sports, car accidents,
-          falls, and certain medicall conditions are all possible causes of bone
+          falls, and certain medical conditions are all possible causes of bone
           fracture.
         </div>
       </v-col>
@@ -65,7 +124,7 @@
         >
           In China, it is estimated that in 2021, there will be 295526 traumatic
           fractures, of which 10.21% will be femoral fractures. 95% of femoral
-          shaft fractures are comminuted. Therefore, there will be an average of
+          shaft fractures are comminuted. In a word, there will be an average of
           at least 280,000 comminuted fractures per year in China.
         </div>
       </v-col>
@@ -121,18 +180,24 @@
           id="text3"
         >
           According to our interviews with clinicians, the surgical time for
-          comminuted fractures is use for animatingtwice as long as that for
-          conventional fractures, which is mainly because of the cumbersome
-          fixation of bone fragments. This indicates at least 4.4 hours of
-          surgery per week will be taken up due to the complex fixation in one
-          hospital. Medical resources are tied up in complex procedures.
+          comminuted fractures is twice as long as that for conventional
+          fractures, which is mainly because of the cumbersome fixation of bone
+          fragments. This indicates at least 4.4 hours of surgery time per week
+          will be taken up due to the complex fixation in one hospital. Medical
+          resources are tied up in complex procedures.
         </div>
       </v-col>
     </v-row>
     <div id="part6">
       <div style="position: relative">
-        <img class="clock_0" src="https://2021.igem.org/wiki/images/b/b5/T--ShanghaiTech_China--home--Clock_Under.svg" />
-        <img class="clock_1" src="https://2021.igem.org/wiki/images/c/ce/T--ShanghaiTech_China--home--Clock_Above.svg" />
+        <img
+          class="clock_0"
+          src="https://2021.igem.org/wiki/images/b/b5/T--ShanghaiTech_China--home--Clock_Under.svg"
+        />
+        <img
+          class="clock_1"
+          src="https://2021.igem.org/wiki/images/c/ce/T--ShanghaiTech_China--home--Clock_Above.svg"
+        />
       </div>
       <v-row justify="center">
         <v-col cols="12">
@@ -153,9 +218,18 @@
       </v-row>
     </div>
     <div id="part7">
-      <img class="mibom" src="https://2021.igem.org/wiki/images/3/3c/T--ShanghaiTech_China--home--Mibom.svg" />
-      <img class="line2_0" src="https://2021.igem.org/wiki/images/3/3a/T--ShanghaiTech_China--home--Line.svg" />
-      <img class="line2_1" src="https://2021.igem.org/wiki/images/3/3a/T--ShanghaiTech_China--home--Line.svg" />
+      <img
+        class="mibom"
+        src="https://2021.igem.org/wiki/images/3/3c/T--ShanghaiTech_China--home--Mibom.svg"
+      />
+      <img
+        class="line2_0"
+        src="https://2021.igem.org/wiki/images/3/3a/T--ShanghaiTech_China--home--Line.svg"
+      />
+      <img
+        class="line2_1"
+        src="https://2021.igem.org/wiki/images/3/3a/T--ShanghaiTech_China--home--Line.svg"
+      />
     </div>
     <div id="part8">
       <div
@@ -169,16 +243,32 @@
         id="text4"
       >
         This year, ShanghaiTech_China developed a new flexible osteogenic glue--
-        MIBOM, Mussel Inspired Biologically Operation Material--to address these
-        limitations, which contains four systems, responsible for the adhesion,
-        structural strength, degradation and drug release respectively.
+        MIBOM, Mussel Inspired Biocompatible Osteogenic Material--to address
+        these limitations, which contains four systems, responsible for the
+        adhesion, structural strength, degradation and drug release
+        respectively.
       </div>
       <div style="position: relative; margin: 35px 5%">
-        <img class="menu" src="https://2021.igem.org/wiki/images/7/71/T--ShanghaiTech_China--home--Menu.svg" />
-        <img class="logo_a" src="https://2021.igem.org/wiki/images/c/c8/T--ShanghaiTech_China--home--Middle1.svg" />
-        <img class="logo_h" src="https://2021.igem.org/wiki/images/4/4f/T--ShanghaiTech_China--home--Logo_hydrogel.svg" />
-        <img class="logo_r" src="https://2021.igem.org/wiki/images/a/a8/T--ShanghaiTech_China--home--Logo_regulation.svg" />
-        <img class="logo_d" src="https://2021.igem.org/wiki/images/d/d6/T--ShanghaiTech_China--home--Logo_drug.svg" />
+        <img
+          class="menu"
+          src="https://2021.igem.org/wiki/images/7/71/T--ShanghaiTech_China--home--Menu.svg"
+        />
+        <img
+          class="logo_a"
+          src="https://2021.igem.org/wiki/images/c/c8/T--ShanghaiTech_China--home--Middle1.svg"
+        />
+        <img
+          class="logo_h"
+          src="https://2021.igem.org/wiki/images/4/4f/T--ShanghaiTech_China--home--Logo_hydrogel.svg"
+        />
+        <img
+          class="logo_r"
+          src="https://2021.igem.org/wiki/images/a/a8/T--ShanghaiTech_China--home--Logo_regulation.svg"
+        />
+        <img
+          class="logo_d"
+          src="https://2021.igem.org/wiki/images/d/d6/T--ShanghaiTech_China--home--Logo_drug.svg"
+        />
         <div class="text_a text-h6 text-sm-h5 text-md-h4 text-lg-h3 text-xl-h3">
           ADHESION
         </div>
@@ -193,51 +283,100 @@
         </div>
       </div>
     </div>
-    <img class="divider" src="https://2021.igem.org/wiki/images/6/6a/T--ShanghaiTech_China--home--Divider.svg" />
+    <img
+      class="divider"
+      src="https://2021.igem.org/wiki/images/6/6a/T--ShanghaiTech_China--home--Divider.svg"
+    />
     <div id="part9">
-      <img class="adhesion" src="https://2021.igem.org/wiki/images/2/29/T--ShanghaiTech_China--home--Adhesion.svg" />
+      <img
+        class="adhesion"
+        src="https://2021.igem.org/wiki/images/2/29/T--ShanghaiTech_China--home--Adhesion.svg"
+      />
       <div class="text-h5 text-xl-h4" id="text5">
         The first part of MIBOM is the adhesion system. We got the inspiration
         for this design from mussels, a creature that can adhere themselves
-        tightly to reefs, thanks to the mussel foot protein(mfp-5). We
-        constructed modified mfp-5 in E.coli and extract it in a more effective
-        way, compared with the current natural extraction from the mussels.
-        These proteins can form firm bridges between the hydrogel medium and the
-        bone fragments, sticking them together, helping the bone to recorver.
+        tightly to reefs, thanks to the mussel foot protein(Mfp-5). We
+        constructed a efficient Mfp-5 expression system in <i>E.coli</i> and
+        extracted it in a more effective way, compared with the current natural
+        extraction from the mussels. These proteins can form firm bridges
+        between the hydrogel medium and the bone fragments, sticking them
+        together, helping the bone to recover.
       </div>
       <div class="a_steps">
-        <img class="a_step1" src="https://2021.igem.org/wiki/images/1/19/T--ShanghaiTech_China--home--A_step1.svg" />
-        <img class="a_step2" src="https://2021.igem.org/wiki/images/6/6b/T--ShanghaiTech_China--home--A_step2.svg" />
-        <img class="a_step3" src="https://2021.igem.org/wiki/images/5/55/T--ShanghaiTech_China--home--A_step3.svg" />
-        <img class="a_line12" src="https://2021.igem.org/wiki/images/3/3a/T--ShanghaiTech_China--home--A_line12.svg" />
-        <img class="a_line23" src="https://2021.igem.org/wiki/images/e/e5/T--ShanghaiTech_China--home--A_line23.svg" />
+        <img
+          class="a_step1"
+          src="https://2021.igem.org/wiki/images/1/19/T--ShanghaiTech_China--home--A_step1.svg"
+        />
+        <img
+          class="a_step2"
+          src="https://2021.igem.org/wiki/images/6/6b/T--ShanghaiTech_China--home--A_step2.svg"
+        />
+        <img
+          class="a_step3"
+          src="https://2021.igem.org/wiki/images/5/55/T--ShanghaiTech_China--home--A_step3.svg"
+        />
+        <img
+          class="a_line12"
+          src="https://2021.igem.org/wiki/images/3/3a/T--ShanghaiTech_China--home--A_line12.svg"
+        />
+        <img
+          class="a_line23"
+          src="https://2021.igem.org/wiki/images/e/e5/T--ShanghaiTech_China--home--A_line23.svg"
+        />
       </div>
     </div>
-    <img class="divider" src="https://2021.igem.org/wiki/images/6/6a/T--ShanghaiTech_China--home--Divider.svg" />
+    <img
+      class="divider"
+      src="https://2021.igem.org/wiki/images/6/6a/T--ShanghaiTech_China--home--Divider.svg"
+    />
     <div id="part10">
-      <img class="hydrogel" src="https://2021.igem.org/wiki/images/9/9c/T--ShanghaiTech_China--home--Hydrogel.svg" />
+      <img
+        class="hydrogel"
+        src="https://2021.igem.org/wiki/images/9/9c/T--ShanghaiTech_China--home--Hydrogel.svg"
+      />
       <v-row>
         <v-col cols="8" sm="8" md="8" lg="8" xl="9">
           <div id="text6" class="text-h5 text-xl-h4">
             A Bicrosslinking system combining Alginate and Methacrylate Gelatin
             (GelMA) is chosen to make MIBOM more operational in medical surgery.
             GelMA is a type of biocompatible and nontoxic hydrogel, which can
-            polymerize rapidly under UV conditions. In the case of an actual
+            polymerize rapidly under UV conditions. In the case of actual
             medical surgery, the doctor can simply inject the glue into the
             fractures and initiate polymerization with a short period of
-            ultraviolet light. And alginate to provide higher structural
-            strength.
+            ultraviolet light. Alginate forms the second layer of network by
+            ionic-crosslinking and provides higher structural strength.
           </div>
         </v-col>
         <v-col cols="12" sm="12" md="8" lg="8" xl="10">
           <div class="h_steps">
-            <img class="h_step1" src="https://2021.igem.org/wiki/images/5/5d/T--ShanghaiTech_China--home--H_step1.svg" />
-            <img class="h_step2" src="https://2021.igem.org/wiki/images/9/95/T--ShanghaiTech_China--home--H_step2.svg" />
-            <img class="h_step3" src="https://2021.igem.org/wiki/images/2/2c/T--ShanghaiTech_China--home--H_step3.svg" />
-            <img class="h_step4" src="https://2021.igem.org/wiki/images/2/2b/T--ShanghaiTech_China--home--H_step4.svg" />
-            <img class="h_line12" src="https://2021.igem.org/wiki/images/1/12/T--ShanghaiTech_China--home--H_line12.svg" />
-            <img class="h_line23" src="https://2021.igem.org/wiki/images/3/37/T--ShanghaiTech_China--home--H_line23.svg" />
-            <img class="h_line34" src="https://2021.igem.org/wiki/images/d/d1/T--ShanghaiTech_China--home--H_line34.svg" />
+            <img
+              class="h_step1"
+              src="https://2021.igem.org/wiki/images/5/5d/T--ShanghaiTech_China--home--H_step1.svg"
+            />
+            <img
+              class="h_step2"
+              src="https://2021.igem.org/wiki/images/9/95/T--ShanghaiTech_China--home--H_step2.svg"
+            />
+            <img
+              class="h_step3"
+              src="https://2021.igem.org/wiki/images/2/2c/T--ShanghaiTech_China--home--H_step3.svg"
+            />
+            <img
+              class="h_step4"
+              src="https://2021.igem.org/wiki/images/2/2b/T--ShanghaiTech_China--home--H_step4.svg"
+            />
+            <img
+              class="h_line12"
+              src="https://2021.igem.org/wiki/images/1/12/T--ShanghaiTech_China--home--H_line12.svg"
+            />
+            <img
+              class="h_line23"
+              src="https://2021.igem.org/wiki/images/3/37/T--ShanghaiTech_China--home--H_line23.svg"
+            />
+            <img
+              class="h_line34"
+              src="https://2021.igem.org/wiki/images/d/d1/T--ShanghaiTech_China--home--H_line34.svg"
+            />
           </div>
         </v-col>
       </v-row>
@@ -248,21 +387,33 @@
       style="margin-top: 65px"
     />
     <div id="part11">
-      <img class="regulation" src="https://2021.igem.org/wiki/images/2/28/T--ShanghaiTech_China--home--Regulation.svg" />
-      <img class="stress" src="https://2021.igem.org/wiki/images/d/dc/T--ShanghaiTech_China--home--Stress.svg" />
+      <img
+        class="regulation"
+        src="https://2021.igem.org/wiki/images/2/28/T--ShanghaiTech_China--home--Regulation.svg"
+      />
+      <img
+        class="stress"
+        src="https://2021.igem.org/wiki/images/d/dc/T--ShanghaiTech_China--home--Stress.svg"
+      />
       <div id="text7" class="text-h5 text-xl-h4">
-        To make MIBOM smarter, a stress-responsingn degradation system is
+        To make MIBOM smarter, a stress-sensitive degradation system is
         designed. The regulation is achieved by lading engineered autogenous
-        cells into the hydrogel. We utilized a stree-sensing membrane protein,
+        cells into the hydrogel. We utilized a stress-sensitive membrane protein,
         Piezo1, which can sense small stress changes in the microenvironment. In
         the process of bone growth, the change of stress will activate piezo1
-        and induce the expression of downstream pathway. By introducing
+        and induce the expression of downstream proteins. By introducing
         downstream enzymes that degrade hydrogel, our osteogenic glue can
         self-degrade as the bone grows back into its normal status.
       </div>
       <div class="r_graph">
-        <img class="axis" src="https://2021.igem.org/wiki/images/8/88/T--ShanghaiTech_China--home--Axises.svg" />
-        <img class="graph" src="https://2021.igem.org/wiki/images/1/10/T--ShanghaiTech_China--home--Graph.svg" />
+        <img
+          class="axis"
+          src="https://2021.igem.org/wiki/images/8/88/T--ShanghaiTech_China--home--Axises.svg"
+        />
+        <img
+          class="graph"
+          src="https://2021.igem.org/wiki/images/1/10/T--ShanghaiTech_China--home--Graph.svg"
+        />
       </div>
     </div>
     <img
@@ -274,15 +425,33 @@
       <v-row>
         <v-col cols="6">
           <div class="d_steps">
-            <img class="d_step1" src="https://2021.igem.org/wiki/images/6/69/T--ShanghaiTech_China--home--D_step1.svg" />
-            <img class="d_step2" src="https://2021.igem.org/wiki/images/2/24/T--ShanghaiTech_China--home--D_step2.svg" />
-            <img class="d_step3" src="https://2021.igem.org/wiki/images/f/f5/T--ShanghaiTech_China--home--D_step3.svg" />
-            <img class="d_line12" src="https://2021.igem.org/wiki/images/f/f5/T--ShanghaiTech_China--home--D_line12.svg" />
-            <img class="d_line23" src="https://2021.igem.org/wiki/images/6/63/T--ShanghaiTech_China--home--D_line23.svg" />
+            <img
+              class="d_step1"
+              src="https://2021.igem.org/wiki/images/6/69/T--ShanghaiTech_China--home--D_step1.svg"
+            />
+            <img
+              class="d_step2"
+              src="https://2021.igem.org/wiki/images/2/24/T--ShanghaiTech_China--home--D_step2.svg"
+            />
+            <img
+              class="d_step3"
+              src="https://2021.igem.org/wiki/images/f/f5/T--ShanghaiTech_China--home--D_step3.svg"
+            />
+            <img
+              class="d_line12"
+              src="https://2021.igem.org/wiki/images/f/f5/T--ShanghaiTech_China--home--D_line12.svg"
+            />
+            <img
+              class="d_line23"
+              src="https://2021.igem.org/wiki/images/6/63/T--ShanghaiTech_China--home--D_line23.svg"
+            />
           </div>
         </v-col>
         <v-col cols="6">
-          <img class="drug" src="https://2021.igem.org/wiki/images/8/8e/T--ShanghaiTech_China--home--Drug.svg" />
+          <img
+            class="drug"
+            src="https://2021.igem.org/wiki/images/8/8e/T--ShanghaiTech_China--home--Drug.svg"
+          />
           <div id="text8" class="text-h5 text-xl-h4">
             The hydrogel system makes it possible for drug loading. We planned
             to embed certain drugs in special nanoparticles, which cannot
@@ -293,7 +462,10 @@
         </v-col>
       </v-row>
     </div>
-    <img class="divider" src="https://2021.igem.org/wiki/images/6/6a/T--ShanghaiTech_China--home--Divider.svg" />
+    <img
+      class="divider"
+      src="https://2021.igem.org/wiki/images/6/6a/T--ShanghaiTech_China--home--Divider.svg"
+    />
     <div id="part13">
       <div id="text9" class="text-h5 text-xl-h4">
         Although the internal systems in MIBOM are complex, doctors can simply
@@ -306,33 +478,75 @@
         patients.
       </div>
       <div class="l_steps">
-        <img class="l_step1" src="https://2021.igem.org/wiki/images/b/bc/T--ShanghaiTech_China--home--L_step1.svg" />
-        <img class="l_step2" src="https://2021.igem.org/wiki/images/4/45/T--ShanghaiTech_China--home--L_step2.svg" />
-        <img class="l_step3" src="https://2021.igem.org/wiki/images/c/cc/T--ShanghaiTech_China--home--L_step3.svg" />
-        <img class="l_step4" src="https://2021.igem.org/wiki/images/2/21/T--ShanghaiTech_China--home--L_step4.svg" />
-        <img class="l_line12" src="https://2021.igem.org/wiki/images/f/fe/T--ShanghaiTech_China--home--L_line.svg" />
-        <img class="l_line23" src="https://2021.igem.org/wiki/images/f/fe/T--ShanghaiTech_China--home--L_line.svg" />
-        <img class="l_line34" src="https://2021.igem.org/wiki/images/f/fe/T--ShanghaiTech_China--home--L_line.svg" />
+        <img
+          class="l_step1"
+          src="https://2021.igem.org/wiki/images/b/bc/T--ShanghaiTech_China--home--L_step1.svg"
+        />
+        <img
+          class="l_step2"
+          src="https://2021.igem.org/wiki/images/4/45/T--ShanghaiTech_China--home--L_step2.svg"
+        />
+        <img
+          class="l_step3"
+          src="https://2021.igem.org/wiki/images/c/cc/T--ShanghaiTech_China--home--L_step3.svg"
+        />
+        <img
+          class="l_step4"
+          src="https://2021.igem.org/wiki/images/2/21/T--ShanghaiTech_China--home--L_step4.svg"
+        />
+        <img
+          class="l_line12"
+          src="https://2021.igem.org/wiki/images/f/fe/T--ShanghaiTech_China--home--L_line.svg"
+        />
+        <img
+          class="l_line23"
+          src="https://2021.igem.org/wiki/images/f/fe/T--ShanghaiTech_China--home--L_line.svg"
+        />
+        <img
+          class="l_line34"
+          src="https://2021.igem.org/wiki/images/f/fe/T--ShanghaiTech_China--home--L_line.svg"
+        />
       </div>
     </div>
-    <img class="divider" src="https://2021.igem.org/wiki/images/6/6a/T--ShanghaiTech_China--home--Divider.svg" />
+    <img
+      class="divider"
+      src="https://2021.igem.org/wiki/images/6/6a/T--ShanghaiTech_China--home--Divider.svg"
+    />
     <div id="part14">
       <div class="part14_inner">
-        <img class="frame" src="https://2021.igem.org/wiki/images/5/58/T--ShanghaiTech_China--home--Frame.svg" />
+        <img
+          class="frame"
+          src="https://2021.igem.org/wiki/images/5/58/T--ShanghaiTech_China--home--Frame.svg"
+        />
         <a href="https://2021.igem.org/Team:ShanghaiTech_China/Description">
-          <img class="logo_project" src="https://2021.igem.org/wiki/images/a/a9/T--ShanghaiTech_China--home--Logo_project.svg" />
+          <img
+            class="logo_project"
+            src="https://2021.igem.org/wiki/images/a/a9/T--ShanghaiTech_China--home--Logo_project.svg"
+          />
         </a>
         <a href="https://2021.igem.org/Team:ShanghaiTech_China/Model">
-          <img class="logo_model" src="https://2021.igem.org/wiki/images/3/31/T--ShanghaiTech_China--home--Logo_model.svg" />
+          <img
+            class="logo_model"
+            src="https://2021.igem.org/wiki/images/3/31/T--ShanghaiTech_China--home--Logo_model.svg"
+          />
         </a>
         <a href="https://2021.igem.org/Team:ShanghaiTech_China/Human_Practices">
-          <img class="logo_hp" src="https://2021.igem.org/wiki/images/8/8a/T--ShanghaiTech_China--home--Logo_hp.svg" />
+          <img
+            class="logo_hp"
+            src="https://2021.igem.org/wiki/images/8/8a/T--ShanghaiTech_China--home--Logo_hp.svg"
+          />
         </a>
         <a href="https://2021.igem.org/Team:ShanghaiTech_China/Hardware">
-          <img class="logo_hardware" src="https://2021.igem.org/wiki/images/2/27/T--ShanghaiTech_China--home--Logo_hardware.svg" />
+          <img
+            class="logo_hardware"
+            src="https://2021.igem.org/wiki/images/2/27/T--ShanghaiTech_China--home--Logo_hardware.svg"
+          />
         </a>
         <a href="https://2021.igem.org/Team:ShanghaiTech_China/Parts">
-          <img class="logo_parts" src="https://2021.igem.org/wiki/images/8/83/T--ShanghaiTech_China--home--Logo_parts.svg" />
+          <img
+            class="logo_parts"
+            src="https://2021.igem.org/wiki/images/8/83/T--ShanghaiTech_China--home--Logo_parts.svg"
+          />
         </a>
         <a href="https://2021.igem.org/Team:ShanghaiTech_China/Description">
           <div style="color: black" class="text-h4 text-sm-h5 text_project">

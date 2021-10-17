@@ -27,7 +27,12 @@
       </v-list-item>
       <v-list-item>
         <v-list-item-avatar>
-          <v-img src="@/assets/temp_logo.jpg"></v-img>
+          <v-container style="padding: 2px">
+            <v-img
+              src="https://2021.igem.org/wiki/images/a/a9/T--ShanghaiTech_China--home--Logo_project.svg"
+              style="padding: 5px"
+            ></v-img>
+          </v-container>
         </v-list-item-avatar>
 
         <v-list-item-content>
