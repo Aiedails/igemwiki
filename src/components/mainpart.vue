@@ -89,7 +89,7 @@
                 </p>
               </v-card-text>
               <v-card-title class="text-h5"> Basic Parts </v-card-title>
-              <v-card-test>
+              <v-card-text>
                 <v-simple-table>
                   <template v-slot:default>
                     <thead>
@@ -312,10 +312,74 @@
                           purification
                         </th>
                       </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755031"
+                            >BBa_K3755031</a
+                          >
+                        </th>
+                        <th>backbone of pAAV.Syn.Flex.GCaMP6m.WPRE.SV40</th>
+                        <th>
+                          Contain ori(high-copy-number ColE1/pMB1/pBR322/pUC
+                          origin of replication), AmpR promoter,
+                          AmpR(β-lactamase) and f1 ori(f1 bacteriophage origin
+                          of replication)
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755042"
+                            >BBa_K3755042</a
+                          >
+                        </th>
+                        <th>mouse Piezo1.1</th>
+                        <th>
+                          Mechanosensory calcium channel protein isolated from
+                          mouse which is RCF10 assembly compatibe after codon
+                          modification.
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755043"
+                            >BBa_K3755043</a
+                          >
+                        </th>
+                        <th>Sok RNA</th>
+                        <th>
+                          Small RNA which inhibits the expression of Hok protein
+                          by binding its mRNA.
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755044"
+                            >BBa_K3755044</a
+                          >
+                        </th>
+                        <th>Trp promoter</th>
+                        <th>
+                          The promoter regulated by trpR promoter inhibitor
+                          protein, it shuts down downstream gene expression when
+                          tryptophan levels are high.
+                        </th>
+                      </tr>
+                      <tr>
+                        <th>
+                          <a href="http://parts.igem.org/Part:BBa_K3755045"
+                            >BBa_K3755045</a
+                          >
+                        </th>
+                        <th>Hok/Mok protein</th>
+                        <th>
+                          The toxic protein from Hok-Sok TA system of R1 plasmid
+                          of E.coli, inhibited by Sok gene.
+                        </th>
+                      </tr>
                     </tbody>
                   </template>
                 </v-simple-table>
-              </v-card-test>
+              </v-card-text>
               <v-card-title class="text-h5"> Composite Parts </v-card-title>
               <v-card-text>
                 <v-simple-table>
@@ -443,29 +507,30 @@
                       </tr>
                       <tr>
                         <th>
-                          <a href="http://parts.igem.org/Part:BBa_K3755031"
-                            >BBa_K3755031</a
+                          <a href="http://parts.igem.org/Part:BBa_K3755032"
+                            >BBa_K3755032</a
                           >
                         </th>
-                        <th>backbone of pAAV.Syn.Flex.GCaMP6m.WPRE.SV40</th>
+                        <th>pAAV.Syn.Flex.GCaMP6m.WPRE.SV40</th>
                         <th>
-                          Contain ori(high-copy-number ColE1/pMB1/pBR322/pUC
-                          origin of replication), AmpR promoter,
-                          AmpR(β-lactamase) and f1 ori(f1 bacteriophage origin
-                          of replication)
+                          From Wei Shen's lab of Shanghaitech university, the
+                          clone template of
+                          <a href="http://parts.igem.org/Part:BBa_K3755007"
+                            >BBa_K3755007</a
+                          >
                         </th>
                       </tr>
                       <tr>
                         <th>
-                          <a href="http://parts.igem.org/Part:BBa_K3755032"
-                            >BBa_K3755042</a
+                          <a href="http://parts.igem.org/Part:BBa_K3755046"
+                            >BBa_K3755046</a
                           >
                         </th>
-                        <th>mouse Piezo1.1</th>
+                        <th>Double Regulated(trp+lac) Kill Switch</th>
                         <th>
-                          Mechanosensory calcium channel protein isolated from
-                          mouse which is RCF10 assembly compatibe after codon
-                          modification.
+                          An E.coli kill switch regulated by both lactose and
+                          tryptophan levels. High levels of lactose and
+                          tryptophan are needed to keep cells alive.
                         </th>
                       </tr>
                     </tbody>
