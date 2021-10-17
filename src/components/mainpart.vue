@@ -309,7 +309,7 @@ export default {
         isin: [0, 1, 0, 0, 0],
       },
       {
-        name: "Jing Dai",
+        name: "Jin Dai",
         isin: [0, 1, 0, 0, 0],
       },
       {
