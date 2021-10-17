@@ -66,6 +66,56 @@
             >
               Conclusion
             </v-stepper-step>
+            <v-stepper-step
+              editable
+              edit-icon="5"
+              step="5"
+              @click="$vuetify.goTo('#conference', options)"
+              :complete="position > 5"
+              style="transition: all 1s"
+              color="primary"
+              class="body-1"
+            >
+              Conference of China iGEMer Community(CCiC)
+            </v-stepper-step>
+            <v-stepper-step
+              editable
+              edit-icon="6"
+              step="6"
+              @click="$vuetify.goTo('#synbiopunk', options)"
+              :complete="position > 6"
+              style="transition: all 1s"
+              color="primary"
+              class="body-1"
+            >
+              Synbiopunk Challenge
+            </v-stepper-step>
+            <v-stepper-step
+              editable
+              edit-icon="7"
+              step="7"
+              @click="$vuetify.goTo('#public', options)"
+              :complete="position > 7"
+              style="transition: all 1s"
+              color="primary"
+              class="body-1"
+            >
+              Public lecture about the protection of marine animals with
+              GreatBay_United
+            </v-stepper-step>
+            <v-stepper-step
+              editable
+              edit-icon="8"
+              step="8"
+              @click="$vuetify.goTo('#cop15', options)"
+              :complete="position > 8"
+              style="transition: all 1s"
+              color="primary"
+              class="body-1"
+            >
+              COP15 Youth Biodiversity Science Exploration Series: Synthetic
+              Biology special session
+            </v-stepper-step>
           </v-stepper>
         </template>
       </v-hover>
@@ -84,13 +134,16 @@
         v-show="!firstload"
       >
         <v-container style="padding: 20px">
-          <v-row justify="center">
-            <v-card-title
-              class="text-h4 title"
-              id="introduction"
-              v-intersect="onIntersect"
+          <!--
+          <v-row>
+            <v-card-title class="text-h3 title" v-intersect="onIntersect"
+              >Education</v-card-title
             >
-              Introduction</v-card-title
+          </v-row>
+          -->
+          <v-row justify="center">
+            <v-card-title class="text-h4 title" id="introduction"
+              >Introduction</v-card-title
             >
           </v-row>
           <v-card-text>
@@ -123,7 +176,9 @@
               do.
             </p>
           </v-card-text>
-          <v-img src="https://2021.igem.org/wiki/images/6/63/T--ShanghaiTech_China--edu--bilibili.jpg" />
+          <v-img
+            src="https://2021.igem.org/wiki/images/6/63/T--ShanghaiTech_China--edu--bilibili.jpg"
+          />
           <v-card-title class="text-h5">
             Continuous popular science on our Wechat official accounts - Also
             collaborate with GA_State_SW_Jiaotong
@@ -148,7 +203,16 @@
               can be spread to a wider range of places.
             </p>
           </v-card-text>
-          <v-img src="https://2021.igem.org/wiki/images/a/a1/T--ShanghaiTech_China--edu--gongzhonghao.jpg" />
+          <v-img
+            src="https://2021.igem.org/wiki/images/3/3d/T--ShanghaiTech_China--edu--gongzhonghao2.png"
+            contain
+            max-height="600px"
+          />
+          <v-img
+            src="https://2021.igem.org/wiki/images/a/a1/T--ShanghaiTech_China--edu--gongzhonghao.jpg"
+            contain
+            max-height="600px"
+          />
           <v-row justify="center">
             <v-card-title class="text-h4 title" id="offline">
               Offline Lectures</v-card-title
@@ -166,8 +230,30 @@
               </v-list-item>
               <v-list-item>
                 <v-card-text>
-                  <p class="body-1">Something here</p>
-                  <p class="body-1">Something here</p>
+                  <p class="body-1">
+                    iGEM is a multi-disciplinary competition, so our educational
+                    content is very broad. In this class, we focus more on
+                    information science. Our team chose a robot theme.
+                    Information for junior high school students is complicated
+                    and unknown, but when the short theory class ended, we took
+                    out a real humanoid robot from the bag, the students were
+                    obviously excited.
+                  </p>
+                  <p class="body-1">
+                    The students were more receptive than we could have
+                    imagined, and they started to design their own robots,
+                    really stepping into the door of science. Click
+                    <a
+                      href="https://2021.igem.org/wiki/images/a/a7/T--ShanghaiTech_China--edu--here1.pptx"
+                      >here</a
+                    >
+                    to learn together!
+                  </p>
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/5/5d/T--ShanghaiTech_China--edu--sjj.jpg"
+                    contain
+                    max-height="600px"
+                  />
                 </v-card-text>
               </v-list-item>
               <v-list-item>
@@ -179,9 +265,18 @@
                     We also often give lectures in the field of synthetic
                     biology on campus. Considering college students' strong
                     acceptance ability, we will choose more interesting topics
-                    to talk about, such as double-regulated suicide system.
+                    to talk about, such as the double-regulated suicide system.
                     Interesting subjects make even students in other majors can
                     listen to with interest.
+                  </p>
+                  <p class="body-1">
+                    Although the format is similar to a lecture, the instructor
+                    uses more analogies and a light-hearted story format to make
+                    the content easier to understand. Each speech has been
+                    carefully revised over a considerable amount of time. For a
+                    one-hour lecture, the narrator will usually prepare at least
+                    double the time, which enables the narrator to further
+                    discuss in the face of the students' unexhausted desire.
                   </p>
                   <p class="body-1">
                     Said some electrical engineering students, 'Through this
@@ -189,7 +284,61 @@
                     help them have a more complete understanding of science and
                     a deeper understanding of their major.'
                   </p>
-                  <v-img src="https://2021.igem.org/wiki/images/b/be/T--ShanghaiTech_China--edu--xq_ssy.jpg" />
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/b/be/T--ShanghaiTech_China--edu--xq_ssy.jpg"
+                  />
+                  <p class="body-1">
+                    In the beginning, we taught in the classroom. Later, when we
+                    had attracted a lot of fans, we would use the lecture hall
+                    at the academy. We are delighted by the love and support of
+                    our students and are even more enthusiastic about longer,
+                    richer, and more narrated lectures.
+                  </p>
+                  <p class="body-1">
+                    We will even put up posters, distribute brochures and
+                    determine the overall process plan and schedule before the
+                    lecture. We even arranged for the two hosts and their
+                    cameos. Click
+                    <a
+                      href="https://2021.igem.org/wiki/images/f/f6/T--ShanghaiTech_China--edu--here5.pptx"
+                      >here</a
+                    >
+                    to learn together!
+                  </p>
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/0/08/T--ShanghaiTech_China--edu--igem1.png"
+                    contain
+                    max-height="600px"
+                  />
+                  <v-img
+                    style="margin-top: 16px"
+                    src="https://2021.igem.org/wiki/images/5/51/T--ShanghaiTech_China--edu--igem2.png"
+                    contain
+                    max-height="600px"
+                  />
+                  <p class="body-1">
+                    And our friends made a presentation about the iGEM projects
+                    of GA_State_SW_Jiaotong and ShanghaiTech_China to students
+                    and faculty from different majors in Southwest Jiaotong
+                    University. In this presentation, members of the
+                    GA_State_SW_Jiaotong team firstly gave an introduction to
+                    the project background and experimental design. Secondly,
+                    GA_State_SW_Jiaotong team members presented
+                    ShanghaiTech_China’s project for bone damage repair. This
+                    presentation expanded the popularity and influence of both
+                    projects.
+                  </p>
+                  <p class="body-1">
+                    Students from different grades and majors of SWJTU actively
+                    feedback to the presentation. Later, they participated in a
+                    Q&A section, demonstrating a strong interest in our project
+                    and the iGEM competition.
+                  </p>
+                  <v-img
+                    src="https://2021.igem.org/wiki/images/f/f0/T--ShanghaiTech_China--edu--university.jpg"
+                    contain
+                    max-height="600px"
+                  />
                 </v-card-text>
               </v-list-item>
             </v-list>
@@ -217,26 +366,21 @@
                   Shanghaitech, I saw hope of our education.'. Our visit
                   represent a big chance for students there.
                 </p>
-                <v-img src="https://2021.igem.org/wiki/images/8/8b/T--ShanghaiTech_China--edu--dh_1.jpg" />
-                <p class="body-1"></p>
-                <v-img src="https://2021.igem.org/wiki/images/0/0c/T--ShanghaiTech_China--edu--dh_2.jpg" />
                 <p class="body-1">
                   Thinking about how little experience they have in learning
                   biology, We chose to introduce basic concepts in biology such
-                  as
-                </p>
-                <p class="body-1">
-                  internal environment, cells, DNA and so on. We brought the
-                  children along to draw cells, organelles, DNA and so on, which
-                  was a great way to focus the children's attention. It turned
-                  out that they can easily accept the knowledge through the
-                  analogy of cells in the internal environment and the swimmer.
-                  So we tried to explain the central dogma of inheritance.
-                  Although it was relatively difficult for them, they listened
-                  with great interest and did well in the Q&A section in the
-                  end. When we show the PV video of our team and Xinan team, it
-                  seemed that we opened up new worlds for them. A few brief
-                  introductory lessons kindled their interest in biology.
+                  as internal environment, cells, DNA, and so on. We brought the
+                  children along to draw cells, organelles, DNA, and so on,
+                  which was a great way to focus the children's attention. It
+                  turned out that they can easily accept the knowledge through
+                  the analogy of cells in the internal environment and the
+                  swimmer. So we tried to explain the central dogma of
+                  inheritance. Although it was relatively difficult for them,
+                  they listened with great interest and did well in the Q&A
+                  section in the end. When we show the PV video of our team and
+                  GA_State_SW_Jiaotong, it seemed that we opened up new worlds
+                  for them. A few brief introductory lessons kindled their
+                  interest in biology.
                 </p>
                 <p class="body-1">
                   After class, we offered online courses and popular science
@@ -253,8 +397,16 @@
                   biggest affirmation for us. Some of the students were able to
                   slowly say their answers together, even though they were
                   ashamed to stand up to answer the questions. We were overjoyed
-                  by the progress of the students.
+                  by the progress of the students. Click
+                  <a
+                    href="https://2021.igem.org/wiki/images/e/ee/T--ShanghaiTech_China--edu--here2.pptx"
+                    >here</a
+                  >
+                  to learn together!
                 </p>
+                <v-img
+                  src="https://2021.igem.org/wiki/images/8/8b/T--ShanghaiTech_China--edu--dh_1.jpg"
+                />
               </v-card-text>
             </v-list-item>
             <v-list-item>
@@ -280,7 +432,7 @@
                   change color, and, most intriguingly, how chameleons change
                   color. In this class, I found many videos from Bilibili, a
                   video website, as examples, which not only made students
-                  understand more thoroughly, but also aroused their interest
+                  understand more thoroughly but also aroused their interest
                   more than boring words. It is also in this way that we show
                   how to use resources to find learning materials. I think this
                   will help students more than biology. At the same time, they
@@ -288,16 +440,22 @@
                   the iGEM competition, and the application aspect of it was
                   very novel to them.
                 </p>
-                <v-img src="https://2021.igem.org/wiki/images/8/80/T--ShanghaiTech_China--edu--dh_3.jpg" />
                 <p class="body-1">
                   More students were willing to communicate with us than the
                   elementary school group. They were more grateful for the
                   invisible things we brought to them than just talking about
                   their feelings in biology class. 'I understand a lot, have
                   more motivation, good study confidence is also more firm.',
-                  they said.
+                  they said. Click
+                  <a
+                    href="https://2021.igem.org/wiki/images/a/ac/T--ShanghaiTech_China--edu--here3.pptx"
+                    >here</a
+                  >
+                  to learn together!
                 </p>
-                <v-img src="https://2021.igem.org/wiki/images/3/31/T--ShanghaiTech_China--edu--dh_4.jpg" />
+                <v-img
+                  src="https://2021.igem.org/wiki/images/3/31/T--ShanghaiTech_China--edu--dh_4.jpg"
+                />
               </v-card-text>
             </v-list-item>
             <v-list-item>
@@ -312,29 +470,44 @@
                   try to get out of the textbook and show them what common
                   plants are in their daily lives and how to make herbarium
                   specimens. Let them use living things. The students are having
-                  fun and learning.
+                  fun and learning. Click
+                  <a
+                    href="https://2021.igem.org/wiki/images/2/23/T--ShanghaiTech_China--edu--here4.pdf"
+                    >here</a
+                  >
+                  to learn together!
                 </p>
-                <v-img src="https://2021.igem.org/wiki/images/9/93/T--ShanghaiTech_China--edu--zch_1.jpg" />
+                <v-img
+                  src="https://2021.igem.org/wiki/images/9/93/T--ShanghaiTech_China--edu--zch_1.jpg"
+                />
               </v-card-text>
             </v-list-item>
           </v-list>
-          <v-card-title class="text-h5" id="communication">
-            GA_State_SW_Jiaotong - Communicaton
-          </v-card-title>
+          <v-card-title class="text-h5"> Education abroad </v-card-title>
           <v-card-text>
-            <p class="body-1">Something here</p>
+            <p class="body-1">
+              At the same time, we have partnered with our friends,
+              GA_State_SW_Jiaotong, to teach synthetic biology in offline
+              classrooms. This mutual assistance has allowed us to go further
+              with our lesson plans and projects.
+            </p>
+            <v-img
+              src="https://2021.igem.org/wiki/images/e/e9/T--ShanghaiTech_China--edu--edudu.jpg"
+              contain
+              max-height="600px"
+            />
           </v-card-text>
           <v-card-title class="text-h5"> Community </v-card-title>
-          <v-card-text class="body-1">
+          <v-card-text>
             <p class="body-1">
               In addition, we have designed various promotional materials for
               the project and synthetic biology, such as brochures, badges,
-              posters, etc. Most of our audiences are students in Shanghaitech.
-              After distributing the pamphlets for many times, almost all the
-              students have some impression and understanding of iGEM. The
-              feedback we received went from "I'm not a biology student" to "I
-              know this competition", which made us very proud. After the first
-              publicity, students came to know the situation in an endless
+              posters, etc. Most of our audiences are students in ShanghaiTech
+              University. After distributing the pamphlets many times, almost
+              all the students have some impression and understanding of iGEM.
+              The feedback we received went from "I'm not a biology student" to
+              "I know this competition", which made us very proud. After the
+              first publicity, students came to know the situation in an endless
               stream, and some even took the initiative to ask. The iGEM group
               alone accounts for a quarter of all new students, a significant
               number.
@@ -345,14 +518,47 @@
               their help, our project spread among foreign students. This
               partnership enables us to extend our outreach abroad.
             </p>
-            <v-img src="https://2021.igem.org/wiki/images/0/0b/T--ShanghaiTech_China--edu--pub.jpg" />
+            <v-img
+              src="https://2021.igem.org/wiki/images/0/0b/T--ShanghaiTech_China--edu--pub.jpg"
+              contain
+              max-height="600px"
+            />
+            <p class="body-1">
+              Together with Synthetic Biology Club members, our friends,
+              GA_State_SW_Jiaotong, set up a stand with our posters to introduce
+              the hair loss project and MIBOM program to the GSU students. Many
+              students showed great interest in synthetic biology and signed up
+              for the club. They also distributed flyers with a QR code for our
+              survey on alopecia-related problems. Overall, the promotion was a
+              great success. With the collaboration with them, we spread our
+              project to other countries.
+            </p>
+            <v-img
+              src="https://2021.igem.org/wiki/images/8/8b/T--ShanghaiTech_China--edu--student.jpg"
+              contain
+              max-height="600px"
+            />
+            <p class="body-1">
+              Also, they came to downtown Atlanta to promote our project in the
+              community. They put up our posters and distributed flyers on the
+              streets, introduced synthetic biology and the project "MIBOM" from
+              ShanghaiTech_China, which promoted the promotion of the two
+              parties' projects.
+            </p>
+            <v-img
+              src="https://2021.igem.org/wiki/images/2/25/T--ShanghaiTech_China--edu--us.jpg"
+              contain
+              max-height="600px"
+            />
           </v-card-text>
           <v-row justify="center">
-            <v-card-title class="text-h4 title" id="conclusion"> Conclusion </v-card-title>
+            <v-card-title class="text-h4 title" id="conclusion">
+              Conclusion
+            </v-card-title>
           </v-row>
           <v-card-text class="body-1">
             <p class="body-1">
-              In general, the offline education of Shanghaitech_China reflects
+              In general, the offline education of ShanghaiTech_China reflects
               the differences between poor areas and urban areas, between
               domestic and foreign students, and between students of different
               ages. For such a wide group of students, we provide personalized
@@ -375,6 +581,209 @@
               and online publicity after the competition to bring more
               scientific knowledge to students.
             </p>
+          </v-card-text>
+          <!--
+          <v-card-title class="text-h3">Communication</v-card-title>
+          -->
+          <v-row justify="center">
+            <v-card-title class="text-h4 title" id="conference"
+              >Conference of China iGEMer Community(CCiC)</v-card-title
+            >
+          </v-row>
+          <v-card-text>
+            <p class="body-1">
+              ShanghaiTech_China attached great importance to communication with
+              other teams and iGEM community. We attended the 8th Conference of
+              China iGEMer Community(8th CCiC) offline and were listed in the
+              Finalist of best presentation. We got a lot of chances to
+              communicate with other teams and most of our partnerships are
+              achieved in the conference. The CCiC is important for
+              ShanghaiTech_China to communicate others. As a previous CCiC
+              sponsor, the communication between ShanghaiTch_China and CCiC is
+              sustainable.
+            </p>
+            <v-img
+              src="https://2021.igem.org/wiki/images/c/cf/T--ShanghaiTech_China--edu--ccic.jpg"
+              contain
+              max-height="600px"
+            />
+            <v-row
+              justify="center"
+              style="margin-top: 10px; margin-bottom: 10px"
+            >
+              <p class="body-2 fig">Fig.1a: Attendance of 8th CCiC</p>
+            </v-row>
+            <v-img
+              src="https://2021.igem.org/wiki/images/3/37/T--ShanghaiTech_China--edu--ccic2.jpg"
+              contain
+              max-height="600px"
+            />
+            <v-row
+              justify="center"
+              style="margin-top: 10px; margin-bottom: 10px"
+            >
+              <p class="body-2 fig">Fig.1b: Presentation of MIBOM at CCiC</p>
+            </v-row>
+          </v-card-text>
+          <v-row justify="center">
+            <v-card-title class="text-h4 title" id="synbiopunk"
+              >Synbiopunk Challenge</v-card-title
+            >
+          </v-row>
+          <v-card-text>
+            <p class="body-1">
+              Hosted by Ailurus Biotech, Synbiopunk 2021 launched the Synbiopunk
+              Challenge and we participated in the offline roadshow of
+              Synbiopunk Challenge on October 09, 2019. Synbiopunk Challenge
+              aims to integrate resources to deliver sustainable synthetic
+              biology solutions to the sustainable Development Goals.
+            </p>
+            <v-img
+              src="https://2021.igem.org/wiki/images/5/58/T--ShanghaiTech_China--edu--synbiopunk.jpg"
+              contain
+              max-height="600px"
+            />
+            <v-row
+              justify="center"
+              style="margin-top: 10px; margin-bottom: 10px"
+            >
+              <p class="body-2 fig">
+                Fig.2: We did a 5-min presentation at Synbiopunk challenge
+              </p>
+            </v-row>
+            <p class="body-1">
+              In Synbiopunk challenge, we emphasized MIBOM's long-standing
+              vision of contributing to the treatment of human Health. We hope
+              MIBOM can truly optimize the existing mussel mucin extraction
+              resources and become a truly clean and sustainable scientific
+              innovation product to change the traditional way of fracture
+              treatment and usher in a new era of fracture treatment.
+            </p>
+            <p class="body-1">
+              We have placed third in the Synbiopunk Challenge and won 10,000
+              RMB as our start-up fund. We hope MIBOM can become a real
+              development product to help meet people's health needs.
+            </p>
+            <v-img
+              src="https://2021.igem.org/wiki/images/e/ec/T--ShanghaiTech_China--edu--synbiopunk2.jpg"
+              contain
+              max-height="600px"
+            />
+            <v-row
+              justify="center"
+              style="margin-top: 10px; margin-bottom: 10px"
+            >
+              <p class="body-2 fig">
+                Fig.3: We won a 10000 RMB prize as our start-up fund
+              </p>
+            </v-row>
+          </v-card-text>
+          <v-row justify="center">
+            <v-card-title class="text-h4 title" id="public"
+              >Public lecture about the protection of marine animals with
+              GreatBay_United</v-card-title
+            >
+          </v-row>
+          <v-card-text>
+            <p class="body-1">
+              In order to understand the public's awareness of Marine animal
+              protection, we made a questionnaire survey and found that most
+              people know little about turtles and mussels. Therefore,
+              GreatBay_United and ShanghaiTech_China hope to let more people
+              know about the situation of these two Marine creatures through
+              lectures. Therefore, through communication and negotiation, we
+              were invited to have a lecture at Guangzhou Ulink College on
+              October 14. However, due to the epidemic situation, we could not
+              arrive at the scene, so we made a video to introduce
+              ShanghaiTech_China's project this year and mussel-related
+              knowledge to the audience. The seminar organized by
+              GreatBay_United and ShanghaiTech_China was well received by the
+              teachers and students who participated in the seminar, which
+              enabled Ulink College students to understand the importance of
+              protecting marine animals.
+            </p>
+            <v-img
+              src="https://2021.igem.org/wiki/images/e/e3/T--ShanghaiTech_China--edu--8150.jpg"
+              contain
+              max-height="600px"
+            />
+            <v-row
+              justify="center"
+              style="margin-top: 10px; margin-bottom: 10px"
+            >
+              <p class="body-2 fig">
+                Fig.4: Online MIBOM presentation in GreatBay_United
+              </p>
+            </v-row>
+            <p class="body-1">
+              See more details on our
+              <a
+                href="https://2021.igem.org/Team:ShanghaiTech_China/Partnership"
+                >Partnership</a
+              >
+              page.
+            </p>
+          </v-card-text>
+          <v-row justify="center">
+            <v-card-title class="text-h4 title" id="cop15"
+              >COP15 Youth Biodiversity Science Exploration Series: Synthetic
+              Biology special session</v-card-title
+            >
+          </v-row>
+          <v-card-text>
+            <p class="body-1">
+              COP15 Youth Biodiversity Science Exploration activity is
+              co-sponsored by the Publicity and Education Center of the Ministry
+              of Ecology and Environment and Polar Future. It is a scientific
+              exploration activity to learn and practice biodiversity
+              conservation and rethink the relationship between man and nature.
+            </p>
+            <p class="body-1">
+              Synthetic biology is a budding revolution in the life sciences,
+              and this new field is about to embrace its youth. As one of the
+              important issues concerned by the Convention on Biological
+              Diversity (CBD), synthetic biology has been attracting much
+              attention for biodiversity conservation and sustainable use.
+            </p>
+            <p class="body-1">
+              COP15 has a special session on synthetic biology, bringing
+              together young teams of biodiversity explorers to share their
+              practices in biodiversity conservation. We are fortunate to
+              participate in this activity to share.
+            </p>
+            <v-img
+              src="https://2021.igem.org/wiki/images/0/03/T--ShanghaiTech_China--par--cop15.png"
+              contain
+              max-height="600px"
+            />
+            <v-row
+              justify="center"
+              style="margin-top: 10px; margin-bottom: 10px"
+            >
+              <p class="body-2 fig">Fig.5: Brochure for COP15</p>
+            </v-row>
+            <p class="body-1">
+              We shared MIBOM's efforts in biodiversity conservation, especially
+              the extraction, purification and modification of mussel mucin. We
+              optimized the existing extraction process and applied the
+              biological preparation method to extract mussel. This is a good
+              way to reduce mussel waste. At the meeting, our sharing was
+              recognized by many experts, and after that, we kept in close
+              contact with several of them to help us develop further.
+            </p>
+            <v-img
+              src="https://2021.igem.org/wiki/images/d/dc/T--ShanghaiTech_China--edu--qqsomething.png"
+              contain
+              max-height="600px"
+            />
+            <v-row
+              justify="center"
+              style="margin-top: 10px; margin-bottom: 10px"
+            >
+              <p class="body-2 fig">
+                Fig.6: MIBOM presentation at COP15 online conference
+              </p>
+            </v-row>
           </v-card-text>
         </v-container>
       </v-card>
@@ -445,6 +854,10 @@ export default {
     this.step[1] = document.getElementById("online");
     this.step[2] = document.getElementById("offline");
     this.step[3] = document.getElementById("conclusion");
+    this.step[4] = document.getElementById("conference");
+    this.step[5] = document.getElementById("synbiopunk");
+    this.step[6] = document.getElementById("public");
+    this.step[7] = document.getElementById("cop15");
     this.updatepos();
     setTimeout(() => {
       this.firstload = false;
