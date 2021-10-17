@@ -465,8 +465,8 @@
                       "
                     >
                       <p class="body-2 fig">
-                        Fig.6b Record the weight of glass beads when separating
-                        petri dish from PCR tube.
+                        Fig.6b Record the weight of glass beads when petri dish
+                        separated from the PCR tube
                       </p>
                     </v-row>
                   </v-col>
@@ -1506,7 +1506,7 @@
               <v-card-text>
                 <p class="body-1">
                   Small molecule agonist Yoda1 has been proved to be effective
-                  in activating Piezo1.11 So we used Yoda1 as a positive control
+                  in activating Piezo1.1 So we used Yoda1 as a positive control
                   to test the Activation of Piezo1.1 and to see the change of
                   green fluorescence to indicate the calcium influx. The
                   experimental group and positive control group are all cells
@@ -1525,24 +1525,24 @@
                 </p>
                 <v-row justify="center" align="baseline">
                   <v-col cols="6">
-                <v-img
-                  src="https://2021.igem.org/wiki/images/5/54/T--ShanghaiTech_China--res--gcamp_trans.jpg"
-                  contain
-                  max-height="500px"
-                />
-                <v-row
-                  justify="center"
-                  style="
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-                    margin-right: 16px;
-                    margin-left: 16px;
-                  "
-                >
-                  <p class="body-2 fig">
-                    Fig.18: Experiment procedure to test the calcium influx
-                  </p>
-                </v-row>
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/5/54/T--ShanghaiTech_China--res--gcamp_trans.jpg"
+                      contain
+                      max-height="500px"
+                    />
+                    <v-row
+                      justify="center"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-right: 16px;
+                        margin-left: 16px;
+                      "
+                    >
+                      <p class="body-2 fig">
+                        Fig.18: Experiment procedure to test the calcium influx
+                      </p>
+                    </v-row>
                   </v-col>
                   <v-col cols="6">
                     <v-container style="padding-bottom: 0">
@@ -1613,8 +1613,8 @@
                       "
                     >
                       <p class="body-2 fig">
-                        Video.5: Faster fluorescence change of cells under the
-                        stimulation of shear stress, exposure time: 90ms, 20X
+                        Video.5: Almost no fluorescent change of cells under the
+                        stimulation of shear stress, exposure time, 90ms, 20X
                         objective
                       </p>
                     </v-row>
@@ -1830,25 +1830,25 @@
                 </p>
                 <v-row justify="center" align="baseline">
                   <v-col cols="6">
-                <v-img
-                  src="https://2021.igem.org/wiki/images/0/07/T--ShanghaiTech_China--res--gcamp_vector.jpg"
-                  contain
-                  max-height="500px"
-                />
-                <v-row
-                  justify="center"
-                  style="
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-                    margin-right: 16px;
-                    margin-left: 16px;
-                  "
-                >
-                  <p class="body-2 fig">
-                    Fig.21a: Experiment procedure of testing the downstream
-                    pathway
-                  </p>
-                </v-row>
+                    <v-img
+                      src="https://2021.igem.org/wiki/images/0/07/T--ShanghaiTech_China--res--gcamp_vector.jpg"
+                      contain
+                      max-height="500px"
+                    />
+                    <v-row
+                      justify="center"
+                      style="
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        margin-right: 16px;
+                        margin-left: 16px;
+                      "
+                    >
+                      <p class="body-2 fig">
+                        Fig.21a: Experiment procedure of testing the downstream
+                        pathway
+                      </p>
+                    </v-row>
                   </v-col>
                   <v-col cols="6">
                     <v-img
@@ -2234,7 +2234,10 @@
                   measured its release rate. The insulin-releasing experiment is
                   measured by Enzyme-Linked Immunosorbent Assay(ELISA). The data
                   collected from the experiment helped us to correct the
-                  releasing math model. (See our drug-releasing model on XXX
+                  releasing math model. (See our drug-releasing model on
+                  <a href="https://2021.igem.org/Team:ShanghaiTech_China/Model"
+                    >Model</a
+                  >
                   page) . We made a solution of alginate and insulin in a DMEM
                   culture medium, with an insulin concentration of 80ng/ml.
                   After crosslinking, the hydrogel was merged into the DMEM
