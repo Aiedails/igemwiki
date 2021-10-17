@@ -136,7 +136,7 @@
                       <tr>
                         <th>
                           <a href="http://parts.igem.org/Part:BBa_K3755013"
-                            >BBa K3755013</a
+                            >BBa_K3755013</a
                           >
                         </th>
                         <th>Alginate lyase with human IL-2 signal sequence</th>
