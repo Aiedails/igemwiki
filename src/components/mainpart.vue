@@ -145,10 +145,22 @@
                 >Principles of R&D process</v-card-title
               >
               <v-card-text>
+                <v-img
+                  src="https://2021.igem.org/wiki/images/4/49/T--ShanghaiTech_China--hpo--photo8.jpg"
+                  style="margin: 35px auto"
+                  contain
+                  max-height="600px"
+                />
                 <p class="body-1">
                   In the process of developing MIBOM, we need to find a feasible
-                  management system to help us build it. After consulting Jean
-                  Dai, we built a set of R&D processes based on the PDCA cycle.
+                  management system to help us build it.Professor Jean Dai,
+                  experting in healthcare management, and Professor Lifeng Yang,
+                  experting in consumer behaviour, provided us with a lot of
+                  advice and inspiration. The two professors gave us great
+                  support on how to manage and promote the R&D process and the
+                  ethical guidelines for interviewing. After consulting them, we
+                  built a set of R&D processes based on the PDCA cycle. We also
+                  clarified our principles and aim of the interview.
                 </p>
                 <v-img
                   src="https://2021.igem.org/File:T--ShanghaiTech_China--hp--principle1.jpg"
@@ -787,30 +799,7 @@
                   <v-list-item-content>
                     <v-list-item-title class="body-1"
                       ><strong
-                        >3. WO Strategy -- Industrial Chain Cooperation:</strong
-                      ></v-list-item-title
-                    >
-                    <div style="padding-left: 16px" class="body-1">
-                      MIBOM is scheming to integrate the industrial chain and
-                      broaden the cooperative relationship. For upwarding the
-                      integration for contract manufacturers, MIBOMis looking
-                      for a mature technology of water gel synthesis company,
-                      cooperation with related synthetic biology company. Based
-                      on their mature fermentation system or extract protein
-                      system constitute the value chain of the product quickly,
-                      MIBOM can overcome the problem of the early stage of the
-                      start-up inherent costs too much, and the layout of the
-                      chain is helpful to giving full play to the advantages of
-                      cooperation, further improve product quality, Better
-                      capture market share.
-                    </div>
-                  </v-list-item-content>
-                </v-list-item>
-                <v-list-item>
-                  <v-list-item-content>
-                    <v-list-item-title class="body-1"
-                      ><strong
-                        >4. ST Strategy -- Accelerate the development of
+                        >3. ST Strategy -- Accelerate the development of
                         multi-line products:</strong
                       ></v-list-item-title
                     >
@@ -835,7 +824,7 @@
                   <v-list-item-content>
                     <v-list-item-title class="body-1"
                       ><strong
-                        >5. WT Strategy --Build brand awareness:</strong
+                        >4. WT Strategy --Build brand awareness:</strong
                       ></v-list-item-title
                     >
                     <div style="padding-left: 16px" class="body-1">
@@ -952,6 +941,16 @@
                   MIBOM into a real product that can be applied to human reality
                   and contribute to the sustainable development of human beings.
                   Click on the blue for details.
+                </p>
+                <p class="body-1">
+                  Finally, we would like to thank Prof. Haitao Yang, Prof. Wei
+                  Shen, Prof. Yan Gao, Prof. Yifeng Zhang, Prof. Suting Hong,
+                  Prof. Jean Dai, Prof. Lifeng Yang and her Attitude Research
+                  Lab, Prof. Bailong Xiao,Teacher Jing Yang, Prof. Ying Xi,
+                  Teacher Xuesong Chen, Prof. Yijun Zheng, Dr. Hongyan Jiang,
+                  Dr. Xin Sun, Dr. Jie Ma, Dr. Yang Tang, Dr. Yong Ding, Dr.
+                  Haixia Yang, Dean Chouwen Zhu, Mr. Yunfeng Qiu and Office of
+                  Tech Transfer, ShanghaiTech University for their help.
                 </p>
               </v-card-text>
             </v-container>
