@@ -396,7 +396,7 @@ void step(boolean dir, byte dirPin, byte stepperPin, int steps)
                   S3:Push servo for syringe <br />
                 </p>
                 <p class="body-1">
-                  The control command is: <code>&lt;servo name>:&lt;angle</code>
+                  The control command is: <code>&lt;servo name>:&lt;angle></code>
                 </p>
                 <p class="body-1">
                   Angle between 0 and 180, such as let S1 turn to 90 degrees is
