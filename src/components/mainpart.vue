@@ -168,7 +168,7 @@
                       >
                         <v-expand-transition>
                           <v-img
-                            src="https://2021.igem.org/wiki/images/c/cc/T--ShanghaiTech_China--des--a_tex.svg"
+                            src="https://2021.igem.org/wiki/images/c/c8/T--ShanghaiTech_China--des--a_tex.jpg"
                             v-if="hover"
                             class="d-flex transition-fast-in-fast-out"
                             style="height: 100%; width: 100%"
@@ -184,7 +184,7 @@
                       >
                         <v-expand-transition>
                           <v-img
-                            src="https://2021.igem.org/wiki/images/d/d9/T--ShanghaiTech_China--des--h_tex.svg"
+                            src="https://2021.igem.org/wiki/images/a/aa/T--ShanghaiTech_China--des--h_tex.jpg"
                             v-if="hover"
                             class="d-flex transition-fast-in-fast-out"
                             style="height: 100%"
@@ -203,7 +203,7 @@
                       >
                         <v-expand-transition>
                           <v-img
-                            src="https://2021.igem.org/wiki/images/8/89/T--ShanghaiTech_China--des--r_tex.svg"
+                            src="https://2021.igem.org/wiki/images/b/b6/T--ShanghaiTech_China--des--r_tex.jpg"
                             v-if="hover"
                             class="d-flex transition-fast-in-fast-out"
                             style="height: 100%; width: 100%"
@@ -219,7 +219,7 @@
                       >
                         <v-expand-transition>
                           <v-img
-                            src="https://2021.igem.org/wiki/images/2/2d/T--ShanghaiTech_China--des--d_tex.svg"
+                            src="https://2021.igem.org/wiki/images/2/21/T--ShanghaiTech_China--des--d_tex.jpg"
                             v-if="hover"
                             class="d-flex transition-fast-in-fast-out"
                             style="height: 100%; width: 100%"
@@ -257,7 +257,7 @@
                 />
               </v-card-text>
               <v-card-title class="text-h5" id="adhesive"
-                >Adhesive system</v-card-title
+                >Adhesion system</v-card-title
               >
               <v-card-text>
                 <p class="body-1">
@@ -415,7 +415,7 @@
                   max-height="600px"
                 />
               </v-card-text>
-              <v-card-title class="text-h6">Fuctions summary</v-card-title>
+              <v-card-title class="text-h5">Fuctions summary</v-card-title>
               <v-card-text>
                 <p class="body-1">
                   When MIBOM is injected into the fracture, the mussel protein
