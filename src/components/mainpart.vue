@@ -116,7 +116,7 @@
                 <p class="body-1">
                   In the past six months, our team's efforts have received more
                   than 1250 followings, cover an area of 4290733 square
-                  kilometers, Over 50 experts on different fields gave us
+                  kilometers, Over 20 experts on different fields gave us
                   supporting. In order to optimize MIBOM products, we collected
                   about 100 responses through interviews. Our practice spans the
                   entire territory of China and is intended to make a greater
