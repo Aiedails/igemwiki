@@ -113,35 +113,35 @@
               </v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  Shanghai University of Science and Technology and
-                  GA_State_SW_Jiaotong reached cooperation in experimental
-                  design and modeling through online and In-person meetings in
-                  June and July. In the online meeting in June, the two teams
-                  communicated and exchanged views on modeling design and
-                  experimental design. In terms of modeling design, we solicited
-                  relevant design ideas from the modeling team of
-                  GA_State_SW_Jiaotong to predict the viscosity of mussel mucin.
-                  GA_State_SW_Jiaotong suggested that, with less data, the
-                  viscosity prediction of proteins could be achieved by
-                  establishing equations based on biological properties such as
-                  hydrophobicity, molecular weight, and ion charge. As for the
-                  experimental aspect, we shared the design idea of the E.coli
-                  toxin-antitoxin (TA) system for GA_State_SW_Jiaotong. Unlike
-                  GA_State_SW_Jiaotong's previous design, which used temperature
-                  conditions to induce bacillus subtilis suicide, the TA system
-                  is a dual-modulated suicide system that uses tryptophan and
-                  lactose to induce bacterial suicide. As soon as the bacteria
-                  leave the scalp environment and fall into an external
-                  environment free of tryptophan and lactose, they will commit
-                  suicide. In the In-person meeting in July, the two teams had
-                  in-depth discussions on the design of the suicide switch and
-                  the design of the protein viscosity prediction model. We
-                  provided a more detailed design plan for GA_State_SW_Jiaotong
-                  and answered the specific questions on plasmid copy number and
-                  vector construction. GA_State_SW_Jiaotong also answered the
-                  questions we had on model design. After that, we found some
-                  experts in stem cells, antibody drugs, and hair loss treatment
-                  for GA_State_SW_Jiaotong to provide them with more information
+                  ShanghaiTech_China and GA_State_SW_Jiaotong reached
+                  cooperation in experimental design and modeling through online
+                  and In-person meetings in June and July. In the online meeting
+                  in June, the two teams communicated and exchanged views on
+                  modeling design and experimental design. In terms of modeling
+                  design, we solicited relevant design ideas from the modeling
+                  team of GA_State_SW_Jiaotong to predict the viscosity of
+                  mussel mucin. GA_State_SW_Jiaotong suggested that, with less
+                  data, the viscosity prediction of proteins could be achieved
+                  by establishing equations based on biological properties such
+                  as hydrophobicity, molecular weight, and ion charge. As for
+                  the experimental aspect, we shared the design idea of the
+                  E.coli toxin-antitoxin (TA) system for GA_State_SW_Jiaotong.
+                  Unlike GA_State_SW_Jiaotong's previous design, which used
+                  temperature conditions to induce bacillus subtilis suicide,
+                  the TA system is a dual-modulated suicide system that uses
+                  tryptophan and lactose to induce bacterial suicide. As soon as
+                  the bacteria leave the scalp environment and fall into an
+                  external environment free of tryptophan and lactose, they will
+                  commit suicide. In the In-person meeting in July, the two
+                  teams had in-depth discussions on the design of the suicide
+                  switch and the design of the protein viscosity prediction
+                  model. We provided a more detailed design plan for
+                  GA_State_SW_Jiaotong and answered the specific questions on
+                  plasmid copy number and vector construction.
+                  GA_State_SW_Jiaotong also answered the questions we had on
+                  model design. After that, we found some experts in stem cells,
+                  antibody drugs, and hair loss treatment for
+                  GA_State_SW_Jiaotong to provide them with more information
                   channels.
                 </p>
                 <v-img
@@ -169,7 +169,7 @@
               <v-card-title class="text-h5"> Public education </v-card-title>
               <v-card-text>
                 <p class="body-1">
-                  The two teams have set up their own Wechat official accounts,
+                  The two teams have set up their own WeChat official accounts
                   and take turns to write articles to introduce the basic
                   principles and the latest progress of synthetic biology to the
                   public, as well as the iGEM competition and popularization of
@@ -177,9 +177,8 @@
                   educational influence of both programs, we introduced this
                   year's iGEM program into the rural volunteer teaching program
                   for social practice and introduced the relevant knowledge of
-                  synthetic biology to the rural students, as well as the iGEM
-                  program of the two teams this year, which broadened the
-                  horizon for the local students. To increase the interest of
+                  synthetic biology to the rural students, which broadened the
+                  horizon for these young teenagers. To increase the interest of
                   rural students in scientific exploration, our iGEM team
                   members also customized the field taxidermy course for local
                   children. This way of popularizing science through fun and
@@ -191,7 +190,7 @@
                   prepared promotional materials and gifts for the participants
                   and distributed brochures of the two teams to the passing
                   residents. The residents read our leaflets, scanned the QR
-                  code, followed the Wechat official accounts of the two teams,
+                  code, followed the WeChat official accounts of the two teams,
                   and filled in the questionnaires related to the projects after
                   hearing and learning about our projects. During the game
                   session, residents participated in mini-games such as memory
@@ -216,9 +215,9 @@
                 </p>
                 <p class="body-1">
                   In the lecture, we introduced the development history of iGEM
-                  competition, and also introduced the mechanism and process of
-                  iGEM competition for students by taking the excellent projects
-                  of iGEM competition over the years as an example.
+                  competition, and also the mechanism and process of iGEM
+                  competition for students by taking the excellent projects of
+                  iGEM competition over the years as an example.
                 </p>
                 <p class="body-1">
                   We also invited the former iGEM players to introduce their
@@ -228,17 +227,16 @@
                   questions. We also gained many new ideas from students.
                 </p>
                 <p class="body-1">
-                  On September 24, THE GA_State_SW_Jiaotong team introduced
+                  On September 24, The GA_State_SW_Jiaotong team introduced
                   their iGEM project and ShanghaiTech_China's iGEM project to
                   teachers and students from different majors in Southwest
-                  Jiaotong University.In the exchange activities, the
+                  Jiaotong University. In the exchange activities, the
                   GA_State_SW_Jiaotong team introduced the design idea and
                   experimental design method of this project. Secondly, the
-                  GA_State_SW_Jiaotong team members introduced
-                  ShanghaiTech_China bone injury repair project. students from
+                  GA_State_SW_Jiaotong team members introduced the
+                  ShanghaiTech_China bone injury repair project. Students from
                   different grades and majors participated in the Q&A session
-                  and showed their keen interest in our project and iGEM
-                  competition.
+                  and showed keen interest in our project and iGEM competition.
                 </p>
                 <v-row justify="center" align="baseline">
                   <v-col cols="6">
@@ -314,9 +312,9 @@
                   mucin MEFP5-1 for XMU-China and provided suggestions on
                   protein purification. At the same time, XMU-CHINA also
                   provided technical guidance for our mussel mucin viscosity
-                  measurement experiment. With their help, we successfully
-                  measured the viscosity data of mussel mucin. The communication
-                  and cooperation between the two sides played a key role in
+                  measurement. With their help, we successfully measured the
+                  viscosity data of mussel mucin. The communication and
+                  cooperation between the two sides played a key role in
                   promoting our project, and we also gained a lot of knowledge
                   in communication.
                 </p>
@@ -326,9 +324,8 @@
                   Practice focused on the medical cycle about patients,
                   clinicians, and hospitals. XMU-China's Human Practice was
                   mainly about the mussel problem. We got a lot of information
-                  from XMU-China's Human Practice work and this is really
-                  beneficial for our Sustainable development work. See more
-                  details on our
+                  from XMU-China's Human Practice work and this is beneficial
+                  for our sustainable development work. See more details on our
                   <a
                     href="https://2021.igem.org/Team:ShanghaiTech_China/Sustainable"
                     >Sustainable</a
@@ -350,7 +347,7 @@
                           We attended a CCiC meet up and got to know the
                           projects of XMU-China, exchanging the experience of
                           getting mussel protein. We suggested that the
-                          extraction of Mfp from ***E.coli*** is good way.
+                          extraction of Mfp from <i>E.coli</i> is good way.
                         </th>
                       </tr>
                       <tr>
@@ -399,20 +396,20 @@
                   environmental protection issues, especially Marine environment
                   and biodiversity protection. Therefore, in the design process
                   of the project, we used the technology of synthetic biology to
-                  rely on escherichia coli to express mussel mucin instead of
+                  rely on <i>E.coli</i> to express mussel mucin instead of
                   extracting proteins directly from mussels in the traditional
                   industry. We also hope to raise public awareness of the
                   protection of Marine life through public publicity. The
                   project of GreatBay_United has attracted the attention of
                   ShanghaiTech_China team. GreatBay_United hopes to develop a
                   new set of efficient and accurate bacterial endotoxin
-                  detection solutions through the method of synthetic biology to
-                  replace the traditional turtle blood reagent. To try to save
-                  the future of an endangered species. After communication and
-                  exchange, we found that both teams took the protection of the
-                  Marine environment as one of the priorities of the project, so
-                  we decided to have deeper cooperation in project design and
-                  Human Practice.
+                  detection solutions through synthetic biology to replace the
+                  traditional turtle blood reagent. To try to save the future of
+                  an endangered species. After communication and exchange, we
+                  found that both teams took the protection of the Marine
+                  environment as one of the projects priorities, so we decided
+                  to have deeper cooperation in project design and Human
+                  Practice.
                 </p>
                 <p class="body-1">
                   In order to understand the public's awareness of Marine animal
@@ -427,9 +424,9 @@
                   ShanghaiTech_China's project this year and mussel-related
                   knowledge to the audience. The seminar organized by
                   GreatBay_United and ShanghaiTech_China was well received by
-                  the teachers and students who participated in the seminar,
-                  which enabled Ulink College students to understand the
-                  importance of protecting marine animals.
+                  the teachers and students who participated, which enabled
+                  Ulink College students to understand the importance of
+                  protecting marine animals.
                 </p>
                 <v-img
                   src="https://2021.igem.org/wiki/images/e/e3/T--ShanghaiTech_China--edu--8150.jpg"
@@ -520,8 +517,8 @@
                   cell culture ability, but we have little difficulty in the
                   experimental design of drug diffusion detection. Therefore,
                   finding a team with complementary advantages for cooperation
-                  is a choice for better development of the project. CSU_China
-                  and ShanghaiTech_China hit it off! CSU_China's 2021 project
+                  is a choice for better project development. CSU_China and
+                  ShanghaiTech_China hit it off! CSU_China's 2021 project
                   focuses on finding a new method of treating type 1 diabetes
                   with the help of synthetic biology. CSU_China came up with the
                   idea of using hydrogel as a carrier for cell growth to make
@@ -535,8 +532,8 @@
                   also provided key guidance for the design of our drug release
                   experiment and completed the drug release experiment in the
                   hydrogel. In the process of cooperation between the two teams,
-                  we communicated with each other and learned from each other,
-                  so that our project moved forward quickly and well.
+                  we communicated with each other and learned from each other so
+                  that our project moved forward quickly and well.
                 </p>
                 <p class="body-1">
                   Thanks to the CCiC, we have an offline meet-up with CSU_China,
@@ -586,17 +583,17 @@
                 <p class="body-1">
                   We started working with Jiangnan_China in April to introduce
                   the Gadusol synthetic pathway in zebrafish into yeast to
-                  produce a biosunscreen that is not harmful to coral or the
+                  produce a bio-sunscreen that is not harmful to coral or the
                   ocean. In July, the two teams had in-depth and detailed
-                  communication and discussion on the experimental design of the
-                  project. In August, the two teams participated in the 8th
-                  China Regional iGEMer Exchange (CCiC conference). The two
-                  teams also carried out further communication on project design
-                  and finalized the cooperation of the team in the experiment.
+                  communication and discussion on the project's experimental
+                  design. In August, the two teams participated in the 8th China
+                  Regional iGEMer Exchange (CCiC conference). The two teams also
+                  carried out further communication on project design and
+                  finalized the team's cooperation in the experiment.
                 </p>
                 <p class="body-1">
                   After that, we helped Jiangnan_China test the cytotoxicity of
-                  its biological sunscreen, which proved its biosafety and
+                  its bio-sunscreen, which proved its biosafety and
                   environmental friendliness.
                 </p>
                 <v-img
@@ -616,7 +613,7 @@
                 <p class="body-1">
                   On October 9th, the two teams participated in the sustainable
                   Development competition of Synbiopunk Challenge sponsored by
-                  Ailurus Biotech and won good prize in the junior college.
+                  Ailurus Biotech and won the third place in the junior college.
                   Jiangnan_China and ShanghaiTech_China participated in the
                   COP15 Youth Biodiversity Science Exploration Activity on
                   October 14. During the activity, the two teams put forward
