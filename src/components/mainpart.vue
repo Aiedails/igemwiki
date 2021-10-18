@@ -34,8 +34,20 @@
               editable
               edit-icon="2"
               step="2"
-              @click="$vuetify.goTo('#identify', options)"
+              @click="$vuetify.goTo('#overview', options)"
               :complete="position > 2"
+              style="transition: all 1s ease 1s"
+              color="primary"
+              class="body-2"
+            >
+              Overview
+            </v-stepper-step>
+            <v-stepper-step
+              editable
+              edit-icon="3"
+              step="3"
+              @click="$vuetify.goTo('#identify', options)"
+              :complete="position > 3"
               style="transition: all 1s"
               color="primary"
               class="body-2"
@@ -44,22 +56,22 @@
             </v-stepper-step>
             <v-stepper-step
               editable
-              edit-icon="3"
-              step="3"
+              edit-icon="4"
+              step="4"
               @click="$vuetify.goTo('#adhesive', options)"
-              :complete="position > 3"
+              :complete="position > 4"
               style="transition: all 1s"
               color="primary"
               class="body-2"
             >
-              Adhesive system
+              Adhesion system
             </v-stepper-step>
             <v-stepper-step
               editable
-              edit-icon="4"
-              step="4"
+              edit-icon="5"
+              step="5"
               @click="$vuetify.goTo('#hydrogel', options)"
-              :complete="position > 4"
+              :complete="position > 5"
               style="transition: all 1s"
               color="primary"
               class="body-2"
@@ -68,34 +80,46 @@
             </v-stepper-step>
             <v-stepper-step
               editable
-              edit-icon="5"
-              step="5"
-              @click="$vuetify.goTo('#regulation', options)"
-              :complete="position > 5"
-              style="transition: all 1s"
-              color="primary"
-              class="body-2"
-            >
-              Regulation system
-            </v-stepper-step>
-            <v-stepper-step
-              editable
               edit-icon="6"
               step="6"
-              @click="$vuetify.goTo('#drug', options)"
+              @click="$vuetify.goTo('#regulation', options)"
               :complete="position > 6"
               style="transition: all 1s"
               color="primary"
               class="body-2"
             >
-              Drug system
+              Stress-sensitive regulation system
             </v-stepper-step>
             <v-stepper-step
               editable
               edit-icon="7"
               step="7"
-              @click="$vuetify.goTo('#engineering', options)"
+              @click="$vuetify.goTo('#drug', options)"
               :complete="position > 7"
+              style="transition: all 1s"
+              color="primary"
+              class="body-2"
+            >
+              Drug release system
+            </v-stepper-step>
+            <v-stepper-step
+              editable
+              edit-icon="8"
+              step="8"
+              @click="$vuetify.goTo('#function', options)"
+              :complete="position > 8"
+              style="transition: all 1s"
+              color="primary"
+              class="body-2"
+            >
+              Function summary
+            </v-stepper-step>
+            <v-stepper-step
+              editable
+              edit-icon="9"
+              step="9"
+              @click="$vuetify.goTo('#engineering', options)"
+              :complete="position > 9"
               style="transition: all 1s"
               color="primary"
               class="body-2"
@@ -132,32 +156,53 @@
               >
               <v-card-text>
                 <p class="body-1">
-                  We are living in a world with many accidents, among which the
-                  hardest part of our body - bones can be broken. Sports, car
-                  accidents, falls, and certain medical conditions are all
-                  possible causes of bone fracture. The most serious of all bone
-                  injuries is the comminuted fracture, in which your bones break
-                  into many fragments. Among all femoral fracture cases, 95% of
-                  them are comminuted fractures. In 2021, it is estimated that
-                  there will be more than 290000 people suffering the comminuted
-                  fractures in China.<sup
-                    @click="$vuetify.goTo('#references', options)"
+                  We live in a world with many accidents, such as sports, car
+                  accidents, falls, and certain medical conditions. Our bones,
+                  the hardest part of our body, are often broken or fractured
+                  during these accidents. The most severe bone injuries are the
+                  comminuted fracture, in which bones are broken into many
+                  fragments. Among all femoral fracture cases, 95% of them are
+                  comminuted fractures. In 2021, it is estimated that there will
+                  be more than 290000 people suffering the comminuted fractures
+                  in China.<sup @click="$vuetify.goTo('#references', options)"
                     >[1]</sup
                   >
                   Compared with simple fractures, comminuted fractures take
-                  twice the operation time on average. The main reason is the
-                  cumbersome fixation of bone fragments. Moreover, there is no
-                  good to fix some small fragments.
+                  twice the operation time on average due to the time taken in
+                  the cumbersome fixation of bone fragments. To make it worse,
+                  sometimes, there is no good way to fix some small fragments.
+                  Therefore, a biocompatible magic glue with sufficient
+                  mechanical strength and controlled degradation feature is
+                  urgently wanted to help the fixation of bone fragments.
                 </p>
                 <v-img
                   src="https://2021.igem.org/wiki/images/e/e3/T--ShanghaiTech_China--des--pic1.jpg"
                   contain
                   max-height="600px"
                 />
+              </v-card-text>
+              <v-card-title class="text-h5" id="overview"
+                >Overview</v-card-title
+              >
+              <v-card-text>
                 <p class="body-1">
-                  This year, Team ShanghaiTech_China developed a completely new
-                  strategy to the comminuted fracture. A new mussel inspired
-                  biocompatible osteogenic material, the MIBOM is coming.
+                  This year, ShanghaiTech_China developed a new osteogenic glue
+                  with a mechanosensitive regulation system. To prove the
+                  concept and get a reliable product, we performed a series of
+                  experiments to show that the system could be feasible.
+                  Eventually, our results have established the concept of a
+                  robust osteogenic glue with high mechanical strength,
+                  regulated degradation feature, and drug-release capability.
+                  See more experiment designs on our
+                  <a href="https://2021.igem.org/Team:ShanghaiTech_China/Design"
+                    >Design</a
+                  >
+                  page, and more results on our
+                  <a
+                    href="https://2021.igem.org/Team:ShanghaiTech_China/Results"
+                    >Results</a
+                  >
+                  page.
                 </p>
                 <v-row justify="center">
                   <v-col cols="1" lg="2" xl="2"></v-col>
@@ -261,13 +306,13 @@
               >
               <v-card-text>
                 <p class="body-1">
-                  To achieve our goal, we firstly think about how to adjoin bone
-                  fragments in the humoral environment(aqueous environment). A
-                  magical creature, the mussel, inspired us. The mussel can
-                  adhere tightly to reefs through mussel proteins in the aqueous
-                  environment. Among all mussel proteins, Mfp-5 palys a major
-                  role in adhesion
-                  <sup @click="$vuetify.goTo('#references', options)">[2-4]</sup
+                  The first part of MIBOM is the adhesion system. We got
+                  inspiration from a magical molecule, mussel foot protein 5
+                  (mfp5), which enables mussels to stick to rocks or other
+                  basements. Among all mussel proteins, Mfp-5 palys a major role
+                  in adhesion
+                  <sup @click="$vuetify.goTo('#references', options)"
+                    >[2][3][4]</sup
                   >. On top of the adhesive properties of mussel proteins,
                   research has identified MFP's as biocompatible, showing
                   minimal immune reactions in the body<sup
@@ -282,20 +327,12 @@
                   max-height="600px"
                 />
                 <p class="body-1">
-                  For the above two reasons, we choose mussel protein Mfp-5 to
-                  provide the adhesive properties. Using the method of synthetic
-                  biology, we successfully constructed the protein expression
-                  system in E. coli and extracted the viscous mussel protein.
-                  This method makes it possible for us to get a large amount of
-                  mussel protein. This method is more effective and sustainable
-                  than the traditional method, which can get 1mg mussel protein
-                  from 10000 mussels. Moreover, we do some modifications to the
-                  proteins to make it more viscous. See more details on
-                  <a
-                    href="https://2021.igem.org/Team:ShanghaiTech_China/Results"
-                    >Results</a
-                  >
-                  page.
+                  However, the yield for extracting natural mfp5 from mussels is
+                  exceptionally low, where extraction from 10000 mussels only
+                  produces 1 milligram of mfp5 proteins. Therefore, we
+                  engineered bacteria to express this protein and boosted the
+                  yield with several designs based on the principles of
+                  synthetic biology.
                 </p>
                 <v-img
                   src="https://2021.igem.org/wiki/images/f/fc/T--ShanghaiTech_China--des--pic_3.svg"
@@ -308,32 +345,25 @@
               >
               <v-card-text>
                 <p class="body-1">
-                  Mussel protein itself can not provide enough structural
-                  strength to adjoin the fragments. So we designed a functional
-                  hydrogel system to provide structural strength. We tried
-                  Methacrylate Gelatin(GelMA), sodium alginate, and their double
-                  crosslinking system. Doctors only need to irradiate with a
-                  portable UV lamp for a few seconds(or our integrated
-                  hardware), the monomer polymerizes and the material
-                  solidifies. The introduction of hydrogels can provide
-                  structural strength. To achieve better strength, we introduced
-                  a double crosslinking system on the basis of the original
-                  GelMA system. Sodium alginate crosslinked and formed a second
-                  layer of crosslinking network to provide better strength. We
-                  also plan to try more crosslinking systems to match the
-                  application, see more details on
+                  Mfp-5 solution after purification is a type of viscous liquid.
+                  It requires a very long time (about 48h) to solidify and
+                  adjoin objects until it is completely dry (See our results on
+
                   <a
                     href="https://2021.igem.org/Team:ShanghaiTech_China/Results"
                     >Results</a
-                  >
-                  page. Moreover, during surgery, doctors can simply fix and
-                  reset the bones through the first layer of optical
-                  crosslinking, in which the material has a relatively low
-                  structural strength. When no more operation is needed, the
-                  material is solidified into high-strength gel through second
-                  layers of ionic crosslinking to meet the structural strength
-                  requirement of bone recovery. The design is based on
-                  interviews with clinicians' needs.
+                  >, which prevents its potential medical usage. Also, the
+                  original glue strength needs to be increased to guarantee the
+                  force requirement in bone fragments adjoining. To overcome
+                  these cohesion and strength problems, we designed a hydrogel
+                  system to be the second part of MIBOM. It consisted of a
+                  dual-crosslinking system, including a photo-crosslinking
+                  system and an ionic-crosslinking system, which increases the
+                  mechanical strength due to crosslinking and allows a fast and
+                  operable solidifying process by UV light illumination. These
+                  features make it possible for Mfp to be a "real" glue used
+                  during the operation where clinicians could have time to align
+                  bone fragments and glue them with UV lights.
                 </p>
                 <v-img
                   src="https://2021.igem.org/wiki/images/2/27/T--ShanghaiTech_China--des--pic_4.svg"
@@ -342,44 +372,43 @@
                 />
               </v-card-text>
               <v-card-title class="text-h5" id="regulation"
-                >Regulation system</v-card-title
+                >Stress-sensitive regulation system</v-card-title
               >
               <v-card-text>
                 <p class="body-1">
-                  After solving the structural strength problem, another problem
-                  follows. Although the materials we used are all biocompatible,
-                  as the structural strength increases, the degradation of the
-                  material is important. More terribly, the recovery time
-                  depends on the damage and age, which makes it hard to design
-                  the material degradation. Fortunately, the hydrogel is a good
-                  living environment for cells inside it. To solve the
-                  degradation problem, we developed a regulation system in the
-                  material. We take the stress in fracture repair as a signal.
-                  During bone growth, the hydrogel is squeezed.
+                  The degradation of the implanted biomaterial is important, and
+                  it would be ideal that the timing of glue degradation tunes
+                  with the bone recovery process. Although the GelMA and
+                  Alginate we used are all bio-degradable materials, the
+                  degradation rate is not controllable. Thus, the degradation
+                  timing often could not match the bone recovery timing since it
+                  varies in patients due to fracture levels, ages, and other
+                  unknown factors. Here, we tried to find a relatively "smart"
+                  regulation system to control the degradation process according
+                  to the stress force generated during bone recovery. We found
+                  that with the growth of bone, the glue gel would be squeezed.
+                  The force exerted on the gel can be the signal for gel
+                  degradation.
                 </p>
                 <v-img
                   src="https://2021.igem.org/wiki/images/8/84/T--ShanghaiTech_China--des--pic_5.svg"
                   contain
                   max-height="600px"
+                  style="margin-bottom: 16px"
                 />
                 <p class="body-1">
-                  We created a stress-sensitive cell. They can sense the
-                  mechanical force conducted from the hydrogel to cells and
-                  secrete enzymes(such as alginate enzyme) to accelerate
-                  material degradation. When the surroundings are degraded, the
-                  cells lose their scaffold and can not sense the force. In this
-                  way, we do not need to care about material degradation, we
-                  establish a mechanics-degradation system. During the recovery,
-                  the degradation speed depends on the recovery ability. The
-                  cell mechanics-sensitive pathway is based on a membrane
-                  protein called Piezo1. To get it more sensitive, we also do
-                  some modifications to Piezo1 and get a better one, Piezo1.1.
-                  See more details on
+                  However, stress-sensing pathways in the eukaryotic cells could
+                  be challenging, and no iGEM teams had successfully applied it
+                  before. In the end, we accomplished using the Piezo1-mediated
+                  stretch-sensing system to express a target protein that could
+                  be easily extended for expressing a gel degradation enzyme.
+                  Therefore, we established the stretch-sensing system for
+                  controlled protein expression. Our designs are as follows on
                   <a
                     href="https://2021.igem.org/Team:ShanghaiTech_China/Results"
-                    >Results</a
+                    >Design</a
                   >
-                  page
+                  page.
                 </p>
                 <v-img
                   :aspect-ratio="1029 / 728"
@@ -388,25 +417,21 @@
                   max-height="600px"
                 />
               </v-card-text>
-              <v-card-title class="text-h5" id="drug">Drug system</v-card-title>
+              <v-card-title class="text-h5" id="drug"
+                >Drug release system</v-card-title
+              >
               <v-card-text>
                 <p class="body-1">
-                  Although existing orthopedic surgical instruments have no
-                  medical effect (a steel plate can not accelerate the recovery,
-                  for it is just a mechanical support), our MIBOM provides
-                  chances to bring some medical effects. The hydrogel system
-                  makes it possible for us to load multiple drugs in MIBOM.
-                  Before the polymerization, doctors can just mix the drugs with
-                  the material, and drugs are kept after polymerization. We
-                  targeted tens of drugs that can promote recovery such as
-                  vitamin D. Although these drugs are identified as effective in
-                  some articles, We have no conditions for animal experiments to
-                  test these drugs' function. But we establish a model to
-                  simulate the process, which can help us to determine how the
-                  drug molecules are released. We also cooperate with other
-                  teams such as CSU_China to test drug release parameters. We
-                  hope this can help doctors to determine the dosage of drugs
-                  loaded in the hydrogel.
+                  Hydrogel is often used as a drug release system. We wondered
+                  whether we could encapsulate drugs into the hydrogel to
+                  locally release drugs to help bone recovery. Thus, we did a
+                  drug release experiment by encapsulating a test protein into
+                  the hydrogel, which helped identify key factors affecting the
+                  release process. Then, we built a math model to predict the
+                  releasing dynamics. Thus, our hydrogel system serves as an
+                  integrated platform for bone recovery, which not only provides
+                  mechanical support for fractured bones, but also releases
+                  therapeutical molecules as needed.
                 </p>
                 <v-img
                   :aspect-ratio="1029 / 728"
@@ -415,7 +440,9 @@
                   max-height="600px"
                 />
               </v-card-text>
-              <v-card-title class="text-h5">Fuctions summary</v-card-title>
+              <v-card-title class="text-h5" id="function"
+                >Function summary</v-card-title
+              >
               <v-card-text>
                 <p class="body-1">
                   When MIBOM is injected into the fracture, the mussel protein
@@ -443,16 +470,17 @@
                   ShanghaiTech_China has always adhered to the concept of
                   sustainability. All engineerings are designed to be
                   sustainable and safe. Our method of extracting mussel protein
-                  is more efficient than that from natural mussels with thousands
-                  of times lower cost. The hydrogels we made are very safe and
-                  cheap. Modularization is also a highlight of the MIBOM.
-                  Developed in a blocking method, MIBOM's system can be changed
-                  easily according to the application. For example, the hydrogel
-                  can be changed or modified to satisfy different applications
-                  and you can just change the downstream corresponding enzymes,
-                  the system still works. Four systems of MIBOM are independent
-                  of others but have connections. We believe this
-                  modularization design will expand the application of MIBOM.
+                  is more efficient than that from natural mussels with
+                  thousands of times lower cost. The hydrogels we made are very
+                  safe and cheap. Modularization is also a highlight of the
+                  MIBOM. Developed in a blocking method, MIBOM's system can be
+                  changed easily according to the application. For example, the
+                  hydrogel can be changed or modified to satisfy different
+                  applications and you can just change the downstream
+                  corresponding enzymes, the system still works. Four systems of
+                  MIBOM are independent of others but have connections. We
+                  believe this modularization design will expand the application
+                  of MIBOM.
                 </p>
                 <v-img
                   :aspect-ratio="1029 / 728"
@@ -516,28 +544,28 @@
                   Medicine, 100(17), e25708.
                 </p>
                 <p class="body-2">
-                  [2]Danner EW, Kan Y, Hammer MU, Israelachvili JN, Waite JH.
+                  [2]: Danner EW, Kan Y, Hammer MU, Israelachvili JN, Waite JH.
                   Adhesion of mussel foot protein Mefp-5 to mica: an underwater
                   superglue. Biochemistry. 2012 Aug 21;51(33):6511-8. doi:
                   10.1021/bi3002538. Epub 2012 Aug 8. PMID: 22873939; PMCID:
                   PMC3428132.
                 </p>
                 <p class="body-2">
-                  [3]Kord Forooshani P, Lee BP. Recent approaches in designing
+                  [3]: Kord Forooshani P, Lee BP. Recent approaches in designing
                   bioadhesive materials inspired by mussel adhesive protein. J
                   Polym Sci A Polym Chem. 2017 Jan 1;55(1):9-33. doi:
                   10.1002/pola.28368. Epub 2016 Oct 11. PMID: 27917020; PMCID:
                   PMC5132118.
                 </p>
                 <p class="body-2">
-                  [4]Lee BP, Messersmith PB, Israelachvili JN, Waite JH.
+                  [4]: Lee BP, Messersmith PB, Israelachvili JN, Waite JH.
                   Mussel-Inspired Adhesives and Coatings. Annu Rev Mater Res.
                   2011 Aug 1;41:99-132. doi:
                   10.1146/annurev-matsci-062910-100429. PMID: 22058660; PMCID:
                   PMC3207216.
                 </p>
                 <p class="body-2">
-                  [5]Huang J, Li H, Wang Q. [Development of double-component
+                  [5]: Huang J, Li H, Wang Q. [Development of double-component
                   rapid curing bioadhesive]. Sheng Wu Yi Xue Gong Cheng Xue Za
                   Zhi. 2018 Dec 25;35(6):921-927. Chinese. doi:
                   10.7507/1001-5515.201805045. PMID: 30583318.
@@ -611,12 +639,14 @@ export default {
   },
   mounted() {
     this.step[0] = document.getElementById("background");
-    this.step[1] = document.getElementById("identify");
-    this.step[2] = document.getElementById("adhesive");
-    this.step[3] = document.getElementById("hydrogel");
-    this.step[4] = document.getElementById("regulation");
-    this.step[5] = document.getElementById("drug");
-    this.step[6] = document.getElementById("engineering");
+    this.step[1] = document.getElementById("overview");
+    this.step[2] = document.getElementById("identify");
+    this.step[3] = document.getElementById("adhesive");
+    this.step[4] = document.getElementById("hydrogel");
+    this.step[5] = document.getElementById("regulation");
+    this.step[6] = document.getElementById("drug");
+    this.step[7] = document.getElementById("function");
+    this.step[8] = document.getElementById("engineering");
     this.updatepos();
     setTimeout(() => {
       this.firstload = false;
