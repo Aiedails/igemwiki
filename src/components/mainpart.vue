@@ -557,6 +557,13 @@
               </v-row>
               <v-card-text>
                 <p class="body-1">
+                  In our assumption, packaged drugs will be released mainly
+                  after the hydrogel around it gets degraded by enzymes. Thus we
+                  focus on the concentration distribution of enzyme inside the
+                  hydrogel to represent the amount of drugs having been
+                  released.
+                </p>
+                <p class="body-1">
                   Cells are distributed inside the hydrogel. The diffusion of
                   the enzymes they produce from the cell membrane to far should
                   be considered. We use MATHEMATICA to visualize this process:
@@ -610,13 +617,6 @@
                   well known:
                 </p>
                 <p class="body-1">$$ f = 6πaμU $$</p>
-                <p class="body-1">
-                  In our assumption, packaged drugs will be released mainly
-                  after the hydrogel around it gets degraded by enzymes. Thus we
-                  focus on the concentration distribution of enzyme inside the
-                  hydrogel to represent the amount of drugs having been
-                  released.
-                </p>
                 <p class="body-1">
                   relating the concentration of solutes to the osmotic pressure
                   associated with solute collisions with container walls. The
