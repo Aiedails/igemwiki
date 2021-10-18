@@ -93,74 +93,77 @@
                   Our Design Parts
                 </v-card-title>
               </v-row>
-              <v-row justify="center">
-                <v-col cols="1" lg="2" xl="2"></v-col>
-                <v-col cols="2" @click="$vuetify.goTo('#adhesion', options)">
-                  <v-hover v-slot="{ hover }">
-                    <v-img
-                      src="https://2021.igem.org/wiki/images/5/5e/T--ShanghaiTech_China--des--a_pic.svg"
-                    >
-                      <v-expand-transition>
-                        <v-img
-                          src="https://2021.igem.org/wiki/images/c/cc/T--ShanghaiTech_China--des--a_tex.svg"
-                          v-if="hover"
-                          class="d-flex transition-fast-in-fast-out"
-                          style="height: 100%; width: 100%"
-                        />
-                      </v-expand-transition>
-                    </v-img>
-                  </v-hover>
-                </v-col>
-                <v-col cols="2" @click="$vuetify.goTo('#hydrogel', options)">
-                  <v-hover v-slot="{ hover }">
-                    <v-img
-                      src="https://2021.igem.org/wiki/images/6/6e/T--ShanghaiTech_China--des--h_pic.svg"
-                    >
-                      <v-expand-transition>
-                        <v-img
-                          src="https://2021.igem.org/wiki/images/d/d9/T--ShanghaiTech_China--des--h_tex.svg"
-                          v-if="hover"
-                          class="d-flex transition-fast-in-fast-out"
-                          style="height: 100%"
-                        />
-                      </v-expand-transition>
-                    </v-img>
-                  </v-hover>
-                </v-col>
-                <v-col cols="2" @click="$vuetify.goTo('#stress', options)">
-                  <v-hover v-slot="{ hover }">
-                    <v-img
-                      src="https://2021.igem.org/wiki/images/b/b3/T--ShanghaiTech_China--des--r_pic.svg"
-                    >
-                      <v-expand-transition>
-                        <v-img
-                          src="https://2021.igem.org/wiki/images/8/89/T--ShanghaiTech_China--des--r_tex.svg"
-                          v-if="hover"
-                          class="d-flex transition-fast-in-fast-out"
-                          style="height: 100%; width: 100%"
-                        />
-                      </v-expand-transition>
-                    </v-img>
-                  </v-hover>
-                </v-col>
-                <v-col cols="2" @click="$vuetify.goTo('#drug', options)">
-                  <v-hover v-slot="{ hover }">
-                    <v-img
-                      src="https://2021.igem.org/wiki/images/4/47/T--ShanghaiTech_China--des--d_pic.svg"
-                    >
-                      <v-expand-transition>
-                        <v-img
-                          src="https://2021.igem.org/wiki/images/2/2d/T--ShanghaiTech_China--des--d_tex.svg"
-                          v-if="hover"
-                          class="d-flex transition-fast-in-fast-out"
-                          style="height: 100%; width: 100%"
-                        />
-                      </v-expand-transition>
-                    </v-img>
-                  </v-hover>
-                </v-col>
-                <v-col cols="1" lg="2" xl="2"></v-col>
-              </v-row>
+                <v-row justify="center">
+                  <v-col cols="1" lg="2" xl="2"></v-col>
+                  <v-col cols="2" @click="$vuetify.goTo('#adhesive', options)">
+                    <v-hover v-slot="{ hover }">
+                      <v-img
+                        src="https://2021.igem.org/wiki/images/5/5e/T--ShanghaiTech_China--des--a_pic.svg"
+                      >
+                        <v-expand-transition>
+                          <v-img
+                            src="https://2021.igem.org/wiki/images/c/c8/T--ShanghaiTech_China--des--a_tex.jpg"
+                            v-if="hover"
+                            class="d-flex transition-fast-in-fast-out"
+                            style="height: 100%; width: 100%"
+                          />
+                        </v-expand-transition>
+                      </v-img>
+                    </v-hover>
+                  </v-col>
+                  <v-col cols="2" @click="$vuetify.goTo('#hydrogel', options)">
+                    <v-hover v-slot="{ hover }">
+                      <v-img
+                        src="https://2021.igem.org/wiki/images/6/6e/T--ShanghaiTech_China--des--h_pic.svg"
+                      >
+                        <v-expand-transition>
+                          <v-img
+                            src="https://2021.igem.org/wiki/images/a/aa/T--ShanghaiTech_China--des--h_tex.jpg"
+                            v-if="hover"
+                            class="d-flex transition-fast-in-fast-out"
+                            style="height: 100%"
+                          />
+                        </v-expand-transition>
+                      </v-img>
+                    </v-hover>
+                  </v-col>
+                  <v-col
+                    cols="2"
+                    @click="$vuetify.goTo('#regulation', options)"
+                  >
+                    <v-hover v-slot="{ hover }">
+                      <v-img
+                        src="https://2021.igem.org/wiki/images/b/b3/T--ShanghaiTech_China--des--r_pic.svg"
+                      >
+                        <v-expand-transition>
+                          <v-img
+                            src="https://2021.igem.org/wiki/images/b/b6/T--ShanghaiTech_China--des--r_tex.jpg"
+                            v-if="hover"
+                            class="d-flex transition-fast-in-fast-out"
+                            style="height: 100%; width: 100%"
+                          />
+                        </v-expand-transition>
+                      </v-img>
+                    </v-hover>
+                  </v-col>
+                  <v-col cols="2" @click="$vuetify.goTo('#drug', options)">
+                    <v-hover v-slot="{ hover }">
+                      <v-img
+                        src="https://2021.igem.org/wiki/images/4/47/T--ShanghaiTech_China--des--d_pic.svg"
+                      >
+                        <v-expand-transition>
+                          <v-img
+                            src="https://2021.igem.org/wiki/images/2/21/T--ShanghaiTech_China--des--d_tex.jpg"
+                            v-if="hover"
+                            class="d-flex transition-fast-in-fast-out"
+                            style="height: 100%; width: 100%"
+                          />
+                        </v-expand-transition>
+                      </v-img>
+                    </v-hover>
+                  </v-col>
+                  <v-col cols="1" lg="2" xl="2"></v-col>
+                </v-row>
               <v-row justify="center">
                 <v-card-title class="text-h4 title" id="adhesion">
                   Adhesion system
