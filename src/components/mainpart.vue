@@ -1439,6 +1439,30 @@
                   through precision therapy.
                 </p>
               </v-card-text>
+              <v-card-title class="text-h6"> (4）Quality control </v-card-title>
+              <v-card-text>
+                <p class="body-1">
+                  After following the suggestion from Prof. Jean Dai, we have
+                  redefined the quality management standards we will face on the
+                  road to market. Since ISO has not issued any quality
+                  management measures for bone glue, we have referred to the two
+                  standards of Tissue- Engineered Medical Products and Materials
+                  to plan ahead for MIBOM quality control in the future. We
+                  refer to General Requirements of Tissue - Engineered Medical
+                  Products' (ISO/TS 21560:2020), 'Implants for surgery -- Test
+                  solutions and environmental conditions for static and dynamic
+                  corrosion tests on Implants Implantable Materials and Medical
+                  Devices' (ISO 16428:2005), 'Tissue- Engineered Medical
+                  Products - Bioactive Ceramics - Method to Measure cell
+                  migration in Porous Materials' (ISO 1990:2018), ISO 13022,
+                  ISO/TS 20399, ISO 22442and other standards. We determined that
+                  general requirement of tissue-engineered medcal products,
+                  toxicological verification of MIBOM, possibility verification
+                  of cell migration, and analysis of environmental conditions
+                  for static and dynamic corrosion tests would be the focus of
+                  our quality control in the future.
+                </p>
+              </v-card-text>
               <v-row justify="center">
                 <v-card-title class="text-h4 title" id="conclusion">
                   7. Conclusion: Evaluate our project value
