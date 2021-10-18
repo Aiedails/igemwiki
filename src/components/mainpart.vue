@@ -155,7 +155,8 @@
                 </p>
                 <v-img
                   src="https://2021.igem.org/wiki/images/2/20/T--ShanghaiTech_China--mod--fig1.jpg"
-                  contain max-height="600px"
+                  contain
+                  max-height="600px"
                 />
                 <v-row
                   justify="center"
@@ -178,7 +179,8 @@
                 <v-img
                   src="
                   https://2021.igem.org/wiki/images/5/53/T--ShanghaiTech_China--mod--fig2.jpg"
-                  contain max-height="600px"
+                  contain
+                  max-height="600px"
                 />
                 <v-row
                   justify="center"
@@ -226,7 +228,8 @@
                 </p>
                 <v-img
                   src="https://2021.igem.org/wiki/images/e/e6/T--ShanghaiTech_China--mod--fig3.jpg"
-                  contain max-height="600px"
+                  contain
+                  max-height="600px"
                 />
                 <v-row
                   justify="center"
@@ -245,7 +248,8 @@
                 </p>
                 <v-img
                   src="https://2021.igem.org/wiki/images/7/79/T--ShanghaiTech_China--mod--fig4.jpg"
-                  contain max-height="600px"
+                  contain
+                  max-height="600px"
                 />
                 <v-row
                   justify="center"
@@ -261,7 +265,8 @@
                 </p>
                 <v-img
                   src="https://2021.igem.org/wiki/images/1/1e/T--ShanghaiTech_China--mod--fig5.jpg"
-                  contain max-height="600px"
+                  contain
+                  max-height="600px"
                 />
                 <v-row
                   justify="center"
@@ -315,7 +320,8 @@
                 <v-img
                   src="
                   https://2021.igem.org/wiki/images/2/2c/T--ShanghaiTech_China--mod--fig6.jpg"
-                  contain max-height="600px"
+                  contain
+                  max-height="600px"
                 />
                 <v-row
                   justify="center"
@@ -341,7 +347,8 @@
                 <v-img
                   src="
                   https://2021.igem.org/wiki/images/0/09/T--ShanghaiTech_China--mod--fig7.jpg"
-                  contain max-height="600px"
+                  contain
+                  max-height="600px"
                 />
                 <v-row
                   justify="center"
@@ -501,7 +508,8 @@
                 </p>
                 <v-img
                   src="https://2021.igem.org/wiki/images/e/e1/T--ShanghaiTech_China--mod--fig8.jpg"
-                  contain max-height="600px"
+                  contain
+                  max-height="600px"
                 />
                 <v-row
                   justify="center"
@@ -529,7 +537,8 @@
                 </p>
                 <v-img
                   src="https://2021.igem.org/wiki/images/a/ad/T--ShanghaiTech_China--mod--fig9.jpg"
-                  contain max-height="600px"
+                  contain
+                  max-height="600px"
                 />
                 <v-row
                   justify="center"
@@ -602,8 +611,11 @@
                 </p>
                 <p class="body-1">$$ f = 6πaμU $$</p>
                 <p class="body-1">
-                  At the same time, the kinetic theory and the law of Van’t Hoff
-                  (1852–1911) were known, the latter
+                  In our assumption, packaged drugs will be released mainly
+                  after the hydrogel around it gets degraded by enzymes. Thus we
+                  focus on the concentration distribution of enzyme inside the
+                  hydrogel to represent the amount of drugs having been
+                  released.
                 </p>
                 <p class="body-1">
                   relating the concentration of solutes to the osmotic pressure
@@ -815,7 +827,8 @@
                 </p>
                 <v-img
                   src="https://2021.igem.org/wiki/images/a/ad/T--ShanghaiTech_China--mod--fig9.jpg"
-                  contain max-height="600px"
+                  contain
+                  max-height="600px"
                 />
                 <v-row
                   justify="center"
@@ -826,8 +839,10 @@
                     distance
                   </p>
                 </v-row>
-                <p class="body-1"></p>
-                <p class="body-1"></p>
+                <p class="body-1">
+                  From the concentration trend of enzyme, we can get an
+                  approximate knowledge of the distribution of drugs over time.
+                </p>
               </v-card-text>
               <v-card-title class="text-h5">Something else</v-card-title>
               <v-card-text>
@@ -1192,57 +1207,59 @@
               </v-row>
               <v-card-text>
                 <p class="body-2">
-                  <a href="https://dx.doi.org/10.1021/acs.macromol.0c02716">
-                    [1]: https://dx.doi.org/10.1021/acs.macromol.0c02716
-                  </a>
+                  [1]: Kim, J.-R., et al. (2021). "Ultra-Tough and
+                  Super-Swelling Poly(vinyl alcohol)/Poly(AAm-co-AA Sodium
+                  Salts) Double Network Hydrogels." Macromolecules
+                  <strong>54</strong>(5): 2439-2448.
                 </p>
                 <p class="body-2">
-                  <a
-                    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5854696/"
-                  >
-                    [2]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5854696/
-                  </a>
+                  [2]: Moroni, M., et al. (2018). "Voltage gating of
+                  mechanosensitive PIEZO channels." Nature communications
+                  <strong>9</strong>(1): 1096-1096.
                 </p>
                 <p class="body-2">
-                  <a href="https://dx.doi.org/10.1074%2Fjbc.M116.766196">
-                    [3]: https://dx.doi.org/10.1074%2Fjbc.M116.766196
-                  </a>
+                  [3]: Ilkan, Z., et al. (2017). "Evidence for shear-mediated
+                  Ca2+ entry through mechanosensitive cation channels in human
+                  platelets and a megakaryocytic cell line." Journal of
+                  Biological Chemistry <strong>292</strong>(22): 9204-9217.
                 </p>
                 <p class="body-2">
-                  <a href="https://doi.org/10.1371/journal.pcbi.1002879">
-                    [4]: https://doi.org/10.1371/journal.pcbi.1002879
-                  </a>
+                  [4]: Ke, R., et al. (2013). "An Integrative Model of Ion
+                  Regulation in Yeast." PLOS Computational Biology
+                  <strong>9</strong>(1): e1002879.
                 </p>
                 <p class="body-2">
-                  <a href="https://doi.org/10.4149/gpb_2017022">
-                    [5]: https://doi.org/10.4149/gpb_2017022
-                  </a>
+                  [5]: Khalilimeybodi, A., et al. (2018)."Ca2+-dependent
+                  calcineurin/NFAT signaling in β-adrenergic-induced cardiac
+                  hypertrophy." General Physiology and Biophysics
+                  <strong>37</strong>(1): 41-56.
                 </p>
                 <p class="body-2">
-                  <a href="https://doi.org/10.1021/bi8019355">
-                    [6]: https://doi.org/10.1021/bi8019355
-                  </a>
+                  [6]: Kilka, S., et al. (2009). "The Proline-Rich N-Terminal
+                  Sequence of Calcineurin Aβ Determines Substrate Binding."
+                  Biochemistry <strong>48</strong>(9): 1900-1910.
                 </p>
                 <p class="body-2">
-                  <a href="http://dx.doi.org/10.1016/j.molcel.2016.02.030">
-                    [7]: http://dx.doi.org/10.1016/j.molcel.2016.02.030
-                  </a>
+                  [7]: Albayrak, C., et al. (2016). "Digital Quantification of
+                  Proteins and mRNA in Single Mammalian Cells." Molecular Cell
+                  <strong>61</strong>(6): 914-924.
                 </p>
                 <p class="body-2">
-                  <a href="https://doi.org/10.1016/j.biochi.2020.01.015">
-                    [8]: https://doi.org/10.1016/j.biochi.2020.01.015
-                  </a>
+                  [8]: Bayle, S., et al. (2020). "Critical parameters in surface
+                  plasmon resonance biosensor development: The interaction
+                  between estrogen receptor and estrogen response element as
+                  model." Biochimie <strong>171-172</strong>: 12-20.
                 </p>
                 <p class="body-2">
-                  <a href="https://doi.org/10.1016/S0006-3495(00)76566-0">
-                    [9]: https://doi.org/10.1016/S0006-3495(00)76566-0
-                  </a>
+                  [9]: Phillips, R. J. (2000). "A Hydrodynamic Model for
+                  Hindered Diffusion of Proteins and Micelles in Hydrogels."
+                  Biophysical Journal <strong>79</strong>(6): 3350-3353.
                 </p>
                 <p class="body-2">
-                  [10]: Fields, Forces, and Flows in Biological Systems. By Alan
-                  J. Grodzinsky; with the technical and editorial assistance of,
-                  Eliot H. Frank. London and New York: Garland Science (Taylor &
-                  Francis Group). ISBN:978-0-8153-4212-0
+                  [10]: Fields, Forces, and Flows in Biological Systems. By
+                  Alan J. Grodzinsky; with the technical and editorial
+                  assistance of, Eliot H. Frank. London and New York: Garland
+                  Science (Taylor & Francis Group). ISBN:978-0-8153-4212-0
                 </p>
               </v-card-text>
             </v-container>

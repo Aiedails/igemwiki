@@ -204,6 +204,8 @@ $$</p>
 <p class = "body-1"></p>
 </v-card-text><v-row justify="center"> <v-card-title class="text-h4 title">3. Diffusion  </v-card-title></v-row>
 <v-card-text>  <p class = "body-1"></p>
+<p class = "body-1">In our assumption, packaged drugs will be released mainly after the hydrogel around it gets degraded by enzymes. Thus we focus on the concentration distribution of enzyme inside the hydrogel to represent the amount of drugs having been released. </p>
+<p class = "body-1"></p>
 <p class = "body-1">Cells are distributed inside the hydrogel. The diffusion of the enzymes they produce from the cell membrane to far should be considered. We use MATHEMATICA to visualize this process: </p>
 <p class = "body-1"></p>
 <p class = "body-1"><video src="扩散.mp4"></video></p>
@@ -220,8 +222,7 @@ $$</p>
 <p class = "body-1">$$
 f = 6πaμU
 $$</p>
-<p class = "body-1">At the same time, the kinetic theory and the law of Van’t Hoff (1852–1911) were known, the latter</p>
-<p class = "body-1">relating the concentration of solutes to the osmotic pressure associated with solute collisions with container walls. The resulting thought model involved a balance between </p>
+<p class = "body-1">At the same time, the kinetic theory and the law of Van’t Hoff (1852–1911) were known, the latter relating the concentration of solutes to the osmotic pressure associated with solute collisions with container walls. The resulting thought model involved a balance between </p>
 <p class = "body-1"></p>
 <p class = "body-1">(1) the pressure gradient $ \frac{\partial P^{os}}{\partial x}$  (which has the units of a force density ($\text{N}\ \text{m}^{−3}$) and is proportional to $ RT\frac{\partial c_i}{\partial x}$  from Van’t Hoff’s law) and (2) the force density associated with the frictional drag on the total number of solutes per unit fluid volume, in which each solute molecule is subjected to the drag force 6πaμU. The “driving force” for diffusive flux in the $+x$ direction is $ \frac{-\partial c_i}{\partial x} $ and, with zero net flux in equilibrium, the balance gives $\frac{-\partial P^{os}}{\partial x}=\frac{-RT\partial c_i}{\partial x}=(6\pi a\mu U)</p>
 <p class = "body-1">(c_iN_{AV})$. Besides, within an electrolyte medium, empirical evidence has shown that the diffusive flux $ N_i $ of solute species $i$ with respect to the solvent is often linearly related to the local gradient in the concentration of that species $ c_i $ by $N_i =-D_i\nabla c_i$. Combining these two relations and noting that the product $ c_i U$ has the units of flux $ N_i $ , we arrive at the Stokes–Einstein relation for the diffusivity:</p>
@@ -301,6 +302,8 @@ $$</p>
 <p class = "body-1"></p>
 <p class = "body-1">*fig.10 Enzyme concentration versus time and distance*</p>
 <p class = "body-1"></p>
+<p class = "body-1">From the concentration trend of enzyme, we can get an approximate knowledge of the distribution of drugs over time. </p>
+<p class = "body-1"></p>
 </v-card-text><v-card-title class="text-h5">3.3 Something else</v-card-title>
 <v-card-text>  <p class = "body-1"></p>
 <p class = "body-1">A possible attempt for modeling:</p>
@@ -358,16 +361,15 @@ $$</p>
 <p class = "body-1"></p>
 </v-card-text><v-row justify="center"> <v-card-title class="text-h4 title">5. References  </v-card-title></v-row>
 <v-card-text>  <p class = "body-1"></p>
-<p class = "body-1">[^1]: https://dx.doi.org/10.1021/acs.macromol.0c02716</p>
-<p class = "body-1">[^2]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5854696/</p>
-<p class = "body-1">[^3]: https://dx.doi.org/10.1074%2Fjbc.M116.766196</p>
-<p class = "body-1">[^4]: https://doi.org/10.1371/journal.pcbi.1002879</p>
-<p class = "body-1">[^5 ]: https://doi.org/10.4149/gpb_2017022</p>
-<p class = "body-1">[^6 ]: https://doi.org/10.1021/bi8019355</p>
-<p class = "body-1">[^7 ]: http://dx.doi.org/10.1016/j.molcel.2016.02.030</p>
-<p class = "body-1">[^8]: https://doi.org/10.1016/j.biochi.2020.01.015</p>
-<p class = "body-1"></p>
-<p class = "body-1">[^9]:  https://doi.org/10.1016/S0006-3495(00)76566-0</p>
+<p class = "body-1">[^1]: Kim, J.-R., et al. (2021). "Ultra-Tough and Super-Swelling Poly(vinyl alcohol)/Poly(AAm-co-AA Sodium Salts) Double Network Hydrogels." Macromolecules **54**(5): 2439-2448.</p>
+<p class = "body-1">[^2]: Moroni, M., et al. (2018). "Voltage gating of mechanosensitive PIEZO channels." Nature communications **9**(1): 1096-1096.</p>
+<p class = "body-1">[^3]: Ilkan, Z., et al. (2017). "Evidence for shear-mediated Ca2+ entry through mechanosensitive cation channels in human platelets and a megakaryocytic cell line." Journal of Biological Chemistry **292**(22): 9204-9217.</p>
+<p class = "body-1">[^4]: Ke, R., et al. (2013). "An Integrative Model of Ion Regulation in Yeast." PLOS Computational Biology **9**(1): e1002879.</p>
+<p class = "body-1">[^5 ]: Khalilimeybodi, A., et al. (2018)."Ca2+-dependent calcineurin/NFAT signaling in β-adrenergic-induced cardiac hypertrophy." General Physiology and Biophysics **37**(1): 41-56.</p>
+<p class = "body-1">[^6 ]: Kilka, S., et al. (2009). "The Proline-Rich N-Terminal Sequence of Calcineurin Aβ Determines Substrate Binding." Biochemistry **48**(9): 1900-1910.</p>
+<p class = "body-1">[^7 ]: Albayrak, C., et al. (2016). "Digital Quantification of Proteins and mRNA in Single Mammalian Cells." Molecular Cell **61**(6): 914-924.</p>
+<p class = "body-1">[^8]: Bayle, S., et al. (2020). "Critical parameters in surface plasmon resonance biosensor development: The interaction between estrogen receptor and estrogen response element as model." Biochimie **171-172**: 12-20.</p>
+<p class = "body-1">[^9]: Phillips, R. J. (2000). "A Hydrodynamic Model for Hindered Diffusion of Proteins and Micelles in Hydrogels." Biophysical Journal **79**(6): 3350-3353.</p>
 <p class = "body-1">[^10]:  *Fields, Forces, and Flows in Biological Systems*. By Alan J. Grodzinsky; with the technical and editorial assistance of, Eliot H. Frank. London and New York: Garland Science (Taylor & Francis Group). ISBN:978-0-8153-4212-0</p>
 <p class = "body-1"></p>
 <p class = "body-1"></p>
