@@ -2,6 +2,7 @@
   <v-row justify="center" style="margin: auto 3%">
     <!-- 3% on v-row and 2% on fixed v-col work well. -->
     <v-col cols="2"></v-col>
+    <!--
     <v-col cols="2" style="position: fixed; left: 2%" v-show="width >= 1264">
       <v-skeleton-loader
         v-show="firstload"
@@ -46,6 +47,7 @@
         </template>
       </v-hover>
     </v-col>
+    -->
     <!-- cards -->
     <!-- ####################################################################### -->
     <!-- Below is really MAIN PART -->
@@ -66,7 +68,6 @@
             class="transition-swing"
             style="text-decoration: none"
             id="description"
-            v-intersect="onIntersect"
             v-scroll="updatepos"
             v-show="!firstload"
             v-motion
@@ -81,7 +82,7 @@
           >
             <v-simple-table>
               <template v-slot:default>
-                <thead>
+                <thead v-intersect="onIntersect">
                   <tr>
                     <th>Name</th>
                     <th class="text-center">MIBOM technical interation</th>
@@ -176,64 +177,137 @@
               <template v-slot:default>
                 <thead>
                   <tr>
-                    <th>Attributions</th>
                     <th>Name</th>
+                    <th>Attributions</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th>Leader</th>
                     <th>Rui Su</th>
-                  </tr>
-                  <tr>
-                    <th>Molecular experiments leader</th>
-                    <th>Chenghao Zhu</th>
-                  </tr>
-                  <tr>
-                    <th>Finance</th>
-                    <th>Chenghao Zhu</th>
-                  </tr>
-                  <tr>
-                    <th>Molecular experiments participants</th>
                     <th>
-                      Huayu Wang, Han Ding, Ziding Zhou, Zixuan Li, Qi Xin,
-                      Kaijun Wang, Shuyao Su, Zhiwen Huang, Handi Jia, Zhuoya
-                      Li, Yujie Wen
+                      Team leader, Lab design, Project manager, Monitor cell and
+                      material experiments, Manage daily affairs of the team.
                     </th>
                   </tr>
                   <tr>
-                    <th>Cell experiments leader</th>
-                    <th>Rui su</th>
-                  </tr>
-                  <tr>
-                    <th>Cell experiments participants</th>
+                    <th>Chenghao Zhu</th>
                     <th>
-                      Ziao Ling, Jieni Hu, Jing Sun, Ruixuan Xue, Zhiwen Huang
+                      Monitor all experiments about mussel protein and
+                      plasmids(Molecular experiments), Team finance.
                     </th>
                   </tr>
                   <tr>
-                    <th>Model</th>
-                    <th>Jing Sun, Ruixuan Xue</th>
+                    <th>Yujie Wen</th>
+                    <th>
+                      Major in a series experiments of Mfp, Responsible for the
+                      Presentation video
+                    </th>
                   </tr>
                   <tr>
-                    <th>Integrated Human Practice</th>
                     <th>Shiyue Ding</th>
+                    <th>
+                      Major in Entrepreneurship and Integrated Human Practices
+                      part of the project, Responsible for some of the art work.
+                    </th>
                   </tr>
                   <tr>
-                    <th>Art Design</th>
-                    <th>Zhiwen Huang, Jieni Hu, Zhuoya Li, Shiyue Ding</th>
+                    <th>Qi Xin</th>
+                    <th>
+                      Design the suicide system, Construct the
+                      plasmid(pGL4.30-EGFP), Works on purification of Mfp,
+                      Responsible for Parts registry.
+                    </th>
                   </tr>
                   <tr>
-                    <th>Wiki</th>
+                    <th>Kaijun Wang</th>
+                    <th>
+                      Design the suicide system, Construct the
+                      plasmid(Downstream degradation plasmid), Prelab research
+                      about Piezo1.1 and GCaMP, Responsible for Parts registry.
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>Jing Sun</th>
+                    <th>
+                      Responsible for Modeling part of project, Works on partial
+                      Collaboration and Education parts of the project, Data
+                      analysis of the phototoxic and GCaMP.
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>Han Ding</th>
+                    <th>
+                      Responsible for the Education and Safety part of the
+                      project, Construct 5 plasmids in molecular and cell
+                      experiments, Participate in the Promotion video.
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>Huayu Wang</th>
+                    <th>
+                      Construct 5 plasmids in molecular and cell experiments,
+                      Participate in the Promotion video.
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>Zhiwen Huang</th>
+                    <th>
+                      Design of Homepage, Art work of the promotion video, Art
+                      design of some elements on wiki page, Responsible for the
+                      cell viability test experiment, Early design of the
+                      extraction of Mfp, Participate in the Presentation video.
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>Handi Jia</th>
+                    <th>
+                      Partial work on mechanical properties of Mfp and its
+                      extraction and modification. Responsible for the Promotion
+                      video and Presentation video.
+                    </th>
+                  </tr>
+                  <tr>
                     <th>Zhiyi Wang</th>
+                    <th>Wiki arrangement and partial work on page design.</th>
                   </tr>
                   <tr>
-                    <th>Hardware</th>
+                    <th>Jieni Hu</th>
+                    <th>
+                      Responsible for the art design of Design, Description page
+                      of Wiki, Responsible for the design of Poster, Works on
+                      Collaboration with GA_State_SW_Jiaotong, Participate in
+                      the promotion video.
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>Shuyao Su</th>
+                    <th>Works on collaboration with GA_State_SW_Jiaotong.</th>
+                  </tr>
+                  <tr>
                     <th>Yiyao Zhu</th>
+                    <th>
+                      Responsible for the hardware part of the project,
+                      Responsible for the Promotion video and Presentation
+                      video, Works on photo.
+                    </th>
                   </tr>
                   <tr>
-                    <th>Advisor</th>
-                    <th>Kaida Zhang, Mingzhe Chen</th>
+                    <th>Ziao Ling</th>
+                    <th>
+                      Works on early cell culture, Responsible for phototoxic,
+                      preparation of GelMA, Partial work on Education part.
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>Ziding Zhou</th>
+                    <th>
+                      Responsible for degradation experiment and Collaboration
+                      with Jiangnan_China.
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>Zixuan Li</th>
+                    <th>Design of suicide system in eukaryocyte cells.</th>
                   </tr>
                 </tbody>
               </template>
