@@ -232,9 +232,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <th class="text-center">
-                            Berkeley_Wetlab 2009
-                        </th>
+                        <th class="text-center">Berkeley_Wetlab 2009</th>
                         <th class="text-center">
                           <a href="http://2009.igem.org/Team:Berkeley_Wetlab"
                             >http://2009.igem.org/Team:Berkeley_Wetlab</a
@@ -242,9 +240,7 @@
                         </th>
                       </tr>
                       <tr>
-                        <th class="text-center">
-                            Tu-Delft 2011
-                        </th>
+                        <th class="text-center">Tu-Delft 2011</th>
                         <th class="text-center">
                           <a href="http://2011.igem.org/Team:TU-Delft"
                             >http://2011.igem.org/Team:TU-Delft</a
@@ -252,19 +248,15 @@
                         </th>
                       </tr>
                       <tr>
-                        <th class="text-center">
-                          Yale 2014
-                        </th>
+                        <th class="text-center">Yale 2014</th>
                         <th class="text-center">
                           <a href="http://2014.igem.org/Team:Yale"
-                          >http://2014.igem.org/Team:Yale</a
+                            >http://2014.igem.org/Team:Yale</a
                           >
                         </th>
                       </tr>
                       <tr>
-                        <th class="text-center">
-                            Tu_Delft 2015
-                        </th>
+                        <th class="text-center">Tu_Delft 2015</th>
                         <th class="text-center">
                           <a href="http://2015.igem.org/Team:TU_Delft"
                             >http://2015.igem.org/Team:TU_Delft</a
@@ -272,29 +264,24 @@
                         </th>
                       </tr>
                       <tr>
-                        <th class="text-center">
-                          UCSF 2015
-                        </th>
+                        <th class="text-center">UCSF 2015</th>
                         <th class="text-center">
                           <a href="http://2015.igem.org/Team:UCSF"
-                          >http://2015.igem.org/Team:UCSF</a
+                            >http://2015.igem.org/Team:UCSF</a
                           >
                         </th>
                       </tr>
                       <tr>
+                        <th class="text-center">Stanford-Brown-RISD 2018</th>
                         <th class="text-center">
-                            Stanford-Brown-RISD 2018
-                        </th>
-                        <th class="text-center">
-                          <a href="http://2018.igem.org/Team:Stanford-Brown-RISD"
+                          <a
+                            href="http://2018.igem.org/Team:Stanford-Brown-RISD"
                             >http://2018.igem.org/Team:Stanford-Brown-RISD</a
                           >
                         </th>
                       </tr>
                       <tr>
-                        <th class="text-center">
-                            Greatbay_SCIE 2019
-                        </th>
+                        <th class="text-center">Greatbay_SCIE 2019</th>
                         <th class="text-center">
                           <a href="https://2019.igem.org/Team:Greatbay_SCIE"
                             >https://2019.igem.org/Team:Greatbay_SCIE</a
@@ -302,9 +289,7 @@
                         </th>
                       </tr>
                       <tr>
-                        <th class="text-center">
-                            Shenzhen SFLS 2019
-                        </th>
+                        <th class="text-center">Shenzhen SFLS 2019</th>
                         <th class="text-center">
                           <a href="https://2019.igem.org/Team:Shenzhen_SFLS"
                             >https://2019.igem.org/Team:Shenzhen_SFLS</a
@@ -312,9 +297,7 @@
                         </th>
                       </tr>
                       <tr>
-                        <th class="text-center">
-                            Being_4ELEVEN 2020
-                        </th>
+                        <th class="text-center">Being_4ELEVEN 2020</th>
                         <th class="text-center">
                           <a href="https://2020.igem.org/Team:Beijing_4ELEVEN"
                             >https://2020.igem.org/Team:Beijing_4ELEVEN</a
@@ -322,9 +305,7 @@
                         </th>
                       </tr>
                       <tr>
-                        <th class="text-center">
-                            KCL_UK 2020
-                        </th>
+                        <th class="text-center">KCL_UK 2020</th>
                         <th class="text-center">
                           <a href="https://2020.igem.org/Team:KCL_UK"
                             >https://2020.igem.org/Team:KCL_UK</a
@@ -332,9 +313,7 @@
                         </th>
                       </tr>
                       <tr>
-                        <th class="text-center">
-                            PuiChing_Macau 2020
-                        </th>
+                        <th class="text-center">PuiChing_Macau 2020</th>
                         <th class="text-center">
                           <a href="https://2020.igem.org/Team:PuiChing_Macau"
                             >https://2020.igem.org/Team:PuiChing_Macau</a
@@ -348,8 +327,8 @@
                   Referring to the literature and through trial and error, our
                   team members finally obtained a complete protocol (seen in
                   <a
-                    href="https://2021.igem.org/Team:ShanghaiTech_China/Protocols"
-                    >Protocols</a
+                    href="https://2021.igem.org/Team:ShanghaiTech_China/Experiments"
+                    >Experiments</a
                   >
                   page and Part Registry) suitable for the Mfp5 expression
                   system constructed. After obtaining the modified Mfp5 protein,
@@ -396,8 +375,8 @@
                   >
                   and
                   <a
-                    href="https://2021.igem.org/Team:ShanghaiTech_China/Protocols"
-                    >Protocols</a
+                    href="https://2021.igem.org/Team:ShanghaiTech_China/Experiments"
+                    >Experiments</a
                   >. We have presented very detailed experimental results on
                   these pages.
                 </p>
@@ -421,8 +400,8 @@
                 <p class="body-1">
                   What's more, we have developed a set of methods(seen in
                   <a
-                    href="https://2021.igem.org/Team:ShanghaiTech_China/Protocols"
-                    >Protocols</a
+                    href="https://2021.igem.org/Team:ShanghaiTech_China/Experiments"
+                    >Experiments</a
                   >) for eukaryotic cells culture and transfection and our
                   methods and experience will allow future iGEM teams to quickly
                   start their eukaryotic cell experiments if they are willing to
@@ -611,8 +590,8 @@
                   Meanwhile, the synthesis method for GelMA and the test method
                   for cell survival data are provided on the
                   <a
-                    href="https://2021.igem.org/Team:ShanghaiTech_China/Protocols"
-                    >Protocols</a
+                    href="https://2021.igem.org/Team:ShanghaiTech_China/Experiments"
+                    >Experiments</a
                   >
                   page.
                 </p>
