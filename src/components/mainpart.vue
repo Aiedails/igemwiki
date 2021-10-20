@@ -309,6 +309,19 @@
                     <th>Zixuan Li</th>
                     <th>Design of suicide system in eukaryocyte cells.</th>
                   </tr>
+                  <tr>
+                    <th>Zhuoya Li</th>
+                    <th>
+                      Partial work on page elements, Construct the
+                      plasmid(pGL-EGFP), Partial work on Mfp extraction and
+                      modification, Partial work on Promotion video and
+                      Presentation video.
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>Ruixuan Xue</th>
+                    <th>Partial work on Modeling.</th>
+                  </tr>
                 </tbody>
               </template>
             </v-simple-table>
