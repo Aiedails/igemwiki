@@ -45,11 +45,11 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="text-center">Protocols of cell experiment</td>
+                    <td class="text-center">Protocols of molecular experiment</td>
                     <td class="text-center">
                       <a
                         href="https://2021.igem.org/wiki/images/c/c4/T--ShanghaiTech_China--exp--protocols_and_results.pdf"
-                        >Protocols of cell experiment.pdf</a
+                        >Protocols of molecular experiment.pdf</a
                       >
                     </td>
                   </tr>
