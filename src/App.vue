@@ -1,5 +1,13 @@
 <template>
-  <v-app dark style="background-color: #ebecee" id="app">
+  <v-app
+    dark
+    style="
+      background-repeat: repeat-y;
+      background-position: center top;
+      background-size: contain;
+    "
+    id="app"
+  >
     <!-- the carousal -->
     <!--
     <v-card elevation="24" width="380" class="mx-auto">
@@ -25,26 +33,23 @@
 
     <navbar v-resize="onResize" :width="this.width"></navbar>
     <v-main id="main">
-      <main_team :width="this.width"></main_team>
+      <mainpart :width="this.width"></mainpart>
     </v-main>
     <temfooter></temfooter>
   </v-app>
 </template>
 
 <script>
-import main_team from "./components/main_team";
+import mainpart from "./components/mainpart";
 import navbar from "./components/navbar";
 import temfooter from "./components/teamfooter";
-
 export default {
   name: "App",
-
   components: {
-    main_team,
+    mainpart,
     navbar,
     temfooter,
   },
-
   data: () => ({
     width: 1300,
     istop: true,
@@ -87,10 +92,15 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+$primary: #1388e5;
+$secondary: #4fc3f7;
 ::selection {
-  background: #EF9A9A;
+  background: $secondary;
   color: white;
+}
+#app {
+  background: url("https://2021.igem.org/wiki/images/7/70/T--ShanghaiTech_China--bg.svg");
 }
 #main {
   position: relative;
@@ -104,10 +114,68 @@ export default {
 #top_title {
   display: none;
 }
-#globalWrapper {
+#globalwrapper {
   padding: 0;
 }
 p {
   margin: 0;
+  font-size: 1rem;
+}
+a,
+a:hover {
+  text-decoration: none !important;
+}
+.list_number {
+  border-width: 0 0 0 4px;
+  border-color: $secondary !important;
+  border-style: solid;
+  padding: 0;
+}
+li::marker {
+  color: $secondary;
+}
+/*use to change the size of v-stepper-step's sign.*/
+.v-stepper__step__step {
+  height: 16px;
+  min-width: 16px;
+  width: 16px;
+}
+.v-stepper__step__step .v-icon.v-icon {
+  font-size: 0.75rem;
+}
+.code {
+  padding: 16px;
+  border-width: 0 0 0 4px;
+  border-color: grey;
+  border-style: solid;
+  background-color: #eeeeee;
+}
+.code::selection {
+  color: white;
+  background: #838383 !important;
+}
+.title {
+  box-shadow: inset 0px -12px $secondary !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-bottom: 16px !important;
+}
+#HQ_page table {
+  margin: 0 !important;
+}
+#HQ_page th {
+  background-color: white !important;
+  padding: 0 16px !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+  border: none !important;
+  border-bottom: thin solid rgba(0, 0, 0, 0.12) !important;
+  vertical-align: middle !important;
+}
+#HQ_page td {
+  padding: 0 16px !important;
+  border: none !important;
+  border-bottom: thin solid rgba(0, 0, 0, 0.12) !important;
+  vertical-align: middle !important;
 }
 </style>
